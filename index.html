@@ -79,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">quant Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>This will eventually be an independent C implementation of <a href="https://www.chromium.org/quic">QUIC</a>, the Google-originated proposal for a new HTTP/2 transport over UDP.</p>
+<div class="textblock"><p>These are the beginnings of a BSD-licensed C11 implementation of <a href="https://www.chromium.org/quic">QUIC</a>, the Google-originated proposal for a new HTTP/2 transport over UDP. QUANT uses the <a href="https://github.com/NTAP/warpcore">warpcore</a> zero-copy userspace UDP/IPv4 stack on top of the <a href="http://info.iet.unipi.it/~luigi/netmap/">netmap</a> packet I/O framework.</p>
 <p>The quant repository is <a href="https://github.com/NTAP/quant">on GitHub</a>, as is the <a href="https://ntap.github.io/quant/">documentation</a>.</p>
 <h2>Prerequisites</h2>
 <p>We use the <a href="https://cmake.org/">cmake</a> build system, <a href="https://www.vagrantup.com/">vagrant</a> for testing against Google's <a href="https://github.com/google/proto-quic">proto-quic</a> implementation, as well as some other assorted tools. (Note that the <a href="https://datatracker.ietf.org/wg/quic/charter/">IETF flavor of QUIC</a>, which this implementation will track, is not expected to interoperate anymore with Google-QUIC.)</p>
@@ -115,7 +115,7 @@ make
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 17 2017 11:44:56 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 17 2017 14:39:31 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
