@@ -1,0 +1,4 @@
+<map id="dec_ack_frame" name="dec_ack_frame">
+<area shape="rect" id="node2" href="$frame_8c.html#aa354e096c509e96b04b9eb2861ddf000" title="dec_lg_ack_len" alt="" coords="176,5,288,32"/>
+<area shape="rect" id="node3" href="$frame_8c.html#a06fb0b82dd62949b991315c88915240a" title="dec_ack_block_len" alt="" coords="165,56,299,83"/>
+</map>

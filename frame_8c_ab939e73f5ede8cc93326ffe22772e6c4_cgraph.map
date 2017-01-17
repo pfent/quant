@@ -1,0 +1,6 @@
+<map id="enc_stream_frame" name="enc_stream_frame">
+<area shape="rect" id="node2" href="$frame_8c.html#a09b918fe9ce60943cb2730bc4d8ecb92" title="calc_sid_len" alt="" coords="185,5,279,32"/>
+<area shape="rect" id="node3" href="$frame_8c.html#a4cd21dd8269a6bd0944b305d0b2c9272" title="enc_sid_len" alt="" coords="187,56,277,83"/>
+<area shape="rect" id="node4" href="$frame_8c.html#a1cc580cb180f77e63292b87f2edc9a78" title="calc_off_len" alt="" coords="186,107,278,133"/>
+<area shape="rect" id="node5" href="$frame_8c.html#ad7b204c176873eae4a8091c859c561f3" title="enc_off_len" alt="" coords="187,157,277,184"/>
+</map>

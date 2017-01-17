@@ -1,0 +1,6 @@
+<map id="q_write" name="q_write">
+<area shape="rect" id="node2" href="$conn_8c.html#ae5a68581dd50e3e0045cd4bbdcc3583b" title="get_conn" alt="" coords="124,5,199,32"/>
+<area shape="rect" id="node4" href="$stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="118,56,205,83"/>
+<area shape="rect" id="node3" href="$conn_8c.html#aeaa4fb21690513ab17b11a4689079040" title="cmp_q_conn" alt="" coords="260,5,356,32"/>
+<area shape="rect" id="node5" href="$stream_8c.html#affb4714f21989546085241847e507347" title="cmp_q_stream" alt="" coords="254,56,362,83"/>
+</map>
