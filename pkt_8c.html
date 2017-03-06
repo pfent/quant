@@ -105,20 +105,20 @@ Include dependency graph for pkt.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="pkt_8c__incl.png" border="0" usemap="#pkt_8c" alt=""/></div>
 <map name="pkt_8c" id="pkt_8c">
-<area shape="rect" id="node6" href="conn_8h.html" title="conn.h" alt="" coords="319,229,380,256"/><area shape="rect" id="node9" href="tommy_8h.html" title="tommy.h" alt="" coords="217,304,289,331"/><area shape="rect" id="node11" href="fnv__1a_8h.html" title="fnv_1a.h" alt="" coords="871,155,943,181"/><area shape="rect" id="node13" href="frame_8h.html" title="frame.h" alt="" coords="772,229,839,256"/><area shape="rect" id="node14" href="marshall_8h.html" title="marshall.h" alt="" coords="695,80,776,107"/><area shape="rect" id="node16" href="pkt_8h.html" title="pkt.h" alt="" coords="463,80,513,107"/><area shape="rect" id="node17" href="quic__internal_8h.html" title="quic_internal.h" alt="" coords="351,155,457,181"/><area shape="rect" id="node19" href="stream_8h.html" title="stream.h" alt="" coords="221,229,293,256"/><area shape="rect" id="node18" href="quic_8h.html" title="quic.h" alt="" coords="405,229,461,256"/></map>
+<area shape="rect" id="node6" href="conn_8h.html" title="conn.h" alt="" coords="224,229,285,256"/><area shape="rect" id="node9" href="tommy_8h.html" title="tommy.h" alt="" coords="227,304,300,331"/><area shape="rect" id="node11" href="fnv__1a_8h.html" title="fnv_1a.h" alt="" coords="944,229,1016,256"/><area shape="rect" id="node13" href="frame_8h.html" title="frame.h" alt="" coords="927,155,993,181"/><area shape="rect" id="node14" href="marshall_8h.html" title="marshall.h" alt="" coords="720,80,801,107"/><area shape="rect" id="node17" href="pkt_8h.html" title="pkt.h" alt="" coords="463,80,513,107"/><area shape="rect" id="node18" href="quic__internal_8h.html" title="quic_internal.h" alt="" coords="351,155,457,181"/><area shape="rect" id="node20" href="stream_8h.html" title="stream.h" alt="" coords="310,229,383,256"/><area shape="rect" id="node19" href="quic_8h.html" title="quic.h" alt="" coords="407,229,464,256"/></map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a63e9c660791eb496716c862d27dac2a2"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8c.html#a63e9c660791eb496716c862d27dac2a2">dec_pkt_nr_len</a> (const uint8_t flags)</td></tr>
-<tr class="memdesc:a63e9c660791eb496716c862d27dac2a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode the packet number length information in the flags field of the public header.  <a href="#a63e9c660791eb496716c862d27dac2a2">More...</a><br/></td></tr>
-<tr class="separator:a63e9c660791eb496716c862d27dac2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afba875a84328a7b8ba50b25c9f7a9ca7"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8c.html#afba875a84328a7b8ba50b25c9f7a9ca7">enc_pkt_nr_len</a> (const uint8_t n)</td></tr>
-<tr class="memdesc:afba875a84328a7b8ba50b25c9f7a9ca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode a byte length <code>n</code> into a representation that can be or'ed into the public header flags.  <a href="#afba875a84328a7b8ba50b25c9f7a9ca7">More...</a><br/></td></tr>
-<tr class="separator:afba875a84328a7b8ba50b25c9f7a9ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b4a333a6bbb6e39ffff9da22494498f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8c.html#a2b4a333a6bbb6e39ffff9da22494498f">calc_req_pkt_nr_len</a> (const uint64_t n)</td></tr>
-<tr class="memdesc:a2b4a333a6bbb6e39ffff9da22494498f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the minimum number of bytes needed to encode packet number <code>n</code>.  <a href="#a2b4a333a6bbb6e39ffff9da22494498f">More...</a><br/></td></tr>
-<tr class="separator:a2b4a333a6bbb6e39ffff9da22494498f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad72e8a1d375e62a414e0ffb583619b32"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8c.html#ad72e8a1d375e62a414e0ffb583619b32">dec_pkt_nr_len</a> (uint8_t flags)</td></tr>
+<tr class="memdesc:ad72e8a1d375e62a414e0ffb583619b32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode the packet number length information in the flags field of the public header.  <a href="#ad72e8a1d375e62a414e0ffb583619b32">More...</a><br/></td></tr>
+<tr class="separator:ad72e8a1d375e62a414e0ffb583619b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1facf1685975ad8504fc56c27fc1f4b9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8c.html#a1facf1685975ad8504fc56c27fc1f4b9">enc_pkt_nr_len</a> (uint8_t n)</td></tr>
+<tr class="memdesc:a1facf1685975ad8504fc56c27fc1f4b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode a byte length <code>n</code> into a representation that can be or'ed into the public header flags.  <a href="#a1facf1685975ad8504fc56c27fc1f4b9">More...</a><br/></td></tr>
+<tr class="separator:a1facf1685975ad8504fc56c27fc1f4b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae965f076c1a2e3e01db61e979e8061cd"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8c.html#ae965f076c1a2e3e01db61e979e8061cd">calc_req_pkt_nr_len</a> (uint64_t n)</td></tr>
+<tr class="memdesc:ae965f076c1a2e3e01db61e979e8061cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the minimum number of bytes needed to encode packet number <code>n</code>.  <a href="#ae965f076c1a2e3e01db61e979e8061cd">More...</a><br/></td></tr>
+<tr class="separator:ae965f076c1a2e3e01db61e979e8061cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c1dea9db151268564c2a5919ba81627"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8c.html#a4c1dea9db151268564c2a5919ba81627">dec_cmn_hdr</a> (struct <a class="el" href="structq__cmn__hdr.html">q_cmn_hdr</a> *const ph, const uint8_t *const buf, const uint16_t len, struct <a class="el" href="structq__conn.html">q_conn</a> **const c)</td></tr>
 <tr class="separator:a4c1dea9db151268564c2a5919ba81627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1db805067d860090cbd70b4f72ffc61"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8c.html#ad1db805067d860090cbd70b4f72ffc61">enc_pkt</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, uint8_t *const buf, const uint16_t len, const uint16_t max_len)</td></tr>
@@ -136,7 +136,7 @@ Variables</h2></td></tr>
 <tr class="separator:a597c7d30036bc9a4fc9e8283d2529685"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a2b4a333a6bbb6e39ffff9da22494498f"></a>
+<a class="anchor" id="ae965f076c1a2e3e01db61e979e8061cd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -210,13 +210,13 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pkt_8c_a4c1dea9db151268564c2a5919ba81627_cgraph.png" border="0" usemap="#pkt_8c_a4c1dea9db151268564c2a5919ba81627_cgraph" alt=""/></div>
 <map name="pkt_8c_a4c1dea9db151268564c2a5919ba81627_cgraph" id="pkt_8c_a4c1dea9db151268564c2a5919ba81627_cgraph">
-<area shape="rect" id="node2" href="conn_8c.html#ae5a68581dd50e3e0045cd4bbdcc3583b" title="get_conn" alt="" coords="173,5,248,32"/><area shape="rect" id="node4" href="pkt_8c.html#a63e9c660791eb496716c862d27dac2a2" title="Decode the packet number length information in the flags field of the public header. " alt="" coords="155,56,266,83"/><area shape="rect" id="node5" href="fnv__1a_8c.html#acaff856244ad17805131314bdee34305" title="Compute an FNV&#45;1a 128&#45;bit hash over the given buffer. " alt="" coords="180,107,241,133"/><area shape="rect" id="node3" href="conn_8c.html#aeaa4fb21690513ab17b11a4689079040" title="cmp_q_conn" alt="" coords="315,5,411,32"/></map>
+<area shape="rect" id="node2" href="conn_8c.html#ae5a68581dd50e3e0045cd4bbdcc3583b" title="get_conn" alt="" coords="173,5,248,32"/><area shape="rect" id="node4" href="pkt_8c.html#ad72e8a1d375e62a414e0ffb583619b32" title="Decode the packet number length information in the flags field of the public header. " alt="" coords="155,56,266,83"/><area shape="rect" id="node5" href="fnv__1a_8c.html#acaff856244ad17805131314bdee34305" title="Compute an FNV&#45;1a 128&#45;bit hash over the given buffer. " alt="" coords="180,107,241,133"/><area shape="rect" id="node3" href="conn_8c.html#aeaa4fb21690513ab17b11a4689079040" title="cmp_q_conn" alt="" coords="315,5,411,32"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a63e9c660791eb496716c862d27dac2a2"></a>
+<a class="anchor" id="ad72e8a1d375e62a414e0ffb583619b32"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -290,13 +290,13 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pkt_8c_ad1db805067d860090cbd70b4f72ffc61_cgraph.png" border="0" usemap="#pkt_8c_ad1db805067d860090cbd70b4f72ffc61_cgraph" alt=""/></div>
 <map name="pkt_8c_ad1db805067d860090cbd70b4f72ffc61_cgraph" id="pkt_8c_ad1db805067d860090cbd70b4f72ffc61_cgraph">
-<area shape="rect" id="node2" href="pkt_8c.html#a2b4a333a6bbb6e39ffff9da22494498f" title="Calculate the minimum number of bytes needed to encode packet number n. " alt="" coords="132,5,271,32"/><area shape="rect" id="node3" href="pkt_8c.html#afba875a84328a7b8ba50b25c9f7a9ca7" title="Encode a byte length n into a representation that can be or&#39;ed into the public header flags..." alt="" coords="146,56,257,83"/><area shape="rect" id="node4" href="frame_8c.html#a1882c12adb51a799dea2dcd530717e8a" title="enc_conn_close_frame" alt="" coords="123,107,279,133"/><area shape="rect" id="node5" href="stream_8c.html#a593a4f463defaf19de2e8d1d8d0561e2" title="enc_stream_frames" alt="" coords="133,157,270,184"/><area shape="rect" id="node12" href="fnv__1a_8c.html#acaff856244ad17805131314bdee34305" title="Compute an FNV&#45;1a 128&#45;bit hash over the given buffer. " alt="" coords="171,208,232,235"/><area shape="rect" id="node6" href="stream_8c.html#abff791cb3fc46556d008a2ed4d0bd844" title="out_pending" alt="" coords="347,132,439,159"/><area shape="rect" id="node7" href="frame_8c.html#ab939e73f5ede8cc93326ffe22772e6c4" title="enc_stream_frame" alt="" coords="328,183,459,209"/><area shape="rect" id="node8" href="frame_8c.html#a09b918fe9ce60943cb2730bc4d8ecb92" title="calc_sid_len" alt="" coords="507,107,602,133"/><area shape="rect" id="node9" href="frame_8c.html#a4cd21dd8269a6bd0944b305d0b2c9272" title="enc_sid_len" alt="" coords="509,157,600,184"/><area shape="rect" id="node10" href="frame_8c.html#a1cc580cb180f77e63292b87f2edc9a78" title="calc_off_len" alt="" coords="509,208,601,235"/><area shape="rect" id="node11" href="frame_8c.html#ad7b204c176873eae4a8091c859c561f3" title="enc_off_len" alt="" coords="510,259,599,285"/></map>
+<area shape="rect" id="node2" href="pkt_8c.html#ae965f076c1a2e3e01db61e979e8061cd" title="Calculate the minimum number of bytes needed to encode packet number n. " alt="" coords="132,5,271,32"/><area shape="rect" id="node3" href="pkt_8c.html#a1facf1685975ad8504fc56c27fc1f4b9" title="Encode a byte length n into a representation that can be or&#39;ed into the public header flags..." alt="" coords="146,56,257,83"/><area shape="rect" id="node4" href="frame_8c.html#a1882c12adb51a799dea2dcd530717e8a" title="enc_conn_close_frame" alt="" coords="123,107,279,133"/><area shape="rect" id="node5" href="stream_8c.html#a593a4f463defaf19de2e8d1d8d0561e2" title="enc_stream_frames" alt="" coords="133,157,270,184"/><area shape="rect" id="node12" href="fnv__1a_8c.html#acaff856244ad17805131314bdee34305" title="Compute an FNV&#45;1a 128&#45;bit hash over the given buffer. " alt="" coords="171,208,232,235"/><area shape="rect" id="node6" href="stream_8c.html#abff791cb3fc46556d008a2ed4d0bd844" title="out_pending" alt="" coords="347,132,439,159"/><area shape="rect" id="node7" href="frame_8c.html#ab939e73f5ede8cc93326ffe22772e6c4" title="enc_stream_frame" alt="" coords="328,183,459,209"/><area shape="rect" id="node8" href="frame_8c.html#a09b918fe9ce60943cb2730bc4d8ecb92" title="calc_sid_len" alt="" coords="507,107,602,133"/><area shape="rect" id="node9" href="frame_8c.html#a4cd21dd8269a6bd0944b305d0b2c9272" title="enc_sid_len" alt="" coords="509,157,600,184"/><area shape="rect" id="node10" href="frame_8c.html#a1cc580cb180f77e63292b87f2edc9a78" title="calc_off_len" alt="" coords="509,208,601,235"/><area shape="rect" id="node11" href="frame_8c.html#ad7b204c176873eae4a8091c859c561f3" title="enc_off_len" alt="" coords="510,259,599,285"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="afba875a84328a7b8ba50b25c9f7a9ca7"></a>
+<a class="anchor" id="a1facf1685975ad8504fc56c27fc1f4b9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -413,7 +413,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 6 2017 12:57:36 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 6 2017 13:18:10 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

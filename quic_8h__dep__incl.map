@@ -1,8 +1,8 @@
 <map id="quic.h" name="quic.h">
-<area shape="rect" id="node2" href="$quic__internal_8h.html" title="quic_internal.h" alt="" coords="131,80,237,107"/>
-<area shape="rect" id="node6" href="$quic_8c.html" title="quic.c" alt="" coords="238,229,295,256"/>
-<area shape="rect" id="node3" href="$pkt_8h.html" title="pkt.h" alt="" coords="128,155,179,181"/>
-<area shape="rect" id="node4" href="$frame_8c.html" title="frame.c" alt="" coords="133,229,200,256"/>
-<area shape="rect" id="node5" href="$pkt_8c.html" title="pkt.c" alt="" coords="5,229,56,256"/>
-<area shape="rect" id="node7" href="$stream_8c.html" title="stream.c" alt="" coords="30,155,103,181"/>
+<area shape="rect" id="node2" href="$quic__internal_8h.html" title="quic_internal.h" alt="" coords="97,80,204,107"/>
+<area shape="rect" id="node3" href="$pkt_8h.html" title="pkt.h" alt="" coords="125,155,176,181"/>
+<area shape="rect" id="node4" href="$frame_8c.html" title="frame.c" alt="" coords="5,229,72,256"/>
+<area shape="rect" id="node5" href="$pkt_8c.html" title="pkt.c" alt="" coords="100,229,151,256"/>
+<area shape="rect" id="node6" href="$quic_8c.html" title="quic.c" alt="" coords="182,229,239,256"/>
+<area shape="rect" id="node7" href="$stream_8c.html" title="stream.c" alt="" coords="251,155,324,181"/>
 </map>

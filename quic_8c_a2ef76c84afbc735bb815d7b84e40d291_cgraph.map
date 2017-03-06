@@ -8,7 +8,7 @@
 <area shape="rect" id="node21" href="$quic_8c.html#a90c4a2089a57929aedd6c26d50be7e5b" title="pick_vers" alt="" coords="246,157,325,184"/>
 <area shape="rect" id="node22" href="$quic_8c.html#a2e7fcf54cbc4d1b6639a25f25408cd25" title="tx" alt="" coords="266,259,305,285"/>
 <area shape="rect" id="node34" href="$quic_8c.html#a69e7942cea0cc55caaf93945b089ecb2" title="pick_server_vers" alt="" coords="225,208,346,235"/>
-<area shape="rect" id="node7" href="$pkt_8c.html#a63e9c660791eb496716c862d27dac2a2" title="Decode the packet number length information in the flags field of the public header. " alt="" coords="629,309,739,336"/>
+<area shape="rect" id="node7" href="$pkt_8c.html#ad72e8a1d375e62a414e0ffb583619b32" title="Decode the packet number length information in the flags field of the public header. " alt="" coords="629,309,739,336"/>
 <area shape="rect" id="node8" href="$fnv__1a_8c.html#acaff856244ad17805131314bdee34305" title="Compute an FNV&#45;1a 128&#45;bit hash over the given buffer. " alt="" coords="653,56,715,83"/>
 <area shape="rect" id="node10" href="$frame_8c.html#ae3d912ede992d578e725d91a6ae19ebc" title="dec_stream_frame" alt="" coords="411,512,541,539"/>
 <area shape="rect" id="node16" href="$frame_8c.html#aa8a8fb3019d8d4072e9b0a44be9c02ee" title="dec_ack_frame" alt="" coords="421,360,531,387"/>
@@ -22,8 +22,8 @@
 <area shape="rect" id="node17" href="$frame_8c.html#aa354e096c509e96b04b9eb2861ddf000" title="dec_lg_ack_len" alt="" coords="628,411,740,437"/>
 <area shape="rect" id="node18" href="$frame_8c.html#a06fb0b82dd62949b991315c88915240a" title="dec_ack_block_len" alt="" coords="617,360,751,387"/>
 <area shape="rect" id="node23" href="$pkt_8c.html#ad1db805067d860090cbd70b4f72ffc61" title="enc_pkt" alt="" coords="442,208,510,235"/>
-<area shape="rect" id="node24" href="$pkt_8c.html#a2b4a333a6bbb6e39ffff9da22494498f" title="Calculate the minimum number of bytes needed to encode packet number n. " alt="" coords="615,157,753,184"/>
-<area shape="rect" id="node25" href="$pkt_8c.html#afba875a84328a7b8ba50b25c9f7a9ca7" title="Encode a byte length n into a representation that can be or&#39;ed into the public header flags..." alt="" coords="629,208,739,235"/>
+<area shape="rect" id="node24" href="$pkt_8c.html#ae965f076c1a2e3e01db61e979e8061cd" title="Calculate the minimum number of bytes needed to encode packet number n. " alt="" coords="615,157,753,184"/>
+<area shape="rect" id="node25" href="$pkt_8c.html#a1facf1685975ad8504fc56c27fc1f4b9" title="Encode a byte length n into a representation that can be or&#39;ed into the public header flags..." alt="" coords="629,208,739,235"/>
 <area shape="rect" id="node26" href="$frame_8c.html#a1882c12adb51a799dea2dcd530717e8a" title="enc_conn_close_frame" alt="" coords="606,259,762,285"/>
 <area shape="rect" id="node27" href="$stream_8c.html#a593a4f463defaf19de2e8d1d8d0561e2" title="enc_stream_frames" alt="" coords="615,107,753,133"/>
 <area shape="rect" id="node28" href="$stream_8c.html#abff791cb3fc46556d008a2ed4d0bd844" title="out_pending" alt="" coords="830,132,922,159"/>
