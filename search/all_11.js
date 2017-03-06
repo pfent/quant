@@ -14,5 +14,5 @@ var searchData=
   ['tx',['tx',['../quic_8c.html#a2e7fcf54cbc4d1b6639a25f25408cd25',1,'quic.c']]],
   ['tx_5fcb',['tx_cb',['../quic_8c.html#ab2e56606d8ca5ad3542b1e8ebef43a5c',1,'quic.c']]],
   ['tx_5fw',['tx_w',['../quic_8c.html#ab2bfac77ea8db4d7dc5290e152e3e8c6',1,'quic.c']]],
-  ['typeof',['typeof',['../marshall_8h.html#acef73c7073b2cf605fb2cb64c5fc4990',1,'marshall.h']]]
+  ['type_5fstr',['type_str',['../marshall_8h.html#a3b6e45eddbf458ee27a546d4fe815a1b',1,'marshall.h']]]
 ];

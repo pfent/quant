@@ -116,7 +116,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">// clang-format off</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="marshall_8h.html#acef73c7073b2cf605fb2cb64c5fc4990">   39</a></span>&#160;<span class="preprocessor">#define typeof(x)                                                              \</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="marshall_8h.html#a3b6e45eddbf458ee27a546d4fe815a1b">   39</a></span>&#160;<span class="preprocessor">#define type_str(x)                                                              \</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">    _Generic((x),                                                              \</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">            uint8_t     : &quot;uint8_t&quot;,                                           \</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">            uint16_t    : &quot;uint16_t&quot;,                                          \</span></div>
@@ -157,7 +157,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">        }                                                                      \</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">        warn(debug, &quot;decoded %zu byte%s from &quot; #buf &quot;[%u..%zu] into %s &quot; #dst  \</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">                    &quot; = &quot; fmt,                                                 \</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">             __len, plural(__len), pos, pos + __len, typeof(dst), dst);        \</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">             __len, plural(__len), pos, pos + __len, type_str(dst), dst);        \</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">        pos += __len;                                                          \</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">    } while (0)</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span></div>
@@ -194,13 +194,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">        }                                                                      \</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">        warn(debug, &quot;encoded %s &quot; #src &quot; = &quot; fmt &quot; into %zu byte%s at &quot; #buf   \</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">                    &quot;[%u..%zu]&quot;,                                               \</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">             typeof(*src), *src, __len, plural(__len), pos, pos + __len);      \</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">             type_str(*src), *src, __len, plural(__len), pos, pos + __len);      \</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">        pos += __len;                                                          \</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">    } while (0)</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 17 2017 14:39:31 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 6 2017 11:26:39 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
