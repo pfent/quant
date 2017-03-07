@@ -82,13 +82,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><p>These are the beginnings of a BSD-licensed C11 implementation of <a href="https://www.chromium.org/quic">QUIC</a>, the Google-originated proposal for a new HTTP/2 transport over UDP. QUANT uses the <a href="https://github.com/NTAP/warpcore">warpcore</a> zero-copy userspace UDP/IPv4 stack on top of the <a href="http://info.iet.unipi.it/~luigi/netmap/">netmap</a> packet I/O framework.</p>
 <p>The quant repository is <a href="https://github.com/NTAP/quant">on GitHub</a>, as is the <a href="https://ntap.github.io/quant/">documentation</a>.</p>
 <h2>Prerequisites</h2>
-<p>We use the <a href="https://cmake.org/">cmake</a> build system, <a href="https://www.vagrantup.com/">vagrant</a> for testing against Google's <a href="https://github.com/google/proto-quic">proto-quic</a> implementation, as well as some other assorted tools. (Note that the <a href="https://datatracker.ietf.org/wg/quic/charter/">IETF flavor of QUIC</a>, which this implementation will track, is not expected to interoperate anymore with Google-QUIC.)</p>
+<p>We use the <a href="https://cmake.org/">cmake</a> build system.</p>
 <p>We use <a href="http://software.schmorp.de/pkg/libev.html">libev</a> as a basis for the event loop that underlies this implementation. The intent is that it will in the end resemble something like what <a href="http://tinyclouds.org/libebb/">libebb</a> offers for HTTP/1.1 and TLS.</p>
 <p>We use <a href="http://www.tommyds.it/">TommyDS</a> for a number of internal datatypes. This may change.</p>
 <p>We <em>plan</em> to use <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS">NSS</a> for its <a href="https://datatracker.ietf.org/doc/draft-ietf-tls-tls13/">TLS 1.3</a> implementation. Another alternative might be <a href="https://www.mbed.com/en/">ARM mbed</a>, once it supports TLS 1.3.</p>
 <p>So you need to install some dependencies. On the Mac, the easiest way is via <a href="http://brew.sh/">Homebrew</a>, so install that first. Then, do </p>
-<pre class="fragment">brew install cmake daemon libev nss tcpdump wireshark doxygen
-brew cask install vagrant
+<pre class="fragment">brew install cmake libev nss doxygen
 </pre><h2>Building</h2>
 <p>Warpcore uses <a href="https://cmake.org/">cmake</a> as a build system. To do an out-of-source build of warpcore (best practice with <code>cmake</code>), do the following to build with <code>make</code> as a generator: </p>
 <pre class="fragment">mkdir Debug
@@ -115,7 +114,7 @@ make
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 7 2017 10:27:42 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 7 2017 12:35:01 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
