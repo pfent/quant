@@ -1,6 +1,6 @@
 <map id="enc_pkt" name="enc_pkt">
-<area shape="rect" id="node2" href="$pkt_8c.html#ae965f076c1a2e3e01db61e979e8061cd" title="Calculate the minimum number of bytes needed to encode packet number n. " alt="" coords="132,5,271,32"/>
-<area shape="rect" id="node3" href="$pkt_8c.html#a1facf1685975ad8504fc56c27fc1f4b9" title="Encode a byte length n into a representation that can be or&#39;ed into the public header flags..." alt="" coords="146,56,257,83"/>
+<area shape="rect" id="node2" href="$pkt_8c.html#a2b4a333a6bbb6e39ffff9da22494498f" title="Calculate the minimum number of bytes needed to encode packet number n. " alt="" coords="132,5,271,32"/>
+<area shape="rect" id="node3" href="$pkt_8c.html#afba875a84328a7b8ba50b25c9f7a9ca7" title="Encode a byte length n into a representation that can be or&#39;ed into the public header flags..." alt="" coords="146,56,257,83"/>
 <area shape="rect" id="node4" href="$frame_8c.html#a1882c12adb51a799dea2dcd530717e8a" title="enc_conn_close_frame" alt="" coords="123,107,279,133"/>
 <area shape="rect" id="node5" href="$stream_8c.html#a593a4f463defaf19de2e8d1d8d0561e2" title="enc_stream_frames" alt="" coords="133,157,270,184"/>
 <area shape="rect" id="node12" href="$fnv__1a_8c.html#acaff856244ad17805131314bdee34305" title="Compute an FNV&#45;1a 128&#45;bit hash over the given buffer. " alt="" coords="171,208,232,235"/>

@@ -1,6 +1,6 @@
 <map id="dec_cmn_hdr" name="dec_cmn_hdr">
 <area shape="rect" id="node2" href="$conn_8c.html#ae5a68581dd50e3e0045cd4bbdcc3583b" title="get_conn" alt="" coords="173,5,248,32"/>
-<area shape="rect" id="node4" href="$pkt_8c.html#ad72e8a1d375e62a414e0ffb583619b32" title="Decode the packet number length information in the flags field of the public header. " alt="" coords="155,56,266,83"/>
+<area shape="rect" id="node4" href="$pkt_8c.html#a63e9c660791eb496716c862d27dac2a2" title="Decode the packet number length information in the flags field of the public header. " alt="" coords="155,56,266,83"/>
 <area shape="rect" id="node5" href="$fnv__1a_8c.html#acaff856244ad17805131314bdee34305" title="Compute an FNV&#45;1a 128&#45;bit hash over the given buffer. " alt="" coords="180,107,241,133"/>
 <area shape="rect" id="node3" href="$conn_8c.html#aeaa4fb21690513ab17b11a4689079040" title="cmp_q_conn" alt="" coords="315,5,411,32"/>
 </map>

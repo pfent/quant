@@ -148,7 +148,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">{</div>
 <div class="line">    <span class="keywordtype">char</span> * ifname = <span class="stringliteral">&quot;lo0&quot;</span>;</div>
 <div class="line">    <span class="keywordtype">char</span> * dest = <span class="stringliteral">&quot;127.0.0.1&quot;</span>;</div>
-<div class="line">    <span class="keywordtype">char</span> * port = <span class="stringliteral">&quot;6121&quot;</span>;</div>
+<div class="line">    <span class="keywordtype">char</span> * port = <span class="stringliteral">&quot;8443&quot;</span>;</div>
 <div class="line">    <span class="keywordtype">long</span> conns = 1;</div>
 <div class="line">    <span class="keywordtype">long</span> timeout = 3;</div>
 <div class="line">    <span class="keywordtype">int</span> ch;</div>
@@ -204,9 +204,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            <span class="keyword">const</span> uint32_t sid = <a name="a2"></a><a class="code" href="quic_8c.html#af9affe5e0a992f9b405a14d3a46f56ad">q_rsv_stream</a>(cid[n]);</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// allocate buffers to transmit a packet</span></div>
-<div class="line">            <span class="keyword">struct </span>w_iov_chain * <span class="keyword">const</span> c = <a name="a3"></a><a class="code" href="quic_8c.html#a12566a44e21f0e7088e3940d77d8e7e3">q_alloc</a>(q, 1024);</div>
-<div class="line">            <span class="keyword">struct </span>w_iov * <span class="keyword">const</span> v = STAILQ_FIRST(c);</div>
-<div class="line">            ensure(STAILQ_NEXT(v, next) == 0, <span class="stringliteral">&quot;w_iov_chain too long&quot;</span>);</div>
+<div class="line">            <span class="keyword">struct </span>w_iov_stailq o = STAILQ_HEAD_INITIALIZER(o);</div>
+<div class="line">            <a name="a3"></a><a class="code" href="quic_8c.html#aea134a17473258cf092d89f1835d989b">q_alloc</a>(q, &amp;o, 1024);</div>
+<div class="line">            <span class="keyword">struct </span>w_iov * <span class="keyword">const</span> v = STAILQ_FIRST(&amp;o);</div>
+<div class="line">            ensure(STAILQ_NEXT(v, next) == 0, <span class="stringliteral">&quot;w_iov_stailq too long&quot;</span>);</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// add some payload data</span></div>
 <div class="line">            v-&gt;len = (uint16_t)snprintf(</div>
@@ -217,10 +218,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line">            <span class="comment">// send the data</span></div>
 <div class="line">            warn(info, <span class="stringliteral">&quot;writing: %s&quot;</span>, (<span class="keywordtype">char</span> *)v-&gt;buf);</div>
-<div class="line">            <a name="a4"></a><a class="code" href="quic_8c.html#aa17edb620b2de1a9642aa51abae2e602">q_write</a>(cid[n], sid, c);</div>
+<div class="line">            <a name="a4"></a><a class="code" href="quic_8c.html#af2062d2961694685400d8fadb839e0a8">q_write</a>(cid[n], sid, &amp;o);</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// return the buffer</span></div>
-<div class="line">            <a name="a5"></a><a class="code" href="quic_8c.html#a4d3fe42e274f1def88f563501fec88e2">q_free</a>(q, c);</div>
+<div class="line">            <a name="a5"></a><a class="code" href="quic_8c.html#a5174cc35e3abbcc0f30c1e59e422331a">q_free</a>(q, &amp;o);</div>
 <div class="line">        }</div>
 <div class="line"></div>
 <div class="line">        <span class="comment">// close the QUIC connection</span></div>
@@ -235,7 +236,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 7 2017 12:35:01 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 27 2017 14:04:16 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

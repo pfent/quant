@@ -116,7 +116,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;sys/socket.h&gt;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">struct </span>w_iov_chain;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">struct </span>w_iov_stailq;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> * __attribute__((nonnull))</div>
@@ -134,9 +134,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;extern uint64_t __attribute__((nonnull))</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<a class="code" href="quic_8h.html#a06d7746daaafec5b8bb7c0aaf530b4e2">q_bind</a>(<span class="keywordtype">void</span> * const q, const uint16_t port);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="quic_8h.html#aa17edb620b2de1a9642aa51abae2e602">q_write</a>(const uint64_t cid,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="quic_8h.html#af2062d2961694685400d8fadb839e0a8">q_write</a>(const uint64_t cid,</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                             const uint32_t sid,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                             struct w_iov_chain * const chain);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                             struct w_iov_stailq * const q);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;extern <span class="keywordtype">size_t</span> __attribute__((nonnull)) <a class="code" href="quic_8h.html#a1c2ee06353063698c0292388fcd45007">q_read</a>(const uint64_t cid,</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                              uint32_t * const sid,</div>
@@ -145,24 +145,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;extern uint32_t <a class="code" href="quic_8h.html#af9affe5e0a992f9b405a14d3a46f56ad">q_rsv_stream</a>(const uint64_t cid);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;extern struct w_iov_chain * __attribute__((nonnull))</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="code" href="quic_8h.html#a12566a44e21f0e7088e3940d77d8e7e3">q_alloc</a>(<span class="keywordtype">void</span> * const w, const uint32_t len);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="code" href="quic_8h.html#aea134a17473258cf092d89f1835d989b">q_alloc</a>(<span class="keywordtype">void</span> * const w, struct w_iov_stailq * const q, const uint32_t len);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;extern <span class="keywordtype">void</span> <a class="code" href="quic_8h.html#a4d3fe42e274f1def88f563501fec88e2">q_free</a>(<span class="keywordtype">void</span> * const w, struct w_iov_chain * const c);</div>
-<div class="ttc" id="quic_8h_html_aafbd908f4441b6d02eda8eb684855065"><div class="ttname"><a href="quic_8h.html#aafbd908f4441b6d02eda8eb684855065">q_close</a></div><div class="ttdeci">void q_close(const uint64_t cid)</div><div class="ttdef"><b>Definition:</b> quic.c:551</div></div>
-<div class="ttc" id="quic_8h_html_a06d7746daaafec5b8bb7c0aaf530b4e2"><div class="ttname"><a href="quic_8h.html#a06d7746daaafec5b8bb7c0aaf530b4e2">q_bind</a></div><div class="ttdeci">uint64_t q_bind(void *const q, const uint16_t port)</div><div class="ttdef"><b>Definition:</b> quic.c:403</div></div>
-<div class="ttc" id="quic_8h_html_aa17edb620b2de1a9642aa51abae2e602"><div class="ttname"><a href="quic_8h.html#aa17edb620b2de1a9642aa51abae2e602">q_write</a></div><div class="ttdeci">void q_write(const uint64_t cid, const uint32_t sid, struct w_iov_chain *const chain)</div><div class="ttdef"><b>Definition:</b> quic.c:320</div></div>
-<div class="ttc" id="quic_8h_html_a4d3fe42e274f1def88f563501fec88e2"><div class="ttname"><a href="quic_8h.html#a4d3fe42e274f1def88f563501fec88e2">q_free</a></div><div class="ttdeci">void q_free(void *const w, struct w_iov_chain *const c)</div><div class="ttdef"><b>Definition:</b> quic.c:264</div></div>
-<div class="ttc" id="quic_8h_html_a12566a44e21f0e7088e3940d77d8e7e3"><div class="ttname"><a href="quic_8h.html#a12566a44e21f0e7088e3940d77d8e7e3">q_alloc</a></div><div class="ttdeci">struct w_iov_chain * q_alloc(void *const w, const uint32_t len)</div><div class="ttdef"><b>Definition:</b> quic.c:258</div></div>
-<div class="ttc" id="quic_8h_html_a2ef76c84afbc735bb815d7b84e40d291"><div class="ttname"><a href="quic_8h.html#a2ef76c84afbc735bb815d7b84e40d291">q_connect</a></div><div class="ttdeci">uint64_t q_connect(void *const q, const struct sockaddr *const peer, const socklen_t peer_len)</div><div class="ttdef"><b>Definition:</b> quic.c:270</div></div>
-<div class="ttc" id="quic_8h_html_a1c2ee06353063698c0292388fcd45007"><div class="ttname"><a href="quic_8h.html#a1c2ee06353063698c0292388fcd45007">q_read</a></div><div class="ttdeci">size_t q_read(const uint64_t cid, uint32_t *const sid, void *const buf, const size_t len)</div><div class="ttdef"><b>Definition:</b> quic.c:357</div></div>
-<div class="ttc" id="quic_8h_html_ab6da80af5cc70a2a77595d5ad7a64290"><div class="ttname"><a href="quic_8h.html#ab6da80af5cc70a2a77595d5ad7a64290">q_init</a></div><div class="ttdeci">void * q_init(const char *const ifname, const long timeout)</div><div class="ttdef"><b>Definition:</b> quic.c:507</div></div>
-<div class="ttc" id="quic_8h_html_af9affe5e0a992f9b405a14d3a46f56ad"><div class="ttname"><a href="quic_8h.html#af9affe5e0a992f9b405a14d3a46f56ad">q_rsv_stream</a></div><div class="ttdeci">uint32_t q_rsv_stream(const uint64_t cid)</div><div class="ttdef"><b>Definition:</b> quic.c:441</div></div>
-<div class="ttc" id="quic_8h_html_ad35b637183ff9f9c00ef371bd986bd30"><div class="ttname"><a href="quic_8h.html#ad35b637183ff9f9c00ef371bd986bd30">q_cleanup</a></div><div class="ttdeci">void q_cleanup(void *const q)</div><div class="ttdef"><b>Definition:</b> quic.c:565</div></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;extern <span class="keywordtype">void</span> <a class="code" href="quic_8h.html#a5174cc35e3abbcc0f30c1e59e422331a">q_free</a>(<span class="keywordtype">void</span> * const w, struct w_iov_stailq * const q);</div>
+<div class="ttc" id="quic_8h_html_aafbd908f4441b6d02eda8eb684855065"><div class="ttname"><a href="quic_8h.html#aafbd908f4441b6d02eda8eb684855065">q_close</a></div><div class="ttdeci">void q_close(const uint64_t cid)</div><div class="ttdef"><b>Definition:</b> quic.c:552</div></div>
+<div class="ttc" id="quic_8h_html_a06d7746daaafec5b8bb7c0aaf530b4e2"><div class="ttname"><a href="quic_8h.html#a06d7746daaafec5b8bb7c0aaf530b4e2">q_bind</a></div><div class="ttdeci">uint64_t q_bind(void *const q, const uint16_t port)</div><div class="ttdef"><b>Definition:</b> quic.c:404</div></div>
+<div class="ttc" id="quic_8h_html_aea134a17473258cf092d89f1835d989b"><div class="ttname"><a href="quic_8h.html#aea134a17473258cf092d89f1835d989b">q_alloc</a></div><div class="ttdeci">void q_alloc(void *const w, struct w_iov_stailq *const q, const uint32_t len)</div><div class="ttdef"><b>Definition:</b> quic.c:259</div></div>
+<div class="ttc" id="quic_8h_html_a2ef76c84afbc735bb815d7b84e40d291"><div class="ttname"><a href="quic_8h.html#a2ef76c84afbc735bb815d7b84e40d291">q_connect</a></div><div class="ttdeci">uint64_t q_connect(void *const q, const struct sockaddr *const peer, const socklen_t peer_len)</div><div class="ttdef"><b>Definition:</b> quic.c:271</div></div>
+<div class="ttc" id="quic_8h_html_a1c2ee06353063698c0292388fcd45007"><div class="ttname"><a href="quic_8h.html#a1c2ee06353063698c0292388fcd45007">q_read</a></div><div class="ttdeci">size_t q_read(const uint64_t cid, uint32_t *const sid, void *const buf, const size_t len)</div><div class="ttdef"><b>Definition:</b> quic.c:358</div></div>
+<div class="ttc" id="quic_8h_html_ab6da80af5cc70a2a77595d5ad7a64290"><div class="ttname"><a href="quic_8h.html#ab6da80af5cc70a2a77595d5ad7a64290">q_init</a></div><div class="ttdeci">void * q_init(const char *const ifname, const long timeout)</div><div class="ttdef"><b>Definition:</b> quic.c:508</div></div>
+<div class="ttc" id="quic_8h_html_af2062d2961694685400d8fadb839e0a8"><div class="ttname"><a href="quic_8h.html#af2062d2961694685400d8fadb839e0a8">q_write</a></div><div class="ttdeci">void q_write(const uint64_t cid, const uint32_t sid, struct w_iov_stailq *const q)</div><div class="ttdef"><b>Definition:</b> quic.c:321</div></div>
+<div class="ttc" id="quic_8h_html_af9affe5e0a992f9b405a14d3a46f56ad"><div class="ttname"><a href="quic_8h.html#af9affe5e0a992f9b405a14d3a46f56ad">q_rsv_stream</a></div><div class="ttdeci">uint32_t q_rsv_stream(const uint64_t cid)</div><div class="ttdef"><b>Definition:</b> quic.c:442</div></div>
+<div class="ttc" id="quic_8h_html_ad35b637183ff9f9c00ef371bd986bd30"><div class="ttname"><a href="quic_8h.html#ad35b637183ff9f9c00ef371bd986bd30">q_cleanup</a></div><div class="ttdeci">void q_cleanup(void *const q)</div><div class="ttdef"><b>Definition:</b> quic.c:566</div></div>
+<div class="ttc" id="quic_8h_html_a5174cc35e3abbcc0f30c1e59e422331a"><div class="ttname"><a href="quic_8h.html#a5174cc35e3abbcc0f30c1e59e422331a">q_free</a></div><div class="ttdeci">void q_free(void *const w, struct w_iov_stailq *const q)</div><div class="ttdef"><b>Definition:</b> quic.c:265</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 7 2017 12:35:01 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 27 2017 14:04:16 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

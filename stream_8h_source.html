@@ -125,7 +125,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structq__stream.html#ad71f34eed2298bb9cba43eeef80bd9ff">   38</a></span>&#160;    uint8_t <a class="code" href="structq__stream.html#ad71f34eed2298bb9cba43eeef80bd9ff">state</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structq__stream.html#a43a749ebc68bd611f9f92be25d4ec555">   39</a></span>&#160;    uint8_t <a class="code" href="structq__stream.html#a43a749ebc68bd611f9f92be25d4ec555">_unused</a>[3];</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structq__stream.html#a0527e0d69e071713041b46a696d5e230">   41</a></span>&#160;    <span class="keyword">struct </span>w_iov_chain * <a class="code" href="structq__stream.html#a0527e0d69e071713041b46a696d5e230">ov</a>; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structq__stream.html#ab1bd084bf90d1751384d4c14b413a557">   41</a></span>&#160;    <span class="keyword">struct </span>w_iov_stailq * <a class="code" href="structq__stream.html#ab1bd084bf90d1751384d4c14b413a557">ov</a>; </div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structq__stream.html#abbb87e5bf80a37aabcf4d8a7224ae98e">   42</a></span>&#160;    uint64_t <a class="code" href="structq__stream.html#abbb87e5bf80a37aabcf4d8a7224ae98e">out_off</a>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structq__stream.html#a188218bfb7a422647728567e0305fbb2">   44</a></span>&#160;    uint8_t * <a class="code" href="structq__stream.html#a188218bfb7a422647728567e0305fbb2">in</a>;</div>
@@ -161,12 +161,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="structq__stream_html_a1a1b8517b0173f2c24c76a1055ffeaba"><div class="ttname"><a href="structq__stream.html#a1a1b8517b0173f2c24c76a1055ffeaba">q_stream::in_len</a></div><div class="ttdeci">uint64_t in_len</div><div class="ttdef"><b>Definition:</b> stream.h:45</div></div>
 <div class="ttc" id="stream_8h_html_a373af28b5e30782936eb0ca9a71f54cf"><div class="ttname"><a href="stream_8h.html#a373af28b5e30782936eb0ca9a71f54cf">get_stream</a></div><div class="ttdeci">struct q_stream * get_stream(struct q_conn *const c, const uint32_t id)</div><div class="ttdef"><b>Definition:</b> stream.c:79</div></div>
 <div class="ttc" id="structq__stream_html_a38251359ff0fb4a2142e0337cc898b77"><div class="ttname"><a href="structq__stream.html#a38251359ff0fb4a2142e0337cc898b77">q_stream::id</a></div><div class="ttdeci">uint32_t id</div><div class="ttdef"><b>Definition:</b> stream.h:37</div></div>
-<div class="ttc" id="structq__stream_html_a0527e0d69e071713041b46a696d5e230"><div class="ttname"><a href="structq__stream.html#a0527e0d69e071713041b46a696d5e230">q_stream::ov</a></div><div class="ttdeci">struct w_iov_chain * ov</div><div class="ttdoc">w_chain containing outbound data. </div><div class="ttdef"><b>Definition:</b> stream.h:41</div></div>
 <div class="ttc" id="structq__stream_html_a43a749ebc68bd611f9f92be25d4ec555"><div class="ttname"><a href="structq__stream.html#a43a749ebc68bd611f9f92be25d4ec555">q_stream::_unused</a></div><div class="ttdeci">uint8_t _unused[3]</div><div class="ttdef"><b>Definition:</b> stream.h:39</div></div>
 <div class="ttc" id="stream_8h_html_a593a4f463defaf19de2e8d1d8d0561e2"><div class="ttname"><a href="stream_8h.html#a593a4f463defaf19de2e8d1d8d0561e2">enc_stream_frames</a></div><div class="ttdeci">uint16_t enc_stream_frames(struct q_conn *const c, uint8_t *const buf, const uint16_t pos, const uint16_t len, const uint16_t max_len)</div><div class="ttdef"><b>Definition:</b> stream.c:58</div></div>
 <div class="ttc" id="structq__conn_html"><div class="ttname"><a href="structq__conn.html">q_conn</a></div><div class="ttdoc">A QUIC connection. </div><div class="ttdef"><b>Definition:</b> conn.h:40</div></div>
 <div class="ttc" id="structq__stream_html_a2cda4e89e538ba6793af2f0c2b4f1dd9"><div class="ttname"><a href="structq__stream.html#a2cda4e89e538ba6793af2f0c2b4f1dd9">q_stream::in_off</a></div><div class="ttdeci">uint64_t in_off</div><div class="ttdef"><b>Definition:</b> stream.h:46</div></div>
 <div class="ttc" id="tommy_8h_html"><div class="ttname"><a href="tommy_8h.html">tommy.h</a></div></div>
+<div class="ttc" id="structq__stream_html_ab1bd084bf90d1751384d4c14b413a557"><div class="ttname"><a href="structq__stream.html#ab1bd084bf90d1751384d4c14b413a557">q_stream::ov</a></div><div class="ttdeci">struct w_iov_stailq * ov</div><div class="ttdoc">tail queue containing outbound data. </div><div class="ttdef"><b>Definition:</b> stream.h:41</div></div>
 <div class="ttc" id="tommy_8h_html_af4f12397387d83cd9c47b663c74f1f29"><div class="ttname"><a href="tommy_8h.html#af4f12397387d83cd9c47b663c74f1f29">node</a></div><div class="ttdeci">#define node</div><div class="ttdef"><b>Definition:</b> tommy.h:43</div></div>
 <div class="ttc" id="structq__stream_html_a5b8ba13474f46cc170e3ab67ce61816d"><div class="ttname"><a href="structq__stream.html#a5b8ba13474f46cc170e3ab67ce61816d">q_stream::c</a></div><div class="ttdeci">struct q_conn * c</div><div class="ttdef"><b>Definition:</b> stream.h:35</div></div>
 <div class="ttc" id="stream_8h_html_ab0b3499ca041b2c1fbad0ecf43919744"><div class="ttname"><a href="stream_8h.html#ab0b3499ca041b2c1fbad0ecf43919744">new_stream</a></div><div class="ttdeci">struct q_stream * new_stream(struct q_conn *const c, const uint32_t id)</div><div class="ttdef"><b>Definition:</b> stream.c:85</div></div>
@@ -178,7 +178,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 7 2017 12:35:01 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 27 2017 14:04:16 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
