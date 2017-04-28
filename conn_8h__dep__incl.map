@@ -1,9 +1,0 @@
-<map id="conn.h" name="conn.h">
-<area shape="rect" id="node2" href="$conn_8c.html" title="conn.c" alt="" coords="5,80,67,107"/>
-<area shape="rect" id="node3" href="$quic__internal_8h.html" title="quic_internal.h" alt="" coords="215,80,321,107"/>
-<area shape="rect" id="node6" href="$pkt_8c.html" title="pkt.c" alt="" coords="305,229,356,256"/>
-<area shape="rect" id="node7" href="$quic_8c.html" title="quic.c" alt="" coords="126,229,183,256"/>
-<area shape="rect" id="node8" href="$stream_8c.html" title="stream.c" alt="" coords="369,155,441,181"/>
-<area shape="rect" id="node4" href="$pkt_8h.html" title="pkt.h" alt="" coords="243,155,293,181"/>
-<area shape="rect" id="node5" href="$frame_8c.html" title="frame.c" alt="" coords="212,229,279,256"/>
-</map>

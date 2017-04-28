@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">quant
-   &#160;<span id="projectnumber">0.0.1</span>
+   &#160;<span id="projectnumber">0.0.2</span>
    </div>
   </td>
  </tr>
@@ -38,8 +38,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -65,7 +63,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -114,9 +112,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="preprocessor">#include &lt;string.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;sys/param.h&gt;</span></div>
 <div class="line"></div>
-<div class="line"><span class="preprocessor">#include &lt;warpcore.h&gt;</span></div>
-<div class="line"></div>
-<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="quic_8h.html">quic.h</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;quic/quic.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;warpcore/warpcore.h&gt;</span></div>
 <div class="line"></div>
 <div class="line"></div>
 <div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> usage(<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> name,</div>
@@ -193,30 +190,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line"></div>
-<div class="line">    <span class="keywordtype">void</span> * <span class="keyword">const</span> q = <a name="a0"></a><a class="code" href="quic_8c.html#ab6da80af5cc70a2a77595d5ad7a64290">q_init</a>(ifname, timeout);</div>
+<div class="line">    <span class="keywordtype">void</span> * <span class="keyword">const</span> q = q_init(ifname, timeout);</div>
 <div class="line">    warn(debug, <span class="stringliteral">&quot;%s ready on %s port %d&quot;</span>, basename(argv[0]), ifname, port);</div>
 <div class="line"></div>
-<div class="line">    <span class="keyword">const</span> uint64_t c = <a name="a1"></a><a class="code" href="quic_8c.html#a06d7746daaafec5b8bb7c0aaf530b4e2">q_bind</a>(q, port);</div>
+<div class="line">    <span class="keyword">const</span> uint64_t c = q_bind(q, port);</div>
 <div class="line">    <span class="keywordflow">if</span> (c) {</div>
 <div class="line">        <span class="keywordtype">size_t</span> len = 0;</div>
 <div class="line">        <span class="keywordflow">do</span> {</div>
 <div class="line">            <span class="keywordtype">char</span> msg[1024];</div>
 <div class="line">            <span class="keyword">const</span> <span class="keywordtype">size_t</span> msg_len = <span class="keyword">sizeof</span>(msg);</div>
 <div class="line">            uint32_t sid;</div>
-<div class="line">            len = <a name="a2"></a><a class="code" href="quic_8c.html#a1c2ee06353063698c0292388fcd45007">q_read</a>(c, &amp;sid, msg, msg_len);</div>
+<div class="line">            len = q_read(c, &amp;sid, msg, msg_len);</div>
 <div class="line">            warn(info, <span class="stringliteral">&quot;rx %zu byte%s on str %d on conn %&quot;</span> PRIu64 <span class="stringliteral">&quot;: %s&quot;</span>, len,</div>
 <div class="line">                 plural(len), sid, c, msg);</div>
 <div class="line">        } <span class="keywordflow">while</span> (len != 0);</div>
-<div class="line">        <a name="a3"></a><a class="code" href="quic_8c.html#aafbd908f4441b6d02eda8eb684855065">q_close</a>(c);</div>
+<div class="line">        q_close(c);</div>
 <div class="line">    }</div>
 <div class="line"></div>
-<div class="line">    <a name="a4"></a><a class="code" href="quic_8c.html#ad35b637183ff9f9c00ef371bd986bd30">q_cleanup</a>(q);</div>
+<div class="line">    q_cleanup(q);</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 27 2017 14:04:16 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 28 2017 09:39:12 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
