@@ -111,6 +111,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;string.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;sys/param.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;sys/queue.h&gt;</span></div>
 <div class="line"></div>
 <div class="line"><span class="preprocessor">#include &lt;quant/quant.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;warpcore/warpcore.h&gt;</span></div>
@@ -127,40 +128,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    printf(<span class="stringliteral">&quot;\t[-t sec]\texit after some seconds (0 to disable); default %ld\n&quot;</span>,</div>
 <div class="line">           timeout);</div>
 <div class="line">}</div>
-<div class="line"></div>
-<div class="line"></div>
-<div class="line"><span class="comment">// static void check_stream(void * arg, void * obj)</span></div>
-<div class="line"><span class="comment">// {</span></div>
-<div class="line"><span class="comment">//     struct q_conn * c = arg;</span></div>
-<div class="line"><span class="comment">//     struct q_stream * s = obj;</span></div>
-<div class="line"><span class="comment">//     if (s-&gt;in_len) {</span></div>
-<div class="line"><span class="comment">//         warn(info,</span></div>
-<div class="line"><span class="comment">//              &quot;received %&quot; PRIu64 &quot; byte%s on stream %d on conn %&quot; PRIu64 &quot;:</span></div>
-<div class="line"><span class="comment">//              %s&quot;,</span></div>
-<div class="line"><span class="comment">//              s-&gt;in_len, plural(s-&gt;in_len), s-&gt;id, c-&gt;id, s-&gt;in);</span></div>
-<div class="line"><span class="comment">//         // we have consumed the data</span></div>
-<div class="line"><span class="comment">//         free(s-&gt;in);</span></div>
-<div class="line"><span class="comment">//         s-&gt;in = 0;</span></div>
-<div class="line"><span class="comment">//         s-&gt;in_len = 0;</span></div>
-<div class="line"><span class="comment">//     }</span></div>
-<div class="line"><span class="comment">// }</span></div>
-<div class="line"></div>
-<div class="line"></div>
-<div class="line"><span class="comment">// static void check_conn(void * obj)</span></div>
-<div class="line"><span class="comment">// {</span></div>
-<div class="line"><span class="comment">//     struct q_conn * c = obj;</span></div>
-<div class="line"><span class="comment">//     hash_foreach_arg(&amp;c-&gt;streams, &amp;check_stream, c);</span></div>
-<div class="line"><span class="comment">// }</span></div>
-<div class="line"></div>
-<div class="line"></div>
-<div class="line"><span class="comment">// static void read_cb(struct ev_loop * const loop</span></div>
-<div class="line"><span class="comment">//                     __attribute__((unused)),</span></div>
-<div class="line"><span class="comment">//                     ev_async * const w __attribute__((unused)),</span></div>
-<div class="line"><span class="comment">//                     int e)</span></div>
-<div class="line"><span class="comment">// {</span></div>
-<div class="line"><span class="comment">//     ensure(e = EV_READ, &quot;unknown event %d&quot;, e);</span></div>
-<div class="line"><span class="comment">//     hash_foreach(&amp;q_conns, &amp;check_conn);</span></div>
-<div class="line"><span class="comment">// }</span></div>
 <div class="line"></div>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[])</div>
@@ -195,25 +162,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line">    <span class="keyword">const</span> uint64_t c = q_bind(q, port);</div>
 <div class="line">    <span class="keywordflow">if</span> (c) {</div>
-<div class="line">        <span class="keywordtype">size_t</span> len = 0;</div>
-<div class="line">        <span class="keywordflow">do</span> {</div>
-<div class="line">            <span class="keywordtype">char</span> msg[1024];</div>
-<div class="line">            <span class="keyword">const</span> <span class="keywordtype">size_t</span> msg_len = <span class="keyword">sizeof</span>(msg);</div>
+<div class="line">        <span class="keywordflow">while</span> (1) {</div>
 <div class="line">            uint32_t sid;</div>
-<div class="line">            len = q_read(c, &amp;sid, msg, msg_len);</div>
-<div class="line">            warn(info, <span class="stringliteral">&quot;rx %zu byte%s on str %d on conn %&quot;</span> PRIu64 <span class="stringliteral">&quot;: %s&quot;</span>, len,</div>
-<div class="line">                 plural(len), sid, c, msg);</div>
-<div class="line">        } <span class="keywordflow">while</span> (len != 0);</div>
-<div class="line">        q_close(c);</div>
+<div class="line">            <span class="keyword">struct </span>w_iov_stailq i = STAILQ_HEAD_INITIALIZER(i);</div>
+<div class="line">            q_read(c, &amp;sid, &amp;i);</div>
+<div class="line">            <span class="keyword">const</span> uint32_t len = w_iov_stailq_len(&amp;i);</div>
+<div class="line">            warn(info, <span class="stringliteral">&quot;rx %u byte%s on str %d on conn %&quot;</span> PRIu64, len,</div>
+<div class="line">                 plural(len), sid, c);</div>
+<div class="line">            <span class="keyword">struct </span>w_iov * v;</div>
+<div class="line">            STAILQ_FOREACH (v, &amp;i, next)</div>
+<div class="line">                warn(info, &quot;%s&quot;, v-&gt;buf);</div>
+<div class="line">            q_close(c);</div>
+<div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    q_cleanup(q);</div>
-<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">    return 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 3 2017 08:13:06 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 5 2017 10:32:43 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

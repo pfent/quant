@@ -196,7 +196,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">             port);</div>
 <div class="line">        cid[n] = q_connect(q, peer-&gt;ai_addr, peer-&gt;ai_addrlen);</div>
 <div class="line"></div>
-<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 2; i++) {</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 1; i++) {</div>
 <div class="line">            <span class="comment">// reserve a new stream</span></div>
 <div class="line">            <span class="keyword">const</span> uint32_t sid = q_rsv_stream(cid[n]);</div>
 <div class="line"></div>
@@ -211,10 +211,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">                v-&gt;buf, 1024, <span class="stringliteral">&quot;***HELLO, STR %u ON CONN %&quot;</span> PRIu64 <span class="stringliteral">&quot;!***&quot;</span>, sid,</div>
 <div class="line">                cid[n]);</div>
 <div class="line">            ensure(v-&gt;len &lt; 1024, <span class="stringliteral">&quot;buffer overrun&quot;</span>);</div>
-<div class="line">            warn(info, <span class="stringliteral">&quot;payload len %u&quot;</span>, v-&gt;len);</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// send the data</span></div>
-<div class="line">            warn(info, <span class="stringliteral">&quot;writing: %s&quot;</span>, (<span class="keywordtype">char</span> *)v-&gt;buf);</div>
+<div class="line">            warn(info, <span class="stringliteral">&quot;writing %u byte%s: %s&quot;</span>, v-&gt;len, plural(v-&gt;len),</div>
+<div class="line">                 (<span class="keywordtype">char</span> *)v-&gt;buf);</div>
 <div class="line">            q_write(cid[n], sid, &amp;o);</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// return the buffer</span></div>
@@ -233,7 +233,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 3 2017 08:13:06 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 5 2017 10:32:43 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
