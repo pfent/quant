@@ -161,20 +161,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    warn(debug, <span class="stringliteral">&quot;%s ready on %s port %d&quot;</span>, basename(argv[0]), ifname, port);</div>
 <div class="line"></div>
 <div class="line">    <span class="keyword">const</span> uint64_t c = q_bind(q, port);</div>
-<div class="line">    <span class="keywordflow">if</span> (c) {</div>
-<div class="line">        <span class="keywordflow">while</span> (1) {</div>
-<div class="line">            uint32_t sid;</div>
-<div class="line">            <span class="keyword">struct </span>w_iov_stailq i = STAILQ_HEAD_INITIALIZER(i);</div>
-<div class="line">            q_read(c, &amp;sid, &amp;i);</div>
-<div class="line">            <span class="keyword">const</span> uint32_t len = w_iov_stailq_len(&amp;i);</div>
-<div class="line">            warn(info, <span class="stringliteral">&quot;rx %u byte%s on str %d on conn %&quot;</span> PRIu64, len,</div>
-<div class="line">                 plural(len), sid, c);</div>
-<div class="line">            <span class="keyword">struct </span>w_iov * v;</div>
-<div class="line">            STAILQ_FOREACH (v, &amp;i, next)</div>
-<div class="line">                warn(info, &quot;%s&quot;, v-&gt;buf);</div>
-<div class="line">            q_close(c);</div>
-<div class="line">        }</div>
-<div class="line">    }</div>
+<div class="line">    uint32_t sid;</div>
+<div class="line">    <span class="keyword">struct </span>w_iov_stailq i = STAILQ_HEAD_INITIALIZER(i);</div>
+<div class="line">    q_read(c, &amp;sid, &amp;i);</div>
+<div class="line">    <span class="keyword">const</span> uint32_t len = w_iov_stailq_len(&amp;i);</div>
+<div class="line">    warn(info, <span class="stringliteral">&quot;rx %u byte%s on str %d on conn %&quot;</span> PRIu64, len, plural(len), sid,</div>
+<div class="line">         c);</div>
+<div class="line">    <span class="keyword">struct </span>w_iov * v;</div>
+<div class="line">    STAILQ_FOREACH (v, &amp;i, next)</div>
+<div class="line">        warn(info, &quot;%s&quot;, v-&gt;buf);</div>
+<div class="line">    q_free(q, &amp;i);</div>
+<div class="line">    q_close(c);</div>
 <div class="line"></div>
 <div class="line">    q_cleanup(q);</div>
 <div class="line">    return 0;</div>
@@ -182,7 +179,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 5 2017 10:32:43 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 5 2017 12:55:11 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
