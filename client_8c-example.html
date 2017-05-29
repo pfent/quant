@@ -38,6 +38,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -63,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -115,7 +117,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="preprocessor">#include &lt;sys/queue.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;sys/socket.h&gt;</span></div>
 <div class="line"></div>
-<div class="line"><span class="preprocessor">#include &lt;quant/quant.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="quant_8h.html">quant/quant.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;warpcore/warpcore.h&gt;</span></div>
 <div class="line"></div>
 <div class="line"></div>
@@ -188,21 +190,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    ensure(peer-&gt;ai_next == 0, <span class="stringliteral">&quot;multiple addresses not supported&quot;</span>);</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// start some connections</span></div>
-<div class="line">    <span class="keywordtype">void</span> * <span class="keyword">const</span> q = q_init(ifname, timeout);</div>
+<div class="line">    <span class="keywordtype">void</span> * <span class="keyword">const</span> q = <a name="a0"></a><a class="code" href="quant_8h.html#ab6da80af5cc70a2a77595d5ad7a64290">q_init</a>(ifname, timeout);</div>
 <div class="line"></div>
 <div class="line">    uint64_t cid[MAX_CONNS];</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n = 0; n &lt; conns; n++) {</div>
 <div class="line">        warn(info, <span class="stringliteral">&quot;%s starting conn #%d to %s:%s&quot;</span>, basename(argv[0]), n, dest,</div>
 <div class="line">             port);</div>
-<div class="line">        cid[n] = q_connect(q, peer-&gt;ai_addr, peer-&gt;ai_addrlen);</div>
+<div class="line">        cid[n] = <a name="a1"></a><a class="code" href="quant_8h.html#a2ef76c84afbc735bb815d7b84e40d291">q_connect</a>(q, peer-&gt;ai_addr, peer-&gt;ai_addrlen);</div>
 <div class="line"></div>
 <div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 1; i++) {</div>
 <div class="line">            <span class="comment">// reserve a new stream</span></div>
-<div class="line">            <span class="keyword">const</span> uint32_t sid = q_rsv_stream(cid[n]);</div>
+<div class="line">            <span class="keyword">const</span> uint32_t sid = <a name="a2"></a><a class="code" href="quant_8h.html#af9affe5e0a992f9b405a14d3a46f56ad">q_rsv_stream</a>(cid[n]);</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// allocate buffers to transmit a packet</span></div>
 <div class="line">            <span class="keyword">struct </span>w_iov_stailq o = STAILQ_HEAD_INITIALIZER(o);</div>
-<div class="line">            q_alloc(q, &amp;o, 1024);</div>
+<div class="line">            <a name="a3"></a><a class="code" href="quant_8h.html#aea134a17473258cf092d89f1835d989b">q_alloc</a>(q, &amp;o, 1024);</div>
 <div class="line">            <span class="keyword">struct </span>w_iov * <span class="keyword">const</span> v = STAILQ_FIRST(&amp;o);</div>
 <div class="line">            ensure(STAILQ_NEXT(v, next) == 0, <span class="stringliteral">&quot;w_iov_stailq too long&quot;</span>);</div>
 <div class="line"></div>
@@ -215,25 +217,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            <span class="comment">// send the data</span></div>
 <div class="line">            warn(info, <span class="stringliteral">&quot;writing %u byte%s: %s&quot;</span>, v-&gt;len, plural(v-&gt;len),</div>
 <div class="line">                 (<span class="keywordtype">char</span> *)v-&gt;buf);</div>
-<div class="line">            q_write(cid[n], sid, &amp;o);</div>
+<div class="line">            <a name="a4"></a><a class="code" href="quant_8h.html#af2062d2961694685400d8fadb839e0a8">q_write</a>(cid[n], sid, &amp;o);</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// return the buffer</span></div>
-<div class="line">            q_free(q, &amp;o);</div>
+<div class="line">            <a name="a5"></a><a class="code" href="quant_8h.html#a5174cc35e3abbcc0f30c1e59e422331a">q_free</a>(q, &amp;o);</div>
 <div class="line">        }</div>
 <div class="line"></div>
 <div class="line">        <span class="comment">// close the QUIC connection</span></div>
-<div class="line">        q_close(cid[n]);</div>
+<div class="line">        <a name="a6"></a><a class="code" href="quant_8h.html#aafbd908f4441b6d02eda8eb684855065">q_close</a>(cid[n]);</div>
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// clean up</span></div>
 <div class="line">    freeaddrinfo(peer);</div>
-<div class="line">    q_cleanup(q);</div>
+<div class="line">    <a name="a7"></a><a class="code" href="quant_8h.html#ad35b637183ff9f9c00ef371bd986bd30">q_cleanup</a>(q);</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 29 2017 14:33:05 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon May 29 2017 14:34:20 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -1,0 +1,22 @@
+<map id="q_init" name="q_init">
+<area shape="rect" id="node2" href="$quic_8c.html#ab2e56606d8ca5ad3542b1e8ebef43a5c" title="tx_cb" alt="" coords="123,107,178,133"/>
+<area shape="rect" id="node19" href="$quic_8c.html#a8e8564e5004abe1d217ff61de295a073" title="timeout_cb" alt="" coords="107,157,194,184"/>
+<area shape="rect" id="node20" href="$quic_8c.html#ac29f2b78e543f92413d3496c4db15969" title="l_run" alt="" coords="125,208,176,235"/>
+<area shape="rect" id="node3" href="$conn_8c.html#a6c7208e98442c20a863090f8a43b0c4a" title="tx" alt="" coords="262,107,301,133"/>
+<area shape="rect" id="node4" href="$conn_8c.html#a87cbf45a6ea3712344313d61e92eef9f" title="check_stream" alt="" coords="368,5,472,32"/>
+<area shape="rect" id="node5" href="$stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="377,56,463,83"/>
+<area shape="rect" id="node7" href="$stream_8c.html#afd061c788af14e4231131a578380c7bf" title="stream_write" alt="" coords="371,107,469,133"/>
+<area shape="rect" id="node8" href="$pkt_8c.html#af392b36c58463646c250f5b01ea07238" title="enc_pkt" alt="" coords="386,157,454,184"/>
+<area shape="rect" id="node18" href="$conn_8c.html#aaeb047f2ca62d850715e3c5093b9cc02" title="set_ld_alarm" alt="" coords="372,208,468,235"/>
+<area shape="rect" id="node6" href="$stream_8c.html#affb4714f21989546085241847e507347" title="cmp_q_stream" alt="" coords="534,31,642,57"/>
+<area shape="rect" id="node9" href="$pkt_8c.html#ae230cbc93b330096c2d781b56bd62364" title="needed_pkt_nr_len" alt="" coords="523,81,653,108"/>
+<area shape="rect" id="node10" href="$frame_8c.html#a67c6e33557d27de1169c8077b81aee56" title="enc_ack_frame" alt="" coords="533,132,643,159"/>
+<area shape="rect" id="node13" href="$frame_8c.html#a9803040a0b723882f8ca5b4b0163e33d" title="enc_padding_frame" alt="" coords="521,183,655,209"/>
+<area shape="rect" id="node14" href="$frame_8c.html#a9107bcfd68e49132fc32e9af1a674c01" title="enc_stream_frame" alt="" coords="523,233,653,260"/>
+<area shape="rect" id="node17" href="$fnv__1a_8c.html#acaff856244ad17805131314bdee34305" title="Compute an FNV&#45;1a 128&#45;bit hash over the given buffer. " alt="" coords="557,284,619,311"/>
+<area shape="rect" id="node11" href="$frame_8c.html#adab36476b9c7a8f2e849ff09f4a0256a" title="needed_lg_ack_len" alt="" coords="715,95,848,121"/>
+<area shape="rect" id="node12" href="$frame_8c.html#a27b79235a006f6c7a5a02e38ebac39d3" title="needed_ack_block_len" alt="" coords="704,145,859,172"/>
+<area shape="rect" id="node15" href="$frame_8c.html#ad82df9b455f7872d73be99589ef0fe19" title="needed_off_len" alt="" coords="726,221,837,248"/>
+<area shape="rect" id="node16" href="$frame_8c.html#a8e66c509135b66e394343247ed37f2e1" title="needed_sid_len" alt="" coords="725,272,837,299"/>
+<area shape="rect" id="node21" href="$quic_8c.html#adcaad6c37574a686baf501d9bcfaec38" title="signal_cb" alt="" coords="243,208,320,235"/>
+</map>

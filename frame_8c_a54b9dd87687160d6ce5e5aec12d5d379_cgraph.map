@@ -1,0 +1,7 @@
+<map id="dec_stream_frame" name="dec_stream_frame">
+<area shape="rect" id="node2" href="$frame_8c.html#acc75ca28a2eb4901b42a3b32c0263309" title="dec_sid_len" alt="" coords="185,5,276,32"/>
+<area shape="rect" id="node3" href="$stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="326,81,413,108"/>
+<area shape="rect" id="node5" href="$stream_8c.html#ab0b3499ca041b2c1fbad0ecf43919744" title="new_stream" alt="" coords="184,107,277,133"/>
+<area shape="rect" id="node6" href="$frame_8c.html#aac68aeedc9f05fc03c29aed36de4d016" title="dec_off_len" alt="" coords="186,157,275,184"/>
+<area shape="rect" id="node4" href="$stream_8c.html#affb4714f21989546085241847e507347" title="cmp_q_stream" alt="" coords="462,81,570,108"/>
+</map>
