@@ -114,6 +114,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;sys/param.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;sys/socket.h&gt;</span></div>
 <div class="line"></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="quant_8h.html">quant/quant.h</a>&gt;</span></div>
@@ -139,6 +140,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    printf(<span class="stringliteral">&quot;\t[-t sec]\t\texit after some seconds (0 to disable); &quot;</span></div>
 <div class="line">           <span class="stringliteral">&quot;default %ld\n&quot;</span>,</div>
 <div class="line">           timeout);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;\t[-v verbosity]\t\tverbosity level (0-%u, default %u)\n&quot;</span>, DLEVEL,</div>
+<div class="line">           _dlevel);</div>
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"></div>
@@ -151,7 +154,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="keywordtype">long</span> timeout = 3;</div>
 <div class="line">    <span class="keywordtype">int</span> ch;</div>
 <div class="line"></div>
-<div class="line">    <span class="keywordflow">while</span> ((ch = getopt(argc, argv, <span class="stringliteral">&quot;hi:d:p:n:t:&quot;</span>)) != -1) {</div>
+<div class="line">    <span class="keywordflow">while</span> ((ch = getopt(argc, argv, <span class="stringliteral">&quot;hi:d:p:n:t:v:&quot;</span>)) != -1) {</div>
 <div class="line">        <span class="keywordflow">switch</span> (ch) {</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;i&#39;</span>:</div>
 <div class="line">            ifname = optarg;</div>
@@ -171,6 +174,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;t&#39;</span>:</div>
 <div class="line">            timeout = strtol(optarg, 0, 10);</div>
 <div class="line">            ensure(errno != EINVAL, <span class="stringliteral">&quot;could not convert to integer&quot;</span>);</div>
+<div class="line">            <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;v&#39;</span>:</div>
+<div class="line">            _dlevel = MIN(DLEVEL, MAX(0, (uint32_t)strtoul(optarg, 0, 10)));</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;h&#39;</span>:</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;?&#39;</span>:</div>
@@ -234,7 +240,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 8 2017 17:14:01 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 8 2017 17:48:02 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
