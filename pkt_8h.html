@@ -122,6 +122,10 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:aa2cbdec5743bbebc99afa6729c5b98f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#aa2cbdec5743bbebc99afa6729c5b98f1">MAX_PKT_LEN</a>&#160;&#160;&#160;1350</td></tr>
 <tr class="separator:aa2cbdec5743bbebc99afa6729c5b98f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ecad45f89f115d0da5700d3c5e9ca75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a7ecad45f89f115d0da5700d3c5e9ca75">MIN_IP4_INI_LEN</a>&#160;&#160;&#160;1252</td></tr>
+<tr class="separator:a7ecad45f89f115d0da5700d3c5e9ca75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6440098fcd7e0084391abf5acb87535"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#ad6440098fcd7e0084391abf5acb87535">MIN_IP6_INI_LEN</a>&#160;&#160;&#160;1232</td></tr>
+<tr class="separator:ad6440098fcd7e0084391abf5acb87535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08c968a9e1a428f2aaf045602f65bd90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a08c968a9e1a428f2aaf045602f65bd90">F_LONG_HDR</a>&#160;&#160;&#160;0x80</td></tr>
 <tr class="separator:a08c968a9e1a428f2aaf045602f65bd90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89bcac328a0573d2b03fb14d180b6eca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a89bcac328a0573d2b03fb14d180b6eca">F_LH_TYPE_VERS_NEG</a>&#160;&#160;&#160;0x01</td></tr>
@@ -209,6 +213,30 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a7ecad45f89f115d0da5700d3c5e9ca75"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN_IP4_INI_LEN&#160;&#160;&#160;1252</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad6440098fcd7e0084391abf5acb87535"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN_IP6_INI_LEN&#160;&#160;&#160;1232</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ab946f0d00880b6dc4a0fcd6be375e2b1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -240,8 +268,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="pkt_8h.html#ab946f0d00880b6dc4a0fcd6be375e2b1">pkt_flags</a>(buf) &amp; <a class="code" href="pkt_8h.html#a08c968a9e1a428f2aaf045602f65bd90">F_LONG_HDR</a> ? <a class="code" href="pkt_8h.html#ab946f0d00880b6dc4a0fcd6be375e2b1">pkt_flags</a>(buf) &amp; ~0x80                      \</div>
 <div class="line">                                 : <a class="code" href="pkt_8h.html#ab946f0d00880b6dc4a0fcd6be375e2b1">pkt_flags</a>(buf) &amp; ~0xe0)</div>
-<div class="ttc" id="pkt_8h_html_ab946f0d00880b6dc4a0fcd6be375e2b1"><div class="ttname"><a href="pkt_8h.html#ab946f0d00880b6dc4a0fcd6be375e2b1">pkt_flags</a></div><div class="ttdeci">#define pkt_flags(buf)</div><div class="ttdef"><b>Definition:</b> pkt.h:39</div></div>
-<div class="ttc" id="pkt_8h_html_a08c968a9e1a428f2aaf045602f65bd90"><div class="ttname"><a href="pkt_8h.html#a08c968a9e1a428f2aaf045602f65bd90">F_LONG_HDR</a></div><div class="ttdeci">#define F_LONG_HDR</div><div class="ttdef"><b>Definition:</b> pkt.h:33</div></div>
+<div class="ttc" id="pkt_8h_html_ab946f0d00880b6dc4a0fcd6be375e2b1"><div class="ttname"><a href="pkt_8h.html#ab946f0d00880b6dc4a0fcd6be375e2b1">pkt_flags</a></div><div class="ttdeci">#define pkt_flags(buf)</div><div class="ttdef"><b>Definition:</b> pkt.h:41</div></div>
+<div class="ttc" id="pkt_8h_html_a08c968a9e1a428f2aaf045602f65bd90"><div class="ttname"><a href="pkt_8h.html#a08c968a9e1a428f2aaf045602f65bd90">F_LONG_HDR</a></div><div class="ttdeci">#define F_LONG_HDR</div><div class="ttdef"><b>Definition:</b> pkt.h:35</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -394,7 +422,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 8 2017 17:48:02 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 8 2017 18:29:31 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
