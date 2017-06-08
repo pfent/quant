@@ -1,9 +1,0 @@
-<map id="src/tommy.h" name="src/tommy.h">
-<area shape="rect" id="node2" href="$conn_8h.html" title="src/conn.h" alt="" coords="264,80,345,107"/>
-<area shape="rect" id="node3" href="$conn_8c.html" title="src/conn.c" alt="" coords="5,155,87,181"/>
-<area shape="rect" id="node5" href="$pkt_8c.html" title="src/pkt.c" alt="" coords="447,155,520,181"/>
-<area shape="rect" id="node6" href="$quic_8c.html" title="src/quic.c" alt="" coords="345,155,423,181"/>
-<area shape="rect" id="node7" href="$stream_8c.html" title="src/stream.c" alt="" coords="113,155,207,181"/>
-<area shape="rect" id="node8" href="$stream_8h.html" title="src/stream.h" alt="" coords="145,80,239,107"/>
-<area shape="rect" id="node4" href="$frame_8c.html" title="src/frame.c" alt="" coords="232,155,320,181"/>
-</map>

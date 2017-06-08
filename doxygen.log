@@ -62,8 +62,6 @@ Preprocessing /home/travis/build/NTAP/quant/lib/src/stream.c...
 Parsing file /home/travis/build/NTAP/quant/lib/src/stream.c...
 Preprocessing /home/travis/build/NTAP/quant/lib/src/stream.h...
 Parsing file /home/travis/build/NTAP/quant/lib/src/stream.h...
-Preprocessing /home/travis/build/NTAP/quant/lib/src/tommy.h...
-Parsing file /home/travis/build/NTAP/quant/lib/src/tommy.h...
 Reading /home/travis/build/NTAP/quant/README.md...
 Building group list...
 Building directory list...
@@ -135,7 +133,6 @@ Parsing code for file src/quic.c...
 Generating code for file src/quic.h...
 Parsing code for file src/stream.c...
 Generating code for file src/stream.h...
-Generating code for file src/tommy.h...
 Parsing code for file /home/travis/build/NTAP/quant/README.md...
 Generating file documentation...
 Generating docs for file include/quant/config.h...
@@ -144,13 +141,11 @@ Generating call graph for function q_bind
 Generating call graph for function q_close
 Generating call graph for function q_connect
 Generating call graph for function q_init
-Generating call graph for function q_read
 Generating call graph for function q_rsv_stream
 Generating call graph for function q_write
 Generating docs for file src/config.c...
 Generating docs for file src/conn.c...
 Generating call graph for function detect_lost_pkts
-Generating call graph for function get_conn
 Generating call graph for function ld_alarm_cb
 Generating call graph for function new_conn
 Generating call graph for function pick_from_server_vers
@@ -158,7 +153,6 @@ Generating call graph for function rx
 Generating call graph for function tx
 Generating docs for file src/conn.h...
 Generating call graph for function detect_lost_pkts
-Generating call graph for function get_conn
 Generating call graph for function new_conn
 Generating call graph for function rx
 Generating call graph for function tx
@@ -186,18 +180,14 @@ Generating call graph for function q_bind
 Generating call graph for function q_close
 Generating call graph for function q_connect
 Generating call graph for function q_init
-Generating call graph for function q_read
 Generating call graph for function q_rsv_stream
 Generating call graph for function q_write
 Generating call graph for function tx_cb
 Generating docs for file src/quic.h...
 Generating docs for file src/stream.c...
-Generating call graph for function get_stream
 Generating call graph for function new_stream
 Generating docs for file src/stream.h...
-Generating call graph for function get_stream
 Generating call graph for function new_stream
-Generating docs for file src/tommy.h...
 Generating docs for file /home/travis/build/NTAP/quant/README.md...
 Generating page documentation...
 Generating group documentation...
@@ -227,100 +217,91 @@ Generating example index...
 finalizing index lists...
 Running dot...
 Generating dot graphs using 33 parallel threads...
-Running dot for graph 1/74
-Running dot for graph 2/74
-Running dot for graph 3/74
-Running dot for graph 4/74
-Running dot for graph 5/74
-Running dot for graph 6/74
-Running dot for graph 7/74
-Running dot for graph 8/74
-Running dot for graph 9/74
-Running dot for graph 10/74
-Running dot for graph 11/74
-Running dot for graph 12/74
-Running dot for graph 13/74
-Running dot for graph 14/74
-Running dot for graph 15/74
-Running dot for graph 16/74
-Running dot for graph 17/74
-Running dot for graph 18/74
-Running dot for graph 19/74
-Running dot for graph 20/74
-Running dot for graph 21/74
-Running dot for graph 22/74
-Running dot for graph 23/74
-Running dot for graph 24/74
-Running dot for graph 25/74
-Running dot for graph 26/74
-Running dot for graph 27/74
-Running dot for graph 28/74
-Running dot for graph 29/74
-Running dot for graph 30/74
-Running dot for graph 31/74
-Running dot for graph 32/74
-Running dot for graph 33/74
-Running dot for graph 34/74
-Running dot for graph 35/74
-Running dot for graph 36/74
-Running dot for graph 37/74
-Running dot for graph 38/74
-Running dot for graph 39/74
-Running dot for graph 40/74
-Running dot for graph 41/74
-Running dot for graph 42/74
-Running dot for graph 43/74
-Running dot for graph 44/74
-Running dot for graph 45/74
-Running dot for graph 46/74
-Running dot for graph 47/74
-Running dot for graph 48/74
-Running dot for graph 49/74
-Running dot for graph 50/74
-Running dot for graph 51/74
-Running dot for graph 52/74
-Running dot for graph 53/74
-Running dot for graph 54/74
-Running dot for graph 55/74
-Running dot for graph 56/74
-Running dot for graph 57/74
-Running dot for graph 58/74
-Running dot for graph 59/74
-Running dot for graph 60/74
-Running dot for graph 61/74
-Running dot for graph 62/74
-Running dot for graph 63/74
-Running dot for graph 64/74
-Running dot for graph 65/74
-Running dot for graph 66/74
-Running dot for graph 67/74
-Running dot for graph 68/74
-Running dot for graph 69/74
-Running dot for graph 70/74
-Running dot for graph 71/74
-Running dot for graph 72/74
-Running dot for graph 73/74
-Running dot for graph 74/74
-Patching output file 1/21
-Patching output file 2/21
-Patching output file 3/21
-Patching output file 4/21
-Patching output file 5/21
-Patching output file 6/21
-Patching output file 7/21
-Patching output file 8/21
-Patching output file 9/21
-Patching output file 10/21
-Patching output file 11/21
-Patching output file 12/21
-Patching output file 13/21
-Patching output file 14/21
-Patching output file 15/21
-Patching output file 16/21
-Patching output file 17/21
-Patching output file 18/21
-Patching output file 19/21
-Patching output file 20/21
-Patching output file 21/21
-lookup cache used 204/65536 hits=1021 misses=208
+Running dot for graph 1/66
+Running dot for graph 2/66
+Running dot for graph 3/66
+Running dot for graph 4/66
+Running dot for graph 5/66
+Running dot for graph 6/66
+Running dot for graph 7/66
+Running dot for graph 8/66
+Running dot for graph 9/66
+Running dot for graph 10/66
+Running dot for graph 11/66
+Running dot for graph 12/66
+Running dot for graph 13/66
+Running dot for graph 14/66
+Running dot for graph 15/66
+Running dot for graph 16/66
+Running dot for graph 17/66
+Running dot for graph 18/66
+Running dot for graph 19/66
+Running dot for graph 20/66
+Running dot for graph 21/66
+Running dot for graph 22/66
+Running dot for graph 23/66
+Running dot for graph 24/66
+Running dot for graph 25/66
+Running dot for graph 26/66
+Running dot for graph 27/66
+Running dot for graph 28/66
+Running dot for graph 29/66
+Running dot for graph 30/66
+Running dot for graph 31/66
+Running dot for graph 32/66
+Running dot for graph 33/66
+Running dot for graph 34/66
+Running dot for graph 35/66
+Running dot for graph 36/66
+Running dot for graph 37/66
+Running dot for graph 38/66
+Running dot for graph 39/66
+Running dot for graph 40/66
+Running dot for graph 41/66
+Running dot for graph 42/66
+Running dot for graph 43/66
+Running dot for graph 44/66
+Running dot for graph 45/66
+Running dot for graph 46/66
+Running dot for graph 47/66
+Running dot for graph 48/66
+Running dot for graph 49/66
+Running dot for graph 50/66
+Running dot for graph 51/66
+Running dot for graph 52/66
+Running dot for graph 53/66
+Running dot for graph 54/66
+Running dot for graph 55/66
+Running dot for graph 56/66
+Running dot for graph 57/66
+Running dot for graph 58/66
+Running dot for graph 59/66
+Running dot for graph 60/66
+Running dot for graph 61/66
+Running dot for graph 62/66
+Running dot for graph 63/66
+Running dot for graph 64/66
+Running dot for graph 65/66
+Running dot for graph 66/66
+Patching output file 1/20
+Patching output file 2/20
+Patching output file 3/20
+Patching output file 4/20
+Patching output file 5/20
+Patching output file 6/20
+Patching output file 7/20
+Patching output file 8/20
+Patching output file 9/20
+Patching output file 10/20
+Patching output file 11/20
+Patching output file 12/20
+Patching output file 13/20
+Patching output file 14/20
+Patching output file 15/20
+Patching output file 16/20
+Patching output file 17/20
+Patching output file 18/20
+Patching output file 19/20
+Patching output file 20/20
+lookup cache used 206/65536 hits=1017 misses=208
 finished...

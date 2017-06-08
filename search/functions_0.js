@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['check_5fstream',['check_stream',['../conn_8c.html#a87cbf45a6ea3712344313d61e92eef9f',1,'conn.c']]],
-  ['cmp_5fq_5fconn',['cmp_q_conn',['../conn_8c.html#aeaa4fb21690513ab17b11a4689079040',1,'conn.c']]],
-  ['cmp_5fq_5fstream',['cmp_q_stream',['../stream_8c.html#affb4714f21989546085241847e507347',1,'stream.c']]]
+  ['conn_5fcmp',['conn_cmp',['../conn_8c.html#a6e57d3d33168af0723c96ce5f53ea343',1,'conn_cmp(const struct q_conn *const a, const struct q_conn *const b):&#160;conn.c'],['../conn_8h.html#a6e57d3d33168af0723c96ce5f53ea343',1,'conn_cmp(const struct q_conn *const a, const struct q_conn *const b):&#160;conn.c']]]
 ];

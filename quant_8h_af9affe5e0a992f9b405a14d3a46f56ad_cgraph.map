@@ -1,7 +1,5 @@
 <map id="q_rsv_stream" name="q_rsv_stream">
 <area shape="rect" id="node2" href="$conn_8c.html#ae5a68581dd50e3e0045cd4bbdcc3583b" title="get_conn" alt="" coords="164,5,239,32"/>
-<area shape="rect" id="node4" href="$stream_8c.html#ab0b3499ca041b2c1fbad0ecf43919744" title="new_stream" alt="" coords="155,56,248,83"/>
-<area shape="rect" id="node3" href="$conn_8c.html#aeaa4fb21690513ab17b11a4689079040" title="cmp_q_conn" alt="" coords="296,5,392,32"/>
-<area shape="rect" id="node5" href="$stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="301,56,387,83"/>
-<area shape="rect" id="node6" href="$stream_8c.html#affb4714f21989546085241847e507347" title="cmp_q_stream" alt="" coords="441,56,549,83"/>
+<area shape="rect" id="node3" href="$stream_8c.html#ab0b3499ca041b2c1fbad0ecf43919744" title="new_stream" alt="" coords="155,56,248,83"/>
+<area shape="rect" id="node4" href="$stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="297,56,383,83"/>
 </map>
