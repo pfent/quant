@@ -100,22 +100,22 @@ Include dependency graph for fnv_1a.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="fnv__1a_8c__incl.png" border="0" usemap="#src_2fnv__1a_8c" alt=""/></div>
 <map name="src_2fnv__1a_8c" id="src_2fnv__1a_8c">
-<area shape="rect" id="node5" href="fnv__1a_8h.html" title="fnv_1a.h" alt="" coords="280,80,352,107"/></map>
+<area shape="rect" id="node5" href="fnv__1a_8h.html" title="fnv_1a.h" alt="" coords="41,80,113,107"/></map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:acaff856244ad17805131314bdee34305"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fnv__1a_8h.html#ab76ef99db23830c7fec1e3019737cab4">uint128_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnv__1a_8c.html#acaff856244ad17805131314bdee34305">fnv_1a</a> (const void *const buf, const size_t len, const size_t skip_pos, const size_t skip_len)</td></tr>
-<tr class="memdesc:acaff856244ad17805131314bdee34305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute an <a href="http://www.isthe.com/chongo/tech/comp/fnv/index.html">FNV-1a 128-bit hash</a> over the given buffer.  <a href="#acaff856244ad17805131314bdee34305">More...</a><br/></td></tr>
-<tr class="separator:acaff856244ad17805131314bdee34305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1a00a9fdbb5c3d2f338b60855c9c69b"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnv__1a_8c.html#ae1a00a9fdbb5c3d2f338b60855c9c69b">fnv_1a</a> (const void *const buf, const size_t len, const size_t skip_pos, const size_t skip_len)</td></tr>
+<tr class="memdesc:ae1a00a9fdbb5c3d2f338b60855c9c69b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute an <a href="http://www.isthe.com/chongo/tech/comp/fnv/index.html">FNV-1a 64-bit hash</a> over the given buffer.  <a href="#ae1a00a9fdbb5c3d2f338b60855c9c69b">More...</a><br/></td></tr>
+<tr class="separator:ae1a00a9fdbb5c3d2f338b60855c9c69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="acaff856244ad17805131314bdee34305"></a>
+<a class="anchor" id="ae1a00a9fdbb5c3d2f338b60855c9c69b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="fnv__1a_8h.html#ab76ef99db23830c7fec1e3019737cab4">uint128_t</a> fnv_1a </td>
+          <td class="memname">uint64_t fnv_1a </td>
           <td>(</td>
           <td class="paramtype">const void *const&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
@@ -146,7 +146,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compute an <a href="http://www.isthe.com/chongo/tech/comp/fnv/index.html">FNV-1a 128-bit hash</a> over the given buffer. </p>
+<p>Compute an <a href="http://www.isthe.com/chongo/tech/comp/fnv/index.html">FNV-1a 64-bit hash</a> over the given buffer. </p>
 <p>A region of the buffer can be excluded from the hash, by specifying its starting position in <code>skip_pos</code> and its length in <code>skip_len</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -157,14 +157,14 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The FNV-1a 128-bit hash of <code>buffer</code>, excluding the skip region. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The FNV-1a 64-bit hash of <code>buffer</code>, excluding the skip region. </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 8 2017 18:29:31 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 9 2017 08:04:23 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -117,26 +117,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#ifndef _UINT128_T</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span>__extension__ <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> __int128 <a class="code" href="fnv__1a_8h.html#ab76ef99db23830c7fec1e3019737cab4">uint128_t</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="fnv__1a_8h.html#a1c98a0f4b02f4283af4233cf6e3ad121">   38</a></span>&#160;<span class="preprocessor">#define HASH_LEN 12</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">extern</span> <a class="code" href="fnv__1a_8h.html#ab76ef99db23830c7fec1e3019737cab4">uint128_t</a> __attribute__((nonnull)) <a class="code" href="fnv__1a_8h.html#acaff856244ad17805131314bdee34305">fnv_1a</a>(const <span class="keywordtype">void</span> * const buf,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                                 const <span class="keywordtype">size_t</span> len,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                                 const <span class="keywordtype">size_t</span> skip_pos,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                                 const <span class="keywordtype">size_t</span> skip_len);</div>
-<div class="ttc" id="fnv__1a_8h_html_acaff856244ad17805131314bdee34305"><div class="ttname"><a href="fnv__1a_8h.html#acaff856244ad17805131314bdee34305">fnv_1a</a></div><div class="ttdeci">uint128_t fnv_1a(const void *const buf, const size_t len, const size_t skip_pos, const size_t skip_len)</div><div class="ttdoc">Compute an FNV-1a 128-bit hash over the given buffer. </div><div class="ttdef"><b>Definition:</b> fnv_1a.c:34</div></div>
-<div class="ttc" id="fnv__1a_8h_html_ab76ef99db23830c7fec1e3019737cab4"><div class="ttname"><a href="fnv__1a_8h.html#ab76ef99db23830c7fec1e3019737cab4">uint128_t</a></div><div class="ttdeci">__extension__ typedef unsigned __int128 uint128_t</div><div class="ttdoc">If stdint.h doesn&#39;t define uint128_t, define it for ourselves. </div><div class="ttdef"><b>Definition:</b> fnv_1a.h:33</div></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="fnv__1a_8h.html#a1c98a0f4b02f4283af4233cf6e3ad121">   33</a></span>&#160;<span class="preprocessor">#define HASH_LEN sizeof(uint64_t)</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">extern</span> uint64_t __attribute__((nonnull)) <a class="code" href="fnv__1a_8h.html#ae1a00a9fdbb5c3d2f338b60855c9c69b">fnv_1a</a>(const <span class="keywordtype">void</span> * const buf,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                                const <span class="keywordtype">size_t</span> len,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                                const <span class="keywordtype">size_t</span> skip_pos,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                const <span class="keywordtype">size_t</span> skip_len);</div>
+<div class="ttc" id="fnv__1a_8h_html_ae1a00a9fdbb5c3d2f338b60855c9c69b"><div class="ttname"><a href="fnv__1a_8h.html#ae1a00a9fdbb5c3d2f338b60855c9c69b">fnv_1a</a></div><div class="ttdeci">uint64_t fnv_1a(const void *const buf, const size_t len, const size_t skip_pos, const size_t skip_len)</div><div class="ttdoc">Compute an FNV-1a 64-bit hash over the given buffer. </div><div class="ttdef"><b>Definition:</b> fnv_1a.c:34</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 8 2017 18:29:31 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 9 2017 08:04:23 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

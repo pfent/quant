@@ -1,6 +1,6 @@
 <map id="rx" name="rx">
 <area shape="rect" id="node2" href="$pkt_8c.html#af0c2548c80f9aec7643d340d0b246aec" title="pkt_hdr_len" alt="" coords="317,107,406,133"/>
-<area shape="rect" id="node3" href="$fnv__1a_8c.html#acaff856244ad17805131314bdee34305" title="Compute an FNV&#45;1a 128&#45;bit hash over the given buffer. " alt="" coords="840,639,901,665"/>
+<area shape="rect" id="node3" href="$fnv__1a_8c.html#ae1a00a9fdbb5c3d2f338b60855c9c69b" title="Compute an FNV&#45;1a 64&#45;bit hash over the given buffer. " alt="" coords="840,639,901,665"/>
 <area shape="rect" id="node4" href="$pkt_8c.html#a08eb3f954249b39d9e8cbb7d5adde388" title="pkt_cid" alt="" coords="139,765,203,792"/>
 <area shape="rect" id="node5" href="$conn_8c.html#ae5a68581dd50e3e0045cd4bbdcc3583b" title="get_conn" alt="" coords="324,461,399,488"/>
 <area shape="rect" id="node6" href="$conn_8c.html#aa13ff0f675f34fca12b639925e69be09" title="new_conn" alt="" coords="130,411,211,437"/>

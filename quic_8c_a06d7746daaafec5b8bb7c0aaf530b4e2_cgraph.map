@@ -2,7 +2,7 @@
 <area shape="rect" id="node2" href="$conn_8c.html#a5749bce479cdde76574b7a1845be7fec" title="rx" alt="" coords="115,413,154,439"/>
 <area shape="rect" id="node6" href="$conn_8c.html#ae5a68581dd50e3e0045cd4bbdcc3583b" title="get_conn" alt="" coords="433,565,508,591"/>
 <area shape="rect" id="node3" href="$pkt_8c.html#af0c2548c80f9aec7643d340d0b246aec" title="pkt_hdr_len" alt="" coords="426,155,515,182"/>
-<area shape="rect" id="node4" href="$fnv__1a_8c.html#acaff856244ad17805131314bdee34305" title="Compute an FNV&#45;1a 128&#45;bit hash over the given buffer. " alt="" coords="949,274,1011,301"/>
+<area shape="rect" id="node4" href="$fnv__1a_8c.html#ae1a00a9fdbb5c3d2f338b60855c9c69b" title="Compute an FNV&#45;1a 64&#45;bit hash over the given buffer. " alt="" coords="949,274,1011,301"/>
 <area shape="rect" id="node5" href="$pkt_8c.html#a08eb3f954249b39d9e8cbb7d5adde388" title="pkt_cid" alt="" coords="248,565,312,591"/>
 <area shape="rect" id="node7" href="$conn_8c.html#aa13ff0f675f34fca12b639925e69be09" title="new_conn" alt="" coords="239,463,321,490"/>
 <area shape="rect" id="node9" href="$conn_8c.html#a6c7208e98442c20a863090f8a43b0c4a" title="tx" alt="" coords="631,666,670,693"/>
