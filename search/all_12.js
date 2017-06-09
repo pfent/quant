@@ -2,6 +2,7 @@ var searchData=
 [
   ['sent_5fpkts',['sent_pkts',['../structq__conn.html#aaa1eaca40769e432cbf59682625ea9c7',1,'q_conn']]],
   ['set_5fld_5falarm',['set_ld_alarm',['../conn_8c.html#aaeb047f2ca62d850715e3c5093b9cc02',1,'set_ld_alarm(struct q_conn *const c):&#160;conn.c'],['../conn_8h.html#aaeb047f2ca62d850715e3c5093b9cc02',1,'set_ld_alarm(struct q_conn *const c):&#160;conn.c']]],
+  ['sign_5fcert',['sign_cert',['../quic_8c.html#ac180834e385cefe3039a17aa369ff13d',1,'quic.c']]],
   ['signal_5fcb',['signal_cb',['../quic_8c.html#adcaad6c37574a686baf501d9bcfaec38',1,'quic.c']]],
   ['sock',['sock',['../structq__conn.html#a36327baf8c4d695023b07a2270587e78',1,'q_conn']]],
   ['splay_5fentry',['SPLAY_ENTRY',['../structq__conn.html#aa56d9d1a83ede65076db2fc4f5090688',1,'q_conn::SPLAY_ENTRY()'],['../structq__stream.html#a5c3ed9f0896bb2bea69cc6a67cb3113c',1,'q_stream::SPLAY_ENTRY()']]],

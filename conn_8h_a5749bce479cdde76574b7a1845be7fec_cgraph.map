@@ -3,7 +3,7 @@
 <area shape="rect" id="node3" href="$fnv__1a_8c.html#ae1a00a9fdbb5c3d2f338b60855c9c69b" title="Compute an FNV&#45;1a 64&#45;bit hash over the given buffer. " alt="" coords="840,639,901,665"/>
 <area shape="rect" id="node4" href="$pkt_8c.html#a08eb3f954249b39d9e8cbb7d5adde388" title="pkt_cid" alt="" coords="139,765,203,792"/>
 <area shape="rect" id="node5" href="$conn_8c.html#ae5a68581dd50e3e0045cd4bbdcc3583b" title="get_conn" alt="" coords="324,461,399,488"/>
-<area shape="rect" id="node6" href="$conn_8c.html#aa13ff0f675f34fca12b639925e69be09" title="new_conn" alt="" coords="130,411,211,437"/>
+<area shape="rect" id="node6" href="$conn_8c.html#afd6813238a52d2966dfdb1150235f734" title="new_conn" alt="" coords="130,411,211,437"/>
 <area shape="rect" id="node8" href="$conn_8c.html#a6c7208e98442c20a863090f8a43b0c4a" title="tx" alt="" coords="522,360,561,387"/>
 <area shape="rect" id="node9" href="$stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="662,537,749,564"/>
 <area shape="rect" id="node10" href="$stream_8c.html#afd061c788af14e4231131a578380c7bf" title="stream_write" alt="" coords="657,639,754,665"/>

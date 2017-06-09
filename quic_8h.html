@@ -92,7 +92,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">quic.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;pthread.h&gt;</code><br/>
+<div class="textblock"><code>#include &lt;picotls.h&gt;</code><br/>
+<code>#include &lt;pthread.h&gt;</code><br/>
 <code>#include &lt;stdint.h&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for quic.h:</div>
@@ -169,7 +170,11 @@ Variables</h2></td></tr>
 <tr class="memitem:ae9a33cf3a5f649662f26bb9eae92bf7b"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#ae9a33cf3a5f649662f26bb9eae92bf7b">ok_vers_len</a></td></tr>
 <tr class="separator:ae9a33cf3a5f649662f26bb9eae92bf7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace3d6f707ce0e4bbc265805c365acd93"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#ace3d6f707ce0e4bbc265805c365acd93">accept_queue</a></td></tr>
+<tr class="memdesc:ace3d6f707ce0e4bbc265805c365acd93"><td class="mdescLeft">&#160;</td><td class="mdescRight">The accept "queue" - currently one deep.  <a href="#ace3d6f707ce0e4bbc265805c365acd93">More...</a><br/></td></tr>
 <tr class="separator:ace3d6f707ce0e4bbc265805c365acd93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6bbbfab377148ff702ada5a44a7ae73"><td class="memItemLeft" align="right" valign="top">ptls_context_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#af6bbbfab377148ff702ada5a44a7ae73">tls_ctx</a></td></tr>
+<tr class="memdesc:af6bbbfab377148ff702ada5a44a7ae73"><td class="mdescLeft">&#160;</td><td class="mdescRight">TLS context.  <a href="#af6bbbfab377148ff702ada5a44a7ae73">More...</a><br/></td></tr>
+<tr class="separator:af6bbbfab377148ff702ada5a44a7ae73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a57cf52613e865fe135897085d0a23be7"></a>
@@ -362,6 +367,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The accept "queue" - currently one deep. </p>
+
 </div>
 </div>
 <a class="anchor" id="aad188aa3de77d3dc55ed8f1502a3ddc2"></a>
@@ -439,6 +446,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="af6bbbfab377148ff702ada5a44a7ae73"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ptls_context_t tls_ctx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TLS context. </p>
+
+</div>
+</div>
 <a class="anchor" id="a881eaeaba781f42a453b709cc216e0a7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -454,7 +475,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 9 2017 10:07:36 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 9 2017 15:36:00 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

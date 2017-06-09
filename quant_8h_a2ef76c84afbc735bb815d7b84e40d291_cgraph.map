@@ -1,5 +1,5 @@
 <map id="q_connect" name="q_connect">
-<area shape="rect" id="node2" href="$conn_8c.html#aa13ff0f675f34fca12b639925e69be09" title="new_conn" alt="" coords="261,107,342,134"/>
+<area shape="rect" id="node2" href="$conn_8c.html#afd6813238a52d2966dfdb1150235f734" title="new_conn" alt="" coords="261,107,342,134"/>
 <area shape="rect" id="node7" href="$stream_8c.html#afd061c788af14e4231131a578380c7bf" title="stream_write" alt="" coords="787,665,885,691"/>
 <area shape="rect" id="node21" href="$conn_8c.html#a5749bce479cdde76574b7a1845be7fec" title="rx" alt="" coords="137,411,175,438"/>
 <area shape="rect" id="node25" href="$stream_8c.html#ab0b3499ca041b2c1fbad0ecf43919744" title="new_stream" alt="" coords="625,614,719,641"/>

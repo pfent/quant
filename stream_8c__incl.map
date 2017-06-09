@@ -1,5 +1,5 @@
 <map id="src/stream.c" name="src/stream.c">
-<area shape="rect" id="node8" href="$conn_8h.html" title="conn.h" alt="" coords="219,80,280,107"/>
-<area shape="rect" id="node11" href="$quic_8h.html" title="quic.h" alt="" coords="683,80,740,107"/>
-<area shape="rect" id="node13" href="$stream_8h.html" title="stream.h" alt="" coords="534,80,607,107"/>
+<area shape="rect" id="node9" href="$conn_8h.html" title="conn.h" alt="" coords="645,80,707,107"/>
+<area shape="rect" id="node13" href="$quic_8h.html" title="quic.h" alt="" coords="363,80,420,107"/>
+<area shape="rect" id="node15" href="$stream_8h.html" title="stream.h" alt="" coords="497,80,569,107"/>
 </map>
