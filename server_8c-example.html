@@ -128,9 +128,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    printf(<span class="stringliteral">&quot;\t[-p port]\tdestination port; default %d\n&quot;</span>, port);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\t[-t sec]\texit after some seconds (0 to disable); default %ld\n&quot;</span>,</div>
 <div class="line">           timeout);</div>
-<div class="line">    printf(<span class="stringliteral">&quot;\t[-v verbosity]\t\tverbosity level (0-%u, default %u)\n&quot;</span>, DLEVEL,</div>
+<div class="line"><span class="preprocessor">#ifndef NDEBUG</span></div>
+<div class="line"><span class="preprocessor"></span>    printf(<span class="stringliteral">&quot;\t[-v verbosity]\t\tverbosity level (0-%u, default %u)\n&quot;</span>, DLEVEL,</div>
 <div class="line">           _dlevel);</div>
-<div class="line">}</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span>}</div>
 <div class="line"></div>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[])</div>
@@ -140,7 +142,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="keywordtype">long</span> timeout = 3;</div>
 <div class="line">    <span class="keywordtype">int</span> ch;</div>
 <div class="line"></div>
-<div class="line">    <span class="keywordflow">while</span> ((ch = getopt(argc, argv, <span class="stringliteral">&quot;hi:p:t:v:&quot;</span>)) != -1) {</div>
+<div class="line">    <span class="keywordflow">while</span> ((ch = getopt(argc, argv, <span class="stringliteral">&quot;hi:p:t:&quot;</span></div>
+<div class="line">#ifndef NDEBUG</div>
+<div class="line">                                    <span class="stringliteral">&quot;v:&quot;</span></div>
+<div class="line">#endif</div>
+<div class="line">                        )) != -1) {</div>
 <div class="line">        <span class="keywordflow">switch</span> (ch) {</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;i&#39;</span>:</div>
 <div class="line">            ifname = optarg;</div>
@@ -152,10 +158,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            timeout = strtol(optarg, 0, 10);</div>
 <div class="line">            ensure(errno != EINVAL, <span class="stringliteral">&quot;could not convert to integer&quot;</span>);</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;v&#39;</span>:</div>
+<div class="line"><span class="preprocessor">#ifndef NDEBUG</span></div>
+<div class="line"><span class="preprocessor"></span>        <span class="keywordflow">case</span> <span class="charliteral">&#39;v&#39;</span>:</div>
 <div class="line">            _dlevel = MIN(DLEVEL, MAX(0, (uint32_t)strtoul(optarg, 0, 10)));</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;h&#39;</span>:</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span>        <span class="keywordflow">case</span> <span class="charliteral">&#39;h&#39;</span>:</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;?&#39;</span>:</div>
 <div class="line">        <span class="keywordflow">default</span>:</div>
 <div class="line">            usage(basename(argv[0]), ifname, port, timeout);</div>
@@ -164,16 +172,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    <span class="keywordtype">void</span> * <span class="keyword">const</span> q = <a name="a0"></a><a class="code" href="quant_8h.html#ab6da80af5cc70a2a77595d5ad7a64290">q_init</a>(ifname, timeout);</div>
-<div class="line">    warn(debug, <span class="stringliteral">&quot;%s ready on %s port %d&quot;</span>, basename(argv[0]), ifname, port);</div>
-<div class="line"></div>
 <div class="line">    <span class="keyword">const</span> uint64_t c = <a name="a1"></a><a class="code" href="quant_8h.html#a06d7746daaafec5b8bb7c0aaf530b4e2">q_bind</a>(q, port);</div>
+<div class="line">    warn(debug, <span class="stringliteral">&quot;%s ready on %s port %d&quot;</span>, basename(argv[0]), ifname, port);</div>
 <div class="line">    uint32_t sid;</div>
 <div class="line">    <span class="keyword">struct </span>w_iov_stailq i = STAILQ_HEAD_INITIALIZER(i);</div>
 <div class="line">    <a name="a2"></a><a class="code" href="quant_8h.html#a4f72eddb9a14ad96dafcdce10fbf18bc">q_read</a>(c, &amp;sid, &amp;i);</div>
-<div class="line">    <span class="keyword">const</span> uint32_t len = w_iov_stailq_len(&amp;i);</div>
+<div class="line"><span class="preprocessor">#ifndef NDEBUG</span></div>
+<div class="line"><span class="preprocessor"></span>    <span class="keyword">const</span> uint32_t len = w_iov_stailq_len(&amp;i);</div>
 <div class="line">    warn(info, <span class="stringliteral">&quot;rx %u byte%s on str %d on conn %&quot;</span> PRIx64, len, plural(len), sid,</div>
 <div class="line">         c);</div>
-<div class="line">    <span class="keyword">struct </span>w_iov * v;</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span>    <span class="keyword">struct </span>w_iov * v;</div>
 <div class="line">    STAILQ_FOREACH (v, &amp;i, next)</div>
 <div class="line">        warn(info, &quot;%s&quot;, v-&gt;buf);</div>
 <div class="line">    <a name="a3"></a><a class="code" href="quant_8h.html#a5174cc35e3abbcc0f30c1e59e422331a">q_free</a>(q, &amp;i);</div>
@@ -185,7 +194,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 9 2017 08:04:23 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 9 2017 10:07:36 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
