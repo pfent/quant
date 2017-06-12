@@ -4,7 +4,7 @@ var searchData=
   ['t_5fpadding',['T_PADDING',['../frame_8h.html#a0aeea3b4e95e4699f58083e5b52a04de',1,'frame.h']]],
   ['t_5fstream',['T_STREAM',['../frame_8h.html#afce8a4da88f0bd3f6c5598e7d8639c0b',1,'frame.h']]],
   ['tid',['tid',['../quic_8c.html#a3a5ba243b3ab4b6093afb178de0f9509',1,'quic.c']]],
-  ['time',['time',['../structpkt__info.html#afd2a4293d6700537cac319f357b2cd01',1,'pkt_info']]],
+  ['time',['time',['../structpkt__meta.html#a8e7d32c007e445a426a81e4ac317ffc9',1,'pkt_meta']]],
   ['timeout_5fcb',['timeout_cb',['../quic_8c.html#a8e8564e5004abe1d217ff61de295a073',1,'quic.c']]],
   ['tlp_5fcnt',['tlp_cnt',['../structq__conn.html#a538387a04ea6244b9a23aa97bca09131',1,'q_conn']]],
   ['tls',['tls',['../structq__conn.html#ac839e7ae544f51ff729ddc61e4eab974',1,'q_conn']]],

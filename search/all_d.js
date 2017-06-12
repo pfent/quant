@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['nbufs',['nbufs',['../quic_8c.html#af04bbb4616509b300b7ff3a7a49660de',1,'quic.c']]],
   ['needed_5fack_5fblock_5flen',['needed_ack_block_len',['../frame_8c.html#a27b79235a006f6c7a5a02e38ebac39d3',1,'frame.c']]],
   ['needed_5flg_5fack_5flen',['needed_lg_ack_len',['../frame_8c.html#adab36476b9c7a8f2e849ff09f4a0256a',1,'frame.c']]],
   ['needed_5foff_5flen',['needed_off_len',['../frame_8c.html#ad82df9b455f7872d73be99589ef0fe19',1,'frame.c']]],

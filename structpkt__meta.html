@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>quant: pkt_info Struct Reference</title>
+<title>quant: pkt_meta Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,36 +85,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">pkt_info Struct Reference</div>  </div>
+<div class="title">pkt_meta Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p>Packet meta-data associated with w_iov buffers.  
- <a href="structpkt__info.html#details">More...</a></p>
+ <a href="structpkt__meta.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="pkt_8h_source.html">pkt.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="quic_8h_source.html">quic.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:afd2a4293d6700537cac319f357b2cd01"><td class="memItemLeft" align="right" valign="top">ev_tstamp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpkt__info.html#afd2a4293d6700537cac319f357b2cd01">time</a></td></tr>
-<tr class="memdesc:afd2a4293d6700537cac319f357b2cd01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmission timestamp.  <a href="#afd2a4293d6700537cac319f357b2cd01">More...</a><br/></td></tr>
-<tr class="separator:afd2a4293d6700537cac319f357b2cd01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51b244fb33c36c935740860daecb2085"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpkt__info.html#a51b244fb33c36c935740860daecb2085">ack_cnt</a></td></tr>
-<tr class="memdesc:a51b244fb33c36c935740860daecb2085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of ACKs we have seen for this packet.  <a href="#a51b244fb33c36c935740860daecb2085">More...</a><br/></td></tr>
-<tr class="separator:a51b244fb33c36c935740860daecb2085"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d11a5e69e308d92412e71b2d68ad12b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpkt__info.html#a2d11a5e69e308d92412e71b2d68ad12b">ref_cnt</a></td></tr>
-<tr class="memdesc:a2d11a5e69e308d92412e71b2d68ad12b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference count. Increase on assign, free when zero.  <a href="#a2d11a5e69e308d92412e71b2d68ad12b">More...</a><br/></td></tr>
-<tr class="separator:a2d11a5e69e308d92412e71b2d68ad12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e7d32c007e445a426a81e4ac317ffc9"><td class="memItemLeft" align="right" valign="top">ev_tstamp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpkt__meta.html#a8e7d32c007e445a426a81e4ac317ffc9">time</a></td></tr>
+<tr class="memdesc:a8e7d32c007e445a426a81e4ac317ffc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmission timestamp.  <a href="#a8e7d32c007e445a426a81e4ac317ffc9">More...</a><br/></td></tr>
+<tr class="separator:a8e7d32c007e445a426a81e4ac317ffc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f9e808e4d126685f0d28dd09501feaa"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpkt__meta.html#a5f9e808e4d126685f0d28dd09501feaa">ack_cnt</a></td></tr>
+<tr class="memdesc:a5f9e808e4d126685f0d28dd09501feaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of ACKs we have seen for this packet.  <a href="#a5f9e808e4d126685f0d28dd09501feaa">More...</a><br/></td></tr>
+<tr class="separator:a5f9e808e4d126685f0d28dd09501feaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99c038ba116ffb4472268fa3876661a3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpkt__meta.html#a99c038ba116ffb4472268fa3876661a3">ref_cnt</a></td></tr>
+<tr class="memdesc:a99c038ba116ffb4472268fa3876661a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference count. Increase on assign, free when zero.  <a href="#a99c038ba116ffb4472268fa3876661a3">More...</a><br/></td></tr>
+<tr class="separator:a99c038ba116ffb4472268fa3876661a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Packet meta-data associated with w_iov buffers. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="a51b244fb33c36c935740860daecb2085"></a>
+<a class="anchor" id="a5f9e808e4d126685f0d28dd09501feaa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t pkt_info::ack_cnt</td>
+          <td class="memname">uint32_t pkt_meta::ack_cnt</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -123,12 +123,12 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2d11a5e69e308d92412e71b2d68ad12b"></a>
+<a class="anchor" id="a99c038ba116ffb4472268fa3876661a3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t pkt_info::ref_cnt</td>
+          <td class="memname">uint32_t pkt_meta::ref_cnt</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -137,12 +137,12 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afd2a4293d6700537cac319f357b2cd01"></a>
+<a class="anchor" id="a8e7d32c007e445a426a81e4ac317ffc9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ev_tstamp pkt_info::time</td>
+          <td class="memname">ev_tstamp pkt_meta::time</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -152,12 +152,12 @@ Data Fields</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>src/<a class="el" href="pkt_8h_source.html">pkt.h</a></li>
+<li>src/<a class="el" href="quic_8h_source.html">quic.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 10 2017 12:24:36 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 12 2017 10:00:53 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
