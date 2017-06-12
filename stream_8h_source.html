@@ -150,11 +150,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;extern struct q_stream * __attribute__((nonnull))</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<a class="code" href="stream_8h.html#ab0b3499ca041b2c1fbad0ecf43919744">new_stream</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c, const uint32_t <span class="keywordtype">id</span>);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;extern <span class="keywordtype">void</span> <a class="code" href="stream_8h.html#afd061c788af14e4231131a578380c7bf">stream_write</a>(struct q_stream * const s,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                         const <span class="keywordtype">void</span> * const data,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                         const uint16_t len);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;extern <span class="keywordtype">void</span> <a class="code" href="stream_8h.html#a4e4ffbaeb2ba426cef80e34b1d3664d8">tls_handshake</a>(struct q_stream * const s __attribute__((nonnull)),</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                          const struct w_iov * const i);</div>
 <div class="ttc" id="stream_8h_html_a373af28b5e30782936eb0ca9a71f54cf"><div class="ttname"><a href="stream_8h.html#a373af28b5e30782936eb0ca9a71f54cf">get_stream</a></div><div class="ttdeci">struct q_stream * get_stream(struct q_conn *const c, const uint32_t id)</div><div class="ttdef"><b>Definition:</b> stream.c:52</div></div>
 <div class="ttc" id="structq__stream_html_a38251359ff0fb4a2142e0337cc898b77"><div class="ttname"><a href="structq__stream.html#a38251359ff0fb4a2142e0337cc898b77">q_stream::id</a></div><div class="ttdeci">uint32_t id</div><div class="ttdef"><b>Definition:</b> stream.h:38</div></div>
+<div class="ttc" id="stream_8h_html_a4e4ffbaeb2ba426cef80e34b1d3664d8"><div class="ttname"><a href="stream_8h.html#a4e4ffbaeb2ba426cef80e34b1d3664d8">tls_handshake</a></div><div class="ttdeci">void tls_handshake(struct q_stream *const s, const struct w_iov *const i)</div><div class="ttdef"><b>Definition:</b> stream.c:92</div></div>
 <div class="ttc" id="structq__stream_html_a43a749ebc68bd611f9f92be25d4ec555"><div class="ttname"><a href="structq__stream.html#a43a749ebc68bd611f9f92be25d4ec555">q_stream::_unused</a></div><div class="ttdeci">uint8_t _unused[3]</div><div class="ttdef"><b>Definition:</b> stream.h:40</div></div>
 <div class="ttc" id="structq__conn_html"><div class="ttname"><a href="structq__conn.html">q_conn</a></div><div class="ttdoc">A QUIC connection. </div><div class="ttdef"><b>Definition:</b> conn.h:45</div></div>
 <div class="ttc" id="structq__stream_html_a2cda4e89e538ba6793af2f0c2b4f1dd9"><div class="ttname"><a href="structq__stream.html#a2cda4e89e538ba6793af2f0c2b4f1dd9">q_stream::in_off</a></div><div class="ttdeci">uint64_t in_off</div><div class="ttdef"><b>Definition:</b> stream.h:46</div></div>
@@ -163,7 +163,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="structq__stream_html_ad9ee8de50912de317d4a29096fcda5c8"><div class="ttname"><a href="structq__stream.html#ad9ee8de50912de317d4a29096fcda5c8">q_stream::o</a></div><div class="ttdeci">struct w_iov_stailq o</div><div class="ttdoc">tail queue containing outbound data </div><div class="ttdef"><b>Definition:</b> stream.h:42</div></div>
 <div class="ttc" id="structq__stream_html_a5b8ba13474f46cc170e3ab67ce61816d"><div class="ttname"><a href="structq__stream.html#a5b8ba13474f46cc170e3ab67ce61816d">q_stream::c</a></div><div class="ttdeci">struct q_conn * c</div><div class="ttdef"><b>Definition:</b> stream.h:36</div></div>
 <div class="ttc" id="stream_8h_html_ab0b3499ca041b2c1fbad0ecf43919744"><div class="ttname"><a href="stream_8h.html#ab0b3499ca041b2c1fbad0ecf43919744">new_stream</a></div><div class="ttdeci">struct q_stream * new_stream(struct q_conn *const c, const uint32_t id)</div><div class="ttdef"><b>Definition:</b> stream.c:59</div></div>
-<div class="ttc" id="stream_8h_html_afd061c788af14e4231131a578380c7bf"><div class="ttname"><a href="stream_8h.html#afd061c788af14e4231131a578380c7bf">stream_write</a></div><div class="ttdeci">void stream_write(struct q_stream *const s, const void *const data, const uint16_t len)</div><div class="ttdef"><b>Definition:</b> stream.c:92</div></div>
 <div class="ttc" id="structq__stream_html"><div class="ttname"><a href="structq__stream.html">q_stream</a></div><div class="ttdef"><b>Definition:</b> stream.h:34</div></div>
 <div class="ttc" id="structq__stream_html_ad71f34eed2298bb9cba43eeef80bd9ff"><div class="ttname"><a href="structq__stream.html#ad71f34eed2298bb9cba43eeef80bd9ff">q_stream::state</a></div><div class="ttdeci">uint8_t state</div><div class="ttdef"><b>Definition:</b> stream.h:39</div></div>
 <div class="ttc" id="structq__stream_html_abbb87e5bf80a37aabcf4d8a7224ae98e"><div class="ttname"><a href="structq__stream.html#abbb87e5bf80a37aabcf4d8a7224ae98e">q_stream::out_off</a></div><div class="ttdeci">uint64_t out_off</div><div class="ttdef"><b>Definition:</b> stream.h:43</div></div>
@@ -171,7 +170,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 12 2017 10:00:53 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 12 2017 14:48:55 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

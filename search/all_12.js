@@ -12,6 +12,5 @@ var searchData=
   ['state',['state',['../structq__conn.html#a5862c28e9e8bcbca7973d58b40a20956',1,'q_conn::state()'],['../structq__stream.html#ad71f34eed2298bb9cba43eeef80bd9ff',1,'q_stream::state()']]],
   ['stream_2ec',['stream.c',['../stream_8c.html',1,'']]],
   ['stream_2eh',['stream.h',['../stream_8h.html',1,'']]],
-  ['stream_5fcmp',['stream_cmp',['../stream_8c.html#aa40c6e1e57a7214eb15717b70c51a50b',1,'stream_cmp(const struct q_stream *const a, const struct q_stream *const b):&#160;stream.c'],['../stream_8h.html#aa40c6e1e57a7214eb15717b70c51a50b',1,'stream_cmp(const struct q_stream *const a, const struct q_stream *const b):&#160;stream.c']]],
-  ['stream_5fwrite',['stream_write',['../stream_8c.html#afd061c788af14e4231131a578380c7bf',1,'stream_write(struct q_stream *const s, const void *const data, const uint16_t len):&#160;stream.c'],['../stream_8h.html#afd061c788af14e4231131a578380c7bf',1,'stream_write(struct q_stream *const s, const void *const data, const uint16_t len):&#160;stream.c']]]
+  ['stream_5fcmp',['stream_cmp',['../stream_8c.html#aa40c6e1e57a7214eb15717b70c51a50b',1,'stream_cmp(const struct q_stream *const a, const struct q_stream *const b):&#160;stream.c'],['../stream_8h.html#aa40c6e1e57a7214eb15717b70c51a50b',1,'stream_cmp(const struct q_stream *const a, const struct q_stream *const b):&#160;stream.c']]]
 ];

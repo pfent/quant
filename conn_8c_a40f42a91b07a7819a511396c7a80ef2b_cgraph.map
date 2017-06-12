@@ -1,18 +1,18 @@
 <map id="ld_alarm_cb" name="ld_alarm_cb">
 <area shape="rect" id="node2" href="$conn_8c.html#a6c7208e98442c20a863090f8a43b0c4a" title="tx" alt="" coords="187,107,226,133"/>
-<area shape="rect" id="node15" href="$conn_8c.html#aaeb047f2ca62d850715e3c5093b9cc02" title="set_ld_alarm" alt="" coords="316,157,412,184"/>
+<area shape="rect" id="node15" href="$conn_8c.html#aaeb047f2ca62d850715e3c5093b9cc02" title="set_ld_alarm" alt="" coords="320,157,416,184"/>
 <area shape="rect" id="node16" href="$conn_8c.html#a51821558a515ddb0a82519dda6ca59bb" title="detect_lost_pkts" alt="" coords="147,208,266,235"/>
-<area shape="rect" id="node3" href="$stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="321,5,407,32"/>
-<area shape="rect" id="node4" href="$stream_8c.html#afd061c788af14e4231131a578380c7bf" title="stream_write" alt="" coords="315,56,413,83"/>
-<area shape="rect" id="node5" href="$pkt_8c.html#af392b36c58463646c250f5b01ea07238" title="enc_pkt" alt="" coords="330,107,398,133"/>
-<area shape="rect" id="node6" href="$pkt_8c.html#ae230cbc93b330096c2d781b56bd62364" title="needed_pkt_nr_len" alt="" coords="464,5,595,32"/>
-<area shape="rect" id="node7" href="$frame_8c.html#a67c6e33557d27de1169c8077b81aee56" title="enc_ack_frame" alt="" coords="474,56,585,83"/>
-<area shape="rect" id="node10" href="$frame_8c.html#a9803040a0b723882f8ca5b4b0163e33d" title="enc_padding_frame" alt="" coords="462,107,597,133"/>
-<area shape="rect" id="node11" href="$frame_8c.html#a9107bcfd68e49132fc32e9af1a674c01" title="enc_stream_frame" alt="" coords="464,157,595,184"/>
-<area shape="rect" id="node14" href="$fnv__1a_8c.html#ae1a00a9fdbb5c3d2f338b60855c9c69b" title="Compute an FNV&#45;1a 64&#45;bit hash over the given buffer. " alt="" coords="499,208,560,235"/>
-<area shape="rect" id="node8" href="$frame_8c.html#adab36476b9c7a8f2e849ff09f4a0256a" title="needed_lg_ack_len" alt="" coords="656,19,789,45"/>
-<area shape="rect" id="node9" href="$frame_8c.html#a27b79235a006f6c7a5a02e38ebac39d3" title="needed_ack_block_len" alt="" coords="645,69,800,96"/>
-<area shape="rect" id="node12" href="$frame_8c.html#ad82df9b455f7872d73be99589ef0fe19" title="needed_off_len" alt="" coords="667,145,778,172"/>
-<area shape="rect" id="node13" href="$frame_8c.html#a8e66c509135b66e394343247ed37f2e1" title="needed_sid_len" alt="" coords="667,196,779,223"/>
-<area shape="rect" id="node17" href="$pkt_8c.html#a4e7492d3137d929fbd3cf8d941de2ffe" title="pkt_nr" alt="" coords="335,208,393,235"/>
+<area shape="rect" id="node3" href="$stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="325,5,411,32"/>
+<area shape="rect" id="node4" href="$stream_8c.html#a4e4ffbaeb2ba426cef80e34b1d3664d8" title="tls_handshake" alt="" coords="315,56,421,83"/>
+<area shape="rect" id="node5" href="$pkt_8c.html#af392b36c58463646c250f5b01ea07238" title="enc_pkt" alt="" coords="334,107,402,133"/>
+<area shape="rect" id="node6" href="$pkt_8c.html#ae230cbc93b330096c2d781b56bd62364" title="needed_pkt_nr_len" alt="" coords="472,5,603,32"/>
+<area shape="rect" id="node7" href="$frame_8c.html#a67c6e33557d27de1169c8077b81aee56" title="enc_ack_frame" alt="" coords="482,56,593,83"/>
+<area shape="rect" id="node10" href="$frame_8c.html#a9803040a0b723882f8ca5b4b0163e33d" title="enc_padding_frame" alt="" coords="470,107,605,133"/>
+<area shape="rect" id="node11" href="$frame_8c.html#a9107bcfd68e49132fc32e9af1a674c01" title="enc_stream_frame" alt="" coords="472,157,603,184"/>
+<area shape="rect" id="node14" href="$fnv__1a_8c.html#ae1a00a9fdbb5c3d2f338b60855c9c69b" title="Compute an FNV&#45;1a 64&#45;bit hash over the given buffer. " alt="" coords="507,208,568,235"/>
+<area shape="rect" id="node8" href="$frame_8c.html#adab36476b9c7a8f2e849ff09f4a0256a" title="needed_lg_ack_len" alt="" coords="664,19,797,45"/>
+<area shape="rect" id="node9" href="$frame_8c.html#a27b79235a006f6c7a5a02e38ebac39d3" title="needed_ack_block_len" alt="" coords="653,69,808,96"/>
+<area shape="rect" id="node12" href="$frame_8c.html#ad82df9b455f7872d73be99589ef0fe19" title="needed_off_len" alt="" coords="675,145,786,172"/>
+<area shape="rect" id="node13" href="$frame_8c.html#a8e66c509135b66e394343247ed37f2e1" title="needed_sid_len" alt="" coords="675,196,787,223"/>
+<area shape="rect" id="node17" href="$pkt_8c.html#a4e7492d3137d929fbd3cf8d941de2ffe" title="pkt_nr" alt="" coords="339,208,397,235"/>
 </map>
