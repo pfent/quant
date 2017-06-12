@@ -150,8 +150,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;extern struct q_stream * __attribute__((nonnull))</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<a class="code" href="stream_8h.html#ab0b3499ca041b2c1fbad0ecf43919744">new_stream</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c, const uint32_t <span class="keywordtype">id</span>);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;extern <span class="keywordtype">void</span> <a class="code" href="stream_8h.html#a4e4ffbaeb2ba426cef80e34b1d3664d8">tls_handshake</a>(struct q_stream * const s __attribute__((nonnull)),</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                          const struct w_iov * const i);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull(1)))</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<a class="code" href="stream_8h.html#a4e4ffbaeb2ba426cef80e34b1d3664d8">tls_handshake</a>(struct q_stream * const s, const struct w_iov * const i);</div>
 <div class="ttc" id="stream_8h_html_a373af28b5e30782936eb0ca9a71f54cf"><div class="ttname"><a href="stream_8h.html#a373af28b5e30782936eb0ca9a71f54cf">get_stream</a></div><div class="ttdeci">struct q_stream * get_stream(struct q_conn *const c, const uint32_t id)</div><div class="ttdef"><b>Definition:</b> stream.c:52</div></div>
 <div class="ttc" id="structq__stream_html_a38251359ff0fb4a2142e0337cc898b77"><div class="ttname"><a href="structq__stream.html#a38251359ff0fb4a2142e0337cc898b77">q_stream::id</a></div><div class="ttdeci">uint32_t id</div><div class="ttdef"><b>Definition:</b> stream.h:38</div></div>
 <div class="ttc" id="stream_8h_html_a4e4ffbaeb2ba426cef80e34b1d3664d8"><div class="ttname"><a href="stream_8h.html#a4e4ffbaeb2ba426cef80e34b1d3664d8">tls_handshake</a></div><div class="ttdeci">void tls_handshake(struct q_stream *const s, const struct w_iov *const i)</div><div class="ttdef"><b>Definition:</b> stream.c:92</div></div>
@@ -170,7 +170,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 12 2017 14:48:55 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 12 2017 15:19:09 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
