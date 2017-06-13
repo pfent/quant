@@ -1,6 +1,6 @@
 <map id="tx" name="tx">
 <area shape="rect" id="node2" href="$stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="103,5,190,32"/>
-<area shape="rect" id="node3" href="$stream_8c.html#a4e4ffbaeb2ba426cef80e34b1d3664d8" title="tls_handshake" alt="" coords="93,56,200,83"/>
+<area shape="rect" id="node3" href="$conn_8c.html#acd8a2ca2ad3ada1a30dca3a8551f0e00" title="tls_handshake" alt="" coords="93,56,200,83"/>
 <area shape="rect" id="node4" href="$pkt_8c.html#af392b36c58463646c250f5b01ea07238" title="enc_pkt" alt="" coords="113,107,181,133"/>
 <area shape="rect" id="node14" href="$conn_8c.html#aaeb047f2ca62d850715e3c5093b9cc02" title="set_ld_alarm" alt="" coords="99,157,195,184"/>
 <area shape="rect" id="node5" href="$pkt_8c.html#ae230cbc93b330096c2d781b56bd62364" title="needed_pkt_nr_len" alt="" coords="251,5,381,32"/>
