@@ -1,8 +1,8 @@
 <map id="dec_ack_frame" name="dec_ack_frame">
 <area shape="rect" id="node2" href="$frame_8c.html#aa354e096c509e96b04b9eb2861ddf000" title="dec_lg_ack_len" alt="" coords="176,5,288,32"/>
 <area shape="rect" id="node3" href="$frame_8c.html#afcaa05aa775007dbf3ca784e319becfe" title="find_sent_pkt" alt="" coords="182,56,282,83"/>
-<area shape="rect" id="node5" href="$frame_8c.html#a06fb0b82dd62949b991315c88915240a" title="dec_ack_block_len" alt="" coords="165,107,299,133"/>
-<area shape="rect" id="node6" href="$conn_8c.html#a51821558a515ddb0a82519dda6ca59bb" title="detect_lost_pkts" alt="" coords="173,157,291,184"/>
-<area shape="rect" id="node7" href="$conn_8c.html#aaeb047f2ca62d850715e3c5093b9cc02" title="set_ld_alarm" alt="" coords="184,208,280,235"/>
 <area shape="rect" id="node4" href="$pkt_8c.html#a4e7492d3137d929fbd3cf8d941de2ffe" title="pkt_nr" alt="" coords="347,107,405,133"/>
+<area shape="rect" id="node5" href="$frame_8c.html#a06fb0b82dd62949b991315c88915240a" title="dec_ack_block_len" alt="" coords="165,157,299,184"/>
+<area shape="rect" id="node6" href="$conn_8c.html#a51821558a515ddb0a82519dda6ca59bb" title="detect_lost_pkts" alt="" coords="173,208,291,235"/>
+<area shape="rect" id="node7" href="$conn_8c.html#aaeb047f2ca62d850715e3c5093b9cc02" title="set_ld_alarm" alt="" coords="184,259,280,285"/>
 </map>

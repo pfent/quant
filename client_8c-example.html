@@ -128,8 +128,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">                  <span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> ifname,</div>
 <div class="line">                  <span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> dest,</div>
 <div class="line">                  <span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> port,</div>
-<div class="line">                  <span class="keyword">const</span> <span class="keywordtype">long</span> conns,</div>
-<div class="line">                  <span class="keyword">const</span> <span class="keywordtype">long</span> timeout)</div>
+<div class="line">                  <span class="keyword">const</span> <span class="keywordtype">long</span> conns)</div>
 <div class="line">{</div>
 <div class="line">    printf(<span class="stringliteral">&quot;%s\n&quot;</span>, name);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\t[-i interface]\t\tinterface to run over; default %s\n&quot;</span>, ifname);</div>
@@ -137,9 +136,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    printf(<span class="stringliteral">&quot;\t[-n connections]\tnumber of connections to start; default %ld\n&quot;</span>,</div>
 <div class="line">           conns);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\t[-p port]\t\tdestination port; default %s\n&quot;</span>, port);</div>
-<div class="line">    printf(<span class="stringliteral">&quot;\t[-t sec]\t\texit after some seconds (0 to disable); &quot;</span></div>
-<div class="line">           <span class="stringliteral">&quot;default %ld\n&quot;</span>,</div>
-<div class="line">           timeout);</div>
 <div class="line"><span class="preprocessor">#ifndef NDEBUG</span></div>
 <div class="line"><span class="preprocessor"></span>    printf(<span class="stringliteral">&quot;\t[-v verbosity]\t\tverbosity level (0-%u, default %u)\n&quot;</span>, DLEVEL,</div>
 <div class="line">           _dlevel);</div>
@@ -157,7 +153,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="keywordtype">char</span> * dest = <span class="stringliteral">&quot;127.0.0.1&quot;</span>;</div>
 <div class="line">    <span class="keywordtype">char</span> * port = <span class="stringliteral">&quot;8443&quot;</span>;</div>
 <div class="line">    <span class="keywordtype">long</span> conns = 1;</div>
-<div class="line">    <span class="keywordtype">long</span> timeout = 3;</div>
 <div class="line">    <span class="keywordtype">int</span> ch;</div>
 <div class="line"></div>
 <div class="line">    <span class="keywordflow">while</span> ((ch = getopt(argc, argv, <span class="stringliteral">&quot;hi:d:p:n:t:&quot;</span></div>
@@ -181,10 +176,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            ensure(conns &lt;= MAX_CONNS, <span class="stringliteral">&quot;only support up to %d connections&quot;</span>,</div>
 <div class="line">                   MAX_CONNS);</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;t&#39;</span>:</div>
-<div class="line">            timeout = strtol(optarg, 0, 10);</div>
-<div class="line">            ensure(errno != EINVAL, <span class="stringliteral">&quot;could not convert to integer&quot;</span>);</div>
-<div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="preprocessor">#ifndef NDEBUG</span></div>
 <div class="line"><span class="preprocessor"></span>        <span class="keywordflow">case</span> <span class="charliteral">&#39;v&#39;</span>:</div>
 <div class="line">            _dlevel = MIN(DLEVEL, MAX(0, (uint32_t)strtoul(optarg, 0, 10)));</div>
@@ -193,7 +184,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="preprocessor"></span>        <span class="keywordflow">case</span> <span class="charliteral">&#39;h&#39;</span>:</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;?&#39;</span>:</div>
 <div class="line">        <span class="keywordflow">default</span>:</div>
-<div class="line">            usage(basename(argv[0]), ifname, dest, port, conns, timeout);</div>
+<div class="line">            usage(basename(argv[0]), ifname, dest, port, conns);</div>
 <div class="line">            <span class="keywordflow">return</span> 0;</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
@@ -207,7 +198,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    ensure(peer-&gt;ai_next == 0, <span class="stringliteral">&quot;multiple addresses not supported&quot;</span>);</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// start some connections</span></div>
-<div class="line">    <span class="keywordtype">void</span> * <span class="keyword">const</span> q = <a name="a0"></a><a class="code" href="quant_8h.html#ab6da80af5cc70a2a77595d5ad7a64290">q_init</a>(ifname, timeout);</div>
+<div class="line">    <span class="keywordtype">void</span> * <span class="keyword">const</span> q = <a name="a0"></a><a class="code" href="quant_8h.html#afd422de86ec955a7adb020e08fc4a738">q_init</a>(ifname);</div>
 <div class="line"></div>
 <div class="line">    uint64_t cid[MAX_CONNS];</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n = 0; n &lt; conns; n++) {</div>
@@ -254,7 +245,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 13 2017 14:38:30 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 13 2017 16:55:11 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
