@@ -1,13 +1,10 @@
 var searchData=
 [
-  ['q_5falloc',['q_alloc',['../quant_8h.html#aea134a17473258cf092d89f1835d989b',1,'q_alloc(void *const w, struct w_iov_stailq *const q, const uint32_t len):&#160;quic.c'],['../quic_8c.html#aea134a17473258cf092d89f1835d989b',1,'q_alloc(void *const w, struct w_iov_stailq *const q, const uint32_t len):&#160;quic.c']]],
-  ['q_5fbind',['q_bind',['../quant_8h.html#a06d7746daaafec5b8bb7c0aaf530b4e2',1,'q_bind(void *const q, const uint16_t port):&#160;quic.c'],['../quic_8c.html#a06d7746daaafec5b8bb7c0aaf530b4e2',1,'q_bind(void *const q, const uint16_t port):&#160;quic.c']]],
-  ['q_5fcleanup',['q_cleanup',['../quant_8h.html#ad35b637183ff9f9c00ef371bd986bd30',1,'q_cleanup(void *const q):&#160;quic.c'],['../quic_8c.html#ad35b637183ff9f9c00ef371bd986bd30',1,'q_cleanup(void *const q):&#160;quic.c']]],
-  ['q_5fclose',['q_close',['../quant_8h.html#aafbd908f4441b6d02eda8eb684855065',1,'q_close(const uint64_t cid):&#160;quic.c'],['../quic_8c.html#aafbd908f4441b6d02eda8eb684855065',1,'q_close(const uint64_t cid):&#160;quic.c']]],
-  ['q_5fconnect',['q_connect',['../quant_8h.html#a2ef76c84afbc735bb815d7b84e40d291',1,'q_connect(void *const q, const struct sockaddr *const peer, const socklen_t peer_len):&#160;quic.c'],['../quic_8c.html#a2ef76c84afbc735bb815d7b84e40d291',1,'q_connect(void *const q, const struct sockaddr *const peer, const socklen_t peer_len):&#160;quic.c']]],
-  ['q_5ffree',['q_free',['../quant_8h.html#a5174cc35e3abbcc0f30c1e59e422331a',1,'q_free(void *const w, struct w_iov_stailq *const q):&#160;quic.c'],['../quic_8c.html#a5174cc35e3abbcc0f30c1e59e422331a',1,'q_free(void *const w, struct w_iov_stailq *const q):&#160;quic.c']]],
-  ['q_5finit',['q_init',['../quant_8h.html#afd422de86ec955a7adb020e08fc4a738',1,'q_init(const char *const ifname):&#160;quic.c'],['../quic_8c.html#afd422de86ec955a7adb020e08fc4a738',1,'q_init(const char *const ifname):&#160;quic.c']]],
-  ['q_5fread',['q_read',['../quant_8h.html#a4f72eddb9a14ad96dafcdce10fbf18bc',1,'q_read(const uint64_t cid, uint32_t *const sid, struct w_iov_stailq *const i):&#160;quic.c'],['../quic_8c.html#a4f72eddb9a14ad96dafcdce10fbf18bc',1,'q_read(const uint64_t cid, uint32_t *const sid, struct w_iov_stailq *const i):&#160;quic.c']]],
-  ['q_5frsv_5fstream',['q_rsv_stream',['../quant_8h.html#af9affe5e0a992f9b405a14d3a46f56ad',1,'q_rsv_stream(const uint64_t cid):&#160;quic.c'],['../quic_8c.html#af9affe5e0a992f9b405a14d3a46f56ad',1,'q_rsv_stream(const uint64_t cid):&#160;quic.c']]],
-  ['q_5fwrite',['q_write',['../quant_8h.html#af2062d2961694685400d8fadb839e0a8',1,'q_write(const uint64_t cid, const uint32_t sid, struct w_iov_stailq *const q):&#160;quic.c'],['../quic_8c.html#af2062d2961694685400d8fadb839e0a8',1,'q_write(const uint64_t cid, const uint32_t sid, struct w_iov_stailq *const q):&#160;quic.c']]]
+  ['needed_5fack_5fblock_5flen',['needed_ack_block_len',['../frame_8c.html#a27b79235a006f6c7a5a02e38ebac39d3',1,'frame.c']]],
+  ['needed_5flg_5fack_5flen',['needed_lg_ack_len',['../frame_8c.html#adab36476b9c7a8f2e849ff09f4a0256a',1,'frame.c']]],
+  ['needed_5foff_5flen',['needed_off_len',['../frame_8c.html#ad82df9b455f7872d73be99589ef0fe19',1,'frame.c']]],
+  ['needed_5fpkt_5fnr_5flen',['needed_pkt_nr_len',['../pkt_8c.html#ae230cbc93b330096c2d781b56bd62364',1,'pkt.c']]],
+  ['needed_5fsid_5flen',['needed_sid_len',['../frame_8c.html#a8e66c509135b66e394343247ed37f2e1',1,'frame.c']]],
+  ['new_5fconn',['new_conn',['../conn_8c.html#afd6813238a52d2966dfdb1150235f734',1,'new_conn(const uint64_t id, const struct sockaddr *const peer, const socklen_t peer_len, const bool am_server):&#160;conn.c'],['../conn_8h.html#afd6813238a52d2966dfdb1150235f734',1,'new_conn(const uint64_t id, const struct sockaddr *const peer, const socklen_t peer_len, const bool am_server):&#160;conn.c']]],
+  ['new_5fstream',['new_stream',['../stream_8c.html#ab0b3499ca041b2c1fbad0ecf43919744',1,'new_stream(struct q_conn *const c, const uint32_t id):&#160;stream.c'],['../stream_8h.html#ab0b3499ca041b2c1fbad0ecf43919744',1,'new_stream(struct q_conn *const c, const uint32_t id):&#160;stream.c']]]
 ];

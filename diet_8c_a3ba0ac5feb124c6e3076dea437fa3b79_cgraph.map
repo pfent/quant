@@ -1,0 +1,7 @@
+<map id="diet_insert" name="diet_insert">
+<area shape="rect" id="node2" href="$diet_8c.html#a1bf88044b4af4e723b8bfc4cf0fe1420" title="Helper function to create a zero&#45;width interval containing (only) n. " alt="" coords="137,5,218,32"/>
+<area shape="rect" id="node3" href="$diet_8c.html#acff4764cdd209408ec31906773db2455" title="Pointer to the interval containing n in diet tree t. " alt="" coords="142,107,213,133"/>
+<area shape="rect" id="node5" href="$diet_8c.html#a85e4e10a029283a5798638bfaf387abd" title="Return maximum interval underneath i. " alt="" coords="267,56,341,83"/>
+<area shape="rect" id="node6" href="$diet_8c.html#a8f0e77727941f94b10b1ea1241df8eaa" title="Return minimum interval underneath i. " alt="" coords="269,157,339,184"/>
+<area shape="rect" id="node4" href="$diet_8c.html#a233a4b0f59b38d83775f80568cfb081f" title="Absolute minimal distance of n from the interval i,. " alt="" coords="269,107,339,133"/>
+</map>
