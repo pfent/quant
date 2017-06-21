@@ -12,7 +12,7 @@ var searchData=
   ['tls_5fcert_5flen',['tls_cert_len',['../cert_8h.html#a4f2b67232ee46a8546d05b9bc63f7a00',1,'cert.h']]],
   ['tls_5fcerts',['tls_certs',['../quic_8c.html#ac4f138c6c44745281fa55218dacd9b80',1,'quic.c']]],
   ['tls_5fctx',['tls_ctx',['../quic_8c.html#af6bbbfab377148ff702ada5a44a7ae73',1,'tls_ctx():&#160;quic.c'],['../quic_8h.html#af6bbbfab377148ff702ada5a44a7ae73',1,'tls_ctx():&#160;quic.c']]],
-  ['tls_5fhandshake',['tls_handshake',['../conn_8c.html#acd8a2ca2ad3ada1a30dca3a8551f0e00',1,'conn.c']]],
+  ['tls_5fhandshake',['tls_handshake',['../conn_8c.html#a0b40feb0062aeed1365a91745e1e5a44',1,'conn.c']]],
   ['tls_5fkey',['tls_key',['../cert_8h.html#a23bb2d0e19274ac4fe698041534abfe6',1,'cert.h']]],
   ['tls_5fkey_5flen',['tls_key_len',['../cert_8h.html#a0c05a0886ee719f17221af87aa0fbd24',1,'cert.h']]],
   ['tx',['tx',['../conn_8c.html#a6c7208e98442c20a863090f8a43b0c4a',1,'tx(struct w_sock *const ws, struct q_conn *const c):&#160;conn.c'],['../conn_8h.html#a6c7208e98442c20a863090f8a43b0c4a',1,'tx(struct w_sock *const ws, struct q_conn *const c):&#160;conn.c']]],

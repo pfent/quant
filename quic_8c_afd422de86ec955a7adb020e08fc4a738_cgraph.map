@@ -3,7 +3,7 @@
 <area shape="rect" id="node17" href="$quic_8c.html#ac29f2b78e543f92413d3496c4db15969" title="l_run" alt="" coords="109,132,160,159"/>
 <area shape="rect" id="node3" href="$conn_8c.html#a6c7208e98442c20a863090f8a43b0c4a" title="tx" alt="" coords="230,81,269,108"/>
 <area shape="rect" id="node4" href="$stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="346,5,433,32"/>
-<area shape="rect" id="node5" href="$conn_8c.html#acd8a2ca2ad3ada1a30dca3a8551f0e00" title="tls_handshake" alt="" coords="336,56,443,83"/>
+<area shape="rect" id="node5" href="$conn_8c.html#a0b40feb0062aeed1365a91745e1e5a44" title="tls_handshake" alt="" coords="336,56,443,83"/>
 <area shape="rect" id="node6" href="$pkt_8c.html#af392b36c58463646c250f5b01ea07238" title="enc_pkt" alt="" coords="355,107,423,133"/>
 <area shape="rect" id="node16" href="$conn_8c.html#aaeb047f2ca62d850715e3c5093b9cc02" title="set_ld_alarm" alt="" coords="341,157,437,184"/>
 <area shape="rect" id="node7" href="$pkt_8c.html#ae230cbc93b330096c2d781b56bd62364" title="needed_pkt_nr_len" alt="" coords="493,5,624,32"/>
