@@ -7,6 +7,7 @@ var searchData=
   ['q_5fconn',['q_conn',['../structq__conn.html',1,'']]],
   ['q_5fconnect',['q_connect',['../quant_8h.html#a2ef76c84afbc735bb815d7b84e40d291',1,'q_connect(void *const q, const struct sockaddr *const peer, const socklen_t peer_len):&#160;quic.c'],['../quic_8c.html#a2ef76c84afbc735bb815d7b84e40d291',1,'q_connect(void *const q, const struct sockaddr *const peer, const socklen_t peer_len):&#160;quic.c']]],
   ['q_5fconns',['q_conns',['../conn_8c.html#a878fb1da04149fcdc07365e115384608',1,'conn.c']]],
+  ['q_5fconns_5flock',['q_conns_lock',['../conn_8c.html#abe3a1fa9a0607f044f4c3bebdd49297a',1,'q_conns_lock():&#160;conn.c'],['../conn_8h.html#abe3a1fa9a0607f044f4c3bebdd49297a',1,'q_conns_lock():&#160;conn.c']]],
   ['q_5ffree',['q_free',['../quant_8h.html#a5174cc35e3abbcc0f30c1e59e422331a',1,'q_free(void *const w, struct w_iov_stailq *const q):&#160;quic.c'],['../quic_8c.html#a5174cc35e3abbcc0f30c1e59e422331a',1,'q_free(void *const w, struct w_iov_stailq *const q):&#160;quic.c']]],
   ['q_5finit',['q_init',['../quant_8h.html#afd422de86ec955a7adb020e08fc4a738',1,'q_init(const char *const ifname):&#160;quic.c'],['../quic_8c.html#afd422de86ec955a7adb020e08fc4a738',1,'q_init(const char *const ifname):&#160;quic.c']]],
   ['q_5foffset',['Q_OFFSET',['../quic_8h.html#aec6d16d07ed84a385791bc8a6e330ab9',1,'quic.h']]],

@@ -180,6 +180,16 @@ Data Fields</h2></td></tr>
 <tr class="separator:a68a11a7eb48dfe9225572a9e822cd97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac839e7ae544f51ff729ddc61e4eab974"><td class="memItemLeft" align="right" valign="top">ptls_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#ac839e7ae544f51ff729ddc61e4eab974">tls</a></td></tr>
 <tr class="separator:ac839e7ae544f51ff729ddc61e4eab974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ce6e040c771338e64d0764e5cd4f69"><td class="memItemLeft" align="right" valign="top">pthread_mutex_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a33ce6e040c771338e64d0764e5cd4f69">lock</a></td></tr>
+<tr class="separator:a33ce6e040c771338e64d0764e5cd4f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83a955ec02ce9b926cd5580f784ad4a5"><td class="memItemLeft" align="right" valign="top">pthread_cond_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a83a955ec02ce9b926cd5580f784ad4a5">write_cv</a></td></tr>
+<tr class="separator:a83a955ec02ce9b926cd5580f784ad4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44d357e5e8406a20f58dfc798bfbdf8f"><td class="memItemLeft" align="right" valign="top">pthread_cond_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a44d357e5e8406a20f58dfc798bfbdf8f">accept_cv</a></td></tr>
+<tr class="separator:a44d357e5e8406a20f58dfc798bfbdf8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b15a99cdc4b25036707528702d81f12"><td class="memItemLeft" align="right" valign="top">pthread_cond_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a8b15a99cdc4b25036707528702d81f12">connect_cv</a></td></tr>
+<tr class="separator:a8b15a99cdc4b25036707528702d81f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabd92fa15a54e100da9222e96a5a1099"><td class="memItemLeft" align="right" valign="top">pthread_cond_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#aabd92fa15a54e100da9222e96a5a1099">read_cv</a></td></tr>
+<tr class="separator:aabd92fa15a54e100da9222e96a5a1099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A QUIC connection. </p>
@@ -245,6 +255,30 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">uint8_t q_conn::_unused2[5]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a44d357e5e8406a20f58dfc798bfbdf8f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pthread_cond_t q_conn::accept_cv</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8b15a99cdc4b25036707528702d81f12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pthread_cond_t q_conn::connect_cv</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -407,6 +441,18 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a33ce6e040c771338e64d0764e5cd4f69"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pthread_mutex_t q_conn::lock</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a7c24f1bcf0e7574e48493b42e1ceed6a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -456,6 +502,18 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Length of <code>peer</code>. </p>
+
+</div>
+</div>
+<a class="anchor" id="aabd92fa15a54e100da9222e96a5a1099"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pthread_cond_t q_conn::read_cv</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -635,13 +693,25 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a83a955ec02ce9b926cd5580f784ad4a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pthread_cond_t q_conn::write_cv</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/<a class="el" href="conn_8h_source.html">conn.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 21 2017 11:52:55 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 22 2017 11:26:43 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

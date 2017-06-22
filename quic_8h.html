@@ -95,7 +95,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &lt;ev.h&gt;</code><br/>
 <code>#include &lt;picotls.h&gt;</code><br/>
-<code>#include &lt;pthread.h&gt;</code><br/>
 <code>#include &lt;stdint.h&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for quic.h:</div>
@@ -162,16 +161,6 @@ Macros</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a6bda40375226b56008046bb0a556d220"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structpkt__meta.html">pkt_meta</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a6bda40375226b56008046bb0a556d220">q_pkt_meta</a></td></tr>
 <tr class="separator:a6bda40375226b56008046bb0a556d220"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0abaf4b5d42c4e5d19190035fade3599"><td class="memItemLeft" align="right" valign="top">pthread_mutex_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a0abaf4b5d42c4e5d19190035fade3599">lock</a></td></tr>
-<tr class="separator:a0abaf4b5d42c4e5d19190035fade3599"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1844799b37cb07826f76ffd1093f211c"><td class="memItemLeft" align="right" valign="top">pthread_cond_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a1844799b37cb07826f76ffd1093f211c">read_cv</a></td></tr>
-<tr class="separator:a1844799b37cb07826f76ffd1093f211c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a881eaeaba781f42a453b709cc216e0a7"><td class="memItemLeft" align="right" valign="top">pthread_cond_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a881eaeaba781f42a453b709cc216e0a7">write_cv</a></td></tr>
-<tr class="separator:a881eaeaba781f42a453b709cc216e0a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae86e1a40e8b440e790fee8dff9ba5c2d"><td class="memItemLeft" align="right" valign="top">pthread_cond_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#ae86e1a40e8b440e790fee8dff9ba5c2d">accept_cv</a></td></tr>
-<tr class="separator:ae86e1a40e8b440e790fee8dff9ba5c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad188aa3de77d3dc55ed8f1502a3ddc2"><td class="memItemLeft" align="right" valign="top">pthread_cond_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#aad188aa3de77d3dc55ed8f1502a3ddc2">connect_cv</a></td></tr>
-<tr class="separator:aad188aa3de77d3dc55ed8f1502a3ddc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a855923b555731173d3509ecb645de0e0"><td class="memItemLeft" align="right" valign="top">struct ev_loop *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a855923b555731173d3509ecb645de0e0">loop</a></td></tr>
 <tr class="separator:a855923b555731173d3509ecb645de0e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a855179145371edc9111433f621044ab4"><td class="memItemLeft" align="right" valign="top">const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a855179145371edc9111433f621044ab4">ok_vers</a> []</td></tr>
@@ -179,9 +168,6 @@ Variables</h2></td></tr>
 <tr class="separator:a855179145371edc9111433f621044ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9a33cf3a5f649662f26bb9eae92bf7b"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#ae9a33cf3a5f649662f26bb9eae92bf7b">ok_vers_len</a></td></tr>
 <tr class="separator:ae9a33cf3a5f649662f26bb9eae92bf7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace3d6f707ce0e4bbc265805c365acd93"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#ace3d6f707ce0e4bbc265805c365acd93">accept_queue</a></td></tr>
-<tr class="memdesc:ace3d6f707ce0e4bbc265805c365acd93"><td class="mdescLeft">&#160;</td><td class="mdescRight">The accept "queue" - currently one deep.  <a href="#ace3d6f707ce0e4bbc265805c365acd93">More...</a><br/></td></tr>
-<tr class="separator:ace3d6f707ce0e4bbc265805c365acd93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6bbbfab377148ff702ada5a44a7ae73"><td class="memItemLeft" align="right" valign="top">ptls_context_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#af6bbbfab377148ff702ada5a44a7ae73">tls_ctx</a></td></tr>
 <tr class="memdesc:af6bbbfab377148ff702ada5a44a7ae73"><td class="mdescLeft">&#160;</td><td class="mdescRight">TLS context.  <a href="#af6bbbfab377148ff702ada5a44a7ae73">More...</a><br/></td></tr>
 <tr class="separator:af6bbbfab377148ff702ada5a44a7ae73"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -355,56 +341,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="ae86e1a40e8b440e790fee8dff9ba5c2d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pthread_cond_t accept_cv</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ace3d6f707ce0e4bbc265805c365acd93"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t accept_queue</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The accept "queue" - currently one deep. </p>
-
-</div>
-</div>
-<a class="anchor" id="aad188aa3de77d3dc55ed8f1502a3ddc2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pthread_cond_t connect_cv</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a0abaf4b5d42c4e5d19190035fade3599"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pthread_mutex_t lock</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a855923b555731173d3509ecb645de0e0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -456,18 +392,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1844799b37cb07826f76ffd1093f211c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pthread_cond_t read_cv</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="af6bbbfab377148ff702ada5a44a7ae73"></a>
 <div class="memitem">
 <div class="memproto">
@@ -482,22 +406,10 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a881eaeaba781f42a453b709cc216e0a7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pthread_cond_t write_cv</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 21 2017 11:52:55 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 22 2017 11:26:43 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

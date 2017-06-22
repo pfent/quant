@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['read_5fcv',['read_cv',['../quic_8c.html#a1844799b37cb07826f76ffd1093f211c',1,'read_cv():&#160;quic.c'],['../quic_8h.html#a1844799b37cb07826f76ffd1093f211c',1,'read_cv():&#160;quic.c']]],
+  ['read_5fcv',['read_cv',['../structq__conn.html#aabd92fa15a54e100da9222e96a5a1099',1,'q_conn']]],
   ['readme_2emd',['README.md',['../README_8md.html',1,'']]],
   ['rec_5fend',['rec_end',['../structq__conn.html#a1f13b91ccfaf16f7d6d0f4b58e291f69',1,'q_conn']]],
   ['ref_5fcnt',['ref_cnt',['../structpkt__meta.html#a99c038ba116ffb4472268fa3876661a3',1,'pkt_meta']]],

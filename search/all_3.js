@@ -14,6 +14,6 @@ var searchData=
   ['conn_5fflag_5ftls_5fdone',['CONN_FLAG_TLS_DONE',['../conn_8h.html#af6624398633d91fb64f5a0001381b638',1,'conn.h']]],
   ['conn_5fvers_5frecv',['CONN_VERS_RECV',['../conn_8h.html#a22840ded6d717eff3ce9a29bf6dd2e40',1,'conn.h']]],
   ['conn_5fvers_5fsent',['CONN_VERS_SENT',['../conn_8h.html#ad3bdae02f7acd76f4d7d9e3a63bb6c3b',1,'conn.h']]],
-  ['connect_5fcv',['connect_cv',['../quic_8c.html#aad188aa3de77d3dc55ed8f1502a3ddc2',1,'connect_cv():&#160;quic.c'],['../quic_8h.html#aad188aa3de77d3dc55ed8f1502a3ddc2',1,'connect_cv():&#160;quic.c']]],
+  ['connect_5fcv',['connect_cv',['../structq__conn.html#a8b15a99cdc4b25036707528702d81f12',1,'q_conn']]],
   ['cwnd',['cwnd',['../structq__conn.html#af90d91a978d7fabc32b0246257e304f6',1,'q_conn']]]
 ];

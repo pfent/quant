@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['write_5fcv',['write_cv',['../quic_8c.html#a881eaeaba781f42a453b709cc216e0a7',1,'write_cv():&#160;quic.c'],['../quic_8h.html#a881eaeaba781f42a453b709cc216e0a7',1,'write_cv():&#160;quic.c']]]
+  ['write_5fcv',['write_cv',['../structq__conn.html#a83a955ec02ce9b926cd5580f784ad4a5',1,'q_conn']]]
 ];
