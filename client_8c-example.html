@@ -145,13 +145,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[])</div>
 <div class="line">{</div>
-<div class="line">    <span class="keywordtype">char</span> * ifname = <span class="stringliteral">&quot;lo&quot;</span></div>
-<div class="line"><span class="preprocessor">#ifndef __linux__</span></div>
-<div class="line"><span class="preprocessor"></span>                    <span class="stringliteral">&quot;0&quot;</span></div>
-<div class="line"><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="preprocessor"></span>        ;</div>
-<div class="line">    <span class="keywordtype">char</span> * dest = <span class="stringliteral">&quot;127.0.0.1&quot;</span>;</div>
-<div class="line">    <span class="keywordtype">char</span> * port = <span class="stringliteral">&quot;8443&quot;</span>;</div>
+<div class="line">    <span class="keywordtype">char</span> * ifname = (<span class="keywordtype">char</span> *)<span class="stringliteral">&quot;lo&quot;</span></div>
+<div class="line">#ifndef __linux__</div>
+<div class="line">                    <span class="stringliteral">&quot;0&quot;</span></div>
+<div class="line">#endif</div>
+<div class="line">        ;</div>
+<div class="line">    <span class="keywordtype">char</span> * dest = (<span class="keywordtype">char</span> *)<span class="stringliteral">&quot;127.0.0.1&quot;</span>;</div>
+<div class="line">    <span class="keywordtype">char</span> * port = (<span class="keywordtype">char</span> *)<span class="stringliteral">&quot;8443&quot;</span>;</div>
 <div class="line">    <span class="keywordtype">long</span> conns = 1;</div>
 <div class="line">    <span class="keywordtype">int</span> ch;</div>
 <div class="line"></div>
@@ -245,7 +245,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 22 2017 11:26:43 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 22 2017 13:02:12 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

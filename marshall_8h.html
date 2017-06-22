@@ -237,10 +237,14 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">_Generic((x),                                                              \</div>
-<div class="line">            uint8_t     : <span class="stringliteral">&quot;uint8_t&quot;</span>,                                           \</div>
-<div class="line">            uint16_t    : <span class="stringliteral">&quot;uint16_t&quot;</span>,                                          \</div>
-<div class="line">            uint32_t    : <span class="stringliteral">&quot;uint32_t&quot;</span>,                                          \</div>
-<div class="line">            uint64_t    : <span class="stringliteral">&quot;uint64_t&quot;</span>)</div>
+<div class="line">            uint8_t           : <span class="stringliteral">&quot;uint8_t&quot;</span>,                                     \</div>
+<div class="line">            <span class="keyword">const</span> uint8_t     : <span class="stringliteral">&quot;const uint8_t&quot;</span>,                               \</div>
+<div class="line">            uint16_t          : <span class="stringliteral">&quot;uint16_t&quot;</span>,                                    \</div>
+<div class="line">            <span class="keyword">const</span> uint16_t    : <span class="stringliteral">&quot;const uint16_t&quot;</span>,                              \</div>
+<div class="line">            uint32_t          : <span class="stringliteral">&quot;uint32_t&quot;</span>,                                    \</div>
+<div class="line">            <span class="keyword">const</span> uint32_t    : <span class="stringliteral">&quot;const uint32_t&quot;</span>,                              \</div>
+<div class="line">            uint64_t          : <span class="stringliteral">&quot;uint64_t&quot;</span>,                                    \</div>
+<div class="line">            <span class="keyword">const</span> uint64_t    : <span class="stringliteral">&quot;const uint64_t&quot;</span>)</div>
 </div><!-- fragment -->
 <p>C generic returning the type of the passed expression <code>x</code>. </p>
 <p>Only contains entries for the types the marshalling functions support.</p>
@@ -257,7 +261,7 @@ Macros</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 22 2017 11:26:43 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 22 2017 13:02:12 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
