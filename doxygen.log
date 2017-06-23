@@ -12,19 +12,19 @@ Searching for files to exclude
 Searching for files to process...
 Searching for files in directory /home/travis/build/NTAP/quant/lib
 Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles
-Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles/quant.dir
-Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles/quant.dir/src
-Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles/quant_static.dir
-Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles/quant_static.dir/src
+Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles/common.dir
+Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles/common.dir/src
+Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles/quant_dyn.dir
+Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles/quant_stat.dir
 Searching for files in directory /home/travis/build/NTAP/quant/lib/include
 Searching for files in directory /home/travis/build/NTAP/quant/lib/include/quant
 Searching for files in directory /home/travis/build/NTAP/quant/lib/src
 Searching for files in directory /home/travis/build/NTAP/quant/lib
 Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles
-Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles/quant.dir
-Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles/quant.dir/src
-Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles/quant_static.dir
-Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles/quant_static.dir/src
+Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles/common.dir
+Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles/common.dir/src
+Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles/quant_dyn.dir
+Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles/quant_stat.dir
 Searching for files in directory /home/travis/build/NTAP/quant/lib/include
 Searching for files in directory /home/travis/build/NTAP/quant/lib/include/quant
 Searching for files in directory /home/travis/build/NTAP/quant/lib/src
