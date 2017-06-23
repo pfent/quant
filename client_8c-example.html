@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">quant
-   &#160;<span id="projectnumber">0.0.3</span>
+   &#160;<span id="projectnumber">0.0.4</span>
    </div>
   </td>
  </tr>
@@ -120,6 +120,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="quant_8h.html">quant/quant.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;warpcore/warpcore.h&gt;</span></div>
 <div class="line"></div>
+<div class="line"><span class="keyword">struct </span><a name="_a0"></a><a class="code" href="structq__conn.html">q_conn</a>;</div>
+<div class="line"></div>
 <div class="line"></div>
 <div class="line"><span class="preprocessor">#define MAX_CONNS 10</span></div>
 <div class="line"><span class="preprocessor"></span></div>
@@ -147,7 +149,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">{</div>
 <div class="line">    <span class="keywordtype">char</span> * ifname = (<span class="keywordtype">char</span> *)<span class="stringliteral">&quot;lo&quot;</span></div>
 <div class="line">#ifndef __linux__</div>
-<div class="line">                    <span class="stringliteral">&quot;0&quot;</span></div>
+<div class="line">                            <span class="stringliteral">&quot;0&quot;</span></div>
 <div class="line">#endif</div>
 <div class="line">        ;</div>
 <div class="line">    <span class="keywordtype">char</span> * dest = (<span class="keywordtype">char</span> *)<span class="stringliteral">&quot;127.0.0.1&quot;</span>;</div>
@@ -198,54 +200,55 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    ensure(peer-&gt;ai_next == 0, <span class="stringliteral">&quot;multiple addresses not supported&quot;</span>);</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// start some connections</span></div>
-<div class="line">    <span class="keywordtype">void</span> * <span class="keyword">const</span> q = <a name="a0"></a><a class="code" href="quant_8h.html#afd422de86ec955a7adb020e08fc4a738">q_init</a>(ifname);</div>
+<div class="line">    <span class="keywordtype">void</span> * <span class="keyword">const</span> q = <a name="a1"></a><a class="code" href="quant_8h.html#afd422de86ec955a7adb020e08fc4a738">q_init</a>(ifname);</div>
 <div class="line"></div>
-<div class="line">    uint64_t cid[MAX_CONNS];</div>
+<div class="line">    <span class="keyword">struct </span><a class="code" href="structq__conn.html">q_conn</a> * c[MAX_CONNS];</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n = 0; n &lt; conns; n++) {</div>
 <div class="line">        warn(info, <span class="stringliteral">&quot;%s starting conn #%d to %s:%s&quot;</span>, basename(argv[0]), n, dest,</div>
 <div class="line">             port);</div>
-<div class="line">        cid[n] = <a name="a1"></a><a class="code" href="quant_8h.html#a2ef76c84afbc735bb815d7b84e40d291">q_connect</a>(q, peer-&gt;ai_addr, peer-&gt;ai_addrlen);</div>
-<div class="line">        <span class="keywordflow">if</span> (!cid[n])</div>
+<div class="line">        c[n] = <a name="a2"></a><a class="code" href="quant_8h.html#a76afabb2c80e86ce3e3df996552fd018">q_connect</a>(q, peer-&gt;ai_addr, peer-&gt;ai_addrlen);</div>
+<div class="line">        <span class="keywordflow">if</span> (!c[n])</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line"></div>
 <div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 1; i++) {</div>
 <div class="line">            <span class="comment">// reserve a new stream</span></div>
-<div class="line">            <span class="keyword">const</span> uint32_t sid = <a name="a2"></a><a class="code" href="quant_8h.html#af9affe5e0a992f9b405a14d3a46f56ad">q_rsv_stream</a>(cid[n]);</div>
+<div class="line">            <span class="keyword">struct </span><a name="_a3"></a><a class="code" href="structq__stream.html">q_stream</a> * <span class="keyword">const</span> s = <a name="a4"></a><a class="code" href="quant_8h.html#a7a955ba1fd2a2cd424379af437d07d05">q_rsv_stream</a>(c[n]);</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// allocate buffers to transmit a packet</span></div>
 <div class="line">            <span class="keyword">struct </span>w_iov_stailq o = STAILQ_HEAD_INITIALIZER(o);</div>
-<div class="line">            <a name="a3"></a><a class="code" href="quant_8h.html#aea134a17473258cf092d89f1835d989b">q_alloc</a>(q, &amp;o, 1024);</div>
+<div class="line">            <a name="a5"></a><a class="code" href="quant_8h.html#aea134a17473258cf092d89f1835d989b">q_alloc</a>(q, &amp;o, 1024);</div>
 <div class="line">            <span class="keyword">struct </span>w_iov * <span class="keyword">const</span> v = STAILQ_FIRST(&amp;o);</div>
 <div class="line">            ensure(STAILQ_NEXT(v, next) == 0, <span class="stringliteral">&quot;w_iov_stailq too long&quot;</span>);</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// add some payload data</span></div>
-<div class="line">            v-&gt;len = (uint16_t)snprintf(</div>
-<div class="line">                (<span class="keywordtype">char</span> *)v-&gt;buf, 1024,</div>
-<div class="line">                <span class="stringliteral">&quot;***HELLO, STR %u ON CONN %&quot;</span> PRIx64 <span class="stringliteral">&quot;!***&quot;</span>, sid, cid[n]);</div>
+<div class="line">            v-&gt;len =</div>
+<div class="line">                (uint16_t)snprintf((<span class="keywordtype">char</span> *)v-&gt;buf, 1024,</div>
+<div class="line">                                   <span class="stringliteral">&quot;***HELLO, STR %u ON CONN %&quot;</span> PRIx64 <span class="stringliteral">&quot;!***&quot;</span>,</div>
+<div class="line">                                   <a name="a6"></a><a class="code" href="quant_8h.html#a289e37dfa1b6d51cba79934752776e0f">q_sid</a>(s), <a name="a7"></a><a class="code" href="quant_8h.html#a06870629e4f01eecadb5f987799c15e3">q_cid</a>(c[n]));</div>
 <div class="line">            ensure(v-&gt;len &lt; 1024, <span class="stringliteral">&quot;buffer overrun&quot;</span>);</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// send the data</span></div>
 <div class="line">            warn(info, <span class="stringliteral">&quot;writing %u byte%s: %s&quot;</span>, v-&gt;len, plural(v-&gt;len),</div>
 <div class="line">                 (<span class="keywordtype">char</span> *)v-&gt;buf);</div>
-<div class="line">            <a name="a4"></a><a class="code" href="quant_8h.html#af2062d2961694685400d8fadb839e0a8">q_write</a>(cid[n], sid, &amp;o);</div>
+<div class="line">            <a name="a8"></a><a class="code" href="quant_8h.html#a416e43dfb048345fb0de532b184aa94d">q_write</a>(c[n], s, &amp;o);</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// return the buffer</span></div>
-<div class="line">            <a name="a5"></a><a class="code" href="quant_8h.html#a5174cc35e3abbcc0f30c1e59e422331a">q_free</a>(q, &amp;o);</div>
+<div class="line">            <a name="a9"></a><a class="code" href="quant_8h.html#a5174cc35e3abbcc0f30c1e59e422331a">q_free</a>(q, &amp;o);</div>
 <div class="line">        }</div>
 <div class="line"></div>
 <div class="line">        <span class="comment">// close the QUIC connection</span></div>
-<div class="line">        <a name="a6"></a><a class="code" href="quant_8h.html#aafbd908f4441b6d02eda8eb684855065">q_close</a>(cid[n]);</div>
+<div class="line">        <a name="a10"></a><a class="code" href="quant_8h.html#a795c32a858382068fa5b5cf25af69a77">q_close</a>(c[n]);</div>
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// clean up</span></div>
 <div class="line">    freeaddrinfo(peer);</div>
-<div class="line">    <a name="a7"></a><a class="code" href="quant_8h.html#ad35b637183ff9f9c00ef371bd986bd30">q_cleanup</a>(q);</div>
+<div class="line">    <a name="a11"></a><a class="code" href="quant_8h.html#ad35b637183ff9f9c00ef371bd986bd30">q_cleanup</a>(q);</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 22 2017 13:02:12 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 23 2017 06:31:35 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

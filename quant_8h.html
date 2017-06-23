@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">quant
-   &#160;<span id="projectnumber">0.0.3</span>
+   &#160;<span id="projectnumber">0.0.4</span>
    </div>
   </td>
  </tr>
@@ -91,8 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">quant.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stddef.h&gt;</code><br/>
-<code>#include &lt;stdint.h&gt;</code><br/>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br/>
 <code>#include &lt;sys/socket.h&gt;</code><br/>
 <code>#include &lt;<a class="el" href="config_8h_source.html">quant/config.h</a>&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
@@ -100,7 +99,7 @@ Include dependency graph for quant.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="quant_8h__incl.png" border="0" usemap="#include_2quant_2quant_8h" alt=""/></div>
 <map name="include_2quant_2quant_8h" id="include_2quant_2quant_8h">
-<area shape="rect" id="node5" href="config_8h.html" title="quant/config.h" alt="" coords="311,80,415,107"/></map>
+<area shape="rect" id="node4" href="config_8h.html" title="quant/config.h" alt="" coords="216,80,320,107"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -118,24 +117,47 @@ Functions</h2></td></tr>
 <tr class="separator:afd422de86ec955a7adb020e08fc4a738"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad35b637183ff9f9c00ef371bd986bd30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#ad35b637183ff9f9c00ef371bd986bd30">q_cleanup</a> (void *const q)</td></tr>
 <tr class="separator:ad35b637183ff9f9c00ef371bd986bd30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ef76c84afbc735bb815d7b84e40d291"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#a2ef76c84afbc735bb815d7b84e40d291">q_connect</a> (void *const q, const struct sockaddr *const peer, const socklen_t peer_len)</td></tr>
-<tr class="separator:a2ef76c84afbc735bb815d7b84e40d291"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafbd908f4441b6d02eda8eb684855065"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#aafbd908f4441b6d02eda8eb684855065">q_close</a> (const uint64_t cid)</td></tr>
-<tr class="separator:aafbd908f4441b6d02eda8eb684855065"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06d7746daaafec5b8bb7c0aaf530b4e2"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#a06d7746daaafec5b8bb7c0aaf530b4e2">q_bind</a> (void *const q, const uint16_t port)</td></tr>
-<tr class="separator:a06d7746daaafec5b8bb7c0aaf530b4e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2062d2961694685400d8fadb839e0a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#af2062d2961694685400d8fadb839e0a8">q_write</a> (const uint64_t cid, const uint32_t sid, struct w_iov_stailq *const q)</td></tr>
-<tr class="separator:af2062d2961694685400d8fadb839e0a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f72eddb9a14ad96dafcdce10fbf18bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#a4f72eddb9a14ad96dafcdce10fbf18bc">q_read</a> (const uint64_t cid, uint32_t *const sid, struct w_iov_stailq *const i)</td></tr>
-<tr class="separator:a4f72eddb9a14ad96dafcdce10fbf18bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9affe5e0a992f9b405a14d3a46f56ad"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#af9affe5e0a992f9b405a14d3a46f56ad">q_rsv_stream</a> (const uint64_t cid)</td></tr>
-<tr class="separator:af9affe5e0a992f9b405a14d3a46f56ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76afabb2c80e86ce3e3df996552fd018"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structq__conn.html">q_conn</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#a76afabb2c80e86ce3e3df996552fd018">q_connect</a> (void *const q, const struct sockaddr *const peer, const socklen_t peer_len)</td></tr>
+<tr class="separator:a76afabb2c80e86ce3e3df996552fd018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a795c32a858382068fa5b5cf25af69a77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#a795c32a858382068fa5b5cf25af69a77">q_close</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c)</td></tr>
+<tr class="separator:a795c32a858382068fa5b5cf25af69a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad550ed36e6497a2030cb6c03764d604"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structq__conn.html">q_conn</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#aad550ed36e6497a2030cb6c03764d604">q_bind</a> (void *const q, const uint16_t port)</td></tr>
+<tr class="separator:aad550ed36e6497a2030cb6c03764d604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86d109e069b4e9ca319d8a85de33e0b3"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#a86d109e069b4e9ca319d8a85de33e0b3">q_accept</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c)</td></tr>
+<tr class="separator:a86d109e069b4e9ca319d8a85de33e0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a416e43dfb048345fb0de532b184aa94d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#a416e43dfb048345fb0de532b184aa94d">q_write</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, struct <a class="el" href="structq__stream.html">q_stream</a> *const s, struct w_iov_stailq *const q)</td></tr>
+<tr class="separator:a416e43dfb048345fb0de532b184aa94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a1836c82c33fe12f10ff290a1b25750"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structq__stream.html">q_stream</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#a1a1836c82c33fe12f10ff290a1b25750">q_read</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, struct w_iov_stailq *const i)</td></tr>
+<tr class="separator:a1a1836c82c33fe12f10ff290a1b25750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a955ba1fd2a2cd424379af437d07d05"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structq__stream.html">q_stream</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#a7a955ba1fd2a2cd424379af437d07d05">q_rsv_stream</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c)</td></tr>
+<tr class="separator:a7a955ba1fd2a2cd424379af437d07d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea134a17473258cf092d89f1835d989b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#aea134a17473258cf092d89f1835d989b">q_alloc</a> (void *const w, struct w_iov_stailq *const q, const uint32_t len)</td></tr>
 <tr class="separator:aea134a17473258cf092d89f1835d989b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5174cc35e3abbcc0f30c1e59e422331a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#a5174cc35e3abbcc0f30c1e59e422331a">q_free</a> (void *const w, struct w_iov_stailq *const q)</td></tr>
 <tr class="separator:a5174cc35e3abbcc0f30c1e59e422331a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06870629e4f01eecadb5f987799c15e3"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#a06870629e4f01eecadb5f987799c15e3">q_cid</a> (const struct <a class="el" href="structq__conn.html">q_conn</a> *const c)</td></tr>
+<tr class="separator:a06870629e4f01eecadb5f987799c15e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a289e37dfa1b6d51cba79934752776e0f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#a289e37dfa1b6d51cba79934752776e0f">q_sid</a> (const struct <a class="el" href="structq__stream.html">q_stream</a> *const s)</td></tr>
+<tr class="separator:a289e37dfa1b6d51cba79934752776e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a86d109e069b4e9ca319d8a85de33e0b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t q_accept </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server_8c-example.html#a3">server.c</a>.</dd>
+</dl>
+</div>
+</div>
 <a class="anchor" id="aea134a17473258cf092d89f1835d989b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -165,16 +187,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#a3">client.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#a5">client.c</a>.</dd>
 </dl>
 </div>
 </div>
-<a class="anchor" id="a06d7746daaafec5b8bb7c0aaf530b4e2"></a>
+<a class="anchor" id="aad550ed36e6497a2030cb6c03764d604"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t q_bind </td>
+          <td class="memname">struct <a class="el" href="structq__conn.html">q_conn</a>* q_bind </td>
           <td>(</td>
           <td class="paramtype">void *const&#160;</td>
           <td class="paramname"><em>q</em>, </td>
@@ -192,17 +214,34 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server_8c-example.html#a1">server.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server_8c-example.html#a2">server.c</a>.</dd>
 </dl>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="quant_8h_a06d7746daaafec5b8bb7c0aaf530b4e2_cgraph.png" border="0" usemap="#quant_8h_a06d7746daaafec5b8bb7c0aaf530b4e2_cgraph" alt=""/></div>
-<map name="quant_8h_a06d7746daaafec5b8bb7c0aaf530b4e2_cgraph" id="quant_8h_a06d7746daaafec5b8bb7c0aaf530b4e2_cgraph">
+<div class="center"><img src="quant_8h_aad550ed36e6497a2030cb6c03764d604_cgraph.png" border="0" usemap="#quant_8h_aad550ed36e6497a2030cb6c03764d604_cgraph" alt=""/></div>
+<map name="quant_8h_aad550ed36e6497a2030cb6c03764d604_cgraph" id="quant_8h_aad550ed36e6497a2030cb6c03764d604_cgraph">
 <area shape="rect" id="node2" href="conn_8c.html#a6e46c0475742565e95e26a6805157602" title="new_conn" alt="" coords="115,183,197,209"/><area shape="rect" id="node20" href="conn_8c.html#a5749bce479cdde76574b7a1845be7fec" title="rx" alt="" coords="137,385,175,412"/><area shape="rect" id="node3" href="conn_8c.html#a40f42a91b07a7819a511396c7a80ef2b" title="ld_alarm_cb" alt="" coords="277,31,369,57"/><area shape="rect" id="node4" href="conn_8c.html#a6c7208e98442c20a863090f8a43b0c4a" title="tx" alt="" coords="494,81,533,108"/><area shape="rect" id="node17" href="conn_8c.html#aaeb047f2ca62d850715e3c5093b9cc02" title="set_ld_alarm" alt="" coords="645,31,741,57"/><area shape="rect" id="node18" href="conn_8c.html#a51821558a515ddb0a82519dda6ca59bb" title="detect_lost_pkts" alt="" coords="634,335,753,361"/><area shape="rect" id="node5" href="stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="650,284,737,311"/><area shape="rect" id="node6" href="conn_8c.html#a0b40feb0062aeed1365a91745e1e5a44" title="tls_handshake" alt="" coords="640,132,747,159"/><area shape="rect" id="node7" href="pkt_8c.html#af392b36c58463646c250f5b01ea07238" title="enc_pkt" alt="" coords="659,81,727,108"/><area shape="rect" id="node8" href="pkt_8c.html#ae230cbc93b330096c2d781b56bd62364" title="needed_pkt_nr_len" alt="" coords="811,107,941,133"/><area shape="rect" id="node9" href="frame_8c.html#a67c6e33557d27de1169c8077b81aee56" title="enc_ack_frame" alt="" coords="821,157,931,184"/><area shape="rect" id="node12" href="frame_8c.html#a9803040a0b723882f8ca5b4b0163e33d" title="enc_padding_frame" alt="" coords="809,5,943,32"/><area shape="rect" id="node13" href="frame_8c.html#a9107bcfd68e49132fc32e9af1a674c01" title="enc_stream_frame" alt="" coords="811,56,941,83"/><area shape="rect" id="node16" href="fnv__1a_8c.html#ae1a00a9fdbb5c3d2f338b60855c9c69b" title="Compute an FNV&#45;1a 64&#45;bit hash over the given buffer. " alt="" coords="845,221,907,248"/><area shape="rect" id="node10" href="frame_8c.html#adab36476b9c7a8f2e849ff09f4a0256a" title="needed_lg_ack_len" alt="" coords="1003,145,1136,172"/><area shape="rect" id="node11" href="frame_8c.html#a27b79235a006f6c7a5a02e38ebac39d3" title="needed_ack_block_len" alt="" coords="992,196,1147,223"/><area shape="rect" id="node14" href="frame_8c.html#ad82df9b455f7872d73be99589ef0fe19" title="needed_off_len" alt="" coords="1014,19,1125,45"/><area shape="rect" id="node15" href="frame_8c.html#a8e66c509135b66e394343247ed37f2e1" title="needed_sid_len" alt="" coords="1013,69,1125,96"/><area shape="rect" id="node19" href="pkt_8c.html#a4e7492d3137d929fbd3cf8d941de2ffe" title="pkt_nr" alt="" coords="847,411,905,437"/><area shape="rect" id="node21" href="pkt_8c.html#af0c2548c80f9aec7643d340d0b246aec" title="pkt_hdr_len" alt="" coords="469,588,558,615"/><area shape="rect" id="node22" href="pkt_8c.html#a08eb3f954249b39d9e8cbb7d5adde388" title="pkt_cid" alt="" coords="291,588,355,615"/><area shape="rect" id="node23" href="conn_8c.html#ae5a68581dd50e3e0045cd4bbdcc3583b" title="get_conn" alt="" coords="476,664,551,691"/><area shape="rect" id="node24" href="conn_8c.html#aa6f28b355cf5e64e7f38e2af58f9e5d8" title="init_conn" alt="" coords="285,639,360,665"/><area shape="rect" id="node25" href="pkt_8c.html#a8431cf2b39f6831038742fa0c55b6a6a" title="pkt_vers" alt="" coords="287,740,359,767"/><area shape="rect" id="node26" href="stream_8c.html#ab0b3499ca041b2c1fbad0ecf43919744" title="new_stream" alt="" coords="467,335,560,361"/><area shape="rect" id="node27" href="conn_8c.html#afecc315546eeb1568a211c3ae99c25a4" title="vers_supported" alt="" coords="267,183,378,209"/><area shape="rect" id="node28" href="frame_8c.html#a9d238111db5836d1311805ec0060e1bf" title="dec_frames" alt="" coords="277,436,368,463"/><area shape="rect" id="node36" href="conn_8c.html#ac17246f0c632e2f8f9252aea0c441905" title="pick_from_server_vers" alt="" coords="245,487,400,513"/><area shape="rect" id="node29" href="frame_8c.html#abe3b7dab431bfc7905df1046299d707b" title="dec_stream_frame" alt="" coords="448,537,579,564"/><area shape="rect" id="node32" href="frame_8c.html#acdf69d786aecff0cc83e6f028bac9311" title="dec_ack_frame" alt="" coords="458,487,569,513"/><area shape="rect" id="node30" href="frame_8c.html#acc75ca28a2eb4901b42a3b32c0263309" title="dec_sid_len" alt="" coords="648,689,739,716"/><area shape="rect" id="node31" href="frame_8c.html#aac68aeedc9f05fc03c29aed36de4d016" title="dec_off_len" alt="" coords="649,639,738,665"/><area shape="rect" id="node33" href="frame_8c.html#aa354e096c509e96b04b9eb2861ddf000" title="dec_lg_ack_len" alt="" coords="637,588,749,615"/><area shape="rect" id="node34" href="frame_8c.html#afcaa05aa775007dbf3ca784e319becfe" title="find_sent_pkt" alt="" coords="643,436,743,463"/><area shape="rect" id="node35" href="frame_8c.html#a06fb0b82dd62949b991315c88915240a" title="dec_ack_block_len" alt="" coords="627,537,760,564"/></map>
 </div>
 </p>
 
+</div>
+</div>
+<a class="anchor" id="a06870629e4f01eecadb5f987799c15e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t q_cid </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#a7">client.c</a>, and <a class="el" href="server_8c-example.html#a7">server.c</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="ad35b637183ff9f9c00ef371bd986bd30"></a>
@@ -218,42 +257,33 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#a7">client.c</a>, and <a class="el" href="server_8c-example.html#a5">server.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#a11">client.c</a>, and <a class="el" href="server_8c-example.html#a10">server.c</a>.</dd>
 </dl>
 </div>
 </div>
-<a class="anchor" id="aafbd908f4441b6d02eda8eb684855065"></a>
+<a class="anchor" id="a795c32a858382068fa5b5cf25af69a77"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void q_close </td>
           <td>(</td>
-          <td class="paramtype">const uint64_t&#160;</td>
-          <td class="paramname"><em>cid</em></td><td>)</td>
+          <td class="paramtype">struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#a6">client.c</a>, and <a class="el" href="server_8c-example.html#a4">server.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#a10">client.c</a>, and <a class="el" href="server_8c-example.html#a9">server.c</a>.</dd>
 </dl>
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="quant_8h_aafbd908f4441b6d02eda8eb684855065_cgraph.png" border="0" usemap="#quant_8h_aafbd908f4441b6d02eda8eb684855065_cgraph" alt=""/></div>
-<map name="quant_8h_aafbd908f4441b6d02eda8eb684855065_cgraph" id="quant_8h_aafbd908f4441b6d02eda8eb684855065_cgraph">
-<area shape="rect" id="node2" href="conn_8c.html#ae5a68581dd50e3e0045cd4bbdcc3583b" title="get_conn" alt="" coords="120,5,195,32"/></map>
-</div>
-</p>
-
 </div>
 </div>
-<a class="anchor" id="a2ef76c84afbc735bb815d7b84e40d291"></a>
+<a class="anchor" id="a76afabb2c80e86ce3e3df996552fd018"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t q_connect </td>
+          <td class="memname">struct <a class="el" href="structq__conn.html">q_conn</a>* q_connect </td>
           <td>(</td>
           <td class="paramtype">void *const&#160;</td>
           <td class="paramname"><em>q</em>, </td>
@@ -277,13 +307,13 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#a1">client.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#a2">client.c</a>.</dd>
 </dl>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="quant_8h_a2ef76c84afbc735bb815d7b84e40d291_cgraph.png" border="0" usemap="#quant_8h_a2ef76c84afbc735bb815d7b84e40d291_cgraph" alt=""/></div>
-<map name="quant_8h_a2ef76c84afbc735bb815d7b84e40d291_cgraph" id="quant_8h_a2ef76c84afbc735bb815d7b84e40d291_cgraph">
+<div class="center"><img src="quant_8h_a76afabb2c80e86ce3e3df996552fd018_cgraph.png" border="0" usemap="#quant_8h_a76afabb2c80e86ce3e3df996552fd018_cgraph" alt=""/></div>
+<map name="quant_8h_a76afabb2c80e86ce3e3df996552fd018_cgraph" id="quant_8h_a76afabb2c80e86ce3e3df996552fd018_cgraph">
 <area shape="rect" id="node2" href="conn_8c.html#a6e46c0475742565e95e26a6805157602" title="new_conn" alt="" coords="137,88,218,115"/><area shape="rect" id="node20" href="conn_8c.html#aa6f28b355cf5e64e7f38e2af58f9e5d8" title="init_conn" alt="" coords="307,125,381,152"/><area shape="rect" id="node22" href="conn_8c.html#a5749bce479cdde76574b7a1845be7fec" title="rx" alt="" coords="158,379,197,405"/><area shape="rect" id="node26" href="stream_8c.html#ab0b3499ca041b2c1fbad0ecf43919744" title="new_stream" alt="" coords="488,632,581,659"/><area shape="rect" id="node3" href="conn_8c.html#a40f42a91b07a7819a511396c7a80ef2b" title="ld_alarm_cb" alt="" coords="298,24,390,51"/><area shape="rect" id="node4" href="conn_8c.html#a6c7208e98442c20a863090f8a43b0c4a" title="tx" alt="" coords="515,24,554,51"/><area shape="rect" id="node17" href="conn_8c.html#aaeb047f2ca62d850715e3c5093b9cc02" title="set_ld_alarm" alt="" coords="667,24,763,51"/><area shape="rect" id="node18" href="conn_8c.html#a51821558a515ddb0a82519dda6ca59bb" title="detect_lost_pkts" alt="" coords="655,277,774,304"/><area shape="rect" id="node5" href="stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="671,632,758,659"/><area shape="rect" id="node6" href="conn_8c.html#a0b40feb0062aeed1365a91745e1e5a44" title="tls_handshake" alt="" coords="661,164,768,191"/><area shape="rect" id="node7" href="pkt_8c.html#af392b36c58463646c250f5b01ea07238" title="enc_pkt" alt="" coords="681,100,749,127"/><area shape="rect" id="node8" href="pkt_8c.html#ae230cbc93b330096c2d781b56bd62364" title="needed_pkt_nr_len" alt="" coords="832,107,963,133"/><area shape="rect" id="node9" href="frame_8c.html#a67c6e33557d27de1169c8077b81aee56" title="enc_ack_frame" alt="" coords="842,157,953,184"/><area shape="rect" id="node12" href="frame_8c.html#a9803040a0b723882f8ca5b4b0163e33d" title="enc_padding_frame" alt="" coords="830,5,965,32"/><area shape="rect" id="node13" href="frame_8c.html#a9107bcfd68e49132fc32e9af1a674c01" title="enc_stream_frame" alt="" coords="832,56,963,83"/><area shape="rect" id="node16" href="fnv__1a_8c.html#ae1a00a9fdbb5c3d2f338b60855c9c69b" title="Compute an FNV&#45;1a 64&#45;bit hash over the given buffer. " alt="" coords="867,220,928,247"/><area shape="rect" id="node10" href="frame_8c.html#adab36476b9c7a8f2e849ff09f4a0256a" title="needed_lg_ack_len" alt="" coords="1024,145,1157,172"/><area shape="rect" id="node11" href="frame_8c.html#a27b79235a006f6c7a5a02e38ebac39d3" title="needed_ack_block_len" alt="" coords="1013,196,1168,223"/><area shape="rect" id="node14" href="frame_8c.html#ad82df9b455f7872d73be99589ef0fe19" title="needed_off_len" alt="" coords="1035,19,1146,45"/><area shape="rect" id="node15" href="frame_8c.html#a8e66c509135b66e394343247ed37f2e1" title="needed_sid_len" alt="" coords="1035,69,1147,96"/><area shape="rect" id="node19" href="pkt_8c.html#a4e7492d3137d929fbd3cf8d941de2ffe" title="pkt_nr" alt="" coords="868,455,927,481"/><area shape="rect" id="node21" href="conn_8c.html#ae5a68581dd50e3e0045cd4bbdcc3583b" title="get_conn" alt="" coords="497,125,572,152"/><area shape="rect" id="node23" href="pkt_8c.html#af0c2548c80f9aec7643d340d0b246aec" title="pkt_hdr_len" alt="" coords="490,379,579,405"/><area shape="rect" id="node24" href="pkt_8c.html#a08eb3f954249b39d9e8cbb7d5adde388" title="pkt_cid" alt="" coords="312,632,376,659"/><area shape="rect" id="node25" href="pkt_8c.html#a8431cf2b39f6831038742fa0c55b6a6a" title="pkt_vers" alt="" coords="308,683,380,709"/><area shape="rect" id="node27" href="conn_8c.html#afecc315546eeb1568a211c3ae99c25a4" title="vers_supported" alt="" coords="289,227,399,253"/><area shape="rect" id="node28" href="frame_8c.html#a9d238111db5836d1311805ec0060e1bf" title="dec_frames" alt="" coords="299,480,389,507"/><area shape="rect" id="node36" href="conn_8c.html#ac17246f0c632e2f8f9252aea0c441905" title="pick_from_server_vers" alt="" coords="267,429,421,456"/><area shape="rect" id="node29" href="frame_8c.html#abe3b7dab431bfc7905df1046299d707b" title="dec_stream_frame" alt="" coords="469,480,600,507"/><area shape="rect" id="node32" href="frame_8c.html#acdf69d786aecff0cc83e6f028bac9311" title="dec_ack_frame" alt="" coords="479,429,590,456"/><area shape="rect" id="node30" href="frame_8c.html#acc75ca28a2eb4901b42a3b32c0263309" title="dec_sid_len" alt="" coords="669,581,760,608"/><area shape="rect" id="node31" href="frame_8c.html#aac68aeedc9f05fc03c29aed36de4d016" title="dec_off_len" alt="" coords="670,531,759,557"/><area shape="rect" id="node33" href="frame_8c.html#aa354e096c509e96b04b9eb2861ddf000" title="dec_lg_ack_len" alt="" coords="659,379,771,405"/><area shape="rect" id="node34" href="frame_8c.html#afcaa05aa775007dbf3ca784e319becfe" title="find_sent_pkt" alt="" coords="665,480,765,507"/><area shape="rect" id="node35" href="frame_8c.html#a06fb0b82dd62949b991315c88915240a" title="dec_ack_block_len" alt="" coords="648,328,781,355"/></map>
 </div>
 </p>
@@ -313,7 +343,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#a5">client.c</a>, and <a class="el" href="server_8c-example.html#a3">server.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#a9">client.c</a>, and <a class="el" href="server_8c-example.html#a8">server.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -330,7 +360,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#a0">client.c</a>, and <a class="el" href="server_8c-example.html#a0">server.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#a1">client.c</a>, and <a class="el" href="server_8c-example.html#a0">server.c</a>.</dd>
 </dl>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -343,21 +373,15 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a4f72eddb9a14ad96dafcdce10fbf18bc"></a>
+<a class="anchor" id="a1a1836c82c33fe12f10ff290a1b25750"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void q_read </td>
+          <td class="memname">struct <a class="el" href="structq__stream.html">q_stream</a>* q_read </td>
           <td>(</td>
-          <td class="paramtype">const uint64_t&#160;</td>
-          <td class="paramname"><em>cid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t *const&#160;</td>
-          <td class="paramname"><em>sid</em>, </td>
+          <td class="paramtype">struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -372,60 +396,68 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server_8c-example.html#a2">server.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server_8c-example.html#a5">server.c</a>.</dd>
 </dl>
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="quant_8h_a4f72eddb9a14ad96dafcdce10fbf18bc_cgraph.png" border="0" usemap="#quant_8h_a4f72eddb9a14ad96dafcdce10fbf18bc_cgraph" alt=""/></div>
-<map name="quant_8h_a4f72eddb9a14ad96dafcdce10fbf18bc_cgraph" id="quant_8h_a4f72eddb9a14ad96dafcdce10fbf18bc_cgraph">
-<area shape="rect" id="node2" href="conn_8c.html#ae5a68581dd50e3e0045cd4bbdcc3583b" title="get_conn" alt="" coords="115,5,189,32"/></map>
-</div>
-</p>
-
 </div>
 </div>
-<a class="anchor" id="af9affe5e0a992f9b405a14d3a46f56ad"></a>
+<a class="anchor" id="a7a955ba1fd2a2cd424379af437d07d05"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t q_rsv_stream </td>
+          <td class="memname">struct <a class="el" href="structq__stream.html">q_stream</a>* q_rsv_stream </td>
           <td>(</td>
-          <td class="paramtype">const uint64_t&#160;</td>
-          <td class="paramname"><em>cid</em></td><td>)</td>
+          <td class="paramtype">struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#a2">client.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#a4">client.c</a>.</dd>
 </dl>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="quant_8h_af9affe5e0a992f9b405a14d3a46f56ad_cgraph.png" border="0" usemap="#quant_8h_af9affe5e0a992f9b405a14d3a46f56ad_cgraph" alt=""/></div>
-<map name="quant_8h_af9affe5e0a992f9b405a14d3a46f56ad_cgraph" id="quant_8h_af9affe5e0a992f9b405a14d3a46f56ad_cgraph">
-<area shape="rect" id="node2" href="conn_8c.html#ae5a68581dd50e3e0045cd4bbdcc3583b" title="get_conn" alt="" coords="164,5,239,32"/><area shape="rect" id="node3" href="stream_8c.html#ab0b3499ca041b2c1fbad0ecf43919744" title="new_stream" alt="" coords="155,56,248,83"/><area shape="rect" id="node4" href="stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="297,56,383,83"/></map>
+<div class="center"><img src="quant_8h_a7a955ba1fd2a2cd424379af437d07d05_cgraph.png" border="0" usemap="#quant_8h_a7a955ba1fd2a2cd424379af437d07d05_cgraph" alt=""/></div>
+<map name="quant_8h_a7a955ba1fd2a2cd424379af437d07d05_cgraph" id="quant_8h_a7a955ba1fd2a2cd424379af437d07d05_cgraph">
+<area shape="rect" id="node2" href="stream_8c.html#ab0b3499ca041b2c1fbad0ecf43919744" title="new_stream" alt="" coords="155,5,248,32"/><area shape="rect" id="node3" href="stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="297,5,383,32"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="af2062d2961694685400d8fadb839e0a8"></a>
+<a class="anchor" id="a289e37dfa1b6d51cba79934752776e0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t q_sid </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structq__stream.html">q_stream</a> *const&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#a6">client.c</a>, and <a class="el" href="server_8c-example.html#a6">server.c</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="a416e43dfb048345fb0de532b184aa94d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void q_write </td>
           <td>(</td>
-          <td class="paramtype">const uint64_t&#160;</td>
-          <td class="paramname"><em>cid</em>, </td>
+          <td class="paramtype">struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint32_t&#160;</td>
-          <td class="paramname"><em>sid</em>, </td>
+          <td class="paramtype">struct <a class="el" href="structq__stream.html">q_stream</a> *const&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -440,23 +472,14 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#a4">client.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#a8">client.c</a>.</dd>
 </dl>
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="quant_8h_af2062d2961694685400d8fadb839e0a8_cgraph.png" border="0" usemap="#quant_8h_af2062d2961694685400d8fadb839e0a8_cgraph" alt=""/></div>
-<map name="quant_8h_af2062d2961694685400d8fadb839e0a8_cgraph" id="quant_8h_af2062d2961694685400d8fadb839e0a8_cgraph">
-<area shape="rect" id="node2" href="conn_8c.html#ae5a68581dd50e3e0045cd4bbdcc3583b" title="get_conn" alt="" coords="124,5,199,32"/><area shape="rect" id="node3" href="stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="118,56,205,83"/></map>
-</div>
-</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 22 2017 13:02:12 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 23 2017 06:31:35 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
