@@ -1,5 +1,6 @@
 <map id="new_conn" name="new_conn">
 <area shape="rect" id="node2" href="$conn_8c.html#a40f42a91b07a7819a511396c7a80ef2b" title="ld_alarm_cb" alt="" coords="137,157,229,184"/>
+<area shape="rect" id="node19" href="$conn_8c.html#ae5a68581dd50e3e0045cd4bbdcc3583b" title="get_conn" alt="" coords="145,208,220,235"/>
 <area shape="rect" id="node3" href="$conn_8c.html#a6c7208e98442c20a863090f8a43b0c4a" title="tx" alt="" coords="318,107,357,133"/>
 <area shape="rect" id="node16" href="$conn_8c.html#aaeb047f2ca62d850715e3c5093b9cc02" title="set_ld_alarm" alt="" coords="451,157,547,184"/>
 <area shape="rect" id="node17" href="$conn_8c.html#a51821558a515ddb0a82519dda6ca59bb" title="detect_lost_pkts" alt="" coords="278,208,397,235"/>
