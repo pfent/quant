@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wait',['wait',['../thread_8h.html#af057623e4a6daa257007a78d8187cb0e',1,'thread.h']]]
+  ['unlock',['unlock',['../thread_8h.html#a67f7c01dd129fc3e1af1feafd0cc357f',1,'thread.h']]]
 ];
