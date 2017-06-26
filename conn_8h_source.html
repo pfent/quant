@@ -204,37 +204,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="conn_8h.html#a2825c2aa0fb893da66ad8d3288b47691">  115</a></span>&#160;<span class="preprocessor">#define CONN_FLAG_CLNT 0x01</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="conn_8h.html#a16ce9090a7667c09ebc48ce6a45a8951">  116</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CONN_FLAG_SERV 0x02</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="conn_8h.html#af6624398633d91fb64f5a0001381b638">  117</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CONN_FLAG_TLS_DONE 0x04</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">struct </span>ev_loop;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="conn_8h.html#a51821558a515ddb0a82519dda6ca59bb">detect_lost_pkts</a>(struct q_conn * const c);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;extern struct q_conn * <a class="code" href="conn_8h.html#acf996ba70b98b1eafcd73aaa24679cc1">new_conn</a>(const uint8_t type);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<a class="code" href="conn_8h.html#a72838cee7de7bdd1a191b70576763dd7">init_conn</a>(struct q_conn * const c,</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;          const uint64_t <span class="keywordtype">id</span>,</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;          const struct sockaddr * const peer,</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;          const socklen_t peer_len);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<a class="code" href="conn_8h.html#a6c7208e98442c20a863090f8a43b0c4a">tx</a>(struct w_sock * const ws, struct q_conn * const c);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<a class="code" href="conn_8h.html#a5749bce479cdde76574b7a1845be7fec">rx</a>(struct ev_loop * const l, ev_io * const rx_w, <span class="keywordtype">int</span> e);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="conn_8h.html#aaeb047f2ca62d850715e3c5093b9cc02">set_ld_alarm</a>(struct q_conn * const c);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">struct </span>ev_loop;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="conn_8h.html#a51821558a515ddb0a82519dda6ca59bb">detect_lost_pkts</a>(struct q_conn * const c);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;extern struct q_conn * <a class="code" href="conn_8h.html#acf996ba70b98b1eafcd73aaa24679cc1">new_conn</a>(const uint8_t type);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<a class="code" href="conn_8h.html#a72838cee7de7bdd1a191b70576763dd7">init_conn</a>(struct q_conn * const c,</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;          const uint64_t <span class="keywordtype">id</span>,</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;          const struct sockaddr * const peer,</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;          const socklen_t peer_len);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<a class="code" href="conn_8h.html#a6c7208e98442c20a863090f8a43b0c4a">tx</a>(struct w_sock * const ws, struct q_conn * const c);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<a class="code" href="conn_8h.html#a5749bce479cdde76574b7a1845be7fec">rx</a>(struct ev_loop * const l, ev_io * const rx_w, <span class="keywordtype">int</span> e);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="conn_8h.html#aaeb047f2ca62d850715e3c5093b9cc02">set_ld_alarm</a>(struct q_conn * const c);</div>
 <div class="ttc" id="structq__conn_html_aa56d9d1a83ede65076db2fc4f5090688"><div class="ttname"><a href="structq__conn.html#aa56d9d1a83ede65076db2fc4f5090688">q_conn::SPLAY_ENTRY</a></div><div class="ttdeci">SPLAY_ENTRY(q_conn) next</div></div>
 <div class="ttc" id="structq__conn_html_a5862c28e9e8bcbca7973d58b40a20956"><div class="ttname"><a href="structq__conn.html#a5862c28e9e8bcbca7973d58b40a20956">q_conn::state</a></div><div class="ttdeci">uint8_t state</div><div class="ttdoc">State of the connection. </div><div class="ttdef"><b>Definition:</b> conn.h:56</div></div>
-<div class="ttc" id="conn_8h_html_a51821558a515ddb0a82519dda6ca59bb"><div class="ttname"><a href="conn_8h.html#a51821558a515ddb0a82519dda6ca59bb">detect_lost_pkts</a></div><div class="ttdeci">void detect_lost_pkts(struct q_conn *const c)</div><div class="ttdef"><b>Definition:</b> conn.c:452</div></div>
-<div class="ttc" id="conn_8h_html_aaeb047f2ca62d850715e3c5093b9cc02"><div class="ttname"><a href="conn_8h.html#aaeb047f2ca62d850715e3c5093b9cc02">set_ld_alarm</a></div><div class="ttdeci">void set_ld_alarm(struct q_conn *const c)</div><div class="ttdef"><b>Definition:</b> conn.c:567</div></div>
+<div class="ttc" id="conn_8h_html_a51821558a515ddb0a82519dda6ca59bb"><div class="ttname"><a href="conn_8h.html#a51821558a515ddb0a82519dda6ca59bb">detect_lost_pkts</a></div><div class="ttdeci">void detect_lost_pkts(struct q_conn *const c)</div><div class="ttdef"><b>Definition:</b> conn.c:458</div></div>
+<div class="ttc" id="conn_8h_html_aaeb047f2ca62d850715e3c5093b9cc02"><div class="ttname"><a href="conn_8h.html#aaeb047f2ca62d850715e3c5093b9cc02">set_ld_alarm</a></div><div class="ttdeci">void set_ld_alarm(struct q_conn *const c)</div><div class="ttdef"><b>Definition:</b> conn.c:569</div></div>
 <div class="ttc" id="structq__conn_html"><div class="ttname"><a href="structq__conn.html">q_conn</a></div><div class="ttdoc">A QUIC connection. </div><div class="ttdef"><b>Definition:</b> conn.h:48</div></div>
 <div class="ttc" id="conn_8h_html_a40e2d83b42c68d523d0c5ec107036c67"><div class="ttname"><a href="conn_8h.html#a40e2d83b42c68d523d0c5ec107036c67">SPLAY_HEAD</a></div><div class="ttdeci">SPLAY_HEAD(conn, q_conn) q_conns</div></div>
 <div class="ttc" id="conn_8h_html_abe3a1fa9a0607f044f4c3bebdd49297a"><div class="ttname"><a href="conn_8h.html#abe3a1fa9a0607f044f4c3bebdd49297a">q_conns_lock</a></div><div class="ttdeci">pthread_mutex_t q_conns_lock</div><div class="ttdef"><b>Definition:</b> conn.c:65</div></div>
 <div class="ttc" id="diet_8h_html"><div class="ttname"><a href="diet_8h.html">diet.h</a></div></div>
-<div class="ttc" id="conn_8h_html_acf996ba70b98b1eafcd73aaa24679cc1"><div class="ttname"><a href="conn_8h.html#acf996ba70b98b1eafcd73aaa24679cc1">new_conn</a></div><div class="ttdeci">struct q_conn * new_conn(const uint8_t type)</div><div class="ttdef"><b>Definition:</b> conn.c:502</div></div>
+<div class="ttc" id="conn_8h_html_acf996ba70b98b1eafcd73aaa24679cc1"><div class="ttname"><a href="conn_8h.html#acf996ba70b98b1eafcd73aaa24679cc1">new_conn</a></div><div class="ttdeci">struct q_conn * new_conn(const uint8_t type)</div><div class="ttdef"><b>Definition:</b> conn.c:508</div></div>
 <div class="ttc" id="thread_8h_html_af4bdba9f5b9e904ae299f532c8b05f92"><div class="ttname"><a href="thread_8h.html#af4bdba9f5b9e904ae299f532c8b05f92">lock</a></div><div class="ttdeci">#define lock(l)</div><div class="ttdef"><b>Definition:</b> thread.h:28</div></div>
 <div class="ttc" id="structdiet_html"><div class="ttname"><a href="structdiet.html">diet</a></div><div class="ttdef"><b>Definition:</b> diet.h:52</div></div>
 <div class="ttc" id="structq__conn_html_a8b9240b92c9e749a5af25f9459a24978"><div class="ttname"><a href="structq__conn.html#a8b9240b92c9e749a5af25f9459a24978">q_conn::_unused</a></div><div class="ttdeci">uint8_t _unused[2]</div><div class="ttdef"><b>Definition:</b> conn.h:58</div></div>
@@ -245,14 +244,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="conn_8h_html_a6e57d3d33168af0723c96ce5f53ea343"><div class="ttname"><a href="conn_8h.html#a6e57d3d33168af0723c96ce5f53ea343">conn_cmp</a></div><div class="ttdeci">int64_t conn_cmp(const struct q_conn *const a, const struct q_conn *const b)</div><div class="ttdef"><b>Definition:</b> conn.c:68</div></div>
 <div class="ttc" id="structq__stream_html"><div class="ttname"><a href="structq__stream.html">q_stream</a></div><div class="ttdef"><b>Definition:</b> stream.h:34</div></div>
 <div class="ttc" id="conn_8c_html_a878fb1da04149fcdc07365e115384608"><div class="ttname"><a href="conn_8c.html#a878fb1da04149fcdc07365e115384608">q_conns</a></div><div class="ttdeci">struct conn q_conns</div><div class="ttdef"><b>Definition:</b> conn.c:64</div></div>
-<div class="ttc" id="conn_8h_html_a6c7208e98442c20a863090f8a43b0c4a"><div class="ttname"><a href="conn_8h.html#a6c7208e98442c20a863090f8a43b0c4a">tx</a></div><div class="ttdeci">void tx(struct w_sock *const ws, struct q_conn *const c)</div><div class="ttdef"><b>Definition:</b> conn.c:184</div></div>
+<div class="ttc" id="conn_8h_html_a6c7208e98442c20a863090f8a43b0c4a"><div class="ttname"><a href="conn_8h.html#a6c7208e98442c20a863090f8a43b0c4a">tx</a></div><div class="ttdeci">void tx(struct w_sock *const ws, struct q_conn *const c)</div><div class="ttdef"><b>Definition:</b> conn.c:188</div></div>
 <div class="ttc" id="structq__conn_html_a95a14b6b7b74163dc841d8b6ded8f0ab"><div class="ttname"><a href="structq__conn.html#a95a14b6b7b74163dc841d8b6ded8f0ab">q_conn::peer_len</a></div><div class="ttdeci">socklen_t peer_len</div><div class="ttdoc">Length of peer. </div><div class="ttdef"><b>Definition:</b> conn.h:59</div></div>
-<div class="ttc" id="conn_8h_html_a72838cee7de7bdd1a191b70576763dd7"><div class="ttname"><a href="conn_8h.html#a72838cee7de7bdd1a191b70576763dd7">init_conn</a></div><div class="ttdeci">void init_conn(struct q_conn *const c, const uint64_t id, const struct sockaddr *const peer, const socklen_t peer_len)</div><div class="ttdef"><b>Definition:</b> conn.c:545</div></div>
-<div class="ttc" id="conn_8h_html_a5749bce479cdde76574b7a1845be7fec"><div class="ttname"><a href="conn_8h.html#a5749bce479cdde76574b7a1845be7fec">rx</a></div><div class="ttdeci">void rx(struct ev_loop *const l, ev_io *const rx_w, int e)</div><div class="ttdef"><b>Definition:</b> conn.c:278</div></div>
+<div class="ttc" id="conn_8h_html_a72838cee7de7bdd1a191b70576763dd7"><div class="ttname"><a href="conn_8h.html#a72838cee7de7bdd1a191b70576763dd7">init_conn</a></div><div class="ttdeci">void init_conn(struct q_conn *const c, const uint64_t id, const struct sockaddr *const peer, const socklen_t peer_len)</div><div class="ttdef"><b>Definition:</b> conn.c:551</div></div>
+<div class="ttc" id="conn_8h_html_a5749bce479cdde76574b7a1845be7fec"><div class="ttname"><a href="conn_8h.html#a5749bce479cdde76574b7a1845be7fec">rx</a></div><div class="ttdeci">void rx(struct ev_loop *const l, ev_io *const rx_w, int e)</div><div class="ttdef"><b>Definition:</b> conn.c:283</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 26 2017 13:30:38 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 26 2017 14:54:14 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
