@@ -5,6 +5,5 @@ var searchData=
   ['f_5flong_5fhdr',['F_LONG_HDR',['../pkt_8h.html#a08c968a9e1a428f2aaf045602f65bd90',1,'pkt.h']]],
   ['f_5fsh_5fcid',['F_SH_CID',['../pkt_8h.html#a9372f6bdbef22b48a9e3367911d906c5',1,'pkt.h']]],
   ['f_5fsh_5fkey_5fphase',['F_SH_KEY_PHASE',['../pkt_8h.html#ad154230bf45290788f65c81eecec537e',1,'pkt.h']]],
-  ['f_5fstream_5fdata_5flen',['F_STREAM_DATA_LEN',['../frame_8c.html#a1c335c9e861891a7c72e84ff2126d01c',1,'frame.c']]],
-  ['f_5fstream_5ffin',['F_STREAM_FIN',['../frame_8c.html#af19725a5284688adb364856878892964',1,'frame.c']]]
+  ['f_5fstream_5fdata_5flen',['F_STREAM_DATA_LEN',['../frame_8c.html#a1c335c9e861891a7c72e84ff2126d01c',1,'frame.c']]]
 ];

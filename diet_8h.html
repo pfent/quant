@@ -87,6 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">diet.h File Reference</div>  </div>
@@ -107,7 +108,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="diet_8h__dep__incl.png" border="0" usemap="#src_2diet_8hdep" alt=""/></div>
 <map name="src_2diet_8hdep" id="src_2diet_8hdep">
-<area shape="rect" id="node2" href="diet_8c.html" title="src/diet.c" alt="" coords="5,80,80,107"/></map>
+<area shape="rect" id="node2" href="conn_8h.html" title="src/conn.h" alt="" coords="193,80,275,107"/><area shape="rect" id="node3" href="conn_8c.html" title="src/conn.c" alt="" coords="5,155,87,181"/><area shape="rect" id="node4" href="frame_8c.html" title="src/frame.c" alt="" coords="112,155,200,181"/><area shape="rect" id="node8" href="diet_8c.html" title="src/diet.c" alt="" coords="301,80,376,107"/><area shape="rect" id="node5" href="pkt_8c.html" title="src/pkt.c" alt="" coords="225,155,297,181"/><area shape="rect" id="node6" href="quic_8c.html" title="src/quic.c" alt="" coords="322,155,400,181"/><area shape="rect" id="node7" href="stream_8c.html" title="src/stream.c" alt="" coords="425,155,519,181"/></map>
 </div>
 </div>
 <p><a href="diet_8h_source.html">Go to the source code of this file.</a></p>
@@ -117,26 +118,66 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structival.html">ival</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a C adaptation of the "discrete interval encoding tree" (DIET) data structure described in: Martin Erwig, "Diets for fat sets", Journal of Functional Programming, Vol.  <a href="structival.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiet.html">diet</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a5fdc9501fc70208804b7745759e15c8a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8h.html#a5fdc9501fc70208804b7745759e15c8a">diet_max</a>(t)&#160;&#160;&#160;(SPLAY_EMPTY(t) ? 0 : SPLAY_MAX(<a class="el" href="structdiet.html">diet</a>, (t))-&gt;hi)</td></tr>
+<tr class="separator:a5fdc9501fc70208804b7745759e15c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f56c9c82aa7a0ac1ad4dceff22b0a66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8h.html#a5f56c9c82aa7a0ac1ad4dceff22b0a66">diet_min</a>(t)&#160;&#160;&#160;(SPLAY_EMPTY(t) ? 0 : SPLAY_MIN(<a class="el" href="structdiet.html">diet</a>, (t))-&gt;lo)</td></tr>
+<tr class="separator:a5f56c9c82aa7a0ac1ad4dceff22b0a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a23255463cb0c452dd80e442d9144cedf"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8h.html#a23255463cb0c452dd80e442d9144cedf">ival_cmp</a> (const struct <a class="el" href="structival.html">ival</a> *const a, const struct <a class="el" href="structival.html">ival</a> *const b)</td></tr>
 <tr class="memdesc:a23255463cb0c452dd80e442d9144cedf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two ival intervals.  <a href="#a23255463cb0c452dd80e442d9144cedf">More...</a><br/></td></tr>
 <tr class="separator:a23255463cb0c452dd80e442d9144cedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc2bd218e98bdcc53ca46d55892a3825"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8h.html#abc2bd218e98bdcc53ca46d55892a3825">SPLAY_HEAD</a> (diet, <a class="el" href="structival.html">ival</a>)</td></tr>
-<tr class="separator:abc2bd218e98bdcc53ca46d55892a3825"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acff4764cdd209408ec31906773db2455"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structival.html">ival</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8h.html#acff4764cdd209408ec31906773db2455">diet_find</a> (struct diet *const t, const uint64_t n)</td></tr>
+<tr class="memitem:acff4764cdd209408ec31906773db2455"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structival.html">ival</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8h.html#acff4764cdd209408ec31906773db2455">diet_find</a> (struct <a class="el" href="structdiet.html">diet</a> *const t, const uint64_t n)</td></tr>
 <tr class="memdesc:acff4764cdd209408ec31906773db2455"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the interval containing <code>n</code> in diet tree <code>t</code>.  <a href="#acff4764cdd209408ec31906773db2455">More...</a><br/></td></tr>
 <tr class="separator:acff4764cdd209408ec31906773db2455"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ba0ac5feb124c6e3076dea437fa3b79"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structival.html">ival</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8h.html#a3ba0ac5feb124c6e3076dea437fa3b79">diet_insert</a> (struct diet *const t, const uint64_t n)</td></tr>
+<tr class="memitem:a3ba0ac5feb124c6e3076dea437fa3b79"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structival.html">ival</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8h.html#a3ba0ac5feb124c6e3076dea437fa3b79">diet_insert</a> (struct <a class="el" href="structdiet.html">diet</a> *const t, const uint64_t n)</td></tr>
 <tr class="memdesc:a3ba0ac5feb124c6e3076dea437fa3b79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts integer <code>n</code> into the diet tree <code>t</code>.  <a href="#a3ba0ac5feb124c6e3076dea437fa3b79">More...</a><br/></td></tr>
 <tr class="separator:a3ba0ac5feb124c6e3076dea437fa3b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93b9b31b9ca382377ac736a1495c9bd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8h.html#a93b9b31b9ca382377ac736a1495c9bd0">diet_remove</a> (struct diet *const t, const uint64_t n)</td></tr>
+<tr class="memitem:a93b9b31b9ca382377ac736a1495c9bd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8h.html#a93b9b31b9ca382377ac736a1495c9bd0">diet_remove</a> (struct <a class="el" href="structdiet.html">diet</a> *const t, const uint64_t n)</td></tr>
 <tr class="memdesc:a93b9b31b9ca382377ac736a1495c9bd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove integer <code>n</code> from the intervals stored in diet tree <code>t</code>.  <a href="#a93b9b31b9ca382377ac736a1495c9bd0">More...</a><br/></td></tr>
 <tr class="separator:a93b9b31b9ca382377ac736a1495c9bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aece76d9290a6c7d12958a2fa703fee87"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8h.html#aece76d9290a6c7d12958a2fa703fee87">diet_to_str</a> (char *const str, const size_t len, struct diet *const d)</td></tr>
+<tr class="memitem:aece76d9290a6c7d12958a2fa703fee87"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8h.html#aece76d9290a6c7d12958a2fa703fee87">diet_to_str</a> (char *const str, const size_t len, struct <a class="el" href="structdiet.html">diet</a> *const d)</td></tr>
 <tr class="separator:aece76d9290a6c7d12958a2fa703fee87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a5fdc9501fc70208804b7745759e15c8a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define diet_max</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">t</td><td>)</td>
+          <td>&#160;&#160;&#160;(SPLAY_EMPTY(t) ? 0 : SPLAY_MAX(<a class="el" href="structdiet.html">diet</a>, (t))-&gt;hi)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5f56c9c82aa7a0ac1ad4dceff22b0a66"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define diet_min</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">t</td><td>)</td>
+          <td>&#160;&#160;&#160;(SPLAY_EMPTY(t) ? 0 : SPLAY_MIN(<a class="el" href="structdiet.html">diet</a>, (t))-&gt;lo)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="acff4764cdd209408ec31906773db2455"></a>
 <div class="memitem">
@@ -145,7 +186,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">struct <a class="el" href="structival.html">ival</a>* diet_find </td>
           <td>(</td>
-          <td class="paramtype">struct diet *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structdiet.html">diet</a> *const&#160;</td>
           <td class="paramname"><em>t</em>, </td>
         </tr>
         <tr>
@@ -191,7 +232,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">struct <a class="el" href="structival.html">ival</a>* diet_insert </td>
           <td>(</td>
-          <td class="paramtype">struct diet *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structdiet.html">diet</a> *const&#160;</td>
           <td class="paramname"><em>t</em>, </td>
         </tr>
         <tr>
@@ -236,7 +277,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void diet_remove </td>
           <td>(</td>
-          <td class="paramtype">struct diet *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structdiet.html">diet</a> *const&#160;</td>
           <td class="paramname"><em>t</em>, </td>
         </tr>
         <tr>
@@ -292,7 +333,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct diet *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structdiet.html">diet</a> *const&#160;</td>
           <td class="paramname"><em>d</em>&#160;</td>
         </tr>
         <tr>
@@ -341,36 +382,10 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="abc2bd218e98bdcc53ca46d55892a3825"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">SPLAY_HEAD </td>
-          <td>(</td>
-          <td class="paramtype">diet&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structival.html">ival</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 26 2017 08:55:53 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 26 2017 13:30:38 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

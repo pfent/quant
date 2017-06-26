@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>quant: Data Structures</title>
+<title>quant: diet Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,12 +61,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
       <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,20 +80,67 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">Data Structures</div>  </div>
+<div class="title">diet Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock">Here are the data structures with brief descriptions:</div><div class="directory">
-<table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="structdiet.html" target="_self">diet</a></td><td class="desc"></td></tr>
-<tr id="row_1_"><td class="entry"><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="structival.html" target="_self">ival</a></td><td class="desc">This is a C adaptation of the "discrete interval encoding tree" (DIET) data structure described in: Martin Erwig, "Diets for fat sets", Journal of Functional Programming, Vol </td></tr>
-<tr id="row_2_" class="even"><td class="entry"><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="structpkt__meta.html" target="_self">pkt_meta</a></td><td class="desc">Packet meta-data associated with w_iov buffers </td></tr>
-<tr id="row_3_"><td class="entry"><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="structq__conn.html" target="_self">q_conn</a></td><td class="desc">A QUIC connection </td></tr>
-<tr id="row_4_" class="even"><td class="entry"><img src="ftv2lastnode.png" alt="\" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="structq__stream.html" target="_self">q_stream</a></td><td class="desc"></td></tr>
+
+<p><code>#include &lt;<a class="el" href="diet_8h_source.html">diet.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:abecbe406d974b410b0ccdaba611f6e63"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiet.html#abecbe406d974b410b0ccdaba611f6e63">SPLAY_HEAD</a> (, <a class="el" href="structival.html">ival</a>)</td></tr>
+<tr class="memdesc:abecbe406d974b410b0ccdaba611f6e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splay head.  <a href="#abecbe406d974b410b0ccdaba611f6e63">More...</a><br/></td></tr>
+<tr class="separator:abecbe406d974b410b0ccdaba611f6e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:aa254910587096ac0f5034b8f8c7b6161"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiet.html#aa254910587096ac0f5034b8f8c7b6161">cnt</a></td></tr>
+<tr class="memdesc:aa254910587096ac0f5034b8f8c7b6161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of nodes (intervals) in the diet tree.  <a href="#aa254910587096ac0f5034b8f8c7b6161">More...</a><br/></td></tr>
+<tr class="separator:aa254910587096ac0f5034b8f8c7b6161"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- directory -->
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="abecbe406d974b410b0ccdaba611f6e63"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">diet::SPLAY_HEAD </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structival.html">ival</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Splay head. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="aa254910587096ac0f5034b8f8c7b6161"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t diet::cnt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of nodes (intervals) in the diet tree. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>src/<a class="el" href="diet_8h_source.html">diet.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
