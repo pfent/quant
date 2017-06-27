@@ -168,19 +168,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="keywordtype">void</span> * <span class="keyword">const</span> q = <a name="a0"></a><a class="code" href="quant_8h.html#afd422de86ec955a7adb020e08fc4a738">q_init</a>(ifname);</div>
 <div class="line">    <span class="keyword">struct </span><a name="_a1"></a><a class="code" href="structq__conn.html">q_conn</a> * c = <a name="a2"></a><a class="code" href="quant_8h.html#aad550ed36e6497a2030cb6c03764d604">q_bind</a>(q, port);</div>
 <div class="line">    warn(debug, <span class="stringliteral">&quot;%s waiting on %s port %d&quot;</span>, basename(argv[0]), ifname, port);</div>
-<div class="line">    <a name="a3"></a><a class="code" href="quant_8h.html#a86d109e069b4e9ca319d8a85de33e0b3">q_accept</a>(c);</div>
-<div class="line">    <span class="keyword">struct </span>w_iov_stailq i = STAILQ_HEAD_INITIALIZER(i);</div>
-<div class="line">    <span class="keyword">struct </span><a name="_a4"></a><a class="code" href="structq__stream.html">q_stream</a> * <span class="keyword">const</span> s = <a name="a5"></a><a class="code" href="quant_8h.html#a1a1836c82c33fe12f10ff290a1b25750">q_read</a>(c, &amp;i);</div>
+<div class="line">    <span class="keywordflow">if</span> (<a name="a3"></a><a class="code" href="quant_8h.html#a86d109e069b4e9ca319d8a85de33e0b3">q_accept</a>(c)) {</div>
+<div class="line">        <span class="keyword">struct </span>w_iov_stailq i = STAILQ_HEAD_INITIALIZER(i);</div>
+<div class="line">        <span class="keyword">struct </span><a name="_a4"></a><a class="code" href="structq__stream.html">q_stream</a> * <span class="keyword">const</span> s = <a name="a5"></a><a class="code" href="quant_8h.html#a1a1836c82c33fe12f10ff290a1b25750">q_read</a>(c, &amp;i);</div>
+<div class="line">        <span class="keywordflow">if</span> (s) {</div>
 <div class="line"><span class="preprocessor">#ifndef NDEBUG</span></div>
-<div class="line"><span class="preprocessor"></span>    <span class="keyword">const</span> uint32_t len = w_iov_stailq_len(&amp;i);</div>
-<div class="line">    warn(info, <span class="stringliteral">&quot;rx %u byte%s on str %d on conn %&quot;</span> PRIx64, len, plural(len),</div>
-<div class="line">         <a name="a6"></a><a class="code" href="quant_8h.html#a289e37dfa1b6d51cba79934752776e0f">q_sid</a>(s), <a name="a7"></a><a class="code" href="quant_8h.html#a06870629e4f01eecadb5f987799c15e3">q_cid</a>(c));</div>
+<div class="line"><span class="preprocessor"></span>            <span class="keyword">const</span> uint32_t len = w_iov_stailq_len(&amp;i);</div>
+<div class="line">            warn(info, <span class="stringliteral">&quot;rx %u byte%s on str %d on conn %&quot;</span> PRIx64, len,</div>
+<div class="line">                 plural(len), <a name="a6"></a><a class="code" href="quant_8h.html#a289e37dfa1b6d51cba79934752776e0f">q_sid</a>(s), <a name="a7"></a><a class="code" href="quant_8h.html#a06870629e4f01eecadb5f987799c15e3">q_cid</a>(c));</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="preprocessor"></span>    <span class="keyword">struct </span>w_iov * v;</div>
-<div class="line">    STAILQ_FOREACH (v, &amp;i, next)</div>
-<div class="line">        warn(info, &quot;%s&quot;, v-&gt;buf);</div>
-<div class="line">    <a name="a8"></a><a class="code" href="quant_8h.html#a5174cc35e3abbcc0f30c1e59e422331a">q_free</a>(q, &amp;i);</div>
-<div class="line">    <a name="a9"></a><a class="code" href="quant_8h.html#a795c32a858382068fa5b5cf25af69a77">q_close</a>(c);</div>
+<div class="line"><span class="preprocessor"></span>            <span class="keyword">struct </span>w_iov * v;</div>
+<div class="line">            STAILQ_FOREACH (v, &amp;i, next)</div>
+<div class="line">                warn(info, &quot;%s&quot;, v-&gt;buf);</div>
+<div class="line">            <a name="a8"></a><a class="code" href="quant_8h.html#a5174cc35e3abbcc0f30c1e59e422331a">q_free</a>(q, &amp;i);</div>
+<div class="line">        }</div>
+<div class="line">        <a name="a9"></a><a class="code" href="quant_8h.html#a795c32a858382068fa5b5cf25af69a77">q_close</a>(c);</div>
+<div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    <a name="a10"></a><a class="code" href="quant_8h.html#ad35b637183ff9f9c00ef371bd986bd30">q_cleanup</a>(q);</div>
 <div class="line">    return 0;</div>
@@ -188,7 +191,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 26 2017 14:54:14 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 27 2017 07:21:13 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

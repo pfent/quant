@@ -17,5 +17,6 @@ var searchData=
   ['diet_5fmax',['diet_max',['../diet_8h.html#a5fdc9501fc70208804b7745759e15c8a',1,'diet.h']]],
   ['diet_5fmin',['diet_min',['../diet_8h.html#a5f56c9c82aa7a0ac1ad4dceff22b0a66',1,'diet.h']]],
   ['diet_5fremove',['diet_remove',['../diet_8c.html#a93b9b31b9ca382377ac736a1495c9bd0',1,'diet_remove(struct diet *const t, const uint64_t n):&#160;diet.c'],['../diet_8h.html#a93b9b31b9ca382377ac736a1495c9bd0',1,'diet_remove(struct diet *const t, const uint64_t n):&#160;diet.c']]],
-  ['diet_5fto_5fstr',['diet_to_str',['../diet_8c.html#aece76d9290a6c7d12958a2fa703fee87',1,'diet_to_str(char *const str, const size_t len, struct diet *const d):&#160;diet.c'],['../diet_8h.html#aece76d9290a6c7d12958a2fa703fee87',1,'diet_to_str(char *const str, const size_t len, struct diet *const d):&#160;diet.c']]]
+  ['diet_5fto_5fstr',['diet_to_str',['../diet_8c.html#aece76d9290a6c7d12958a2fa703fee87',1,'diet_to_str(char *const str, const size_t len, struct diet *const d):&#160;diet.c'],['../diet_8h.html#aece76d9290a6c7d12958a2fa703fee87',1,'diet_to_str(char *const str, const size_t len, struct diet *const d):&#160;diet.c']]],
+  ['do_5fclose',['do_close',['../quic_8c.html#afe2e9ff0e9cb1939c3437663550954e7',1,'quic.c']]]
 ];
