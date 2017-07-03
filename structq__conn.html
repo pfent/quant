@@ -104,8 +104,8 @@ Collaboration diagram for q_conn:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa56d9d1a83ede65076db2fc4f5090688"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#aa56d9d1a83ede65076db2fc4f5090688">SPLAY_ENTRY</a> (<a class="el" href="structq__conn.html">q_conn</a>) next</td></tr>
-<tr class="separator:aa56d9d1a83ede65076db2fc4f5090688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75d25b8c1c1e18725769ef4463589d8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a75d25b8c1c1e18725769ef4463589d8f">SPLAY_ENTRY</a> (<a class="el" href="structq__conn.html">q_conn</a>) node</td></tr>
+<tr class="separator:a75d25b8c1c1e18725769ef4463589d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a079b1c86fed2b81e0732f21a83d7736a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a079b1c86fed2b81e0732f21a83d7736a">SPLAY_HEAD</a> (stream, <a class="el" href="structq__stream.html">q_stream</a>) streams</td></tr>
 <tr class="separator:a079b1c86fed2b81e0732f21a83d7736a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -165,7 +165,10 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a7c24f1bcf0e7574e48493b42e1ceed6a"><td class="memItemLeft" align="right" valign="top">ev_tstamp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a7c24f1bcf0e7574e48493b42e1ceed6a">loss_t</a></td></tr>
 <tr class="separator:a7c24f1bcf0e7574e48493b42e1ceed6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa1eaca40769e432cbf59682625ea9c7"><td class="memItemLeft" align="right" valign="top">struct w_iov_stailq&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#aaa1eaca40769e432cbf59682625ea9c7">sent_pkts</a></td></tr>
+<tr class="memdesc:aaa1eaca40769e432cbf59682625ea9c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sent-but-unACKed packets.  <a href="#aaa1eaca40769e432cbf59682625ea9c7">More...</a><br/></td></tr>
 <tr class="separator:aaa1eaca40769e432cbf59682625ea9c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe9ab33ce5751173f1d47acdc6dc14b9"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structdiet.html">diet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#abe9ab33ce5751173f1d47acdc6dc14b9">acked_pkts</a></td></tr>
+<tr class="separator:abe9ab33ce5751173f1d47acdc6dc14b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a508df9ada0e93ee707821761376334d3"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a508df9ada0e93ee707821761376334d3">lg_sent</a></td></tr>
 <tr class="memdesc:a508df9ada0e93ee707821761376334d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Largest packet number sent.  <a href="#a508df9ada0e93ee707821761376334d3">More...</a><br/></td></tr>
 <tr class="separator:a508df9ada0e93ee707821761376334d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,7 +202,7 @@ Data Fields</h2></td></tr>
 <div class="textblock"><p>A QUIC connection. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#_a0">client.c</a>, and <a class="el" href="server_8c-example.html#_a1">server.c</a>.</dd>
 </dl></div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aa56d9d1a83ede65076db2fc4f5090688"></a>
+<a class="anchor" id="a75d25b8c1c1e18725769ef4463589d8f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -272,6 +275,18 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">pthread_cond_t q_conn::accept_cv</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abe9ab33ce5751173f1d47acdc6dc14b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structdiet.html">diet</a> q_conn::acked_pkts</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -592,6 +607,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Sent-but-unACKed packets. </p>
+<p>The <code>buf</code> and  fields of the w_iov structs are relative to any stream data. </p>
+
 </div>
 </div>
 <a class="anchor" id="a36327baf8c4d695023b07a2270587e78"></a>
@@ -702,7 +720,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 27 2017 07:21:13 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 3 2017 13:54:43 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -89,7 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Packet meta-data associated with w_iov buffers.  
+<p>Packet meta-data information associated with w_iov buffers.  
  <a href="structpkt__meta.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="quic_8h_source.html">quic.h</a>&gt;</code></p>
@@ -99,19 +99,45 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a8e7d32c007e445a426a81e4ac317ffc9"><td class="memItemLeft" align="right" valign="top">ev_tstamp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpkt__meta.html#a8e7d32c007e445a426a81e4ac317ffc9">time</a></td></tr>
 <tr class="memdesc:a8e7d32c007e445a426a81e4ac317ffc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmission timestamp.  <a href="#a8e7d32c007e445a426a81e4ac317ffc9">More...</a><br/></td></tr>
 <tr class="separator:a8e7d32c007e445a426a81e4ac317ffc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f9e808e4d126685f0d28dd09501feaa"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpkt__meta.html#a5f9e808e4d126685f0d28dd09501feaa">ack_cnt</a></td></tr>
-<tr class="memdesc:a5f9e808e4d126685f0d28dd09501feaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of ACKs we have seen for this packet.  <a href="#a5f9e808e4d126685f0d28dd09501feaa">More...</a><br/></td></tr>
-<tr class="separator:a5f9e808e4d126685f0d28dd09501feaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99c038ba116ffb4472268fa3876661a3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpkt__meta.html#a99c038ba116ffb4472268fa3876661a3">ref_cnt</a></td></tr>
-<tr class="memdesc:a99c038ba116ffb4472268fa3876661a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference count. Increase on assign, free when zero.  <a href="#a99c038ba116ffb4472268fa3876661a3">More...</a><br/></td></tr>
-<tr class="separator:a99c038ba116ffb4472268fa3876661a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a046d21e91226445c2b707a26b4eb2f10"><td class="memItemLeft" align="right" valign="top">ptls_buffer_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpkt__meta.html#a046d21e91226445c2b707a26b4eb2f10">tb</a></td></tr>
 <tr class="memdesc:a046d21e91226445c2b707a26b4eb2f10"><td class="mdescLeft">&#160;</td><td class="mdescRight">PicoTLS send buffer.  <a href="#a046d21e91226445c2b707a26b4eb2f10">More...</a><br/></td></tr>
 <tr class="separator:a046d21e91226445c2b707a26b4eb2f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae1d2cd4d2f54e96370bf796fe68791"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpkt__meta.html#aeae1d2cd4d2f54e96370bf796fe68791">nr</a></td></tr>
+<tr class="memdesc:aeae1d2cd4d2f54e96370bf796fe68791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packet number.  <a href="#aeae1d2cd4d2f54e96370bf796fe68791">More...</a><br/></td></tr>
+<tr class="separator:aeae1d2cd4d2f54e96370bf796fe68791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2edbc0461ff4b5c92fa3fba4a799cddd"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpkt__meta.html#a2edbc0461ff4b5c92fa3fba4a799cddd">data_off</a></td></tr>
+<tr class="memdesc:a2edbc0461ff4b5c92fa3fba4a799cddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream offset of data in stream frame.  <a href="#a2edbc0461ff4b5c92fa3fba4a799cddd">More...</a><br/></td></tr>
+<tr class="separator:a2edbc0461ff4b5c92fa3fba4a799cddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f9e808e4d126685f0d28dd09501feaa"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpkt__meta.html#a5f9e808e4d126685f0d28dd09501feaa">ack_cnt</a></td></tr>
+<tr class="memdesc:a5f9e808e4d126685f0d28dd09501feaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of ACKs we have seen for this packet.  <a href="#a5f9e808e4d126685f0d28dd09501feaa">More...</a><br/></td></tr>
+<tr class="separator:a5f9e808e4d126685f0d28dd09501feaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af75809576a0c205f4df83692f4c09a39"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpkt__meta.html#af75809576a0c205f4df83692f4c09a39">data_len</a></td></tr>
+<tr class="memdesc:af75809576a0c205f4df83692f4c09a39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of data in stream frame.  <a href="#af75809576a0c205f4df83692f4c09a39">More...</a><br/></td></tr>
+<tr class="separator:af75809576a0c205f4df83692f4c09a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad21214f4cddc373c147e932df3af7229"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpkt__meta.html#ad21214f4cddc373c147e932df3af7229">buf_len</a></td></tr>
+<tr class="memdesc:ad21214f4cddc373c147e932df3af7229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of buffer after <a class="el" href="pkt_8c.html#af392b36c58463646c250f5b01ea07238">enc_pkt()</a>.  <a href="#ad21214f4cddc373c147e932df3af7229">More...</a><br/></td></tr>
+<tr class="separator:ad21214f4cddc373c147e932df3af7229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fa27e1e24a756df5d6f1ee1e2cafc29"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpkt__meta.html#a2fa27e1e24a756df5d6f1ee1e2cafc29">head_start</a></td></tr>
+<tr class="memdesc:a2fa27e1e24a756df5d6f1ee1e2cafc29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset of first byte of stream frame header.  <a href="#a2fa27e1e24a756df5d6f1ee1e2cafc29">More...</a><br/></td></tr>
+<tr class="separator:a2fa27e1e24a756df5d6f1ee1e2cafc29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed4bf48aa13b310dfcb17dd48f135048"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpkt__meta.html#aed4bf48aa13b310dfcb17dd48f135048">_unused</a> [6]</td></tr>
+<tr class="separator:aed4bf48aa13b310dfcb17dd48f135048"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Packet meta-data associated with w_iov buffers. </p>
+<div class="textblock"><p>Packet meta-data information associated with w_iov buffers. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="aed4bf48aa13b310dfcb17dd48f135048"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pkt_meta::_unused[6]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a5f9e808e4d126685f0d28dd09501feaa"></a>
 <div class="memitem">
 <div class="memproto">
@@ -126,17 +152,73 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a99c038ba116ffb4472268fa3876661a3"></a>
+<a class="anchor" id="ad21214f4cddc373c147e932df3af7229"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t pkt_meta::ref_cnt</td>
+          <td class="memname">uint16_t pkt_meta::buf_len</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Reference count. Increase on assign, free when zero. </p>
+<p>Length of buffer after <a class="el" href="pkt_8c.html#af392b36c58463646c250f5b01ea07238">enc_pkt()</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="af75809576a0c205f4df83692f4c09a39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pkt_meta::data_len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Length of data in stream frame. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2edbc0461ff4b5c92fa3fba4a799cddd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t pkt_meta::data_off</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stream offset of data in stream frame. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2fa27e1e24a756df5d6f1ee1e2cafc29"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pkt_meta::head_start</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Offset of first byte of stream frame header. </p>
+
+</div>
+</div>
+<a class="anchor" id="aeae1d2cd4d2f54e96370bf796fe68791"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t pkt_meta::nr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Packet number. </p>
 
 </div>
 </div>
@@ -174,7 +256,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 27 2017 07:21:13 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 3 2017 13:54:43 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

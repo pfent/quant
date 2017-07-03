@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['q_5faccept',['q_accept',['../quant_8h.html#a86d109e069b4e9ca319d8a85de33e0b3',1,'q_accept(struct q_conn *const c):&#160;quic.c'],['../quic_8c.html#a86d109e069b4e9ca319d8a85de33e0b3',1,'q_accept(struct q_conn *const c):&#160;quic.c']]],
+  ['q_5faccept',['q_accept',['../quant_8h.html#a1dee2094bada943ba4c4dfac33988eea',1,'q_accept(struct q_conn *const c):&#160;quic.c'],['../quic_8c.html#a1dee2094bada943ba4c4dfac33988eea',1,'q_accept(struct q_conn *const c):&#160;quic.c']]],
   ['q_5falloc',['q_alloc',['../quant_8h.html#aea134a17473258cf092d89f1835d989b',1,'q_alloc(void *const w, struct w_iov_stailq *const q, const uint32_t len):&#160;quic.c'],['../quic_8c.html#aea134a17473258cf092d89f1835d989b',1,'q_alloc(void *const w, struct w_iov_stailq *const q, const uint32_t len):&#160;quic.c']]],
   ['q_5fbind',['q_bind',['../quant_8h.html#aad550ed36e6497a2030cb6c03764d604',1,'q_bind(void *const q, const uint16_t port):&#160;quic.c'],['../quic_8c.html#aad550ed36e6497a2030cb6c03764d604',1,'q_bind(void *const q, const uint16_t port):&#160;quic.c']]],
   ['q_5fcid',['q_cid',['../quant_8h.html#a06870629e4f01eecadb5f987799c15e3',1,'q_cid(const struct q_conn *const c):&#160;quic.c'],['../quic_8c.html#a06870629e4f01eecadb5f987799c15e3',1,'q_cid(const struct q_conn *const c):&#160;quic.c']]],

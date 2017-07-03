@@ -6,12 +6,13 @@ var searchData=
   ['signal',['signal',['../thread_8h.html#af5614507097fa3631cdd5376d719349e',1,'thread.h']]],
   ['signal_5fcb',['signal_cb',['../quic_8c.html#adcaad6c37574a686baf501d9bcfaec38',1,'quic.c']]],
   ['sock',['sock',['../structq__conn.html#a36327baf8c4d695023b07a2270587e78',1,'q_conn']]],
-  ['splay_5fentry',['SPLAY_ENTRY',['../structq__conn.html#aa56d9d1a83ede65076db2fc4f5090688',1,'q_conn::SPLAY_ENTRY()'],['../structival.html#a62e6537a944f488355463920b51c4853',1,'ival::SPLAY_ENTRY()'],['../structq__stream.html#a5c3ed9f0896bb2bea69cc6a67cb3113c',1,'q_stream::SPLAY_ENTRY()']]],
+  ['splay_5fentry',['SPLAY_ENTRY',['../structq__conn.html#a75d25b8c1c1e18725769ef4463589d8f',1,'q_conn::SPLAY_ENTRY()'],['../structival.html#a62e6537a944f488355463920b51c4853',1,'ival::SPLAY_ENTRY()'],['../structq__stream.html#a5c3ed9f0896bb2bea69cc6a67cb3113c',1,'q_stream::SPLAY_ENTRY()']]],
   ['splay_5fhead',['SPLAY_HEAD',['../structq__conn.html#a079b1c86fed2b81e0732f21a83d7736a',1,'q_conn::SPLAY_HEAD()'],['../structdiet.html#abecbe406d974b410b0ccdaba611f6e63',1,'diet::SPLAY_HEAD()'],['../conn_8h.html#a40e2d83b42c68d523d0c5ec107036c67',1,'SPLAY_HEAD():&#160;conn.h']]],
   ['srtt',['srtt',['../structq__conn.html#a5c3772636bb4cfc057b850db0930c5c5',1,'q_conn']]],
   ['ssthresh',['ssthresh',['../structq__conn.html#a68a11a7eb48dfe9225572a9e822cd97e',1,'q_conn']]],
   ['state',['state',['../structq__conn.html#a5862c28e9e8bcbca7973d58b40a20956',1,'q_conn::state()'],['../structq__stream.html#ad71f34eed2298bb9cba43eeef80bd9ff',1,'q_stream::state()']]],
   ['stream_2ec',['stream.c',['../stream_8c.html',1,'']]],
   ['stream_2eh',['stream.h',['../stream_8h.html',1,'']]],
-  ['stream_5fcmp',['stream_cmp',['../stream_8c.html#aa40c6e1e57a7214eb15717b70c51a50b',1,'stream_cmp(const struct q_stream *const a, const struct q_stream *const b):&#160;stream.c'],['../stream_8h.html#aa40c6e1e57a7214eb15717b70c51a50b',1,'stream_cmp(const struct q_stream *const a, const struct q_stream *const b):&#160;stream.c']]]
+  ['stream_5fcmp',['stream_cmp',['../stream_8c.html#aa40c6e1e57a7214eb15717b70c51a50b',1,'stream_cmp(const struct q_stream *const a, const struct q_stream *const b):&#160;stream.c'],['../stream_8h.html#aa40c6e1e57a7214eb15717b70c51a50b',1,'stream_cmp(const struct q_stream *const a, const struct q_stream *const b):&#160;stream.c']]],
+  ['strm_5fhead_5flen',['STRM_HEAD_LEN',['../frame_8h.html#a2ca0c1685b727fa526e573feaf5461a7',1,'frame.h']]]
 ];

@@ -1,9 +1,9 @@
 <map id="src/diet.h" name="src/diet.h">
-<area shape="rect" id="node2" href="$conn_8h.html" title="src/conn.h" alt="" coords="193,80,275,107"/>
+<area shape="rect" id="node2" href="$conn_8h.html" title="src/conn.h" alt="" coords="221,80,303,107"/>
 <area shape="rect" id="node3" href="$conn_8c.html" title="src/conn.c" alt="" coords="5,155,87,181"/>
 <area shape="rect" id="node4" href="$frame_8c.html" title="src/frame.c" alt="" coords="112,155,200,181"/>
-<area shape="rect" id="node8" href="$diet_8c.html" title="src/diet.c" alt="" coords="301,80,376,107"/>
-<area shape="rect" id="node5" href="$pkt_8c.html" title="src/pkt.c" alt="" coords="225,155,297,181"/>
-<area shape="rect" id="node6" href="$quic_8c.html" title="src/quic.c" alt="" coords="322,155,400,181"/>
-<area shape="rect" id="node7" href="$stream_8c.html" title="src/stream.c" alt="" coords="425,155,519,181"/>
+<area shape="rect" id="node6" href="$quic_8c.html" title="src/quic.c" alt="" coords="441,155,519,181"/>
+<area shape="rect" id="node8" href="$diet_8c.html" title="src/diet.c" alt="" coords="379,80,455,107"/>
+<area shape="rect" id="node5" href="$pkt_8c.html" title="src/pkt.c" alt="" coords="343,155,416,181"/>
+<area shape="rect" id="node7" href="$stream_8c.html" title="src/stream.c" alt="" coords="225,155,319,181"/>
 </map>

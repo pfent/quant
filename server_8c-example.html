@@ -168,7 +168,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="keywordtype">void</span> * <span class="keyword">const</span> q = <a name="a0"></a><a class="code" href="quant_8h.html#afd422de86ec955a7adb020e08fc4a738">q_init</a>(ifname);</div>
 <div class="line">    <span class="keyword">struct </span><a name="_a1"></a><a class="code" href="structq__conn.html">q_conn</a> * c = <a name="a2"></a><a class="code" href="quant_8h.html#aad550ed36e6497a2030cb6c03764d604">q_bind</a>(q, port);</div>
 <div class="line">    warn(debug, <span class="stringliteral">&quot;%s waiting on %s port %d&quot;</span>, basename(argv[0]), ifname, port);</div>
-<div class="line">    <span class="keywordflow">if</span> (<a name="a3"></a><a class="code" href="quant_8h.html#a86d109e069b4e9ca319d8a85de33e0b3">q_accept</a>(c)) {</div>
+<div class="line">    <span class="keywordflow">if</span> (<a name="a3"></a><a class="code" href="quant_8h.html#a1dee2094bada943ba4c4dfac33988eea">q_accept</a>(c)) {</div>
 <div class="line">        <span class="keyword">struct </span>w_iov_stailq i = STAILQ_HEAD_INITIALIZER(i);</div>
 <div class="line">        <span class="keyword">struct </span><a name="_a4"></a><a class="code" href="structq__stream.html">q_stream</a> * <span class="keyword">const</span> s = <a name="a5"></a><a class="code" href="quant_8h.html#a1a1836c82c33fe12f10ff290a1b25750">q_read</a>(c, &amp;i);</div>
 <div class="line">        <span class="keywordflow">if</span> (s) {</div>
@@ -191,7 +191,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 27 2017 07:21:13 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 3 2017 13:54:42 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

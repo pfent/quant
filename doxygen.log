@@ -158,15 +158,16 @@ Generating call graph for function q_rsv_stream
 Generating docs for file src/cert.h...
 Generating docs for file src/config.c...
 Generating docs for file src/conn.c...
-Generating call graph for function detect_lost_pkts
+Generating call graph for function do_tx
 Generating call graph for function ld_alarm_cb
 Generating call graph for function new_conn
 Generating call graph for function pick_from_server_vers
+Generating call graph for function rtx
 Generating call graph for function rx
 Generating call graph for function tx
 Generating docs for file src/conn.h...
-Generating call graph for function detect_lost_pkts
-Generating call graph for function new_conn
+Generating call graph for fun/home/travis/build/NTAP/quant/lib/src/conn.h:82: warning: Found unknown command `\len'
+ction new_conn
 Generating call graph for function rx
 Generating call graph for function tx
 Generating docs for file src/diet.c...
@@ -196,6 +197,7 @@ Generating call graph for function enc_pkt
 Generating docs for file src/pkt.h...
 Generating call graph for function enc_pkt
 Generating docs for file src/quic.c...
+Generating call graph for function do_close
 Generating call graph for function l_run
 Generating call graph for function q_bind
 Generating call graph for function q_cleanup
@@ -241,84 +243,85 @@ Generating example index...
 finalizing index lists...
 Running dot...
 Generating dot graphs using 33 parallel threads...
-Running dot for graph 1/78
-Running dot for graph 2/78
-Running dot for graph 3/78
-Running dot for graph 4/78
-Running dot for graph 5/78
-Running dot for graph 6/78
-Running dot for graph 7/78
-Running dot for graph 8/78
-Running dot for graph 9/78
-Running dot for graph 10/78
-Running dot for graph 11/78
-Running dot for graph 12/78
-Running dot for graph 13/78
-Running dot for graph 14/78
-Running dot for graph 15/78
-Running dot for graph 16/78
-Running dot for graph 17/78
-Running dot for graph 18/78
-Running dot for graph 19/78
-Running dot for graph 20/78
-Running dot for graph 21/78
-Running dot for graph 22/78
-Running dot for graph 23/78
-Running dot for graph 24/78
-Running dot for graph 25/78
-Running dot for graph 26/78
-Running dot for graph 27/78
-Running dot for graph 28/78
-Running dot for graph 29/78
-Running dot for graph 30/78
-Running dot for graph 31/78
-Running dot for graph 32/78
-Running dot for graph 33/78
-Running dot for graph 34/78
-Running dot for graph 35/78
-Running dot for graph 36/78
-Running dot for graph 37/78
-Running dot for graph 38/78
-Running dot for graph 39/78
-Running dot for graph 40/78
-Running dot for graph 41/78
-Running dot for graph 42/78
-Running dot for graph 43/78
-Running dot for graph 44/78
-Running dot for graph 45/78
-Running dot for graph 46/78
-Running dot for graph 47/78
-Running dot for graph 48/78
-Running dot for graph 49/78
-Running dot for graph 50/78
-Running dot for graph 51/78
-Running dot for graph 52/78
-Running dot for graph 53/78
-Running dot for graph 54/78
-Running dot for graph 55/78
-Running dot for graph 56/78
-Running dot for graph 57/78
-Running dot for graph 58/78
-Running dot for graph 59/78
-Running dot for graph 60/78
-Running dot for graph 61/78
-Running dot for graph 62/78
-Running dot for graph 63/78
-Running dot for graph 64/78
-Running dot for graph 65/78
-Running dot for graph 66/78
-Running dot for graph 67/78
-Running dot for graph 68/78
-Running dot for graph 69/78
-Running dot for graph 70/78
-Running dot for graph 71/78
-Running dot for graph 72/78
-Running dot for graph 73/78
-Running dot for graph 74/78
-Running dot for graph 75/78
-Running dot for graph 76/78
-Running dot for graph 77/78
-Running dot for graph 78/78
+Running dot for graph 1/79
+Running dot for graph 2/79
+Running dot for graph 3/79
+Running dot for graph 4/79
+Running dot for graph 5/79
+Running dot for graph 6/79
+Running dot for graph 7/79
+Running dot for graph 8/79
+Running dot for graph 9/79
+Running dot for graph 10/79
+Running dot for graph 11/79
+Running dot for graph 12/79
+Running dot for graph 13/79
+Running dot for graph 14/79
+Running dot for graph 15/79
+Running dot for graph 16/79
+Running dot for graph 17/79
+Running dot for graph 18/79
+Running dot for graph 19/79
+Running dot for graph 20/79
+Running dot for graph 21/79
+Running dot for graph 22/79
+Running dot for graph 23/79
+Running dot for graph 24/79
+Running dot for graph 25/79
+Running dot for graph 26/79
+Running dot for graph 27/79
+Running dot for graph 28/79
+Running dot for graph 29/79
+Running dot for graph 30/79
+Running dot for graph 31/79
+Running dot for graph 32/79
+Running dot for graph 33/79
+Running dot for graph 34/79
+Running dot for graph 35/79
+Running dot for graph 36/79
+Running dot for graph 37/79
+Running dot for graph 38/79
+Running dot for graph 39/79
+Running dot for graph 40/79
+Running dot for graph 41/79
+Running dot for graph 42/79
+Running dot for graph 43/79
+Running dot for graph 44/79
+Running dot for graph 45/79
+Running dot for graph 46/79
+Running dot for graph 47/79
+Running dot for graph 48/79
+Running dot for graph 49/79
+Running dot for graph 50/79
+Running dot for graph 51/79
+Running dot for graph 52/79
+Running dot for graph 53/79
+Running dot for graph 54/79
+Running dot for graph 55/79
+Running dot for graph 56/79
+Running dot for graph 57/79
+Running dot for graph 58/79
+Running dot for graph 59/79
+Running dot for graph 60/79
+Running dot for graph 61/79
+Running dot for graph 62/79
+Running dot for graph 63/79
+Running dot for graph 64/79
+Running dot for graph 65/79
+Running dot for graph 66/79
+Running dot for graph 67/79
+Running dot for graph 68/79
+Running dot for graph 69/79
+Running dot for graph 70/79
+Running dot for graph 71/79
+Running dot for graph 72/79
+Running dot for graph 73/79
+Running dot for graph 74/79
+Running dot for graph 75/79
+Running dot for graph 76/79
+Running dot for graph 77/79
+Running dot for graph 78/79
+Running dot for graph 79/79
 Patching output file 1/25
 Patching output file 2/25
 Patching output file 3/25
@@ -344,5 +347,5 @@ Patching output file 22/25
 Patching output file 23/25
 Patching output file 24/25
 Patching output file 25/25
-lookup cache used 256/65536 hits=1544 misses=259
+lookup cache used 272/65536 hits=1665 misses=275
 finished...

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['peer',['peer',['../structq__conn.html#adf966e981cc4456a3903e0a84ebf80ed',1,'q_conn']]],
-  ['peer_5flen',['peer_len',['../structq__conn.html#a95a14b6b7b74163dc841d8b6ded8f0ab',1,'q_conn']]],
-  ['pkt_5fnr_5flen',['pkt_nr_len',['../pkt_8c.html#a32e67181cde1fec31f039068614e1721',1,'pkt.c']]]
+  ['nbufs',['nbufs',['../quic_8c.html#af04bbb4616509b300b7ff3a7a49660de',1,'quic.c']]],
+  ['next_5fsid',['next_sid',['../structq__conn.html#a0bf5bdca945bb4b1af82d25667a25140',1,'q_conn']]],
+  ['nr',['nr',['../structpkt__meta.html#aeae1d2cd4d2f54e96370bf796fe68791',1,'pkt_meta']]]
 ];
