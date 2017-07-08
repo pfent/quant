@@ -126,8 +126,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9d238111db5836d1311805ec0060e1bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame_8h.html#a9d238111db5836d1311805ec0060e1bf">dec_frames</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, struct w_iov *const v)</td></tr>
-<tr class="separator:a9d238111db5836d1311805ec0060e1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1e2aaddb77c213158ef23a14623b9a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame_8h.html#aa1e2aaddb77c213158ef23a14623b9a2">dec_frames</a> (struct ev_loop *const <a class="el" href="quic_8c.html#a855923b555731173d3509ecb645de0e0">loop</a>, struct <a class="el" href="structq__conn.html">q_conn</a> *const c, struct w_iov *const v)</td></tr>
+<tr class="separator:aa1e2aaddb77c213158ef23a14623b9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89e5fa4a1820e4bb58711d4133fcf4e8"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame_8h.html#a89e5fa4a1820e4bb58711d4133fcf4e8">enc_padding_frame</a> (uint8_t *const buf, const uint16_t pos, const uint16_t len)</td></tr>
 <tr class="separator:a89e5fa4a1820e4bb58711d4133fcf4e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d41621adfc301bec8370f974e91c9cc"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame_8h.html#a8d41621adfc301bec8370f974e91c9cc">enc_ack_frame</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, uint8_t *const buf, const uint16_t len, const uint16_t pos)</td></tr>
@@ -211,13 +211,19 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a9d238111db5836d1311805ec0060e1bf"></a>
+<a class="anchor" id="aa1e2aaddb77c213158ef23a14623b9a2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">bool dec_frames </td>
           <td>(</td>
+          <td class="paramtype">struct ev_loop *const&#160;</td>
+          <td class="paramname"><em>loop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
           <td class="paramname"><em>c</em>, </td>
         </tr>
@@ -238,9 +244,9 @@ Functions</h2></td></tr>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="frame_8h_a9d238111db5836d1311805ec0060e1bf_cgraph.png" border="0" usemap="#frame_8h_a9d238111db5836d1311805ec0060e1bf_cgraph" alt=""/></div>
-<map name="frame_8h_a9d238111db5836d1311805ec0060e1bf_cgraph" id="frame_8h_a9d238111db5836d1311805ec0060e1bf_cgraph">
-<area shape="rect" id="node2" href="pkt_8c.html#a171671c1d791d808381669044f96f3d8" title="pkt_hdr_len" alt="" coords="165,56,254,83"/><area shape="rect" id="node3" href="frame_8c.html#ab1ce0303bf746e90fe3ebc37c17eeb79" title="dec_stream_frame" alt="" coords="144,107,275,133"/><area shape="rect" id="node6" href="frame_8c.html#acdf69d786aecff0cc83e6f028bac9311" title="dec_ack_frame" alt="" coords="154,233,265,260"/><area shape="rect" id="node18" href="stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="346,411,433,437"/><area shape="rect" id="node19" href="stream_8c.html#ab0b3499ca041b2c1fbad0ecf43919744" title="new_stream" alt="" coords="163,309,256,336"/><area shape="rect" id="node4" href="frame_8c.html#acc75ca28a2eb4901b42a3b32c0263309" title="dec_sid_len" alt="" coords="344,56,435,83"/><area shape="rect" id="node5" href="frame_8c.html#aac68aeedc9f05fc03c29aed36de4d016" title="dec_off_len" alt="" coords="345,5,434,32"/><area shape="rect" id="node7" href="frame_8c.html#aa354e096c509e96b04b9eb2861ddf000" title="dec_lg_ack_len" alt="" coords="333,259,445,285"/><area shape="rect" id="node8" href="frame_8c.html#a7c21dd1fa5cbacecdac2c95bdb4c5593" title="find_sent_pkt" alt="" coords="339,309,439,336"/><area shape="rect" id="node13" href="frame_8c.html#a06fb0b82dd62949b991315c88915240a" title="dec_ack_block_len" alt="" coords="323,107,456,133"/><area shape="rect" id="node14" href="diet_8c.html#a3ba0ac5feb124c6e3076dea437fa3b79" title="Inserts integer n into the diet tree t. " alt="" coords="348,360,431,387"/><area shape="rect" id="node16" href="conn_8c.html#a51821558a515ddb0a82519dda6ca59bb" title="detect_lost_pkts" alt="" coords="330,157,449,184"/><area shape="rect" id="node17" href="conn_8c.html#aaeb047f2ca62d850715e3c5093b9cc02" title="set_ld_alarm" alt="" coords="341,208,437,235"/><area shape="rect" id="node9" href="diet_8c.html#acff4764cdd209408ec31906773db2455" title="Pointer to the interval containing n in diet tree t. " alt="" coords="510,309,581,336"/><area shape="rect" id="node10" href="diet_8c.html#a233a4b0f59b38d83775f80568cfb081f" title="Absolute minimal distance of n from the interval i,. " alt="" coords="637,309,707,336"/><area shape="rect" id="node11" href="diet_8c.html#a85e4e10a029283a5798638bfaf387abd" title="Return maximum interval underneath i. " alt="" coords="635,360,709,387"/><area shape="rect" id="node12" href="diet_8c.html#a8f0e77727941f94b10b1ea1241df8eaa" title="Return minimum interval underneath i. " alt="" coords="637,411,707,437"/><area shape="rect" id="node15" href="diet_8c.html#a1bf88044b4af4e723b8bfc4cf0fe1420" title="Helper function to create a zero&#45;width interval containing (only) n. " alt="" coords="505,461,586,488"/></map>
+<div class="center"><img src="frame_8h_aa1e2aaddb77c213158ef23a14623b9a2_cgraph.png" border="0" usemap="#frame_8h_aa1e2aaddb77c213158ef23a14623b9a2_cgraph" alt=""/></div>
+<map name="frame_8h_aa1e2aaddb77c213158ef23a14623b9a2_cgraph" id="frame_8h_aa1e2aaddb77c213158ef23a14623b9a2_cgraph">
+<area shape="rect" id="node2" href="pkt_8c.html#a171671c1d791d808381669044f96f3d8" title="pkt_hdr_len" alt="" coords="165,35,254,62"/><area shape="rect" id="node3" href="frame_8c.html#adf88c0fa725c713a202aeee2c984c6c0" title="dec_stream_frame" alt="" coords="144,86,275,112"/><area shape="rect" id="node8" href="frame_8c.html#a258390af9f223fb0f65c7c22f342fcf0" title="dec_ack_frame" alt="" coords="154,288,265,315"/><area shape="rect" id="node4" href="frame_8c.html#acc75ca28a2eb4901b42a3b32c0263309" title="dec_sid_len" alt="" coords="344,86,435,112"/><area shape="rect" id="node5" href="frame_8c.html#aac68aeedc9f05fc03c29aed36de4d016" title="dec_off_len" alt="" coords="345,136,434,163"/><area shape="rect" id="node6" href="stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="505,10,591,36"/><area shape="rect" id="node7" href="stream_8c.html#ab0b3499ca041b2c1fbad0ecf43919744" title="new_stream" alt="" coords="343,35,436,62"/><area shape="rect" id="node9" href="frame_8c.html#aa354e096c509e96b04b9eb2861ddf000" title="dec_lg_ack_len" alt="" coords="333,187,445,214"/><area shape="rect" id="node10" href="frame_8c.html#a7c21dd1fa5cbacecdac2c95bdb4c5593" title="find_sent_pkt" alt="" coords="339,238,439,264"/><area shape="rect" id="node15" href="frame_8c.html#a06fb0b82dd62949b991315c88915240a" title="dec_ack_block_len" alt="" coords="323,339,456,366"/><area shape="rect" id="node16" href="diet_8c.html#a3ba0ac5feb124c6e3076dea437fa3b79" title="Inserts integer n into the diet tree t. " alt="" coords="348,288,431,315"/><area shape="rect" id="node18" href="conn_8c.html#a51821558a515ddb0a82519dda6ca59bb" title="detect_lost_pkts" alt="" coords="330,390,449,416"/><area shape="rect" id="node19" href="conn_8c.html#aaeb047f2ca62d850715e3c5093b9cc02" title="set_ld_alarm" alt="" coords="341,440,437,467"/><area shape="rect" id="node11" href="diet_8c.html#acff4764cdd209408ec31906773db2455" title="Pointer to the interval containing n in diet tree t. " alt="" coords="513,238,583,264"/><area shape="rect" id="node12" href="diet_8c.html#a233a4b0f59b38d83775f80568cfb081f" title="Absolute minimal distance of n from the interval i,. " alt="" coords="642,238,713,264"/><area shape="rect" id="node13" href="diet_8c.html#a85e4e10a029283a5798638bfaf387abd" title="Return maximum interval underneath i. " alt="" coords="640,364,715,391"/><area shape="rect" id="node14" href="diet_8c.html#a8f0e77727941f94b10b1ea1241df8eaa" title="Return minimum interval underneath i. " alt="" coords="642,288,713,315"/><area shape="rect" id="node17" href="diet_8c.html#a1bf88044b4af4e723b8bfc4cf0fe1420" title="Helper function to create a zero&#45;width interval containing (only) n. " alt="" coords="507,339,589,366"/></map>
 </div>
 </p>
 
@@ -381,7 +387,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 7 2017 07:20:16 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 8 2017 12:11:43 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

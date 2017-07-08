@@ -11,5 +11,5 @@ var searchData=
   ['tls_5fctx',['tls_ctx',['../quic_8c.html#af6bbbfab377148ff702ada5a44a7ae73',1,'tls_ctx():&#160;quic.c'],['../quic_8h.html#af6bbbfab377148ff702ada5a44a7ae73',1,'tls_ctx():&#160;quic.c']]],
   ['tls_5fkey',['tls_key',['../cert_8h.html#a23bb2d0e19274ac4fe698041534abfe6',1,'cert.h']]],
   ['tls_5fkey_5flen',['tls_key_len',['../cert_8h.html#a0c05a0886ee719f17221af87aa0fbd24',1,'cert.h']]],
-  ['tx_5fw',['tx_w',['../quic_8c.html#ab2bfac77ea8db4d7dc5290e152e3e8c6',1,'quic.c']]]
+  ['tx_5fw',['tx_w',['../structq__conn.html#a11888af06190d30dab6fd4d243d3c1d6',1,'q_conn']]]
 ];

@@ -101,8 +101,8 @@ Collaboration diagram for q_stream:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5c3ed9f0896bb2bea69cc6a67cb3113c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__stream.html#a5c3ed9f0896bb2bea69cc6a67cb3113c">SPLAY_ENTRY</a> (<a class="el" href="structq__stream.html">q_stream</a>) next</td></tr>
-<tr class="separator:a5c3ed9f0896bb2bea69cc6a67cb3113c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afec6e392ab36b7579e0a8b12993c0ad2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__stream.html#afec6e392ab36b7579e0a8b12993c0ad2">SPLAY_ENTRY</a> (<a class="el" href="structq__stream.html">q_stream</a>) node</td></tr>
+<tr class="separator:afec6e392ab36b7579e0a8b12993c0ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -114,6 +114,9 @@ Data Fields</h2></td></tr>
 <tr class="separator:ad71f34eed2298bb9cba43eeef80bd9ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43a749ebc68bd611f9f92be25d4ec555"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__stream.html#a43a749ebc68bd611f9f92be25d4ec555">_unused</a> [3]</td></tr>
 <tr class="separator:a43a749ebc68bd611f9f92be25d4ec555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9506a631e5b5b6feb6560fa0583b806"><td class="memItemLeft" align="right" valign="top">struct w_iov_stailq&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__stream.html#ac9506a631e5b5b6feb6560fa0583b806">r</a></td></tr>
+<tr class="memdesc:ac9506a631e5b5b6feb6560fa0583b806"><td class="mdescLeft">&#160;</td><td class="mdescRight">tail queue containing written data  <a href="#ac9506a631e5b5b6feb6560fa0583b806">More...</a><br/></td></tr>
+<tr class="separator:ac9506a631e5b5b6feb6560fa0583b806"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9ee8de50912de317d4a29096fcda5c8"><td class="memItemLeft" align="right" valign="top">struct w_iov_stailq&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__stream.html#ad9ee8de50912de317d4a29096fcda5c8">o</a></td></tr>
 <tr class="memdesc:ad9ee8de50912de317d4a29096fcda5c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">tail queue containing outbound data  <a href="#ad9ee8de50912de317d4a29096fcda5c8">More...</a><br/></td></tr>
 <tr class="separator:ad9ee8de50912de317d4a29096fcda5c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,7 +131,7 @@ Data Fields</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#_a3">client.c</a>, and <a class="el" href="server_8c-example.html#_a4">server.c</a>.</dd>
 </dl></div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a5c3ed9f0896bb2bea69cc6a67cb3113c"></a>
+<a class="anchor" id="afec6e392ab36b7579e0a8b12993c0ad2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -233,6 +236,20 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ac9506a631e5b5b6feb6560fa0583b806"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct w_iov_stailq q_stream::r</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tail queue containing written data </p>
+
+</div>
+</div>
 <a class="anchor" id="ad71f34eed2298bb9cba43eeef80bd9ff"></a>
 <div class="memitem">
 <div class="memproto">
@@ -251,7 +268,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 7 2017 07:20:17 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 8 2017 12:11:43 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

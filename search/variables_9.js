@@ -7,6 +7,8 @@ var searchData=
   ['lg_5fsent_5fbefore_5frto',['lg_sent_before_rto',['../structq__conn.html#aaafa9359962719b1d519a2d30ac61055',1,'q_conn']]],
   ['lo',['lo',['../structival.html#a48282b6ea42f2a81ab1dee4ed182b0ab',1,'ival']]],
   ['lock',['lock',['../structq__conn.html#a33ce6e040c771338e64d0764e5cd4f69',1,'q_conn']]],
-  ['loop',['loop',['../quic_8c.html#a855923b555731173d3509ecb645de0e0',1,'loop():&#160;quic.c'],['../quic_8h.html#a855923b555731173d3509ecb645de0e0',1,'loop():&#160;quic.c']]],
+  ['loop',['loop',['../conn_8c.html#a855923b555731173d3509ecb645de0e0',1,'loop():&#160;conn.c'],['../quic_8c.html#a855923b555731173d3509ecb645de0e0',1,'loop():&#160;quic.c']]],
+  ['loop_5flock',['loop_lock',['../quic_8c.html#ad8c18498e0b6ed8fb999702a74bd0313',1,'quic.c']]],
+  ['loop_5fupdate_5fw',['loop_update_w',['../quic_8c.html#ac8c4e65679d7d11eae6ee45d34d3edf5',1,'quic.c']]],
   ['loss_5ft',['loss_t',['../structq__conn.html#a7c24f1bcf0e7574e48493b42e1ceed6a',1,'q_conn']]]
 ];

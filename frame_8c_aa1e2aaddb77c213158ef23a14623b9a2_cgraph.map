@@ -1,0 +1,20 @@
+<map id="dec_frames" name="dec_frames">
+<area shape="rect" id="node2" href="$pkt_8c.html#a171671c1d791d808381669044f96f3d8" title="pkt_hdr_len" alt="" coords="165,35,254,62"/>
+<area shape="rect" id="node3" href="$frame_8c.html#adf88c0fa725c713a202aeee2c984c6c0" title="dec_stream_frame" alt="" coords="144,86,275,112"/>
+<area shape="rect" id="node8" href="$frame_8c.html#a258390af9f223fb0f65c7c22f342fcf0" title="dec_ack_frame" alt="" coords="154,288,265,315"/>
+<area shape="rect" id="node4" href="$frame_8c.html#acc75ca28a2eb4901b42a3b32c0263309" title="dec_sid_len" alt="" coords="344,86,435,112"/>
+<area shape="rect" id="node5" href="$frame_8c.html#aac68aeedc9f05fc03c29aed36de4d016" title="dec_off_len" alt="" coords="345,136,434,163"/>
+<area shape="rect" id="node6" href="$stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="505,10,591,36"/>
+<area shape="rect" id="node7" href="$stream_8c.html#ab0b3499ca041b2c1fbad0ecf43919744" title="new_stream" alt="" coords="343,35,436,62"/>
+<area shape="rect" id="node9" href="$frame_8c.html#aa354e096c509e96b04b9eb2861ddf000" title="dec_lg_ack_len" alt="" coords="333,187,445,214"/>
+<area shape="rect" id="node10" href="$frame_8c.html#a7c21dd1fa5cbacecdac2c95bdb4c5593" title="find_sent_pkt" alt="" coords="339,238,439,264"/>
+<area shape="rect" id="node15" href="$frame_8c.html#a06fb0b82dd62949b991315c88915240a" title="dec_ack_block_len" alt="" coords="323,339,456,366"/>
+<area shape="rect" id="node16" href="$diet_8c.html#a3ba0ac5feb124c6e3076dea437fa3b79" title="Inserts integer n into the diet tree t. " alt="" coords="348,288,431,315"/>
+<area shape="rect" id="node18" href="$conn_8c.html#a51821558a515ddb0a82519dda6ca59bb" title="detect_lost_pkts" alt="" coords="330,390,449,416"/>
+<area shape="rect" id="node19" href="$conn_8c.html#aaeb047f2ca62d850715e3c5093b9cc02" title="set_ld_alarm" alt="" coords="341,440,437,467"/>
+<area shape="rect" id="node11" href="$diet_8c.html#acff4764cdd209408ec31906773db2455" title="Pointer to the interval containing n in diet tree t. " alt="" coords="513,238,583,264"/>
+<area shape="rect" id="node12" href="$diet_8c.html#a233a4b0f59b38d83775f80568cfb081f" title="Absolute minimal distance of n from the interval i,. " alt="" coords="642,238,713,264"/>
+<area shape="rect" id="node13" href="$diet_8c.html#a85e4e10a029283a5798638bfaf387abd" title="Return maximum interval underneath i. " alt="" coords="640,364,715,391"/>
+<area shape="rect" id="node14" href="$diet_8c.html#a8f0e77727941f94b10b1ea1241df8eaa" title="Return minimum interval underneath i. " alt="" coords="642,288,713,315"/>
+<area shape="rect" id="node17" href="$diet_8c.html#a1bf88044b4af4e723b8bfc4cf0fe1420" title="Helper function to create a zero&#45;width interval containing (only) n. " alt="" coords="507,339,589,366"/>
+</map>

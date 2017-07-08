@@ -121,7 +121,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:a37c9d289def8a2ca38e351b6d3be781e"><td class="mdescLeft">&#160;</td><td class="mdescRight">printf pattern for to_bitstring  <a href="#a37c9d289def8a2ca38e351b6d3be781e">More...</a><br/></td></tr>
 <tr class="separator:a37c9d289def8a2ca38e351b6d3be781e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa58567e0425508326407ac14ada5fca5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#aa58567e0425508326407ac14ada5fca5">to_bitstring</a>(byte)</td></tr>
-<tr class="memdesc:aa58567e0425508326407ac14ada5fca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <code>byte</code> into eight characters (0 or 1, respectively) for use with printf-style functions and <code>bitstring_pattern</code>.  <a href="#aa58567e0425508326407ac14ada5fca5">More...</a><br/></td></tr>
+<tr class="memdesc:aa58567e0425508326407ac14ada5fca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <code>byte</code> into eight characters (0 or 1, respectively) for use with printf-style functions and <code>bitstring_fmt</code>.  <a href="#aa58567e0425508326407ac14ada5fca5">More...</a><br/></td></tr>
 <tr class="separator:aa58567e0425508326407ac14ada5fca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6260c58bcf16b64a41013d10babcdd3b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#a6260c58bcf16b64a41013d10babcdd3b">dec</a>(dst, buf, buf_len, pos, len, fmt)</td></tr>
 <tr class="memdesc:a6260c58bcf16b64a41013d10babcdd3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes <code>len</code> bytes of network byte-order data starting at position <code>pos</code> of buffer <code>buf</code> (which has total length <code>buf_len</code>) info variable <code>dst</code> in host byte-order, using printf format string <code>fmt</code> to format the data for debug logging.  <a href="#a6260c58bcf16b64a41013d10babcdd3b">More...</a><br/></td></tr>
@@ -291,7 +291,7 @@ Macros</h2></td></tr>
 <div class="line">        (byte &amp; 0x08 ? <span class="charliteral">&#39;1&#39;</span> : <span class="charliteral">&#39;0&#39;</span>), (byte &amp; 0x04 ? <span class="charliteral">&#39;1&#39;</span> : <span class="charliteral">&#39;0&#39;</span>),                  \</div>
 <div class="line">        (byte &amp; 0x02 ? <span class="charliteral">&#39;1&#39;</span> : <span class="charliteral">&#39;0&#39;</span>), (byte &amp; 0x01 ? <span class="charliteral">&#39;1&#39;</span> : <span class="charliteral">&#39;0&#39;</span>)</div>
 </div><!-- fragment -->
-<p>Convert <code>byte</code> into eight characters (0 or 1, respectively) for use with printf-style functions and <code>bitstring_pattern</code>. </p>
+<p>Convert <code>byte</code> into eight characters (0 or 1, respectively) for use with printf-style functions and <code>bitstring_fmt</code>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">byte</td><td>The byte to convert.</td></tr>
@@ -340,7 +340,7 @@ Macros</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 7 2017 07:20:17 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 8 2017 12:11:43 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -152,7 +152,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">                            <span class="stringliteral">&quot;0&quot;</span></div>
 <div class="line">#endif</div>
 <div class="line">        ;</div>
-<div class="line">    <span class="keywordtype">char</span> * dest = (<span class="keywordtype">char</span> *)<span class="stringliteral">&quot;127.0.0.1&quot;</span>;</div>
+<div class="line">    <span class="keywordtype">char</span> * dest = (<span class="keywordtype">char</span> *)<span class="stringliteral">&quot;localhost&quot;</span>;</div>
 <div class="line">    <span class="keywordtype">char</span> * port = (<span class="keywordtype">char</span> *)<span class="stringliteral">&quot;8443&quot;</span>;</div>
 <div class="line">    <span class="keywordtype">long</span> conns = 1;</div>
 <div class="line">    <span class="keywordtype">int</span> ch;</div>
@@ -206,7 +206,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n = 0; n &lt; conns; n++) {</div>
 <div class="line">        warn(info, <span class="stringliteral">&quot;%s starting conn #%d to %s:%s&quot;</span>, basename(argv[0]), n, dest,</div>
 <div class="line">             port);</div>
-<div class="line">        c[n] = <a name="a2"></a><a class="code" href="quant_8h.html#a76afabb2c80e86ce3e3df996552fd018">q_connect</a>(q, peer-&gt;ai_addr, peer-&gt;ai_addrlen);</div>
+<div class="line">        c[n] = <a name="a2"></a><a class="code" href="quant_8h.html#a0dafbf7d9cf0003599f825c126a2cf76">q_connect</a>(q, peer-&gt;ai_addr, peer-&gt;ai_addrlen, dest);</div>
 <div class="line">        <span class="keywordflow">if</span> (!c[n])</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line"></div>
@@ -248,7 +248,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 7 2017 07:20:16 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 8 2017 12:11:42 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

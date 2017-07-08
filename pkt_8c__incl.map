@@ -1,11 +1,11 @@
 <map id="src/pkt.c" name="src/pkt.c">
-<area shape="rect" id="node7" href="$conn_8h.html" title="conn.h" alt="" coords="661,80,723,107"/>
-<area shape="rect" id="node14" href="$fnv__1a_8h.html" title="fnv_1a.h" alt="" coords="28,155,100,181"/>
-<area shape="rect" id="node15" href="$frame_8h.html" title="frame.h" alt="" coords="233,80,300,107"/>
-<area shape="rect" id="node17" href="$marshall_8h.html" title="marshall.h" alt="" coords="1145,155,1227,181"/>
-<area shape="rect" id="node20" href="$pkt_8h.html" title="pkt.h" alt="" coords="159,80,209,107"/>
-<area shape="rect" id="node21" href="$quic_8h.html" title="quic.h" alt="" coords="815,80,872,107"/>
-<area shape="rect" id="node22" href="$stream_8h.html" title="stream.h" alt="" coords="997,155,1069,181"/>
-<area shape="rect" id="node12" href="$diet_8h.html" title="diet.h" alt="" coords="375,155,429,181"/>
-<area shape="rect" id="node19" href="$config_8h.html" title="quant/config.h" alt="" coords="1132,229,1236,256"/>
+<area shape="rect" id="node6" href="$conn_8h.html" title="conn.h" alt="" coords="624,80,685,107"/>
+<area shape="rect" id="node13" href="$fnv__1a_8h.html" title="fnv_1a.h" alt="" coords="28,155,100,181"/>
+<area shape="rect" id="node14" href="$frame_8h.html" title="frame.h" alt="" coords="233,80,300,107"/>
+<area shape="rect" id="node16" href="$marshall_8h.html" title="marshall.h" alt="" coords="1145,155,1227,181"/>
+<area shape="rect" id="node19" href="$pkt_8h.html" title="pkt.h" alt="" coords="159,80,209,107"/>
+<area shape="rect" id="node20" href="$quic_8h.html" title="quic.h" alt="" coords="815,80,872,107"/>
+<area shape="rect" id="node21" href="$stream_8h.html" title="stream.h" alt="" coords="997,155,1069,181"/>
+<area shape="rect" id="node11" href="$diet_8h.html" title="diet.h" alt="" coords="375,155,429,181"/>
+<area shape="rect" id="node18" href="$config_8h.html" title="quant/config.h" alt="" coords="1132,229,1236,256"/>
 </map>

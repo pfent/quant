@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['r',['r',['../structq__stream.html#ac9506a631e5b5b6feb6560fa0583b806',1,'q_stream']]],
   ['read_5fcv',['read_cv',['../structq__conn.html#aabd92fa15a54e100da9222e96a5a1099',1,'q_conn']]],
   ['rec_5fend',['rec_end',['../structq__conn.html#a1f13b91ccfaf16f7d6d0f4b58e291f69',1,'q_conn']]],
   ['recv',['recv',['../structq__conn.html#aa30f282422d8fe483d01e6a595b3f6ed',1,'q_conn']]],
