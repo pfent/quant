@@ -96,23 +96,71 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="thread_8h__dep__incl.png" border="0" usemap="#src_2thread_8hdep" alt=""/></div>
 <map name="src_2thread_8hdep" id="src_2thread_8hdep">
-<area shape="rect" id="node2" href="conn_8c.html" title="src/conn.c" alt="" coords="5,80,87,107"/><area shape="rect" id="node3" href="frame_8c.html" title="src/frame.c" alt="" coords="112,80,200,107"/><area shape="rect" id="node4" href="quic_8c.html" title="src/quic.c" alt="" coords="225,80,303,107"/></map>
+<area shape="rect" id="node2" href="conn_8c.html" title="src/conn.c" alt="" coords="5,80,87,107"/><area shape="rect" id="node3" href="frame_8c.html" title="src/frame.c" alt="" coords="112,80,200,107"/><area shape="rect" id="node4" href="quic_8c.html" title="src/quic.c" alt="" coords="225,80,303,107"/><area shape="rect" id="node5" href="stream_8c.html" title="src/stream.c" alt="" coords="327,80,421,107"/></map>
 </div>
 </div>
 <p><a href="thread_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:ac9acbd8b3c63fd9c1f30b8ae24a337f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ac9acbd8b3c63fd9c1f30b8ae24a337f8">PTHREAD_MUTEX_TYPE</a>&#160;&#160;&#160;PTHREAD_MUTEX_ERRORCHECK</td></tr>
+<tr class="separator:ac9acbd8b3c63fd9c1f30b8ae24a337f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91d00934c021a1dbdf3ed66c8abdde0f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a91d00934c021a1dbdf3ed66c8abdde0f">mutex_init</a>(m)</td></tr>
+<tr class="separator:a91d00934c021a1dbdf3ed66c8abdde0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5de37f8c9e4ded6a3471075a9e3d11c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ab5de37f8c9e4ded6a3471075a9e3d11c">mutex_destroy</a>(m)</td></tr>
+<tr class="separator:ab5de37f8c9e4ded6a3471075a9e3d11c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4bdba9f5b9e904ae299f532c8b05f92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#af4bdba9f5b9e904ae299f532c8b05f92">lock</a>(l)</td></tr>
 <tr class="separator:af4bdba9f5b9e904ae299f532c8b05f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67f7c01dd129fc3e1af1feafd0cc357f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a67f7c01dd129fc3e1af1feafd0cc357f">unlock</a>(l)</td></tr>
 <tr class="separator:a67f7c01dd129fc3e1af1feafd0cc357f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bc9a2d764e810c68745285061874b44"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a0bc9a2d764e810c68745285061874b44">cond_init</a>(c)</td></tr>
+<tr class="separator:a0bc9a2d764e810c68745285061874b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a173771f4089e62dcdafccf19076182ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a173771f4089e62dcdafccf19076182ce">cond_destroy</a>(c)</td></tr>
+<tr class="separator:a173771f4089e62dcdafccf19076182ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5614507097fa3631cdd5376d719349e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#af5614507097fa3631cdd5376d719349e">signal</a>(c, l)</td></tr>
 <tr class="separator:af5614507097fa3631cdd5376d719349e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af057623e4a6daa257007a78d8187cb0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#af057623e4a6daa257007a78d8187cb0e">wait</a>(c, l)</td></tr>
 <tr class="separator:af057623e4a6daa257007a78d8187cb0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a173771f4089e62dcdafccf19076182ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define cond_destroy</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">c</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
+<div class="line">        ensure(pthread_cond_destroy(c) == 0, <span class="stringliteral">&quot;pthread_cond_destroy&quot;</span>);          \</div>
+<div class="line">    } <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a0bc9a2d764e810c68745285061874b44"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define cond_init</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">c</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
+<div class="line">        ensure(pthread_cond_init(c, 0) == 0, <span class="stringliteral">&quot;pthread_cond_init&quot;</span>);             \</div>
+<div class="line">    } <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a class="anchor" id="af4bdba9f5b9e904ae299f532c8b05f92"></a>
 <div class="memitem">
 <div class="memproto">
@@ -132,6 +180,63 @@ Macros</h2></td></tr>
 <div class="line">               strerror(ret_lock));                                            \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ab5de37f8c9e4ded6a3471075a9e3d11c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define mutex_destroy</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">m</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
+<div class="line">        ensure(pthread_mutex_destroy(m) == 0, <span class="stringliteral">&quot;pthread_mutex_destroy&quot;</span>);        \</div>
+<div class="line">    } <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a91d00934c021a1dbdf3ed66c8abdde0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define mutex_init</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">m</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
+<div class="line">        pthread_mutexattr_t attr;                                              \</div>
+<div class="line">        ensure(pthread_mutexattr_init(&amp;attr) == 0, <span class="stringliteral">&quot;pthread_mutexattr_init&quot;</span>);  \</div>
+<div class="line">        ensure(pthread_mutexattr_settype(&amp;attr, <a class="code" href="thread_8h.html#ac9acbd8b3c63fd9c1f30b8ae24a337f8">PTHREAD_MUTEX_TYPE</a>) == 0,      \</div>
+<div class="line">               <span class="stringliteral">&quot;pthread_mutexattr_settype&quot;</span>);                                   \</div>
+<div class="line">        ensure(pthread_mutex_init(m, &amp;attr) == 0, <span class="stringliteral">&quot;pthread_mutex_init&quot;</span>);       \</div>
+<div class="line">        ensure(pthread_mutexattr_destroy(&amp;attr) == 0,                          \</div>
+<div class="line">               <span class="stringliteral">&quot;pthread_mutexattr_destroy&quot;</span>);                                   \</div>
+<div class="line">    } <span class="keywordflow">while</span> (0)</div>
+<div class="ttc" id="thread_8h_html_ac9acbd8b3c63fd9c1f30b8ae24a337f8"><div class="ttname"><a href="thread_8h.html#ac9acbd8b3c63fd9c1f30b8ae24a337f8">PTHREAD_MUTEX_TYPE</a></div><div class="ttdeci">#define PTHREAD_MUTEX_TYPE</div><div class="ttdef"><b>Definition:</b> thread.h:30</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ac9acbd8b3c63fd9c1f30b8ae24a337f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PTHREAD_MUTEX_TYPE&#160;&#160;&#160;PTHREAD_MUTEX_ERRORCHECK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a class="anchor" id="af5614507097fa3631cdd5376d719349e"></a>
@@ -157,15 +262,11 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       <a class="code" href="thread_8h.html#af4bdba9f5b9e904ae299f532c8b05f92">\</a></div>
-<div class="line"><a class="code" href="thread_8h.html#af4bdba9f5b9e904ae299f532c8b05f92">        lock</a>(l);                                                               \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
 <div class="line">        const <span class="keywordtype">int</span> ret_cs = pthread_cond_signal(c);                             \</div>
 <div class="line">        ensure(ret_cs == 0, <span class="stringliteral">&quot;pthread_cond_signal returned %d (%s)&quot;</span>, ret_cs,    \</div>
-<div class="line">               strerror(ret_cs));                                              <a class="code" href="thread_8h.html#a67f7c01dd129fc3e1af1feafd0cc357f">\</a></div>
-<div class="line"><a class="code" href="thread_8h.html#a67f7c01dd129fc3e1af1feafd0cc357f">        unlock</a>(l);                                                             \</div>
+<div class="line">               strerror(ret_cs));                                              \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="thread_8h_html_a67f7c01dd129fc3e1af1feafd0cc357f"><div class="ttname"><a href="thread_8h.html#a67f7c01dd129fc3e1af1feafd0cc357f">unlock</a></div><div class="ttdeci">#define unlock(l)</div><div class="ttdef"><b>Definition:</b> thread.h:36</div></div>
-<div class="ttc" id="thread_8h_html_af4bdba9f5b9e904ae299f532c8b05f92"><div class="ttname"><a href="thread_8h.html#af4bdba9f5b9e904ae299f532c8b05f92">lock</a></div><div class="ttdeci">#define lock(l)</div><div class="ttdef"><b>Definition:</b> thread.h:28</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -224,7 +325,7 @@ Macros</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 8 2017 12:11:43 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 11 2017 14:20:12 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -93,7 +93,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">stream.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br/>
+<div class="textblock"><code>#include &lt;pthread.h&gt;</code><br/>
+<code>#include &lt;stdint.h&gt;</code><br/>
 <code>#include &lt;warpcore/warpcore.h&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for stream.h:</div>
@@ -124,8 +125,10 @@ Macros</h2></td></tr>
 <tr class="memitem:a8afc3a642545f7a927743af411204916"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a8afc3a642545f7a927743af411204916">STRM_OPEN</a>&#160;&#160;&#160;0x01</td></tr>
 <tr class="separator:a8afc3a642545f7a927743af411204916"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4676ad2f6c3205a2edee25bea8db7cd7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a4676ad2f6c3205a2edee25bea8db7cd7">STRM_HCRM</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="memdesc:a4676ad2f6c3205a2edee25bea8db7cd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">"half closed remote"  <a href="#a4676ad2f6c3205a2edee25bea8db7cd7">More...</a><br/></td></tr>
 <tr class="separator:a4676ad2f6c3205a2edee25bea8db7cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28c2a83188a9795156a3db8e69748915"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a28c2a83188a9795156a3db8e69748915">STRM_HCLO</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="memdesc:a28c2a83188a9795156a3db8e69748915"><td class="mdescLeft">&#160;</td><td class="mdescRight">"half closed local"  <a href="#a28c2a83188a9795156a3db8e69748915">More...</a><br/></td></tr>
 <tr class="separator:a28c2a83188a9795156a3db8e69748915"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5567bca9d52c37e6b3180c2491fdc29f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a5567bca9d52c37e6b3180c2491fdc29f">STRM_CLSD</a>&#160;&#160;&#160;0x04</td></tr>
 <tr class="separator:a5567bca9d52c37e6b3180c2491fdc29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,6 +141,8 @@ Functions</h2></td></tr>
 <tr class="separator:a373af28b5e30782936eb0ca9a71f54cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0b3499ca041b2c1fbad0ecf43919744"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structq__stream.html">q_stream</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#ab0b3499ca041b2c1fbad0ecf43919744">new_stream</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, const uint32_t id)</td></tr>
 <tr class="separator:ab0b3499ca041b2c1fbad0ecf43919744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf612f3ac0b49aa8c7d6630c00e6b0ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#acf612f3ac0b49aa8c7d6630c00e6b0ce">free_stream</a> (struct <a class="el" href="structq__stream.html">q_stream</a> *const s)</td></tr>
+<tr class="separator:acf612f3ac0b49aa8c7d6630c00e6b0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a5567bca9d52c37e6b3180c2491fdc29f"></a>
@@ -162,6 +167,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>"half closed local" </p>
+
 </div>
 </div>
 <a class="anchor" id="a4676ad2f6c3205a2edee25bea8db7cd7"></a>
@@ -173,6 +180,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>"half closed remote" </p>
 
 </div>
 </div>
@@ -201,6 +210,22 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="acf612f3ac0b49aa8c7d6630c00e6b0ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void free_stream </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structq__stream.html">q_stream</a> *const&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a373af28b5e30782936eb0ca9a71f54cf"></a>
 <div class="memitem">
 <div class="memproto">
@@ -291,7 +316,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 8 2017 12:11:43 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 11 2017 14:20:12 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

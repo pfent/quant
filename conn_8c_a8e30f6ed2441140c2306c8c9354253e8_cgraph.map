@@ -14,6 +14,6 @@
 <area shape="rect" id="node17" href="$fnv__1a_8c.html#ae1a00a9fdbb5c3d2f338b60855c9c69b" title="Compute an FNV&#45;1a 64&#45;bit hash over the given buffer. " alt="" coords="291,338,352,365"/>
 <area shape="rect" id="node11" href="$frame_8c.html#adab36476b9c7a8f2e849ff09f4a0256a" title="needed_lg_ack_len" alt="" coords="448,237,581,264"/>
 <area shape="rect" id="node12" href="$frame_8c.html#ae139b00759d9d8db6d1e35917655600f" title="needed_ack_block_len" alt="" coords="437,186,592,213"/>
-<area shape="rect" id="node15" href="$frame_8c.html#ad82df9b455f7872d73be99589ef0fe19" title="needed_off_len" alt="" coords="459,338,570,365"/>
-<area shape="rect" id="node16" href="$frame_8c.html#a8e66c509135b66e394343247ed37f2e1" title="needed_sid_len" alt="" coords="459,288,571,314"/>
+<area shape="rect" id="node15" href="$frame_8c.html#a8e66c509135b66e394343247ed37f2e1" title="needed_sid_len" alt="" coords="459,338,571,365"/>
+<area shape="rect" id="node16" href="$frame_8c.html#ad82df9b455f7872d73be99589ef0fe19" title="needed_off_len" alt="" coords="459,288,570,314"/>
 </map>

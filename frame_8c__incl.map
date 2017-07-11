@@ -1,12 +1,12 @@
 <map id="src/frame.c" name="src/frame.c">
-<area shape="rect" id="node10" href="$conn_8h.html" title="conn.h" alt="" coords="532,80,593,107"/>
-<area shape="rect" id="node14" href="$diet_8h.html" title="diet.h" alt="" coords="643,155,697,181"/>
+<area shape="rect" id="node10" href="$conn_8h.html" title="conn.h" alt="" coords="491,80,552,107"/>
+<area shape="rect" id="node14" href="$diet_8h.html" title="diet.h" alt="" coords="543,155,597,181"/>
 <area shape="rect" id="node16" href="$fnv__1a_8h.html" title="fnv_1a.h" alt="" coords="5,155,77,181"/>
-<area shape="rect" id="node17" href="$frame_8h.html" title="frame.h" alt="" coords="824,80,891,107"/>
-<area shape="rect" id="node18" href="$marshall_8h.html" title="marshall.h" alt="" coords="1123,155,1204,181"/>
-<area shape="rect" id="node21" href="$pkt_8h.html" title="pkt.h" alt="" coords="364,80,415,107"/>
-<area shape="rect" id="node22" href="$quic_8h.html" title="quic.h" alt="" coords="222,80,279,107"/>
-<area shape="rect" id="node23" href="$stream_8h.html" title="stream.h" alt="" coords="974,155,1047,181"/>
-<area shape="rect" id="node24" href="$thread_8h.html" title="thread.h" alt="" coords="1516,80,1585,107"/>
-<area shape="rect" id="node20" href="$config_8h.html" title="quant/config.h" alt="" coords="1220,229,1324,256"/>
+<area shape="rect" id="node17" href="$frame_8h.html" title="frame.h" alt="" coords="857,80,924,107"/>
+<area shape="rect" id="node18" href="$marshall_8h.html" title="marshall.h" alt="" coords="1151,155,1232,181"/>
+<area shape="rect" id="node21" href="$pkt_8h.html" title="pkt.h" alt="" coords="1025,155,1076,181"/>
+<area shape="rect" id="node22" href="$quic_8h.html" title="quic.h" alt="" coords="249,80,305,107"/>
+<area shape="rect" id="node23" href="$stream_8h.html" title="stream.h" alt="" coords="755,80,828,107"/>
+<area shape="rect" id="node24" href="$thread_8h.html" title="thread.h" alt="" coords="1549,80,1619,107"/>
+<area shape="rect" id="node20" href="$config_8h.html" title="quant/config.h" alt="" coords="1199,229,1303,256"/>
 </map>

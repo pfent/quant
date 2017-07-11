@@ -1,21 +1,22 @@
 <map id="tx" name="tx">
-<area shape="rect" id="node2" href="$stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="94,212,181,238"/>
-<area shape="rect" id="node3" href="$conn_8c.html#a8e30f6ed2441140c2306c8c9354253e8" title="do_tx" alt="" coords="110,262,165,289"/>
-<area shape="rect" id="node4" href="$diet_8c.html#a3ba0ac5feb124c6e3076dea437fa3b79" title="Inserts integer n into the diet tree t. " alt="" coords="236,85,319,112"/>
-<area shape="rect" id="node10" href="$pkt_8c.html#af392b36c58463646c250f5b01ea07238" title="enc_pkt" alt="" coords="243,262,311,289"/>
-<area shape="rect" id="node20" href="$conn_8c.html#aaeb047f2ca62d850715e3c5093b9cc02" title="set_ld_alarm" alt="" coords="229,313,325,340"/>
-<area shape="rect" id="node5" href="$diet_8c.html#a1bf88044b4af4e723b8bfc4cf0fe1420" title="Helper function to create a zero&#45;width interval containing (only) n. " alt="" coords="401,34,482,61"/>
-<area shape="rect" id="node6" href="$diet_8c.html#acff4764cdd209408ec31906773db2455" title="Pointer to the interval containing n in diet tree t. " alt="" coords="406,85,477,112"/>
-<area shape="rect" id="node8" href="$diet_8c.html#a85e4e10a029283a5798638bfaf387abd" title="Return maximum interval underneath i. " alt="" coords="597,136,672,162"/>
-<area shape="rect" id="node9" href="$diet_8c.html#a8f0e77727941f94b10b1ea1241df8eaa" title="Return minimum interval underneath i. " alt="" coords="599,9,670,36"/>
-<area shape="rect" id="node7" href="$diet_8c.html#a233a4b0f59b38d83775f80568cfb081f" title="Absolute minimal distance of n from the interval i,. " alt="" coords="599,85,670,112"/>
-<area shape="rect" id="node11" href="$pkt_8c.html#ae230cbc93b330096c2d781b56bd62364" title="needed_pkt_nr_len" alt="" coords="376,389,507,416"/>
-<area shape="rect" id="node12" href="$frame_8c.html#a8d41621adfc301bec8370f974e91c9cc" title="enc_ack_frame" alt="" coords="386,186,497,213"/>
-<area shape="rect" id="node15" href="$frame_8c.html#a89e5fa4a1820e4bb58711d4133fcf4e8" title="enc_padding_frame" alt="" coords="374,237,509,264"/>
-<area shape="rect" id="node16" href="$frame_8c.html#a5974390bd5e285cf756d25804deddda7" title="enc_stream_frame" alt="" coords="376,288,507,314"/>
-<area shape="rect" id="node19" href="$fnv__1a_8c.html#ae1a00a9fdbb5c3d2f338b60855c9c69b" title="Compute an FNV&#45;1a 64&#45;bit hash over the given buffer. " alt="" coords="411,338,472,365"/>
-<area shape="rect" id="node13" href="$frame_8c.html#adab36476b9c7a8f2e849ff09f4a0256a" title="needed_lg_ack_len" alt="" coords="568,237,701,264"/>
-<area shape="rect" id="node14" href="$frame_8c.html#ae139b00759d9d8db6d1e35917655600f" title="needed_ack_block_len" alt="" coords="557,186,712,213"/>
-<area shape="rect" id="node17" href="$frame_8c.html#ad82df9b455f7872d73be99589ef0fe19" title="needed_off_len" alt="" coords="579,338,690,365"/>
-<area shape="rect" id="node18" href="$frame_8c.html#a8e66c509135b66e394343247ed37f2e1" title="needed_sid_len" alt="" coords="579,288,691,314"/>
+<area shape="rect" id="node2" href="$conn_8c.html#a8e30f6ed2441140c2306c8c9354253e8" title="do_tx" alt="" coords="230,262,285,289"/>
+<area shape="rect" id="node20" href="$conn_8c.html#a2d732bffd6c40124b745336ae0199c76" title="synth_tx" alt="" coords="101,288,173,314"/>
+<area shape="rect" id="node21" href="$stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="94,338,181,365"/>
+<area shape="rect" id="node3" href="$diet_8c.html#a3ba0ac5feb124c6e3076dea437fa3b79" title="Inserts integer n into the diet tree t. " alt="" coords="340,85,423,112"/>
+<area shape="rect" id="node9" href="$pkt_8c.html#af392b36c58463646c250f5b01ea07238" title="enc_pkt" alt="" coords="347,262,415,289"/>
+<area shape="rect" id="node19" href="$conn_8c.html#aaeb047f2ca62d850715e3c5093b9cc02" title="set_ld_alarm" alt="" coords="333,313,429,340"/>
+<area shape="rect" id="node4" href="$diet_8c.html#a1bf88044b4af4e723b8bfc4cf0fe1420" title="Helper function to create a zero&#45;width interval containing (only) n. " alt="" coords="505,34,586,61"/>
+<area shape="rect" id="node5" href="$diet_8c.html#acff4764cdd209408ec31906773db2455" title="Pointer to the interval containing n in diet tree t. " alt="" coords="510,85,581,112"/>
+<area shape="rect" id="node7" href="$diet_8c.html#a85e4e10a029283a5798638bfaf387abd" title="Return maximum interval underneath i. " alt="" coords="701,136,776,162"/>
+<area shape="rect" id="node8" href="$diet_8c.html#a8f0e77727941f94b10b1ea1241df8eaa" title="Return minimum interval underneath i. " alt="" coords="703,9,774,36"/>
+<area shape="rect" id="node6" href="$diet_8c.html#a233a4b0f59b38d83775f80568cfb081f" title="Absolute minimal distance of n from the interval i,. " alt="" coords="703,85,774,112"/>
+<area shape="rect" id="node10" href="$pkt_8c.html#ae230cbc93b330096c2d781b56bd62364" title="needed_pkt_nr_len" alt="" coords="480,389,611,416"/>
+<area shape="rect" id="node11" href="$frame_8c.html#a8d41621adfc301bec8370f974e91c9cc" title="enc_ack_frame" alt="" coords="490,186,601,213"/>
+<area shape="rect" id="node14" href="$frame_8c.html#a89e5fa4a1820e4bb58711d4133fcf4e8" title="enc_padding_frame" alt="" coords="478,237,613,264"/>
+<area shape="rect" id="node15" href="$frame_8c.html#a5974390bd5e285cf756d25804deddda7" title="enc_stream_frame" alt="" coords="480,288,611,314"/>
+<area shape="rect" id="node18" href="$fnv__1a_8c.html#ae1a00a9fdbb5c3d2f338b60855c9c69b" title="Compute an FNV&#45;1a 64&#45;bit hash over the given buffer. " alt="" coords="515,338,576,365"/>
+<area shape="rect" id="node12" href="$frame_8c.html#adab36476b9c7a8f2e849ff09f4a0256a" title="needed_lg_ack_len" alt="" coords="672,237,805,264"/>
+<area shape="rect" id="node13" href="$frame_8c.html#ae139b00759d9d8db6d1e35917655600f" title="needed_ack_block_len" alt="" coords="661,186,816,213"/>
+<area shape="rect" id="node16" href="$frame_8c.html#a8e66c509135b66e394343247ed37f2e1" title="needed_sid_len" alt="" coords="683,338,795,365"/>
+<area shape="rect" id="node17" href="$frame_8c.html#ad82df9b455f7872d73be99589ef0fe19" title="needed_off_len" alt="" coords="683,288,794,314"/>
 </map>
