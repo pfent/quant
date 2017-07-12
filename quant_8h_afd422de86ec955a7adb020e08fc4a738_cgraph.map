@@ -1,7 +1,0 @@
-<map id="q_init" name="q_init">
-<area shape="rect" id="node2" href="$quic_8c.html#a0b0f38c4c881cb5f097bf3183cd03a48" title="l_release" alt="" coords="116,5,191,32"/>
-<area shape="rect" id="node3" href="$quic_8c.html#a1c0c1828c0da6a78bab09cddd7164123" title="l_acquire" alt="" coords="116,56,191,83"/>
-<area shape="rect" id="node4" href="$conn_8c.html#a23b98218d38ba7ad85c7d40ed1ca5546" title="loop_update" alt="" coords="107,107,199,133"/>
-<area shape="rect" id="node5" href="$conn_8c.html#a5ba45c97653b67d6f1825ddfc5c4c6b8" title="loop_run" alt="" coords="118,157,189,184"/>
-<area shape="rect" id="node6" href="$conn_8c.html#adcaad6c37574a686baf501d9bcfaec38" title="signal_cb" alt="" coords="248,157,325,184"/>
-</map>

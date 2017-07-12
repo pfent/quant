@@ -1,10 +1,9 @@
 <map id="src/quic.c" name="src/quic.c">
-<area shape="rect" id="node15" href="$quant_8h.html" title="quant/quant.h" alt="" coords="413,80,515,107"/>
-<area shape="rect" id="node19" href="$cert_8h.html" title="cert.h" alt="" coords="1682,80,1736,107"/>
-<area shape="rect" id="node20" href="$conn_8h.html" title="conn.h" alt="" coords="739,80,800,107"/>
-<area shape="rect" id="node21" href="$diet_8h.html" title="diet.h" alt="" coords="795,155,849,181"/>
-<area shape="rect" id="node23" href="$quic_8h.html" title="quic.h" alt="" coords="926,80,983,107"/>
-<area shape="rect" id="node24" href="$stream_8h.html" title="stream.h" alt="" coords="641,80,713,107"/>
-<area shape="rect" id="node25" href="$thread_8h.html" title="thread.h" alt="" coords="1761,80,1831,107"/>
-<area shape="rect" id="node17" href="$config_8h.html" title="quant/config.h" alt="" coords="241,155,345,181"/>
+<area shape="rect" id="node13" href="$quant_8h.html" title="quant/quant.h" alt="" coords="643,80,744,107"/>
+<area shape="rect" id="node17" href="$cert_8h.html" title="cert.h" alt="" coords="1257,80,1311,107"/>
+<area shape="rect" id="node18" href="$conn_8h.html" title="conn.h" alt="" coords="1336,80,1397,107"/>
+<area shape="rect" id="node20" href="$diet_8h.html" title="diet.h" alt="" coords="1423,155,1477,181"/>
+<area shape="rect" id="node22" href="$quic_8h.html" title="quic.h" alt="" coords="1123,80,1180,107"/>
+<area shape="rect" id="node23" href="$stream_8h.html" title="stream.h" alt="" coords="1502,155,1575,181"/>
+<area shape="rect" id="node15" href="$config_8h.html" title="quant/config.h" alt="" coords="641,155,745,181"/>
 </map>

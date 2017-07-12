@@ -35,10 +35,10 @@
 <area shape="rect" id="node33" href="$diet_8c.html#aece76d9290a6c7d12958a2fa703fee87" title="diet_to_str" alt="" coords="391,294,473,321"/>
 <area shape="rect" id="node35" href="$pkt_8c.html#a7050257a7cd6222a71d9606892d9e4e8" title="pkt_vers" alt="" coords="396,396,468,422"/>
 <area shape="rect" id="node36" href="$conn_8c.html#afecc315546eeb1568a211c3ae99c25a4" title="vers_supported" alt="" coords="377,446,487,473"/>
-<area shape="rect" id="node37" href="$frame_8c.html#aa1e2aaddb77c213158ef23a14623b9a2" title="dec_frames" alt="" coords="387,700,477,726"/>
+<area shape="rect" id="node37" href="$frame_8c.html#a9d238111db5836d1311805ec0060e1bf" title="dec_frames" alt="" coords="387,700,477,726"/>
 <area shape="rect" id="node46" href="$conn_8c.html#ac17246f0c632e2f8f9252aea0c441905" title="pick_from_server_vers" alt="" coords="355,649,509,676"/>
 <area shape="rect" id="node38" href="$frame_8c.html#adf88c0fa725c713a202aeee2c984c6c0" title="dec_stream_frame" alt="" coords="557,750,688,777"/>
-<area shape="rect" id="node41" href="$frame_8c.html#a258390af9f223fb0f65c7c22f342fcf0" title="dec_ack_frame" alt="" coords="737,453,847,480"/>
+<area shape="rect" id="node41" href="$frame_8c.html#acdf69d786aecff0cc83e6f028bac9311" title="dec_ack_frame" alt="" coords="737,453,847,480"/>
 <area shape="rect" id="node39" href="$frame_8c.html#acc75ca28a2eb4901b42a3b32c0263309" title="dec_sid_len" alt="" coords="747,649,837,676"/>
 <area shape="rect" id="node40" href="$frame_8c.html#aac68aeedc9f05fc03c29aed36de4d016" title="dec_off_len" alt="" coords="747,700,837,726"/>
 <area shape="rect" id="node42" href="$frame_8c.html#aa354e096c509e96b04b9eb2861ddf000" title="dec_lg_ack_len" alt="" coords="907,453,1019,480"/>

@@ -130,10 +130,6 @@ Data Fields</h2></td></tr>
 <tr class="separator:a788c18d5f1174d3d532262190294003c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cda4e89e538ba6793af2f0c2b4f1dd9"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__stream.html#a2cda4e89e538ba6793af2f0c2b4f1dd9">in_off</a></td></tr>
 <tr class="separator:a2cda4e89e538ba6793af2f0c2b4f1dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ad5f278a0c51b6786ed69afd638e9c2"><td class="memItemLeft" align="right" valign="top">pthread_mutex_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__stream.html#a8ad5f278a0c51b6786ed69afd638e9c2">lock</a></td></tr>
-<tr class="separator:a8ad5f278a0c51b6786ed69afd638e9c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58940e6e9e8c665b201cb8c5e0267e5e"><td class="memItemLeft" align="right" valign="top">pthread_cond_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__stream.html#a58940e6e9e8c665b201cb8c5e0267e5e">close_cv</a></td></tr>
-<tr class="separator:a58940e6e9e8c665b201cb8c5e0267e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#_a3">client.c</a>, and <a class="el" href="server_8c-example.html#_a4">server.c</a>.</dd>
@@ -179,18 +175,6 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a58940e6e9e8c665b201cb8c5e0267e5e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pthread_cond_t q_stream::close_cv</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a788c18d5f1174d3d532262190294003c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -223,18 +207,6 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">uint64_t q_stream::in_off</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8ad5f278a0c51b6786ed69afd638e9c2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pthread_mutex_t q_stream::lock</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -313,7 +285,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 11 2017 14:20:12 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 12 2017 15:40:44 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

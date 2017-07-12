@@ -1,0 +1,6 @@
+<map id="q_cleanup" name="q_cleanup">
+<area shape="rect" id="node2" href="$quic_8c.html#a795c32a858382068fa5b5cf25af69a77" title="q_close" alt="" coords="136,31,203,57"/>
+<area shape="rect" id="node3" href="$quic_8c.html#a01444581bd34af25498d1cb8fc3a0a92" title="q_close_stream" alt="" coords="251,5,365,32"/>
+<area shape="rect" id="node5" href="$diet_8c.html#ae0b5bf132ec7b167cf520835a6386498" title="diet_free" alt="" coords="272,56,344,83"/>
+<area shape="rect" id="node4" href="$stream_8c.html#acf612f3ac0b49aa8c7d6630c00e6b0ce" title="free_stream" alt="" coords="413,5,504,32"/>
+</map>

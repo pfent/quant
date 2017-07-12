@@ -11,7 +11,7 @@
 <area shape="rect" id="node16" href="$stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="658,161,745,187"/>
 <area shape="rect" id="node17" href="$pkt_8c.html#a7050257a7cd6222a71d9606892d9e4e8" title="pkt_vers" alt="" coords="135,946,207,973"/>
 <area shape="rect" id="node18" href="$conn_8c.html#afecc315546eeb1568a211c3ae99c25a4" title="vers_supported" alt="" coords="115,997,226,1023"/>
-<area shape="rect" id="node19" href="$frame_8c.html#aa1e2aaddb77c213158ef23a14623b9a2" title="dec_frames" alt="" coords="125,313,216,339"/>
+<area shape="rect" id="node19" href="$frame_8c.html#a9d238111db5836d1311805ec0060e1bf" title="dec_frames" alt="" coords="125,313,216,339"/>
 <area shape="rect" id="node29" href="$conn_8c.html#aaa8293a7755d9629bc72f04e31674e0f" title="tls_handshake" alt="" coords="117,1047,224,1074"/>
 <area shape="rect" id="node30" href="$conn_8c.html#ac17246f0c632e2f8f9252aea0c441905" title="pick_from_server_vers" alt="" coords="93,47,248,74"/>
 <area shape="rect" id="node31" href="$conn_8c.html#a09818812f3d51b69a2d3e28f8a3101b5" title="rtx" alt="" coords="342,541,381,567"/>
@@ -22,7 +22,7 @@
 <area shape="rect" id="node13" href="$diet_8c.html#a8f0e77727941f94b10b1ea1241df8eaa" title="Return minimum interval underneath i. " alt="" coords="1042,465,1113,491"/>
 <area shape="rect" id="node11" href="$diet_8c.html#a233a4b0f59b38d83775f80568cfb081f" title="Absolute minimal distance of n from the interval i,. " alt="" coords="1042,338,1113,365"/>
 <area shape="rect" id="node20" href="$frame_8c.html#adf88c0fa725c713a202aeee2c984c6c0" title="dec_stream_frame" alt="" coords="296,237,427,263"/>
-<area shape="rect" id="node23" href="$frame_8c.html#a258390af9f223fb0f65c7c22f342fcf0" title="dec_ack_frame" alt="" coords="475,389,586,415"/>
+<area shape="rect" id="node23" href="$frame_8c.html#acdf69d786aecff0cc83e6f028bac9311" title="dec_ack_frame" alt="" coords="475,389,586,415"/>
 <area shape="rect" id="node21" href="$frame_8c.html#acc75ca28a2eb4901b42a3b32c0263309" title="dec_sid_len" alt="" coords="485,237,576,263"/>
 <area shape="rect" id="node22" href="$frame_8c.html#aac68aeedc9f05fc03c29aed36de4d016" title="dec_off_len" alt="" coords="486,287,575,314"/>
 <area shape="rect" id="node24" href="$frame_8c.html#aa354e096c509e96b04b9eb2861ddf000" title="dec_lg_ack_len" alt="" coords="645,389,757,415"/>

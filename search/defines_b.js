@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['q_5foffset',['Q_OFFSET',['../quic_8h.html#aec6d16d07ed84a385791bc8a6e330ab9',1,'quic.h']]],
-  ['quant_5fversion_5fmajor',['QUANT_VERSION_MAJOR',['../config_8h.html#a328d48e06fd92ce28b47b8ccfd5ce0e6',1,'config.h']]],
-  ['quant_5fversion_5fminor',['QUANT_VERSION_MINOR',['../config_8h.html#acb00d9c30829a1c8822ce59599b8ea83',1,'config.h']]],
-  ['quant_5fversion_5fpatch',['QUANT_VERSION_PATCH',['../config_8h.html#adf6d67ea89e6f3a47d8a96da81aff20b',1,'config.h']]]
+  ['strm_5fclsd',['STRM_CLSD',['../stream_8h.html#a5567bca9d52c37e6b3180c2491fdc29f',1,'stream.h']]],
+  ['strm_5fhclo',['STRM_HCLO',['../stream_8h.html#a28c2a83188a9795156a3db8e69748915',1,'stream.h']]],
+  ['strm_5fhcrm',['STRM_HCRM',['../stream_8h.html#a4676ad2f6c3205a2edee25bea8db7cd7',1,'stream.h']]],
+  ['strm_5fhead_5flen',['STRM_HEAD_LEN',['../frame_8h.html#a2ca0c1685b727fa526e573feaf5461a7',1,'frame.h']]],
+  ['strm_5fidle',['STRM_IDLE',['../stream_8h.html#a7ac749e3c4aee69e316360d57f435543',1,'stream.h']]],
+  ['strm_5fopen',['STRM_OPEN',['../stream_8h.html#a8afc3a642545f7a927743af411204916',1,'stream.h']]]
 ];
