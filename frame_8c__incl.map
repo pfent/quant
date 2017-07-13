@@ -1,11 +1,12 @@
 <map id="src/frame.c" name="src/frame.c">
-<area shape="rect" id="node10" href="$conn_8h.html" title="conn.h" alt="" coords="424,80,485,107"/>
-<area shape="rect" id="node14" href="$diet_8h.html" title="diet.h" alt="" coords="569,155,623,181"/>
-<area shape="rect" id="node16" href="$quic_8h.html" title="quic.h" alt="" coords="66,155,123,181"/>
-<area shape="rect" id="node17" href="$fnv__1a_8h.html" title="fnv_1a.h" alt="" coords="199,155,271,181"/>
-<area shape="rect" id="node18" href="$frame_8h.html" title="frame.h" alt="" coords="824,80,891,107"/>
-<area shape="rect" id="node19" href="$marshall_8h.html" title="marshall.h" alt="" coords="1099,155,1180,181"/>
-<area shape="rect" id="node22" href="$pkt_8h.html" title="pkt.h" alt="" coords="749,80,800,107"/>
-<area shape="rect" id="node23" href="$stream_8h.html" title="stream.h" alt="" coords="950,155,1023,181"/>
-<area shape="rect" id="node21" href="$config_8h.html" title="quant/config.h" alt="" coords="1196,229,1300,256"/>
+<area shape="rect" id="node9" href="$quant_8h.html" title="quant/quant.h" alt="" coords="812,80,913,107"/>
+<area shape="rect" id="node13" href="$conn_8h.html" title="conn.h" alt="" coords="273,80,334,107"/>
+<area shape="rect" id="node16" href="$diet_8h.html" title="diet.h" alt="" coords="443,155,497,181"/>
+<area shape="rect" id="node18" href="$quic_8h.html" title="quic.h" alt="" coords="108,155,165,181"/>
+<area shape="rect" id="node19" href="$fnv__1a_8h.html" title="fnv_1a.h" alt="" coords="672,155,744,181"/>
+<area shape="rect" id="node20" href="$frame_8h.html" title="frame.h" alt="" coords="1314,80,1381,107"/>
+<area shape="rect" id="node21" href="$marshall_8h.html" title="marshall.h" alt="" coords="1041,80,1122,107"/>
+<area shape="rect" id="node23" href="$pkt_8h.html" title="pkt.h" alt="" coords="1461,80,1512,107"/>
+<area shape="rect" id="node24" href="$stream_8h.html" title="stream.h" alt="" coords="574,155,646,181"/>
+<area shape="rect" id="node11" href="$config_8h.html" title="quant/config.h" alt="" coords="941,155,1045,181"/>
 </map>

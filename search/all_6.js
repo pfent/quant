@@ -24,5 +24,6 @@ var searchData=
   ['fnv_5f1a_2eh',['fnv_1a.h',['../fnv__1a_8h.html',1,'']]],
   ['frame_2ec',['frame.c',['../frame_8c.html',1,'']]],
   ['frame_2eh',['frame.h',['../frame_8h.html',1,'']]],
-  ['free_5fstream',['free_stream',['../stream_8c.html#acf612f3ac0b49aa8c7d6630c00e6b0ce',1,'free_stream(struct q_stream *const s):&#160;stream.c'],['../stream_8h.html#acf612f3ac0b49aa8c7d6630c00e6b0ce',1,'free_stream(struct q_stream *const s):&#160;stream.c']]]
+  ['free_5fstream',['free_stream',['../stream_8c.html#acf612f3ac0b49aa8c7d6630c00e6b0ce',1,'free_stream(struct q_stream *const s):&#160;stream.c'],['../stream_8h.html#acf612f3ac0b49aa8c7d6630c00e6b0ce',1,'free_stream(struct q_stream *const s):&#160;stream.c']]],
+  ['func_5fptr',['func_ptr',['../quic_8h.html#aaf4e8117a58ef7278393d801e5d78c46',1,'quic.h']]]
 ];

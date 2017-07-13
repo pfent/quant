@@ -1,9 +1,9 @@
 <map id="include/quant/config.h" name="include/quant/config.h">
-<area shape="rect" id="node2" href="$quant_8h.html" title="include/quant/quant.h" alt="" coords="5,80,152,107"/>
-<area shape="rect" id="node4" href="$config_8c.html" title="src/config.c" alt="" coords="176,80,267,107"/>
-<area shape="rect" id="node5" href="$marshall_8h.html" title="src/marshall.h" alt="" coords="291,80,395,107"/>
-<area shape="rect" id="node3" href="$quic_8c.html" title="src/quic.c" alt="" coords="39,155,117,181"/>
-<area shape="rect" id="node6" href="$conn_8c.html" title="src/conn.c" alt="" coords="192,155,273,181"/>
-<area shape="rect" id="node7" href="$frame_8c.html" title="src/frame.c" alt="" coords="299,155,387,181"/>
-<area shape="rect" id="node8" href="$pkt_8c.html" title="src/pkt.c" alt="" coords="411,155,484,181"/>
+<area shape="rect" id="node2" href="$quant_8h.html" title="include/quant/quant.h" alt="" coords="200,80,347,107"/>
+<area shape="rect" id="node6" href="$config_8c.html" title="src/config.c" alt="" coords="371,80,461,107"/>
+<area shape="rect" id="node7" href="$marshall_8h.html" title="src/marshall.h" alt="" coords="72,80,176,107"/>
+<area shape="rect" id="node3" href="$conn_8c.html" title="src/conn.c" alt="" coords="103,155,184,181"/>
+<area shape="rect" id="node4" href="$frame_8c.html" title="src/frame.c" alt="" coords="209,155,297,181"/>
+<area shape="rect" id="node5" href="$quic_8c.html" title="src/quic.c" alt="" coords="322,155,400,181"/>
+<area shape="rect" id="node8" href="$pkt_8c.html" title="src/pkt.c" alt="" coords="5,155,77,181"/>
 </map>

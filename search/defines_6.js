@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['hash_5flen',['HASH_LEN',['../fnv__1a_8h.html#a1c98a0f4b02f4283af4233cf6e3ad121',1,'fnv_1a.h']]],
-  ['have_5fendian_5fh',['HAVE_ENDIAN_H',['../config_8h.html#a9ef8e61ca569fc24c3e47aeab03498c6',1,'config.h']]]
+  ['is_5fclnt',['is_clnt',['../conn_8h.html#a9e2dc78cee8d2e169f824f363b16f824',1,'conn.h']]],
+  ['is_5fserv',['is_serv',['../conn_8h.html#a3f18b98cf6f31d11b1ec0f77ebc56b55',1,'conn.h']]],
+  ['is_5fset',['is_set',['../quic_8h.html#a2e19342e141828d7fe9b2870e5d7d70a',1,'quic.h']]]
 ];

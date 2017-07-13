@@ -8,7 +8,6 @@ var searchData=
   ['conn_2ec',['conn.c',['../conn_8c.html',1,'']]],
   ['conn_2eh',['conn.h',['../conn_8h.html',1,'']]],
   ['conn_5fcmp',['conn_cmp',['../conn_8c.html#a6e57d3d33168af0723c96ce5f53ea343',1,'conn_cmp(const struct q_conn *const a, const struct q_conn *const b):&#160;conn.c'],['../conn_8h.html#a6e57d3d33168af0723c96ce5f53ea343',1,'conn_cmp(const struct q_conn *const a, const struct q_conn *const b):&#160;conn.c']]],
-  ['conn_5fflag_5fapi',['CONN_FLAG_API',['../conn_8h.html#a967a50f7b6be6a414caa837fd14a79fc',1,'conn.h']]],
   ['conn_5fflag_5fclnt',['CONN_FLAG_CLNT',['../conn_8h.html#a2825c2aa0fb893da66ad8d3288b47691',1,'conn.h']]],
   ['conn_5fflag_5fembr',['CONN_FLAG_EMBR',['../conn_8h.html#a4f7804662001077369c42335446795e1',1,'conn.h']]],
   ['conn_5fflag_5frx',['CONN_FLAG_RX',['../conn_8h.html#a3ebe5ea49086b7d2ad82f56d6ccc7e0d',1,'conn.h']]],

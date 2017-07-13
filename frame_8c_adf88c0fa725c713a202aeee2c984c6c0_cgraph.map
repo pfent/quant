@@ -1,6 +1,9 @@
 <map id="dec_stream_frame" name="dec_stream_frame">
-<area shape="rect" id="node2" href="$frame_8c.html#acc75ca28a2eb4901b42a3b32c0263309" title="dec_sid_len" alt="" coords="185,5,276,32"/>
-<area shape="rect" id="node3" href="$frame_8c.html#aac68aeedc9f05fc03c29aed36de4d016" title="dec_off_len" alt="" coords="186,56,275,83"/>
-<area shape="rect" id="node4" href="$stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="326,132,413,159"/>
-<area shape="rect" id="node5" href="$stream_8c.html#ab0b3499ca041b2c1fbad0ecf43919744" title="new_stream" alt="" coords="184,157,277,184"/>
+<area shape="rect" id="node2" href="$frame_8c.html#acc75ca28a2eb4901b42a3b32c0263309" title="dec_sid_len" alt="" coords="196,5,287,32"/>
+<area shape="rect" id="node3" href="$frame_8c.html#aac68aeedc9f05fc03c29aed36de4d016" title="dec_off_len" alt="" coords="197,56,286,83"/>
+<area shape="rect" id="node4" href="$stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="349,132,435,159"/>
+<area shape="rect" id="node5" href="$stream_8c.html#ab0b3499ca041b2c1fbad0ecf43919744" title="new_stream" alt="" coords="195,157,288,184"/>
+<area shape="rect" id="node6" href="$quant_8h.html#a7d387f2075cd8ab630129b0c863433b4" title="q_read" alt="" coords="211,208,272,235"/>
+<area shape="rect" id="node7" href="$quant_8h.html#a01444581bd34af25498d1cb8fc3a0a92" title="q_close_stream" alt="" coords="184,259,299,285"/>
+<area shape="rect" id="node8" href="$stream_8c.html#acf612f3ac0b49aa8c7d6630c00e6b0ce" title="free_stream" alt="" coords="347,259,437,285"/>
 </map>
