@@ -114,7 +114,7 @@ Include dependency graph for frame.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="frame_8c__incl.png" border="0" usemap="#src_2frame_8c" alt=""/></div>
 <map name="src_2frame_8c" id="src_2frame_8c">
-<area shape="rect" id="node10" href="conn_8h.html" title="conn.h" alt="" coords="532,80,593,107"/><area shape="rect" id="node14" href="diet_8h.html" title="diet.h" alt="" coords="643,155,697,181"/><area shape="rect" id="node16" href="fnv__1a_8h.html" title="fnv_1a.h" alt="" coords="5,155,77,181"/><area shape="rect" id="node17" href="frame_8h.html" title="frame.h" alt="" coords="824,80,891,107"/><area shape="rect" id="node18" href="marshall_8h.html" title="marshall.h" alt="" coords="1123,155,1204,181"/><area shape="rect" id="node21" href="pkt_8h.html" title="pkt.h" alt="" coords="364,80,415,107"/><area shape="rect" id="node22" href="quic_8h.html" title="quic.h" alt="" coords="222,80,279,107"/><area shape="rect" id="node23" href="stream_8h.html" title="stream.h" alt="" coords="974,155,1047,181"/><area shape="rect" id="node20" href="config_8h.html" title="quant/config.h" alt="" coords="1220,229,1324,256"/></map>
+<area shape="rect" id="node10" href="conn_8h.html" title="conn.h" alt="" coords="424,80,485,107"/><area shape="rect" id="node14" href="diet_8h.html" title="diet.h" alt="" coords="569,155,623,181"/><area shape="rect" id="node16" href="quic_8h.html" title="quic.h" alt="" coords="66,155,123,181"/><area shape="rect" id="node17" href="fnv__1a_8h.html" title="fnv_1a.h" alt="" coords="199,155,271,181"/><area shape="rect" id="node18" href="frame_8h.html" title="frame.h" alt="" coords="824,80,891,107"/><area shape="rect" id="node19" href="marshall_8h.html" title="marshall.h" alt="" coords="1099,155,1180,181"/><area shape="rect" id="node22" href="pkt_8h.html" title="pkt.h" alt="" coords="749,80,800,107"/><area shape="rect" id="node23" href="stream_8h.html" title="stream.h" alt="" coords="950,155,1023,181"/><area shape="rect" id="node21" href="config_8h.html" title="quant/config.h" alt="" coords="1196,229,1300,256"/></map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -156,8 +156,8 @@ Functions</h2></td></tr>
 <tr class="separator:a8e66c509135b66e394343247ed37f2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad82df9b455f7872d73be99589ef0fe19"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame_8c.html#ad82df9b455f7872d73be99589ef0fe19">needed_off_len</a> (const uint64_t n)</td></tr>
 <tr class="separator:ad82df9b455f7872d73be99589ef0fe19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5974390bd5e285cf756d25804deddda7"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame_8c.html#a5974390bd5e285cf756d25804deddda7">enc_stream_frame</a> (struct <a class="el" href="structq__stream.html">q_stream</a> *const s, uint8_t *const buf, const uint16_t len, const uint64_t off, const uint32_t idx)</td></tr>
-<tr class="separator:a5974390bd5e285cf756d25804deddda7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a305c92dea1718d0433357f179dacadbc"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame_8c.html#a305c92dea1718d0433357f179dacadbc">enc_stream_frame</a> (struct <a class="el" href="structq__stream.html">q_stream</a> *const s, struct w_iov *const v, const uint64_t off)</td></tr>
+<tr class="separator:a305c92dea1718d0433357f179dacadbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -522,7 +522,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a5974390bd5e285cf756d25804deddda7"></a>
+<a class="anchor" id="a305c92dea1718d0433357f179dacadbc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -535,26 +535,14 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t *const&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint16_t&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
+          <td class="paramtype">struct w_iov *const&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const uint64_t&#160;</td>
-          <td class="paramname"><em>off</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint32_t&#160;</td>
-          <td class="paramname"><em>idx</em>&#160;</td>
+          <td class="paramname"><em>off</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -567,8 +555,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="frame_8c_a5974390bd5e285cf756d25804deddda7_cgraph.png" border="0" usemap="#frame_8c_a5974390bd5e285cf756d25804deddda7_cgraph" alt=""/></div>
-<map name="frame_8c_a5974390bd5e285cf756d25804deddda7_cgraph" id="frame_8c_a5974390bd5e285cf756d25804deddda7_cgraph">
+<div class="center"><img src="frame_8c_a305c92dea1718d0433357f179dacadbc_cgraph.png" border="0" usemap="#frame_8c_a305c92dea1718d0433357f179dacadbc_cgraph" alt=""/></div>
+<map name="frame_8c_a305c92dea1718d0433357f179dacadbc_cgraph" id="frame_8c_a305c92dea1718d0433357f179dacadbc_cgraph">
 <area shape="rect" id="node2" href="frame_8c.html#a8e66c509135b66e394343247ed37f2e1" title="needed_sid_len" alt="" coords="184,5,296,32"/><area shape="rect" id="node3" href="frame_8c.html#ad82df9b455f7872d73be99589ef0fe19" title="needed_off_len" alt="" coords="185,56,295,83"/></map>
 </div>
 </p>
@@ -807,7 +795,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 12 2017 15:40:44 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 13 2017 10:52:09 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

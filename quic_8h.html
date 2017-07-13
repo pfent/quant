@@ -108,7 +108,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="quic_8h__dep__incl.png" border="0" usemap="#src_2quic_8hdep" alt=""/></div>
 <map name="src_2quic_8hdep" id="src_2quic_8hdep">
-<area shape="rect" id="node2" href="conn_8c.html" title="src/conn.c" alt="" coords="5,80,87,107"/><area shape="rect" id="node3" href="frame_8c.html" title="src/frame.c" alt="" coords="112,80,200,107"/><area shape="rect" id="node4" href="pkt_8c.html" title="src/pkt.c" alt="" coords="225,80,297,107"/><area shape="rect" id="node5" href="quic_8c.html" title="src/quic.c" alt="" coords="322,80,400,107"/><area shape="rect" id="node6" href="stream_8c.html" title="src/stream.c" alt="" coords="425,80,519,107"/></map>
+<area shape="rect" id="node2" href="conn_8h.html" title="src/conn.h" alt="" coords="231,80,312,107"/><area shape="rect" id="node3" href="conn_8c.html" title="src/conn.c" alt="" coords="5,155,87,181"/><area shape="rect" id="node4" href="frame_8c.html" title="src/frame.c" alt="" coords="112,155,200,181"/><area shape="rect" id="node5" href="pkt_8c.html" title="src/pkt.c" alt="" coords="343,155,416,181"/><area shape="rect" id="node6" href="quic_8c.html" title="src/quic.c" alt="" coords="441,155,519,181"/><area shape="rect" id="node7" href="stream_8c.html" title="src/stream.c" alt="" coords="225,155,319,181"/></map>
 </div>
 </div>
 <p><a href="quic_8h_source.html">Go to the source code of this file.</a></p>
@@ -121,6 +121,8 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a01ed57991bea53afa1ece4452d16b568"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(v)&#160;&#160;&#160;<a class="el" href="quic_8h.html#a0ea1870a8b2233033ea3d196c8206ac0">pm</a>[(v)-&gt;idx]</td></tr>
+<tr class="separator:a01ed57991bea53afa1ece4452d16b568"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec6d16d07ed84a385791bc8a6e330ab9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#aec6d16d07ed84a385791bc8a6e330ab9">Q_OFFSET</a>&#160;&#160;&#160;64</td></tr>
 <tr class="separator:aec6d16d07ed84a385791bc8a6e330ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a865a71929a750620626cb3cc40331593"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a865a71929a750620626cb3cc40331593">kMaxTLPs</a>&#160;&#160;&#160;2</td></tr>
@@ -159,6 +161,16 @@ Macros</h2></td></tr>
 <tr class="memitem:a2e19342e141828d7fe9b2870e5d7d70a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a2e19342e141828d7fe9b2870e5d7d70a">is_set</a>(f, v)&#160;&#160;&#160;(((v) &amp; (f)) == (f))</td></tr>
 <tr class="memdesc:a2e19342e141828d7fe9b2870e5d7d70a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is flag <code>f</code> set in flags variable <code>v</code>?  <a href="#a2e19342e141828d7fe9b2870e5d7d70a">More...</a><br/></td></tr>
 <tr class="separator:a2e19342e141828d7fe9b2870e5d7d70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f3b0a356a04c44a658638d931c52689"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a8f3b0a356a04c44a658638d931c52689">API_READ</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a8f3b0a356a04c44a658638d931c52689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71a0c22123e2857e309d8e1179a8da8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a71a0c22123e2857e309d8e1179a8da8d">API_WRIT</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a71a0c22123e2857e309d8e1179a8da8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80886d8a0d1274383f8350ee81577294"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a80886d8a0d1274383f8350ee81577294">API_ACPT</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a80886d8a0d1274383f8350ee81577294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68edebc844554f6c57851954062ce28e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a68edebc844554f6c57851954062ce28e">API_CNCT</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a68edebc844554f6c57851954062ce28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86b7b9f07554cf4c5c1bd68b3574ea9e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a86b7b9f07554cf4c5c1bd68b3574ea9e">API_CLSE_STRM</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:a86b7b9f07554cf4c5c1bd68b3574ea9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -175,8 +187,70 @@ Variables</h2></td></tr>
 <tr class="memitem:af6bbbfab377148ff702ada5a44a7ae73"><td class="memItemLeft" align="right" valign="top">ptls_context_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#af6bbbfab377148ff702ada5a44a7ae73">tls_ctx</a></td></tr>
 <tr class="memdesc:af6bbbfab377148ff702ada5a44a7ae73"><td class="mdescLeft">&#160;</td><td class="mdescRight">TLS context.  <a href="#af6bbbfab377148ff702ada5a44a7ae73">More...</a><br/></td></tr>
 <tr class="separator:af6bbbfab377148ff702ada5a44a7ae73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a305c229a67ad17fd1295057bc7fc3366"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a305c229a67ad17fd1295057bc7fc3366">act_api_call</a></td></tr>
+<tr class="separator:a305c229a67ad17fd1295057bc7fc3366"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a80886d8a0d1274383f8350ee81577294"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define API_ACPT&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a86b7b9f07554cf4c5c1bd68b3574ea9e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define API_CLSE_STRM&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a68edebc844554f6c57851954062ce28e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define API_CNCT&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8f3b0a356a04c44a658638d931c52689"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define API_READ&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a71a0c22123e2857e309d8e1179a8da8d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define API_WRIT&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a2e19342e141828d7fe9b2870e5d7d70a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -368,6 +442,22 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a01ed57991bea53afa1ece4452d16b568"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define meta</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">v</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="quic_8h.html#a0ea1870a8b2233033ea3d196c8206ac0">pm</a>[(v)-&gt;idx]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aec6d16d07ed84a385791bc8a6e330ab9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -381,6 +471,18 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a305c229a67ad17fd1295057bc7fc3366"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t act_api_call</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a855923b555731173d3509ecb645de0e0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -451,7 +553,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 12 2017 15:40:44 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 13 2017 10:52:09 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -13,7 +13,7 @@
 <area shape="rect" id="node10" href="$pkt_8c.html#ae230cbc93b330096c2d781b56bd62364" title="needed_pkt_nr_len" alt="" coords="480,389,611,416"/>
 <area shape="rect" id="node11" href="$frame_8c.html#a8d41621adfc301bec8370f974e91c9cc" title="enc_ack_frame" alt="" coords="490,186,601,213"/>
 <area shape="rect" id="node14" href="$frame_8c.html#a89e5fa4a1820e4bb58711d4133fcf4e8" title="enc_padding_frame" alt="" coords="478,237,613,264"/>
-<area shape="rect" id="node15" href="$frame_8c.html#a5974390bd5e285cf756d25804deddda7" title="enc_stream_frame" alt="" coords="480,288,611,314"/>
+<area shape="rect" id="node15" href="$frame_8c.html#a305c92dea1718d0433357f179dacadbc" title="enc_stream_frame" alt="" coords="480,288,611,314"/>
 <area shape="rect" id="node18" href="$fnv__1a_8c.html#ae1a00a9fdbb5c3d2f338b60855c9c69b" title="Compute an FNV&#45;1a 64&#45;bit hash over the given buffer. " alt="" coords="515,338,576,365"/>
 <area shape="rect" id="node12" href="$frame_8c.html#adab36476b9c7a8f2e849ff09f4a0256a" title="needed_lg_ack_len" alt="" coords="672,237,805,264"/>
 <area shape="rect" id="node13" href="$frame_8c.html#ae139b00759d9d8db6d1e35917655600f" title="needed_ack_block_len" alt="" coords="661,186,816,213"/>

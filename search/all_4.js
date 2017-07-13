@@ -1,7 +1,6 @@
 var searchData=
 [
   ['data_5flen',['data_len',['../structpkt__meta.html#af75809576a0c205f4df83692f4c09a39',1,'pkt_meta']]],
-  ['data_5foff',['data_off',['../structpkt__meta.html#a2edbc0461ff4b5c92fa3fba4a799cddd',1,'pkt_meta']]],
   ['dec',['dec',['../marshall_8h.html#a6260c58bcf16b64a41013d10babcdd3b',1,'marshall.h']]],
   ['dec_5fack_5fblock_5flen',['dec_ack_block_len',['../frame_8c.html#a06fb0b82dd62949b991315c88915240a',1,'frame.c']]],
   ['dec_5fack_5fframe',['dec_ack_frame',['../frame_8c.html#acdf69d786aecff0cc83e6f028bac9311',1,'frame.c']]],

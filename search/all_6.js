@@ -18,7 +18,7 @@ var searchData=
   ['find_5fmax',['find_max',['../diet_8c.html#a85e4e10a029283a5798638bfaf387abd',1,'diet.c']]],
   ['find_5fmin',['find_min',['../diet_8c.html#a8f0e77727941f94b10b1ea1241df8eaa',1,'diet.c']]],
   ['find_5fsent_5fpkt',['find_sent_pkt',['../frame_8c.html#a7c21dd1fa5cbacecdac2c95bdb4c5593',1,'frame.c']]],
-  ['flags',['flags',['../structq__conn.html#ae0f7709b5df4ecde903ac08bd6b0a124',1,'q_conn']]],
+  ['flags',['flags',['../structq__conn.html#ae0f7709b5df4ecde903ac08bd6b0a124',1,'q_conn::flags()'],['../structq__stream.html#a553297d8d01871467e55abf88ada461d',1,'q_stream::flags()']]],
   ['fnv_5f1a',['fnv_1a',['../fnv__1a_8c.html#ae1a00a9fdbb5c3d2f338b60855c9c69b',1,'fnv_1a(const void *const buf, const size_t len, const size_t skip_pos, const size_t skip_len):&#160;fnv_1a.c'],['../fnv__1a_8h.html#ae1a00a9fdbb5c3d2f338b60855c9c69b',1,'fnv_1a(const void *const buf, const size_t len, const size_t skip_pos, const size_t skip_len):&#160;fnv_1a.c']]],
   ['fnv_5f1a_2ec',['fnv_1a.c',['../fnv__1a_8c.html',1,'']]],
   ['fnv_5f1a_2eh',['fnv_1a.h',['../fnv__1a_8h.html',1,'']]],

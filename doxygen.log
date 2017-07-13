@@ -167,7 +167,7 @@ Generating call graph for function ld_alarm
 Generating call graph for function rx
 Generating call graph for function tx
 Generating docs for file src/diet.c...
-Generating call graph for functio/home/travis/build/NTAP/quant/lib/src/conn.h:84: warning: Found unknown command `\len'
+Generating call graph for functio/home/travis/build/NTAP/quant/lib/src/conn.h:86: warning: Found unknown command `\len'
 n diet_find
 Generating call graph for function diet_insert
 Generating call graph for function diet_remove
@@ -339,5 +339,5 @@ Patching output file 22/25
 Patching output file 23/25
 Patching output file 24/25
 Patching output file 25/25
-lookup cache used 287/65536 hits=1771 misses=291
+lookup cache used 301/65536 hits=1762 misses=305
 finished...

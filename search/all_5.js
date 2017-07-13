@@ -9,5 +9,5 @@ var searchData=
   ['enc_5fpkt',['enc_pkt',['../pkt_8c.html#af392b36c58463646c250f5b01ea07238',1,'enc_pkt(struct q_conn *const c, struct q_stream *const s, struct w_iov *const v):&#160;pkt.c'],['../pkt_8h.html#af392b36c58463646c250f5b01ea07238',1,'enc_pkt(struct q_conn *const c, struct q_stream *const s, struct w_iov *const v):&#160;pkt.c']]],
   ['enc_5fpkt_5fnr_5flen',['enc_pkt_nr_len',['../pkt_8c.html#ad4727e7536772a44b43b1261457a7a62',1,'pkt.c']]],
   ['enc_5fsid_5flen',['enc_sid_len',['../frame_8c.html#a6612bdaf8320b772f0303ff8d52122a2',1,'frame.c']]],
-  ['enc_5fstream_5fframe',['enc_stream_frame',['../frame_8c.html#a5974390bd5e285cf756d25804deddda7',1,'enc_stream_frame(struct q_stream *const s, uint8_t *const buf, const uint16_t len, const uint64_t off, const uint32_t idx):&#160;frame.c'],['../frame_8h.html#a5974390bd5e285cf756d25804deddda7',1,'enc_stream_frame(struct q_stream *const s, uint8_t *const buf, const uint16_t len, const uint64_t off, const uint32_t idx):&#160;frame.c']]]
+  ['enc_5fstream_5fframe',['enc_stream_frame',['../frame_8c.html#a305c92dea1718d0433357f179dacadbc',1,'enc_stream_frame(struct q_stream *const s, struct w_iov *const v, const uint64_t off):&#160;frame.c'],['../frame_8h.html#a305c92dea1718d0433357f179dacadbc',1,'enc_stream_frame(struct q_stream *const s, struct w_iov *const v, const uint64_t off):&#160;frame.c']]]
 ];

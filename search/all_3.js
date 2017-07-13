@@ -8,7 +8,7 @@ var searchData=
   ['conn_2ec',['conn.c',['../conn_8c.html',1,'']]],
   ['conn_2eh',['conn.h',['../conn_8h.html',1,'']]],
   ['conn_5fcmp',['conn_cmp',['../conn_8c.html#a6e57d3d33168af0723c96ce5f53ea343',1,'conn_cmp(const struct q_conn *const a, const struct q_conn *const b):&#160;conn.c'],['../conn_8h.html#a6e57d3d33168af0723c96ce5f53ea343',1,'conn_cmp(const struct q_conn *const a, const struct q_conn *const b):&#160;conn.c']]],
-  ['conn_5fflag_5fcall_5fdone',['CONN_FLAG_CALL_DONE',['../conn_8h.html#a166781fff19aaebd8ce9ee74130c3280',1,'conn.h']]],
+  ['conn_5fflag_5fapi',['CONN_FLAG_API',['../conn_8h.html#a967a50f7b6be6a414caa837fd14a79fc',1,'conn.h']]],
   ['conn_5fflag_5fclnt',['CONN_FLAG_CLNT',['../conn_8h.html#a2825c2aa0fb893da66ad8d3288b47691',1,'conn.h']]],
   ['conn_5fflag_5fembr',['CONN_FLAG_EMBR',['../conn_8h.html#a4f7804662001077369c42335446795e1',1,'conn.h']]],
   ['conn_5fflag_5frx',['CONN_FLAG_RX',['../conn_8h.html#a3ebe5ea49086b7d2ad82f56d6ccc7e0d',1,'conn.h']]],
@@ -18,5 +18,6 @@ var searchData=
   ['conn_5fstat_5fvers_5fok',['CONN_STAT_VERS_OK',['../conn_8h.html#a9fe796fc0765f5ee4e39bdc6119a5ec8',1,'conn.h']]],
   ['conn_5fstat_5fvers_5frej',['CONN_STAT_VERS_REJ',['../conn_8h.html#a8e1a3db37211cf95043a7f9e357a1192',1,'conn.h']]],
   ['conn_5fstat_5fvers_5fsent',['CONN_STAT_VERS_SENT',['../conn_8h.html#a71481e9b68e56debff5735caa6b0a3ee',1,'conn.h']]],
+  ['conn_5ftype',['conn_type',['../conn_8h.html#a46d6bc45039ca4abb856f8ddde80f679',1,'conn.h']]],
   ['cwnd',['cwnd',['../structq__conn.html#af90d91a978d7fabc32b0246257e304f6',1,'q_conn']]]
 ];
