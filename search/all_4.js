@@ -15,10 +15,12 @@ var searchData=
   ['diet_2eh',['diet.h',['../diet_8h.html',1,'']]],
   ['diet_5ffind',['diet_find',['../diet_8c.html#acff4764cdd209408ec31906773db2455',1,'diet_find(struct diet *const t, const uint64_t n):&#160;diet.c'],['../diet_8h.html#acff4764cdd209408ec31906773db2455',1,'diet_find(struct diet *const t, const uint64_t n):&#160;diet.c']]],
   ['diet_5ffree',['diet_free',['../diet_8c.html#ae0b5bf132ec7b167cf520835a6386498',1,'diet_free(struct diet *const t):&#160;diet.c'],['../diet_8h.html#ae0b5bf132ec7b167cf520835a6386498',1,'diet_free(struct diet *const t):&#160;diet.c']]],
+  ['diet_5finit',['diet_init',['../diet_8h.html#abb3a38d18218b5a1bedf7a63b2eacbe7',1,'diet.h']]],
+  ['diet_5finitializer',['diet_initializer',['../diet_8h.html#a793a699786f326a891363d916b13ec39',1,'diet.h']]],
   ['diet_5finsert',['diet_insert',['../diet_8c.html#a3ba0ac5feb124c6e3076dea437fa3b79',1,'diet_insert(struct diet *const t, const uint64_t n):&#160;diet.c'],['../diet_8h.html#a3ba0ac5feb124c6e3076dea437fa3b79',1,'diet_insert(struct diet *const t, const uint64_t n):&#160;diet.c']]],
   ['diet_5fmax',['diet_max',['../diet_8h.html#a5fdc9501fc70208804b7745759e15c8a',1,'diet.h']]],
   ['diet_5fmin',['diet_min',['../diet_8h.html#a5f56c9c82aa7a0ac1ad4dceff22b0a66',1,'diet.h']]],
   ['diet_5fremove',['diet_remove',['../diet_8c.html#a93b9b31b9ca382377ac736a1495c9bd0',1,'diet_remove(struct diet *const t, const uint64_t n):&#160;diet.c'],['../diet_8h.html#a93b9b31b9ca382377ac736a1495c9bd0',1,'diet_remove(struct diet *const t, const uint64_t n):&#160;diet.c']]],
-  ['diet_5fto_5fstr',['diet_to_str',['../diet_8c.html#aece76d9290a6c7d12958a2fa703fee87',1,'diet_to_str(char *const str, const size_t len, struct diet *const d):&#160;diet.c'],['../diet_8h.html#aece76d9290a6c7d12958a2fa703fee87',1,'diet_to_str(char *const str, const size_t len, struct diet *const d):&#160;diet.c']]],
+  ['diet_5fto_5fstr',['diet_to_str',['../diet_8c.html#af6ea4b9ca6c4ff0dfdf842855bad18df',1,'diet_to_str(char *const str, const size_t len, struct diet *const t):&#160;diet.c'],['../diet_8h.html#af6ea4b9ca6c4ff0dfdf842855bad18df',1,'diet_to_str(char *const str, const size_t len, struct diet *const t):&#160;diet.c']]],
   ['do_5ftx',['do_tx',['../conn_8c.html#a8e30f6ed2441140c2306c8c9354253e8',1,'conn.c']]]
 ];

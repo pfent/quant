@@ -12,6 +12,6 @@ var searchData=
   ['diet_5ffree',['diet_free',['../diet_8c.html#ae0b5bf132ec7b167cf520835a6386498',1,'diet_free(struct diet *const t):&#160;diet.c'],['../diet_8h.html#ae0b5bf132ec7b167cf520835a6386498',1,'diet_free(struct diet *const t):&#160;diet.c']]],
   ['diet_5finsert',['diet_insert',['../diet_8c.html#a3ba0ac5feb124c6e3076dea437fa3b79',1,'diet_insert(struct diet *const t, const uint64_t n):&#160;diet.c'],['../diet_8h.html#a3ba0ac5feb124c6e3076dea437fa3b79',1,'diet_insert(struct diet *const t, const uint64_t n):&#160;diet.c']]],
   ['diet_5fremove',['diet_remove',['../diet_8c.html#a93b9b31b9ca382377ac736a1495c9bd0',1,'diet_remove(struct diet *const t, const uint64_t n):&#160;diet.c'],['../diet_8h.html#a93b9b31b9ca382377ac736a1495c9bd0',1,'diet_remove(struct diet *const t, const uint64_t n):&#160;diet.c']]],
-  ['diet_5fto_5fstr',['diet_to_str',['../diet_8c.html#aece76d9290a6c7d12958a2fa703fee87',1,'diet_to_str(char *const str, const size_t len, struct diet *const d):&#160;diet.c'],['../diet_8h.html#aece76d9290a6c7d12958a2fa703fee87',1,'diet_to_str(char *const str, const size_t len, struct diet *const d):&#160;diet.c']]],
+  ['diet_5fto_5fstr',['diet_to_str',['../diet_8c.html#af6ea4b9ca6c4ff0dfdf842855bad18df',1,'diet_to_str(char *const str, const size_t len, struct diet *const t):&#160;diet.c'],['../diet_8h.html#af6ea4b9ca6c4ff0dfdf842855bad18df',1,'diet_to_str(char *const str, const size_t len, struct diet *const t):&#160;diet.c']]],
   ['do_5ftx',['do_tx',['../conn_8c.html#a8e30f6ed2441140c2306c8c9354253e8',1,'conn.c']]]
 ];

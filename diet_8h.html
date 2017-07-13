@@ -123,6 +123,10 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a793a699786f326a891363d916b13ec39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8h.html#a793a699786f326a891363d916b13ec39">diet_initializer</a>(t)</td></tr>
+<tr class="separator:a793a699786f326a891363d916b13ec39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb3a38d18218b5a1bedf7a63b2eacbe7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8h.html#abb3a38d18218b5a1bedf7a63b2eacbe7">diet_init</a>(t)</td></tr>
+<tr class="separator:abb3a38d18218b5a1bedf7a63b2eacbe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fdc9501fc70208804b7745759e15c8a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8h.html#a5fdc9501fc70208804b7745759e15c8a">diet_max</a>(t)&#160;&#160;&#160;(SPLAY_EMPTY(t) ? 0 : SPLAY_MAX(<a class="el" href="structdiet.html">diet</a>, (t))-&gt;hi)</td></tr>
 <tr class="separator:a5fdc9501fc70208804b7745759e15c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f56c9c82aa7a0ac1ad4dceff22b0a66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8h.html#a5f56c9c82aa7a0ac1ad4dceff22b0a66">diet_min</a>(t)&#160;&#160;&#160;(SPLAY_EMPTY(t) ? 0 : SPLAY_MIN(<a class="el" href="structdiet.html">diet</a>, (t))-&gt;lo)</td></tr>
@@ -144,10 +148,49 @@ Functions</h2></td></tr>
 <tr class="separator:a93b9b31b9ca382377ac736a1495c9bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0b5bf132ec7b167cf520835a6386498"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8h.html#ae0b5bf132ec7b167cf520835a6386498">diet_free</a> (struct <a class="el" href="structdiet.html">diet</a> *const t)</td></tr>
 <tr class="separator:ae0b5bf132ec7b167cf520835a6386498"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aece76d9290a6c7d12958a2fa703fee87"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8h.html#aece76d9290a6c7d12958a2fa703fee87">diet_to_str</a> (char *const str, const size_t len, struct <a class="el" href="structdiet.html">diet</a> *const d)</td></tr>
-<tr class="separator:aece76d9290a6c7d12958a2fa703fee87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6ea4b9ca6c4ff0dfdf842855bad18df"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8h.html#af6ea4b9ca6c4ff0dfdf842855bad18df">diet_to_str</a> (char *const str, const size_t len, struct <a class="el" href="structdiet.html">diet</a> *const t)</td></tr>
+<tr class="separator:af6ea4b9ca6c4ff0dfdf842855bad18df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="abb3a38d18218b5a1bedf7a63b2eacbe7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define diet_init</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">t</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
+<div class="line">        SPLAY_INIT(t);                                                         \</div>
+<div class="line">        (t)-&gt;cnt = 0;                                                          \</div>
+<div class="line">    } <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a793a699786f326a891363d916b13ec39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define diet_initializer</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">t</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{                                                                          \</div>
+<div class="line">        SPLAY_INITIALIZER(t), 0                                                \</div>
+<div class="line">    }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a class="anchor" id="a5fdc9501fc70208804b7745759e15c8a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -332,7 +375,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="aece76d9290a6c7d12958a2fa703fee87"></a>
+<a class="anchor" id="af6ea4b9ca6c4ff0dfdf842855bad18df"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -352,7 +395,7 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">struct <a class="el" href="structdiet.html">diet</a> *const&#160;</td>
-          <td class="paramname"><em>d</em>&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -403,7 +446,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 13 2017 10:52:09 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 13 2017 11:51:58 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

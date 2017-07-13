@@ -139,24 +139,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="structdiet.html#aa254910587096ac0f5034b8f8c7b6161">   54</a></span>&#160;    uint64_t <a class="code" href="structdiet.html#aa254910587096ac0f5034b8f8c7b6161">cnt</a>;       </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;SPLAY_PROTOTYPE(<a class="code" href="structdiet.html">diet</a>, <a class="code" href="structival.html">ival</a>, node, <a class="code" href="diet_8h.html#a23255463cb0c452dd80e442d9144cedf">ival_cmp</a>)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;extern struct <a class="code" href="structival.html">ival</a> * <a class="code" href="diet_8h.html#acff4764cdd209408ec31906773db2455">diet_find</a>(struct <a class="code" href="structdiet.html">diet</a> * const t, const uint64_t n);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;extern struct <a class="code" href="structival.html">ival</a> * __attribute__((nonnull))</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="code" href="diet_8h.html#a3ba0ac5feb124c6e3076dea437fa3b79">diet_insert</a>(struct <a class="code" href="structdiet.html">diet</a> * const t, const uint64_t n);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="diet_8h.html#a793a699786f326a891363d916b13ec39">   58</a></span>&#160;<span class="preprocessor">#define diet_initializer(t)                                                    \</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">    {                                                                          \</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">        SPLAY_INITIALIZER(t), 0                                                \</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">    }</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<a class="code" href="diet_8h.html#a93b9b31b9ca382377ac736a1495c9bd0">diet_remove</a>(struct <a class="code" href="structdiet.html">diet</a> * const t, const uint64_t n);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="diet_8h.html#ae0b5bf132ec7b167cf520835a6386498">diet_free</a>(struct <a class="code" href="structdiet.html">diet</a> * const t);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;extern <span class="keywordtype">size_t</span> __attribute__((nonnull))</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="code" href="diet_8h.html#aece76d9290a6c7d12958a2fa703fee87">diet_to_str</a>(<span class="keywordtype">char</span> * const str, const <span class="keywordtype">size_t</span> len, struct <a class="code" href="structdiet.html">diet</a> * const d);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="diet_8h.html#a5fdc9501fc70208804b7745759e15c8a">   72</a></span>&#160;<span class="preprocessor">#define diet_max(t) (SPLAY_EMPTY(t) ? 0 : SPLAY_MAX(diet, (t))-&gt;hi)</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="diet_8h.html#a5f56c9c82aa7a0ac1ad4dceff22b0a66">   74</a></span>&#160;<span class="preprocessor">#define diet_min(t) (SPLAY_EMPTY(t) ? 0 : SPLAY_MIN(diet, (t))-&gt;lo)</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="diet_8h.html#abb3a38d18218b5a1bedf7a63b2eacbe7">   64</a></span>&#160;<span class="preprocessor">#define diet_init(t)                                                           \</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">    do {                                                                       \</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">        SPLAY_INIT(t);                                                         \</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">        (t)-&gt;cnt = 0;                                                          \</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">    } while (0)</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;SPLAY_PROTOTYPE(<a class="code" href="structdiet.html">diet</a>, <a class="code" href="structival.html">ival</a>, node, <a class="code" href="diet_8h.html#a23255463cb0c452dd80e442d9144cedf">ival_cmp</a>)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;extern struct <a class="code" href="structival.html">ival</a> * <a class="code" href="diet_8h.html#acff4764cdd209408ec31906773db2455">diet_find</a>(struct <a class="code" href="structdiet.html">diet</a> * const t, const uint64_t n);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;extern struct <a class="code" href="structival.html">ival</a> * __attribute__((nonnull))</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<a class="code" href="diet_8h.html#a3ba0ac5feb124c6e3076dea437fa3b79">diet_insert</a>(struct <a class="code" href="structdiet.html">diet</a> * const t, const uint64_t n);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<a class="code" href="diet_8h.html#a93b9b31b9ca382377ac736a1495c9bd0">diet_remove</a>(struct <a class="code" href="structdiet.html">diet</a> * const t, const uint64_t n);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="diet_8h.html#ae0b5bf132ec7b167cf520835a6386498">diet_free</a>(struct <a class="code" href="structdiet.html">diet</a> * const t);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;extern <span class="keywordtype">size_t</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<a class="code" href="diet_8h.html#af6ea4b9ca6c4ff0dfdf842855bad18df">diet_to_str</a>(<span class="keywordtype">char</span> * const str, const <span class="keywordtype">size_t</span> len, struct <a class="code" href="structdiet.html">diet</a> * const t);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="diet_8h.html#a5fdc9501fc70208804b7745759e15c8a">   86</a></span>&#160;<span class="preprocessor">#define diet_max(t) (SPLAY_EMPTY(t) ? 0 : SPLAY_MAX(diet, (t))-&gt;hi)</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="diet_8h.html#a5f56c9c82aa7a0ac1ad4dceff22b0a66">   88</a></span>&#160;<span class="preprocessor">#define diet_min(t) (SPLAY_EMPTY(t) ? 0 : SPLAY_MIN(diet, (t))-&gt;lo)</span></div>
 <div class="ttc" id="structdiet_html_aa254910587096ac0f5034b8f8c7b6161"><div class="ttname"><a href="structdiet.html#aa254910587096ac0f5034b8f8c7b6161">diet::cnt</a></div><div class="ttdeci">uint64_t cnt</div><div class="ttdoc">Number of nodes (intervals) in the diet tree. </div><div class="ttdef"><b>Definition:</b> diet.h:54</div></div>
 <div class="ttc" id="structival_html_a62e6537a944f488355463920b51c4853"><div class="ttname"><a href="structival.html#a62e6537a944f488355463920b51c4853">ival::SPLAY_ENTRY</a></div><div class="ttdeci">SPLAY_ENTRY(ival) node</div><div class="ttdoc">Splay tree node date. </div></div>
 <div class="ttc" id="diet_8h_html_acff4764cdd209408ec31906773db2455"><div class="ttname"><a href="diet_8h.html#acff4764cdd209408ec31906773db2455">diet_find</a></div><div class="ttdeci">struct ival * diet_find(struct diet *const t, const uint64_t n)</div><div class="ttdoc">Pointer to the interval containing n in diet tree t. </div><div class="ttdef"><b>Definition:</b> diet.c:119</div></div>
@@ -169,11 +183,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="structival_html_af9b795cb80774bbac8756a69f6106ea6"><div class="ttname"><a href="structival.html#af9b795cb80774bbac8756a69f6106ea6">ival::hi</a></div><div class="ttdeci">uint64_t hi</div><div class="ttdoc">Upper bound of the interval. </div><div class="ttdef"><b>Definition:</b> diet.h:44</div></div>
 <div class="ttc" id="structival_html_a48282b6ea42f2a81ab1dee4ed182b0ab"><div class="ttname"><a href="structival.html#a48282b6ea42f2a81ab1dee4ed182b0ab">ival::lo</a></div><div class="ttdeci">uint64_t lo</div><div class="ttdoc">Lower bound of the interval. </div><div class="ttdef"><b>Definition:</b> diet.h:43</div></div>
 <div class="ttc" id="diet_8h_html_a93b9b31b9ca382377ac736a1495c9bd0"><div class="ttname"><a href="diet_8h.html#a93b9b31b9ca382377ac736a1495c9bd0">diet_remove</a></div><div class="ttdeci">void diet_remove(struct diet *const t, const uint64_t n)</div><div class="ttdoc">Remove integer n from the intervals stored in diet tree t. </div><div class="ttdef"><b>Definition:</b> diet.c:237</div></div>
-<div class="ttc" id="diet_8h_html_aece76d9290a6c7d12958a2fa703fee87"><div class="ttname"><a href="diet_8h.html#aece76d9290a6c7d12958a2fa703fee87">diet_to_str</a></div><div class="ttdeci">size_t diet_to_str(char *const str, const size_t len, struct diet *const d)</div><div class="ttdef"><b>Definition:</b> diet.c:280</div></div>
+<div class="ttc" id="diet_8h_html_af6ea4b9ca6c4ff0dfdf842855bad18df"><div class="ttname"><a href="diet_8h.html#af6ea4b9ca6c4ff0dfdf842855bad18df">diet_to_str</a></div><div class="ttdeci">size_t diet_to_str(char *const str, const size_t len, struct diet *const t)</div><div class="ttdef"><b>Definition:</b> diet.c:280</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 13 2017 10:52:09 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 13 2017 11:51:58 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
