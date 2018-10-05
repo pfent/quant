@@ -1,0 +1,17 @@
+<map id="dec_stream_or_crypto_frame" name="dec_stream_or_crypto_frame">
+<area shape="rect" id="node2" href="$stream_8h.html#a012bc210254cd3269ef892fcbd91e146" title="crpt_strm_id" alt="" coords="231,5,326,32"/>
+<area shape="rect" id="node3" href="$pkt_8h.html#a2e3325ad951d933d49dcd1cd1e0c04f1" title="epoch_for_pkt_type" alt="" coords="211,56,347,83"/>
+<area shape="rect" id="node4" href="$stream_8c.html#a7308501df4d06bbfd14665ae88caae02" title="get_stream" alt="" coords="426,120,513,147"/>
+<area shape="rect" id="node5" href="$diet_8c.html#a87c3c2cebc6ccf0911d3d05989352588" title="Pointer to the interval containing n in diet tree t. " alt="" coords="243,157,314,184"/>
+<area shape="rect" id="node6" href="$conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="428,411,511,437"/>
+<area shape="rect" id="node7" href="$stream_8c.html#a300bcafbad60488eb0b6b0560eb1b645" title="new_stream" alt="" coords="232,208,325,235"/>
+<area shape="rect" id="node10" href="$stream_8c.html#a551a7c19bf90417d819623804da6949f" title="track_bytes_in" alt="" coords="225,309,332,336"/>
+<area shape="rect" id="node11" href="$quic_8h.html#a6bb0d7cd1774df0297a9540111f46308" title="is_fin" alt="" coords="252,360,305,387"/>
+<area shape="rect" id="node12" href="$quant_8h.html#afa40a9929151cdca1205f08b838e53f5" title="q_readall_str" alt="" coords="231,411,327,437"/>
+<area shape="rect" id="node13" href="$stream_8c.html#ae4a57a5b73d68625c63574f6c4109bad" title="do_stream_fc" alt="" coords="228,461,329,488"/>
+<area shape="rect" id="node14" href="$conn_8c.html#a4bcf08ef3dc5cc610474c8d0fa7947ee" title="do_conn_fc" alt="" coords="234,512,323,539"/>
+<area shape="rect" id="node15" href="$quant_8h.html#a3eca43a72005c71781fd6139f1f8d798" title="q_read" alt="" coords="248,563,309,589"/>
+<area shape="rect" id="node16" href="$frame_8c.html#ae94d6f87955af69345cb46c9d03ad90f" title="log_stream_or_crypto\l_frame" alt="" coords="205,614,352,655"/>
+<area shape="rect" id="node8" href="$stream_8c.html#a2853c95f04e70a8c7e836f881eedff8d" title="apply_stream_limits" alt="" coords="400,196,539,223"/>
+<area shape="rect" id="node9" href="$stream_8c.html#a878cdd4d69b352f501841456e8a43972" title="do_stream_id_fc" alt="" coords="410,247,529,273"/>
+</map>

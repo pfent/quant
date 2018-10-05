@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">quant
-   &#160;<span id="projectnumber">0.0.5</span>
+   &#160;<span id="projectnumber">0.0.14</span>
    </div>
   </td>
  </tr>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_fdd8ae322f4f22a382c487790b5ddcaf.html">src</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -91,31 +91,89 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">config.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="config_8h_source.html">quant/config.h</a>&quot;</code><br/>
+<div class="textblock"><code>#include &lt;stddef.h&gt;</code><br/>
+<code>#include &lt;stdint.h&gt;</code><br/>
+<code>#include &lt;<a class="el" href="quant_8h_source.html">quant/quant.h</a>&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for config.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="config_8c__incl.png" border="0" usemap="#src_2config_8c" alt=""/></div>
 <map name="src_2config_8c" id="src_2config_8c">
-<area shape="rect" id="node2" href="config_8h.html" title="quant/config.h" alt="" coords="5,80,109,107"/></map>
+<area shape="rect" id="node4" href="quant_8h.html" title="quant/quant.h" alt="" coords="257,80,359,107"/><area shape="rect" id="node8" href="config_8h.html" title="quant/config.h" alt="" coords="32,155,136,181"/></map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a60aab99d31b45a852fcd62a546237f98"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a60aab99d31b45a852fcd62a546237f98">quant_name</a> [] = &quot;quant&quot;</td></tr>
+<tr class="memitem:a60aab99d31b45a852fcd62a546237f98"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a60aab99d31b45a852fcd62a546237f98">quant_name</a> [] = <a class="el" href="config_8h.html#a12c9d614554664180937dfc530273668">QUANT</a></td></tr>
 <tr class="memdesc:a60aab99d31b45a852fcd62a546237f98"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of this library.  <a href="#a60aab99d31b45a852fcd62a546237f98">More...</a><br/></td></tr>
 <tr class="separator:a60aab99d31b45a852fcd62a546237f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac620cc09e64c3fe9f62143ca4e707fe7"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#ac620cc09e64c3fe9f62143ca4e707fe7">quant_version</a> [] = &quot;0.0.5&quot;</td></tr>
+<tr class="memitem:ac620cc09e64c3fe9f62143ca4e707fe7"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#ac620cc09e64c3fe9f62143ca4e707fe7">quant_version</a> [] = &quot;0.0.14&quot;</td></tr>
 <tr class="memdesc:ac620cc09e64c3fe9f62143ca4e707fe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The version of this library.  <a href="#ac620cc09e64c3fe9f62143ca4e707fe7">More...</a><br/></td></tr>
 <tr class="separator:ac620cc09e64c3fe9f62143ca4e707fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a236d3aa5b661716d3644ee490d12c3d7"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a236d3aa5b661716d3644ee490d12c3d7">quant_commit_hash_abbrev</a> [] = { 0x73, 0x05, 0x2b, 0xdc }</td></tr>
+<tr class="separator:a236d3aa5b661716d3644ee490d12c3d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a83698e6bc72bbd3cb54710c164752a"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a4a83698e6bc72bbd3cb54710c164752a">quant_commit_hash_abbrev_len</a> = sizeof(<a class="el" href="config_8c.html#a236d3aa5b661716d3644ee490d12c3d7">quant_commit_hash_abbrev</a>)</td></tr>
+<tr class="separator:a4a83698e6bc72bbd3cb54710c164752a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ec2308afdb2559c86aeb4cd74cc135"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a49ec2308afdb2559c86aeb4cd74cc135">quant_commit_hash</a> [] = { 0x73, 0x05, 0x2b, 0xdc, 0x60, 0x6c, 0x85, 0xf8, 0x37, 0x8b, 0x63, 0x44, 0xd4, 0xf5, 0x7b, 0xcf, 0xec, 0x83, 0x54, 0x05 }</td></tr>
+<tr class="separator:a49ec2308afdb2559c86aeb4cd74cc135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ff2b2144828ec29ab5eb506d041feb4"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a3ff2b2144828ec29ab5eb506d041feb4">quant_commit_hash_len</a> = sizeof(<a class="el" href="config_8c.html#a49ec2308afdb2559c86aeb4cd74cc135">quant_commit_hash</a>)</td></tr>
+<tr class="separator:a3ff2b2144828ec29ab5eb506d041feb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a49ec2308afdb2559c86aeb4cd74cc135"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t quant_commit_hash[] = { 0x73, 0x05, 0x2b, 0xdc, 0x60, 0x6c, 0x85, 0xf8, 0x37, 0x8b, 0x63, 0x44, 0xd4, 0xf5, 0x7b, 0xcf, 0xec, 0x83, 0x54, 0x05 }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a236d3aa5b661716d3644ee490d12c3d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t quant_commit_hash_abbrev[] = { 0x73, 0x05, 0x2b, 0xdc }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4a83698e6bc72bbd3cb54710c164752a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t quant_commit_hash_abbrev_len = sizeof(<a class="el" href="config_8c.html#a236d3aa5b661716d3644ee490d12c3d7">quant_commit_hash_abbrev</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3ff2b2144828ec29ab5eb506d041feb4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t quant_commit_hash_len = sizeof(<a class="el" href="config_8c.html#a49ec2308afdb2559c86aeb4cd74cc135">quant_commit_hash</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a60aab99d31b45a852fcd62a546237f98"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char quant_name[] = &quot;quant&quot;</td>
+          <td class="memname">const char quant_name[] = <a class="el" href="config_8h.html#a12c9d614554664180937dfc530273668">QUANT</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -129,7 +187,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char quant_version[] = &quot;0.0.5&quot;</td>
+          <td class="memname">const char quant_version[] = &quot;0.0.14&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -141,7 +199,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 13 2017 14:28:46 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 5 2018 15:07:23 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

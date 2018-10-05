@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">quant
-   &#160;<span id="projectnumber">0.0.5</span>
+   &#160;<span id="projectnumber">0.0.14</span>
    </div>
   </td>
  </tr>
@@ -71,6 +71,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals_func.html"><span>Functions</span></a></li>
       <li><a href="globals_vars.html"><span>Variables</span></a></li>
       <li><a href="globals_type.html"><span>Typedefs</span></a></li>
+      <li><a href="globals_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="globals_eval.html"><span>Enumerator</span></a></li>
       <li><a href="globals_defs.html"><span>Macros</span></a></li>
     </ul>
   </div>
@@ -95,7 +97,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals_r.html#index_r"><span>r</span></a></li>
       <li><a href="globals_s.html#index_s"><span>s</span></a></li>
       <li><a href="globals_t.html#index_t"><span>t</span></a></li>
+      <li><a href="globals_u.html#index_u"><span>u</span></a></li>
       <li><a href="globals_v.html#index_v"><span>v</span></a></li>
+      <li><a href="globals_w.html#index_w"><span>w</span></a></li>
+      <li><a href="globals_y.html#index_y"><span>y</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -104,7 +109,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -117,31 +122,82 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock">Here is a list of all functions, variables, defines, enums, and typedefs with links to the files they belong to:</div>
 
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
-<li>init_conn()
-: <a class="el" href="conn_8c.html#a72838cee7de7bdd1a191b70576763dd7">conn.c</a>
-, <a class="el" href="conn_8h.html#a72838cee7de7bdd1a191b70576763dd7">conn.h</a>
+<li>idle_alarm()
+: <a class="el" href="conn_8c.html#ac22c90477f7d4e5f8e96e3d536b58afb">conn.c</a>
 </li>
-<li>is_clnt
-: <a class="el" href="conn_8h.html#a9e2dc78cee8d2e169f824f363b16f824">conn.h</a>
+<li>IDLE_TIMEOUT_MAX
+: <a class="el" href="quant_8h.html#a05a1fe5d96137d7166715a45aebf6dc8">quant.h</a>
 </li>
-<li>is_serv
-: <a class="el" href="conn_8h.html#a3f18b98cf6f31d11b1ec0f77ebc56b55">conn.h</a>
+<li>ignore_sh_pkt
+: <a class="el" href="conn_8c.html#ac56dc051f38e2f05e35eeaf5b00674de">conn.c</a>
+</li>
+<li>in_recovery()
+: <a class="el" href="recovery_8c.html#a1cddc0f895e4feafcaf6f0ad86ad2631">recovery.c</a>
+</li>
+<li>init_pn()
+: <a class="el" href="pn_8c.html#a08111eb107b4ea7f913acc44b761bda0">pn.c</a>
+, <a class="el" href="pn_8h.html#a08111eb107b4ea7f913acc44b761bda0">pn.h</a>
+</li>
+<li>init_prot()
+: <a class="el" href="tls_8h.html#a705b76a676f449cbc37b9d955a2e0d5c">tls.h</a>
+, <a class="el" href="tls_8c.html#a705b76a676f449cbc37b9d955a2e0d5c">tls.c</a>
+</li>
+<li>init_rec()
+: <a class="el" href="recovery_8c.html#a60784c1a11f52e1b091994e1cfcc4609">recovery.c</a>
+, <a class="el" href="recovery_8h.html#a60784c1a11f52e1b091994e1cfcc4609">recovery.h</a>
+</li>
+<li>init_ticket_prot()
+: <a class="el" href="tls_8c.html#a071d6ebbfd90822e31fdb8119ad971ca">tls.c</a>
+</li>
+<li>init_tls()
+: <a class="el" href="tls_8c.html#aa4907143b04da6627e6cef421b920480">tls.c</a>
+, <a class="el" href="tls_8h.html#aa4907143b04da6627e6cef421b920480">tls.h</a>
+</li>
+<li>init_tls_ctx()
+: <a class="el" href="tls_8c.html#aee5df508a2d4d3caff9543fbd098531d">tls.c</a>
+, <a class="el" href="tls_8h.html#aee5df508a2d4d3caff9543fbd098531d">tls.h</a>
+</li>
+<li>init_tp()
+: <a class="el" href="tls_8c.html#a873296f812267d1c3475457cacc3c815">tls.c</a>
+, <a class="el" href="tls_8h.html#a873296f812267d1c3475457cacc3c815">tls.h</a>
+</li>
+<li>ipnp_splay_cmp()
+: <a class="el" href="conn_8c.html#a0fb62916135158b6f5ee74df20ad52f8">conn.c</a>
+, <a class="el" href="conn_8h.html#a0fb62916135158b6f5ee74df20ad52f8">conn.h</a>
+</li>
+<li>is_ack_only()
+: <a class="el" href="quic_8h.html#a38482b6755c2fd0dd90838bb0924224d">quic.h</a>
+</li>
+<li>is_fin()
+: <a class="el" href="quic_8h.html#a6bb0d7cd1774df0297a9540111f46308">quic.h</a>
+</li>
+<li>is_force_neg_vers()
+: <a class="el" href="conn_8h.html#ad42b6442b32fa307a6b5293b9b9df058">conn.h</a>
+</li>
+<li>is_inf()
+: <a class="el" href="conn_8h.html#a07cb3f3bb2c38f820f0a7fd74de25d6d">conn.h</a>
+</li>
+<li>is_rsvd_vers()
+: <a class="el" href="conn_8h.html#a76639ec987a700f45570a287b25025ea">conn.h</a>
+</li>
+<li>is_rtxable
+: <a class="el" href="quic_8h.html#a650f79c60d6d19b0edeeb1735bbd5000">quic.h</a>
 </li>
 <li>is_set
 : <a class="el" href="quic_8h.html#a2e19342e141828d7fe9b2870e5d7d70a">quic.h</a>
 </li>
-<li>ival_cmp()
-: <a class="el" href="diet_8c.html#a23255463cb0c452dd80e442d9144cedf">diet.c</a>
-, <a class="el" href="diet_8h.html#a23255463cb0c452dd80e442d9144cedf">diet.h</a>
+<li>is_zero()
+: <a class="el" href="conn_8h.html#a68c6b30b8665ce894ab5bed3c73a2d9d">conn.h</a>
 </li>
-<li>ival_dist()
-: <a class="el" href="diet_8c.html#a233a4b0f59b38d83775f80568cfb081f">diet.c</a>
+<li>ival_cmp()
+: <a class="el" href="diet_8c.html#a6a0eca48572008a49e75968a6a5bed5a">diet.c</a>
+, <a class="el" href="diet_8h.html#a6a0eca48572008a49e75968a6a5bed5a">diet.h</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 13 2017 14:28:46 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 5 2018 15:07:24 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

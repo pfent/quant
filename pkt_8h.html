@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">quant
-   &#160;<span id="projectnumber">0.0.5</span>
+   &#160;<span id="projectnumber">0.0.14</span>
    </div>
   </td>
  </tr>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a065c5f60305fee3569f887679366939.html">src</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -92,177 +92,217 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">pkt.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br/>
+<div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br/>
+<code>#include &lt;stdint.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="conn_8h_source.html">conn.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="pn_8h_source.html">pn.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="quic_8h_source.html">quic.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for pkt.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="pkt_8h__incl.png" border="0" usemap="#src_2pkt_8h" alt=""/></div>
 <map name="src_2pkt_8h" id="src_2pkt_8h">
-</map>
+<area shape="rect" id="node4" href="conn_8h.html" title="conn.h" alt="" coords="995,80,1056,107"/><area shape="rect" id="node12" href="pn_8h.html" title="pn.h" alt="" coords="785,155,831,181"/><area shape="rect" id="node13" href="quic_8h.html" title="quic.h" alt="" coords="563,229,620,256"/><area shape="rect" id="node11" href="diet_8h.html" title="diet.h" alt="" coords="1075,229,1129,256"/><area shape="rect" id="node19" href="tls_8h.html" title="tls.h" alt="" coords="1313,229,1359,256"/><area shape="rect" id="node20" href="recovery_8h.html" title="recovery.h" alt="" coords="1205,229,1287,256"/><area shape="rect" id="node18" href="frame_8h.html" title="frame.h" alt="" coords="559,304,625,331"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="pkt_8h__dep__incl.png" border="0" usemap="#src_2pkt_8hdep" alt=""/></div>
 <map name="src_2pkt_8hdep" id="src_2pkt_8hdep">
-<area shape="rect" id="node2" href="conn_8c.html" title="src/conn.c" alt="" coords="5,80,87,107"/><area shape="rect" id="node3" href="frame_8c.html" title="src/frame.c" alt="" coords="112,80,200,107"/><area shape="rect" id="node4" href="pkt_8c.html" title="src/pkt.c" alt="" coords="225,80,297,107"/></map>
+<area shape="rect" id="node2" href="conn_8c.html" title="src/conn.c" alt="" coords="5,80,87,107"/><area shape="rect" id="node3" href="frame_8c.html" title="src/frame.c" alt="" coords="112,80,200,107"/><area shape="rect" id="node4" href="pkt_8c.html" title="src/pkt.c" alt="" coords="225,80,297,107"/><area shape="rect" id="node5" href="quic_8c.html" title="src/quic.c" alt="" coords="322,80,400,107"/><area shape="rect" id="node6" href="stream_8c.html" title="src/stream.c" alt="" coords="425,80,519,107"/><area shape="rect" id="node7" href="tls_8c.html" title="src/tls.c" alt="" coords="544,80,613,107"/></map>
 </div>
 </div>
 <p><a href="pkt_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aa2cbdec5743bbebc99afa6729c5b98f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#aa2cbdec5743bbebc99afa6729c5b98f1">MAX_PKT_LEN</a>&#160;&#160;&#160;1350</td></tr>
+<tr class="memitem:aa2cbdec5743bbebc99afa6729c5b98f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#aa2cbdec5743bbebc99afa6729c5b98f1">MAX_PKT_LEN</a>&#160;&#160;&#160;1252</td></tr>
 <tr class="separator:aa2cbdec5743bbebc99afa6729c5b98f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ecad45f89f115d0da5700d3c5e9ca75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a7ecad45f89f115d0da5700d3c5e9ca75">MIN_IP4_INI_LEN</a>&#160;&#160;&#160;1252</td></tr>
-<tr class="separator:a7ecad45f89f115d0da5700d3c5e9ca75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6440098fcd7e0084391abf5acb87535"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#ad6440098fcd7e0084391abf5acb87535">MIN_IP6_INI_LEN</a>&#160;&#160;&#160;1232</td></tr>
-<tr class="separator:ad6440098fcd7e0084391abf5acb87535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae05e8e856810ed8b7911d43457b16e05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#ae05e8e856810ed8b7911d43457b16e05">MIN_INI_LEN</a>&#160;&#160;&#160;1200</td></tr>
+<tr class="separator:ae05e8e856810ed8b7911d43457b16e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08c968a9e1a428f2aaf045602f65bd90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a08c968a9e1a428f2aaf045602f65bd90">F_LONG_HDR</a>&#160;&#160;&#160;0x80</td></tr>
 <tr class="separator:a08c968a9e1a428f2aaf045602f65bd90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfa9b278a336bec4c096bae2299ec6a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#acfa9b278a336bec4c096bae2299ec6a0">F_LH_TYPE_VNEG</a>&#160;&#160;&#160;0x01</td></tr>
-<tr class="separator:acfa9b278a336bec4c096bae2299ec6a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a961ca88391cefa42d4001803e8e3a720"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a961ca88391cefa42d4001803e8e3a720">F_LH_CLNT_INIT</a>&#160;&#160;&#160;0x02</td></tr>
-<tr class="separator:a961ca88391cefa42d4001803e8e3a720"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87ee002076c2b337435fdad6c8a15c39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a87ee002076c2b337435fdad6c8a15c39">F_LH_SERV_RTRY</a>&#160;&#160;&#160;0x03</td></tr>
-<tr class="separator:a87ee002076c2b337435fdad6c8a15c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52749a24966335d653995350a05ada87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a52749a24966335d653995350a05ada87">F_LH_SERV_CTXT</a>&#160;&#160;&#160;0x04</td></tr>
-<tr class="separator:a52749a24966335d653995350a05ada87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56522ce23a78461323006c1eeacafdc4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a56522ce23a78461323006c1eeacafdc4">F_LH_CLNT_CTXT</a>&#160;&#160;&#160;0x05</td></tr>
-<tr class="separator:a56522ce23a78461323006c1eeacafdc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0706eae565b2f4ccc2b23e135f4f3eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#ac0706eae565b2f4ccc2b23e135f4f3eb">F_LH_0RTT_PROT</a>&#160;&#160;&#160;0x06</td></tr>
-<tr class="separator:ac0706eae565b2f4ccc2b23e135f4f3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a725e2a829ac04cabb03bd0dd6e91138d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a725e2a829ac04cabb03bd0dd6e91138d">F_LH_1RTT_PRO0</a>&#160;&#160;&#160;0x07</td></tr>
-<tr class="separator:a725e2a829ac04cabb03bd0dd6e91138d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68b7beb5bbf004982d1714c0dd434d49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a68b7beb5bbf004982d1714c0dd434d49">F_LH_1RTT_PRO1</a>&#160;&#160;&#160;0x08</td></tr>
-<tr class="separator:a68b7beb5bbf004982d1714c0dd434d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa643c61ed2b097e0794bae8d804ef4d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#aa643c61ed2b097e0794bae8d804ef4d7">F_LH_PUBL_RSET</a>&#160;&#160;&#160;0x09</td></tr>
-<tr class="separator:aa643c61ed2b097e0794bae8d804ef4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9372f6bdbef22b48a9e3367911d906c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a9372f6bdbef22b48a9e3367911d906c5">F_SH_CID</a>&#160;&#160;&#160;0x40</td></tr>
-<tr class="separator:a9372f6bdbef22b48a9e3367911d906c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad154230bf45290788f65c81eecec537e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#ad154230bf45290788f65c81eecec537e">F_SH_KEY_PHASE</a>&#160;&#160;&#160;0x20</td></tr>
-<tr class="separator:ad154230bf45290788f65c81eecec537e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab946f0d00880b6dc4a0fcd6be375e2b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#ab946f0d00880b6dc4a0fcd6be375e2b1">pkt_flags</a>(buf)&#160;&#160;&#160;(*(const uint8_t * const)(buf))</td></tr>
-<tr class="separator:ab946f0d00880b6dc4a0fcd6be375e2b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c748ad66e34247fda74115826af57c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a9c748ad66e34247fda74115826af57c5">pkt_type</a>(buf)</td></tr>
-<tr class="separator:a9c748ad66e34247fda74115826af57c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09abd2120c3360335afe4bfa241e5691"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a09abd2120c3360335afe4bfa241e5691">F_LH_INIT</a>&#160;&#160;&#160;0x7F</td></tr>
+<tr class="separator:a09abd2120c3360335afe4bfa241e5691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4968996ab387609134e52c845648376"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#aa4968996ab387609134e52c845648376">F_LH_RTRY</a>&#160;&#160;&#160;0x7E</td></tr>
+<tr class="separator:aa4968996ab387609134e52c845648376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbaa162cdf1fd0da2392e8a38d483fb4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#afbaa162cdf1fd0da2392e8a38d483fb4">F_LH_HSHK</a>&#160;&#160;&#160;0x7D</td></tr>
+<tr class="separator:afbaa162cdf1fd0da2392e8a38d483fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6565bd9fa2f047ba9fb6d21322fe042"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#ab6565bd9fa2f047ba9fb6d21322fe042">F_LH_0RTT</a>&#160;&#160;&#160;0x7C</td></tr>
+<tr class="separator:ab6565bd9fa2f047ba9fb6d21322fe042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab34730fee159f44fce8a314e5451f368"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#ab34730fee159f44fce8a314e5451f368">F_SH_EXP_MASK</a>&#160;&#160;&#160;0x07</td></tr>
+<tr class="separator:ab34730fee159f44fce8a314e5451f368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb083366b350bf20c43f95368aa251ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#adb083366b350bf20c43f95368aa251ab">F_SH_SPIN</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:adb083366b350bf20c43f95368aa251ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa1694bd344cbad43b45157208e0037d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#aaa1694bd344cbad43b45157208e0037d">F_SH</a>&#160;&#160;&#160;0x30</td></tr>
+<tr class="separator:aaa1694bd344cbad43b45157208e0037d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa27c2359d2e851124451b9ed1bee47"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#abfa27c2359d2e851124451b9ed1bee47">F_SH_MASK</a>&#160;&#160;&#160;0xb8</td></tr>
+<tr class="separator:abfa27c2359d2e851124451b9ed1bee47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff0d3fb76f11f6e8ea4002d826bbd23c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#aff0d3fb76f11f6e8ea4002d826bbd23c">ERR_NONE</a>&#160;&#160;&#160;0x0</td></tr>
+<tr class="separator:aff0d3fb76f11f6e8ea4002d826bbd23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6084679069ce82f37778a3ed56860557"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a6084679069ce82f37778a3ed56860557">ERR_INTERNAL</a>&#160;&#160;&#160;0x1</td></tr>
+<tr class="separator:a6084679069ce82f37778a3ed56860557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37fd3c71845762a224ec6f52056c5cf2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a37fd3c71845762a224ec6f52056c5cf2">ERR_FLOW_CONTROL</a>&#160;&#160;&#160;0x3</td></tr>
+<tr class="separator:a37fd3c71845762a224ec6f52056c5cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a911827d4428b3918c7c00c7f9be6bce0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a911827d4428b3918c7c00c7f9be6bce0">ERR_FRAME_ENC</a>&#160;&#160;&#160;0x7</td></tr>
+<tr class="separator:a911827d4428b3918c7c00c7f9be6bce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73915150f68e9c3ae13506a9f08e0492"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a73915150f68e9c3ae13506a9f08e0492">ERR_TRANSPORT_PARAMETER</a>&#160;&#160;&#160;0x8</td></tr>
+<tr class="separator:a73915150f68e9c3ae13506a9f08e0492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27994773959ccba6411fae219fe38577"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a27994773959ccba6411fae219fe38577">ERR_PROTOCOL_VIOLATION</a>&#160;&#160;&#160;0xa</td></tr>
+<tr class="separator:a27994773959ccba6411fae219fe38577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6b18bb77d7a31d51b26f237f55bd3aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#ae6b18bb77d7a31d51b26f237f55bd3aa">ERR_TLS</a>(type)&#160;&#160;&#160;(0x100 + (type))</td></tr>
+<tr class="separator:ae6b18bb77d7a31d51b26f237f55bd3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abd20d7031d9a908021cc269ff1c66e1f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#abd20d7031d9a908021cc269ff1c66e1f">pkt_cid</a> (const uint8_t *const buf, const uint16_t len)</td></tr>
-<tr class="separator:abd20d7031d9a908021cc269ff1c66e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc5a82b2ed099f599d145cd1a315b188"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#adc5a82b2ed099f599d145cd1a315b188">pkt_nr</a> (const uint8_t *const buf, const uint16_t len)</td></tr>
-<tr class="separator:adc5a82b2ed099f599d145cd1a315b188"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7050257a7cd6222a71d9606892d9e4e8"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a7050257a7cd6222a71d9606892d9e4e8">pkt_vers</a> (const uint8_t *const buf, const uint16_t len)</td></tr>
-<tr class="separator:a7050257a7cd6222a71d9606892d9e4e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a171671c1d791d808381669044f96f3d8"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a171671c1d791d808381669044f96f3d8">pkt_hdr_len</a> (const uint8_t *const buf, const uint16_t len)</td></tr>
-<tr class="separator:a171671c1d791d808381669044f96f3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af392b36c58463646c250f5b01ea07238"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#af392b36c58463646c250f5b01ea07238">enc_pkt</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, struct <a class="el" href="structq__stream.html">q_stream</a> *const s, struct w_iov *const v)</td></tr>
-<tr class="separator:af392b36c58463646c250f5b01ea07238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a265e9c52eb203bb4701727adc3908850"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a265e9c52eb203bb4701727adc3908850">pkt_type</a> (const uint8_t flags)</td></tr>
+<tr class="separator:a265e9c52eb203bb4701727adc3908850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e3325ad951d933d49dcd1cd1e0c04f1"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a2e3325ad951d933d49dcd1cd1e0c04f1">epoch_for_pkt_type</a> (const uint8_t type)</td></tr>
+<tr class="separator:a2e3325ad951d933d49dcd1cd1e0c04f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13f2d88ad76ff338e531972ca1c0449e"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpn__space.html">pn_space</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a13f2d88ad76ff338e531972ca1c0449e">pn_for_pkt_type</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, const uint8_t t)</td></tr>
+<tr class="separator:a13f2d88ad76ff338e531972ca1c0449e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94d443b77fda6907675a043e8ea52857"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a94d443b77fda6907675a043e8ea52857">dec_pkt_hdr_beginning</a> (const struct w_iov *const v, const bool is_clnt, struct <a class="el" href="structcid.html">cid</a> *const odcid)</td></tr>
+<tr class="separator:a94d443b77fda6907675a043e8ea52857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1727e751d41e2506261fdd347c7f2e98"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a1727e751d41e2506261fdd347c7f2e98">dec_pkt_hdr_remainder</a> (struct w_iov *const v, struct <a class="el" href="structq__conn.html">q_conn</a> *const c, struct w_iov_sq *const i)</td></tr>
+<tr class="separator:a1727e751d41e2506261fdd347c7f2e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13f259191e295bb7cf7d34bb79d76bc5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a13f259191e295bb7cf7d34bb79d76bc5">enc_pkt</a> (struct <a class="el" href="structq__stream.html">q_stream</a> *const s, const bool rtx, const bool enc_data, struct w_iov *const v)</td></tr>
+<tr class="separator:a13f259191e295bb7cf7d34bb79d76bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f839697f5c2cb2a8b086249c85399bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#a1f839697f5c2cb2a8b086249c85399bc">coalesce</a> (struct w_iov_sq *const q)</td></tr>
+<tr class="separator:a1f839697f5c2cb2a8b086249c85399bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad23d5577b6b5cc73cbd731e011df11c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkt_8h.html#ad23d5577b6b5cc73cbd731e011df11c4">log_pkt</a> (const char *const dir, const struct w_iov *const v, const struct <a class="el" href="structcid.html">cid</a> *const odcid)</td></tr>
+<tr class="separator:ad23d5577b6b5cc73cbd731e011df11c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ac0706eae565b2f4ccc2b23e135f4f3eb"></a>
+<a class="anchor" id="a37fd3c71845762a224ec6f52056c5cf2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define F_LH_0RTT_PROT&#160;&#160;&#160;0x06</td>
+          <td class="memname">#define ERR_FLOW_CONTROL&#160;&#160;&#160;0x3</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a725e2a829ac04cabb03bd0dd6e91138d"></a>
+<a class="anchor" id="a911827d4428b3918c7c00c7f9be6bce0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define F_LH_1RTT_PRO0&#160;&#160;&#160;0x07</td>
+          <td class="memname">#define ERR_FRAME_ENC&#160;&#160;&#160;0x7</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a68b7beb5bbf004982d1714c0dd434d49"></a>
+<a class="anchor" id="a6084679069ce82f37778a3ed56860557"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define F_LH_1RTT_PRO1&#160;&#160;&#160;0x08</td>
+          <td class="memname">#define ERR_INTERNAL&#160;&#160;&#160;0x1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a56522ce23a78461323006c1eeacafdc4"></a>
+<a class="anchor" id="aff0d3fb76f11f6e8ea4002d826bbd23c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define F_LH_CLNT_CTXT&#160;&#160;&#160;0x05</td>
+          <td class="memname">#define ERR_NONE&#160;&#160;&#160;0x0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a961ca88391cefa42d4001803e8e3a720"></a>
+<a class="anchor" id="a27994773959ccba6411fae219fe38577"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define F_LH_CLNT_INIT&#160;&#160;&#160;0x02</td>
+          <td class="memname">#define ERR_PROTOCOL_VIOLATION&#160;&#160;&#160;0xa</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="aa643c61ed2b097e0794bae8d804ef4d7"></a>
+<a class="anchor" id="ae6b18bb77d7a31d51b26f237f55bd3aa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define F_LH_PUBL_RSET&#160;&#160;&#160;0x09</td>
+          <td class="memname">#define ERR_TLS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type</td><td>)</td>
+          <td>&#160;&#160;&#160;(0x100 + (type))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a52749a24966335d653995350a05ada87"></a>
+<a class="anchor" id="a73915150f68e9c3ae13506a9f08e0492"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define F_LH_SERV_CTXT&#160;&#160;&#160;0x04</td>
+          <td class="memname">#define ERR_TRANSPORT_PARAMETER&#160;&#160;&#160;0x8</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a87ee002076c2b337435fdad6c8a15c39"></a>
+<a class="anchor" id="ab6565bd9fa2f047ba9fb6d21322fe042"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define F_LH_SERV_RTRY&#160;&#160;&#160;0x03</td>
+          <td class="memname">#define F_LH_0RTT&#160;&#160;&#160;0x7C</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="acfa9b278a336bec4c096bae2299ec6a0"></a>
+<a class="anchor" id="afbaa162cdf1fd0da2392e8a38d483fb4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define F_LH_TYPE_VNEG&#160;&#160;&#160;0x01</td>
+          <td class="memname">#define F_LH_HSHK&#160;&#160;&#160;0x7D</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a09abd2120c3360335afe4bfa241e5691"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define F_LH_INIT&#160;&#160;&#160;0x7F</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa4968996ab387609134e52c845648376"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define F_LH_RTRY&#160;&#160;&#160;0x7E</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -281,24 +321,48 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9372f6bdbef22b48a9e3367911d906c5"></a>
+<a class="anchor" id="aaa1694bd344cbad43b45157208e0037d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define F_SH_CID&#160;&#160;&#160;0x40</td>
+          <td class="memname">#define F_SH&#160;&#160;&#160;0x30</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="ad154230bf45290788f65c81eecec537e"></a>
+<a class="anchor" id="ab34730fee159f44fce8a314e5451f368"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define F_SH_KEY_PHASE&#160;&#160;&#160;0x20</td>
+          <td class="memname">#define F_SH_EXP_MASK&#160;&#160;&#160;0x07</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abfa27c2359d2e851124451b9ed1bee47"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define F_SH_MASK&#160;&#160;&#160;0xb8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adb083366b350bf20c43f95368aa251ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define F_SH_SPIN&#160;&#160;&#160;0x04</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -310,89 +374,154 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_PKT_LEN&#160;&#160;&#160;1350</td>
+          <td class="memname">#define MAX_PKT_LEN&#160;&#160;&#160;1252</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a7ecad45f89f115d0da5700d3c5e9ca75"></a>
+<a class="anchor" id="ae05e8e856810ed8b7911d43457b16e05"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MIN_IP4_INI_LEN&#160;&#160;&#160;1252</td>
+          <td class="memname">#define MIN_INI_LEN&#160;&#160;&#160;1200</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="ad6440098fcd7e0084391abf5acb87535"></a>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a1f839697f5c2cb2a8b086249c85399bc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MIN_IP6_INI_LEN&#160;&#160;&#160;1232</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab946f0d00880b6dc4a0fcd6be375e2b1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define pkt_flags</td>
+          <td class="memname">void coalesce </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">buf</td><td>)</td>
-          <td>&#160;&#160;&#160;(*(const uint8_t * const)(buf))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a9c748ad66e34247fda74115826af57c5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define pkt_type</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">buf</td><td>)</td>
+          <td class="paramtype">struct w_iov_sq *const&#160;</td>
+          <td class="paramname"><em>q</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="pkt_8h.html#ab946f0d00880b6dc4a0fcd6be375e2b1">pkt_flags</a>(buf) &amp; <a class="code" href="pkt_8h.html#a08c968a9e1a428f2aaf045602f65bd90">F_LONG_HDR</a> ? <a class="code" href="pkt_8h.html#ab946f0d00880b6dc4a0fcd6be375e2b1">pkt_flags</a>(buf) &amp; ~0x80                      \</div>
-<div class="line">                                 : <a class="code" href="pkt_8h.html#ab946f0d00880b6dc4a0fcd6be375e2b1">pkt_flags</a>(buf) &amp; ~0xe0)</div>
-<div class="ttc" id="pkt_8h_html_ab946f0d00880b6dc4a0fcd6be375e2b1"><div class="ttname"><a href="pkt_8h.html#ab946f0d00880b6dc4a0fcd6be375e2b1">pkt_flags</a></div><div class="ttdeci">#define pkt_flags(buf)</div><div class="ttdef"><b>Definition:</b> pkt.h:49</div></div>
-<div class="ttc" id="pkt_8h_html_a08c968a9e1a428f2aaf045602f65bd90"><div class="ttname"><a href="pkt_8h.html#a08c968a9e1a428f2aaf045602f65bd90">F_LONG_HDR</a></div><div class="ttdeci">#define F_LONG_HDR</div><div class="ttdef"><b>Definition:</b> pkt.h:34</div></div>
-</div><!-- fragment -->
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="pkt_8h_a1f839697f5c2cb2a8b086249c85399bc_cgraph.png" border="0" usemap="#pkt_8h_a1f839697f5c2cb2a8b086249c85399bc_cgraph" alt=""/></div>
+<map name="pkt_8h_a1f839697f5c2cb2a8b086249c85399bc_cgraph" id="pkt_8h_a1f839697f5c2cb2a8b086249c85399bc_cgraph">
+<area shape="rect" id="node2" href="pkt_8c.html#a832f35b12b76346d36d217963c2a053d" title="can_coalesce_pkt_types" alt="" coords="129,5,295,32"/><area shape="rect" id="node3" href="pkt_8h.html#a265e9c52eb203bb4701727adc3908850" title="pkt_type" alt="" coords="176,56,248,83"/></map>
+</div>
+</p>
+
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="af392b36c58463646c250f5b01ea07238"></a>
+<a class="anchor" id="a94d443b77fda6907675a043e8ea52857"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t enc_pkt </td>
+          <td class="memname">bool dec_pkt_hdr_beginning </td>
           <td>(</td>
+          <td class="paramtype">const struct w_iov *const&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>is_clnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcid.html">cid</a> *const&#160;</td>
+          <td class="paramname"><em>odcid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="pkt_8h_a94d443b77fda6907675a043e8ea52857_cgraph.png" border="0" usemap="#pkt_8h_a94d443b77fda6907675a043e8ea52857_cgraph" alt=""/></div>
+<map name="pkt_8h_a94d443b77fda6907675a043e8ea52857_cgraph" id="pkt_8h_a94d443b77fda6907675a043e8ea52857_cgraph">
+<area shape="rect" id="node2" href="pkt_8h.html#a265e9c52eb203bb4701727adc3908850" title="pkt_type" alt="" coords="208,5,280,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1727e751d41e2506261fdd347c7f2e98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dec_pkt_hdr_remainder </td>
+          <td>(</td>
+          <td class="paramtype">struct w_iov *const&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
           <td class="paramname"><em>c</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">struct w_iov_sq *const&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="pkt_8h_a1727e751d41e2506261fdd347c7f2e98_cgraph.png" border="0" usemap="#pkt_8h_a1727e751d41e2506261fdd347c7f2e98_cgraph" alt=""/></div>
+<map name="pkt_8h_a1727e751d41e2506261fdd347c7f2e98_cgraph" id="pkt_8h_a1727e751d41e2506261fdd347c7f2e98_cgraph">
+<area shape="rect" id="node2" href="tls_8c.html#a7bb5da2e12da5bc5cf37f0b0c3b38a8c" title="which_cipher_ctx" alt="" coords="211,5,333,32"/><area shape="rect" id="node3" href="pkt_8h.html#a13f2d88ad76ff338e531972ca1c0449e" title="pn_for_pkt_type" alt="" coords="215,56,329,83"/><area shape="rect" id="node4" href="diet_8h.html#aacb91382dbbe6f6f29721c4c620c9dbf" title="diet_max" alt="" coords="235,107,309,133"/><area shape="rect" id="node5" href="quic_8h.html#a97af5931f5c6730cd32f1d733b6101d0" title="w_iov_dup" alt="" coords="230,157,314,184"/><area shape="rect" id="node6" href="pkt_8c.html#a186bdaaaa6829aa020adc5c9ff7f0a93" title="pkt_type_str" alt="" coords="225,208,319,235"/><area shape="rect" id="node7" href="pkt_8h.html#a265e9c52eb203bb4701727adc3908850" title="pkt_type" alt="" coords="381,208,453,235"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a13f259191e295bb7cf7d34bb79d76bc5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool enc_pkt </td>
+          <td>(</td>
           <td class="paramtype">struct <a class="el" href="structq__stream.html">q_stream</a> *const&#160;</td>
           <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>rtx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>enc_data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -411,29 +540,59 @@ Functions</h2></td></tr>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="pkt_8h_af392b36c58463646c250f5b01ea07238_cgraph.png" border="0" usemap="#pkt_8h_af392b36c58463646c250f5b01ea07238_cgraph" alt=""/></div>
-<map name="pkt_8h_af392b36c58463646c250f5b01ea07238_cgraph" id="pkt_8h_af392b36c58463646c250f5b01ea07238_cgraph">
-<area shape="rect" id="node2" href="pkt_8c.html#ae230cbc93b330096c2d781b56bd62364" title="needed_pkt_nr_len" alt="" coords="125,5,256,32"/><area shape="rect" id="node3" href="frame_8c.html#a8d41621adfc301bec8370f974e91c9cc" title="enc_ack_frame" alt="" coords="135,56,246,83"/><area shape="rect" id="node6" href="frame_8c.html#a89e5fa4a1820e4bb58711d4133fcf4e8" title="enc_padding_frame" alt="" coords="123,107,258,133"/><area shape="rect" id="node7" href="frame_8c.html#a305c92dea1718d0433357f179dacadbc" title="enc_stream_frame" alt="" coords="125,157,256,184"/><area shape="rect" id="node10" href="fnv__1a_8c.html#ae1a00a9fdbb5c3d2f338b60855c9c69b" title="Compute an FNV&#45;1a 64&#45;bit hash over the given buffer. " alt="" coords="160,208,221,235"/><area shape="rect" id="node4" href="frame_8c.html#adab36476b9c7a8f2e849ff09f4a0256a" title="needed_lg_ack_len" alt="" coords="317,31,451,57"/><area shape="rect" id="node5" href="frame_8c.html#ae139b00759d9d8db6d1e35917655600f" title="needed_ack_block_len" alt="" coords="307,81,461,108"/><area shape="rect" id="node8" href="frame_8c.html#a8e66c509135b66e394343247ed37f2e1" title="needed_sid_len" alt="" coords="328,132,440,159"/><area shape="rect" id="node9" href="frame_8c.html#ad82df9b455f7872d73be99589ef0fe19" title="needed_off_len" alt="" coords="329,183,439,209"/></map>
+<div class="center"><img src="pkt_8h_a13f259191e295bb7cf7d34bb79d76bc5_cgraph.png" border="0" usemap="#pkt_8h_a13f259191e295bb7cf7d34bb79d76bc5_cgraph" alt=""/></div>
+<map name="pkt_8h_a13f259191e295bb7cf7d34bb79d76bc5_cgraph" id="pkt_8h_a13f259191e295bb7cf7d34bb79d76bc5_cgraph">
+<area shape="rect" id="node2" href="stream_8h.html#af3bef0cb9d669dca78f301f6ae50a19e" title="strm_epoch" alt="" coords="377,70,468,96"/><area shape="rect" id="node3" href="conn_8h.html#a526357c19864e7579573160573a55c33" title="pn_for_epoch" alt="" coords="551,171,651,198"/><area shape="rect" id="node4" href="pkt_8c.html#a71b15bbb7677c2dca369290a1f4b86c0" title="enc_lh_cids" alt="" coords="377,880,468,907"/><area shape="rect" id="node5" href="quic_8h.html#ab2b6d16118c27c0f7c91dfac30c5d446" title="cid_cpy" alt="" coords="568,931,635,958"/><area shape="rect" id="node6" href="conn_8h.html#ad42b6442b32fa307a6b5293b9b9df058" title="is_force_neg_vers" alt="" coords="148,1032,276,1059"/><area shape="rect" id="node7" href="pkt_8c.html#ad23d5577b6b5cc73cbd731e011df11c4" title="log_pkt" alt="" coords="180,1083,244,1110"/><area shape="rect" id="node9" href="conn_8c.html#abc878d206fec5787bb6754f6b53d0e8a" title="tx" alt="" coords="193,551,231,578"/><area shape="rect" id="node11" href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="560,526,643,552"/><area shape="rect" id="node21" href="conn_8c.html#a1c9db996af2db57d04b8661d04dd0d68" title="add_scid" alt="" coords="385,931,460,958"/><area shape="rect" id="node22" href="conn_8c.html#a899b62b37418afb64d2f4ade6ee61e7a" title="use_next_scid" alt="" coords="159,1134,265,1160"/><area shape="rect" id="node23" href="pkt_8c.html#a49535313dfd1afad8743aef5abe2d30c" title="needed_pkt_nr_len" alt="" coords="147,1184,277,1211"/><area shape="rect" id="node24" href="diet_8h.html#aad21e3b897b17d0c86fce4a174e80ab0" title="diet_empty" alt="" coords="169,1235,255,1262"/><area shape="rect" id="node25" href="frame_8c.html#ad33d4ffd79b410b355647b882fcecd94" title="enc_ack_frame" alt="" coords="157,1286,267,1312"/><area shape="rect" id="node30" href="frame_8c.html#a69e685c0bc62a86a703d3f0c83363f96" title="enc_close_frame" alt="" coords="151,1336,273,1363"/><area shape="rect" id="node31" href="frame_8c.html#a722b21098f9985a27188e9fae848aced" title="enc_new_token_frame" alt="" coords="135,1387,289,1414"/><area shape="rect" id="node32" href="frame_8c.html#a68280ad079aa677bf9eeb72dfe8f65d2" title="enc_path_response_frame" alt="" coords="125,1438,299,1464"/><area shape="rect" id="node33" href="frame_8c.html#ad4218d08a618cd6088192777ee96f95f" title="enc_path_challenge\l_frame" alt="" coords="143,1489,281,1530"/><area shape="rect" id="node34" href="frame_8c.html#acf128f54c264f522e96019baef7af3c1" title="enc_new_cid_frame" alt="" coords="143,931,281,958"/><area shape="rect" id="node35" href="frame_8c.html#a2037bb3c54a511d30919c36c65e79bb7" title="enc_blocked_frame" alt="" coords="145,1555,279,1582"/><area shape="rect" id="node36" href="frame_8c.html#afce90a1bb73bc652f0ccbd5402b0eb61" title="enc_max_data_frame" alt="" coords="139,1606,285,1632"/><area shape="rect" id="node37" href="frame_8c.html#a615393093bcbcddfdecf8f193beedc45" title="enc_stream_id_blocked\l_frame" alt="" coords="133,1657,291,1698"/><area shape="rect" id="node38" href="frame_8c.html#ad254391e26decf235568cd8d6f20689f" title="enc_max_stream_id_frame" alt="" coords="123,1723,301,1750"/><area shape="rect" id="node39" href="frame_8c.html#a916d0dd562621c7d36e786193418b07f" title="enc_stream_blocked\l_frame" alt="" coords="141,1774,283,1816"/><area shape="rect" id="node40" href="frame_8c.html#afac1f0948949980e386e72ae7f2b3132" title="enc_max_stream_data\l_frame" alt="" coords="135,1840,289,1881"/><area shape="rect" id="node41" href="frame_8c.html#a0d8bea0a0a229b796505008855eb17f0" title="enc_padding_frame" alt="" coords="145,1906,279,1932"/><area shape="rect" id="node42" href="frame_8c.html#ae94d6f87955af69345cb46c9d03ad90f" title="log_stream_or_crypto\l_frame" alt="" coords="349,1949,496,1990"/><area shape="rect" id="node43" href="frame_8c.html#a6134c4faa49bbd6fbc29589f12350400" title="enc_stream_or_crypto\l_frame" alt="" coords="137,2008,287,2049"/><area shape="rect" id="node46" href="tls_8c.html#a1b4e58371250876912c40fcb76f8eb4f" title="enc_aead" alt="" coords="173,2095,251,2122"/><area shape="rect" id="node48" href="recovery_8c.html#a9749ec5110f82cad7875d3ec8b94199d" title="on_pkt_sent" alt="" coords="165,171,259,198"/><area shape="rect" id="node8" href="pkt_8c.html#a186bdaaaa6829aa020adc5c9ff7f0a93" title="pkt_type_str" alt="" coords="375,1083,470,1110"/><area shape="rect" id="node10" href="conn_8c.html#afd38904c68cab87424e6aa8db723fd38" title="enter_closing" alt="" coords="373,323,472,350"/><area shape="rect" id="node12" href="conn_8c.html#ac0d0edf08b6c3f2b3a75ab87498def1f" title="tx_crypto" alt="" coords="385,779,461,806"/><area shape="rect" id="node13" href="stream_8h.html#ad30add9149d4bde85b9e2cc3e9159559" title="out_fully_acked" alt="" coords="545,703,658,730"/><area shape="rect" id="node14" href="conn_8c.html#a1a39c653f20bef724b56574fac9c449f" title="tx_stream_data" alt="" coords="545,804,657,831"/><area shape="rect" id="node15" href="conn_8c.html#a0b0c1eff62e65d38a175b6df4ea4ce80" title="do_conn_mgmt" alt="" coords="367,576,478,603"/><area shape="rect" id="node16" href="stream_8h.html#ae11750e72c5f654dd57041a830ee19a7" title="stream_needs_ctrl" alt="" coords="358,678,487,704"/><area shape="rect" id="node17" href="conn_8c.html#a7bc1cf055ddc94c793f81fdfc52ecdbb" title="tx_stream_ctrl" alt="" coords="370,424,475,451"/><area shape="rect" id="node18" href="conn_8c.html#a061f6268bdb3054227eedf2ca20cb8a1" title="do_tx" alt="" coords="574,424,629,451"/><area shape="rect" id="node19" href="conn_8c.html#a87cb12b0afa8cdb9f2a41ce602d8ff96" title="tx_ack" alt="" coords="392,222,453,248"/><area shape="rect" id="node20" href="conn_8h.html#a90b995546c499b521dcb4bf6cc7e39f1" title="epoch_in" alt="" coords="385,374,460,400"/><area shape="rect" id="node26" href="diet_8h.html#ae43baefa854ce76ff4531404e68f2711" title="diet_max_ival" alt="" coords="371,1210,474,1236"/><area shape="rect" id="node27" href="diet_8h.html#af0ddae2a11095bcdabe422dfc44f910a" title="diet_timestamp" alt="" coords="367,1260,478,1287"/><area shape="rect" id="node28" href="diet_8h.html#a9d72ddf7f8b338bc0917d06350e18157" title="diet_cnt" alt="" coords="389,1311,457,1338"/><area shape="rect" id="node29" href="frame_8c.html#a31c36630801506eb48c0bf620c0fcca6" title="shorten_ack_nr" alt="" coords="367,1362,478,1388"/><area shape="rect" id="node44" href="marshall_8c.html#a5ef78b886a8420375943612d4329807a" title="Computes number of bytes need to enccode v in QUIC varint encoding. " alt="" coords="355,2015,490,2042"/><area shape="rect" id="node45" href="stream_8c.html#a0c28462a470893c1046d7a167037d926" title="track_bytes_out" alt="" coords="365,2066,480,2092"/><area shape="rect" id="node47" href="tls_8c.html#a7bb5da2e12da5bc5cf37f0b0c3b38a8c" title="which_cipher_ctx" alt="" coords="361,2116,484,2143"/><area shape="rect" id="node49" href="quic_8h.html#a38482b6755c2fd0dd90838bb0924224d" title="is_ack_only" alt="" coords="377,171,468,198"/><area shape="rect" id="node50" href="recovery_8c.html#a34c871e59b25f984223ab9573ebf3332" title="set_ld_alarm" alt="" coords="375,272,471,299"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="abd20d7031d9a908021cc269ff1c66e1f"></a>
+<a class="anchor" id="a2e3325ad951d933d49dcd1cd1e0c04f1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint8_t epoch_for_pkt_type </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad23d5577b6b5cc73cbd731e011df11c4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t pkt_cid </td>
+          <td class="memname">void log_pkt </td>
           <td>(</td>
-          <td class="paramtype">const uint8_t *const&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint16_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramtype">const struct w_iov *const&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structcid.html">cid</a> *const&#160;</td>
+          <td class="paramname"><em>odcid</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -443,49 +602,59 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="pkt_8h_ad23d5577b6b5cc73cbd731e011df11c4_cgraph.png" border="0" usemap="#pkt_8h_ad23d5577b6b5cc73cbd731e011df11c4_cgraph" alt=""/></div>
+<map name="pkt_8h_ad23d5577b6b5cc73cbd731e011df11c4_cgraph" id="pkt_8h_ad23d5577b6b5cc73cbd731e011df11c4_cgraph">
+<area shape="rect" id="node2" href="pkt_8c.html#a186bdaaaa6829aa020adc5c9ff7f0a93" title="pkt_type_str" alt="" coords="118,5,213,32"/><area shape="rect" id="node3" href="pkt_8h.html#a265e9c52eb203bb4701727adc3908850" title="pkt_type" alt="" coords="261,5,333,32"/></map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="a171671c1d791d808381669044f96f3d8"></a>
+<a class="anchor" id="a265e9c52eb203bb4701727adc3908850"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pkt_hdr_len </td>
+          <td class="memname">static uint8_t pkt_type </td>
           <td>(</td>
-          <td class="paramtype">const uint8_t *const&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const uint8_t&#160;</td>
+          <td class="paramname"><em>flags</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const uint16_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="adc5a82b2ed099f599d145cd1a315b188"></a>
+<a class="anchor" id="a13f2d88ad76ff338e531972ca1c0449e"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t pkt_nr </td>
+          <td class="memname">static struct <a class="el" href="structpn__space.html">pn_space</a>* pn_for_pkt_type </td>
           <td>(</td>
-          <td class="paramtype">const uint8_t *const&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
+          <td class="paramtype">struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint16_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramtype">const uint8_t&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -493,32 +662,11 @@ Here is the call graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7050257a7cd6222a71d9606892d9e4e8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t pkt_vers </td>
-          <td>(</td>
-          <td class="paramtype">const uint8_t *const&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint16_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -526,7 +674,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 13 2017 14:28:46 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 5 2018 15:07:24 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

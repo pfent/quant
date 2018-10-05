@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">quant
-   &#160;<span id="projectnumber">0.0.5</span>
+   &#160;<span id="projectnumber">0.0.14</span>
    </div>
   </td>
  </tr>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a065c5f60305fee3569f887679366939.html">src</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -89,92 +89,170 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">pkt.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="pkt_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (c) 2016-2017, NetApp, Inc.</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// All rights reserved.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Redistribution and use in source and binary forms, with or without</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modification, are permitted provided that the following conditions are met:</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// 1. Redistributions of source code must retain the above copyright notice,</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//    this list of conditions and the following disclaimer.</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// 2. Redistributions in binary form must reproduce the above copyright notice,</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//    this list of conditions and the following disclaimer in the documentation</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//    and/or other materials provided with the distribution.</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// POSSIBILITY OF SUCH DAMAGE.</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="pkt_8h.html#aa2cbdec5743bbebc99afa6729c5b98f1">   30</a></span>&#160;<span class="preprocessor">#define MAX_PKT_LEN 1350</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="pkt_8h.html#a7ecad45f89f115d0da5700d3c5e9ca75">   31</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MIN_IP4_INI_LEN 1252</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="pkt_8h.html#ad6440098fcd7e0084391abf5acb87535">   32</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MIN_IP6_INI_LEN 1232</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="pkt_8h.html#a08c968a9e1a428f2aaf045602f65bd90">   34</a></span>&#160;<span class="preprocessor">#define F_LONG_HDR 0x80</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="pkt_8h.html#acfa9b278a336bec4c096bae2299ec6a0">   35</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define F_LH_TYPE_VNEG 0x01</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="pkt_8h.html#a961ca88391cefa42d4001803e8e3a720">   36</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define F_LH_CLNT_INIT 0x02</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="pkt_8h.html#a87ee002076c2b337435fdad6c8a15c39">   37</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define F_LH_SERV_RTRY 0x03</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="pkt_8h.html#a52749a24966335d653995350a05ada87">   38</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define F_LH_SERV_CTXT 0x04</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="pkt_8h.html#a56522ce23a78461323006c1eeacafdc4">   39</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define F_LH_CLNT_CTXT 0x05</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="pkt_8h.html#ac0706eae565b2f4ccc2b23e135f4f3eb">   40</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define F_LH_0RTT_PROT 0x06</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="pkt_8h.html#a725e2a829ac04cabb03bd0dd6e91138d">   41</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define F_LH_1RTT_PRO0 0x07</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="pkt_8h.html#a68b7beb5bbf004982d1714c0dd434d49">   42</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define F_LH_1RTT_PRO1 0x08</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="pkt_8h.html#aa643c61ed2b097e0794bae8d804ef4d7">   43</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define F_LH_PUBL_RSET 0x09</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="pkt_8h.html#a9372f6bdbef22b48a9e3367911d906c5">   45</a></span>&#160;<span class="preprocessor">#define F_SH_CID 0x40</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="pkt_8h.html#ad154230bf45290788f65c81eecec537e">   46</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define F_SH_KEY_PHASE 0x20</span></div>
+<a href="pkt_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSD-2-Clause</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Copyright (c) 2016-2018, NetApp, Inc.</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// All rights reserved.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// Redistribution and use in source and binary forms, with or without</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// modification, are permitted provided that the following conditions are met:</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// 1. Redistributions of source code must retain the above copyright notice,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//    this list of conditions and the following disclaimer.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// 2. Redistributions in binary form must reproduce the above copyright notice,</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//    this list of conditions and the following disclaimer in the documentation</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//    and/or other materials provided with the distribution.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="conn_8h.html">conn.h</a>&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pn_8h.html">pn.h</a>&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="quic_8h.html">quic.h</a>&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="pkt_8h.html#aa2cbdec5743bbebc99afa6729c5b98f1">   38</a></span>&#160;<span class="preprocessor">#define MAX_PKT_LEN 1252</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="pkt_8h.html#ae05e8e856810ed8b7911d43457b16e05">   39</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MIN_INI_LEN 1200</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="pkt_8h.html#a08c968a9e1a428f2aaf045602f65bd90">   41</a></span>&#160;<span class="preprocessor">#define F_LONG_HDR 0x80</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="pkt_8h.html#a09abd2120c3360335afe4bfa241e5691">   43</a></span>&#160;<span class="preprocessor">#define F_LH_INIT 0x7F</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="pkt_8h.html#aa4968996ab387609134e52c845648376">   44</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define F_LH_RTRY 0x7E</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="pkt_8h.html#afbaa162cdf1fd0da2392e8a38d483fb4">   45</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define F_LH_HSHK 0x7D</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="pkt_8h.html#ab6565bd9fa2f047ba9fb6d21322fe042">   46</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define F_LH_0RTT 0x7C</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="pkt_8h.html#ab946f0d00880b6dc4a0fcd6be375e2b1">   49</a></span>&#160;<span class="preprocessor">#define pkt_flags(buf) (*(const uint8_t * const)(buf))</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="pkt_8h.html#a9c748ad66e34247fda74115826af57c5">   51</a></span>&#160;<span class="preprocessor">#define pkt_type(buf)                                                          \</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">    (pkt_flags(buf) &amp; F_LONG_HDR ? pkt_flags(buf) &amp; ~0x80                      \</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">                                 : pkt_flags(buf) &amp; ~0xe0)</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">struct </span><a class="code" href="structq__conn.html">q_conn</a>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">struct </span><a class="code" href="structq__stream.html">q_stream</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">struct </span>w_iov;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">extern</span> uint64_t __attribute__((nonnull))</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<a class="code" href="pkt_8h.html#abd20d7031d9a908021cc269ff1c66e1f">pkt_cid</a>(const uint8_t * const buf, const uint16_t len);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;extern uint64_t __attribute__((nonnull))</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<a class="code" href="pkt_8h.html#adc5a82b2ed099f599d145cd1a315b188">pkt_nr</a>(const uint8_t * const buf, const uint16_t len);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;extern uint32_t __attribute__((nonnull))</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<a class="code" href="pkt_8h.html#a7050257a7cd6222a71d9606892d9e4e8">pkt_vers</a>(const uint8_t * const buf, const uint16_t len);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;extern uint16_t __attribute__((nonnull))</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="code" href="pkt_8h.html#a171671c1d791d808381669044f96f3d8">pkt_hdr_len</a>(const uint8_t * const buf, const uint16_t len);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;extern uint16_t __attribute__((nonnull(1, 3)))</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<a class="code" href="pkt_8h.html#af392b36c58463646c250f5b01ea07238">enc_pkt</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        struct <a class="code" href="structq__stream.html">q_stream</a> * const s,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        struct w_iov * const v);</div>
-<div class="ttc" id="pkt_8h_html_af392b36c58463646c250f5b01ea07238"><div class="ttname"><a href="pkt_8h.html#af392b36c58463646c250f5b01ea07238">enc_pkt</a></div><div class="ttdeci">uint16_t enc_pkt(struct q_conn *const c, struct q_stream *const s, struct w_iov *const v)</div><div class="ttdef"><b>Definition:</b> pkt.c:108</div></div>
-<div class="ttc" id="structq__conn_html"><div class="ttname"><a href="structq__conn.html">q_conn</a></div><div class="ttdoc">A QUIC connection. </div><div class="ttdef"><b>Definition:</b> conn.h:51</div></div>
-<div class="ttc" id="pkt_8h_html_abd20d7031d9a908021cc269ff1c66e1f"><div class="ttname"><a href="pkt_8h.html#abd20d7031d9a908021cc269ff1c66e1f">pkt_cid</a></div><div class="ttdeci">uint64_t pkt_cid(const uint8_t *const buf, const uint16_t len)</div><div class="ttdef"><b>Definition:</b> pkt.c:62</div></div>
-<div class="ttc" id="pkt_8h_html_a171671c1d791d808381669044f96f3d8"><div class="ttname"><a href="pkt_8h.html#a171671c1d791d808381669044f96f3d8">pkt_hdr_len</a></div><div class="ttdeci">uint16_t pkt_hdr_len(const uint8_t *const buf, const uint16_t len)</div><div class="ttdef"><b>Definition:</b> pkt.c:49</div></div>
-<div class="ttc" id="structq__stream_html"><div class="ttname"><a href="structq__stream.html">q_stream</a></div><div class="ttdef"><b>Definition:</b> stream.h:35</div></div>
-<div class="ttc" id="pkt_8h_html_adc5a82b2ed099f599d145cd1a315b188"><div class="ttname"><a href="pkt_8h.html#adc5a82b2ed099f599d145cd1a315b188">pkt_nr</a></div><div class="ttdeci">uint64_t pkt_nr(const uint8_t *const buf, const uint16_t len)</div><div class="ttdef"><b>Definition:</b> pkt.c:75</div></div>
-<div class="ttc" id="pkt_8h_html_a7050257a7cd6222a71d9606892d9e4e8"><div class="ttname"><a href="pkt_8h.html#a7050257a7cd6222a71d9606892d9e4e8">pkt_vers</a></div><div class="ttdeci">uint32_t pkt_vers(const uint8_t *const buf, const uint16_t len)</div><div class="ttdef"><b>Definition:</b> pkt.c:86</div></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">// #define F_SH_KYPH 0x40</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="pkt_8h.html#ab34730fee159f44fce8a314e5451f368">   49</a></span>&#160;<span class="preprocessor">#define F_SH_EXP_MASK 0x07</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="pkt_8h.html#adb083366b350bf20c43f95368aa251ab">   50</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define F_SH_SPIN 0x04</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="pkt_8h.html#aaa1694bd344cbad43b45157208e0037d">   51</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define F_SH 0x30</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="pkt_8h.html#abfa27c2359d2e851124451b9ed1bee47">   52</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define F_SH_MASK 0xb8</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="pkt_8h.html#aff0d3fb76f11f6e8ea4002d826bbd23c">   54</a></span>&#160;<span class="preprocessor">#define ERR_NONE 0x0</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="pkt_8h.html#a6084679069ce82f37778a3ed56860557">   55</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ERR_INTERNAL 0x1</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="pkt_8h.html#a37fd3c71845762a224ec6f52056c5cf2">   56</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ERR_FLOW_CONTROL 0x3</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span><span class="comment">// #define ERR_STREAM_ID 0x4</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">// #define ERR_STREAM_STATE 0x5</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">// #define ERR_FINAL_OFFSET 0x6</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="pkt_8h.html#a911827d4428b3918c7c00c7f9be6bce0">   60</a></span>&#160;<span class="preprocessor">#define ERR_FRAME_ENC 0x7</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="pkt_8h.html#a73915150f68e9c3ae13506a9f08e0492">   61</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ERR_TRANSPORT_PARAMETER 0x8</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span><span class="comment">// #define ERR_VERSION_NEGOTIATION 0x9</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="pkt_8h.html#a27994773959ccba6411fae219fe38577">   63</a></span>&#160;<span class="preprocessor">#define ERR_PROTOCOL_VIOLATION 0xa</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="pkt_8h.html#ae6b18bb77d7a31d51b26f237f55bd3aa">   64</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ERR_TLS(type) (0x100 + (type))</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> __attribute__((always_inline, <span class="keyword">const</span>)) uint8_t</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="pkt_8h.html#a265e9c52eb203bb4701727adc3908850">   68</a></span>&#160;<a class="code" href="pkt_8h.html#a265e9c52eb203bb4701727adc3908850">pkt_type</a>(const uint8_t flags)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> flags &amp; (<a class="code" href="quic_8h.html#a2e19342e141828d7fe9b2870e5d7d70a">is_set</a>(<a class="code" href="pkt_8h.html#a08c968a9e1a428f2aaf045602f65bd90">F_LONG_HDR</a>, flags) ? ~0x80 : <a class="code" href="pkt_8h.html#abfa27c2359d2e851124451b9ed1bee47">F_SH_MASK</a>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> __attribute__((always_inline, <span class="keyword">const</span>)) uint8_t</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="pkt_8h.html#a2e3325ad951d933d49dcd1cd1e0c04f1">   75</a></span>&#160;<a class="code" href="pkt_8h.html#a2e3325ad951d933d49dcd1cd1e0c04f1">epoch_for_pkt_type</a>(const uint8_t type)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">switch</span> (type) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="pkt_8h.html#a09abd2120c3360335afe4bfa241e5691">F_LH_INIT</a>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="pkt_8h.html#aa4968996ab387609134e52c845648376">F_LH_RTRY</a>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="pkt_8h.html#ab6565bd9fa2f047ba9fb6d21322fe042">F_LH_0RTT</a>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="pkt_8h.html#afbaa162cdf1fd0da2392e8a38d483fb4">F_LH_HSHK</a>:</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">return</span> 2;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span> 3;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> __attribute__((always_inline, nonnull)) struct <a class="code" href="structpn__space.html">pn_space</a> *</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="pkt_8h.html#a13f2d88ad76ff338e531972ca1c0449e">   92</a></span>&#160;<a class="code" href="pkt_8h.html#a13f2d88ad76ff338e531972ca1c0449e">pn_for_pkt_type</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c, const uint8_t t)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">switch</span> (t) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="pkt_8h.html#a09abd2120c3360335afe4bfa241e5691">F_LH_INIT</a>:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="pkt_8h.html#aa4968996ab387609134e52c845648376">F_LH_RTRY</a>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">return</span> &amp;c-&gt;pn_init.pn;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="pkt_8h.html#ab6565bd9fa2f047ba9fb6d21322fe042">F_LH_0RTT</a>:</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">return</span> &amp;c-&gt;pn_data.pn;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="pkt_8h.html#afbaa162cdf1fd0da2392e8a38d483fb4">F_LH_HSHK</a>:</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">return</span> &amp;c-&gt;pn_hshk.pn;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">return</span> &amp;c-&gt;pn_data.pn;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">struct </span><a class="code" href="structq__stream.html">q_stream</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">struct </span>w_iov;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">struct </span>w_iov_sq;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<a class="code" href="pkt_8h.html#a94d443b77fda6907675a043e8ea52857">dec_pkt_hdr_beginning</a>(const struct w_iov * const v,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                      const <span class="keywordtype">bool</span> is_clnt,</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                      struct <a class="code" href="structcid.html">cid</a> * const odcid);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;extern <span class="keywordtype">bool</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<a class="code" href="pkt_8h.html#a1727e751d41e2506261fdd347c7f2e98">dec_pkt_hdr_remainder</a>(struct w_iov * const v,</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                      struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                      struct w_iov_sq * const i);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;extern <span class="keywordtype">bool</span> __attribute__((nonnull)) <a class="code" href="pkt_8h.html#a13f259191e295bb7cf7d34bb79d76bc5">enc_pkt</a>(struct <a class="code" href="structq__stream.html">q_stream</a> * const s,</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                                             const <span class="keywordtype">bool</span> rtx,</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                                             const <span class="keywordtype">bool</span> enc_data,</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                                             struct w_iov * const v);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="pkt_8h.html#a1f839697f5c2cb2a8b086249c85399bc">coalesce</a>(struct w_iov_sq * const q);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#if !defined(NDEBUG) &amp;&amp; !defined(FUZZING)</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="keywordtype">void</span> __attribute__((nonnull(1, 2)))</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<a class="code" href="pkt_8h.html#ad23d5577b6b5cc73cbd731e011df11c4">log_pkt</a>(const <span class="keywordtype">char</span> * const dir,</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        const struct w_iov * const v,</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        const struct <a class="code" href="structcid.html">cid</a> * const odcid);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define log_pkt(...)                                                           \</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">    do {                                                                       \</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">    } while (0)</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="pkt_8h_html_a265e9c52eb203bb4701727adc3908850"><div class="ttname"><a href="pkt_8h.html#a265e9c52eb203bb4701727adc3908850">pkt_type</a></div><div class="ttdeci">static uint8_t pkt_type(const uint8_t flags)</div><div class="ttdef"><b>Definition:</b> pkt.h:68</div></div>
+<div class="ttc" id="pkt_8h_html_a13f2d88ad76ff338e531972ca1c0449e"><div class="ttname"><a href="pkt_8h.html#a13f2d88ad76ff338e531972ca1c0449e">pn_for_pkt_type</a></div><div class="ttdeci">static struct pn_space * pn_for_pkt_type(struct q_conn *const c, const uint8_t t)</div><div class="ttdef"><b>Definition:</b> pkt.h:92</div></div>
+<div class="ttc" id="pkt_8h_html_a13f259191e295bb7cf7d34bb79d76bc5"><div class="ttname"><a href="pkt_8h.html#a13f259191e295bb7cf7d34bb79d76bc5">enc_pkt</a></div><div class="ttdeci">bool enc_pkt(struct q_stream *const s, const bool rtx, const bool enc_data, struct w_iov *const v)</div><div class="ttdef"><b>Definition:</b> pkt.c:196</div></div>
+<div class="ttc" id="pkt_8h_html_aa4968996ab387609134e52c845648376"><div class="ttname"><a href="pkt_8h.html#aa4968996ab387609134e52c845648376">F_LH_RTRY</a></div><div class="ttdeci">#define F_LH_RTRY</div><div class="ttdef"><b>Definition:</b> pkt.h:44</div></div>
+<div class="ttc" id="pkt_8h_html_a1f839697f5c2cb2a8b086249c85399bc"><div class="ttname"><a href="pkt_8h.html#a1f839697f5c2cb2a8b086249c85399bc">coalesce</a></div><div class="ttdeci">void coalesce(struct w_iov_sq *const q)</div><div class="ttdef"><b>Definition:</b> pkt.c:132</div></div>
+<div class="ttc" id="structq__conn_html"><div class="ttname"><a href="structq__conn.html">q_conn</a></div><div class="ttdoc">A QUIC connection. </div><div class="ttdef"><b>Definition:</b> conn.h:93</div></div>
+<div class="ttc" id="pkt_8h_html_a08c968a9e1a428f2aaf045602f65bd90"><div class="ttname"><a href="pkt_8h.html#a08c968a9e1a428f2aaf045602f65bd90">F_LONG_HDR</a></div><div class="ttdeci">#define F_LONG_HDR</div><div class="ttdef"><b>Definition:</b> pkt.h:41</div></div>
+<div class="ttc" id="pn_8h_html"><div class="ttname"><a href="pn_8h.html">pn.h</a></div></div>
+<div class="ttc" id="quic_8h_html"><div class="ttname"><a href="quic_8h.html">quic.h</a></div></div>
+<div class="ttc" id="pkt_8h_html_ad23d5577b6b5cc73cbd731e011df11c4"><div class="ttname"><a href="pkt_8h.html#ad23d5577b6b5cc73cbd731e011df11c4">log_pkt</a></div><div class="ttdeci">void log_pkt(const char *const dir, const struct w_iov *const v, const struct cid *const odcid)</div><div class="ttdef"><b>Definition:</b> pkt.c:73</div></div>
+<div class="ttc" id="pkt_8h_html_a94d443b77fda6907675a043e8ea52857"><div class="ttname"><a href="pkt_8h.html#a94d443b77fda6907675a043e8ea52857">dec_pkt_hdr_beginning</a></div><div class="ttdeci">bool dec_pkt_hdr_beginning(const struct w_iov *const v, const bool is_clnt, struct cid *const odcid)</div><div class="ttdef"><b>Definition:</b> pkt.c:495</div></div>
+<div class="ttc" id="structpn__space_html"><div class="ttname"><a href="structpn__space.html">pn_space</a></div><div class="ttdef"><b>Definition:</b> pn.h:48</div></div>
+<div class="ttc" id="pkt_8h_html_afbaa162cdf1fd0da2392e8a38d483fb4"><div class="ttname"><a href="pkt_8h.html#afbaa162cdf1fd0da2392e8a38d483fb4">F_LH_HSHK</a></div><div class="ttdeci">#define F_LH_HSHK</div><div class="ttdef"><b>Definition:</b> pkt.h:45</div></div>
+<div class="ttc" id="pkt_8h_html_ab6565bd9fa2f047ba9fb6d21322fe042"><div class="ttname"><a href="pkt_8h.html#ab6565bd9fa2f047ba9fb6d21322fe042">F_LH_0RTT</a></div><div class="ttdeci">#define F_LH_0RTT</div><div class="ttdef"><b>Definition:</b> pkt.h:46</div></div>
+<div class="ttc" id="pkt_8h_html_a09abd2120c3360335afe4bfa241e5691"><div class="ttname"><a href="pkt_8h.html#a09abd2120c3360335afe4bfa241e5691">F_LH_INIT</a></div><div class="ttdeci">#define F_LH_INIT</div><div class="ttdef"><b>Definition:</b> pkt.h:43</div></div>
+<div class="ttc" id="quic_8h_html_a2e19342e141828d7fe9b2870e5d7d70a"><div class="ttname"><a href="quic_8h.html#a2e19342e141828d7fe9b2870e5d7d70a">is_set</a></div><div class="ttdeci">#define is_set(f, v)</div><div class="ttdoc">Is flag f set in flags variable v? </div><div class="ttdef"><b>Definition:</b> quic.h:129</div></div>
+<div class="ttc" id="structq__stream_html"><div class="ttname"><a href="structq__stream.html">q_stream</a></div><div class="ttdef"><b>Definition:</b> stream.h:57</div></div>
+<div class="ttc" id="pkt_8h_html_a2e3325ad951d933d49dcd1cd1e0c04f1"><div class="ttname"><a href="pkt_8h.html#a2e3325ad951d933d49dcd1cd1e0c04f1">epoch_for_pkt_type</a></div><div class="ttdeci">static uint8_t epoch_for_pkt_type(const uint8_t type)</div><div class="ttdef"><b>Definition:</b> pkt.h:75</div></div>
+<div class="ttc" id="conn_8h_html"><div class="ttname"><a href="conn_8h.html">conn.h</a></div></div>
+<div class="ttc" id="pkt_8h_html_abfa27c2359d2e851124451b9ed1bee47"><div class="ttname"><a href="pkt_8h.html#abfa27c2359d2e851124451b9ed1bee47">F_SH_MASK</a></div><div class="ttdeci">#define F_SH_MASK</div><div class="ttdef"><b>Definition:</b> pkt.h:52</div></div>
+<div class="ttc" id="pkt_8h_html_a1727e751d41e2506261fdd347c7f2e98"><div class="ttname"><a href="pkt_8h.html#a1727e751d41e2506261fdd347c7f2e98">dec_pkt_hdr_remainder</a></div><div class="ttdeci">bool dec_pkt_hdr_remainder(struct w_iov *const v, struct q_conn *const c, struct w_iov_sq *const i)</div><div class="ttdef"><b>Definition:</b> pkt.c:615</div></div>
+<div class="ttc" id="structcid_html"><div class="ttname"><a href="structcid.html">cid</a></div><div class="ttdef"><b>Definition:</b> quic.h:51</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 13 2017 14:28:46 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 5 2018 15:07:23 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">quant
-   &#160;<span id="projectnumber">0.0.5</span>
+   &#160;<span id="projectnumber">0.0.14</span>
    </div>
   </td>
  </tr>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,43 +81,174 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a065c5f60305fee3569f887679366939.html">src</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">stream.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;inttypes.h&gt;</code><br/>
-<code>#include &lt;stdint.h&gt;</code><br/>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br/>
 <code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;<a class="el" href="quant_8h_source.html">quant/quant.h</a>&gt;</code><br/>
 <code>#include &lt;warpcore/warpcore.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="conn_8h_source.html">conn.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="diet_8h_source.html">diet.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="pkt_8h_source.html">pkt.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="quic_8h_source.html">quic.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="stream_8h_source.html">stream.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for stream.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="stream_8c__incl.png" border="0" usemap="#src_2stream_8c" alt=""/></div>
 <map name="src_2stream_8c" id="src_2stream_8c">
-<area shape="rect" id="node6" href="conn_8h.html" title="conn.h" alt="" coords="453,80,515,107"/><area shape="rect" id="node11" href="diet_8h.html" title="diet.h" alt="" coords="159,155,213,181"/><area shape="rect" id="node14" href="stream_8h.html" title="stream.h" alt="" coords="238,155,311,181"/><area shape="rect" id="node13" href="quic_8h.html" title="quic.h" alt="" coords="489,155,545,181"/></map>
+<area shape="rect" id="node4" href="quant_8h.html" title="quant/quant.h" alt="" coords="264,229,365,256"/><area shape="rect" id="node11" href="conn_8h.html" title="conn.h" alt="" coords="875,155,936,181"/><area shape="rect" id="node15" href="diet_8h.html" title="diet.h" alt="" coords="889,304,943,331"/><area shape="rect" id="node17" href="quic_8h.html" title="quic.h" alt="" coords="1459,304,1516,331"/><area shape="rect" id="node25" href="pkt_8h.html" title="pkt.h" alt="" coords="1387,80,1437,107"/><area shape="rect" id="node26" href="stream_8h.html" title="stream.h" alt="" coords="906,80,979,107"/><area shape="rect" id="node8" href="config_8h.html" title="quant/config.h" alt="" coords="317,304,421,331"/><area shape="rect" id="node16" href="pn_8h.html" title="pn.h" alt="" coords="1110,229,1156,256"/><area shape="rect" id="node23" href="tls_8h.html" title="tls.h" alt="" coords="766,304,812,331"/><area shape="rect" id="node24" href="recovery_8h.html" title="recovery.h" alt="" coords="659,304,740,331"/><area shape="rect" id="node22" href="frame_8h.html" title="frame.h" alt="" coords="1396,379,1463,405"/></map>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aa8676dc8e5bf2002815718fb5d017e47"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8c.html#aa8676dc8e5bf2002815718fb5d017e47">STRM_STATE</a>(k, v)&#160;&#160;&#160;[v] = #k</td></tr>
+<tr class="separator:aa8676dc8e5bf2002815718fb5d017e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af754689bcb5424b3657cd52d976e0f89"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8c.html#af754689bcb5424b3657cd52d976e0f89">stream_cmp</a> (const struct <a class="el" href="structq__stream.html">q_stream</a> *const a, const struct <a class="el" href="structq__stream.html">q_stream</a> *const b)</td></tr>
-<tr class="separator:af754689bcb5424b3657cd52d976e0f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a373af28b5e30782936eb0ca9a71f54cf"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structq__stream.html">q_stream</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf">get_stream</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, const uint32_t id)</td></tr>
-<tr class="separator:a373af28b5e30782936eb0ca9a71f54cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0b3499ca041b2c1fbad0ecf43919744"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structq__stream.html">q_stream</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8c.html#ab0b3499ca041b2c1fbad0ecf43919744">new_stream</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, const uint32_t id)</td></tr>
-<tr class="separator:ab0b3499ca041b2c1fbad0ecf43919744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a3aec470af796ea2d56b842c44e5568"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8c.html#a5a3aec470af796ea2d56b842c44e5568">stream_cmp</a> (const struct <a class="el" href="structq__stream.html">q_stream</a> *const a, const struct <a class="el" href="structq__stream.html">q_stream</a> *const b)</td></tr>
+<tr class="separator:a5a3aec470af796ea2d56b842c44e5568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7308501df4d06bbfd14665ae88caae02"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structq__stream.html">q_stream</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8c.html#a7308501df4d06bbfd14665ae88caae02">get_stream</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, const int64_t id)</td></tr>
+<tr class="separator:a7308501df4d06bbfd14665ae88caae02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2853c95f04e70a8c7e836f881eedff8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8c.html#a2853c95f04e70a8c7e836f881eedff8d">apply_stream_limits</a> (struct <a class="el" href="structq__stream.html">q_stream</a> *const s)</td></tr>
+<tr class="separator:a2853c95f04e70a8c7e836f881eedff8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a300bcafbad60488eb0b6b0560eb1b645"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structq__stream.html">q_stream</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8c.html#a300bcafbad60488eb0b6b0560eb1b645">new_stream</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, const int64_t id)</td></tr>
+<tr class="separator:a300bcafbad60488eb0b6b0560eb1b645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf612f3ac0b49aa8c7d6630c00e6b0ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8c.html#acf612f3ac0b49aa8c7d6630c00e6b0ce">free_stream</a> (struct <a class="el" href="structq__stream.html">q_stream</a> *const s)</td></tr>
 <tr class="separator:acf612f3ac0b49aa8c7d6630c00e6b0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a551a7c19bf90417d819623804da6949f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8c.html#a551a7c19bf90417d819623804da6949f">track_bytes_in</a> (struct <a class="el" href="structq__stream.html">q_stream</a> *const s, const uint64_t n)</td></tr>
+<tr class="separator:a551a7c19bf90417d819623804da6949f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c28462a470893c1046d7a167037d926"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8c.html#a0c28462a470893c1046d7a167037d926">track_bytes_out</a> (struct <a class="el" href="structq__stream.html">q_stream</a> *const s, const uint64_t n)</td></tr>
+<tr class="separator:a0c28462a470893c1046d7a167037d926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad084a65676d6e76fe72fa8e23bd1391d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8c.html#ad084a65676d6e76fe72fa8e23bd1391d">reset_pm</a> (const struct w_iov_sq *const q)</td></tr>
+<tr class="separator:ad084a65676d6e76fe72fa8e23bd1391d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23976e8cd7c5aecf8e137324fce993d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8c.html#a23976e8cd7c5aecf8e137324fce993d0">reset_stream</a> (struct <a class="el" href="structq__stream.html">q_stream</a> *const s, const bool forget)</td></tr>
+<tr class="separator:a23976e8cd7c5aecf8e137324fce993d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a57a5b73d68625c63574f6c4109bad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8c.html#ae4a57a5b73d68625c63574f6c4109bad">do_stream_fc</a> (struct <a class="el" href="structq__stream.html">q_stream</a> *const s)</td></tr>
+<tr class="separator:ae4a57a5b73d68625c63574f6c4109bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a878cdd4d69b352f501841456e8a43972"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8c.html#a878cdd4d69b352f501841456e8a43972">do_stream_id_fc</a> (struct <a class="el" href="structq__stream.html">q_stream</a> *const s)</td></tr>
+<tr class="separator:a878cdd4d69b352f501841456e8a43972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a379b35c4c21ee31284e14338963fdd8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8c.html#a379b35c4c21ee31284e14338963fdd8f">concat_out</a> (struct <a class="el" href="structq__stream.html">q_stream</a> *const s, struct w_iov_sq *const q)</td></tr>
+<tr class="separator:a379b35c4c21ee31284e14338963fdd8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aa6dd5679b354a793efc82cd45b5d3962"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8c.html#aa6dd5679b354a793efc82cd45b5d3962">strm_state_str</a> [] = {<a class="el" href="stream_8h.html#a711294f19cdaef709860ae8ff270d81ea5f8c8fa7f2f240ed5de28097238e3f7c">STRM_STATES</a>}</td></tr>
+<tr class="separator:aa6dd5679b354a793efc82cd45b5d3962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="aa8676dc8e5bf2002815718fb5d017e47"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STRM_STATE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">k, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">v&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;[v] = #k</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a2853c95f04e70a8c7e836f881eedff8d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void apply_stream_limits </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structq__stream.html">q_stream</a> *const&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a379b35c4c21ee31284e14338963fdd8f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void concat_out </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structq__stream.html">q_stream</a> *const&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct w_iov_sq *const&#160;</td>
+          <td class="paramname"><em>q</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae4a57a5b73d68625c63574f6c4109bad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void do_stream_fc </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structq__stream.html">q_stream</a> *const&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a878cdd4d69b352f501841456e8a43972"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void do_stream_id_fc </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structq__stream.html">q_stream</a> *const&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="acf612f3ac0b49aa8c7d6630c00e6b0ce"></a>
 <div class="memitem">
 <div class="memproto">
@@ -137,13 +268,13 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="stream_8c_acf612f3ac0b49aa8c7d6630c00e6b0ce_cgraph.png" border="0" usemap="#stream_8c_acf612f3ac0b49aa8c7d6630c00e6b0ce_cgraph" alt=""/></div>
 <map name="stream_8c_acf612f3ac0b49aa8c7d6630c00e6b0ce_cgraph" id="stream_8c_acf612f3ac0b49aa8c7d6630c00e6b0ce_cgraph">
-<area shape="rect" id="node2" href="diet_8c.html#a3ba0ac5feb124c6e3076dea437fa3b79" title="Inserts integer n into the diet tree t. " alt="" coords="144,81,227,108"/><area shape="rect" id="node3" href="diet_8c.html#a1bf88044b4af4e723b8bfc4cf0fe1420" title="Helper function to create a zero&#45;width interval containing (only) n. " alt="" coords="275,5,357,32"/><area shape="rect" id="node4" href="diet_8c.html#acff4764cdd209408ec31906773db2455" title="Pointer to the interval containing n in diet tree t. " alt="" coords="281,107,351,133"/><area shape="rect" id="node6" href="diet_8c.html#a85e4e10a029283a5798638bfaf387abd" title="Return maximum interval underneath i. " alt="" coords="405,56,480,83"/><area shape="rect" id="node7" href="diet_8c.html#a8f0e77727941f94b10b1ea1241df8eaa" title="Return minimum interval underneath i. " alt="" coords="407,157,478,184"/><area shape="rect" id="node5" href="diet_8c.html#a233a4b0f59b38d83775f80568cfb081f" title="Absolute minimal distance of n from the interval i,. " alt="" coords="407,107,478,133"/></map>
+<area shape="rect" id="node2" href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="144,31,227,57"/><area shape="rect" id="node3" href="diet_8c.html#a9064e32f6b50901d8f5685e53d2e4041" title="Inserts integer n of type t into the diet tree t. " alt="" coords="144,81,227,108"/><area shape="rect" id="node8" href="quant_8h.html#a4a7935a14e509d989eda300f16daf086" title="q_free" alt="" coords="156,132,215,159"/><area shape="rect" id="node4" href="diet_8c.html#a87c3c2cebc6ccf0911d3d05989352588" title="Pointer to the interval containing n in diet tree t. " alt="" coords="281,5,351,32"/><area shape="rect" id="node5" href="diet_8c.html#a85e4e10a029283a5798638bfaf387abd" title="Return maximum interval underneath i. " alt="" coords="279,56,353,83"/><area shape="rect" id="node6" href="diet_8c.html#a8f0e77727941f94b10b1ea1241df8eaa" title="Return minimum interval underneath i. " alt="" coords="281,107,351,133"/><area shape="rect" id="node7" href="diet_8c.html#a21164f67106bc7c1712e8b6596aa0253" title="Helper function to create a zero&#45;width interval containing (only) n. " alt="" coords="275,157,357,184"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a373af28b5e30782936eb0ca9a71f54cf"></a>
+<a class="anchor" id="a7308501df4d06bbfd14665ae88caae02"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -156,7 +287,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramtype">const int64_t&#160;</td>
           <td class="paramname"><em>id</em>&#160;</td>
         </tr>
         <tr>
@@ -169,7 +300,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ab0b3499ca041b2c1fbad0ecf43919744"></a>
+<a class="anchor" id="a300bcafbad60488eb0b6b0560eb1b645"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -182,7 +313,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramtype">const int64_t&#160;</td>
           <td class="paramname"><em>id</em>&#160;</td>
         </tr>
         <tr>
@@ -196,20 +327,79 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="stream_8c_ab0b3499ca041b2c1fbad0ecf43919744_cgraph.png" border="0" usemap="#stream_8c_ab0b3499ca041b2c1fbad0ecf43919744_cgraph" alt=""/></div>
-<map name="stream_8c_ab0b3499ca041b2c1fbad0ecf43919744_cgraph" id="stream_8c_ab0b3499ca041b2c1fbad0ecf43919744_cgraph">
-<area shape="rect" id="node2" href="stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="147,5,234,32"/></map>
+<div class="center"><img src="stream_8c_a300bcafbad60488eb0b6b0560eb1b645_cgraph.png" border="0" usemap="#stream_8c_a300bcafbad60488eb0b6b0560eb1b645_cgraph" alt=""/></div>
+<map name="stream_8c_a300bcafbad60488eb0b6b0560eb1b645_cgraph" id="stream_8c_a300bcafbad60488eb0b6b0560eb1b645_cgraph">
+<area shape="rect" id="node2" href="stream_8c.html#a7308501df4d06bbfd14665ae88caae02" title="get_stream" alt="" coords="173,5,259,32"/><area shape="rect" id="node3" href="stream_8c.html#a2853c95f04e70a8c7e836f881eedff8d" title="apply_stream_limits" alt="" coords="147,56,285,83"/><area shape="rect" id="node4" href="stream_8c.html#a878cdd4d69b352f501841456e8a43972" title="do_stream_id_fc" alt="" coords="157,107,275,133"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="af754689bcb5424b3657cd52d976e0f89"></a>
+<a class="anchor" id="ad084a65676d6e76fe72fa8e23bd1391d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void reset_pm </td>
+          <td>(</td>
+          <td class="paramtype">const struct w_iov_sq *const&#160;</td>
+          <td class="paramname"><em>q</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a23976e8cd7c5aecf8e137324fce993d0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t stream_cmp </td>
+          <td class="memname">void reset_stream </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structq__stream.html">q_stream</a> *const&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>forget</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="stream_8c_a23976e8cd7c5aecf8e137324fce993d0_cgraph.png" border="0" usemap="#stream_8c_a23976e8cd7c5aecf8e137324fce993d0_cgraph" alt=""/></div>
+<map name="stream_8c_a23976e8cd7c5aecf8e137324fce993d0_cgraph" id="stream_8c_a23976e8cd7c5aecf8e137324fce993d0_cgraph">
+<area shape="rect" id="node2" href="quant_8h.html#a4a7935a14e509d989eda300f16daf086" title="q_free" alt="" coords="161,5,220,32"/><area shape="rect" id="node3" href="stream_8c.html#ad084a65676d6e76fe72fa8e23bd1391d" title="reset_pm" alt="" coords="153,56,229,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5a3aec470af796ea2d56b842c44e5568"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stream_cmp </td>
           <td>(</td>
           <td class="paramtype">const struct <a class="el" href="structq__stream.html">q_stream</a> *const&#160;</td>
           <td class="paramname"><em>a</em>, </td>
@@ -230,10 +420,75 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a551a7c19bf90417d819623804da6949f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void track_bytes_in </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structq__stream.html">q_stream</a> *const&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint64_t&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0c28462a470893c1046d7a167037d926"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void track_bytes_out </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structq__stream.html">q_stream</a> *const&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint64_t&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="aa6dd5679b354a793efc82cd45b5d3962"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* const strm_state_str[] = {<a class="el" href="stream_8h.html#a711294f19cdaef709860ae8ff270d81ea5f8c8fa7f2f240ed5de28097238e3f7c">STRM_STATES</a>}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 13 2017 14:28:46 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 5 2018 15:07:24 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

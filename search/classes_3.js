@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['q_5fconn',['q_conn',['../structq__conn.html',1,'']]],
-  ['q_5fstream',['q_stream',['../structq__stream.html',1,'']]]
+  ['ooo_5f0rtt',['ooo_0rtt',['../structooo__0rtt.html',1,'']]]
 ];

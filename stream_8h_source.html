@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">quant
-   &#160;<span id="projectnumber">0.0.5</span>
+   &#160;<span id="projectnumber">0.0.14</span>
    </div>
   </td>
  </tr>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a065c5f60305fee3569f887679366939.html">src</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -89,103 +89,213 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">stream.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="stream_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (c) 2016-2017, NetApp, Inc.</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// All rights reserved.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Redistribution and use in source and binary forms, with or without</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modification, are permitted provided that the following conditions are met:</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// 1. Redistributions of source code must retain the above copyright notice,</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//    this list of conditions and the following disclaimer.</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// 2. Redistributions in binary form must reproduce the above copyright notice,</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//    this list of conditions and the following disclaimer in the documentation</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//    and/or other materials provided with the distribution.</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// POSSIBILITY OF SUCH DAMAGE.</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;warpcore/warpcore.h&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">struct </span><a class="code" href="structq__conn.html">q_conn</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">struct </span>stream;</div>
+<a href="stream_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSD-2-Clause</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Copyright (c) 2016-2018, NetApp, Inc.</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// All rights reserved.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// Redistribution and use in source and binary forms, with or without</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// modification, are permitted provided that the following conditions are met:</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// 1. Redistributions of source code must retain the above copyright notice,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//    this list of conditions and the following disclaimer.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// 2. Redistributions in binary form must reproduce the above copyright notice,</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//    this list of conditions and the following disclaimer in the documentation</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//    and/or other materials provided with the distribution.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;warpcore/warpcore.h&gt;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structq__stream.html">   35</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structq__stream.html">q_stream</a> {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="structq__stream.html#afec6e392ab36b7579e0a8b12993c0ad2">SPLAY_ENTRY</a>(<a class="code" href="structq__stream.html">q_stream</a>) node;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structq__stream.html#a5b8ba13474f46cc170e3ab67ce61816d">   37</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structq__conn.html">q_conn</a> * <a class="code" href="structq__stream.html#a5b8ba13474f46cc170e3ab67ce61816d">c</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="conn_8h.html">conn.h</a>&quot;</span> <span class="comment">// IWYU pragma: keep</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="quic_8h.html">quic.h</a>&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tls_8h.html">tls.h</a>&quot;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structq__stream.html#a38251359ff0fb4a2142e0337cc898b77">   39</a></span>&#160;    uint32_t <a class="code" href="structq__stream.html#a38251359ff0fb4a2142e0337cc898b77">id</a>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="structq__stream.html#ad71f34eed2298bb9cba43eeef80bd9ff">   40</a></span>&#160;    uint8_t <a class="code" href="structq__stream.html#ad71f34eed2298bb9cba43eeef80bd9ff">state</a>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structq__stream.html#a553297d8d01871467e55abf88ada461d">   41</a></span>&#160;    uint8_t <a class="code" href="structq__stream.html#a553297d8d01871467e55abf88ada461d">flags</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structq__stream.html#a7ce09e33141c90cf5978f600ea6ce075">   42</a></span>&#160;    uint8_t <a class="code" href="structq__stream.html#a7ce09e33141c90cf5978f600ea6ce075">_unused</a>[2];</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="stream_8h.html#afbac3df9b63be97036ade595dab020f2">   40</a></span>&#160;<span class="preprocessor">#define STRM_FL_INI_SRV 0x01</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="stream_8h.html#a849acf9c1a6ba35f9ef98ae84dd7c900">   41</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STRM_FL_DIR_UNI 0x02</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structq__stream.html#ac9506a631e5b5b6feb6560fa0583b806">   44</a></span>&#160;    <span class="keyword">struct </span>w_iov_stailq <a class="code" href="structq__stream.html#ac9506a631e5b5b6feb6560fa0583b806">r</a>; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structq__stream.html#ad9ee8de50912de317d4a29096fcda5c8">   46</a></span>&#160;    <span class="keyword">struct </span>w_iov_stailq <a class="code" href="structq__stream.html#ad9ee8de50912de317d4a29096fcda5c8">o</a>; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structq__stream.html#abbb87e5bf80a37aabcf4d8a7224ae98e">   47</a></span>&#160;    uint64_t <a class="code" href="structq__stream.html#abbb87e5bf80a37aabcf4d8a7224ae98e">out_off</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="structq__stream.html#a99c110bbdd52ddb8000548d54c81ed57">   48</a></span>&#160;    uint64_t <a class="code" href="structq__stream.html#a99c110bbdd52ddb8000548d54c81ed57">out_nr</a>; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="structq__stream.html#a788c18d5f1174d3d532262190294003c">   50</a></span>&#160;    <span class="keyword">struct </span>w_iov_stailq <a class="code" href="structq__stream.html#a788c18d5f1174d3d532262190294003c">i</a>; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="structq__stream.html#a2cda4e89e538ba6793af2f0c2b4f1dd9">   51</a></span>&#160;    uint64_t <a class="code" href="structq__stream.html#a2cda4e89e538ba6793af2f0c2b4f1dd9">in_off</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="stream_8h.html#aa8676dc8e5bf2002815718fb5d017e47">   44</a></span>&#160;<span class="preprocessor">#define STRM_STATE(k, v) k = v</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="stream_8h.html#a29d0d69805b312f9f5a7728dcd5f0e3d">   45</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STRM_STATES                                                            \</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">    STRM_STATE(strm_idle, 0), STRM_STATE(strm_open, 1),                        \</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">        STRM_STATE(strm_hcrm, 2), STRM_STATE(strm_hclo, 3),                    \</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">        STRM_STATE(strm_clsd, 4)</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">// Define stream states.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">// \dotfile conn-states.dot &quot;Connection state diagram.&quot;</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="stream_8h.html#a711294f19cdaef709860ae8ff270d81ea5f8c8fa7f2f240ed5de28097238e3f7c">   52</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> { <a class="code" href="stream_8h.html#a29d0d69805b312f9f5a7728dcd5f0e3d">STRM_STATES</a> } <a class="code" href="stream_8h.html#a711294f19cdaef709860ae8ff270d81e">strm_state_t</a>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="stream_8h.html#a50f3d7a4cb312a9d61ab4722b3a743aa">   54</a></span>&#160;<span class="preprocessor">#define STRM_STATE_IDLE 0</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="stream_8h.html#af683b9de4bef82fe9b964a517f51414c">   55</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STRM_STATE_OPEN 1</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="stream_8h.html#a0f8e10c96480233fee2642c8d85771f3">   56</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STRM_STATE_HCRM 2 </span></div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="stream_8h.html#a5dfaf50609c0926ff74c0faa7ac46a0f">   57</a></span>&#160;<span class="preprocessor">#define STRM_STATE_HCLO 3 </span></div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="stream_8h.html#aa418877be365b443dd8fda3cb03571f3">   58</a></span>&#160;<span class="preprocessor">#define STRM_STATE_CLSD 4</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="stream_8h.html#aa9e8aae47f463ff9be56c5727cdf565e">   60</a></span>&#160;<span class="preprocessor">#define STRM_FLAG_NOCL 0x01 </span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">extern</span> int32_t __attribute__((nonnull))</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<a class="code" href="stream_8h.html#af754689bcb5424b3657cd52d976e0f89">stream_cmp</a>(const struct <a class="code" href="structq__stream.html">q_stream</a> * const a, const struct <a class="code" href="structq__stream.html">q_stream</a> * const b);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;SPLAY_PROTOTYPE(stream, <a class="code" href="structq__stream.html">q_stream</a>, node, <a class="code" href="stream_8h.html#af754689bcb5424b3657cd52d976e0f89">stream_cmp</a>)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> <a class="code" href="stream_8h.html#aa6dd5679b354a793efc82cd45b5d3962">strm_state_str</a>[];</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="structq__stream.html">   57</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structq__stream.html">q_stream</a> {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="structq__stream.html#a5158311e9a7391bcef4777907713b99a">splay_entry</a>(<a class="code" href="structq__stream.html">q_stream</a>) node;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="structq__stream.html#a5b8ba13474f46cc170e3ab67ce61816d">   59</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structq__conn.html">q_conn</a> * <a class="code" href="structq__stream.html#a5b8ba13474f46cc170e3ab67ce61816d">c</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="structq__stream.html#ad6bc293a8f8e054b500882d8ef57b1b6">   61</a></span>&#160;    <span class="keyword">struct </span>w_iov_sq <a class="code" href="structq__stream.html#ad6bc293a8f8e054b500882d8ef57b1b6">out</a>;    </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="structq__stream.html#a0492f92ef3cdccbfc9c569049a7816d5">   62</a></span>&#160;    <span class="keyword">struct </span>w_iov * <a class="code" href="structq__stream.html#a0492f92ef3cdccbfc9c569049a7816d5">out_una</a>; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structq__stream.html#af4fdada7b6f29b3ca4166cc83089a6ae">   63</a></span>&#160;    <span class="keyword">struct </span>w_iov * <a class="code" href="structq__stream.html#af4fdada7b6f29b3ca4166cc83089a6ae">out_nxt</a>; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="structq__stream.html#a0177e66aac90960875cd8922da3d7834">   64</a></span>&#160;    uint64_t <a class="code" href="structq__stream.html#a0177e66aac90960875cd8922da3d7834">out_ack_cnt</a>;   </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="structq__stream.html#a5efa5e6ca12481e1d166fa28c8793c09">   65</a></span>&#160;    uint64_t <a class="code" href="structq__stream.html#a5efa5e6ca12481e1d166fa28c8793c09">out_data</a>;      </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="structq__stream.html#a744161b8f9bfbde5ac73be4a882e179f">   66</a></span>&#160;    uint64_t <a class="code" href="structq__stream.html#a744161b8f9bfbde5ac73be4a882e179f">out_data_max</a>;  </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;extern struct q_stream * __attribute__((nonnull))</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="code" href="stream_8h.html#a373af28b5e30782936eb0ca9a71f54cf">get_stream</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c, const uint32_t <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;extern struct q_stream * __attribute__((nonnull))</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<a class="code" href="stream_8h.html#ab0b3499ca041b2c1fbad0ecf43919744">new_stream</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c, const uint32_t <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="stream_8h.html#acf612f3ac0b49aa8c7d6630c00e6b0ce">free_stream</a>(struct q_stream * const s);</div>
-<div class="ttc" id="stream_8h_html_a373af28b5e30782936eb0ca9a71f54cf"><div class="ttname"><a href="stream_8h.html#a373af28b5e30782936eb0ca9a71f54cf">get_stream</a></div><div class="ttdeci">struct q_stream * get_stream(struct q_conn *const c, const uint32_t id)</div><div class="ttdef"><b>Definition:</b> stream.c:47</div></div>
-<div class="ttc" id="structq__stream_html_a7ce09e33141c90cf5978f600ea6ce075"><div class="ttname"><a href="structq__stream.html#a7ce09e33141c90cf5978f600ea6ce075">q_stream::_unused</a></div><div class="ttdeci">uint8_t _unused[2]</div><div class="ttdef"><b>Definition:</b> stream.h:42</div></div>
-<div class="ttc" id="stream_8h_html_acf612f3ac0b49aa8c7d6630c00e6b0ce"><div class="ttname"><a href="stream_8h.html#acf612f3ac0b49aa8c7d6630c00e6b0ce">free_stream</a></div><div class="ttdeci">void free_stream(struct q_stream *const s)</div><div class="ttdef"><b>Definition:</b> stream.c:73</div></div>
-<div class="ttc" id="structq__stream_html_a38251359ff0fb4a2142e0337cc898b77"><div class="ttname"><a href="structq__stream.html#a38251359ff0fb4a2142e0337cc898b77">q_stream::id</a></div><div class="ttdeci">uint32_t id</div><div class="ttdef"><b>Definition:</b> stream.h:39</div></div>
-<div class="ttc" id="structq__stream_html_a553297d8d01871467e55abf88ada461d"><div class="ttname"><a href="structq__stream.html#a553297d8d01871467e55abf88ada461d">q_stream::flags</a></div><div class="ttdeci">uint8_t flags</div><div class="ttdef"><b>Definition:</b> stream.h:41</div></div>
-<div class="ttc" id="structq__conn_html"><div class="ttname"><a href="structq__conn.html">q_conn</a></div><div class="ttdoc">A QUIC connection. </div><div class="ttdef"><b>Definition:</b> conn.h:51</div></div>
-<div class="ttc" id="structq__stream_html_a2cda4e89e538ba6793af2f0c2b4f1dd9"><div class="ttname"><a href="structq__stream.html#a2cda4e89e538ba6793af2f0c2b4f1dd9">q_stream::in_off</a></div><div class="ttdeci">uint64_t in_off</div><div class="ttdef"><b>Definition:</b> stream.h:51</div></div>
-<div class="ttc" id="stream_8h_html_af754689bcb5424b3657cd52d976e0f89"><div class="ttname"><a href="stream_8h.html#af754689bcb5424b3657cd52d976e0f89">stream_cmp</a></div><div class="ttdeci">int32_t stream_cmp(const struct q_stream *const a, const struct q_stream *const b)</div><div class="ttdef"><b>Definition:</b> stream.c:37</div></div>
-<div class="ttc" id="structq__stream_html_ad9ee8de50912de317d4a29096fcda5c8"><div class="ttname"><a href="structq__stream.html#ad9ee8de50912de317d4a29096fcda5c8">q_stream::o</a></div><div class="ttdeci">struct w_iov_stailq o</div><div class="ttdoc">tail queue containing outbound data </div><div class="ttdef"><b>Definition:</b> stream.h:46</div></div>
-<div class="ttc" id="structq__stream_html_a99c110bbdd52ddb8000548d54c81ed57"><div class="ttname"><a href="structq__stream.html#a99c110bbdd52ddb8000548d54c81ed57">q_stream::out_nr</a></div><div class="ttdeci">uint64_t out_nr</div><div class="ttdoc">highest packet number that had stream data </div><div class="ttdef"><b>Definition:</b> stream.h:48</div></div>
-<div class="ttc" id="structq__stream_html_a5b8ba13474f46cc170e3ab67ce61816d"><div class="ttname"><a href="structq__stream.html#a5b8ba13474f46cc170e3ab67ce61816d">q_stream::c</a></div><div class="ttdeci">struct q_conn * c</div><div class="ttdef"><b>Definition:</b> stream.h:37</div></div>
-<div class="ttc" id="stream_8h_html_ab0b3499ca041b2c1fbad0ecf43919744"><div class="ttname"><a href="stream_8h.html#ab0b3499ca041b2c1fbad0ecf43919744">new_stream</a></div><div class="ttdeci">struct q_stream * new_stream(struct q_conn *const c, const uint32_t id)</div><div class="ttdef"><b>Definition:</b> stream.c:54</div></div>
-<div class="ttc" id="structq__stream_html_afec6e392ab36b7579e0a8b12993c0ad2"><div class="ttname"><a href="structq__stream.html#afec6e392ab36b7579e0a8b12993c0ad2">q_stream::SPLAY_ENTRY</a></div><div class="ttdeci">SPLAY_ENTRY(q_stream) node</div></div>
-<div class="ttc" id="structq__stream_html"><div class="ttname"><a href="structq__stream.html">q_stream</a></div><div class="ttdef"><b>Definition:</b> stream.h:35</div></div>
-<div class="ttc" id="structq__stream_html_ad71f34eed2298bb9cba43eeef80bd9ff"><div class="ttname"><a href="structq__stream.html#ad71f34eed2298bb9cba43eeef80bd9ff">q_stream::state</a></div><div class="ttdeci">uint8_t state</div><div class="ttdef"><b>Definition:</b> stream.h:40</div></div>
-<div class="ttc" id="structq__stream_html_ac9506a631e5b5b6feb6560fa0583b806"><div class="ttname"><a href="structq__stream.html#ac9506a631e5b5b6feb6560fa0583b806">q_stream::r</a></div><div class="ttdeci">struct w_iov_stailq r</div><div class="ttdoc">tail queue containing written data </div><div class="ttdef"><b>Definition:</b> stream.h:44</div></div>
-<div class="ttc" id="structq__stream_html_abbb87e5bf80a37aabcf4d8a7224ae98e"><div class="ttname"><a href="structq__stream.html#abbb87e5bf80a37aabcf4d8a7224ae98e">q_stream::out_off</a></div><div class="ttdeci">uint64_t out_off</div><div class="ttdef"><b>Definition:</b> stream.h:47</div></div>
-<div class="ttc" id="structq__stream_html_a788c18d5f1174d3d532262190294003c"><div class="ttname"><a href="structq__stream.html#a788c18d5f1174d3d532262190294003c">q_stream::i</a></div><div class="ttdeci">struct w_iov_stailq i</div><div class="ttdoc">tail queue containing inbound data </div><div class="ttdef"><b>Definition:</b> stream.h:50</div></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="structq__stream.html#a36bf4a7325ef5d402ef98eaf3e9468d7">   68</a></span>&#160;    <span class="keyword">struct </span>w_iov_sq <a class="code" href="structq__stream.html#a36bf4a7325ef5d402ef98eaf3e9468d7">in</a>;         </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="structq__stream.html#aa27d60491b286e8b2e36f9293516704f">   69</a></span>&#160;    <span class="keyword">struct </span>pm_off_splay <a class="code" href="structq__stream.html#aa27d60491b286e8b2e36f9293516704f">in_ooo</a>; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="structq__stream.html#a3efa630f78833bdfa5a5f16a18991d88">   70</a></span>&#160;    uint64_t <a class="code" href="structq__stream.html#a3efa630f78833bdfa5a5f16a18991d88">in_data_max</a>;       </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="structq__stream.html#a2d0522f128527120ab29e423c90a461f">   71</a></span>&#160;    uint64_t <a class="code" href="structq__stream.html#a2d0522f128527120ab29e423c90a461f">new_in_data_max</a>;   </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="structq__stream.html#af571e4a21acbd83695fdd6843ec414a5">   72</a></span>&#160;    uint64_t <a class="code" href="structq__stream.html#af571e4a21acbd83695fdd6843ec414a5">in_data</a>;           </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="structq__stream.html#a5b0fce2373b57dc3ca4ff7b05cf1cd2c">   74</a></span>&#160;    int64_t <a class="code" href="structq__stream.html#a5b0fce2373b57dc3ca4ff7b05cf1cd2c">id</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="structq__stream.html#a3c163e13ed03a60a2c53ccfddc5929d7">   75</a></span>&#160;    <a class="code" href="stream_8h.html#a711294f19cdaef709860ae8ff270d81e">strm_state_t</a> <a class="code" href="structq__stream.html#a3c163e13ed03a60a2c53ccfddc5929d7">state</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="structq__stream.html#a2756b454995958d339e91b6de2c25551">   76</a></span>&#160;    uint8_t <a class="code" href="structq__stream.html#a2756b454995958d339e91b6de2c25551">tx_max_stream_data</a> : 1; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="structq__stream.html#a56ca5935404b3d66f600d6ce436c4771">   77</a></span>&#160;    uint8_t <a class="code" href="structq__stream.html#a56ca5935404b3d66f600d6ce436c4771">blocked</a> : 1;            </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="structq__stream.html#aeb05fed803ecbed26b49a4deaf4503ea">   78</a></span>&#160;    uint8_t <a class="code" href="structq__stream.html#aeb05fed803ecbed26b49a4deaf4503ea">tx_fin</a> : 1;             </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="structq__stream.html#a390bee20353c18915d12fd30fa8672dc">   79</a></span>&#160;    uint8_t : 5;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="structq__stream.html#a43a749ebc68bd611f9f92be25d4ec555">   80</a></span>&#160;    uint8_t <a class="code" href="structq__stream.html#a43a749ebc68bd611f9f92be25d4ec555">_unused</a>[3];</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#ifndef FUZZING</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="stream_8h.html#a1d0e0e889da12d7778ad19b477fad290">   85</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define strm_to_state(strm, s)                                                 \</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">    do {                                                                       \</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">        if ((strm)-&gt;id &gt;= 0) {                                                 \</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">            warn(DBG, &quot;conn %s strm &quot; FMT_SID &quot; state %s -&gt; &quot; YEL &quot;%s&quot; NRM,    \</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">                 scid2str((strm)-&gt;c), (strm)-&gt;id,                              \</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">                 strm_state_str[(strm)-&gt;state], strm_state_str[(s)]);          \</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">        }                                                                      \</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">        (strm)-&gt;state = (s);                                                   \</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">    } while (0)</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define strm_to_state(strm, s) (strm)-&gt;state = (s)</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> __attribute__((always_inline)) bool</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="stream_8h.html#ad30add9149d4bde85b9e2cc3e9159559">  100</a></span>&#160;<a class="code" href="stream_8h.html#ad30add9149d4bde85b9e2cc3e9159559">out_fully_acked</a>(const struct <a class="code" href="structq__stream.html">q_stream</a> * const s)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">return</span> s-&gt;out_ack_cnt == sq_len(&amp;s-&gt;out);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> __attribute__((always_inline, <span class="keyword">const</span>)) int64_t</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="stream_8h.html#a012bc210254cd3269ef892fcbd91e146">  107</a></span>&#160;<a class="code" href="stream_8h.html#a012bc210254cd3269ef892fcbd91e146">crpt_strm_id</a>(const <a class="code" href="tls_8h.html#aaca089f79f64e61453953e09fd226e46">epoch_t</a> epoch)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">return</span> -((int64_t)epoch + 1);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> __attribute__((always_inline)) <a class="code" href="tls_8h.html#aaca089f79f64e61453953e09fd226e46">epoch_t</a></div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="stream_8h.html#af3bef0cb9d669dca78f301f6ae50a19e">  114</a></span>&#160;<a class="code" href="stream_8h.html#af3bef0cb9d669dca78f301f6ae50a19e">strm_epoch</a>(const struct <a class="code" href="structq__stream.html">q_stream</a> * const s)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">if</span> (s-&gt;id &lt; 0)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="tls_8h.html#aaca089f79f64e61453953e09fd226e46">epoch_t</a>)(-s-&gt;id) - 1;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">if</span> (s-&gt;c-&gt;state == conn_opng)</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">return</span> 3;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> __attribute__((always_inline)) bool</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="stream_8h.html#ae11750e72c5f654dd57041a830ee19a7">  125</a></span>&#160;<a class="code" href="stream_8h.html#ae11750e72c5f654dd57041a830ee19a7">stream_needs_ctrl</a>(const struct <a class="code" href="structq__stream.html">q_stream</a> * const s)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;{</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">return</span> s-&gt;tx_fin || s-&gt;tx_max_stream_data;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<a class="code" href="stream_8h.html#a5a3aec470af796ea2d56b842c44e5568">stream_cmp</a>(const struct <a class="code" href="structq__stream.html">q_stream</a> * const a, const struct <a class="code" href="structq__stream.html">q_stream</a> * const b);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;extern struct <a class="code" href="structq__stream.html">q_stream</a> * __attribute__((nonnull))</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<a class="code" href="stream_8h.html#a7308501df4d06bbfd14665ae88caae02">get_stream</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c, const int64_t <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;extern struct <a class="code" href="structq__stream.html">q_stream</a> * <a class="code" href="stream_8h.html#a300bcafbad60488eb0b6b0560eb1b645">new_stream</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c, const int64_t <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="stream_8h.html#acf612f3ac0b49aa8c7d6630c00e6b0ce">free_stream</a>(struct <a class="code" href="structq__stream.html">q_stream</a> * const s);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<a class="code" href="stream_8h.html#a551a7c19bf90417d819623804da6949f">track_bytes_in</a>(struct <a class="code" href="structq__stream.html">q_stream</a> * const s, const uint64_t n);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<a class="code" href="stream_8h.html#a0c28462a470893c1046d7a167037d926">track_bytes_out</a>(struct <a class="code" href="structq__stream.html">q_stream</a> * const s, const uint64_t n);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<a class="code" href="stream_8h.html#a23976e8cd7c5aecf8e137324fce993d0">reset_stream</a>(struct <a class="code" href="structq__stream.html">q_stream</a> * const s, const <span class="keywordtype">bool</span> forget);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<a class="code" href="stream_8h.html#a2853c95f04e70a8c7e836f881eedff8d">apply_stream_limits</a>(struct <a class="code" href="structq__stream.html">q_stream</a> * const s);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="stream_8h.html#ae4a57a5b73d68625c63574f6c4109bad">do_stream_fc</a>(struct <a class="code" href="structq__stream.html">q_stream</a> * const s);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="stream_8h.html#a878cdd4d69b352f501841456e8a43972">do_stream_id_fc</a>(struct <a class="code" href="structq__stream.html">q_stream</a> * const s);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<a class="code" href="stream_8h.html#a379b35c4c21ee31284e14338963fdd8f">concat_out</a>(struct <a class="code" href="structq__stream.html">q_stream</a> * const s, struct w_iov_sq * const q);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;SPLAY_PROTOTYPE(stream, <a class="code" href="structq__stream.html">q_stream</a>, node, <a class="code" href="stream_8h.html#a5a3aec470af796ea2d56b842c44e5568">stream_cmp</a>)</div>
+<div class="ttc" id="tls_8h_html"><div class="ttname"><a href="tls_8h.html">tls.h</a></div></div>
+<div class="ttc" id="structq__stream_html_aeb05fed803ecbed26b49a4deaf4503ea"><div class="ttname"><a href="structq__stream.html#aeb05fed803ecbed26b49a4deaf4503ea">q_stream::tx_fin</a></div><div class="ttdeci">uint8_t tx_fin</div><div class="ttdoc">We need to send a FIN. </div><div class="ttdef"><b>Definition:</b> stream.h:78</div></div>
+<div class="ttc" id="stream_8h_html_a551a7c19bf90417d819623804da6949f"><div class="ttname"><a href="stream_8h.html#a551a7c19bf90417d819623804da6949f">track_bytes_in</a></div><div class="ttdeci">void track_bytes_in(struct q_stream *const s, const uint64_t n)</div><div class="ttdef"><b>Definition:</b> stream.c:129</div></div>
+<div class="ttc" id="structq__stream_html_af4fdada7b6f29b3ca4166cc83089a6ae"><div class="ttname"><a href="structq__stream.html#af4fdada7b6f29b3ca4166cc83089a6ae">q_stream::out_nxt</a></div><div class="ttdeci">struct w_iov * out_nxt</div><div class="ttdoc">Lowest unsent data chunk. </div><div class="ttdef"><b>Definition:</b> stream.h:63</div></div>
+<div class="ttc" id="structq__stream_html_a56ca5935404b3d66f600d6ce436c4771"><div class="ttname"><a href="structq__stream.html#a56ca5935404b3d66f600d6ce436c4771">q_stream::blocked</a></div><div class="ttdeci">uint8_t blocked</div><div class="ttdoc">We are receive-window-blocked. </div><div class="ttdef"><b>Definition:</b> stream.h:77</div></div>
+<div class="ttc" id="stream_8h_html_a23976e8cd7c5aecf8e137324fce993d0"><div class="ttname"><a href="stream_8h.html#a23976e8cd7c5aecf8e137324fce993d0">reset_stream</a></div><div class="ttdeci">void reset_stream(struct q_stream *const s, const bool forget)</div><div class="ttdef"><b>Definition:</b> stream.c:158</div></div>
+<div class="ttc" id="stream_8h_html_af3bef0cb9d669dca78f301f6ae50a19e"><div class="ttname"><a href="stream_8h.html#af3bef0cb9d669dca78f301f6ae50a19e">strm_epoch</a></div><div class="ttdeci">static epoch_t strm_epoch(const struct q_stream *const s)</div><div class="ttdef"><b>Definition:</b> stream.h:114</div></div>
+<div class="ttc" id="stream_8h_html_ae11750e72c5f654dd57041a830ee19a7"><div class="ttname"><a href="stream_8h.html#ae11750e72c5f654dd57041a830ee19a7">stream_needs_ctrl</a></div><div class="ttdeci">static bool stream_needs_ctrl(const struct q_stream *const s)</div><div class="ttdef"><b>Definition:</b> stream.h:125</div></div>
+<div class="ttc" id="stream_8h_html_acf612f3ac0b49aa8c7d6630c00e6b0ce"><div class="ttname"><a href="stream_8h.html#acf612f3ac0b49aa8c7d6630c00e6b0ce">free_stream</a></div><div class="ttdeci">void free_stream(struct q_stream *const s)</div><div class="ttdef"><b>Definition:</b> stream.c:114</div></div>
+<div class="ttc" id="structq__stream_html_aa27d60491b286e8b2e36f9293516704f"><div class="ttname"><a href="structq__stream.html#aa27d60491b286e8b2e36f9293516704f">q_stream::in_ooo</a></div><div class="ttdeci">struct pm_off_splay in_ooo</div><div class="ttdoc">Out-of-order inbound data. </div><div class="ttdef"><b>Definition:</b> stream.h:69</div></div>
+<div class="ttc" id="structq__stream_html_a5b0fce2373b57dc3ca4ff7b05cf1cd2c"><div class="ttname"><a href="structq__stream.html#a5b0fce2373b57dc3ca4ff7b05cf1cd2c">q_stream::id</a></div><div class="ttdeci">int64_t id</div><div class="ttdef"><b>Definition:</b> stream.h:74</div></div>
+<div class="ttc" id="stream_8h_html_a5a3aec470af796ea2d56b842c44e5568"><div class="ttname"><a href="stream_8h.html#a5a3aec470af796ea2d56b842c44e5568">stream_cmp</a></div><div class="ttdeci">int stream_cmp(const struct q_stream *const a, const struct q_stream *const b)</div><div class="ttdef"><b>Definition:</b> stream.c:47</div></div>
+<div class="ttc" id="structq__stream_html_a744161b8f9bfbde5ac73be4a882e179f"><div class="ttname"><a href="structq__stream.html#a744161b8f9bfbde5ac73be4a882e179f">q_stream::out_data_max</a></div><div class="ttdeci">uint64_t out_data_max</div><div class="ttdoc">Outbound max_stream_data. </div><div class="ttdef"><b>Definition:</b> stream.h:66</div></div>
+<div class="ttc" id="structq__stream_html_a43a749ebc68bd611f9f92be25d4ec555"><div class="ttname"><a href="structq__stream.html#a43a749ebc68bd611f9f92be25d4ec555">q_stream::_unused</a></div><div class="ttdeci">uint8_t _unused[3]</div><div class="ttdef"><b>Definition:</b> stream.h:80</div></div>
+<div class="ttc" id="structq__conn_html"><div class="ttname"><a href="structq__conn.html">q_conn</a></div><div class="ttdoc">A QUIC connection. </div><div class="ttdef"><b>Definition:</b> conn.h:93</div></div>
+<div class="ttc" id="structq__stream_html_a5158311e9a7391bcef4777907713b99a"><div class="ttname"><a href="structq__stream.html#a5158311e9a7391bcef4777907713b99a">q_stream::splay_entry</a></div><div class="ttdeci">splay_entry(q_stream) node</div></div>
+<div class="ttc" id="stream_8h_html_a300bcafbad60488eb0b6b0560eb1b645"><div class="ttname"><a href="stream_8h.html#a300bcafbad60488eb0b6b0560eb1b645">new_stream</a></div><div class="ttdeci">struct q_stream * new_stream(struct q_conn *const c, const int64_t id)</div><div class="ttdef"><b>Definition:</b> stream.c:81</div></div>
+<div class="ttc" id="stream_8h_html_a711294f19cdaef709860ae8ff270d81e"><div class="ttname"><a href="stream_8h.html#a711294f19cdaef709860ae8ff270d81e">strm_state_t</a></div><div class="ttdeci">strm_state_t</div><div class="ttdef"><b>Definition:</b> stream.h:52</div></div>
+<div class="ttc" id="tls_8h_html_aaca089f79f64e61453953e09fd226e46"><div class="ttname"><a href="tls_8h.html#aaca089f79f64e61453953e09fd226e46">epoch_t</a></div><div class="ttdeci">epoch_t</div><div class="ttdef"><b>Definition:</b> tls.h:50</div></div>
+<div class="ttc" id="stream_8h_html_a012bc210254cd3269ef892fcbd91e146"><div class="ttname"><a href="stream_8h.html#a012bc210254cd3269ef892fcbd91e146">crpt_strm_id</a></div><div class="ttdeci">static int64_t crpt_strm_id(const epoch_t epoch)</div><div class="ttdef"><b>Definition:</b> stream.h:107</div></div>
+<div class="ttc" id="quic_8h_html"><div class="ttname"><a href="quic_8h.html">quic.h</a></div></div>
+<div class="ttc" id="stream_8h_html_ae4a57a5b73d68625c63574f6c4109bad"><div class="ttname"><a href="stream_8h.html#ae4a57a5b73d68625c63574f6c4109bad">do_stream_fc</a></div><div class="ttdeci">void do_stream_fc(struct q_stream *const s)</div><div class="ttdef"><b>Definition:</b> stream.c:175</div></div>
+<div class="ttc" id="structq__stream_html_a5efa5e6ca12481e1d166fa28c8793c09"><div class="ttname"><a href="structq__stream.html#a5efa5e6ca12481e1d166fa28c8793c09">q_stream::out_data</a></div><div class="ttdeci">uint64_t out_data</div><div class="ttdoc">Current outbound stream offset (= data sent). </div><div class="ttdef"><b>Definition:</b> stream.h:65</div></div>
+<div class="ttc" id="structq__stream_html_a0492f92ef3cdccbfc9c569049a7816d5"><div class="ttname"><a href="structq__stream.html#a0492f92ef3cdccbfc9c569049a7816d5">q_stream::out_una</a></div><div class="ttdeci">struct w_iov * out_una</div><div class="ttdoc">Lowest un-ACK&#39;ed data chunk. </div><div class="ttdef"><b>Definition:</b> stream.h:62</div></div>
+<div class="ttc" id="stream_8h_html_a0c28462a470893c1046d7a167037d926"><div class="ttname"><a href="stream_8h.html#a0c28462a470893c1046d7a167037d926">track_bytes_out</a></div><div class="ttdeci">void track_bytes_out(struct q_stream *const s, const uint64_t n)</div><div class="ttdef"><b>Definition:</b> stream.c:138</div></div>
+<div class="ttc" id="structq__stream_html_a5b8ba13474f46cc170e3ab67ce61816d"><div class="ttname"><a href="structq__stream.html#a5b8ba13474f46cc170e3ab67ce61816d">q_stream::c</a></div><div class="ttdeci">struct q_conn * c</div><div class="ttdef"><b>Definition:</b> stream.h:59</div></div>
+<div class="ttc" id="stream_8h_html_aa6dd5679b354a793efc82cd45b5d3962"><div class="ttname"><a href="stream_8h.html#aa6dd5679b354a793efc82cd45b5d3962">strm_state_str</a></div><div class="ttdeci">const char *const strm_state_str[]</div><div class="ttdef"><b>Definition:</b> stream.c:44</div></div>
+<div class="ttc" id="structq__stream_html_af571e4a21acbd83695fdd6843ec414a5"><div class="ttname"><a href="structq__stream.html#af571e4a21acbd83695fdd6843ec414a5">q_stream::in_data</a></div><div class="ttdeci">uint64_t in_data</div><div class="ttdoc">In-order stream data received. </div><div class="ttdef"><b>Definition:</b> stream.h:72</div></div>
+<div class="ttc" id="structq__stream_html_ad6bc293a8f8e054b500882d8ef57b1b6"><div class="ttname"><a href="structq__stream.html#ad6bc293a8f8e054b500882d8ef57b1b6">q_stream::out</a></div><div class="ttdeci">struct w_iov_sq out</div><div class="ttdoc">Tail queue containing outbound data. </div><div class="ttdef"><b>Definition:</b> stream.h:61</div></div>
+<div class="ttc" id="stream_8h_html_ad30add9149d4bde85b9e2cc3e9159559"><div class="ttname"><a href="stream_8h.html#ad30add9149d4bde85b9e2cc3e9159559">out_fully_acked</a></div><div class="ttdeci">static bool out_fully_acked(const struct q_stream *const s)</div><div class="ttdef"><b>Definition:</b> stream.h:100</div></div>
+<div class="ttc" id="structq__stream_html_a0177e66aac90960875cd8922da3d7834"><div class="ttname"><a href="structq__stream.html#a0177e66aac90960875cd8922da3d7834">q_stream::out_ack_cnt</a></div><div class="ttdeci">uint64_t out_ack_cnt</div><div class="ttdoc">Number of unique ACKs received for pkts in o. </div><div class="ttdef"><b>Definition:</b> stream.h:64</div></div>
+<div class="ttc" id="structq__stream_html"><div class="ttname"><a href="structq__stream.html">q_stream</a></div><div class="ttdef"><b>Definition:</b> stream.h:57</div></div>
+<div class="ttc" id="structq__stream_html_a2756b454995958d339e91b6de2c25551"><div class="ttname"><a href="structq__stream.html#a2756b454995958d339e91b6de2c25551">q_stream::tx_max_stream_data</a></div><div class="ttdeci">uint8_t tx_max_stream_data</div><div class="ttdoc">We need to open the receive window. </div><div class="ttdef"><b>Definition:</b> stream.h:76</div></div>
+<div class="ttc" id="stream_8h_html_a7308501df4d06bbfd14665ae88caae02"><div class="ttname"><a href="stream_8h.html#a7308501df4d06bbfd14665ae88caae02">get_stream</a></div><div class="ttdeci">struct q_stream * get_stream(struct q_conn *const c, const int64_t id)</div><div class="ttdef"><b>Definition:</b> stream.c:56</div></div>
+<div class="ttc" id="conn_8h_html"><div class="ttname"><a href="conn_8h.html">conn.h</a></div></div>
+<div class="ttc" id="structq__stream_html_a3c163e13ed03a60a2c53ccfddc5929d7"><div class="ttname"><a href="structq__stream.html#a3c163e13ed03a60a2c53ccfddc5929d7">q_stream::state</a></div><div class="ttdeci">strm_state_t state</div><div class="ttdef"><b>Definition:</b> stream.h:75</div></div>
+<div class="ttc" id="structq__stream_html_a36bf4a7325ef5d402ef98eaf3e9468d7"><div class="ttname"><a href="structq__stream.html#a36bf4a7325ef5d402ef98eaf3e9468d7">q_stream::in</a></div><div class="ttdeci">struct w_iov_sq in</div><div class="ttdoc">Tail queue containing inbound data. </div><div class="ttdef"><b>Definition:</b> stream.h:68</div></div>
+<div class="ttc" id="structq__stream_html_a2d0522f128527120ab29e423c90a461f"><div class="ttname"><a href="structq__stream.html#a2d0522f128527120ab29e423c90a461f">q_stream::new_in_data_max</a></div><div class="ttdeci">uint64_t new_in_data_max</div><div class="ttdoc">New inbound max_stream_data (for update). </div><div class="ttdef"><b>Definition:</b> stream.h:71</div></div>
+<div class="ttc" id="stream_8h_html_a379b35c4c21ee31284e14338963fdd8f"><div class="ttname"><a href="stream_8h.html#a379b35c4c21ee31284e14338963fdd8f">concat_out</a></div><div class="ttdeci">void concat_out(struct q_stream *const s, struct w_iov_sq *const q)</div><div class="ttdef"><b>Definition:</b> stream.c:206</div></div>
+<div class="ttc" id="structq__stream_html_a3efa630f78833bdfa5a5f16a18991d88"><div class="ttname"><a href="structq__stream.html#a3efa630f78833bdfa5a5f16a18991d88">q_stream::in_data_max</a></div><div class="ttdeci">uint64_t in_data_max</div><div class="ttdoc">Inbound max_stream_data. </div><div class="ttdef"><b>Definition:</b> stream.h:70</div></div>
+<div class="ttc" id="stream_8h_html_a29d0d69805b312f9f5a7728dcd5f0e3d"><div class="ttname"><a href="stream_8h.html#a29d0d69805b312f9f5a7728dcd5f0e3d">STRM_STATES</a></div><div class="ttdeci">#define STRM_STATES</div><div class="ttdef"><b>Definition:</b> stream.h:45</div></div>
+<div class="ttc" id="stream_8h_html_a2853c95f04e70a8c7e836f881eedff8d"><div class="ttname"><a href="stream_8h.html#a2853c95f04e70a8c7e836f881eedff8d">apply_stream_limits</a></div><div class="ttdeci">void apply_stream_limits(struct q_stream *const s)</div><div class="ttdef"><b>Definition:</b> stream.c:63</div></div>
+<div class="ttc" id="stream_8h_html_a878cdd4d69b352f501841456e8a43972"><div class="ttname"><a href="stream_8h.html#a878cdd4d69b352f501841456e8a43972">do_stream_id_fc</a></div><div class="ttdeci">void do_stream_id_fc(struct q_stream *const s)</div><div class="ttdef"><b>Definition:</b> stream.c:187</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 13 2017 14:28:46 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 5 2018 15:07:23 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

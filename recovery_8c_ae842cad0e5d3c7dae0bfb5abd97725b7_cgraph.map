@@ -1,0 +1,6 @@
+<map id="detect_lost_pkts" name="detect_lost_pkts">
+<area shape="rect" id="node2" href="$quic_8h.html#a38482b6755c2fd0dd90838bb0924224d" title="is_ack_only" alt="" coords="173,5,264,32"/>
+<area shape="rect" id="node3" href="$conn_8h.html#a68c6b30b8665ce894ab5bed3c73a2d9d" title="is_zero" alt="" coords="187,56,251,83"/>
+<area shape="rect" id="node4" href="$conn_8h.html#a07cb3f3bb2c38f820f0a7fd74de25d6d" title="is_inf" alt="" coords="192,107,245,133"/>
+<area shape="rect" id="node5" href="$recovery_8c.html#a1cddc0f895e4feafcaf6f0ad86ad2631" title="in_recovery" alt="" coords="174,157,263,184"/>
+</map>

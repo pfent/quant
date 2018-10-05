@@ -1,0 +1,6 @@
+<map id="enc_ack_frame" name="enc_ack_frame">
+<area shape="rect" id="node2" href="$diet_8h.html#ae43baefa854ce76ff4531404e68f2711" title="diet_max_ival" alt="" coords="170,5,273,32"/>
+<area shape="rect" id="node3" href="$diet_8h.html#af0ddae2a11095bcdabe422dfc44f910a" title="diet_timestamp" alt="" coords="166,56,277,83"/>
+<area shape="rect" id="node4" href="$diet_8h.html#a9d72ddf7f8b338bc0917d06350e18157" title="diet_cnt" alt="" coords="187,107,255,133"/>
+<area shape="rect" id="node5" href="$frame_8c.html#a31c36630801506eb48c0bf620c0fcca6" title="shorten_ack_nr" alt="" coords="166,157,277,184"/>
+</map>

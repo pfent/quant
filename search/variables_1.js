@@ -1,7 +1,15 @@
 var searchData=
 [
-  ['ack_5fcnt',['ack_cnt',['../structpkt__meta.html#a5f9e808e4d126685f0d28dd09501feaa',1,'pkt_meta']]],
-  ['acked_5fpkts',['acked_pkts',['../structq__conn.html#abe9ab33ce5751173f1d47acdc6dc14b9',1,'q_conn']]],
-  ['api_5farg',['api_arg',['../quic_8c.html#a3d13f98f48548f123b3a892c435175c9',1,'api_arg():&#160;quic.c'],['../quic_8h.html#a3d13f98f48548f123b3a892c435175c9',1,'api_arg():&#160;quic.c']]],
-  ['api_5ffunc',['api_func',['../quic_8c.html#a593420bbec69beea4076ea6603019ea0',1,'api_func():&#160;quic.c'],['../quic_8h.html#a593420bbec69beea4076ea6603019ea0',1,'api_func():&#160;quic.c']]]
+  ['ack_5falarm',['ack_alarm',['../structpn__space.html#aeb316f3b0ea75c1e0da6547a7b7334c9',1,'pn_space']]],
+  ['ack_5fdel_5fexp',['ack_del_exp',['../structtransport__params.html#ae332eb1c8176a3916959caa35f810278',1,'transport_params']]],
+  ['ack_5fheader_5fpos',['ack_header_pos',['../structpkt__meta.html#af5df9d4b4e991280ca5c3a114c771d59',1,'pkt_meta']]],
+  ['acked',['acked',['../structpn__space.html#a258b213b1fbb488b1d1dda308dcade45',1,'pn_space']]],
+  ['aead',['aead',['../structcipher__ctx.html#ab88a3d2c5fd30344a597662ceaa074d6',1,'cipher_ctx']]],
+  ['alpn',['alpn',['../structtls__ticket.html#a8901c0d191756d018d1390f23cc55460',1,'tls_ticket::alpn()'],['../tls_8c.html#ab9a4bdca4790560e892b981c84de1152',1,'alpn():&#160;tls.c']]],
+  ['alpn_5fcnt',['alpn_cnt',['../tls_8c.html#a5aecd52cc3fa60fd5116988ab8e57603',1,'tls.c']]],
+  ['api_5falarm',['api_alarm',['../quic_8c.html#a5d089d72bd20a1d69547be4a7acff108',1,'quic.c']]],
+  ['api_5fconn',['api_conn',['../quic_8c.html#a91b81b7384533b284fa05acbc6b6787d',1,'api_conn():&#160;quic.c'],['../quic_8h.html#a91b81b7384533b284fa05acbc6b6787d',1,'api_conn():&#160;quic.c']]],
+  ['api_5ffunc',['api_func',['../quic_8c.html#a593420bbec69beea4076ea6603019ea0',1,'api_func():&#160;quic.c'],['../quic_8h.html#a593420bbec69beea4076ea6603019ea0',1,'api_func():&#160;quic.c']]],
+  ['api_5fstrm',['api_strm',['../quic_8c.html#a51e2b7dfe290cfc0a139b3768427de79',1,'api_strm():&#160;quic.c'],['../quic_8h.html#a51e2b7dfe290cfc0a139b3768427de79',1,'api_strm():&#160;quic.c']]],
+  ['aq',['aq',['../quic_8c.html#adb057d210f83b9aea8ed1a5c9e6876ee',1,'aq():&#160;quic.c'],['../quic_8h.html#adb057d210f83b9aea8ed1a5c9e6876ee',1,'aq():&#160;quic.c']]]
 ];

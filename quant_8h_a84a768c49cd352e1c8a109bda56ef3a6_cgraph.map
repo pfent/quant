@@ -1,0 +1,6 @@
+<map id="q_rx_ready" name="q_rx_ready">
+<area shape="rect" id="node2" href="$quic_8c.html#afd98d880d46aa717596439adb85fcafc" title="cancel_api_call" alt="" coords="142,56,253,83"/>
+<area shape="rect" id="node4" href="$conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="437,56,520,83"/>
+<area shape="rect" id="node3" href="$quic_8c.html#a3da1ca1e589303333e8bba9cfbb1f4da" title="q_accept" alt="" coords="308,5,383,32"/>
+<area shape="rect" id="node5" href="$quic_8c.html#a84a768c49cd352e1c8a109bda56ef3a6" title="q_rx_ready" alt="" coords="302,56,389,83"/>
+</map>

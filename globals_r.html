@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">quant
-   &#160;<span id="projectnumber">0.0.5</span>
+   &#160;<span id="projectnumber">0.0.14</span>
    </div>
   </td>
  </tr>
@@ -71,6 +71,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals_func.html"><span>Functions</span></a></li>
       <li><a href="globals_vars.html"><span>Variables</span></a></li>
       <li><a href="globals_type.html"><span>Typedefs</span></a></li>
+      <li><a href="globals_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="globals_eval.html"><span>Enumerator</span></a></li>
       <li><a href="globals_defs.html"><span>Macros</span></a></li>
     </ul>
   </div>
@@ -95,7 +97,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="globals_r.html#index_r"><span>r</span></a></li>
       <li><a href="globals_s.html#index_s"><span>s</span></a></li>
       <li><a href="globals_t.html#index_t"><span>t</span></a></li>
+      <li><a href="globals_u.html#index_u"><span>u</span></a></li>
       <li><a href="globals_v.html#index_v"><span>v</span></a></li>
+      <li><a href="globals_w.html#index_w"><span>w</span></a></li>
+      <li><a href="globals_y.html#index_y"><span>y</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -104,7 +109,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -117,18 +122,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock">Here is a list of all functions, variables, defines, enums, and typedefs with links to the files they belong to:</div>
 
 <h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
-<li>rtx()
-: <a class="el" href="conn_8c.html#a09818812f3d51b69a2d3e28f8a3101b5">conn.c</a>
+<li>read_tickets()
+: <a class="el" href="tls_8c.html#a65f1490238853f0e913186fd5c3311c7">tls.c</a>
+</li>
+<li>RED
+: <a class="el" href="quic_8h.html#a8d23feea868a983c8c2b661e1e16972f">quic.h</a>
+</li>
+<li>reset_pm()
+: <a class="el" href="stream_8c.html#ad084a65676d6e76fe72fa8e23bd1391d">stream.c</a>
+</li>
+<li>reset_pn()
+: <a class="el" href="pn_8c.html#ad39de552086c127310c3250f2982dcb5">pn.c</a>
+, <a class="el" href="pn_8h.html#ad39de552086c127310c3250f2982dcb5">pn.h</a>
+</li>
+<li>reset_stream()
+: <a class="el" href="stream_8c.html#a23976e8cd7c5aecf8e137324fce993d0">stream.c</a>
+, <a class="el" href="stream_8h.html#a23976e8cd7c5aecf8e137324fce993d0">stream.h</a>
+</li>
+<li>REV
+: <a class="el" href="quic_8h.html#a33a42d6bfefe54ae2384f5c28dd87340">quic.h</a>
+</li>
+<li>rtx_pkt()
+: <a class="el" href="conn_8c.html#a12a896285cd7039b1bcd66c5fa895ec0">conn.c</a>
 </li>
 <li>rx()
-: <a class="el" href="conn_8h.html#a5749bce479cdde76574b7a1845be7fec">conn.h</a>
-, <a class="el" href="conn_8c.html#a5749bce479cdde76574b7a1845be7fec">conn.c</a>
+: <a class="el" href="conn_8c.html#a5749bce479cdde76574b7a1845be7fec">conn.c</a>
+, <a class="el" href="conn_8h.html#a5749bce479cdde76574b7a1845be7fec">conn.h</a>
+</li>
+<li>rx_crypto()
+: <a class="el" href="conn_8c.html#a5d6639a237bb88d66f93760fc93000a5">conn.c</a>
+</li>
+<li>rx_pkt()
+: <a class="el" href="conn_8c.html#a08b2e3acf5ad067595387e650b24f36c">conn.c</a>
+</li>
+<li>rx_pkts()
+: <a class="el" href="conn_8c.html#a66e4de11f8294248216478c7d50a79e5">conn.c</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 13 2017 14:28:46 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 5 2018 15:07:24 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

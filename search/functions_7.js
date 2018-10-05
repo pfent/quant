@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['make_5fival',['make_ival',['../diet_8c.html#a1bf88044b4af4e723b8bfc4cf0fe1420',1,'diet.c']]]
+  ['hshk_5fpkts_5foutstanding',['hshk_pkts_outstanding',['../recovery_8c.html#a0ab224b867c365ffdb3150b57d836ee8',1,'recovery.c']]]
 ];

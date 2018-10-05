@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['save_5fticket_5fcb',['save_ticket_cb',['../tls_8c.html#aa70adb60bf2e4ca0720c769269514f5b',1,'tls.c']]],
+  ['set_5fld_5falarm',['set_ld_alarm',['../recovery_8c.html#a34c871e59b25f984223ab9573ebf3332',1,'recovery.c']]],
+  ['setup_5fcipher',['setup_cipher',['../tls_8c.html#a33475dbe3d21cf344acab6c9e3b23bee',1,'tls.c']]],
+  ['setup_5finitial_5fencryption',['setup_initial_encryption',['../tls_8c.html#aff7c4b2f9e78c2d678898dc58bc68e57',1,'tls.c']]],
+  ['setup_5finitial_5fkey',['setup_initial_key',['../tls_8c.html#a0013659db693568a427d88141cbfcb20',1,'tls.c']]],
+  ['shorten_5fack_5fnr',['shorten_ack_nr',['../frame_8c.html#a31c36630801506eb48c0bf620c0fcca6',1,'shorten_ack_nr(const uint64_t ack, const uint64_t diff):&#160;frame.c'],['../frame_8h.html#a31c36630801506eb48c0bf620c0fcca6',1,'shorten_ack_nr(const uint64_t ack, const uint64_t diff):&#160;frame.c']]],
+  ['signal_5fcb',['signal_cb',['../quic_8c.html#a78a8ed1e6afbc58387426e924cae4a82',1,'quic.c']]],
+  ['sl_5fentry',['sl_entry',['../structq__conn.html#ad29885a595f4d9e45d5d4630d41beccf',1,'q_conn::sl_entry(q_conn) node_rx_int'],['../structq__conn.html#a03994cdac0b721d185ea0c0399fa216b',1,'q_conn::sl_entry(q_conn) node_rx_ext'],['../structq__conn.html#adc944a39f569afb0a57c0e3aab437ef5',1,'q_conn::sl_entry(q_conn) node_aq'],['../structpkt__meta.html#a7e459e2fc33bd3e88fe4c32ea57962a4',1,'pkt_meta::sl_entry()']]],
+  ['sl_5fhead',['sl_head',['../conn_8h.html#addd27b7fdfd0f22d4c24b474c8738213',1,'sl_head(q_conn_sl, q_conn):&#160;conn.h'],['../quic_8h.html#add58218ae6e5f0b1884990048cbe8e4b',1,'sl_head(pm_sl, pkt_meta):&#160;quic.h']]],
+  ['sockaddr_5fin_5fcmp',['sockaddr_in_cmp',['../conn_8c.html#afdb74c0ca180e047871005d0091a2932',1,'conn.c']]],
+  ['splay_5fentry',['splay_entry',['../structq__cid__map.html#a53f866c91b8f71a02dd45a38de0c2289',1,'q_cid_map::splay_entry()'],['../structq__conn.html#af17440ad2ae4dd9965ebab0950de86af',1,'q_conn::splay_entry()'],['../structooo__0rtt.html#a555bf4fe878b22d2efef6f78c418cfb8',1,'ooo_0rtt::splay_entry()'],['../structival.html#a6a698a9c9019589e8c85e2899c7a7db5',1,'ival::splay_entry()'],['../structpkt__meta.html#a73da61404ad0b7ce442c1e371ecd2a75',1,'pkt_meta::splay_entry(pkt_meta) nr_node'],['../structpkt__meta.html#a99c46c2dc2554d055e866aa491e1ada2',1,'pkt_meta::splay_entry(pkt_meta) off_node'],['../structq__stream.html#a5158311e9a7391bcef4777907713b99a',1,'q_stream::splay_entry()']]],
+  ['splay_5fhead',['splay_head',['../structq__conn.html#a53e54efd7c49e1395191b3d4f829c1e0',1,'q_conn::splay_head()'],['../structdiet.html#a3a774bcb2e76062bc4b7d729a11476ee',1,'diet::splay_head()'],['../structticket__splay.html#a4b810dafd854e0adf6a6dc5258aef6a7',1,'ticket_splay::splay_head()'],['../conn_8h.html#a32f31a027e4f89bf2b5de06aab392acc',1,'splay_head(ipnp_splay, q_conn) conns_by_ipnp:&#160;conn.h'],['../conn_8h.html#a4e7647568ae643bad5cbdfa8c4a9a63e',1,'splay_head(cid_splay, q_cid_map) conns_by_cid:&#160;conn.h'],['../conn_8h.html#ae4a357ac5486d1486413ca48f135493c',1,'splay_head(ooo_0rtt_splay, ooo_0rtt) ooo_0rtt_by_cid:&#160;conn.h'],['../pn_8h.html#a7bae3fb05823409798c235629dfb91b3',1,'splay_head(pm_nr_splay, pkt_meta):&#160;pn.h'],['../quic_8h.html#ad352d199c25ab21e52bf67e230e8c6ee',1,'splay_head(pm_off_splay, pkt_meta):&#160;quic.h']]],
+  ['sq_5fentry',['sq_entry',['../structcid.html#aa9f9d0c1053205dc7c47cc025b7349fc',1,'cid']]],
+  ['sq_5fhead',['sq_head',['../structq__conn.html#acbd46775fb5324c3fc773594f62e36c7',1,'q_conn::sq_head(dcid_head, cid) dcid'],['../structq__conn.html#a62cb7e58b31faad3a208db708b980cbd',1,'q_conn::sq_head(scid_head, cid) scid']]],
+  ['sq_5funpoison',['sq_unpoison',['../quic_8c.html#aadee7dee328390db2ce060e84292af42',1,'quic.c']]],
+  ['stream_5fcmp',['stream_cmp',['../stream_8c.html#a5a3aec470af796ea2d56b842c44e5568',1,'stream_cmp(const struct q_stream *const a, const struct q_stream *const b):&#160;stream.c'],['../stream_8h.html#a5a3aec470af796ea2d56b842c44e5568',1,'stream_cmp(const struct q_stream *const a, const struct q_stream *const b):&#160;stream.c']]],
+  ['stream_5fneeds_5fctrl',['stream_needs_ctrl',['../stream_8h.html#ae11750e72c5f654dd57041a830ee19a7',1,'stream.h']]],
+  ['strm_5fepoch',['strm_epoch',['../stream_8h.html#af3bef0cb9d669dca78f301f6ae50a19e',1,'stream.h']]]
+];

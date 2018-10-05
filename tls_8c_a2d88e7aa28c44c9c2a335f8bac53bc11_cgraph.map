@@ -1,0 +1,5 @@
+<map id="chk_tp_serv" name="chk_tp_serv">
+<area shape="rect" id="node2" href="$conn_8c.html#a1ae0706a577e85efbcfacf517a329dbe" title="vers_supported" alt="" coords="147,31,258,57"/>
+<area shape="rect" id="node3" href="$conn_8h.html#ad42b6442b32fa307a6b5293b9b9df058" title="is_force_neg_vers" alt="" coords="307,5,435,32"/>
+<area shape="rect" id="node4" href="$conn_8h.html#a76639ec987a700f45570a287b25025ea" title="is_rsvd_vers" alt="" coords="323,56,419,83"/>
+</map>

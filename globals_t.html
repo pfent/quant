@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">quant
-   &#160;<span id="projectnumber">0.0.5</span>
+   &#160;<span id="projectnumber">0.0.14</span>
    </div>
   </td>
  </tr>
@@ -71,6 +71,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals_func.html"><span>Functions</span></a></li>
       <li><a href="globals_vars.html"><span>Variables</span></a></li>
       <li><a href="globals_type.html"><span>Typedefs</span></a></li>
+      <li><a href="globals_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="globals_eval.html"><span>Enumerator</span></a></li>
       <li><a href="globals_defs.html"><span>Macros</span></a></li>
     </ul>
   </div>
@@ -95,7 +97,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals_r.html#index_r"><span>r</span></a></li>
       <li><a href="globals_s.html#index_s"><span>s</span></a></li>
       <li class="current"><a href="globals_t.html#index_t"><span>t</span></a></li>
+      <li><a href="globals_u.html#index_u"><span>u</span></a></li>
       <li><a href="globals_v.html#index_v"><span>v</span></a></li>
+      <li><a href="globals_w.html#index_w"><span>w</span></a></li>
+      <li><a href="globals_y.html#index_y"><span>y</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -104,7 +109,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -117,53 +122,102 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock">Here is a list of all functions, variables, defines, enums, and typedefs with links to the files they belong to:</div>
 
 <h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
-<li>T_ACK
-: <a class="el" href="frame_8h.html#aba276d01cd7fa51d6ae1a3f5c2ac27ef">frame.h</a>
-</li>
-<li>T_PADDING
-: <a class="el" href="frame_8h.html#a0aeea3b4e95e4699f58083e5b52a04de">frame.h</a>
-</li>
-<li>T_STREAM
-: <a class="el" href="frame_8h.html#afce8a4da88f0bd3f6c5598e7d8639c0b">frame.h</a>
-</li>
-<li>tls_cert
-: <a class="el" href="cert_8h.html#af40874290e11c97b6a16b9735fc8688e">cert.h</a>
-</li>
-<li>tls_cert_len
-: <a class="el" href="cert_8h.html#a4f2b67232ee46a8546d05b9bc63f7a00">cert.h</a>
-</li>
-<li>tls_certs
-: <a class="el" href="quic_8c.html#ac4f138c6c44745281fa55218dacd9b80">quic.c</a>
+<li>tickets
+: <a class="el" href="tls_8c.html#af498af0d2014654a94752315274f861c">tls.c</a>
 </li>
 <li>tls_ctx
-: <a class="el" href="quic_8h.html#af6bbbfab377148ff702ada5a44a7ae73">quic.h</a>
-, <a class="el" href="quic_8c.html#af6bbbfab377148ff702ada5a44a7ae73">quic.c</a>
+: <a class="el" href="tls_8c.html#af6bbbfab377148ff702ada5a44a7ae73">tls.c</a>
+, <a class="el" href="tls_8h.html#af6bbbfab377148ff702ada5a44a7ae73">tls.h</a>
 </li>
-<li>tls_handshake()
-: <a class="el" href="conn_8c.html#aaa8293a7755d9629bc72f04e31674e0f">conn.c</a>
-, <a class="el" href="conn_8h.html#aaa8293a7755d9629bc72f04e31674e0f">conn.h</a>
+<li>TLS_EXT_TYPE_TRANSPORT_PARAMETERS
+: <a class="el" href="tls_8c.html#aec764d0bb291799a81d2c410cebfbcb2">tls.c</a>
 </li>
-<li>tls_key
-: <a class="el" href="cert_8h.html#a23bb2d0e19274ac4fe698041534abfe6">cert.h</a>
+<li>tls_io()
+: <a class="el" href="tls_8c.html#a4e66d17ae7e8756388309b9e193a9543">tls.c</a>
+, <a class="el" href="tls_8h.html#a4e66d17ae7e8756388309b9e193a9543">tls.h</a>
 </li>
-<li>tls_key_len
-: <a class="el" href="cert_8h.html#a0c05a0886ee719f17221af87aa0fbd24">cert.h</a>
+<li>tls_log_file
+: <a class="el" href="tls_8c.html#a0334391e62e54695e81b99742ea9a9f2">tls.c</a>
 </li>
-<li>to_bitstring
-: <a class="el" href="marshall_8h.html#aa58567e0425508326407ac14ada5fca5">marshall.h</a>
+<li>tls_ticket_cmp()
+: <a class="el" href="tls_8c.html#a9b8df2ef49f68f18f160054a91cc7d45">tls.c</a>
+</li>
+<li>TP_ACK_DELAY_EXPONENT
+: <a class="el" href="tls_8c.html#a94fa0822fdb2bd0eaf182f09fd110628">tls.c</a>
+</li>
+<li>TP_DISABLE_MIGRATION
+: <a class="el" href="tls_8c.html#aa142b63e4e39660b6a91f7af8037f86f">tls.c</a>
+</li>
+<li>TP_IDLE_TIMEOUT
+: <a class="el" href="tls_8c.html#a460efdb80a976567deff5fb2b164c28f">tls.c</a>
+</li>
+<li>TP_INITIAL_MAX_BIDI_STREAMS
+: <a class="el" href="tls_8c.html#a9209c6374b3ce3f514ed0d25f6b43f46">tls.c</a>
+</li>
+<li>TP_INITIAL_MAX_DATA
+: <a class="el" href="tls_8c.html#a4ad4acdf18a719f36a2d929c549814d0">tls.c</a>
+</li>
+<li>TP_INITIAL_MAX_STREAM_DATA_BIDI_LOCAL
+: <a class="el" href="tls_8c.html#a3bb56999c75be0bc6ac2dfcec2a67241">tls.c</a>
+</li>
+<li>TP_INITIAL_MAX_STREAM_DATA_BIDI_REMOTE
+: <a class="el" href="tls_8c.html#a61ac99bdc7aa7de88aab814f79a47d24">tls.c</a>
+</li>
+<li>TP_INITIAL_MAX_STREAM_DATA_UNI
+: <a class="el" href="tls_8c.html#a9f23e815d1e6b788070979e4fe4a014d">tls.c</a>
+</li>
+<li>TP_INITIAL_MAX_UNI_STREAMS
+: <a class="el" href="tls_8c.html#a6891665fc98fc5376e25ef80945da486">tls.c</a>
+</li>
+<li>TP_MAX
+: <a class="el" href="tls_8c.html#aea2ae950efdd5b55322d582604aa9e3d">tls.c</a>
+</li>
+<li>TP_MAX_PACKET_SIZE
+: <a class="el" href="tls_8c.html#a24a5013c9420b7c5054cb049b745e19c">tls.c</a>
+</li>
+<li>TP_STATELESS_RESET_TOKEN
+: <a class="el" href="tls_8c.html#a0893dd89c8c8365ae3c3b053135d15fb">tls.c</a>
+</li>
+<li>track_acked_pkts()
+: <a class="el" href="recovery_8c.html#a9256a2d63f4ce3840caec0cc321c7015">recovery.c</a>
+</li>
+<li>track_bytes_in()
+: <a class="el" href="stream_8c.html#a551a7c19bf90417d819623804da6949f">stream.c</a>
+, <a class="el" href="stream_8h.html#a551a7c19bf90417d819623804da6949f">stream.h</a>
+</li>
+<li>track_bytes_out()
+: <a class="el" href="stream_8h.html#a0c28462a470893c1046d7a167037d926">stream.h</a>
+, <a class="el" href="stream_8c.html#a0c28462a470893c1046d7a167037d926">stream.c</a>
+</li>
+<li>track_recv()
+: <a class="el" href="conn_8c.html#abff12a204fba1e1dc52d6c27992f2edc">conn.c</a>
 </li>
 <li>tx()
-: <a class="el" href="conn_8h.html#a3ab3870e4aa765f7950dfcfa121a8bf1">conn.h</a>
-, <a class="el" href="conn_8c.html#a3ab3870e4aa765f7950dfcfa121a8bf1">conn.c</a>
+: <a class="el" href="conn_8c.html#abc878d206fec5787bb6754f6b53d0e8a">conn.c</a>
+, <a class="el" href="conn_8h.html#abc878d206fec5787bb6754f6b53d0e8a">conn.h</a>
 </li>
-<li>type_str
-: <a class="el" href="marshall_8h.html#a3b6e45eddbf458ee27a546d4fe815a1b">marshall.h</a>
+<li>tx_ack()
+: <a class="el" href="conn_8h.html#a87cb12b0afa8cdb9f2a41ce602d8ff96">conn.h</a>
+, <a class="el" href="conn_8c.html#a87cb12b0afa8cdb9f2a41ce602d8ff96">conn.c</a>
+</li>
+<li>tx_crypto()
+: <a class="el" href="conn_8c.html#ac0d0edf08b6c3f2b3a75ab87498def1f">conn.c</a>
+</li>
+<li>tx_stream_ctrl()
+: <a class="el" href="conn_8c.html#a7bc1cf055ddc94c793f81fdfc52ecdbb">conn.c</a>
+</li>
+<li>tx_stream_data()
+: <a class="el" href="conn_8c.html#a1a39c653f20bef724b56574fac9c449f">conn.c</a>
+</li>
+<li>tx_w()
+: <a class="el" href="conn_8h.html#ae7ad1167799a2920119487df92e81b85">conn.h</a>
+, <a class="el" href="conn_8c.html#ae7ad1167799a2920119487df92e81b85">conn.c</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 13 2017 14:28:46 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 5 2018 15:07:24 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">quant
-   &#160;<span id="projectnumber">0.0.5</span>
+   &#160;<span id="projectnumber">0.0.14</span>
    </div>
   </td>
  </tr>
@@ -65,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -80,7 +80,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <p>)</p>
-<div class="fragment"><div class="line"><span class="comment">// Copyright (c) 2016-2017, NetApp, Inc.</span></div>
+<div class="fragment"><div class="line"><span class="comment">// SPDX-License-Identifier: BSD-2-Clause</span></div>
+<div class="line"><span class="comment">//</span></div>
+<div class="line"><span class="comment">// Copyright (c) 2016-2018, NetApp, Inc.</span></div>
 <div class="line"><span class="comment">// All rights reserved.</span></div>
 <div class="line"><span class="comment">//</span></div>
 <div class="line"><span class="comment">// Redistribution and use in source and binary forms, with or without</span></div>
@@ -105,94 +107,279 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="comment">// ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span></div>
 <div class="line"><span class="comment">// POSSIBILITY OF SUCH DAMAGE.</span></div>
 <div class="line"></div>
-<div class="line"><span class="preprocessor">#include &lt;getopt.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;fcntl.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;inttypes.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;net/if.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;string.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;sys/param.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;sys/stat.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
+<div class="line"></div>
+<div class="line"><span class="preprocessor">#ifndef __linux__</span></div>
+<div class="line"><span class="preprocessor"></span><span class="preprocessor">#include &lt;sys/types.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span></div>
+<div class="line"><span class="preprocessor">#include &lt;http_parser.h&gt;</span></div>
 <div class="line"></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="quant_8h.html">quant/quant.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;warpcore/warpcore.h&gt;</span></div>
 <div class="line"></div>
+<div class="line"><span class="keyword">struct </span><a name="_a0"></a><a class="code" href="structq__conn.html">q_conn</a>;</div>
 <div class="line"></div>
-<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line">usage(<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> name, <span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> ifname, <span class="keyword">const</span> uint16_t port)</div>
+<div class="line"></div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> __attribute__((noreturn)) usage(const <span class="keywordtype">char</span> * const name,</div>
+<div class="line">                                            const <span class="keywordtype">char</span> * const ifname,</div>
+<div class="line">                                            const uint16_t port,</div>
+<div class="line">                                            const <span class="keywordtype">char</span> * const dir,</div>
+<div class="line">                                            const <span class="keywordtype">char</span> * const cert,</div>
+<div class="line">                                            const <span class="keywordtype">char</span> * const key,</div>
+<div class="line">                                            const uint64_t timeout)</div>
 <div class="line">{</div>
-<div class="line">    printf(<span class="stringliteral">&quot;%s\n&quot;</span>, name);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;%s [options]\n&quot;</span>, name);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\t[-i interface]\tinterface to run over; default %s\n&quot;</span>, ifname);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\t[-p port]\tdestination port; default %d\n&quot;</span>, port);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;\t[-d dir]\tserver root directory; default %s\n&quot;</span>, dir);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;\t[-c cert]\tTLS certificate; default %s\n&quot;</span>, cert);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;\t[-k key]\tTLS key; default %s\n&quot;</span>, key);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;\t[-t timeout]\tidle timeout in seconds; default %&quot;</span> PRIu64 <span class="stringliteral">&quot;\n&quot;</span>,</div>
+<div class="line">           timeout);</div>
 <div class="line"><span class="preprocessor">#ifndef NDEBUG</span></div>
-<div class="line"><span class="preprocessor"></span>    printf(<span class="stringliteral">&quot;\t[-v verbosity]\t\tverbosity level (0-%u, default %u)\n&quot;</span>, DLEVEL,</div>
-<div class="line">           _dlevel);</div>
+<div class="line"><span class="preprocessor"></span>    printf(<span class="stringliteral">&quot;\t[-v verbosity]\tverbosity level (0-%d, default %d)\n&quot;</span>, DLEVEL,</div>
+<div class="line">           util_dlevel);</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="preprocessor"></span>}</div>
+<div class="line"><span class="preprocessor"></span>    exit(0);</div>
+<div class="line">}</div>
 <div class="line"></div>
 <div class="line"></div>
+<div class="line"><span class="keyword">struct </span>cb_data {</div>
+<div class="line">    <span class="keyword">struct </span><a name="_a1"></a><a class="code" href="structq__stream.html">q_stream</a> * s;</div>
+<div class="line">    <span class="keyword">struct </span><a class="code" href="structq__conn.html">q_conn</a> * c;</div>
+<div class="line">    <span class="keyword">struct </span>w_engine * w;</div>
+<div class="line">    <span class="keywordtype">int</span> dir;</div>
+<div class="line">    uint32_t _dummy;</div>
+<div class="line">};</div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">int</span> send_err(<span class="keyword">const</span> <span class="keyword">struct</span> cb_data * <span class="keyword">const</span> d, <span class="keyword">const</span> uint16_t code)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">char</span> * msg;</div>
+<div class="line">    <span class="keywordflow">switch</span> (code) {</div>
+<div class="line">    <span class="keywordflow">case</span> 403:</div>
+<div class="line">        msg = <span class="stringliteral">&quot;403 Forbidden&quot;</span>;</div>
+<div class="line">        <span class="keywordflow">break</span>;</div>
+<div class="line">    <span class="keywordflow">case</span> 404:</div>
+<div class="line">        msg = <span class="stringliteral">&quot;404 Not Found&quot;</span>;</div>
+<div class="line">        <span class="keywordflow">break</span>;</div>
+<div class="line">    <span class="keywordflow">default</span>:</div>
+<div class="line">        msg = <span class="stringliteral">&quot;500 Internal Server Error&quot;</span>;</div>
+<div class="line">    }</div>
+<div class="line">    warn(ERR, msg);</div>
+<div class="line"></div>
+<div class="line">    <a name="a2"></a><a class="code" href="quant_8h.html#aef78c09fc0af77ca6a9c0eee97e16536">q_write_str</a>(d-&gt;w, d-&gt;s, msg, <span class="keyword">true</span>);</div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">int</span> serve_cb(http_parser * parser, <span class="keyword">const</span> <span class="keywordtype">char</span> * at, <span class="keywordtype">size_t</span> len)</div>
+<div class="line">{</div>
+<div class="line">    (void)parser;</div>
+<div class="line">    <span class="keyword">const</span> <span class="keyword">struct </span>cb_data * <span class="keyword">const</span> d = parser-&gt;data;</div>
+<div class="line">    warn(INF, <span class="stringliteral">&quot;conn %s str %u serving URL %.*s&quot;</span>, <a name="a3"></a><a class="code" href="quant_8h.html#a261bd0f69ae5acc521365df328b982d1">q_cid</a>(d-&gt;c), <a name="a4"></a><a class="code" href="quant_8h.html#a0d5a178a6f02a949c935a8aa35805862">q_sid</a>(d-&gt;s),</div>
+<div class="line">         (<span class="keywordtype">int</span>)len, at);</div>
+<div class="line"></div>
+<div class="line">    <span class="keywordtype">char</span> path[MAXPATHLEN] = <span class="stringliteral">&quot;.&quot;</span>;</div>
+<div class="line">    strncpy(&amp;path[*at == <span class="charliteral">&#39;/&#39;</span> ? 1 : 0], at, MIN(len, <span class="keyword">sizeof</span>(path) - 1));</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// hacky way to prevent directory traversals</span></div>
+<div class="line">    <span class="keywordflow">if</span> (strstr(path, <span class="stringliteral">&quot;..&quot;</span>))</div>
+<div class="line">        <span class="keywordflow">return</span> send_err(d, 403);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// check if this is a &quot;GET /n&quot; request for random data</span></div>
+<div class="line">    uint32_t n = (uint32_t)MIN(UINT32_MAX, strtoul(&amp;path[2], 0, 10));</div>
+<div class="line">    <span class="keywordflow">if</span> (n) {</div>
+<div class="line">        <span class="keyword">struct </span>w_iov_sq out = w_iov_sq_initializer(out);</div>
+<div class="line">        <a name="a5"></a><a class="code" href="quant_8h.html#a76cce060063f44b767d7dc9b2265353c">q_alloc</a>(d-&gt;w, &amp;out, n);</div>
+<div class="line">        <span class="comment">// check whether we managed to allow enough buffers</span></div>
+<div class="line">        <span class="keywordflow">if</span> (w_iov_sq_len(&amp;out) != n) {</div>
+<div class="line">            warn(ERR, <span class="stringliteral">&quot;could only allocate %u/%u bytes of buffer&quot;</span>,</div>
+<div class="line">                 w_iov_sq_len(&amp;out), n);</div>
+<div class="line">            <a name="a6"></a><a class="code" href="quant_8h.html#a4a7935a14e509d989eda300f16daf086">q_free</a>(&amp;out);</div>
+<div class="line">            <span class="keywordflow">return</span> send_err(d, 500);</div>
+<div class="line">        }</div>
+<div class="line"></div>
+<div class="line">        <span class="comment">// randomize data</span></div>
+<div class="line">        <span class="keyword">struct </span>w_iov * v = 0;</div>
+<div class="line">        <span class="keywordtype">char</span> c = <span class="charliteral">&#39;A&#39;</span>;</div>
+<div class="line">        sq_foreach (v, &amp;out, next) {</div>
+<div class="line">            memset(v-&gt;buf, c, v-&gt;len);</div>
+<div class="line">            c = (c == <span class="charliteral">&#39;Z&#39;</span> ? <span class="charliteral">&#39;A&#39;</span> : c + 1);</div>
+<div class="line">        }</div>
+<div class="line">        <a name="a7"></a><a class="code" href="quant_8h.html#a5c710c2093cc759f8bb581e25b52ceda">q_write</a>(d-&gt;s, &amp;out, <span class="keyword">true</span>);</div>
+<div class="line">        <a class="code" href="quant_8h.html#a4a7935a14e509d989eda300f16daf086">q_free</a>(&amp;out);</div>
+<div class="line">        <span class="keywordflow">return</span> 0;</div>
+<div class="line">    }</div>
+<div class="line"></div>
+<div class="line">    <span class="keyword">struct </span>stat info;</div>
+<div class="line">    <span class="keywordflow">if</span> (fstatat(d-&gt;dir, path, &amp;info, 0) == -1)</div>
+<div class="line">        <span class="keywordflow">return</span> send_err(d, 404);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// if this a directory, look up its index</span></div>
+<div class="line">    <span class="keywordflow">if</span> (info.st_mode &amp; S_IFDIR) {</div>
+<div class="line">        strncat(path, <span class="stringliteral">&quot;/index.html&quot;</span>, <span class="keyword">sizeof</span>(path) - len - 1);</div>
+<div class="line">        <span class="keywordflow">if</span> (fstatat(d-&gt;dir, path, &amp;info, 0) == -1)</div>
+<div class="line">            <span class="keywordflow">return</span> send_err(d, 404);</div>
+<div class="line">    }</div>
+<div class="line"></div>
+<div class="line">    <span class="keywordflow">if</span> ((info.st_mode &amp; S_IFREG) == 0 || (info.st_mode &amp; S_IFLNK) == 0)</div>
+<div class="line">        <span class="keywordflow">return</span> send_err(d, 403);</div>
+<div class="line"></div>
+<div class="line">    <span class="keywordflow">if</span> (info.st_size &gt;= UINT32_MAX)</div>
+<div class="line">        <span class="keywordflow">return</span> send_err(d, 500);</div>
+<div class="line"></div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">int</span> f = openat(d-&gt;dir, path, O_RDONLY | O_CLOEXEC);</div>
+<div class="line">    ensure(f != -1, <span class="stringliteral">&quot;could not open %s&quot;</span>, path);</div>
+<div class="line"></div>
+<div class="line">    <a name="a8"></a><a class="code" href="quant_8h.html#af658bfb2526517ccbbd2840a5dbee97e">q_write_file</a>(d-&gt;w, d-&gt;s, f, (uint32_t)info.st_size, <span class="keyword">true</span>);</div>
+<div class="line"></div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"><span class="preprocessor">#define MAXPORTS 16</span></div>
+<div class="line"><span class="preprocessor"></span></div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[])</div>
 <div class="line">{</div>
-<div class="line">    <span class="keywordtype">char</span> * ifname = (<span class="keywordtype">char</span> *)<span class="stringliteral">&quot;lo&quot;</span></div>
-<div class="line">#ifndef __linux__</div>
-<div class="line">                            <span class="stringliteral">&quot;0&quot;</span></div>
-<div class="line">#endif</div>
-<div class="line">        ;</div>
-<div class="line">    uint16_t port = 8443;</div>
+<div class="line">    uint64_t timeout = 10;</div>
+<div class="line"><span class="preprocessor">#ifndef NDEBUG</span></div>
+<div class="line"><span class="preprocessor"></span>    util_dlevel = DLEVEL; <span class="comment">// default to maximum compiled-in verbosity</span></div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span>    <span class="keywordtype">char</span> ifname[IFNAMSIZ] = <span class="stringliteral">&quot;lo&quot;</span></div>
+<div class="line"><span class="preprocessor">#ifndef __linux__</span></div>
+<div class="line"><span class="preprocessor"></span>                            <span class="stringliteral">&quot;0&quot;</span></div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span>        ;</div>
+<div class="line">    <span class="keywordtype">char</span> dir[MAXPATHLEN] = <span class="stringliteral">&quot;/Users/lars/Sites/lars/output&quot;</span>;</div>
+<div class="line">    <span class="keywordtype">char</span> cert[MAXPATHLEN] =</div>
+<div class="line">        <span class="stringliteral">&quot;/etc/letsencrypt/live/slate.eggert.org/fullchain.pem&quot;</span>;</div>
+<div class="line">    <span class="keywordtype">char</span> key[MAXPATHLEN] = <span class="stringliteral">&quot;/etc/letsencrypt/live/slate.eggert.org/privkey.pem&quot;</span>;</div>
+<div class="line">    uint16_t port[MAXPORTS] = {4433, 4434};</div>
+<div class="line">    <span class="keywordtype">size_t</span> num_ports = 0;</div>
 <div class="line">    <span class="keywordtype">int</span> ch;</div>
+<div class="line">    <span class="keywordtype">int</span> ret = 0;</div>
 <div class="line"></div>
-<div class="line">    <span class="keywordflow">while</span> ((ch = getopt(argc, argv, <span class="stringliteral">&quot;hi:p:t:&quot;</span></div>
-<div class="line">#ifndef NDEBUG</div>
-<div class="line">                                    <span class="stringliteral">&quot;v:&quot;</span></div>
-<div class="line">#endif</div>
-<div class="line">                        )) != -1) {</div>
+<div class="line">    <span class="keywordflow">while</span> ((ch = getopt(argc, argv, <span class="stringliteral">&quot;hi:p:d:v:c:k:t:&quot;</span>)) != -1) {</div>
 <div class="line">        <span class="keywordflow">switch</span> (ch) {</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;i&#39;</span>:</div>
-<div class="line">            ifname = optarg;</div>
+<div class="line">            strncpy(ifname, optarg, <span class="keyword">sizeof</span>(ifname) - 1);</div>
+<div class="line">            <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;d&#39;</span>:</div>
+<div class="line">            strncpy(dir, optarg, <span class="keyword">sizeof</span>(dir) - 1);</div>
+<div class="line">            <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;c&#39;</span>:</div>
+<div class="line">            strncpy(cert, optarg, <span class="keyword">sizeof</span>(cert) - 1);</div>
+<div class="line">            <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;k&#39;</span>:</div>
+<div class="line">            strncpy(key, optarg, <span class="keyword">sizeof</span>(key) - 1);</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;p&#39;</span>:</div>
-<div class="line">            port = MIN(UINT16_MAX, MAX(port, (uint16_t)strtol(optarg, 0, 10)));</div>
+<div class="line">            port[num_ports++] =</div>
+<div class="line">                (uint16_t)MIN(UINT16_MAX, strtoul(optarg, 0, 10));</div>
+<div class="line">            ensure(num_ports &lt; MAXPORTS, <span class="stringliteral">&quot;can only listen on at most %u ports&quot;</span>,</div>
+<div class="line">                   MAXPORTS);</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;t&#39;</span>:</div>
+<div class="line">            timeout = MIN(<a name="a9"></a><a class="code" href="quant_8h.html#a05a1fe5d96137d7166715a45aebf6dc8">IDLE_TIMEOUT_MAX</a>, strtoul(optarg, 0, 10));</div>
+<div class="line">            <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;v&#39;</span>:</div>
 <div class="line"><span class="preprocessor">#ifndef NDEBUG</span></div>
-<div class="line"><span class="preprocessor"></span>        <span class="keywordflow">case</span> <span class="charliteral">&#39;v&#39;</span>:</div>
-<div class="line">            _dlevel = MIN(DLEVEL, MAX(0, (uint32_t)strtoul(optarg, 0, 10)));</div>
-<div class="line">            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="preprocessor"></span>            util_dlevel = (short)MIN(DLEVEL, strtoul(optarg, 0, 10));</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="preprocessor"></span>        <span class="keywordflow">case</span> <span class="charliteral">&#39;h&#39;</span>:</div>
+<div class="line"><span class="preprocessor"></span>            <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;h&#39;</span>:</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;?&#39;</span>:</div>
 <div class="line">        <span class="keywordflow">default</span>:</div>
-<div class="line">            usage(basename(argv[0]), ifname, port);</div>
-<div class="line">            <span class="keywordflow">return</span> 0;</div>
+<div class="line">            usage(basename(argv[0]), ifname, port[0], dir, cert, key, timeout);</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line"></div>
-<div class="line">    <span class="keywordtype">void</span> * <span class="keyword">const</span> q = <a name="a0"></a><a class="code" href="quant_8h.html#afd422de86ec955a7adb020e08fc4a738">q_init</a>(ifname);</div>
-<div class="line">    <span class="keyword">struct </span><a name="_a1"></a><a class="code" href="structq__conn.html">q_conn</a> * c = <a name="a2"></a><a class="code" href="quant_8h.html#aad550ed36e6497a2030cb6c03764d604">q_bind</a>(q, port);</div>
-<div class="line">    warn(debug, <span class="stringliteral">&quot;%s waiting on %s port %d&quot;</span>, basename(argv[0]), ifname, port);</div>
-<div class="line">    <span class="keywordflow">if</span> (<a name="a3"></a><a class="code" href="quant_8h.html#a1dee2094bada943ba4c4dfac33988eea">q_accept</a>(c)) {</div>
-<div class="line">        <span class="keyword">struct </span>w_iov_stailq i = STAILQ_HEAD_INITIALIZER(i);</div>
-<div class="line">        <span class="keyword">struct </span><a name="_a4"></a><a class="code" href="structq__stream.html">q_stream</a> * <span class="keyword">const</span> s = <a name="a5"></a><a class="code" href="quant_8h.html#a7d387f2075cd8ab630129b0c863433b4">q_read</a>(c, &amp;i);</div>
-<div class="line">        <span class="keywordflow">if</span> (s) {</div>
-<div class="line"><span class="preprocessor">#ifndef NDEBUG</span></div>
-<div class="line"><span class="preprocessor"></span>            <span class="keyword">const</span> uint32_t len = w_iov_stailq_len(&amp;i);</div>
-<div class="line">            warn(info, <span class="stringliteral">&quot;rx %u byte%s on str %d on conn %&quot;</span> PRIx64, len,</div>
-<div class="line">                 plural(len), <a name="a6"></a><a class="code" href="quant_8h.html#a289e37dfa1b6d51cba79934752776e0f">q_sid</a>(s), <a name="a7"></a><a class="code" href="quant_8h.html#a06870629e4f01eecadb5f987799c15e3">q_cid</a>(c));</div>
-<div class="line"><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="preprocessor"></span>            <span class="keyword">struct </span>w_iov * v;</div>
-<div class="line">            STAILQ_FOREACH (v, &amp;i, next)</div>
-<div class="line">                warn(info, &quot;%s&quot;, v-&gt;buf);</div>
-<div class="line">            <a name="a8"></a><a class="code" href="quant_8h.html#a5174cc35e3abbcc0f30c1e59e422331a">q_free</a>(q, &amp;i);</div>
-<div class="line">        }</div>
-<div class="line">        <a name="a9"></a><a class="code" href="quant_8h.html#a795c32a858382068fa5b5cf25af69a77">q_close</a>(c);</div>
+<div class="line">    <span class="keywordflow">if</span> (num_ports == 0)</div>
+<div class="line">        <span class="comment">// if no -p args were given, we listen on two ports by default</span></div>
+<div class="line">        num_ports = 2;</div>
+<div class="line"></div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">int</span> dir_fd = open(dir, O_RDONLY | O_CLOEXEC);</div>
+<div class="line">    ensure(dir_fd != -1, <span class="stringliteral">&quot;%s does not exist&quot;</span>, dir);</div>
+<div class="line"></div>
+<div class="line">    <span class="keyword">struct </span>w_engine * <span class="keyword">const</span> w = <a name="a10"></a><a class="code" href="quant_8h.html#aaaa9e2055f52f273429f28d1979893b2">q_init</a>(ifname, cert, key, 0, 0, <span class="keyword">false</span>);</div>
+<div class="line">    <span class="keyword">struct </span><a class="code" href="structq__conn.html">q_conn</a> * conn[MAXPORTS];</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; num_ports; i++) {</div>
+<div class="line">        conn[i] = <a name="a11"></a><a class="code" href="quant_8h.html#ac6e72671693d868a07bf17e6dd097632">q_bind</a>(w, port[i]);</div>
+<div class="line">        warn(DBG, <span class="stringliteral">&quot;%s waiting on %s port %d&quot;</span>, basename(argv[0]), ifname,</div>
+<div class="line">             port[i]);</div>
 <div class="line">    }</div>
 <div class="line"></div>
-<div class="line">    <a name="a10"></a><a class="code" href="quant_8h.html#ad35b637183ff9f9c00ef371bd986bd30">q_cleanup</a>(q);</div>
-<div class="line">    warn(debug, &quot;%s exiting&quot;, basename(argv[0]));</div>
-<div class="line">    return 0;</div>
+<div class="line">    <span class="keywordtype">bool</span> first_conn = <span class="keyword">true</span>;</div>
+<div class="line">    http_parser_settings settings = {.on_url = serve_cb};</div>
+<div class="line"></div>
+<div class="line">    <span class="keywordflow">while</span> (1) {</div>
+<div class="line">        <span class="keyword">struct </span><a class="code" href="structq__conn.html">q_conn</a> * c = <a name="a12"></a><a class="code" href="quant_8h.html#a84a768c49cd352e1c8a109bda56ef3a6">q_rx_ready</a>(first_conn ? 0 : timeout);</div>
+<div class="line">        <span class="keywordflow">if</span> (c == 0)</div>
+<div class="line">            <span class="keywordflow">break</span>;</div>
+<div class="line">        first_conn = <span class="keyword">false</span>;</div>
+<div class="line"></div>
+<div class="line">        <span class="comment">// do we need to q_accept?</span></div>
+<div class="line">        <span class="keywordtype">size_t</span> i = 0;</div>
+<div class="line">        <span class="keywordflow">for</span> (; i &lt; num_ports; i++)</div>
+<div class="line">            <span class="keywordflow">if</span> (c == conn[i]) {</div>
+<div class="line">                <a name="a13"></a><a class="code" href="quant_8h.html#a3da1ca1e589303333e8bba9cfbb1f4da">q_accept</a>(0);</div>
+<div class="line">                <span class="keywordflow">break</span>;</div>
+<div class="line">            }</div>
+<div class="line">        <span class="keywordflow">if</span> (i &lt; num_ports)</div>
+<div class="line">            <span class="keywordflow">continue</span>;</div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line">        <span class="keywordflow">while</span> (1) {</div>
+<div class="line">            <span class="comment">// do we need to handle a request?</span></div>
+<div class="line">            <span class="keyword">struct </span>cb_data d = {.c = c, .<a name="a14"></a><a class="code" href="structq__conn.html#a3f244414e35b3f452821cc6ceb2af485">w</a> = w, .dir = dir_fd};</div>
+<div class="line">            http_parser parser = {.data = &amp;d};</div>
+<div class="line"></div>
+<div class="line">            http_parser_init(&amp;parser, HTTP_REQUEST);</div>
+<div class="line">            <span class="keyword">struct </span>w_iov_sq q = w_iov_sq_initializer(q);</div>
+<div class="line">            <span class="keyword">struct </span><a class="code" href="structq__stream.html">q_stream</a> * s = <a name="a15"></a><a class="code" href="quant_8h.html#a3eca43a72005c71781fd6139f1f8d798">q_read</a>(c, &amp;q, <span class="keyword">false</span>);</div>
+<div class="line"></div>
+<div class="line">            <span class="keywordflow">if</span> (sq_empty(&amp;q))</div>
+<div class="line">                <span class="keywordflow">break</span>;</div>
+<div class="line"></div>
+<div class="line">            d.s = s;</div>
+<div class="line">            <span class="keyword">struct </span>w_iov * v = 0;</div>
+<div class="line">            sq_foreach (v, &amp;q, next) {</div>
+<div class="line">                <span class="keyword">const</span> <span class="keywordtype">size_t</span> parsed = http_parser_execute(</div>
+<div class="line">                    &amp;parser, &amp;settings, (<span class="keywordtype">char</span> *)v-&gt;buf, v-&gt;len);</div>
+<div class="line">                <span class="keywordflow">if</span> (parsed != v-&gt;len) {</div>
+<div class="line">                    warn(ERR, <span class="stringliteral">&quot;HTTP parser error: %.*s&quot;</span>, v-&gt;len - parsed,</div>
+<div class="line">                         &amp;v-&gt;buf[parsed]);</div>
+<div class="line">                    ret = 1;</div>
+<div class="line">                    <span class="keywordflow">break</span>;</div>
+<div class="line">                }</div>
+<div class="line">                <span class="keywordflow">if</span> (<a name="a16"></a><a class="code" href="quant_8h.html#a42c2660f4fddae758cab91e6f5365880">q_is_str_closed</a>(s))</div>
+<div class="line">                    <span class="keywordflow">break</span>;</div>
+<div class="line">            }</div>
+<div class="line">            <a class="code" href="quant_8h.html#a4a7935a14e509d989eda300f16daf086">q_free</a>(&amp;q);</div>
+<div class="line">        }</div>
+<div class="line">        <a name="a17"></a><a class="code" href="quant_8h.html#a795c32a858382068fa5b5cf25af69a77">q_close</a>(c);</div>
+<div class="line">    }</div>
+<div class="line"></div>
+<div class="line">    <a name="a18"></a><a class="code" href="quant_8h.html#a22f108de18d6532a45071881f7fb4dca">q_cleanup</a>(w);</div>
+<div class="line">    warn(DBG, <span class="stringliteral">&quot;%s exiting&quot;</span>, basename(argv[0]));</div>
+<div class="line">    <span class="keywordflow">return</span> ret;</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 13 2017 14:28:46 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 5 2018 15:07:23 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

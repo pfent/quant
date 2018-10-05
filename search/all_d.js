@@ -1,13 +1,16 @@
 var searchData=
 [
   ['nbufs',['nbufs',['../quic_8c.html#af04bbb4616509b300b7ff3a7a49660de',1,'quic.c']]],
-  ['needed_5fack_5fblock_5flen',['needed_ack_block_len',['../frame_8c.html#ae139b00759d9d8db6d1e35917655600f',1,'frame.c']]],
-  ['needed_5flg_5fack_5flen',['needed_lg_ack_len',['../frame_8c.html#adab36476b9c7a8f2e849ff09f4a0256a',1,'frame.c']]],
-  ['needed_5foff_5flen',['needed_off_len',['../frame_8c.html#ad82df9b455f7872d73be99589ef0fe19',1,'frame.c']]],
-  ['needed_5fpkt_5fnr_5flen',['needed_pkt_nr_len',['../pkt_8c.html#ae230cbc93b330096c2d781b56bd62364',1,'pkt.c']]],
-  ['needed_5fsid_5flen',['needed_sid_len',['../frame_8c.html#a8e66c509135b66e394343247ed37f2e1',1,'frame.c']]],
-  ['new_5fconn',['new_conn',['../quic_8c.html#a9d8125fd87afe3d3df3ac6651f3973f0',1,'quic.c']]],
-  ['new_5fstream',['new_stream',['../stream_8c.html#ab0b3499ca041b2c1fbad0ecf43919744',1,'new_stream(struct q_conn *const c, const uint32_t id):&#160;stream.c'],['../stream_8h.html#ab0b3499ca041b2c1fbad0ecf43919744',1,'new_stream(struct q_conn *const c, const uint32_t id):&#160;stream.c']]],
-  ['next_5fsid',['next_sid',['../structq__conn.html#a0bf5bdca945bb4b1af82d25667a25140',1,'q_conn']]],
-  ['nr',['nr',['../structpkt__meta.html#aeae1d2cd4d2f54e96370bf796fe68791',1,'pkt_meta']]]
+  ['needed_5fpkt_5fnr_5flen',['needed_pkt_nr_len',['../pkt_8c.html#a49535313dfd1afad8743aef5abe2d30c',1,'pkt.c']]],
+  ['needs_5fack',['needs_ack',['../pn_8h.html#aa7ed02733032177ff456b060fa0eed8e',1,'pn.h']]],
+  ['needs_5ftx',['needs_tx',['../structq__conn.html#a8f515035f5b42579e853757b82f37b08',1,'q_conn']]],
+  ['new_5fconn',['new_conn',['../conn_8c.html#ab6768a591006ee6e326e91425eb105fb',1,'new_conn(struct w_engine *const w, const uint32_t vers, const struct cid *const dcid, const struct cid *const scid, const struct sockaddr_in *const peer, const char *const peer_name, const uint16_t port, const uint64_t idle_to):&#160;conn.c'],['../conn_8h.html#ab6768a591006ee6e326e91425eb105fb',1,'new_conn(struct w_engine *const w, const uint32_t vers, const struct cid *const dcid, const struct cid *const scid, const struct sockaddr_in *const peer, const char *const peer_name, const uint16_t port, const uint64_t idle_to):&#160;conn.c']]],
+  ['new_5fin_5fdata_5fmax',['new_in_data_max',['../structq__stream.html#a2d0522f128527120ab29e423c90a461f',1,'q_stream']]],
+  ['new_5fmax_5fbidi_5fstreams',['new_max_bidi_streams',['../structtransport__params.html#a600d2d1d748bab0be90e8c4145ba0b91',1,'transport_params']]],
+  ['new_5fmax_5fdata',['new_max_data',['../structtransport__params.html#ae962b4557ad4830b036a82c53316d89a',1,'transport_params']]],
+  ['new_5fstream',['new_stream',['../stream_8c.html#a300bcafbad60488eb0b6b0560eb1b645',1,'new_stream(struct q_conn *const c, const int64_t id):&#160;stream.c'],['../stream_8h.html#a300bcafbad60488eb0b6b0560eb1b645',1,'new_stream(struct q_conn *const c, const int64_t id):&#160;stream.c']]],
+  ['next_5fsid',['next_sid',['../structq__conn.html#ab87bc9f0d203bf0d80f18143c906584e',1,'q_conn']]],
+  ['nr',['nr',['../structpkt__hdr.html#a23823bfa2cf1a6d7052bd71115458d46',1,'pkt_hdr']]],
+  ['nrm',['NRM',['../quic_8h.html#ade01bc98e1632cd645e0f33757d70d2e',1,'quic.h']]],
+  ['num_5ffram_5ftypes',['NUM_FRAM_TYPES',['../frame_8h.html#a9d41e13ff77cca0577fa33baf6e2963c',1,'frame.h']]]
 ];

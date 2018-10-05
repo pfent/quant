@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">quant
-   &#160;<span id="projectnumber">0.0.5</span>
+   &#160;<span id="projectnumber">0.0.14</span>
    </div>
   </td>
  </tr>
@@ -71,6 +71,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals_func.html"><span>Functions</span></a></li>
       <li><a href="globals_vars.html"><span>Variables</span></a></li>
       <li><a href="globals_type.html"><span>Typedefs</span></a></li>
+      <li><a href="globals_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="globals_eval.html"><span>Enumerator</span></a></li>
       <li><a href="globals_defs.html"><span>Macros</span></a></li>
     </ul>
   </div>
@@ -95,7 +97,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals_r.html#index_r"><span>r</span></a></li>
       <li><a href="globals_s.html#index_s"><span>s</span></a></li>
       <li><a href="globals_t.html#index_t"><span>t</span></a></li>
+      <li><a href="globals_u.html#index_u"><span>u</span></a></li>
       <li class="current"><a href="globals_v.html#index_v"><span>v</span></a></li>
+      <li><a href="globals_w.html#index_w"><span>w</span></a></li>
+      <li><a href="globals_y.html#index_y"><span>y</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -104,7 +109,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -117,17 +122,44 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock">Here is a list of all functions, variables, defines, enums, and typedefs with links to the files they belong to:</div>
 
 <h3><a class="anchor" id="index_v"></a>- v -</h3><ul>
-<li>verifier
-: <a class="el" href="quic_8c.html#acfbcf55db75b8923e657c02137ef1373">quic.c</a>
+<li>VARINT1_MAX
+: <a class="el" href="marshall_8h.html#aac940276f5fca6215b4fa7e68a00775a">marshall.h</a>
+</li>
+<li>VARINT2_MAX
+: <a class="el" href="marshall_8h.html#a5f88cd970ff663ecfb133107c6735e10">marshall.h</a>
+</li>
+<li>VARINT4_MAX
+: <a class="el" href="marshall_8h.html#a76a8d68c65624e594554871ce013bc6d">marshall.h</a>
+</li>
+<li>VARINT8_MAX
+: <a class="el" href="marshall_8h.html#a8be34ac37a6bd7c298247a1be00ed4f6">marshall.h</a>
+</li>
+<li>VARINT_MAX
+: <a class="el" href="marshall_8h.html#abdded853f553807df4d7ff2363c313e8">marshall.h</a>
+</li>
+<li>varint_size_needed()
+: <a class="el" href="marshall_8c.html#a5ef78b886a8420375943612d4329807a">marshall.c</a>
+, <a class="el" href="marshall_8h.html#a5ef78b886a8420375943612d4329807a">marshall.h</a>
+</li>
+<li>verify_prot()
+: <a class="el" href="conn_8c.html#ac44ed4ab684be51bcd980e04441fd729">conn.c</a>
+</li>
+<li>verify_rtry_tok()
+: <a class="el" href="tls_8c.html#a8c5c3ea8870ffcce37af25d76516302c">tls.c</a>
+, <a class="el" href="tls_8h.html#a8c5c3ea8870ffcce37af25d76516302c">tls.h</a>
 </li>
 <li>vers_supported()
-: <a class="el" href="conn_8c.html#afecc315546eeb1568a211c3ae99c25a4">conn.c</a>
+: <a class="el" href="conn_8c.html#a1ae0706a577e85efbcfacf517a329dbe">conn.c</a>
+, <a class="el" href="conn_8h.html#a1ae0706a577e85efbcfacf517a329dbe">conn.h</a>
+</li>
+<li>vneg_or_rtry_resp()
+: <a class="el" href="conn_8c.html#a61fab7f448fb816e2b147319ef693202">conn.c</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 13 2017 14:28:46 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 5 2018 15:07:24 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">quant
-   &#160;<span id="projectnumber">0.0.5</span>
+   &#160;<span id="projectnumber">0.0.14</span>
    </div>
   </td>
  </tr>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,291 +81,623 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a065c5f60305fee3569f887679366939.html">src</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">conn.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;ev.h&gt;</code><br/>
-<code>#include &lt;picotls.h&gt;</code><br/>
-<code>#include &lt;pthread.h&gt;</code><br/>
+<div class="textblock"><code>#include &lt;math.h&gt;</code><br/>
+<code>#include &lt;netinet/in.h&gt;</code><br/>
+<code>#include &lt;stdbool.h&gt;</code><br/>
+<code>#include &lt;stddef.h&gt;</code><br/>
 <code>#include &lt;stdint.h&gt;</code><br/>
-<code>#include &lt;sys/socket.h&gt;</code><br/>
+<code>#include &lt;ev.h&gt;</code><br/>
+<code>#include &lt;picotls.h&gt;</code><br/>
 <code>#include &lt;warpcore/warpcore.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="diet_8h_source.html">diet.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="pn_8h_source.html">pn.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="quic_8h_source.html">quic.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="recovery_8h_source.html">recovery.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="tls_8h_source.html">tls.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for conn.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="conn_8h__incl.png" border="0" usemap="#src_2conn_8h" alt=""/></div>
 <map name="src_2conn_8h" id="src_2conn_8h">
-<area shape="rect" id="node8" href="diet_8h.html" title="diet.h" alt="" coords="303,80,357,107"/><area shape="rect" id="node10" href="quic_8h.html" title="quic.h" alt="" coords="119,80,176,107"/></map>
+<area shape="rect" id="node10" href="diet_8h.html" title="diet.h" alt="" coords="617,155,671,181"/><area shape="rect" id="node11" href="pn_8h.html" title="pn.h" alt="" coords="685,80,731,107"/><area shape="rect" id="node12" href="quic_8h.html" title="quic.h" alt="" coords="1014,155,1071,181"/><area shape="rect" id="node18" href="tls_8h.html" title="tls.h" alt="" coords="379,155,425,181"/><area shape="rect" id="node19" href="recovery_8h.html" title="recovery.h" alt="" coords="1504,155,1585,181"/><area shape="rect" id="node17" href="frame_8h.html" title="frame.h" alt="" coords="965,229,1032,256"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="conn_8h__dep__incl.png" border="0" usemap="#src_2conn_8hdep" alt=""/></div>
 <map name="src_2conn_8hdep" id="src_2conn_8hdep">
-<area shape="rect" id="node2" href="conn_8c.html" title="src/conn.c" alt="" coords="5,80,87,107"/><area shape="rect" id="node3" href="frame_8c.html" title="src/frame.c" alt="" coords="112,80,200,107"/><area shape="rect" id="node4" href="pkt_8c.html" title="src/pkt.c" alt="" coords="225,80,297,107"/><area shape="rect" id="node5" href="quic_8c.html" title="src/quic.c" alt="" coords="322,80,400,107"/><area shape="rect" id="node6" href="stream_8c.html" title="src/stream.c" alt="" coords="425,80,519,107"/></map>
+<area shape="rect" id="node2" href="conn_8c.html" title="src/conn.c" alt="" coords="5,155,87,181"/><area shape="rect" id="node3" href="pkt_8h.html" title="src/pkt.h" alt="" coords="234,80,307,107"/><area shape="rect" id="node4" href="frame_8c.html" title="src/frame.c" alt="" coords="112,155,200,181"/><area shape="rect" id="node5" href="pkt_8c.html" title="src/pkt.c" alt="" coords="225,155,297,181"/><area shape="rect" id="node6" href="quic_8c.html" title="src/quic.c" alt="" coords="322,155,400,181"/><area shape="rect" id="node7" href="stream_8c.html" title="src/stream.c" alt="" coords="425,155,519,181"/><area shape="rect" id="node8" href="tls_8c.html" title="src/tls.c" alt="" coords="544,155,613,181"/><area shape="rect" id="node9" href="stream_8h.html" title="src/stream.h" alt="" coords="331,80,425,107"/><area shape="rect" id="node10" href="recovery_8c.html" title="src/recovery.c" alt="" coords="638,155,743,181"/><area shape="rect" id="node11" href="pn_8c.html" title="src/pn.c" alt="" coords="653,80,723,107"/></map>
 </div>
 </div>
 <p><a href="conn_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtransport__params.html">transport_params</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__cid__map.html">q_cid_map</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html">q_conn</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A QUIC connection.  <a href="structq__conn.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structooo__0rtt.html">ooo_0rtt</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a1f85a7484b5819515cdb1f38044da49b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a1f85a7484b5819515cdb1f38044da49b">CONN_STAT_CLSD</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:a1f85a7484b5819515cdb1f38044da49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71481e9b68e56debff5735caa6b0a3ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a71481e9b68e56debff5735caa6b0a3ee">CONN_STAT_VERS_SENT</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:a71481e9b68e56debff5735caa6b0a3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e1a3db37211cf95043a7f9e357a1192"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a8e1a3db37211cf95043a7f9e357a1192">CONN_STAT_VERS_REJ</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:a8e1a3db37211cf95043a7f9e357a1192"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fe796fc0765f5ee4e39bdc6119a5ec8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a9fe796fc0765f5ee4e39bdc6119a5ec8">CONN_STAT_VERS_OK</a>&#160;&#160;&#160;3</td></tr>
-<tr class="separator:a9fe796fc0765f5ee4e39bdc6119a5ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9f146c411a05648302d9014a69ee565"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#ab9f146c411a05648302d9014a69ee565">CONN_STAT_ESTB</a>&#160;&#160;&#160;4</td></tr>
-<tr class="separator:ab9f146c411a05648302d9014a69ee565"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2825c2aa0fb893da66ad8d3288b47691"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a2825c2aa0fb893da66ad8d3288b47691">CONN_FLAG_CLNT</a>&#160;&#160;&#160;0x01</td></tr>
-<tr class="memdesc:a2825c2aa0fb893da66ad8d3288b47691"><td class="mdescLeft">&#160;</td><td class="mdescRight">We are client on this connection (or server)  <a href="#a2825c2aa0fb893da66ad8d3288b47691">More...</a><br/></td></tr>
-<tr class="separator:a2825c2aa0fb893da66ad8d3288b47691"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f7804662001077369c42335446795e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a4f7804662001077369c42335446795e1">CONN_FLAG_EMBR</a>&#160;&#160;&#160;0x02</td></tr>
-<tr class="memdesc:a4f7804662001077369c42335446795e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an embryonic connection.  <a href="#a4f7804662001077369c42335446795e1">More...</a><br/></td></tr>
-<tr class="separator:a4f7804662001077369c42335446795e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ebe5ea49086b7d2ad82f56d6ccc7e0d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a3ebe5ea49086b7d2ad82f56d6ccc7e0d">CONN_FLAG_RX</a>&#160;&#160;&#160;0x04</td></tr>
-<tr class="memdesc:a3ebe5ea49086b7d2ad82f56d6ccc7e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">We had an RX event on this connection.  <a href="#a3ebe5ea49086b7d2ad82f56d6ccc7e0d">More...</a><br/></td></tr>
-<tr class="separator:a3ebe5ea49086b7d2ad82f56d6ccc7e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacea38c1c7f60248ad096233b80256b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#aacea38c1c7f60248ad096233b80256b0">CONN_FLAG_TX</a>&#160;&#160;&#160;0x08</td></tr>
-<tr class="memdesc:aacea38c1c7f60248ad096233b80256b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">We have a pending TX on this connection.  <a href="#aacea38c1c7f60248ad096233b80256b0">More...</a><br/></td></tr>
-<tr class="separator:aacea38c1c7f60248ad096233b80256b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e2dc78cee8d2e169f824f363b16f824"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a9e2dc78cee8d2e169f824f363b16f824">is_clnt</a>(c)&#160;&#160;&#160;(<a class="el" href="quic_8h.html#a2e19342e141828d7fe9b2870e5d7d70a">is_set</a>(<a class="el" href="conn_8h.html#a2825c2aa0fb893da66ad8d3288b47691">CONN_FLAG_CLNT</a>, (c)-&gt;flags))</td></tr>
-<tr class="separator:a9e2dc78cee8d2e169f824f363b16f824"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f18b98cf6f31d11b1ec0f77ebc56b55"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a3f18b98cf6f31d11b1ec0f77ebc56b55">is_serv</a>(c)&#160;&#160;&#160;(!<a class="el" href="conn_8h.html#a9e2dc78cee8d2e169f824f363b16f824">is_clnt</a>(c))</td></tr>
-<tr class="separator:a3f18b98cf6f31d11b1ec0f77ebc56b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46d6bc45039ca4abb856f8ddde80f679"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a46d6bc45039ca4abb856f8ddde80f679">conn_type</a>(c)</td></tr>
-<tr class="separator:a46d6bc45039ca4abb856f8ddde80f679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36daba4f4585170e66aeb964bedfd0ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a36daba4f4585170e66aeb964bedfd0ab">CONN_STATE</a>(k, v)&#160;&#160;&#160;k = v</td></tr>
+<tr class="separator:a36daba4f4585170e66aeb964bedfd0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f567945c3f8d5d518f5463ec30776d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a3f567945c3f8d5d518f5463ec30776d0">CONN_STATES</a></td></tr>
+<tr class="separator:a3f567945c3f8d5d518f5463ec30776d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade2abf64e3b30fc0b5e1b95735ab6677"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#ade2abf64e3b30fc0b5e1b95735ab6677">cid2str</a>(i)&#160;&#160;&#160;<a class="el" href="quic_8h.html#a0721d3a6a0adbe5443a85d94ee4da000">hex2str</a>((i)-&gt;id, (i)-&gt;len)</td></tr>
+<tr class="separator:ade2abf64e3b30fc0b5e1b95735ab6677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafe0352524fcaf303ff49ad82db8c0b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#aafe0352524fcaf303ff49ad82db8c0b2">act_scid</a>(c)&#160;&#160;&#160;sq_first(&amp;(c)-&gt;scid)</td></tr>
+<tr class="separator:aafe0352524fcaf303ff49ad82db8c0b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1f90992dac7a265565c3c1030465e81"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#ac1f90992dac7a265565c3c1030465e81">act_dcid</a>(c)&#160;&#160;&#160;sq_first(&amp;(c)-&gt;dcid)</td></tr>
+<tr class="separator:ac1f90992dac7a265565c3c1030465e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c0f38926bf49f25a195d29f9359b048"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a8c0f38926bf49f25a195d29f9359b048">scid2str</a>(c)&#160;&#160;&#160;<a class="el" href="conn_8h.html#aafe0352524fcaf303ff49ad82db8c0b2">act_scid</a>(c) ? <a class="el" href="conn_8h.html#ade2abf64e3b30fc0b5e1b95735ab6677">cid2str</a>(<a class="el" href="conn_8h.html#aafe0352524fcaf303ff49ad82db8c0b2">act_scid</a>(c)) : &quot;0&quot;</td></tr>
+<tr class="separator:a8c0f38926bf49f25a195d29f9359b048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb3b73ec79d83b80c8657b0f905dc657"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#acb3b73ec79d83b80c8657b0f905dc657">dcid2str</a>(c)&#160;&#160;&#160;<a class="el" href="conn_8h.html#ac1f90992dac7a265565c3c1030465e81">act_dcid</a>(c) ? <a class="el" href="conn_8h.html#ade2abf64e3b30fc0b5e1b95735ab6677">cid2str</a>(<a class="el" href="conn_8h.html#ac1f90992dac7a265565c3c1030465e81">act_dcid</a>(c)) : &quot;0&quot;</td></tr>
+<tr class="separator:acb3b73ec79d83b80c8657b0f905dc657"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50c1772c30f4ee9e48843b07d662835d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a50c1772c30f4ee9e48843b07d662835d">conn_to_state</a>(c, s)</td></tr>
+<tr class="separator:a50c1772c30f4ee9e48843b07d662835d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ac613aa6cd184e9b2bab8496502275125"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#ac613aa6cd184e9b2bab8496502275125">conn_state_t</a> { <a class="el" href="conn_8h.html#ac613aa6cd184e9b2bab8496502275125a5ee5fd642a3c3e4282eab05f06c191fa">CONN_STATES</a>
+ }</td></tr>
+<tr class="memdesc:ac613aa6cd184e9b2bab8496502275125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define connection states.  <a href="conn_8h.html#ac613aa6cd184e9b2bab8496502275125">More...</a><br/></td></tr>
+<tr class="separator:ac613aa6cd184e9b2bab8496502275125"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a40e2d83b42c68d523d0c5ec107036c67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a40e2d83b42c68d523d0c5ec107036c67">SPLAY_HEAD</a> (conn, <a class="el" href="structq__conn.html">q_conn</a>) <a class="el" href="conn_8c.html#a878fb1da04149fcdc07365e115384608">q_conns</a></td></tr>
-<tr class="separator:a40e2d83b42c68d523d0c5ec107036c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e57d3d33168af0723c96ce5f53ea343"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a6e57d3d33168af0723c96ce5f53ea343">conn_cmp</a> (const struct <a class="el" href="structq__conn.html">q_conn</a> *const a, const struct <a class="el" href="structq__conn.html">q_conn</a> *const b)</td></tr>
-<tr class="separator:a6e57d3d33168af0723c96ce5f53ea343"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51821558a515ddb0a82519dda6ca59bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a51821558a515ddb0a82519dda6ca59bb">detect_lost_pkts</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c)</td></tr>
-<tr class="separator:a51821558a515ddb0a82519dda6ca59bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72838cee7de7bdd1a191b70576763dd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a72838cee7de7bdd1a191b70576763dd7">init_conn</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, const uint64_t id, const struct sockaddr *const peer, const socklen_t peer_len)</td></tr>
-<tr class="separator:a72838cee7de7bdd1a191b70576763dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bd334012bc06cc7396e42d69eadf1c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a9bd334012bc06cc7396e42d69eadf1c5">ld_alarm</a> (struct ev_loop *const l, ev_timer *const w, int e)</td></tr>
-<tr class="separator:a9bd334012bc06cc7396e42d69eadf1c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ab3870e4aa765f7950dfcfa121a8bf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a3ab3870e4aa765f7950dfcfa121a8bf1">tx</a> (struct ev_loop *const l, ev_async *const w, int e)</td></tr>
-<tr class="separator:a3ab3870e4aa765f7950dfcfa121a8bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16367a2515c4405c02a46f4b45c6928d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structq__conn.html">q_conn</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a16367a2515c4405c02a46f4b45c6928d">get_conn</a> (const uint64_t id, const uint8_t type)</td></tr>
-<tr class="separator:a16367a2515c4405c02a46f4b45c6928d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32f31a027e4f89bf2b5de06aab392acc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a32f31a027e4f89bf2b5de06aab392acc">splay_head</a> (ipnp_splay, <a class="el" href="structq__conn.html">q_conn</a>) <a class="el" href="conn_8c.html#a0454ca3a56951d8047ce52968ee0145e">conns_by_ipnp</a></td></tr>
+<tr class="separator:a32f31a027e4f89bf2b5de06aab392acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e7647568ae643bad5cbdfa8c4a9a63e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a4e7647568ae643bad5cbdfa8c4a9a63e">splay_head</a> (cid_splay, <a class="el" href="structq__cid__map.html">q_cid_map</a>) <a class="el" href="conn_8c.html#a4c1182b8901fff5c6ade6169aee5db17">conns_by_cid</a></td></tr>
+<tr class="separator:a4e7647568ae643bad5cbdfa8c4a9a63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addd27b7fdfd0f22d4c24b474c8738213"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#addd27b7fdfd0f22d4c24b474c8738213">sl_head</a> (q_conn_sl, <a class="el" href="structq__conn.html">q_conn</a>)</td></tr>
+<tr class="separator:addd27b7fdfd0f22d4c24b474c8738213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a526357c19864e7579573160573a55c33"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpn__space.html">pn_space</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a526357c19864e7579573160573a55c33">pn_for_epoch</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, const <a class="el" href="tls_8h.html#aaca089f79f64e61453953e09fd226e46">epoch_t</a> e)</td></tr>
+<tr class="separator:a526357c19864e7579573160573a55c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90b995546c499b521dcb4bf6cc7e39f1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="tls_8h.html#aaca089f79f64e61453953e09fd226e46">epoch_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a90b995546c499b521dcb4bf6cc7e39f1">epoch_in</a> (const struct <a class="el" href="structq__conn.html">q_conn</a> *const c)</td></tr>
+<tr class="separator:a90b995546c499b521dcb4bf6cc7e39f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fb62916135158b6f5ee74df20ad52f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a0fb62916135158b6f5ee74df20ad52f8">ipnp_splay_cmp</a> (const struct <a class="el" href="structq__conn.html">q_conn</a> *const a, const struct <a class="el" href="structq__conn.html">q_conn</a> *const b)</td></tr>
+<tr class="separator:a0fb62916135158b6f5ee74df20ad52f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb1cca10ee153f6f5fa645a5364f98aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#abb1cca10ee153f6f5fa645a5364f98aa">cid_splay_cmp</a> (const struct <a class="el" href="structq__cid__map.html">q_cid_map</a> *const a, const struct <a class="el" href="structq__cid__map.html">q_cid_map</a> *const b)</td></tr>
+<tr class="separator:abb1cca10ee153f6f5fa645a5364f98aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a357ac5486d1486413ca48f135493c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#ae4a357ac5486d1486413ca48f135493c">splay_head</a> (ooo_0rtt_splay, <a class="el" href="structooo__0rtt.html">ooo_0rtt</a>) <a class="el" href="conn_8c.html#a4c93c4b2b38e3f2679194c2efe4acb19">ooo_0rtt_by_cid</a></td></tr>
+<tr class="separator:ae4a357ac5486d1486413ca48f135493c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a9223c58954ca661d5a181bf6650155"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a2a9223c58954ca661d5a181bf6650155">ooo_0rtt_cmp</a> (const struct <a class="el" href="structooo__0rtt.html">ooo_0rtt</a> *const a, const struct <a class="el" href="structooo__0rtt.html">ooo_0rtt</a> *const b)</td></tr>
+<tr class="separator:a2a9223c58954ca661d5a181bf6650155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0fec7fdf46459b57e64dbe4e79a8dc4"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4">conn_type</a> (const struct <a class="el" href="structq__conn.html">q_conn</a> *const c)</td></tr>
+<tr class="separator:aa0fec7fdf46459b57e64dbe4e79a8dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad42b6442b32fa307a6b5293b9b9df058"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#ad42b6442b32fa307a6b5293b9b9df058">is_force_neg_vers</a> (const uint32_t vers)</td></tr>
+<tr class="separator:ad42b6442b32fa307a6b5293b9b9df058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76639ec987a700f45570a287b25025ea"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a76639ec987a700f45570a287b25025ea">is_rsvd_vers</a> (const uint32_t vers)</td></tr>
+<tr class="separator:a76639ec987a700f45570a287b25025ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68c6b30b8665ce894ab5bed3c73a2d9d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a68c6b30b8665ce894ab5bed3c73a2d9d">is_zero</a> (const ev_tstamp t)</td></tr>
+<tr class="separator:a68c6b30b8665ce894ab5bed3c73a2d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07cb3f3bb2c38f820f0a7fd74de25d6d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a07cb3f3bb2c38f820f0a7fd74de25d6d">is_inf</a> (const ev_tstamp t)</td></tr>
+<tr class="separator:a07cb3f3bb2c38f820f0a7fd74de25d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ae0706a577e85efbcfacf517a329dbe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a1ae0706a577e85efbcfacf517a329dbe">vers_supported</a> (const uint32_t v)</td></tr>
+<tr class="separator:a1ae0706a577e85efbcfacf517a329dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ad1167799a2920119487df92e81b85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#ae7ad1167799a2920119487df92e81b85">tx_w</a> (struct ev_loop *const l, ev_async *const w, int e)</td></tr>
+<tr class="separator:ae7ad1167799a2920119487df92e81b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc878d206fec5787bb6754f6b53d0e8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#abc878d206fec5787bb6754f6b53d0e8a">tx</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, const bool rtx, const uint32_t limit)</td></tr>
+<tr class="separator:abc878d206fec5787bb6754f6b53d0e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87cb12b0afa8cdb9f2a41ce602d8ff96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a87cb12b0afa8cdb9f2a41ce602d8ff96">tx_ack</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, const <a class="el" href="tls_8h.html#aaca089f79f64e61453953e09fd226e46">epoch_t</a> e)</td></tr>
+<tr class="separator:a87cb12b0afa8cdb9f2a41ce602d8ff96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5749bce479cdde76574b7a1845be7fec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a5749bce479cdde76574b7a1845be7fec">rx</a> (struct ev_loop *const l, ev_io *const rx_w, int e)</td></tr>
 <tr class="separator:a5749bce479cdde76574b7a1845be7fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaeb047f2ca62d850715e3c5093b9cc02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#aaeb047f2ca62d850715e3c5093b9cc02">set_ld_alarm</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c)</td></tr>
-<tr class="separator:aaeb047f2ca62d850715e3c5093b9cc02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa8293a7755d9629bc72f04e31674e0f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#aaa8293a7755d9629bc72f04e31674e0f">tls_handshake</a> (struct <a class="el" href="structq__stream.html">q_stream</a> *const s)</td></tr>
-<tr class="separator:aaa8293a7755d9629bc72f04e31674e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ba45c97653b67d6f1825ddfc5c4c6b8"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a5ba45c97653b67d6f1825ddfc5c4c6b8">loop_run</a> (void *const arg)</td></tr>
 <tr class="separator:a5ba45c97653b67d6f1825ddfc5c4c6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23b98218d38ba7ad85c7d40ed1ca5546"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a23b98218d38ba7ad85c7d40ed1ca5546">loop_update</a> (struct ev_loop *const l, ev_async *const w, int e)</td></tr>
 <tr class="separator:a23b98218d38ba7ad85c7d40ed1ca5546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02d7b0c5a072e1b673358b52ac71f160"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a02d7b0c5a072e1b673358b52ac71f160">err_close</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, const uint16_t code, const uint8_t frm, const char *const fmt,...)</td></tr>
+<tr class="separator:a02d7b0c5a072e1b673358b52ac71f160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd38904c68cab87424e6aa8db723fd38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#afd38904c68cab87424e6aa8db723fd38">enter_closing</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c)</td></tr>
+<tr class="separator:afd38904c68cab87424e6aa8db723fd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6768a591006ee6e326e91425eb105fb"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structq__conn.html">q_conn</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#ab6768a591006ee6e326e91425eb105fb">new_conn</a> (struct w_engine *const w, const uint32_t vers, const struct <a class="el" href="structcid.html">cid</a> *const dcid, const struct <a class="el" href="structcid.html">cid</a> *const scid, const struct sockaddr_in *const peer, const char *const peer_name, const uint16_t port, const uint64_t idle_to)</td></tr>
+<tr class="separator:ab6768a591006ee6e326e91425eb105fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a5deef512e20b125b45899c6c80c6fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a4a5deef512e20b125b45899c6c80c6fc">free_conn</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c)</td></tr>
+<tr class="separator:a4a5deef512e20b125b45899c6c80c6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c9db996af2db57d04b8661d04dd0d68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a1c9db996af2db57d04b8661d04dd0d68">add_scid</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, const struct <a class="el" href="structcid.html">cid</a> *const id)</td></tr>
+<tr class="separator:a1c9db996af2db57d04b8661d04dd0d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5beee50c7414b14d1efb1e3e8ebe1ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#ae5beee50c7414b14d1efb1e3e8ebe1ee">add_dcid</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, const struct <a class="el" href="structcid.html">cid</a> *const id)</td></tr>
+<tr class="separator:ae5beee50c7414b14d1efb1e3e8ebe1ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a899b62b37418afb64d2f4ade6ee61e7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a899b62b37418afb64d2f4ade6ee61e7a">use_next_scid</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c)</td></tr>
+<tr class="separator:a899b62b37418afb64d2f4ade6ee61e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bcf08ef3dc5cc610474c8d0fa7947ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a4bcf08ef3dc5cc610474c8d0fa7947ee">do_conn_fc</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c)</td></tr>
+<tr class="separator:a4bcf08ef3dc5cc610474c8d0fa7947ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:abe3a1fa9a0607f044f4c3bebdd49297a"><td class="memItemLeft" align="right" valign="top">pthread_mutex_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#abe3a1fa9a0607f044f4c3bebdd49297a">q_conns_lock</a></td></tr>
-<tr class="separator:abe3a1fa9a0607f044f4c3bebdd49297a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5618a89ddad38bdb55093279d8d3fbc5"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a5618a89ddad38bdb55093279d8d3fbc5">conn_state_str</a> []</td></tr>
+<tr class="separator:a5618a89ddad38bdb55093279d8d3fbc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad69eef6944d04f3ab345f5a5edb8fb6c"><td class="memItemLeft" align="right" valign="top">struct q_conn_sl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#ad69eef6944d04f3ab345f5a5edb8fb6c">c_ready</a></td></tr>
+<tr class="separator:ad69eef6944d04f3ab345f5a5edb8fb6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a2825c2aa0fb893da66ad8d3288b47691"></a>
+<a class="anchor" id="ac1f90992dac7a265565c3c1030465e81"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CONN_FLAG_CLNT&#160;&#160;&#160;0x01</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>We are client on this connection (or server) </p>
-
-</div>
-</div>
-<a class="anchor" id="a4f7804662001077369c42335446795e1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CONN_FLAG_EMBR&#160;&#160;&#160;0x02</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This is an embryonic connection. </p>
-
-</div>
-</div>
-<a class="anchor" id="a3ebe5ea49086b7d2ad82f56d6ccc7e0d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CONN_FLAG_RX&#160;&#160;&#160;0x04</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>We had an RX event on this connection. </p>
-
-</div>
-</div>
-<a class="anchor" id="aacea38c1c7f60248ad096233b80256b0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CONN_FLAG_TX&#160;&#160;&#160;0x08</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>We have a pending TX on this connection. </p>
-
-</div>
-</div>
-<a class="anchor" id="a1f85a7484b5819515cdb1f38044da49b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CONN_STAT_CLSD&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab9f146c411a05648302d9014a69ee565"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CONN_STAT_ESTB&#160;&#160;&#160;4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a9fe796fc0765f5ee4e39bdc6119a5ec8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CONN_STAT_VERS_OK&#160;&#160;&#160;3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8e1a3db37211cf95043a7f9e357a1192"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CONN_STAT_VERS_REJ&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a71481e9b68e56debff5735caa6b0a3ee"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CONN_STAT_VERS_SENT&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a46d6bc45039ca4abb856f8ddde80f679"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define conn_type</td>
+          <td class="memname">#define act_dcid</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">c</td><td>)</td>
-          <td></td>
+          <td>&#160;&#160;&#160;sq_first(&amp;(c)-&gt;dcid)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="quic_8h.html#a2e19342e141828d7fe9b2870e5d7d70a">is_set</a>(<a class="code" href="conn_8h.html#a4f7804662001077369c42335446795e1">CONN_FLAG_EMBR</a>, (c)-&gt;flags)                                        \</div>
-<div class="line">         ? (<a class="code" href="conn_8h.html#a9e2dc78cee8d2e169f824f363b16f824">is_clnt</a>(c) ? <span class="stringliteral">&quot;embr clnt&quot;</span> : <span class="stringliteral">&quot;embr serv&quot;</span>)                            \</div>
-<div class="line">         : (<a class="code" href="conn_8h.html#a9e2dc78cee8d2e169f824f363b16f824">is_clnt</a>(c) ? <span class="stringliteral">&quot;clnt&quot;</span> : <span class="stringliteral">&quot;serv&quot;</span>))</div>
-<div class="ttc" id="conn_8h_html_a9e2dc78cee8d2e169f824f363b16f824"><div class="ttname"><a href="conn_8h.html#a9e2dc78cee8d2e169f824f363b16f824">is_clnt</a></div><div class="ttdeci">#define is_clnt(c)</div><div class="ttdef"><b>Definition:</b> conn.h:125</div></div>
-<div class="ttc" id="quic_8h_html_a2e19342e141828d7fe9b2870e5d7d70a"><div class="ttname"><a href="quic_8h.html#a2e19342e141828d7fe9b2870e5d7d70a">is_set</a></div><div class="ttdeci">#define is_set(f, v)</div><div class="ttdoc">Is flag f set in flags variable v? </div><div class="ttdef"><b>Definition:</b> quic.h:107</div></div>
-<div class="ttc" id="conn_8h_html_a4f7804662001077369c42335446795e1"><div class="ttname"><a href="conn_8h.html#a4f7804662001077369c42335446795e1">CONN_FLAG_EMBR</a></div><div class="ttdeci">#define CONN_FLAG_EMBR</div><div class="ttdoc">This is an embryonic connection. </div><div class="ttdef"><b>Definition:</b> conn.h:121</div></div>
+
+</div>
+</div>
+<a class="anchor" id="aafe0352524fcaf303ff49ad82db8c0b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define act_scid</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">c</td><td>)</td>
+          <td>&#160;&#160;&#160;sq_first(&amp;(c)-&gt;scid)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ade2abf64e3b30fc0b5e1b95735ab6677"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define cid2str</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">i</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="quic_8h.html#a0721d3a6a0adbe5443a85d94ee4da000">hex2str</a>((i)-&gt;id, (i)-&gt;len)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a36daba4f4585170e66aeb964bedfd0ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONN_STATE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">k, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">v&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;k = v</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3f567945c3f8d5d518f5463ec30776d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONN_STATES</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="conn_8h.html#a36daba4f4585170e66aeb964bedfd0ab">CONN_STATE</a>(conn_clsd, 0), <a class="code" href="conn_8h.html#a36daba4f4585170e66aeb964bedfd0ab">CONN_STATE</a>(conn_idle, 1),                        <a class="code" href="conn_8h.html#a36daba4f4585170e66aeb964bedfd0ab">\</a></div>
+<div class="line"><a class="code" href="conn_8h.html#a36daba4f4585170e66aeb964bedfd0ab">        CONN_STATE</a>(conn_opng, 2), <a class="code" href="conn_8h.html#a36daba4f4585170e66aeb964bedfd0ab">CONN_STATE</a>(conn_estb, 3),                    <a class="code" href="conn_8h.html#a36daba4f4585170e66aeb964bedfd0ab">\</a></div>
+<div class="line"><a class="code" href="conn_8h.html#a36daba4f4585170e66aeb964bedfd0ab">        CONN_STATE</a>(conn_qlse, 4), <a class="code" href="conn_8h.html#a36daba4f4585170e66aeb964bedfd0ab">CONN_STATE</a>(conn_clsg, 5),                    <a class="code" href="conn_8h.html#a36daba4f4585170e66aeb964bedfd0ab">\</a></div>
+<div class="line"><a class="code" href="conn_8h.html#a36daba4f4585170e66aeb964bedfd0ab">        CONN_STATE</a>(conn_drng, 6),</div>
+<div class="ttc" id="conn_8h_html_a36daba4f4585170e66aeb964bedfd0ab"><div class="ttname"><a href="conn_8h.html#a36daba4f4585170e66aeb964bedfd0ab">CONN_STATE</a></div><div class="ttdeci">#define CONN_STATE(k, v)</div><div class="ttdef"><b>Definition:</b> conn.h:77</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a9e2dc78cee8d2e169f824f363b16f824"></a>
+<a class="anchor" id="a50c1772c30f4ee9e48843b07d662835d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define is_clnt</td>
+          <td class="memname">#define conn_to_state</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">c, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">s&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
+<div class="line">        warn(DBG, <span class="stringliteral">&quot;conn %s state %s -&gt; &quot;</span> <a class="code" href="quic_8h.html#a8d23feea868a983c8c2b661e1e16972f">RED</a> <span class="stringliteral">&quot;%s&quot;</span> <a class="code" href="quic_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a>, <a class="code" href="conn_8h.html#a8c0f38926bf49f25a195d29f9359b048">scid2str</a>(c),            \</div>
+<div class="line">             <a class="code" href="conn_8h.html#a5618a89ddad38bdb55093279d8d3fbc5">conn_state_str</a>[(c)-&gt;state], <a class="code" href="conn_8h.html#a5618a89ddad38bdb55093279d8d3fbc5">conn_state_str</a>[(s)]);                 \</div>
+<div class="line">        if (likely((c)-&gt;state != (s)))                                         \</div>
+<div class="line">            (c)-&gt;state = (s);                                                  \</div>
+<div class="line">        else                                                                   \</div>
+<div class="line">            warn(ERR, <span class="stringliteral">&quot;useless transition %u %u!&quot;</span>, (c)-&gt;state, (s));           \</div>
+<div class="line">    } <span class="keywordflow">while</span> (0)</div>
+<div class="ttc" id="conn_8h_html_a5618a89ddad38bdb55093279d8d3fbc5"><div class="ttname"><a href="conn_8h.html#a5618a89ddad38bdb55093279d8d3fbc5">conn_state_str</a></div><div class="ttdeci">const char *const conn_state_str[]</div><div class="ttdef"><b>Definition:</b> conn.c:61</div></div>
+<div class="ttc" id="conn_8h_html_a8c0f38926bf49f25a195d29f9359b048"><div class="ttname"><a href="conn_8h.html#a8c0f38926bf49f25a195d29f9359b048">scid2str</a></div><div class="ttdeci">#define scid2str(c)</div><div class="ttdef"><b>Definition:</b> conn.h:293</div></div>
+<div class="ttc" id="quic_8h_html_ade01bc98e1632cd645e0f33757d70d2e"><div class="ttname"><a href="quic_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a></div><div class="ttdeci">#define NRM</div><div class="ttdoc">ANSI escape sequence: reset all to normal. </div><div class="ttdef"><b>Definition:</b> quic.h:407</div></div>
+<div class="ttc" id="quic_8h_html_a8d23feea868a983c8c2b661e1e16972f"><div class="ttname"><a href="quic_8h.html#a8d23feea868a983c8c2b661e1e16972f">RED</a></div><div class="ttdeci">#define RED</div><div class="ttdoc">ANSI escape sequence: red. </div><div class="ttdef"><b>Definition:</b> quic.h:415</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="acb3b73ec79d83b80c8657b0f905dc657"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dcid2str</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">c</td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="quic_8h.html#a2e19342e141828d7fe9b2870e5d7d70a">is_set</a>(<a class="el" href="conn_8h.html#a2825c2aa0fb893da66ad8d3288b47691">CONN_FLAG_CLNT</a>, (c)-&gt;flags))</td>
+          <td>&#160;&#160;&#160;<a class="el" href="conn_8h.html#ac1f90992dac7a265565c3c1030465e81">act_dcid</a>(c) ? <a class="el" href="conn_8h.html#ade2abf64e3b30fc0b5e1b95735ab6677">cid2str</a>(<a class="el" href="conn_8h.html#ac1f90992dac7a265565c3c1030465e81">act_dcid</a>(c)) : &quot;0&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a3f18b98cf6f31d11b1ec0f77ebc56b55"></a>
+<a class="anchor" id="a8c0f38926bf49f25a195d29f9359b048"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define is_serv</td>
+          <td class="memname">#define scid2str</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">c</td><td>)</td>
-          <td>&#160;&#160;&#160;(!<a class="el" href="conn_8h.html#a9e2dc78cee8d2e169f824f363b16f824">is_clnt</a>(c))</td>
+          <td>&#160;&#160;&#160;<a class="el" href="conn_8h.html#aafe0352524fcaf303ff49ad82db8c0b2">act_scid</a>(c) ? <a class="el" href="conn_8h.html#ade2abf64e3b30fc0b5e1b95735ab6677">cid2str</a>(<a class="el" href="conn_8h.html#aafe0352524fcaf303ff49ad82db8c0b2">act_scid</a>(c)) : &quot;0&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="ac613aa6cd184e9b2bab8496502275125"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="conn_8h.html#ac613aa6cd184e9b2bab8496502275125">conn_state_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define connection states. </p>
+<p><div class="dotgraph">
+<img src="dot_conn-states.png" alt="dot_conn-states.png" border="0" usemap="#dot_conn-states.map"/>
+<map name="dot_conn-states.map" id="dot_conn-states.map"></map>
+<div class="caption">
+Connection state diagram.</div>
+</div>
+ </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ac613aa6cd184e9b2bab8496502275125a5ee5fd642a3c3e4282eab05f06c191fa"></a>CONN_STATES</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a6e57d3d33168af0723c96ce5f53ea343"></a>
+<a class="anchor" id="ae5beee50c7414b14d1efb1e3e8ebe1ee"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int64_t conn_cmp </td>
+          <td class="memname">void add_dcid </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structcid.html">cid</a> *const&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="conn_8h_ae5beee50c7414b14d1efb1e3e8ebe1ee_cgraph.png" border="0" usemap="#conn_8h_ae5beee50c7414b14d1efb1e3e8ebe1ee_cgraph" alt=""/></div>
+<map name="conn_8h_ae5beee50c7414b14d1efb1e3e8ebe1ee_cgraph" id="conn_8h_ae5beee50c7414b14d1efb1e3e8ebe1ee_cgraph">
+<area shape="rect" id="node2" href="quic_8h.html#ab2b6d16118c27c0f7c91dfac30c5d446" title="cid_cpy" alt="" coords="128,5,195,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1c9db996af2db57d04b8661d04dd0d68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add_scid </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structcid.html">cid</a> *const&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="conn_8h_a1c9db996af2db57d04b8661d04dd0d68_cgraph.png" border="0" usemap="#conn_8h_a1c9db996af2db57d04b8661d04dd0d68_cgraph" alt=""/></div>
+<map name="conn_8h_a1c9db996af2db57d04b8661d04dd0d68_cgraph" id="conn_8h_a1c9db996af2db57d04b8661d04dd0d68_cgraph">
+<area shape="rect" id="node2" href="quic_8h.html#ab2b6d16118c27c0f7c91dfac30c5d446" title="cid_cpy" alt="" coords="128,5,195,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abb1cca10ee153f6f5fa645a5364f98aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cid_splay_cmp </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structq__cid__map.html">q_cid_map</a> *const&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structq__cid__map.html">q_cid_map</a> *const&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="conn_8h_abb1cca10ee153f6f5fa645a5364f98aa_cgraph.png" border="0" usemap="#conn_8h_abb1cca10ee153f6f5fa645a5364f98aa_cgraph" alt=""/></div>
+<map name="conn_8h_abb1cca10ee153f6f5fa645a5364f98aa_cgraph" id="conn_8h_abb1cca10ee153f6f5fa645a5364f98aa_cgraph">
+<area shape="rect" id="node2" href="conn_8c.html#ad2372a4b6e27ada905f0604c1725abf1" title="cid_cmp" alt="" coords="163,5,234,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0fec7fdf46459b57e64dbe4e79a8dc4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const char* conn_type </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4bcf08ef3dc5cc610474c8d0fa7947ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void do_conn_fc </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afd38904c68cab87424e6aa8db723fd38"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void enter_closing </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="conn_8h_afd38904c68cab87424e6aa8db723fd38_cgraph.png" border="0" usemap="#conn_8h_afd38904c68cab87424e6aa8db723fd38_cgraph" alt=""/></div>
+<map name="conn_8h_afd38904c68cab87424e6aa8db723fd38_cgraph" id="conn_8h_afd38904c68cab87424e6aa8db723fd38_cgraph">
+<area shape="rect" id="node2" href="conn_8h.html#a526357c19864e7579573160573a55c33" title="pn_for_epoch" alt="" coords="153,31,253,57"/><area shape="rect" id="node3" href="conn_8h.html#a68c6b30b8665ce894ab5bed3c73a2d9d" title="is_zero" alt="" coords="171,81,235,108"/><area shape="rect" id="node4" href="conn_8c.html#aea7c8de8c9a43a64163e900a70678ae2" title="enter_closed" alt="" coords="155,132,251,159"/><area shape="rect" id="node6" href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="733,81,816,108"/><area shape="rect" id="node5" href="quant_8h.html#a3da1ca1e589303333e8bba9cfbb1f4da" title="q_accept" alt="" coords="308,81,383,108"/><area shape="rect" id="node10" href="quant_8h.html#a84a768c49cd352e1c8a109bda56ef3a6" title="q_rx_ready" alt="" coords="302,132,389,159"/><area shape="rect" id="node7" href="quic_8c.html#afd98d880d46aa717596439adb85fcafc" title="cancel_api_call" alt="" coords="438,81,549,108"/><area shape="rect" id="node8" href="quic_8c.html#a3da1ca1e589303333e8bba9cfbb1f4da" title="q_accept" alt="" coords="604,31,679,57"/><area shape="rect" id="node9" href="quic_8c.html#a84a768c49cd352e1c8a109bda56ef3a6" title="q_rx_ready" alt="" coords="598,81,685,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a90b995546c499b521dcb4bf6cc7e39f1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="tls_8h.html#aaca089f79f64e61453953e09fd226e46">epoch_t</a> epoch_in </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a02d7b0c5a072e1b673358b52ac71f160"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void err_close </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t&#160;</td>
+          <td class="paramname"><em>frm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="conn_8h_a02d7b0c5a072e1b673358b52ac71f160_cgraph.png" border="0" usemap="#conn_8h_a02d7b0c5a072e1b673358b52ac71f160_cgraph" alt=""/></div>
+<map name="conn_8h_a02d7b0c5a072e1b673358b52ac71f160_cgraph" id="conn_8h_a02d7b0c5a072e1b673358b52ac71f160_cgraph">
+<area shape="rect" id="node2" href="conn_8c.html#afd38904c68cab87424e6aa8db723fd38" title="enter_closing" alt="" coords="128,107,227,133"/><area shape="rect" id="node3" href="conn_8h.html#a526357c19864e7579573160573a55c33" title="pn_for_epoch" alt="" coords="275,31,375,57"/><area shape="rect" id="node4" href="conn_8h.html#a68c6b30b8665ce894ab5bed3c73a2d9d" title="is_zero" alt="" coords="293,81,357,108"/><area shape="rect" id="node5" href="conn_8c.html#aea7c8de8c9a43a64163e900a70678ae2" title="enter_closed" alt="" coords="277,132,373,159"/><area shape="rect" id="node7" href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="856,81,939,108"/><area shape="rect" id="node6" href="quant_8h.html#a3da1ca1e589303333e8bba9cfbb1f4da" title="q_accept" alt="" coords="431,81,505,108"/><area shape="rect" id="node11" href="quant_8h.html#a84a768c49cd352e1c8a109bda56ef3a6" title="q_rx_ready" alt="" coords="425,132,511,159"/><area shape="rect" id="node8" href="quic_8c.html#afd98d880d46aa717596439adb85fcafc" title="cancel_api_call" alt="" coords="561,81,671,108"/><area shape="rect" id="node9" href="quic_8c.html#a3da1ca1e589303333e8bba9cfbb1f4da" title="q_accept" alt="" coords="727,31,801,57"/><area shape="rect" id="node10" href="quic_8c.html#a84a768c49cd352e1c8a109bda56ef3a6" title="q_rx_ready" alt="" coords="721,81,807,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a5deef512e20b125b45899c6c80c6fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void free_conn </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="conn_8h_a4a5deef512e20b125b45899c6c80c6fc_cgraph.png" border="0" usemap="#conn_8h_a4a5deef512e20b125b45899c6c80c6fc_cgraph" alt=""/></div>
+<map name="conn_8h_a4a5deef512e20b125b45899c6c80c6fc_cgraph" id="conn_8h_a4a5deef512e20b125b45899c6c80c6fc_cgraph">
+<area shape="rect" id="node2" href="stream_8c.html#acf612f3ac0b49aa8c7d6630c00e6b0ce" title="free_stream" alt="" coords="141,119,232,145"/><area shape="rect" id="node10" href="tls_8c.html#a2393aad5c0cf1cd399746ba5314e8c66" title="free_tls" alt="" coords="154,195,219,221"/><area shape="rect" id="node13" href="pn_8c.html#a3b132beb2506faada16af74535e27fec" title="free_pn" alt="" coords="154,245,219,272"/><area shape="rect" id="node14" href="diet_8c.html#aca2c7f843feefa74e9e6dca31bc41fd7" title="diet_free" alt="" coords="293,259,365,285"/><area shape="rect" id="node15" href="conn_8c.html#a899b62b37418afb64d2f4ade6ee61e7a" title="use_next_scid" alt="" coords="133,347,240,373"/><area shape="rect" id="node16" href="conn_8c.html#ad1e5e232a8372127e2130e85e7cdbb8d" title="use_next_dcid" alt="" coords="133,397,240,424"/><area shape="rect" id="node3" href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="288,56,371,83"/><area shape="rect" id="node4" href="diet_8c.html#a9064e32f6b50901d8f5685e53d2e4041" title="Inserts integer n of type t into the diet tree t. " alt="" coords="288,107,371,133"/><area shape="rect" id="node9" href="quant_8h.html#a4a7935a14e509d989eda300f16daf086" title="q_free" alt="" coords="300,157,359,184"/><area shape="rect" id="node5" href="diet_8c.html#a87c3c2cebc6ccf0911d3d05989352588" title="Pointer to the interval containing n in diet tree t. " alt="" coords="438,5,509,32"/><area shape="rect" id="node6" href="diet_8c.html#a85e4e10a029283a5798638bfaf387abd" title="Return maximum interval underneath i. " alt="" coords="436,56,511,83"/><area shape="rect" id="node7" href="diet_8c.html#a8f0e77727941f94b10b1ea1241df8eaa" title="Return minimum interval underneath i. " alt="" coords="438,107,509,133"/><area shape="rect" id="node8" href="diet_8c.html#a21164f67106bc7c1712e8b6596aa0253" title="Helper function to create a zero&#45;width interval containing (only) n. " alt="" coords="433,157,514,184"/><area shape="rect" id="node11" href="tls_8c.html#a28ce95450a6345dc4f1c85766e2edf8a" title="free_prot" alt="" coords="293,208,366,235"/><area shape="rect" id="node12" href="tls_8c.html#aa4d8aedc1bfd0aed4756bd90903c1884" title="dispose_cipher" alt="" coords="419,208,528,235"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0fb62916135158b6f5ee74df20ad52f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ipnp_splay_cmp </td>
           <td>(</td>
           <td class="paramtype">const struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
           <td class="paramname"><em>a</em>, </td>
@@ -384,126 +716,110 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a51821558a515ddb0a82519dda6ca59bb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void detect_lost_pkts </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
-          <td class="paramname"><em>c</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a16367a2515c4405c02a46f4b45c6928d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structq__conn.html">q_conn</a>* get_conn </td>
-          <td>(</td>
-          <td class="paramtype">const uint64_t&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint8_t&#160;</td>
-          <td class="paramname"><em>type</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a72838cee7de7bdd1a191b70576763dd7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void init_conn </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
-          <td class="paramname"><em>c</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint64_t&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const struct sockaddr *const&#160;</td>
-          <td class="paramname"><em>peer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const socklen_t&#160;</td>
-          <td class="paramname"><em>peer_len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a9bd334012bc06cc7396e42d69eadf1c5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ld_alarm </td>
-          <td>(</td>
-          <td class="paramtype">struct ev_loop *const&#160;</td>
-          <td class="paramname"><em>l</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ev_timer *const&#160;</td>
-          <td class="paramname"><em>w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>e</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="conn_8h_a9bd334012bc06cc7396e42d69eadf1c5_cgraph.png" border="0" usemap="#conn_8h_a9bd334012bc06cc7396e42d69eadf1c5_cgraph" alt=""/></div>
-<map name="conn_8h_a9bd334012bc06cc7396e42d69eadf1c5_cgraph" id="conn_8h_a9bd334012bc06cc7396e42d69eadf1c5_cgraph">
-<area shape="rect" id="node2" href="conn_8c.html#a09818812f3d51b69a2d3e28f8a3101b5" title="rtx" alt="" coords="166,347,205,373"/><area shape="rect" id="node20" href="conn_8c.html#aaeb047f2ca62d850715e3c5093b9cc02" title="set_ld_alarm" alt="" coords="397,397,493,424"/><area shape="rect" id="node21" href="conn_8c.html#a51821558a515ddb0a82519dda6ca59bb" title="detect_lost_pkts" alt="" coords="126,448,245,475"/><area shape="rect" id="node3" href="conn_8c.html#a8e30f6ed2441140c2306c8c9354253e8" title="do_tx" alt="" coords="294,347,349,373"/><area shape="rect" id="node4" href="diet_8c.html#a3ba0ac5feb124c6e3076dea437fa3b79" title="Inserts integer n into the diet tree t. " alt="" coords="404,347,487,373"/><area shape="rect" id="node10" href="pkt_8c.html#af392b36c58463646c250f5b01ea07238" title="enc_pkt" alt="" coords="411,169,479,196"/><area shape="rect" id="node5" href="diet_8c.html#a1bf88044b4af4e723b8bfc4cf0fe1420" title="Helper function to create a zero&#45;width interval containing (only) n. " alt="" coords="569,296,650,323"/><area shape="rect" id="node6" href="diet_8c.html#acff4764cdd209408ec31906773db2455" title="Pointer to the interval containing n in diet tree t. " alt="" coords="574,397,645,424"/><area shape="rect" id="node8" href="diet_8c.html#a85e4e10a029283a5798638bfaf387abd" title="Return maximum interval underneath i. " alt="" coords="765,347,840,373"/><area shape="rect" id="node9" href="diet_8c.html#a8f0e77727941f94b10b1ea1241df8eaa" title="Return minimum interval underneath i. " alt="" coords="767,448,838,475"/><area shape="rect" id="node7" href="diet_8c.html#a233a4b0f59b38d83775f80568cfb081f" title="Absolute minimal distance of n from the interval i,. " alt="" coords="767,397,838,424"/><area shape="rect" id="node11" href="pkt_8c.html#ae230cbc93b330096c2d781b56bd62364" title="needed_pkt_nr_len" alt="" coords="544,245,675,272"/><area shape="rect" id="node12" href="frame_8c.html#a8d41621adfc301bec8370f974e91c9cc" title="enc_ack_frame" alt="" coords="554,43,665,69"/><area shape="rect" id="node15" href="frame_8c.html#a89e5fa4a1820e4bb58711d4133fcf4e8" title="enc_padding_frame" alt="" coords="542,93,677,120"/><area shape="rect" id="node16" href="frame_8c.html#a305c92dea1718d0433357f179dacadbc" title="enc_stream_frame" alt="" coords="544,144,675,171"/><area shape="rect" id="node19" href="fnv__1a_8c.html#ae1a00a9fdbb5c3d2f338b60855c9c69b" title="Compute an FNV&#45;1a 64&#45;bit hash over the given buffer. " alt="" coords="579,195,640,221"/><area shape="rect" id="node13" href="frame_8c.html#adab36476b9c7a8f2e849ff09f4a0256a" title="needed_lg_ack_len" alt="" coords="736,56,869,83"/><area shape="rect" id="node14" href="frame_8c.html#ae139b00759d9d8db6d1e35917655600f" title="needed_ack_block_len" alt="" coords="725,5,880,32"/><area shape="rect" id="node17" href="frame_8c.html#a8e66c509135b66e394343247ed37f2e1" title="needed_sid_len" alt="" coords="747,183,859,209"/><area shape="rect" id="node18" href="frame_8c.html#ad82df9b455f7872d73be99589ef0fe19" title="needed_off_len" alt="" coords="747,132,858,159"/></map>
+<div class="center"><img src="conn_8h_a0fb62916135158b6f5ee74df20ad52f8_cgraph.png" border="0" usemap="#conn_8h_a0fb62916135158b6f5ee74df20ad52f8_cgraph" alt=""/></div>
+<map name="conn_8h_a0fb62916135158b6f5ee74df20ad52f8_cgraph" id="conn_8h_a0fb62916135158b6f5ee74df20ad52f8_cgraph">
+<area shape="rect" id="node2" href="conn_8c.html#afdb74c0ca180e047871005d0091a2932" title="sockaddr_in_cmp" alt="" coords="171,5,295,32"/></map>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad42b6442b32fa307a6b5293b9b9df058"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool is_force_neg_vers </td>
+          <td>(</td>
+          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramname"><em>vers</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a07cb3f3bb2c38f820f0a7fd74de25d6d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool is_inf </td>
+          <td>(</td>
+          <td class="paramtype">const ev_tstamp&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a76639ec987a700f45570a287b25025ea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool is_rsvd_vers </td>
+          <td>(</td>
+          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramname"><em>vers</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a68c6b30b8665ce894ab5bed3c73a2d9d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool is_zero </td>
+          <td>(</td>
+          <td class="paramtype">const ev_tstamp&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -555,6 +871,146 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="ab6768a591006ee6e326e91425eb105fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structq__conn.html">q_conn</a>* new_conn </td>
+          <td>(</td>
+          <td class="paramtype">struct w_engine *const&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramname"><em>vers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structcid.html">cid</a> *const&#160;</td>
+          <td class="paramname"><em>dcid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structcid.html">cid</a> *const&#160;</td>
+          <td class="paramname"><em>scid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct sockaddr_in *const&#160;</td>
+          <td class="paramname"><em>peer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>peer_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint64_t&#160;</td>
+          <td class="paramname"><em>idle_to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="conn_8h_ab6768a591006ee6e326e91425eb105fb_cgraph.png" border="0" usemap="#conn_8h_ab6768a591006ee6e326e91425eb105fb_cgraph" alt=""/></div>
+<map name="conn_8h_ab6768a591006ee6e326e91425eb105fb_cgraph" id="conn_8h_ab6768a591006ee6e326e91425eb105fb_cgraph">
+<area shape="rect" id="node2" href="quic_8h.html#ab2b6d16118c27c0f7c91dfac30c5d446" title="cid_cpy" alt="" coords="732,1403,799,1429"/><area shape="rect" id="node3" href="pn_8c.html#a08111eb107b4ea7f913acc44b761bda0" title="init_pn" alt="" coords="571,245,631,272"/><area shape="rect" id="node6" href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="1575,1183,1657,1209"/><area shape="rect" id="node10" href="stream_8h.html#a012bc210254cd3269ef892fcbd91e146" title="crpt_strm_id" alt="" coords="1269,448,1363,475"/><area shape="rect" id="node13" href="conn_8c.html#ac22c90477f7d4e5f8e96e3d536b58afb" title="idle_alarm" alt="" coords="725,1149,806,1176"/><area shape="rect" id="node16" href="conn_8c.html#aea7c8de8c9a43a64163e900a70678ae2" title="enter_closed" alt="" coords="1268,1461,1364,1488"/><area shape="rect" id="node20" href="recovery_8c.html#a60784c1a11f52e1b091994e1cfcc4609" title="init_rec" alt="" coords="569,843,633,869"/><area shape="rect" id="node35" href="conn_8c.html#ae7ad1167799a2920119487df92e81b85" title="tx_w" alt="" coords="576,741,627,768"/><area shape="rect" id="node36" href="conn_8c.html#a5749bce479cdde76574b7a1845be7fec" title="rx" alt="" coords="137,1299,175,1325"/><area shape="rect" id="node44" href="conn_8c.html#a1c9db996af2db57d04b8661d04dd0d68" title="add_scid" alt="" coords="564,1349,639,1376"/><area shape="rect" id="node45" href="stream_8c.html#a300bcafbad60488eb0b6b0560eb1b645" title="new_stream" alt="" coords="555,1045,648,1072"/><area shape="rect" id="node4" href="pn_8c.html#a8cb6a54f35c8a70e940f624856a0f7ab" title="ack_alarm" alt="" coords="901,144,984,171"/><area shape="rect" id="node5" href="pn_8h.html#aa7ed02733032177ff456b060fa0eed8e" title="needs_ack" alt="" coords="1273,144,1359,171"/><area shape="rect" id="node7" href="pn_8c.html#a805597624cb1f11414c53599dd3743e2" title="epoch_for_pn" alt="" coords="1079,93,1179,120"/><area shape="rect" id="node8" href="conn_8c.html#a87cb12b0afa8cdb9f2a41ce602d8ff96" title="tx_ack" alt="" coords="1099,448,1160,475"/><area shape="rect" id="node9" href="stream_8c.html#a7308501df4d06bbfd14665ae88caae02" title="get_stream" alt="" coords="1273,600,1359,627"/><area shape="rect" id="node11" href="conn_8h.html#a526357c19864e7579573160573a55c33" title="pn_for_epoch" alt="" coords="1266,1107,1366,1133"/><area shape="rect" id="node12" href="conn_8c.html#a061f6268bdb3054227eedf2ca20cb8a1" title="do_tx" alt="" coords="1289,347,1343,373"/><area shape="rect" id="node14" href="conn_8c.html#afd38904c68cab87424e6aa8db723fd38" title="enter_closing" alt="" coords="1080,1157,1179,1184"/><area shape="rect" id="node15" href="conn_8h.html#a68c6b30b8665ce894ab5bed3c73a2d9d" title="is_zero" alt="" coords="1284,1005,1348,1032"/><area shape="rect" id="node17" href="quant_8h.html#a3da1ca1e589303333e8bba9cfbb1f4da" title="q_accept" alt="" coords="1431,1461,1505,1488"/><area shape="rect" id="node19" href="quant_8h.html#a84a768c49cd352e1c8a109bda56ef3a6" title="q_rx_ready" alt="" coords="1425,1512,1511,1539"/><area shape="rect" id="node18" href="quic_8c.html#afd98d880d46aa717596439adb85fcafc" title="cancel_api_call" alt="" coords="1561,1487,1671,1513"/><area shape="rect" id="node21" href="recovery_8c.html#a335f186f63ae2582ce2c96767906b413" title="on_ld_alarm" alt="" coords="719,849,811,876"/><area shape="rect" id="node22" href="recovery_8c.html#a0ab224b867c365ffdb3150b57d836ee8" title="hshk_pkts_outstanding" alt="" coords="1051,752,1207,779"/><area shape="rect" id="node24" href="conn_8c.html#abc878d206fec5787bb6754f6b53d0e8a" title="tx" alt="" coords="923,652,962,679"/><area shape="rect" id="node33" href="recovery_8c.html#ae842cad0e5d3c7dae0bfb5abd97725b7" title="detect_lost_pkts" alt="" coords="883,997,1002,1024"/><area shape="rect" id="node34" href="recovery_8c.html#a34c871e59b25f984223ab9573ebf3332" title="set_ld_alarm" alt="" coords="895,852,991,879"/><area shape="rect" id="node23" href="stream_8h.html#ad30add9149d4bde85b9e2cc3e9159559" title="out_fully_acked" alt="" coords="1259,701,1373,728"/><area shape="rect" id="node25" href="conn_8c.html#ac0d0edf08b6c3f2b3a75ab87498def1f" title="tx_crypto" alt="" coords="1091,549,1167,576"/><area shape="rect" id="node26" href="conn_8c.html#a1a39c653f20bef724b56574fac9c449f" title="tx_stream_data" alt="" coords="1260,524,1372,551"/><area shape="rect" id="node27" href="conn_8c.html#a0b0c1eff62e65d38a175b6df4ea4ce80" title="do_conn_mgmt" alt="" coords="1074,1259,1185,1285"/><area shape="rect" id="node30" href="stream_8h.html#ae11750e72c5f654dd57041a830ee19a7" title="stream_needs_ctrl" alt="" coords="1065,600,1194,627"/><area shape="rect" id="node31" href="conn_8c.html#a7bc1cf055ddc94c793f81fdfc52ecdbb" title="tx_stream_ctrl" alt="" coords="1077,347,1182,373"/><area shape="rect" id="node32" href="conn_8h.html#a90b995546c499b521dcb4bf6cc7e39f1" title="epoch_in" alt="" coords="1092,651,1167,677"/><area shape="rect" id="node28" href="stream_8c.html#a878cdd4d69b352f501841456e8a43972" title="do_stream_id_fc" alt="" coords="1257,1309,1375,1336"/><area shape="rect" id="node29" href="conn_8c.html#ad1e5e232a8372127e2130e85e7cdbb8d" title="use_next_dcid" alt="" coords="1263,1653,1369,1680"/><area shape="rect" id="node37" href="conn_8c.html#a66e4de11f8294248216478c7d50a79e5" title="rx_pkts" alt="" coords="231,1400,297,1427"/><area shape="rect" id="node50" href="conn_8c.html#a4a5deef512e20b125b45899c6c80c6fc" title="free_conn" alt="" coords="225,1603,303,1629"/><area shape="rect" id="node38" href="quic_8c.html#a4e51fb8c9ebc5178b5131826ca26fb90" title="write_to_corpus" alt="" coords="372,1501,487,1528"/><area shape="rect" id="node39" href="pkt_8c.html#a94d443b77fda6907675a043e8ea52857" title="dec_pkt_hdr_beginning" alt="" coords="352,1552,507,1579"/><area shape="rect" id="node40" href="pkt_8c.html#ad23d5577b6b5cc73cbd731e011df11c4" title="log_pkt" alt="" coords="397,1603,461,1629"/><area shape="rect" id="node41" href="conn_8c.html#a9d982843405e4f50ac0c6b6977a3cc6c" title="get_conn_by_cid" alt="" coords="369,1248,489,1275"/><area shape="rect" id="node42" href="conn_8c.html#a042a55d10b57e402bf5982add4983181" title="get_conn_by_ipnp" alt="" coords="366,1299,493,1325"/><area shape="rect" id="node43" href="conn_8c.html#ab6768a591006ee6e326e91425eb105fb" title="new_conn" alt="" coords="389,1045,470,1072"/><area shape="rect" id="node47" href="tls_8c.html#aa4907143b04da6627e6cef421b920480" title="init_tls" alt="" coords="399,1349,459,1376"/><area shape="rect" id="node48" href="conn_8c.html#ad2372a4b6e27ada905f0604c1725abf1" title="cid_cmp" alt="" coords="394,1400,465,1427"/><area shape="rect" id="node49" href="conn_8c.html#ae5beee50c7414b14d1efb1e3e8ebe1ee" title="add_dcid" alt="" coords="564,1400,639,1427"/><area shape="rect" id="node46" href="stream_8c.html#a2853c95f04e70a8c7e836f881eedff8d" title="apply_stream_limits" alt="" coords="696,1251,835,1277"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2a9223c58954ca661d5a181bf6650155"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ooo_0rtt_cmp </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structooo__0rtt.html">ooo_0rtt</a> *const&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structooo__0rtt.html">ooo_0rtt</a> *const&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="conn_8h_a2a9223c58954ca661d5a181bf6650155_cgraph.png" border="0" usemap="#conn_8h_a2a9223c58954ca661d5a181bf6650155_cgraph" alt=""/></div>
+<map name="conn_8h_a2a9223c58954ca661d5a181bf6650155_cgraph" id="conn_8h_a2a9223c58954ca661d5a181bf6650155_cgraph">
+<area shape="rect" id="node2" href="conn_8c.html#ad2372a4b6e27ada905f0604c1725abf1" title="cid_cmp" alt="" coords="155,5,226,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a526357c19864e7579573160573a55c33"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static struct <a class="el" href="structpn__space.html">pn_space</a>* pn_for_epoch </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="tls_8h.html#aaca089f79f64e61453953e09fd226e46">epoch_t</a>&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a5749bce479cdde76574b7a1845be7fec"></a>
 <div class="memitem">
 <div class="memproto">
@@ -590,36 +1046,20 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="conn_8h_a5749bce479cdde76574b7a1845be7fec_cgraph.png" border="0" usemap="#conn_8h_a5749bce479cdde76574b7a1845be7fec_cgraph" alt=""/></div>
 <map name="conn_8h_a5749bce479cdde76574b7a1845be7fec_cgraph" id="conn_8h_a5749bce479cdde76574b7a1845be7fec_cgraph">
-<area shape="rect" id="node2" href="pkt_8c.html#a171671c1d791d808381669044f96f3d8" title="pkt_hdr_len" alt="" coords="698,220,787,247"/><area shape="rect" id="node3" href="fnv__1a_8c.html#ae1a00a9fdbb5c3d2f338b60855c9c69b" title="Compute an FNV&#45;1a 64&#45;bit hash over the given buffer. " alt="" coords="1237,1233,1299,1260"/><area shape="rect" id="node4" href="pkt_8c.html#adc5a82b2ed099f599d145cd1a315b188" title="pkt_nr" alt="" coords="523,372,581,399"/><area shape="rect" id="node5" href="pkt_8c.html#abd20d7031d9a908021cc269ff1c66e1f" title="pkt_cid" alt="" coords="520,423,584,449"/><area shape="rect" id="node6" href="conn_8c.html#a16367a2515c4405c02a46f4b45c6928d" title="get_conn" alt="" coords="515,575,589,601"/><area shape="rect" id="node7" href="conn_8c.html#a72838cee7de7bdd1a191b70576763dd7" title="init_conn" alt="" coords="515,1233,589,1260"/><area shape="rect" id="node8" href="diet_8c.html#a3ba0ac5feb124c6e3076dea437fa3b79" title="Inserts integer n into the diet tree t. " alt="" coords="1227,347,1309,373"/><area shape="rect" id="node14" href="stream_8c.html#ab0b3499ca041b2c1fbad0ecf43919744" title="new_stream" alt="" coords="867,637,960,664"/><area shape="rect" id="node15" href="stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="1042,637,1129,664"/><area shape="rect" id="node16" href="pkt_8c.html#a7050257a7cd6222a71d9606892d9e4e8" title="pkt_vers" alt="" coords="516,473,588,500"/><area shape="rect" id="node17" href="conn_8c.html#afecc315546eeb1568a211c3ae99c25a4" title="vers_supported" alt="" coords="497,524,607,551"/><area shape="rect" id="node18" href="frame_8c.html#a9d238111db5836d1311805ec0060e1bf" title="dec_frames" alt="" coords="507,119,597,145"/><area shape="rect" id="node32" href="conn_8c.html#aaa8293a7755d9629bc72f04e31674e0f" title="tls_handshake" alt="" coords="499,1132,605,1159"/><area shape="rect" id="node33" href="conn_8c.html#ac17246f0c632e2f8f9252aea0c441905" title="pick_from_server_vers" alt="" coords="475,220,629,247"/><area shape="rect" id="node34" href="conn_8c.html#a09818812f3d51b69a2d3e28f8a3101b5" title="rtx" alt="" coords="533,980,571,1007"/><area shape="rect" id="node44" href="quant_8h.html#a0dafbf7d9cf0003599f825c126a2cf76" title="q_connect" alt="" coords="93,904,176,931"/><area shape="rect" id="node47" href="conn_8c.html#a3ab3870e4aa765f7950dfcfa121a8bf1" title="tx" alt="" coords="533,1081,571,1108"/><area shape="rect" id="node50" href="quant_8h.html#a1dee2094bada943ba4c4dfac33988eea" title="q_accept" alt="" coords="515,1183,589,1209"/><area shape="rect" id="node9" href="diet_8c.html#a1bf88044b4af4e723b8bfc4cf0fe1420" title="Helper function to create a zero&#45;width interval containing (only) n. " alt="" coords="1421,372,1502,399"/><area shape="rect" id="node10" href="diet_8c.html#acff4764cdd209408ec31906773db2455" title="Pointer to the interval containing n in diet tree t. " alt="" coords="1426,271,1497,297"/><area shape="rect" id="node12" href="diet_8c.html#a85e4e10a029283a5798638bfaf387abd" title="Return maximum interval underneath i. " alt="" coords="1587,321,1661,348"/><area shape="rect" id="node13" href="diet_8c.html#a8f0e77727941f94b10b1ea1241df8eaa" title="Return minimum interval underneath i. " alt="" coords="1589,397,1659,424"/><area shape="rect" id="node11" href="diet_8c.html#a233a4b0f59b38d83775f80568cfb081f" title="Absolute minimal distance of n from the interval i,. " alt="" coords="1589,271,1659,297"/><area shape="rect" id="node19" href="frame_8c.html#adf88c0fa725c713a202aeee2c984c6c0" title="dec_stream_frame" alt="" coords="677,119,808,145"/><area shape="rect" id="node25" href="frame_8c.html#acdf69d786aecff0cc83e6f028bac9311" title="dec_ack_frame" alt="" coords="858,347,969,373"/><area shape="rect" id="node20" href="frame_8c.html#acc75ca28a2eb4901b42a3b32c0263309" title="dec_sid_len" alt="" coords="868,93,959,120"/><area shape="rect" id="node21" href="frame_8c.html#aac68aeedc9f05fc03c29aed36de4d016" title="dec_off_len" alt="" coords="869,144,958,171"/><area shape="rect" id="node22" href="quant_8h.html#a7d387f2075cd8ab630129b0c863433b4" title="q_read" alt="" coords="883,195,944,221"/><area shape="rect" id="node23" href="quant_8h.html#a01444581bd34af25498d1cb8fc3a0a92" title="q_close_stream" alt="" coords="856,43,971,69"/><area shape="rect" id="node24" href="stream_8c.html#acf612f3ac0b49aa8c7d6630c00e6b0ce" title="free_stream" alt="" coords="1040,119,1131,145"/><area shape="rect" id="node26" href="frame_8c.html#aa354e096c509e96b04b9eb2861ddf000" title="dec_lg_ack_len" alt="" coords="1029,397,1141,424"/><area shape="rect" id="node27" href="frame_8c.html#a7c21dd1fa5cbacecdac2c95bdb4c5593" title="find_sent_pkt" alt="" coords="1218,296,1318,323"/><area shape="rect" id="node28" href="frame_8c.html#a06fb0b82dd62949b991315c88915240a" title="dec_ack_block_len" alt="" coords="1019,448,1152,475"/><area shape="rect" id="node29" href="quant_8h.html#a6775b2e792b077dea1e6460e8dc9d649" title="q_write" alt="" coords="1053,296,1117,323"/><area shape="rect" id="node30" href="conn_8c.html#a51821558a515ddb0a82519dda6ca59bb" title="detect_lost_pkts" alt="" coords="1026,561,1145,588"/><area shape="rect" id="node31" href="conn_8c.html#aaeb047f2ca62d850715e3c5093b9cc02" title="set_ld_alarm" alt="" coords="1037,929,1133,956"/><area shape="rect" id="node35" href="conn_8c.html#a8e30f6ed2441140c2306c8c9354253e8" title="do_tx" alt="" coords="886,1132,941,1159"/><area shape="rect" id="node36" href="pkt_8c.html#af392b36c58463646c250f5b01ea07238" title="enc_pkt" alt="" coords="1051,1335,1119,1361"/><area shape="rect" id="node37" href="pkt_8c.html#ae230cbc93b330096c2d781b56bd62364" title="needed_pkt_nr_len" alt="" coords="1203,1436,1333,1463"/><area shape="rect" id="node38" href="frame_8c.html#a8d41621adfc301bec8370f974e91c9cc" title="enc_ack_frame" alt="" coords="1213,1284,1323,1311"/><area shape="rect" id="node41" href="frame_8c.html#a89e5fa4a1820e4bb58711d4133fcf4e8" title="enc_padding_frame" alt="" coords="1201,1335,1335,1361"/><area shape="rect" id="node42" href="frame_8c.html#a305c92dea1718d0433357f179dacadbc" title="enc_stream_frame" alt="" coords="1203,1385,1333,1412"/><area shape="rect" id="node39" href="frame_8c.html#adab36476b9c7a8f2e849ff09f4a0256a" title="needed_lg_ack_len" alt="" coords="1395,1259,1528,1285"/><area shape="rect" id="node40" href="frame_8c.html#ae139b00759d9d8db6d1e35917655600f" title="needed_ack_block_len" alt="" coords="1384,1309,1539,1336"/><area shape="rect" id="node43" href="frame_8c.html#a8e66c509135b66e394343247ed37f2e1" title="needed_sid_len" alt="" coords="1405,1385,1517,1412"/><area shape="rect" id="node45" href="quic_8c.html#a9d8125fd87afe3d3df3ac6651f3973f0" title="new_conn" alt="" coords="225,777,306,804"/><area shape="rect" id="node46" href="conn_8c.html#a9bd334012bc06cc7396e42d69eadf1c5" title="ld_alarm" alt="" coords="355,777,426,804"/><area shape="rect" id="node49" href="conn_8c.html#a5749bce479cdde76574b7a1845be7fec" title="rx" alt="" coords="371,727,410,753"/><area shape="rect" id="node48" href="conn_8c.html#a2d732bffd6c40124b745336ae0199c76" title="synth_tx" alt="" coords="707,1132,779,1159"/></map>
+<area shape="rect" id="node2" href="conn_8c.html#a66e4de11f8294248216478c7d50a79e5" title="rx_pkts" alt="" coords="94,992,159,1019"/><area shape="rect" id="node17" href="quant_8h.html#a84a768c49cd352e1c8a109bda56ef3a6" title="q_rx_ready" alt="" coords="1103,1347,1190,1373"/><area shape="rect" id="node21" href="conn_8c.html#abc878d206fec5787bb6754f6b53d0e8a" title="tx" alt="" coords="615,524,654,551"/><area shape="rect" id="node34" href="conn_8c.html#a4a5deef512e20b125b45899c6c80c6fc" title="free_conn" alt="" coords="595,1512,674,1539"/><area shape="rect" id="node3" href="quic_8c.html#a4e51fb8c9ebc5178b5131826ca26fb90" title="write_to_corpus" alt="" coords="229,473,344,500"/><area shape="rect" id="node4" href="pkt_8c.html#a94d443b77fda6907675a043e8ea52857" title="dec_pkt_hdr_beginning" alt="" coords="557,119,712,145"/><area shape="rect" id="node6" href="pkt_8c.html#ad23d5577b6b5cc73cbd731e011df11c4" title="log_pkt" alt="" coords="255,372,319,399"/><area shape="rect" id="node8" href="conn_8c.html#a9d982843405e4f50ac0c6b6977a3cc6c" title="get_conn_by_cid" alt="" coords="227,625,347,652"/><area shape="rect" id="node9" href="conn_8c.html#a042a55d10b57e402bf5982add4983181" title="get_conn_by_ipnp" alt="" coords="223,676,350,703"/><area shape="rect" id="node10" href="conn_8c.html#ab6768a591006ee6e326e91425eb105fb" title="new_conn" alt="" coords="246,1056,327,1083"/><area shape="rect" id="node11" href="quic_8h.html#ab2b6d16118c27c0f7c91dfac30c5d446" title="cid_cpy" alt="" coords="601,1335,668,1361"/><area shape="rect" id="node14" href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="1255,853,1337,880"/><area shape="rect" id="node27" href="conn_8c.html#ad1e5e232a8372127e2130e85e7cdbb8d" title="use_next_dcid" alt="" coords="943,803,1049,829"/><area shape="rect" id="node39" href="conn_8c.html#a899b62b37418afb64d2f4ade6ee61e7a" title="use_next_scid" alt="" coords="772,1372,879,1399"/><area shape="rect" id="node42" href="tls_8c.html#aa4907143b04da6627e6cef421b920480" title="init_tls" alt="" coords="257,1563,317,1589"/><area shape="rect" id="node44" href="conn_8c.html#ad2372a4b6e27ada905f0604c1725abf1" title="cid_cmp" alt="" coords="251,1309,322,1336"/><area shape="rect" id="node45" href="conn_8c.html#ae5beee50c7414b14d1efb1e3e8ebe1ee" title="add_dcid" alt="" coords="424,1385,499,1412"/><area shape="rect" id="node46" href="conn_8c.html#afdb74c0ca180e047871005d0091a2932" title="sockaddr_in_cmp" alt="" coords="225,1411,349,1437"/><area shape="rect" id="node47" href="conn_8c.html#af9f14736767a742408afa97eafe078ab" title="update_ipnp" alt="" coords="241,1461,333,1488"/><area shape="rect" id="node48" href="pkt_8c.html#a1727e751d41e2506261fdd347c7f2e98" title="dec_pkt_hdr_remainder" alt="" coords="208,423,365,449"/><area shape="rect" id="node49" href="conn_8c.html#a08b2e3acf5ad067595387e650b24f36c" title="rx_pkt" alt="" coords="257,929,316,956"/><area shape="rect" id="node50" href="conn_8c.html#a5d6639a237bb88d66f93760fc93000a5" title="rx_crypto" alt="" coords="597,296,673,323"/><area shape="rect" id="node5" href="pkt_8h.html#a265e9c52eb203bb4701727adc3908850" title="pkt_type" alt="" coords="1111,93,1183,120"/><area shape="rect" id="node7" href="pkt_8c.html#a186bdaaaa6829aa020adc5c9ff7f0a93" title="pkt_type_str" alt="" coords="414,372,509,399"/><area shape="rect" id="node12" href="pn_8c.html#a08111eb107b4ea7f913acc44b761bda0" title="init_pn" alt="" coords="431,1132,491,1159"/><area shape="rect" id="node13" href="conn_8c.html#ac22c90477f7d4e5f8e96e3d536b58afb" title="idle_alarm" alt="" coords="594,879,675,905"/><area shape="rect" id="node16" href="conn_8c.html#aea7c8de8c9a43a64163e900a70678ae2" title="enter_closed" alt="" coords="948,1233,1044,1260"/><area shape="rect" id="node19" href="recovery_8c.html#a60784c1a11f52e1b091994e1cfcc4609" title="init_rec" alt="" coords="429,1183,493,1209"/><area shape="rect" id="node20" href="conn_8c.html#ae7ad1167799a2920119487df92e81b85" title="tx_w" alt="" coords="436,828,487,855"/><area shape="rect" id="node23" href="stream_8h.html#a012bc210254cd3269ef892fcbd91e146" title="crpt_strm_id" alt="" coords="949,220,1043,247"/><area shape="rect" id="node33" href="conn_8c.html#a5749bce479cdde76574b7a1845be7fec" title="rx" alt="" coords="442,1487,481,1513"/><area shape="rect" id="node40" href="conn_8c.html#a1c9db996af2db57d04b8661d04dd0d68" title="add_scid" alt="" coords="424,1031,499,1057"/><area shape="rect" id="node41" href="stream_8c.html#a300bcafbad60488eb0b6b0560eb1b645" title="new_stream" alt="" coords="415,1081,508,1108"/><area shape="rect" id="node15" href="conn_8c.html#afd38904c68cab87424e6aa8db723fd38" title="enter_closing" alt="" coords="776,853,875,880"/><area shape="rect" id="node18" href="quic_8c.html#afd98d880d46aa717596439adb85fcafc" title="cancel_api_call" alt="" coords="1241,1347,1351,1373"/><area shape="rect" id="node22" href="conn_8c.html#ac0d0edf08b6c3f2b3a75ab87498def1f" title="tx_crypto" alt="" coords="787,347,863,373"/><area shape="rect" id="node24" href="stream_8h.html#ad30add9149d4bde85b9e2cc3e9159559" title="out_fully_acked" alt="" coords="939,372,1053,399"/><area shape="rect" id="node25" href="conn_8c.html#a1a39c653f20bef724b56574fac9c449f" title="tx_stream_data" alt="" coords="940,536,1052,563"/><area shape="rect" id="node26" href="conn_8c.html#a0b0c1eff62e65d38a175b6df4ea4ce80" title="do_conn_mgmt" alt="" coords="770,752,881,779"/><area shape="rect" id="node28" href="stream_8h.html#ae11750e72c5f654dd57041a830ee19a7" title="stream_needs_ctrl" alt="" coords="761,600,890,627"/><area shape="rect" id="node29" href="conn_8c.html#a7bc1cf055ddc94c793f81fdfc52ecdbb" title="tx_stream_ctrl" alt="" coords="773,499,878,525"/><area shape="rect" id="node30" href="conn_8c.html#a061f6268bdb3054227eedf2ca20cb8a1" title="do_tx" alt="" coords="969,435,1023,461"/><area shape="rect" id="node31" href="conn_8c.html#a87cb12b0afa8cdb9f2a41ce602d8ff96" title="tx_ack" alt="" coords="795,245,856,272"/><area shape="rect" id="node32" href="conn_8h.html#a90b995546c499b521dcb4bf6cc7e39f1" title="epoch_in" alt="" coords="788,296,863,323"/><area shape="rect" id="node35" href="stream_8c.html#acf612f3ac0b49aa8c7d6630c00e6b0ce" title="free_stream" alt="" coords="1101,1473,1192,1500"/><area shape="rect" id="node36" href="tls_8c.html#a2393aad5c0cf1cd399746ba5314e8c66" title="free_tls" alt="" coords="793,1625,858,1652"/><area shape="rect" id="node37" href="pn_8c.html#a3b132beb2506faada16af74535e27fec" title="free_pn" alt="" coords="793,1524,858,1551"/><area shape="rect" id="node38" href="diet_8c.html#aca2c7f843feefa74e9e6dca31bc41fd7" title="diet_free" alt="" coords="960,1549,1032,1576"/><area shape="rect" id="node43" href="tls_8c.html#a5092fa492120deb7469e65bc9f5df3f8" title="filter_tp" alt="" coords="429,1537,494,1564"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aaeb047f2ca62d850715e3c5093b9cc02"></a>
+<a class="anchor" id="addd27b7fdfd0f22d4c24b474c8738213"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void set_ld_alarm </td>
+          <td class="memname">sl_head </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
-          <td class="paramname"><em>c</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a40e2d83b42c68d523d0c5ec107036c67"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">SPLAY_HEAD </td>
-          <td>(</td>
-          <td class="paramtype">conn&#160;</td>
+          <td class="paramtype">q_conn_sl&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -635,31 +1075,171 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#a4">client.c</a>.</dd>
+</dl>
 </div>
 </div>
-<a class="anchor" id="aaa8293a7755d9629bc72f04e31674e0f"></a>
+<a class="anchor" id="a32f31a027e4f89bf2b5de06aab392acc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t tls_handshake </td>
+          <td class="memname">splay_head </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structq__stream.html">q_stream</a> *const&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
+          <td class="paramtype">ipnp_splay&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structq__conn.html">q_conn</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#a2">client.c</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="a4e7647568ae643bad5cbdfa8c4a9a63e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">splay_head </td>
+          <td>(</td>
+          <td class="paramtype">cid_splay&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structq__cid__map.html">q_cid_map</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a3ab3870e4aa765f7950dfcfa121a8bf1"></a>
+<a class="anchor" id="ae4a357ac5486d1486413ca48f135493c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">splay_head </td>
+          <td>(</td>
+          <td class="paramtype">ooo_0rtt_splay&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structooo__0rtt.html">ooo_0rtt</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abc878d206fec5787bb6754f6b53d0e8a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void tx </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>rtx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramname"><em>limit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="conn_8h_abc878d206fec5787bb6754f6b53d0e8a_cgraph.png" border="0" usemap="#conn_8h_abc878d206fec5787bb6754f6b53d0e8a_cgraph" alt=""/></div>
+<map name="conn_8h_abc878d206fec5787bb6754f6b53d0e8a_cgraph" id="conn_8h_abc878d206fec5787bb6754f6b53d0e8a_cgraph">
+<area shape="rect" id="node2" href="conn_8c.html#afd38904c68cab87424e6aa8db723fd38" title="enter_closing" alt="" coords="773,245,872,272"/><area shape="rect" id="node7" href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="1240,245,1323,272"/><area shape="rect" id="node9" href="conn_8c.html#ac0d0edf08b6c3f2b3a75ab87498def1f" title="tx_crypto" alt="" coords="94,1712,170,1739"/><area shape="rect" id="node12" href="stream_8h.html#ad30add9149d4bde85b9e2cc3e9159559" title="out_fully_acked" alt="" coords="766,1915,879,1941"/><area shape="rect" id="node14" href="conn_8c.html#a1a39c653f20bef724b56574fac9c449f" title="tx_stream_data" alt="" coords="219,1071,331,1097"/><area shape="rect" id="node24" href="conn_8c.html#a0b0c1eff62e65d38a175b6df4ea4ce80" title="do_conn_mgmt" alt="" coords="767,144,878,171"/><area shape="rect" id="node27" href="stream_8h.html#ae11750e72c5f654dd57041a830ee19a7" title="stream_needs_ctrl" alt="" coords="758,692,887,719"/><area shape="rect" id="node28" href="conn_8c.html#a7bc1cf055ddc94c793f81fdfc52ecdbb" title="tx_stream_ctrl" alt="" coords="770,1535,875,1561"/><area shape="rect" id="node29" href="conn_8c.html#a061f6268bdb3054227eedf2ca20cb8a1" title="do_tx" alt="" coords="969,1509,1023,1536"/><area shape="rect" id="node32" href="conn_8c.html#a87cb12b0afa8cdb9f2a41ce602d8ff96" title="tx_ack" alt="" coords="792,1636,853,1663"/><area shape="rect" id="node35" href="conn_8h.html#a90b995546c499b521dcb4bf6cc7e39f1" title="epoch_in" alt="" coords="785,1864,860,1891"/><area shape="rect" id="node3" href="conn_8h.html#a526357c19864e7579573160573a55c33" title="pn_for_epoch" alt="" coords="946,397,1046,424"/><area shape="rect" id="node4" href="conn_8h.html#a68c6b30b8665ce894ab5bed3c73a2d9d" title="is_zero" alt="" coords="964,245,1028,272"/><area shape="rect" id="node5" href="conn_8c.html#aea7c8de8c9a43a64163e900a70678ae2" title="enter_closed" alt="" coords="948,296,1044,323"/><area shape="rect" id="node6" href="quant_8h.html#a3da1ca1e589303333e8bba9cfbb1f4da" title="q_accept" alt="" coords="1111,245,1185,272"/><area shape="rect" id="node8" href="quant_8h.html#a84a768c49cd352e1c8a109bda56ef3a6" title="q_rx_ready" alt="" coords="1105,296,1191,323"/><area shape="rect" id="node10" href="stream_8c.html#a7308501df4d06bbfd14665ae88caae02" title="get_stream" alt="" coords="953,1737,1039,1764"/><area shape="rect" id="node11" href="stream_8h.html#a012bc210254cd3269ef892fcbd91e146" title="crpt_strm_id" alt="" coords="949,1813,1043,1840"/><area shape="rect" id="node13" href="quant_8h.html#a4a7935a14e509d989eda300f16daf086" title="q_free" alt="" coords="245,1712,304,1739"/><area shape="rect" id="node15" href="conn_8c.html#a12a896285cd7039b1bcd66c5fa895ec0" title="rtx_pkt" alt="" coords="399,405,462,432"/><area shape="rect" id="node17" href="pkt_8c.html#a13f259191e295bb7cf7d34bb79d76bc5" title="enc_pkt" alt="" coords="397,957,465,984"/><area shape="rect" id="node50" href="conn_8c.html#a5743552083731c2f028e261c680fcd38" title="log_sent_pkts" alt="" coords="379,776,482,803"/><area shape="rect" id="node16" href="quic_8h.html#ab139ac46901fa03632f8075e6f800930" title="pm_cpy" alt="" coords="586,245,654,272"/><area shape="rect" id="node18" href="stream_8h.html#af3bef0cb9d669dca78f301f6ae50a19e" title="strm_epoch" alt="" coords="575,1256,665,1283"/><area shape="rect" id="node19" href="pkt_8c.html#a71b15bbb7677c2dca369290a1f4b86c0" title="enc_lh_cids" alt="" coords="777,1223,868,1249"/><area shape="rect" id="node20" href="quic_8h.html#ab2b6d16118c27c0f7c91dfac30c5d446" title="cid_cpy" alt="" coords="963,1088,1029,1115"/><area shape="rect" id="node21" href="conn_8h.html#ad42b6442b32fa307a6b5293b9b9df058" title="is_force_neg_vers" alt="" coords="556,1357,684,1384"/><area shape="rect" id="node22" href="pkt_8c.html#ad23d5577b6b5cc73cbd731e011df11c4" title="log_pkt" alt="" coords="588,397,652,424"/><area shape="rect" id="node23" href="conn_8c.html#abc878d206fec5787bb6754f6b53d0e8a" title="tx" alt="" coords="601,1509,639,1536"/><area shape="rect" id="node34" href="diet_8h.html#aad21e3b897b17d0c86fce4a174e80ab0" title="diet_empty" alt="" coords="1105,1611,1191,1637"/><area shape="rect" id="node36" href="conn_8c.html#a1c9db996af2db57d04b8661d04dd0d68" title="add_scid" alt="" coords="785,1037,860,1064"/><area shape="rect" id="node37" href="conn_8c.html#a899b62b37418afb64d2f4ade6ee61e7a" title="use_next_scid" alt="" coords="567,448,673,475"/><area shape="rect" id="node38" href="pkt_8c.html#a49535313dfd1afad8743aef5abe2d30c" title="needed_pkt_nr_len" alt="" coords="555,499,685,525"/><area shape="rect" id="node39" href="frame_8c.html#ad33d4ffd79b410b355647b882fcecd94" title="enc_ack_frame" alt="" coords="565,549,675,576"/><area shape="rect" id="node40" href="frame_8c.html#a69e685c0bc62a86a703d3f0c83363f96" title="enc_close_frame" alt="" coords="559,600,681,627"/><area shape="rect" id="node41" href="frame_8c.html#a722b21098f9985a27188e9fae848aced" title="enc_new_token_frame" alt="" coords="543,651,697,677"/><area shape="rect" id="node42" href="frame_8c.html#a68280ad079aa677bf9eeb72dfe8f65d2" title="enc_path_response_frame" alt="" coords="533,701,707,728"/><area shape="rect" id="node43" href="frame_8c.html#ad4218d08a618cd6088192777ee96f95f" title="enc_path_challenge\l_frame" alt="" coords="551,753,689,794"/><area shape="rect" id="node44" href="frame_8c.html#acf128f54c264f522e96019baef7af3c1" title="enc_new_cid_frame" alt="" coords="551,1037,689,1064"/><area shape="rect" id="node45" href="frame_8c.html#a2037bb3c54a511d30919c36c65e79bb7" title="enc_blocked_frame" alt="" coords="553,819,687,845"/><area shape="rect" id="node46" href="frame_8c.html#afce90a1bb73bc652f0ccbd5402b0eb61" title="enc_max_data_frame" alt="" coords="547,869,693,896"/><area shape="rect" id="node47" href="frame_8c.html#a615393093bcbcddfdecf8f193beedc45" title="enc_stream_id_blocked\l_frame" alt="" coords="541,921,699,962"/><area shape="rect" id="node48" href="frame_8c.html#ad254391e26decf235568cd8d6f20689f" title="enc_max_stream_id_frame" alt="" coords="531,1139,709,1165"/><area shape="rect" id="node49" href="frame_8c.html#a916d0dd562621c7d36e786193418b07f" title="enc_stream_blocked\l_frame" alt="" coords="549,1190,691,1231"/><area shape="rect" id="node25" href="stream_8c.html#a878cdd4d69b352f501841456e8a43972" title="do_stream_id_fc" alt="" coords="937,93,1055,120"/><area shape="rect" id="node26" href="conn_8c.html#ad1e5e232a8372127e2130e85e7cdbb8d" title="use_next_dcid" alt="" coords="943,144,1049,171"/><area shape="rect" id="node30" href="pkt_8h.html#a265e9c52eb203bb4701727adc3908850" title="pkt_type" alt="" coords="1245,1496,1317,1523"/><area shape="rect" id="node31" href="pkt_8c.html#a1f839697f5c2cb2a8b086249c85399bc" title="coalesce" alt="" coords="1111,1471,1185,1497"/><area shape="rect" id="node33" href="pn_8h.html#aa7ed02733032177ff456b060fa0eed8e" title="needs_ack" alt="" coords="953,1636,1039,1663"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a87cb12b0afa8cdb9f2a41ce602d8ff96"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tx_ack </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="tls_8h.html#aaca089f79f64e61453953e09fd226e46">epoch_t</a>&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="conn_8h_a87cb12b0afa8cdb9f2a41ce602d8ff96_cgraph.png" border="0" usemap="#conn_8h_a87cb12b0afa8cdb9f2a41ce602d8ff96_cgraph" alt=""/></div>
+<map name="conn_8h_a87cb12b0afa8cdb9f2a41ce602d8ff96_cgraph" id="conn_8h_a87cb12b0afa8cdb9f2a41ce602d8ff96_cgraph">
+<area shape="rect" id="node2" href="stream_8c.html#a7308501df4d06bbfd14665ae88caae02" title="get_stream" alt="" coords="667,427,754,453"/><area shape="rect" id="node3" href="stream_8h.html#a012bc210254cd3269ef892fcbd91e146" title="crpt_strm_id" alt="" coords="663,477,758,504"/><area shape="rect" id="node4" href="conn_8h.html#a526357c19864e7579573160573a55c33" title="pn_for_epoch" alt="" coords="661,351,761,377"/><area shape="rect" id="node5" href="pn_8h.html#aa7ed02733032177ff456b060fa0eed8e" title="needs_ack" alt="" coords="668,31,753,57"/><area shape="rect" id="node7" href="pkt_8c.html#a13f259191e295bb7cf7d34bb79d76bc5" title="enc_pkt" alt="" coords="115,973,183,1000"/><area shape="rect" id="node24" href="conn_8c.html#a061f6268bdb3054227eedf2ca20cb8a1" title="do_tx" alt="" coords="683,1212,738,1239"/><area shape="rect" id="node6" href="diet_8h.html#aad21e3b897b17d0c86fce4a174e80ab0" title="diet_empty" alt="" coords="821,5,907,32"/><area shape="rect" id="node8" href="stream_8h.html#af3bef0cb9d669dca78f301f6ae50a19e" title="strm_epoch" alt="" coords="487,401,577,428"/><area shape="rect" id="node9" href="pkt_8c.html#a71b15bbb7677c2dca369290a1f4b86c0" title="enc_lh_cids" alt="" coords="487,553,577,580"/><area shape="rect" id="node10" href="quic_8h.html#ab2b6d16118c27c0f7c91dfac30c5d446" title="cid_cpy" alt="" coords="677,553,744,580"/><area shape="rect" id="node11" href="conn_8h.html#ad42b6442b32fa307a6b5293b9b9df058" title="is_force_neg_vers" alt="" coords="257,973,385,1000"/><area shape="rect" id="node12" href="pkt_8c.html#ad23d5577b6b5cc73cbd731e011df11c4" title="log_pkt" alt="" coords="289,872,353,899"/><area shape="rect" id="node15" href="conn_8c.html#abc878d206fec5787bb6754f6b53d0e8a" title="tx" alt="" coords="302,923,341,949"/><area shape="rect" id="node17" href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="669,984,752,1011"/><area shape="rect" id="node28" href="conn_8c.html#a1c9db996af2db57d04b8661d04dd0d68" title="add_scid" alt="" coords="495,604,569,631"/><area shape="rect" id="node29" href="conn_8c.html#a899b62b37418afb64d2f4ade6ee61e7a" title="use_next_scid" alt="" coords="268,1227,375,1253"/><area shape="rect" id="node30" href="pkt_8c.html#a49535313dfd1afad8743aef5abe2d30c" title="needed_pkt_nr_len" alt="" coords="256,1277,387,1304"/><area shape="rect" id="node31" href="frame_8c.html#ad33d4ffd79b410b355647b882fcecd94" title="enc_ack_frame" alt="" coords="266,1328,377,1355"/><area shape="rect" id="node35" href="frame_8c.html#a69e685c0bc62a86a703d3f0c83363f96" title="enc_close_frame" alt="" coords="261,1379,382,1405"/><area shape="rect" id="node36" href="frame_8c.html#a722b21098f9985a27188e9fae848aced" title="enc_new_token_frame" alt="" coords="245,1429,398,1456"/><area shape="rect" id="node37" href="frame_8c.html#a68280ad079aa677bf9eeb72dfe8f65d2" title="enc_path_response_frame" alt="" coords="234,1480,409,1507"/><area shape="rect" id="node38" href="frame_8c.html#ad4218d08a618cd6088192777ee96f95f" title="enc_path_challenge\l_frame" alt="" coords="253,1531,390,1573"/><area shape="rect" id="node39" href="frame_8c.html#acf128f54c264f522e96019baef7af3c1" title="enc_new_cid_frame" alt="" coords="252,771,391,797"/><area shape="rect" id="node40" href="frame_8c.html#a2037bb3c54a511d30919c36c65e79bb7" title="enc_blocked_frame" alt="" coords="254,1597,389,1624"/><area shape="rect" id="node41" href="frame_8c.html#afce90a1bb73bc652f0ccbd5402b0eb61" title="enc_max_data_frame" alt="" coords="248,1648,395,1675"/><area shape="rect" id="node42" href="frame_8c.html#a615393093bcbcddfdecf8f193beedc45" title="enc_stream_id_blocked\l_frame" alt="" coords="242,1699,401,1741"/><area shape="rect" id="node43" href="frame_8c.html#ad254391e26decf235568cd8d6f20689f" title="enc_max_stream_id_frame" alt="" coords="232,1765,411,1792"/><area shape="rect" id="node44" href="frame_8c.html#a916d0dd562621c7d36e786193418b07f" title="enc_stream_blocked\l_frame" alt="" coords="250,1817,393,1858"/><area shape="rect" id="node45" href="frame_8c.html#afac1f0948949980e386e72ae7f2b3132" title="enc_max_stream_data\l_frame" alt="" coords="244,401,399,442"/><area shape="rect" id="node46" href="frame_8c.html#a0d8bea0a0a229b796505008855eb17f0" title="enc_padding_frame" alt="" coords="254,467,389,493"/><area shape="rect" id="node47" href="frame_8c.html#ae94d6f87955af69345cb46c9d03ad90f" title="log_stream_or_crypto\l_frame" alt="" coords="459,285,605,326"/><area shape="rect" id="node48" href="frame_8c.html#a6134c4faa49bbd6fbc29589f12350400" title="enc_stream_or_crypto\l_frame" alt="" coords="246,335,397,377"/><area shape="rect" id="node49" href="tls_8c.html#a1b4e58371250876912c40fcb76f8eb4f" title="enc_aead" alt="" coords="282,1075,361,1101"/><area shape="rect" id="node50" href="recovery_8c.html#a9749ec5110f82cad7875d3ec8b94199d" title="on_pkt_sent" alt="" coords="275,517,368,544"/><area shape="rect" id="node13" href="pkt_8c.html#a186bdaaaa6829aa020adc5c9ff7f0a93" title="pkt_type_str" alt="" coords="817,883,911,909"/><area shape="rect" id="node14" href="pkt_8h.html#a265e9c52eb203bb4701727adc3908850" title="pkt_type" alt="" coords="960,1161,1032,1188"/><area shape="rect" id="node16" href="conn_8c.html#afd38904c68cab87424e6aa8db723fd38" title="enter_closing" alt="" coords="483,705,581,732"/><area shape="rect" id="node18" href="conn_8c.html#ac0d0edf08b6c3f2b3a75ab87498def1f" title="tx_crypto" alt="" coords="494,756,570,783"/><area shape="rect" id="node19" href="stream_8h.html#ad30add9149d4bde85b9e2cc3e9159559" title="out_fully_acked" alt="" coords="654,807,767,833"/><area shape="rect" id="node20" href="conn_8c.html#a1a39c653f20bef724b56574fac9c449f" title="tx_stream_data" alt="" coords="655,1111,767,1137"/><area shape="rect" id="node21" href="conn_8c.html#a0b0c1eff62e65d38a175b6df4ea4ce80" title="do_conn_mgmt" alt="" coords="477,959,587,985"/><area shape="rect" id="node22" href="stream_8h.html#ae11750e72c5f654dd57041a830ee19a7" title="stream_needs_ctrl" alt="" coords="467,807,597,833"/><area shape="rect" id="node23" href="conn_8c.html#a7bc1cf055ddc94c793f81fdfc52ecdbb" title="tx_stream_ctrl" alt="" coords="479,1263,585,1289"/><area shape="rect" id="node26" href="conn_8c.html#a87cb12b0afa8cdb9f2a41ce602d8ff96" title="tx_ack" alt="" coords="501,452,563,479"/><area shape="rect" id="node27" href="conn_8h.html#a90b995546c499b521dcb4bf6cc7e39f1" title="epoch_in" alt="" coords="495,908,569,935"/><area shape="rect" id="node25" href="pkt_8c.html#a1f839697f5c2cb2a8b086249c85399bc" title="coalesce" alt="" coords="827,1212,901,1239"/><area shape="rect" id="node32" href="diet_8h.html#ae43baefa854ce76ff4531404e68f2711" title="diet_max_ival" alt="" coords="481,1415,583,1441"/><area shape="rect" id="node33" href="diet_8h.html#af0ddae2a11095bcdabe422dfc44f910a" title="diet_timestamp" alt="" coords="477,1313,587,1340"/><area shape="rect" id="node34" href="diet_8h.html#a9d72ddf7f8b338bc0917d06350e18157" title="diet_cnt" alt="" coords="498,1364,566,1391"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae7ad1167799a2920119487df92e81b85"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tx_w </td>
           <td>(</td>
           <td class="paramtype">struct ev_loop *const&#160;</td>
           <td class="paramname"><em>l</em>, </td>
@@ -687,21 +1267,74 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="conn_8h_a3ab3870e4aa765f7950dfcfa121a8bf1_cgraph.png" border="0" usemap="#conn_8h_a3ab3870e4aa765f7950dfcfa121a8bf1_cgraph" alt=""/></div>
-<map name="conn_8h_a3ab3870e4aa765f7950dfcfa121a8bf1_cgraph" id="conn_8h_a3ab3870e4aa765f7950dfcfa121a8bf1_cgraph">
-<area shape="rect" id="node2" href="conn_8c.html#a8e30f6ed2441140c2306c8c9354253e8" title="do_tx" alt="" coords="230,262,285,289"/><area shape="rect" id="node20" href="conn_8c.html#a2d732bffd6c40124b745336ae0199c76" title="synth_tx" alt="" coords="101,288,173,314"/><area shape="rect" id="node21" href="stream_8c.html#a373af28b5e30782936eb0ca9a71f54cf" title="get_stream" alt="" coords="94,338,181,365"/><area shape="rect" id="node3" href="diet_8c.html#a3ba0ac5feb124c6e3076dea437fa3b79" title="Inserts integer n into the diet tree t. " alt="" coords="340,85,423,112"/><area shape="rect" id="node9" href="pkt_8c.html#af392b36c58463646c250f5b01ea07238" title="enc_pkt" alt="" coords="347,262,415,289"/><area shape="rect" id="node19" href="conn_8c.html#aaeb047f2ca62d850715e3c5093b9cc02" title="set_ld_alarm" alt="" coords="333,313,429,340"/><area shape="rect" id="node4" href="diet_8c.html#a1bf88044b4af4e723b8bfc4cf0fe1420" title="Helper function to create a zero&#45;width interval containing (only) n. " alt="" coords="505,34,586,61"/><area shape="rect" id="node5" href="diet_8c.html#acff4764cdd209408ec31906773db2455" title="Pointer to the interval containing n in diet tree t. " alt="" coords="510,85,581,112"/><area shape="rect" id="node7" href="diet_8c.html#a85e4e10a029283a5798638bfaf387abd" title="Return maximum interval underneath i. " alt="" coords="701,136,776,162"/><area shape="rect" id="node8" href="diet_8c.html#a8f0e77727941f94b10b1ea1241df8eaa" title="Return minimum interval underneath i. " alt="" coords="703,9,774,36"/><area shape="rect" id="node6" href="diet_8c.html#a233a4b0f59b38d83775f80568cfb081f" title="Absolute minimal distance of n from the interval i,. " alt="" coords="703,85,774,112"/><area shape="rect" id="node10" href="pkt_8c.html#ae230cbc93b330096c2d781b56bd62364" title="needed_pkt_nr_len" alt="" coords="480,389,611,416"/><area shape="rect" id="node11" href="frame_8c.html#a8d41621adfc301bec8370f974e91c9cc" title="enc_ack_frame" alt="" coords="490,186,601,213"/><area shape="rect" id="node14" href="frame_8c.html#a89e5fa4a1820e4bb58711d4133fcf4e8" title="enc_padding_frame" alt="" coords="478,237,613,264"/><area shape="rect" id="node15" href="frame_8c.html#a305c92dea1718d0433357f179dacadbc" title="enc_stream_frame" alt="" coords="480,288,611,314"/><area shape="rect" id="node18" href="fnv__1a_8c.html#ae1a00a9fdbb5c3d2f338b60855c9c69b" title="Compute an FNV&#45;1a 64&#45;bit hash over the given buffer. " alt="" coords="515,338,576,365"/><area shape="rect" id="node12" href="frame_8c.html#adab36476b9c7a8f2e849ff09f4a0256a" title="needed_lg_ack_len" alt="" coords="672,237,805,264"/><area shape="rect" id="node13" href="frame_8c.html#ae139b00759d9d8db6d1e35917655600f" title="needed_ack_block_len" alt="" coords="661,186,816,213"/><area shape="rect" id="node16" href="frame_8c.html#a8e66c509135b66e394343247ed37f2e1" title="needed_sid_len" alt="" coords="683,338,795,365"/><area shape="rect" id="node17" href="frame_8c.html#ad82df9b455f7872d73be99589ef0fe19" title="needed_off_len" alt="" coords="683,288,794,314"/></map>
+<div class="center"><img src="conn_8h_ae7ad1167799a2920119487df92e81b85_cgraph.png" border="0" usemap="#conn_8h_ae7ad1167799a2920119487df92e81b85_cgraph" alt=""/></div>
+<map name="conn_8h_ae7ad1167799a2920119487df92e81b85_cgraph" id="conn_8h_ae7ad1167799a2920119487df92e81b85_cgraph">
+<area shape="rect" id="node2" href="conn_8c.html#abc878d206fec5787bb6754f6b53d0e8a" title="tx" alt="" coords="105,747,143,773"/><area shape="rect" id="node3" href="conn_8c.html#afd38904c68cab87424e6aa8db723fd38" title="enter_closing" alt="" coords="208,873,307,900"/><area shape="rect" id="node8" href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="739,1219,821,1245"/><area shape="rect" id="node10" href="conn_8c.html#ac0d0edf08b6c3f2b3a75ab87498def1f" title="tx_crypto" alt="" coords="219,411,295,437"/><area shape="rect" id="node13" href="stream_8h.html#ad30add9149d4bde85b9e2cc3e9159559" title="out_fully_acked" alt="" coords="374,265,487,292"/><area shape="rect" id="node15" href="conn_8c.html#a1a39c653f20bef724b56574fac9c449f" title="tx_stream_data" alt="" coords="375,316,487,343"/><area shape="rect" id="node40" href="conn_8c.html#a0b0c1eff62e65d38a175b6df4ea4ce80" title="do_conn_mgmt" alt="" coords="202,1127,313,1153"/><area shape="rect" id="node43" href="stream_8h.html#ae11750e72c5f654dd57041a830ee19a7" title="stream_needs_ctrl" alt="" coords="193,1177,322,1204"/><area shape="rect" id="node44" href="conn_8c.html#a7bc1cf055ddc94c793f81fdfc52ecdbb" title="tx_stream_ctrl" alt="" coords="205,721,310,748"/><area shape="rect" id="node45" href="conn_8c.html#a061f6268bdb3054227eedf2ca20cb8a1" title="do_tx" alt="" coords="403,772,458,799"/><area shape="rect" id="node48" href="conn_8c.html#a87cb12b0afa8cdb9f2a41ce602d8ff96" title="tx_ack" alt="" coords="227,569,288,596"/><area shape="rect" id="node50" href="conn_8h.html#a90b995546c499b521dcb4bf6cc7e39f1" title="epoch_in" alt="" coords="220,1228,295,1255"/><area shape="rect" id="node4" href="conn_8h.html#a526357c19864e7579573160573a55c33" title="pn_for_epoch" alt="" coords="730,56,830,83"/><area shape="rect" id="node5" href="conn_8h.html#a68c6b30b8665ce894ab5bed3c73a2d9d" title="is_zero" alt="" coords="399,873,463,900"/><area shape="rect" id="node6" href="conn_8c.html#aea7c8de8c9a43a64163e900a70678ae2" title="enter_closed" alt="" coords="383,975,479,1001"/><area shape="rect" id="node7" href="quant_8h.html#a3da1ca1e589303333e8bba9cfbb1f4da" title="q_accept" alt="" coords="553,975,628,1001"/><area shape="rect" id="node9" href="quant_8h.html#a84a768c49cd352e1c8a109bda56ef3a6" title="q_rx_ready" alt="" coords="547,1025,634,1052"/><area shape="rect" id="node11" href="stream_8c.html#a7308501df4d06bbfd14665ae88caae02" title="get_stream" alt="" coords="387,468,474,495"/><area shape="rect" id="node12" href="stream_8h.html#a012bc210254cd3269ef892fcbd91e146" title="crpt_strm_id" alt="" coords="383,417,478,444"/><area shape="rect" id="node14" href="quant_8h.html#a4a7935a14e509d989eda300f16daf086" title="q_free" alt="" coords="401,367,460,393"/><area shape="rect" id="node16" href="conn_8c.html#a12a896285cd7039b1bcd66c5fa895ec0" title="rtx_pkt" alt="" coords="559,52,622,79"/><area shape="rect" id="node18" href="pkt_8c.html#a13f259191e295bb7cf7d34bb79d76bc5" title="enc_pkt" alt="" coords="557,671,625,697"/><area shape="rect" id="node39" href="conn_8c.html#a5743552083731c2f028e261c680fcd38" title="log_sent_pkts" alt="" coords="539,245,642,272"/><area shape="rect" id="node17" href="quic_8h.html#ab139ac46901fa03632f8075e6f800930" title="pm_cpy" alt="" coords="746,5,814,32"/><area shape="rect" id="node19" href="stream_8h.html#af3bef0cb9d669dca78f301f6ae50a19e" title="strm_epoch" alt="" coords="735,443,825,469"/><area shape="rect" id="node20" href="pkt_8c.html#a71b15bbb7677c2dca369290a1f4b86c0" title="enc_lh_cids" alt="" coords="917,544,1008,571"/><area shape="rect" id="node21" href="quic_8h.html#ab2b6d16118c27c0f7c91dfac30c5d446" title="cid_cpy" alt="" coords="1056,544,1123,571"/><area shape="rect" id="node22" href="conn_8h.html#ad42b6442b32fa307a6b5293b9b9df058" title="is_force_neg_vers" alt="" coords="716,696,844,723"/><area shape="rect" id="node23" href="pkt_8c.html#ad23d5577b6b5cc73cbd731e011df11c4" title="log_pkt" alt="" coords="748,747,812,773"/><area shape="rect" id="node24" href="conn_8c.html#a1c9db996af2db57d04b8661d04dd0d68" title="add_scid" alt="" coords="925,595,1000,621"/><area shape="rect" id="node25" href="conn_8c.html#a899b62b37418afb64d2f4ade6ee61e7a" title="use_next_scid" alt="" coords="727,797,833,824"/><area shape="rect" id="node26" href="pkt_8c.html#a49535313dfd1afad8743aef5abe2d30c" title="needed_pkt_nr_len" alt="" coords="715,848,845,875"/><area shape="rect" id="node27" href="diet_8h.html#aad21e3b897b17d0c86fce4a174e80ab0" title="diet_empty" alt="" coords="737,107,823,133"/><area shape="rect" id="node28" href="frame_8c.html#ad33d4ffd79b410b355647b882fcecd94" title="enc_ack_frame" alt="" coords="725,899,835,925"/><area shape="rect" id="node29" href="frame_8c.html#a69e685c0bc62a86a703d3f0c83363f96" title="enc_close_frame" alt="" coords="719,949,841,976"/><area shape="rect" id="node30" href="frame_8c.html#a722b21098f9985a27188e9fae848aced" title="enc_new_token_frame" alt="" coords="703,1000,857,1027"/><area shape="rect" id="node31" href="frame_8c.html#a68280ad079aa677bf9eeb72dfe8f65d2" title="enc_path_response_frame" alt="" coords="693,1051,867,1077"/><area shape="rect" id="node32" href="frame_8c.html#ad4218d08a618cd6088192777ee96f95f" title="enc_path_challenge\l_frame" alt="" coords="711,1102,849,1143"/><area shape="rect" id="node33" href="frame_8c.html#acf128f54c264f522e96019baef7af3c1" title="enc_new_cid_frame" alt="" coords="711,645,849,672"/><area shape="rect" id="node34" href="frame_8c.html#a2037bb3c54a511d30919c36c65e79bb7" title="enc_blocked_frame" alt="" coords="713,157,847,184"/><area shape="rect" id="node35" href="frame_8c.html#afce90a1bb73bc652f0ccbd5402b0eb61" title="enc_max_data_frame" alt="" coords="707,208,853,235"/><area shape="rect" id="node36" href="frame_8c.html#a615393093bcbcddfdecf8f193beedc45" title="enc_stream_id_blocked\l_frame" alt="" coords="701,259,859,301"/><area shape="rect" id="node37" href="frame_8c.html#ad254391e26decf235568cd8d6f20689f" title="enc_max_stream_id_frame" alt="" coords="691,325,869,352"/><area shape="rect" id="node38" href="frame_8c.html#a916d0dd562621c7d36e786193418b07f" title="enc_stream_blocked\l_frame" alt="" coords="709,377,851,418"/><area shape="rect" id="node41" href="stream_8c.html#a878cdd4d69b352f501841456e8a43972" title="do_stream_id_fc" alt="" coords="371,1228,490,1255"/><area shape="rect" id="node42" href="conn_8c.html#ad1e5e232a8372127e2130e85e7cdbb8d" title="use_next_dcid" alt="" coords="377,1177,484,1204"/><area shape="rect" id="node46" href="pkt_8h.html#a265e9c52eb203bb4701727adc3908850" title="pkt_type" alt="" coords="744,1168,816,1195"/><area shape="rect" id="node47" href="pkt_8c.html#a1f839697f5c2cb2a8b086249c85399bc" title="coalesce" alt="" coords="553,785,628,812"/><area shape="rect" id="node49" href="pn_8h.html#aa7ed02733032177ff456b060fa0eed8e" title="needs_ack" alt="" coords="548,569,633,596"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a899b62b37418afb64d2f4ade6ee61e7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void use_next_scid </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1ae0706a577e85efbcfacf517a329dbe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vers_supported </td>
+          <td>(</td>
+          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="conn_8h_a1ae0706a577e85efbcfacf517a329dbe_cgraph.png" border="0" usemap="#conn_8h_a1ae0706a577e85efbcfacf517a329dbe_cgraph" alt=""/></div>
+<map name="conn_8h_a1ae0706a577e85efbcfacf517a329dbe_cgraph" id="conn_8h_a1ae0706a577e85efbcfacf517a329dbe_cgraph">
+<area shape="rect" id="node2" href="conn_8h.html#ad42b6442b32fa307a6b5293b9b9df058" title="is_force_neg_vers" alt="" coords="165,5,293,32"/><area shape="rect" id="node3" href="conn_8h.html#a76639ec987a700f45570a287b25025ea" title="is_rsvd_vers" alt="" coords="181,56,277,83"/></map>
 </div>
 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="abe3a1fa9a0607f044f4c3bebdd49297a"></a>
+<a class="anchor" id="ad69eef6944d04f3ab345f5a5edb8fb6c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pthread_mutex_t q_conns_lock</td>
+          <td class="memname">struct q_conn_sl c_ready</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5618a89ddad38bdb55093279d8d3fbc5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* const conn_state_str[]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -711,7 +1344,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 13 2017 14:28:46 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 5 2018 15:07:24 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

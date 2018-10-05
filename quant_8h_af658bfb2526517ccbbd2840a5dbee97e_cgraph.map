@@ -1,0 +1,10 @@
+<map id="q_write_file" name="q_write_file">
+<area shape="rect" id="node2" href="$quant_8h.html#a76cce060063f44b767d7dc9b2265353c" title="q_alloc" alt="" coords="142,19,205,45"/>
+<area shape="rect" id="node4" href="$quant_8h.html#a5c710c2093cc759f8bb581e25b52ceda" title="q_write" alt="" coords="141,81,205,108"/>
+<area shape="rect" id="node9" href="$quant_8h.html#a4a7935a14e509d989eda300f16daf086" title="q_free" alt="" coords="144,132,203,159"/>
+<area shape="rect" id="node3" href="$quic_8c.html#aadee7dee328390db2ce060e84292af42" title="sq_unpoison" alt="" coords="254,5,349,32"/>
+<area shape="rect" id="node5" href="$conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="512,81,595,108"/>
+<area shape="rect" id="node6" href="$stream_8c.html#a379b35c4c21ee31284e14338963fdd8f" title="concat_out" alt="" coords="510,132,597,159"/>
+<area shape="rect" id="node7" href="$quic_8c.html#a90bd1e5780c2e0459a65c6c502490d80" title="do_write" alt="" coords="266,107,337,133"/>
+<area shape="rect" id="node8" href="$quic_8c.html#a5c710c2093cc759f8bb581e25b52ceda" title="q_write" alt="" coords="397,107,461,133"/>
+</map>

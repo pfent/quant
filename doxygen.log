@@ -1,43 +1,71 @@
 Searching for include files...
 Searching for example files...
 Searching for files in directory /home/travis/build/NTAP/quant/bin
-Searching for files in directory /home/travis/build/NTAP/quant/bin/CMakeFiles
-Searching for files in directory /home/travis/build/NTAP/quant/bin/CMakeFiles/client.dir
-Searching for files in directory /home/travis/build/NTAP/quant/bin/CMakeFiles/server.dir
 Searching for images...
 Searching for dot files...
+Searching for files in directory /home/travis/build/NTAP/quant/doc
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/cmcompress
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/cmcurl
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/cmlibarchive
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/cmliblzma
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/cmlibrhash
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/cmlibuv
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/cmsys
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/cmzlib
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/_sources
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/_sources/command
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/_sources/envvar
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/_sources/generator
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/_sources/manual
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/_sources/module
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/_sources/policy
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/_sources/prop_cache
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/_sources/prop_dir
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/_sources/prop_gbl
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/_sources/prop_inst
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/_sources/prop_sf
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/_sources/prop_test
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/_sources/prop_tgt
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/_sources/release
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/_sources/variable
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/_static
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/command
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/envvar
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/generator
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/manual
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/module
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/policy
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/prop_cache
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/prop_dir
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/prop_gbl
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/prop_inst
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/prop_sf
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/prop_test
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/prop_tgt
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/release
+Searching for files in directory /home/travis/build/NTAP/quant/doc/cmake/html/variable
 Searching for msc files...
 Searching for dia files...
 Searching for files to exclude
 Searching for files to process...
 Searching for files in directory /home/travis/build/NTAP/quant/lib
-Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles
-Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles/common.dir
-Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles/common.dir/src
-Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles/quant_dyn.dir
-Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles/quant_stat.dir
 Searching for files in directory /home/travis/build/NTAP/quant/lib/include
 Searching for files in directory /home/travis/build/NTAP/quant/lib/include/quant
 Searching for files in directory /home/travis/build/NTAP/quant/lib/src
-Searching for files in directory /home/travis/build/NTAP/quant/lib
-Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles
-Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles/common.dir
-Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles/common.dir/src
-Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles/quant_dyn.dir
-Searching for files in directory /home/travis/build/NTAP/quant/lib/CMakeFiles/quant_stat.dir
-Searching for files in directory /home/travis/build/NTAP/quant/lib/include
-Searching for files in directory /home/travis/build/NTAP/quant/lib/include/quant
-Searching for files in directory /home/travis/build/NTAP/quant/lib/src
+Searching for files in directory /home/travis/build/NTAP/quant/build/lib
+Searching for files in directory /home/travis/build/NTAP/quant/build/lib/CMakeFiles
+Searching for files in directory /home/travis/build/NTAP/quant/build/lib/CMakeFiles/common.dir
+Searching for files in directory /home/travis/build/NTAP/quant/build/lib/CMakeFiles/common.dir/src
+Searching for files in directory /home/travis/build/NTAP/quant/build/lib/CMakeFiles/libquant.dir
+Searching for files in directory /home/travis/build/NTAP/quant/build/lib/include
+Searching for files in directory /home/travis/build/NTAP/quant/build/lib/include/quant
+Searching for files in directory /home/travis/build/NTAP/quant/build/lib/src
 Reading and parsing tag files
 Parsing files
-Preprocessing /home/travis/build/NTAP/quant/lib/include/quant/config.h...
-Parsing file /home/travis/build/NTAP/quant/lib/include/quant/config.h...
 Preprocessing /home/travis/build/NTAP/quant/lib/include/quant/quant.h...
 Parsing file /home/travis/build/NTAP/quant/lib/include/quant/quant.h...
-Preprocessing /home/travis/build/NTAP/quant/lib/src/cert.h...
-Parsing file /home/travis/build/NTAP/quant/lib/src/cert.h...
-Preprocessing /home/travis/build/NTAP/quant/lib/src/config.c...
-Parsing file /home/travis/build/NTAP/quant/lib/src/config.c...
 Preprocessing /home/travis/build/NTAP/quant/lib/src/conn.c...
 Parsing file /home/travis/build/NTAP/quant/lib/src/conn.c...
 Preprocessing /home/travis/build/NTAP/quant/lib/src/conn.h...
@@ -46,28 +74,44 @@ Preprocessing /home/travis/build/NTAP/quant/lib/src/diet.c...
 Parsing file /home/travis/build/NTAP/quant/lib/src/diet.c...
 Preprocessing /home/travis/build/NTAP/quant/lib/src/diet.h...
 Parsing file /home/travis/build/NTAP/quant/lib/src/diet.h...
-Preprocessing /home/travis/build/NTAP/quant/lib/src/fnv_1a.c...
-Parsing file /home/travis/build/NTAP/quant/lib/src/fnv_1a.c...
-Preprocessing /home/travis/build/NTAP/quant/lib/src/fnv_1a.h...
-Parsing file /home/travis/build/NTAP/quant/lib/src/fnv_1a.h...
 Preprocessing /home/travis/build/NTAP/quant/lib/src/frame.c...
 Parsing file /home/travis/build/NTAP/quant/lib/src/frame.c...
 Preprocessing /home/travis/build/NTAP/quant/lib/src/frame.h...
 Parsing file /home/travis/build/NTAP/quant/lib/src/frame.h...
+Preprocessing /home/travis/build/NTAP/quant/lib/src/marshall.c...
+Parsing file /home/travis/build/NTAP/quant/lib/src/marshall.c...
 Preprocessing /home/travis/build/NTAP/quant/lib/src/marshall.h...
 Parsing file /home/travis/build/NTAP/quant/lib/src/marshall.h...
 Preprocessing /home/travis/build/NTAP/quant/lib/src/pkt.c...
 Parsing file /home/travis/build/NTAP/quant/lib/src/pkt.c...
 Preprocessing /home/travis/build/NTAP/quant/lib/src/pkt.h...
 Parsing file /home/travis/build/NTAP/quant/lib/src/pkt.h...
+Preprocessing /home/travis/build/NTAP/quant/lib/src/pn.c...
+Parsing file /home/travis/build/NTAP/quant/lib/src/pn.c...
+Preprocessing /home/travis/build/NTAP/quant/lib/src/pn.h...
+Parsing file /home/travis/build/NTAP/quant/lib/src/pn.h...
 Preprocessing /home/travis/build/NTAP/quant/lib/src/quic.c...
 Parsing file /home/travis/build/NTAP/quant/lib/src/quic.c...
 Preprocessing /home/travis/build/NTAP/quant/lib/src/quic.h...
 Parsing file /home/travis/build/NTAP/quant/lib/src/quic.h...
+Preprocessing /home/travis/build/NTAP/quant/lib/src/recovery.c...
+Parsing file /home/travis/build/NTAP/quant/lib/src/recovery.c...
+Preprocessing /home/travis/build/NTAP/quant/lib/src/recovery.h...
+Parsing file /home/travis/build/NTAP/quant/lib/src/recovery.h...
 Preprocessing /home/travis/build/NTAP/quant/lib/src/stream.c...
 Parsing file /home/travis/build/NTAP/quant/lib/src/stream.c...
 Preprocessing /home/travis/build/NTAP/quant/lib/src/stream.h...
 Parsing file /home/travis/build/NTAP/quant/lib/src/stream.h...
+Preprocessing /home/travis/build/NTAP/quant/lib/src/tls.c...
+Parsing file /home/travis/build/NTAP/quant/lib/src/tls.c...
+Preprocessing /home/travis/build/NTAP/quant/lib/src/tls.h...
+Parsing file /home/travis/build/NTAP/quant/lib/src/tls.h...
+Preprocessing /home/travis/build/NTAP/quant/lib/src/util.c...
+Parsing file /home/travis/build/NTAP/quant/lib/src/util.c...
+Preprocessing /home/travis/build/NTAP/quant/build/lib/include/quant/config.h...
+Parsing file /home/travis/build/NTAP/quant/build/lib/include/quant/config.h...
+Preprocessing /home/travis/build/NTAP/quant/build/lib/src/config.c...
+Parsing file /home/travis/build/NTAP/quant/build/lib/src/config.c...
 Reading /home/travis/build/NTAP/quant/README.md...
 Building group list...
 Building directory list...
@@ -124,104 +168,256 @@ Generating docs for example client.c...
 Generating docs for example server.c...
 Generating file sources...
 Generating code for file include/quant/config.h...
-Generating code for file include/quant/quant.h...
-Generating code for file src/cert.h...
 Parsing code for file src/config.c...
+Generating code for file include/quant/quant.h...
 Parsing code for file src/conn.c...
 Generating code for file src/conn.h...
 Parsing code for file src/diet.c...
 Generating code for file src/diet.h...
-Parsing code for file src/fnv_1a.c...
-Generating code for file src/fnv_1a.h...
 Parsing code for file src/frame.c...
 Generating code for file src/frame.h...
+Parsing code for file src/marshall.c...
 Generating code for file src/marshall.h...
 Parsing code for file src/pkt.c...
 Generating code for file src/pkt.h...
+Parsing code for file src/pn.c...
+Generating code for file src/pn.h...
 Parsing code for file src/quic.c...
 Generating code for file src/quic.h...
+Parsing code for file src/recovery.c...
+Generating code for file src/recovery.h...
 Parsing code for file src/stream.c...
 Generating code for file src/stream.h...
+Parsing code for file src/tls.c...
+Generating code for file src/tls.h...
+Parsing code for file src/util.c...
 Parsing code for file /home/travis/build/NTAP/quant/README.md...
 Generating file documentation...
 Generating docs for file include/quant/config.h...
+Generating docs for file src/config.c...
 Generating docs for file include/quant/quant.h...
+Generating call graph for function q_accept
+Generating call graph for function q_alloc
 Generating call graph for function q_bind
+Generating call graph for function q_chunk_str
 Generating call graph for function q_cleanup
 Generating call graph for function q_close
 Generating call graph for function q_close_stream
 Generating call graph for function q_connect
+Generating call graph for function q_init
+Generating call graph for function q_read
+Generating call graph for function q_readall_str
 Generating call graph for function q_rsv_stream
-Generating docs for file src/cert.h...
-Generating docs for file src/config.c...
+Generating call graph for function q_rx_ready
+Generating call graph for function q_write
+Generating call graph for function q_write_file
+Generating call graph for function q_write_str
 Generating docs for file src/conn.c...
+Generating call graph for function add_dcid
+Generating call graph for function add_scid
+Generating call graph for function cid_splay_cmp
+Generating call graph for function do_conn_mgmt
 Generating call graph for function do_tx
-Generating call graph for function ld_alarm
+Generating call graph for function enter_closed
+Generating call graph for function enter_closing
+Generating call graph for function err_close
+Generating call graph for function free_conn
+Generating call graph for function idle_alarm
+Generating call graph for function ipnp_splay_cmp
+Generating call graph for function log_sent_pkts
+Generating call graph for function new_conn
+Generating call graph for function ooo_0rtt_cmp
 Generating call graph for function pick_from_server_vers
-Generating call graph for function rtx
+Generating call graph for function rtx_pkt
 Generating call graph for function rx
-Generating call graph for function synth_tx
+Generating call graph for function rx_crypto
+Generating call graph for function rx_pkt
+Generating call graph for function rx_pkts
+Generating call graph for function track_recv
 Generating call graph for function tx
+Generating call graph for function tx_ack
+Generating call graph for function tx_crypto
+Generating call graph for function tx_stream_ctrl
+Generating call graph for function tx_stream_data
+Generating call graph for function tx_w
+Generating call graph for function verify_prot
+Generating call graph for function vers_supported
+Generating call graph for function vneg_or_rtry_resp
 Generating docs for file src/conn.h...
-Generating call graph for function ld_alarm
+Generating call graph for function add_dcid
+Generating call graph for function add_scid
+Generating call graph for function cid_splay_cmp
+Generating call graph for function enter_closing
+Generating call graph for function err_close
+Generating call graph for function free_conn
+Generating call graph for function ipnp_splay_cmp
+Generating call graph for function new_conn
+Generating call graph for function ooo_0rtt_cmp
 Generating call graph for function rx
 Generating call graph for function tx
+Generating call graph for function tx_ack
+Generating call graph for function tx_w
+Generating call graph for function vers_supported
 Generating docs for file src/diet.c...
-Generating call graph for functio/home/travis/build/NTAP/quant/lib/src/conn.h:87: warning: Found unknown command `\len'
-n diet_find
 Generating call graph for function diet_insert
 Generating call graph for function diet_remove
 Generating docs for file src/diet.h...
-Generating call graph for function diet_find
 Generating call graph for function diet_insert
 Generating call graph for function diet_remove
-Generating docs for file src/fnv_1a.c...
-Generating docs for file src/fnv_1a.h...
 Generating docs for file src/frame.c...
 Generating call graph for function dec_ack_frame
+Generating call graph for function dec_blocked_frame
+Generating call graph for function dec_close_frame
 Generating call graph for function dec_frames
-Generating call graph for function dec_stream_frame
+Generating call graph for function dec_max_stream_data_frame
+Generating call graph for function dec_max_stream_id_frame
+Generating call graph for function dec_new_cid_frame
+Generating call graph for function dec_stop_sending_frame
+Generating call graph for function dec_stream_blocked_frame
+Generating call graph for function dec_stream_or_crypto_frame
 Generating call graph for function enc_ack_frame
-Generating call graph for function enc_stream_frame
-Generating call graph for function find_sent_pkt
+Generating call graph for function enc_new_cid_frame
+Generating call graph for function enc_stream_or_crypto_frame
 Generating docs for file src/frame.h...
+Generating call graph for function dec_ack_frame
 Generating call graph for function dec_frames
 Generating call graph for function enc_ack_frame
-Generating call graph for function enc_stream_frame
+Generating call graph for function enc_new_cid_frame
+Generating call graph for function enc_stream_or_crypto_frame
+Generating docs for file src/marshall.c...
 Generating docs for file src/marshall.h...
 Generating docs for file src/pkt.c...
+Generating call graph for function coalesce
+Generating call graph for function dec_pkt_hdr_beginning
+Generating call graph for function dec_pkt_hdr_remainder
+Generating call graph for function enc_lh_cids
 Generating call graph for function enc_pkt
+Generating call graph for function log_pkt
+Generating call graph for function pkt_type_str
 Generating docs for file src/pkt.h...
+Generating call graph for function coalesce
+Generating call graph for function dec_pkt_hdr_beginning
+Generating call graph for function dec_pkt_hdr_remainder
 Generating call graph for function enc_pkt
+Generating call graph for function log_pkt
+Generating docs for file src/pn.c...
+Generating call graph for function ack_alarm
+Generating call graph for function free_pn
+Generating call graph for function init_pn
+Generating call graph for function reset_pn
+Generating docs for file src/pn.h...
+Generating call graph for function ack_alarm
+Generating call graph for function free_pn
+Generating call graph for function init_pn
+Generating call graph for function needs_ack
+Generating call graph for function reset_pn
 Generating docs for file src/quic.c...
-Generating call graph for function new_conn
+Generating call graph for function cancel_api_call
+Generating call graph for function do_write
+Generating call graph for function pm_free
+Generating call graph for function q_accept
+Generating call graph for function q_alloc
 Generating call graph for function q_bind
 Generating call graph for function q_cleanup
 Generating call graph for function q_close
 Generating call graph for function q_close_stream
 Generating call graph for function q_connect
+Generating call graph for function q_init
+Generating call graph for function q_read
+Generating call graph for function q_readall_str
 Generating call graph for function q_rsv_stream
+Generating call graph for function q_rx_ready
+Generating call graph for function q_write
 Generating docs for file src/quic.h...
+Generating call graph for function pm_free
+Generating docs for file src/recovery.c...
+Generating call graph for function detect_lost_pkts
+Generating call graph for function hshk_pkts_outstanding
+Generating call graph for function init_rec
+Generating call graph for function on_ack_frame_end
+Generating call graph for function on_ack_frame_start
+Generating call graph for function on_ld_alarm
+Generating call graph for function on_pkt_acked
+Generating call graph for function on_pkt_acked_cc
+Generating call graph for function on_pkt_sent
+Generating call graph for function set_ld_alarm
+Generating call graph for function track_acked_pkts
+Generating docs for file src/recovery.h...
+Generating call graph for function init_rec
+Generating call graph for function on_ack_frame_end
+Generating call graph for function on_ack_frame_start
+Generating call graph for function on_pkt_acked
+Generating call graph for function on_pkt_sent
 Generating docs for file src/stream.c...
 Generating call graph for function free_stream
 Generating call graph for function new_stream
+Generating call graph for function reset_stream
 Generating docs for file src/stream.h...
 Generating call graph for function free_stream
 Generating call graph for function new_stream
+Generating call graph for function reset_stream
+Generating docs for file src/tls.c...
+Generating call graph for function chk_tp
+Generating call graph for function chk_tp_serv
+Generating call graph for function dec_aead
+Generating call graph for function enc_aead
+Generating call graph for function encrypt_ticket_cb
+Generating call graph for function free_prot
+Generating call graph for function free_tls
+Generating call graph for function free_tls_ctx
+Generating call graph for function init_prot
+Generating call graph for function init_ticket_prot
+Generating call graph for function init_tls
+Generating call graph for function init_tls_ctx
+Generating call graph for function log_secret_cb
+Generating call graph for function save_ticket_cb
+Generating call graph for function setup_initial_encryption
+Generating call graph for function setup_initial_key
+Generating call graph for function tls_io
+Generating call graph for function update_traffic_key_cb
+Generating docs for file src/tls.h...
+Generating call graph for function dec_aead
+Generating call graph for function enc_aead
+Generating call graph for function free_tls
+Generating call graph for function free_tls_ctx
+Generating call graph for function init_prot
+Generating call graph for function init_tls
+Generating call graph for function init_tls_ctx
+Generating call graph for function tls_io
+Generating docs for file src/util.c...
+Generating call graph for function q_chunk_str
+Generating call graph for function q_write_file
+Generating call graph for function q_write_str
 Generating docs for file /home/travis/build/NTAP/quant/README.md...
 Generating page documentation...
 Generating group documentation...
 Generating class documentation...
+Generating docs for compound cid...
+Generating docs for compound cipher_ctx...
 Generating docs for compound diet...
 Generating docs for compound ival...
+Generating docs for compound ooo_0rtt...
+Generating docs for compound pkt_hdr...
 Generating docs for compound pkt_meta...
+Generating docs for compound pn_data_space...
+Generating docs for compound pn_hshk_space...
+Generating docs for compound pn_space...
+Generating docs for compound q_cid_map...
 Generating docs for compound q_conn...
 Generating docs for compound q_stream...
+Generating docs for compound recovery...
+Generating docs for compound ticket_splay...
+Generating docs for compound tls...
+Generating docs for compound tls_ticket...
+Generating docs for compound transport_params...
 Generating namespace index...
 Generating graph info page...
 Generating directory documentation...
 Generating dependency graph for directory include
+Generating dependency graph for directory include
 Generating dependency graph for directory include/quant
+Generating dependency graph for directory include/quant
+Generating dependency graph for directory src
 Generating dependency graph for directory src
 Generating index page...
 Generating page index...
@@ -239,109 +435,269 @@ Generating example index...
 finalizing index lists...
 Running dot...
 Generating dot graphs using 33 parallel threads...
-Running dot for graph 1/79
-Running dot for graph 2/79
-Running dot for graph 3/79
-Running dot for graph 4/79
-Running dot for graph 5/79
-Running dot for graph 6/79
-Running dot for graph 7/79
-Running dot for graph 8/79
-Running dot for graph 9/79
-Running dot for graph 10/79
-Running dot for graph 11/79
-Running dot for graph 12/79
-Running dot for graph 13/79
-Running dot for graph 14/79
-Running dot for graph 15/79
-Running dot for graph 16/79
-Running dot for graph 17/79
-Running dot for graph 18/79
-Running dot for graph 19/79
-Running dot for graph 20/79
-Running dot for graph 21/79
-Running dot for graph 22/79
-Running dot for graph 23/79
-Running dot for graph 24/79
-Running dot for graph 25/79
-Running dot for graph 26/79
-Running dot for graph 27/79
-Running dot for graph 28/79
-Running dot for graph 29/79
-Running dot for graph 30/79
-Running dot for graph 31/79
-Running dot for graph 32/79
-Running dot for graph 33/79
-Running dot for graph 34/79
-Running dot for graph 35/79
-Running dot for graph 36/79
-Running dot for graph 37/79
-Running dot for graph 38/79
-Running dot for graph 39/79
-Running dot for graph 40/79
-Running dot for graph 41/79
-Running dot for graph 42/79
-Running dot for graph 43/79
-Running dot for graph 44/79
-Running dot for graph 45/79
-Running dot for graph 46/79
-Running dot for graph 47/79
-Running dot for graph 48/79
-Running dot for graph 49/79
-Running dot for graph 50/79
-Running dot for graph 51/79
-Running dot for graph 52/79
-Running dot for graph 53/79
-Running dot for graph 54/79
-Running dot for graph 55/79
-Running dot for graph 56/79
-Running dot for graph 57/79
-Running dot for graph 58/79
-Running dot for graph 59/79
-Running dot for graph 60/79
-Running dot for graph 61/79
-Running dot for graph 62/79
-Running dot for graph 63/79
-Running dot for graph 64/79
-Running dot for graph 65/79
-Running dot for graph 66/79
-Running dot for graph 67/79
-Running dot for graph 68/79
-Running dot for graph 69/79
-Running dot for graph 70/79
-Running dot for graph 71/79
-Running dot for graph 72/79
-Running dot for graph 73/79
-Running dot for graph 74/79
-Running dot for graph 75/79
-Running dot for graph 76/79
-Running dot for graph 77/79
-Running dot for graph 78/79
-Running dot for graph 79/79
-Patching output file 1/25
-Patching output file 2/25
-Patching output file 3/25
-Patching output file 4/25
-Patching output file 5/25
-Patching output file 6/25
-Patching output file 7/25
-Patching output file 8/25
-Patching output file 9/25
-Patching output file 10/25
-Patching output file 11/25
-Patching output file 12/25
-Patching output file 13/25
-Patching output file 14/25
-Patching output file 15/25
-Patching output file 16/25
-Patching output file 17/25
-Patching output file 18/25
-Patching output file 19/25
-Patching output file 20/25
-Patching output file 21/25
-Patching output file 22/25
-Patching output file 23/25
-Patching output file 24/25
-Patching output file 25/25
-lookup cache used 303/65536 hits=1804 misses=307
+Running dot for graph 1/224
+Running dot for graph 2/224
+Running dot for graph 3/224
+Running dot for graph 4/224
+Running dot for graph 5/224
+Running dot for graph 6/224
+Running dot for graph 7/224
+Running dot for graph 8/224
+Running dot for graph 9/224
+Running dot for graph 10/224
+Running dot for graph 11/224
+Running dot for graph 12/224
+Running dot for graph 13/224
+Running dot for graph 14/224
+Running dot for graph 15/224
+Running dot for graph 16/224
+Running dot for graph 17/224
+Running dot for graph 18/224
+Running dot for graph 19/224
+Running dot for graph 20/224
+Running dot for graph 21/224
+Running dot for graph 22/224
+Running dot for graph 23/224
+Running dot for graph 24/224
+Running dot for graph 25/224
+Running dot for graph 26/224
+Running dot for graph 27/224
+Running dot for graph 28/224
+Running dot for graph 29/224
+Running dot for graph 30/224
+Running dot for graph 31/224
+Running dot for graph 32/224
+Running dot for graph 33/224
+Running dot for graph 34/224
+Running dot for graph 35/224
+Running dot for graph 36/224
+Running dot for graph 37/224
+Running dot for graph 38/224
+Running dot for graph 39/224
+Running dot for graph 40/224
+Running dot for graph 41/224
+Running dot for graph 42/224
+Running dot for graph 43/224
+Running dot for graph 44/224
+Running dot for graph 45/224
+Running dot for graph 46/224
+Running dot for graph 47/224
+Running dot for graph 48/224
+Running dot for graph 49/224
+Running dot for graph 50/224
+Running dot for graph 51/224
+Running dot for graph 52/224
+Running dot for graph 53/224
+Running dot for graph 54/224
+Running dot for graph 55/224
+Running dot for graph 56/224
+Running dot for graph 57/224
+Running dot for graph 58/224
+Running dot for graph 59/224
+Running dot for graph 60/224
+Running dot for graph 61/224
+Running dot for graph 62/224
+Running dot for graph 63/224
+Running dot for graph 64/224
+Running dot for graph 65/224
+Running dot for graph 66/224
+Running dot for graph 67/224
+Running dot for graph 68/224
+Running dot for graph 69/224
+Running dot for graph 70/224
+Running dot for graph 71/224
+Running dot for graph 72/224
+Running dot for graph 73/224
+Running dot for graph 74/224
+Running dot for graph 75/224
+Running dot for graph 76/224
+Running dot for graph 77/224
+Running dot for graph 78/224
+Running dot for graph 79/224
+Running dot for graph 80/224
+Running dot for graph 81/224
+Running dot for graph 82/224
+Running dot for graph 83/224
+Running dot for graph 84/224
+Running dot for graph 85/224
+Running dot for graph 86/224
+Running dot for graph 87/224
+Running dot for graph 88/224
+Running dot for graph 89/224
+Running dot for graph 90/224
+Running dot for graph 91/224
+Running dot for graph 92/224
+Running dot for graph 93/224
+Running dot for graph 94/224
+Running dot for graph 95/224
+Running dot for graph 96/224
+Running dot for graph 97/224
+Running dot for graph 98/224
+Running dot for graph 99/224
+Running dot for graph 100/224
+Running dot for graph 101/224
+Running dot for graph 102/224
+Running dot for graph 103/224
+Running dot for graph 104/224
+Running dot for graph 105/224
+Running dot for graph 106/224
+Running dot for graph 107/224
+Running dot for graph 108/224
+Running dot for graph 109/224
+Running dot for graph 110/224
+Running dot for graph 111/224
+Running dot for graph 112/224
+Running dot for graph 113/224
+Running dot for graph 114/224
+Running dot for graph 115/224
+Running dot for graph 116/224
+Running dot for graph 117/224
+Running dot for graph 118/224
+Running dot for graph 119/224
+Running dot for graph 120/224
+Running dot for graph 121/224
+Running dot for graph 122/224
+Running dot for graph 123/224
+Running dot for graph 124/224
+Running dot for graph 125/224
+Running dot for graph 126/224
+Running dot for graph 127/224
+Running dot for graph 128/224
+Running dot for graph 129/224
+Running dot for graph 130/224
+Running dot for graph 131/224
+Running dot for graph 132/224
+Running dot for graph 133/224
+Running dot for graph 134/224
+Running dot for graph 135/224
+Running dot for graph 136/224
+Running dot for graph 137/224
+Running dot for graph 138/224
+Running dot for graph 139/224
+Running dot for graph 140/224
+Running dot for graph 141/224
+Running dot for graph 142/224
+Running dot for graph 143/224
+Running dot for graph 144/224
+Running dot for graph 145/224
+Running dot for graph 146/224
+Running dot for graph 147/224
+Running dot for graph 148/224
+Running dot for graph 149/224
+Running dot for graph 150/224
+Running dot for graph 151/224
+Running dot for graph 152/224
+Running dot for graph 153/224
+Running dot for graph 154/224
+Running dot for graph 155/224
+Running dot for graph 156/224
+Running dot for graph 157/224
+Running dot for graph 158/224
+Running dot for graph 159/224
+Running dot for graph 160/224
+Running dot for graph 161/224
+Running dot for graph 162/224
+Running dot for graph 163/224
+Running dot for graph 164/224
+Running dot for graph 165/224
+Running dot for graph 166/224
+Running dot for graph 167/224
+Running dot for graph 168/224
+Running dot for graph 169/224
+Running dot for graph 170/224
+Running dot for graph 171/224
+Running dot for graph 172/224
+Running dot for graph 173/224
+Running dot for graph 174/224
+Running dot for graph 175/224
+Running dot for graph 176/224
+Running dot for graph 177/224
+Running dot for graph 178/224
+Running dot for graph 179/224
+Running dot for graph 180/224
+Running dot for graph 181/224
+Running dot for graph 182/224
+Running dot for graph 183/224
+Running dot for graph 184/224
+Running dot for graph 185/224
+Running dot for graph 186/224
+Running dot for graph 187/224
+Running dot for graph 188/224
+Running dot for graph 189/224
+Running dot for graph 190/224
+Running dot for graph 191/224
+Running dot for graph 192/224
+Running dot for graph 193/224
+Running dot for graph 194/224
+Running dot for graph 195/224
+Running dot for graph 196/224
+Running dot for graph 197/224
+Running dot for graph 198/224
+Running dot for graph 199/224
+Running dot for graph 200/224
+Running dot for graph 201/224
+Running dot for graph 202/224
+Running dot for graph 203/224
+Running dot for graph 204/224
+Running dot for graph 205/224
+Running dot for graph 206/224
+Running dot for graph 207/224
+Running dot for graph 208/224
+Running dot for graph 209/224
+Running dot for graph 210/224
+Running dot for graph 211/224
+Running dot for graph 212/224
+Running dot for graph 213/224
+Running dot for graph 214/224
+Running dot for graph 215/224
+Running dot for graph 216/224
+Running dot for graph 217/224
+Running dot for graph 218/224
+Running dot for graph 219/224
+Running dot for graph 220/224
+Running dot for graph 221/224
+Running dot for graph 222/224
+Running dot for graph 223/224
+Running dot for graph 224/224
+Patching output file 1/40
+Patching output file 2/40
+Patching output file 3/40
+Patching output file 4/40
+Patching output file 5/40
+Patching output file 6/40
+Patching output file 7/40
+Patching output file 8/40
+Patching output file 9/40
+Patching output file 10/40
+Patching output file 11/40
+Patching output file 12/40
+Patching output file 13/40
+Patching output file 14/40
+Patching output file 15/40
+Patching output file 16/40
+Patching output file 17/40
+Patching output file 18/40
+Patching output file 19/40
+Patching output file 20/40
+Patching output file 21/40
+Patching output file 22/40
+Patching output file 23/40
+Patching output file 24/40
+Patching output file 25/40
+Patching output file 26/40
+Patching output file 27/40
+Patching output file 28/40
+Patching output file 29/40
+Patching output file 30/40
+Patching output file 31/40
+Patching output file 32/40
+Patching output file 33/40
+Patching output file 34/40
+Patching output file 35/40
+Patching output file 36/40
+Patching output file 37/40
+Patching output file 38/40
+Patching output file 39/40
+Patching output file 40/40
+lookup cache used 862/65536 hits=7142 misses=879
 finished...

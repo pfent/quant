@@ -1,0 +1,7 @@
+<map id="pm_free" name="pm_free">
+<area shape="rect" id="node2" href="$diet_8c.html#a9064e32f6b50901d8f5685e53d2e4041" title="Inserts integer n of type t into the diet tree t. " alt="" coords="123,81,205,108"/>
+<area shape="rect" id="node3" href="$diet_8c.html#a87c3c2cebc6ccf0911d3d05989352588" title="Pointer to the interval containing n in diet tree t. " alt="" coords="259,5,330,32"/>
+<area shape="rect" id="node4" href="$diet_8c.html#a85e4e10a029283a5798638bfaf387abd" title="Return maximum interval underneath i. " alt="" coords="257,56,332,83"/>
+<area shape="rect" id="node5" href="$diet_8c.html#a8f0e77727941f94b10b1ea1241df8eaa" title="Return minimum interval underneath i. " alt="" coords="259,107,330,133"/>
+<area shape="rect" id="node6" href="$diet_8c.html#a21164f67106bc7c1712e8b6596aa0253" title="Helper function to create a zero&#45;width interval containing (only) n. " alt="" coords="254,157,335,184"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="pn_space" name="pn_space">
+<area shape="rect" id="node5" href="$structpn__data__space.html" title="pn_data_space" alt="" coords="40,245,150,272"/>
+<area shape="rect" id="node8" href="$structpn__hshk__space.html" title="pn_hshk_space" alt="" coords="322,245,435,272"/>
+<area shape="rect" id="node2" href="$structdiet.html" title="diet" alt="" coords="70,5,112,32"/>
+<area shape="rect" id="node3" href="$structq__conn.html" title="A QUIC connection. " alt="" coords="347,349,411,376"/>
+<area shape="rect" id="node4" href="$structtransport__params.html" title="transport_params" alt="" coords="175,245,298,272"/>
+<area shape="rect" id="node6" href="$structcipher__ctx.html" title="cipher_ctx" alt="" coords="132,125,214,152"/>
+<area shape="rect" id="node7" href="$structtls.html" title="tls" alt="" coords="460,245,498,272"/>
+<area shape="rect" id="node9" href="$structrecovery.html" title="recovery" alt="" coords="583,245,655,272"/>
+</map>

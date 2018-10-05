@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['flags',['flags',['../structq__conn.html#ae0f7709b5df4ecde903ac08bd6b0a124',1,'q_conn::flags()'],['../structq__stream.html#a553297d8d01871467e55abf88ada461d',1,'q_stream::flags()']]]
+  ['file_5fname',['file_name',['../structticket__splay.html#a9e7dd87625307109eeb75c8e30bb979a',1,'ticket_splay']]],
+  ['flags',['flags',['../structpkt__hdr.html#a1632f4a27e52dde0274278ea83fc3dd6',1,'pkt_hdr']]]
 ];

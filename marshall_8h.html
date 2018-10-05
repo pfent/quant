@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">quant
-   &#160;<span id="projectnumber">0.0.5</span>
+   &#160;<span id="projectnumber">0.0.14</span>
    </div>
   </td>
  </tr>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,71 +81,80 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a065c5f60305fee3569f887679366939.html">src</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">marshall.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;arpa/inet.h&gt;</code><br/>
-<code>#include &lt;stdint.h&gt;</code><br/>
-<code>#include &lt;warpcore/warpcore.h&gt;</code><br/>
-<code>#include &quot;<a class="el" href="config_8h_source.html">quant/config.h</a>&quot;</code><br/>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for marshall.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="marshall_8h__incl.png" border="0" usemap="#src_2marshall_8h" alt=""/></div>
 <map name="src_2marshall_8h" id="src_2marshall_8h">
-<area shape="rect" id="node5" href="config_8h.html" title="quant/config.h" alt="" coords="369,80,473,107"/></map>
+</map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="marshall_8h__dep__incl.png" border="0" usemap="#src_2marshall_8hdep" alt=""/></div>
 <map name="src_2marshall_8hdep" id="src_2marshall_8hdep">
-<area shape="rect" id="node2" href="conn_8c.html" title="src/conn.c" alt="" coords="5,80,87,107"/><area shape="rect" id="node3" href="frame_8c.html" title="src/frame.c" alt="" coords="112,80,200,107"/><area shape="rect" id="node4" href="pkt_8c.html" title="src/pkt.c" alt="" coords="225,80,297,107"/></map>
+<area shape="rect" id="node2" href="conn_8c.html" title="src/conn.c" alt="" coords="5,80,87,107"/><area shape="rect" id="node3" href="frame_8c.html" title="src/frame.c" alt="" coords="112,80,200,107"/><area shape="rect" id="node4" href="marshall_8c.html" title="src/marshall.c" alt="" coords="224,80,328,107"/><area shape="rect" id="node5" href="pkt_8c.html" title="src/pkt.c" alt="" coords="353,80,425,107"/><area shape="rect" id="node6" href="tls_8c.html" title="src/tls.c" alt="" coords="451,80,520,107"/></map>
 </div>
 </div>
 <p><a href="marshall_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a3b6e45eddbf458ee27a546d4fe815a1b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#a3b6e45eddbf458ee27a546d4fe815a1b">type_str</a>(x)</td></tr>
-<tr class="memdesc:a3b6e45eddbf458ee27a546d4fe815a1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">C generic returning the type of the passed expression <code>x</code>.  <a href="#a3b6e45eddbf458ee27a546d4fe815a1b">More...</a><br/></td></tr>
-<tr class="separator:a3b6e45eddbf458ee27a546d4fe815a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37c9d289def8a2ca38e351b6d3be781e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#a37c9d289def8a2ca38e351b6d3be781e">bitstring_fmt</a>&#160;&#160;&#160;&quot;%c%c%c%c:%c%c%c%c&quot;</td></tr>
-<tr class="memdesc:a37c9d289def8a2ca38e351b6d3be781e"><td class="mdescLeft">&#160;</td><td class="mdescRight">printf pattern for to_bitstring  <a href="#a37c9d289def8a2ca38e351b6d3be781e">More...</a><br/></td></tr>
-<tr class="separator:a37c9d289def8a2ca38e351b6d3be781e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa58567e0425508326407ac14ada5fca5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#aa58567e0425508326407ac14ada5fca5">to_bitstring</a>(byte)</td></tr>
-<tr class="memdesc:aa58567e0425508326407ac14ada5fca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <code>byte</code> into eight characters (0 or 1, respectively) for use with printf-style functions and <code>bitstring_fmt</code>.  <a href="#aa58567e0425508326407ac14ada5fca5">More...</a><br/></td></tr>
-<tr class="separator:aa58567e0425508326407ac14ada5fca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6260c58bcf16b64a41013d10babcdd3b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#a6260c58bcf16b64a41013d10babcdd3b">dec</a>(dst, buf, buf_len, pos, len, fmt)</td></tr>
-<tr class="memdesc:a6260c58bcf16b64a41013d10babcdd3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes <code>len</code> bytes of network byte-order data starting at position <code>pos</code> of buffer <code>buf</code> (which has total length <code>buf_len</code>) info variable <code>dst</code> in host byte-order, using printf format string <code>fmt</code> to format the data for debug logging.  <a href="#a6260c58bcf16b64a41013d10babcdd3b">More...</a><br/></td></tr>
-<tr class="separator:a6260c58bcf16b64a41013d10babcdd3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b32ee797fd6fb63a9563ce8a5492606"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#a9b32ee797fd6fb63a9563ce8a5492606">enc</a>(buf, buf_len, pos, src, src_len, fmt)</td></tr>
-<tr class="memdesc:a9b32ee797fd6fb63a9563ce8a5492606"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes the lower <code>src_len</code> bytes of host byte-order data contained in <code>src</code> into network byte-order at at position <code>pos</code> of buffer <code>buf</code> (which has total length <code>buf_len</code>), using printf format string <code>fmt</code> to format the data for debug logging.  <a href="#a9b32ee797fd6fb63a9563ce8a5492606">More...</a><br/></td></tr>
-<tr class="separator:a9b32ee797fd6fb63a9563ce8a5492606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac940276f5fca6215b4fa7e68a00775a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#aac940276f5fca6215b4fa7e68a00775a">VARINT1_MAX</a>&#160;&#160;&#160;0x3fU</td></tr>
+<tr class="separator:aac940276f5fca6215b4fa7e68a00775a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f88cd970ff663ecfb133107c6735e10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#a5f88cd970ff663ecfb133107c6735e10">VARINT2_MAX</a>&#160;&#160;&#160;0x3FFFU</td></tr>
+<tr class="separator:a5f88cd970ff663ecfb133107c6735e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76a8d68c65624e594554871ce013bc6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#a76a8d68c65624e594554871ce013bc6d">VARINT4_MAX</a>&#160;&#160;&#160;0x3fffffffUL</td></tr>
+<tr class="separator:a76a8d68c65624e594554871ce013bc6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8be34ac37a6bd7c298247a1be00ed4f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#a8be34ac37a6bd7c298247a1be00ed4f6">VARINT8_MAX</a>&#160;&#160;&#160;0x3fffffffffffffffULL</td></tr>
+<tr class="separator:a8be34ac37a6bd7c298247a1be00ed4f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdded853f553807df4d7ff2363c313e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#abdded853f553807df4d7ff2363c313e8">VARINT_MAX</a>&#160;&#160;&#160;<a class="el" href="marshall_8h.html#a8be34ac37a6bd7c298247a1be00ed4f6">VARINT8_MAX</a></td></tr>
+<tr class="separator:abdded853f553807df4d7ff2363c313e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0986acb39655709f2514114be789df34"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#a0986acb39655709f2514114be789df34">enc</a>(buf, buf_len, pos, src, src_len, enc_len, fmt)&#160;&#160;&#160;<a class="el" href="marshall_8h.html#a00e3a0933a4392d78d0ffe5592a00f13">marshall_enc</a>((buf), (buf_len), (pos), (src), (src_len), (enc_len))</td></tr>
+<tr class="separator:a0986acb39655709f2514114be789df34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9a6e9d79474937d7203f1b1f79c7d52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#ac9a6e9d79474937d7203f1b1f79c7d52">enc_pnr</a>(buf, buf_len, pos, src, enc_len, fmt)&#160;&#160;&#160;<a class="el" href="marshall_8h.html#a7ad84abd34f611ce792f448cefaa3eea">marshall_enc_pnr</a>((buf), (buf_len), (pos), (src), (enc_len))</td></tr>
+<tr class="separator:ac9a6e9d79474937d7203f1b1f79c7d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97a073f5a85086073df37adf48327b3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#a97a073f5a85086073df37adf48327b3c">enc_buf</a>(buf, buf_len, pos, src, enc_len)&#160;&#160;&#160;<a class="el" href="marshall_8h.html#a1e5b3e621f7eb32b23f97da0dd99a834">marshall_enc_buf</a>((buf), (buf_len), (pos), (src), (enc_len))</td></tr>
+<tr class="separator:a97a073f5a85086073df37adf48327b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17979630a63703570a316e70d4e9cb30"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#a17979630a63703570a316e70d4e9cb30">dec</a>(dst, buf, buf_len, pos, dst_len, fmt)&#160;&#160;&#160;<a class="el" href="marshall_8h.html#a55857f76ce486a6d5865b0fbb883243d">marshall_dec</a>((dst), (buf), (buf_len), (pos), (dst_len))</td></tr>
+<tr class="separator:a17979630a63703570a316e70d4e9cb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8f040c726187c3dec00ac58409b60d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#ab8f040c726187c3dec00ac58409b60d9">dec_pnr</a>(dst, buf, buf_len, pos, fmt)&#160;&#160;&#160;<a class="el" href="marshall_8h.html#a30fc715e2f6257371e901aebb432d719">marshall_dec_pnr</a>((dst), (buf), (buf_len), (pos))</td></tr>
+<tr class="separator:ab8f040c726187c3dec00ac58409b60d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30296cce5b6c5d9acf70a6d8b9ef809b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#a30296cce5b6c5d9acf70a6d8b9ef809b">dec_buf</a>(dst, buf, buf_len, pos, dst_len)&#160;&#160;&#160;<a class="el" href="marshall_8h.html#a8db8664befb3f7f8cd00d33ce155518b">marshall_dec_buf</a>((dst), (buf), (buf_len), (pos), (dst_len))</td></tr>
+<tr class="separator:a30296cce5b6c5d9acf70a6d8b9ef809b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a5ef78b886a8420375943612d4329807a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#a5ef78b886a8420375943612d4329807a">varint_size_needed</a> (const uint64_t v)</td></tr>
+<tr class="memdesc:a5ef78b886a8420375943612d4329807a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes number of bytes need to enccode <code>v</code> in QUIC varint encoding.  <a href="#a5ef78b886a8420375943612d4329807a">More...</a><br/></td></tr>
+<tr class="separator:a5ef78b886a8420375943612d4329807a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00e3a0933a4392d78d0ffe5592a00f13"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#a00e3a0933a4392d78d0ffe5592a00f13">marshall_enc</a> (uint8_t *const buf, const uint16_t buf_len, const uint16_t pos, const void *const src, const uint8_t src_len, const uint8_t enc_len)</td></tr>
+<tr class="separator:a00e3a0933a4392d78d0ffe5592a00f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad84abd34f611ce792f448cefaa3eea"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#a7ad84abd34f611ce792f448cefaa3eea">marshall_enc_pnr</a> (uint8_t *const buf, const uint16_t buf_len, const uint16_t pos, const uint64_t *const src, const uint8_t enc_len)</td></tr>
+<tr class="separator:a7ad84abd34f611ce792f448cefaa3eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e5b3e621f7eb32b23f97da0dd99a834"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#a1e5b3e621f7eb32b23f97da0dd99a834">marshall_enc_buf</a> (uint8_t *const buf, const uint16_t buf_len, const uint16_t pos, const void *const src, const uint16_t enc_len)</td></tr>
+<tr class="separator:a1e5b3e621f7eb32b23f97da0dd99a834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55857f76ce486a6d5865b0fbb883243d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#a55857f76ce486a6d5865b0fbb883243d">marshall_dec</a> (void *const dst, const uint8_t *const buf, const uint16_t buf_len, const uint16_t pos, const uint8_t dst_len)</td></tr>
+<tr class="separator:a55857f76ce486a6d5865b0fbb883243d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30fc715e2f6257371e901aebb432d719"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#a30fc715e2f6257371e901aebb432d719">marshall_dec_pnr</a> (void *const dst, const uint8_t *const buf, const uint16_t buf_len, const uint16_t pos)</td></tr>
+<tr class="separator:a30fc715e2f6257371e901aebb432d719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8db8664befb3f7f8cd00d33ce155518b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8h.html#a8db8664befb3f7f8cd00d33ce155518b">marshall_dec_buf</a> (void *const dst, const uint8_t *const buf, const uint16_t buf_len, const uint16_t pos, const uint16_t dst_len)</td></tr>
+<tr class="separator:a8db8664befb3f7f8cd00d33ce155518b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a37c9d289def8a2ca38e351b6d3be781e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define bitstring_fmt&#160;&#160;&#160;&quot;%c%c%c%c:%c%c%c%c&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>printf pattern for to_bitstring </p>
-
-</div>
-</div>
-<a class="anchor" id="a6260c58bcf16b64a41013d10babcdd3b"></a>
+<a class="anchor" id="a17979630a63703570a316e70d4e9cb30"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -177,7 +186,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">len, </td>
+          <td class="paramname">dst_len, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -188,28 +197,102 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="marshall_8h.html#a55857f76ce486a6d5865b0fbb883243d">marshall_dec</a>((dst), (buf), (buf_len), (pos), (dst_len))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Decodes <code>len</code> bytes of network byte-order data starting at position <code>pos</code> of buffer <code>buf</code> (which has total length <code>buf_len</code>) info variable <code>dst</code> in host byte-order, using printf format string <code>fmt</code> to format the data for debug logging. </p>
-<p>Macro increases <code>pos</code> by <code>len</code> as a side effect.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dst</td><td>Destination to decode into. </td></tr>
-    <tr><td class="paramname">buf</td><td>Buffer to decode from. </td></tr>
-    <tr><td class="paramname">buf_len</td><td>Buffer length. </td></tr>
-    <tr><td class="paramname">pos</td><td>Buffer position to start decoding from. </td></tr>
-    <tr><td class="paramname">len</td><td>Length to decode. </td></tr>
-    <tr><td class="paramname">fmt</td><td>Printf format for debug logging. </td></tr>
-  </table>
-  </dd>
-</dl>
+</div>
+</div>
+<a class="anchor" id="a30296cce5b6c5d9acf70a6d8b9ef809b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dec_buf</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">dst, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">buf, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">buf_len, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pos, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">dst_len&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="marshall_8h.html#a8db8664befb3f7f8cd00d33ce155518b">marshall_dec_buf</a>((dst), (buf), (buf_len), (pos), (dst_len))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a9b32ee797fd6fb63a9563ce8a5492606"></a>
+<a class="anchor" id="ab8f040c726187c3dec00ac58409b60d9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dec_pnr</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">dst, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">buf, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">buf_len, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pos, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="marshall_8h.html#a30fc715e2f6257371e901aebb432d719">marshall_dec_pnr</a>((dst), (buf), (buf_len), (pos))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0986acb39655709f2514114be789df34"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -247,7 +330,212 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
+          <td class="paramname">enc_len, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
           <td class="paramname">fmt&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="marshall_8h.html#a00e3a0933a4392d78d0ffe5592a00f13">marshall_enc</a>((buf), (buf_len), (pos), (src), (src_len), (enc_len))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a97a073f5a85086073df37adf48327b3c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define enc_buf</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">buf, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">buf_len, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pos, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">src, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">enc_len&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="marshall_8h.html#a1e5b3e621f7eb32b23f97da0dd99a834">marshall_enc_buf</a>((buf), (buf_len), (pos), (src), (enc_len))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac9a6e9d79474937d7203f1b1f79c7d52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define enc_pnr</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">buf, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">buf_len, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pos, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">src, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">enc_len, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="marshall_8h.html#a7ad84abd34f611ce792f448cefaa3eea">marshall_enc_pnr</a>((buf), (buf_len), (pos), (src), (enc_len))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aac940276f5fca6215b4fa7e68a00775a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VARINT1_MAX&#160;&#160;&#160;0x3fU</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5f88cd970ff663ecfb133107c6735e10"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VARINT2_MAX&#160;&#160;&#160;0x3FFFU</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a76a8d68c65624e594554871ce013bc6d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VARINT4_MAX&#160;&#160;&#160;0x3fffffffUL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8be34ac37a6bd7c298247a1be00ed4f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VARINT8_MAX&#160;&#160;&#160;0x3fffffffffffffffULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abdded853f553807df4d7ff2363c313e8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VARINT_MAX&#160;&#160;&#160;<a class="el" href="marshall_8h.html#a8be34ac37a6bd7c298247a1be00ed4f6">VARINT8_MAX</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a55857f76ce486a6d5865b0fbb883243d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t marshall_dec </td>
+          <td>(</td>
+          <td class="paramtype">void *const&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *const&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramname"><em>buf_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t&#160;</td>
+          <td class="paramname"><em>dst_len</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -257,90 +545,257 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Encodes the lower <code>src_len</code> bytes of host byte-order data contained in <code>src</code> into network byte-order at at position <code>pos</code> of buffer <code>buf</code> (which has total length <code>buf_len</code>), using printf format string <code>fmt</code> to format the data for debug logging. </p>
-<p>Macro increases <code>pos</code> by <code>len</code> as a side effect.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buf</td><td>Buffer to decode from. </td></tr>
-    <tr><td class="paramname">buf_len</td><td>Buffer length. </td></tr>
-    <tr><td class="paramname">pos</td><td>Buffer position to start encoding to. </td></tr>
-    <tr><td class="paramname">src</td><td>Source data. </td></tr>
-    <tr><td class="paramname">src_len</td><td>Length to encode. </td></tr>
-    <tr><td class="paramname">fmt</td><td>Printf format for debug logging. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
-<a class="anchor" id="aa58567e0425508326407ac14ada5fca5"></a>
+<a class="anchor" id="a8db8664befb3f7f8cd00d33ce155518b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define to_bitstring</td>
+          <td class="memname">uint16_t marshall_dec_buf </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">byte</td><td>)</td>
+          <td class="paramtype">void *const&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const uint8_t *const&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramname"><em>buf_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramname"><em>dst_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(byte &amp; 0x80 ? <span class="charliteral">&#39;1&#39;</span> : <span class="charliteral">&#39;0&#39;</span>), (byte &amp; 0x40 ? <span class="charliteral">&#39;1&#39;</span> : <span class="charliteral">&#39;0&#39;</span>),                      \</div>
-<div class="line">        (byte &amp; 0x20 ? <span class="charliteral">&#39;1&#39;</span> : <span class="charliteral">&#39;0&#39;</span>), (byte &amp; 0x10 ? <span class="charliteral">&#39;1&#39;</span> : <span class="charliteral">&#39;0&#39;</span>),                  \</div>
-<div class="line">        (byte &amp; 0x08 ? <span class="charliteral">&#39;1&#39;</span> : <span class="charliteral">&#39;0&#39;</span>), (byte &amp; 0x04 ? <span class="charliteral">&#39;1&#39;</span> : <span class="charliteral">&#39;0&#39;</span>),                  \</div>
-<div class="line">        (byte &amp; 0x02 ? <span class="charliteral">&#39;1&#39;</span> : <span class="charliteral">&#39;0&#39;</span>), (byte &amp; 0x01 ? <span class="charliteral">&#39;1&#39;</span> : <span class="charliteral">&#39;0&#39;</span>)</div>
-</div><!-- fragment -->
-<p>Convert <code>byte</code> into eight characters (0 or 1, respectively) for use with printf-style functions and <code>bitstring_fmt</code>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">byte</td><td>The byte to convert.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Sequence of eight characters. </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a3b6e45eddbf458ee27a546d4fe815a1b"></a>
+<a class="anchor" id="a30fc715e2f6257371e901aebb432d719"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define type_str</td>
+          <td class="memname">uint16_t marshall_dec_pnr </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
+          <td class="paramtype">void *const&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *const&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramname"><em>buf_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a00e3a0933a4392d78d0ffe5592a00f13"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t marshall_enc </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *const&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramname"><em>buf_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *const&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t&#160;</td>
+          <td class="paramname"><em>src_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t&#160;</td>
+          <td class="paramname"><em>enc_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1e5b3e621f7eb32b23f97da0dd99a834"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t marshall_enc_buf </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *const&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramname"><em>buf_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *const&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramname"><em>enc_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7ad84abd34f611ce792f448cefaa3eea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t marshall_enc_pnr </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *const&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramname"><em>buf_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint64_t *const&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t&#160;</td>
+          <td class="paramname"><em>enc_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5ef78b886a8420375943612d4329807a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t varint_size_needed </td>
+          <td>(</td>
+          <td class="paramtype">const uint64_t&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">_Generic((x),                                                              \</div>
-<div class="line">            uint8_t           : <span class="stringliteral">&quot;uint8_t&quot;</span>,                                     \</div>
-<div class="line">            <span class="keyword">const</span> uint8_t     : <span class="stringliteral">&quot;const uint8_t&quot;</span>,                               \</div>
-<div class="line">            uint16_t          : <span class="stringliteral">&quot;uint16_t&quot;</span>,                                    \</div>
-<div class="line">            <span class="keyword">const</span> uint16_t    : <span class="stringliteral">&quot;const uint16_t&quot;</span>,                              \</div>
-<div class="line">            uint32_t          : <span class="stringliteral">&quot;uint32_t&quot;</span>,                                    \</div>
-<div class="line">            <span class="keyword">const</span> uint32_t    : <span class="stringliteral">&quot;const uint32_t&quot;</span>,                              \</div>
-<div class="line">            uint64_t          : <span class="stringliteral">&quot;uint64_t&quot;</span>,                                    \</div>
-<div class="line">            <span class="keyword">const</span> uint64_t    : <span class="stringliteral">&quot;const uint64_t&quot;</span>)</div>
-</div><!-- fragment -->
-<p>C generic returning the type of the passed expression <code>x</code>. </p>
-<p>Only contains entries for the types the marshalling functions support.</p>
+
+<p>Computes number of bytes need to enccode <code>v</code> in QUIC varint encoding. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>An expression</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>Value to check.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>String containing the type of <code>x</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of bytes needed in varint encoding (1, 2, 4 or 8). </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 13 2017 14:28:46 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 5 2018 15:07:24 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

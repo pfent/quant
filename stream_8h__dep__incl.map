@@ -3,5 +3,7 @@
 <area shape="rect" id="node3" href="$frame_8c.html" title="src/frame.c" alt="" coords="112,80,200,107"/>
 <area shape="rect" id="node4" href="$pkt_8c.html" title="src/pkt.c" alt="" coords="225,80,297,107"/>
 <area shape="rect" id="node5" href="$quic_8c.html" title="src/quic.c" alt="" coords="322,80,400,107"/>
-<area shape="rect" id="node6" href="$stream_8c.html" title="src/stream.c" alt="" coords="425,80,519,107"/>
+<area shape="rect" id="node6" href="$recovery_8c.html" title="src/recovery.c" alt="" coords="425,80,529,107"/>
+<area shape="rect" id="node7" href="$stream_8c.html" title="src/stream.c" alt="" coords="554,80,648,107"/>
+<area shape="rect" id="node8" href="$tls_8c.html" title="src/tls.c" alt="" coords="673,80,743,107"/>
 </map>

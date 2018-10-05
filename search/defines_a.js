@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['pkt_5fflags',['pkt_flags',['../pkt_8h.html#ab946f0d00880b6dc4a0fcd6be375e2b1',1,'pkt.h']]],
-  ['pkt_5ftype',['pkt_type',['../pkt_8h.html#a9c748ad66e34247fda74115826af57c5',1,'pkt.h']]]
+  ['log_5fdec',['log_dec',['../marshall_8c.html#ae635e264e431dd8807e0851433baaf5a',1,'marshall.c']]],
+  ['log_5fenc',['log_enc',['../marshall_8c.html#a4c9f737352d10453560686bc1d742e9a',1,'marshall.c']]],
+  ['loop_5frun',['loop_run',['../quic_8c.html#a7890c6fb9ffd79d2073edcdc00d600af',1,'quic.c']]]
 ];

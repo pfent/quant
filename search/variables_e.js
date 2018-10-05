@@ -1,11 +1,9 @@
 var searchData=
 [
-  ['r',['r',['../structq__stream.html#ac9506a631e5b5b6feb6560fa0583b806',1,'q_stream']]],
-  ['rec_5fend',['rec_end',['../structq__conn.html#a1f13b91ccfaf16f7d6d0f4b58e291f69',1,'q_conn']]],
-  ['recv',['recv',['../structq__conn.html#aa30f282422d8fe483d01e6a595b3f6ed',1,'q_conn']]],
-  ['reorder_5ffract',['reorder_fract',['../structq__conn.html#a0429ab1e18018bd7a386641da06865ea',1,'q_conn']]],
-  ['reorder_5fthresh',['reorder_thresh',['../structq__conn.html#ada957426646130f9fbe1c215638fefc3',1,'q_conn']]],
-  ['rto_5fcnt',['rto_cnt',['../structq__conn.html#aa15c9841d75e8bf123ab766a7be23e54',1,'q_conn']]],
-  ['rttvar',['rttvar',['../structq__conn.html#ad43cd8054a08a3a68d0ba824901edbed',1,'q_conn']]],
-  ['rx_5fw',['rx_w',['../structq__conn.html#aa237d71bb04b7a3b77410003329a438f',1,'q_conn']]]
+  ['quant_5fcommit_5fhash',['quant_commit_hash',['../config_8h.html#a49ec2308afdb2559c86aeb4cd74cc135',1,'quant_commit_hash():&#160;config.c'],['../config_8c.html#a49ec2308afdb2559c86aeb4cd74cc135',1,'quant_commit_hash():&#160;config.c']]],
+  ['quant_5fcommit_5fhash_5fabbrev',['quant_commit_hash_abbrev',['../config_8h.html#a236d3aa5b661716d3644ee490d12c3d7',1,'quant_commit_hash_abbrev():&#160;config.c'],['../config_8c.html#a236d3aa5b661716d3644ee490d12c3d7',1,'quant_commit_hash_abbrev():&#160;config.c']]],
+  ['quant_5fcommit_5fhash_5fabbrev_5flen',['quant_commit_hash_abbrev_len',['../config_8h.html#a4a83698e6bc72bbd3cb54710c164752a',1,'quant_commit_hash_abbrev_len():&#160;config.c'],['../config_8c.html#a4a83698e6bc72bbd3cb54710c164752a',1,'quant_commit_hash_abbrev_len():&#160;config.c']]],
+  ['quant_5fcommit_5fhash_5flen',['quant_commit_hash_len',['../config_8h.html#a3ff2b2144828ec29ab5eb506d041feb4',1,'quant_commit_hash_len():&#160;config.c'],['../config_8c.html#a3ff2b2144828ec29ab5eb506d041feb4',1,'quant_commit_hash_len():&#160;config.c']]],
+  ['quant_5fname',['quant_name',['../config_8h.html#a60aab99d31b45a852fcd62a546237f98',1,'quant_name():&#160;config.c'],['../config_8c.html#a60aab99d31b45a852fcd62a546237f98',1,'quant_name():&#160;config.c']]],
+  ['quant_5fversion',['quant_version',['../config_8h.html#ac620cc09e64c3fe9f62143ca4e707fe7',1,'quant_version():&#160;config.c'],['../config_8c.html#ac620cc09e64c3fe9f62143ca4e707fe7',1,'quant_version():&#160;config.c']]]
 ];

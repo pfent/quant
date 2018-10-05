@@ -1,8 +1,27 @@
 var searchData=
 [
-  ['o',['o',['../structq__stream.html#ad9ee8de50912de317d4a29096fcda5c8',1,'q_stream']]],
   ['ok_5fvers',['ok_vers',['../quic_8c.html#a855179145371edc9111433f621044ab4',1,'ok_vers():&#160;quic.c'],['../quic_8h.html#a855179145371edc9111433f621044ab4',1,'ok_vers():&#160;quic.c']]],
   ['ok_5fvers_5flen',['ok_vers_len',['../quic_8c.html#ae9a33cf3a5f649662f26bb9eae92bf7b',1,'ok_vers_len():&#160;quic.c'],['../quic_8h.html#ae9a33cf3a5f649662f26bb9eae92bf7b',1,'ok_vers_len():&#160;quic.c']]],
-  ['out_5fnr',['out_nr',['../structq__stream.html#a99c110bbdd52ddb8000548d54c81ed57',1,'q_stream']]],
-  ['out_5foff',['out_off',['../structq__stream.html#abbb87e5bf80a37aabcf4d8a7224ae98e',1,'q_stream']]]
+  ['on_5fack_5fframe_5fend',['on_ack_frame_end',['../recovery_8c.html#a3f68936dbdd0130b5cd9fe26d4926257',1,'on_ack_frame_end(struct q_conn *const c, struct pn_space *const pn):&#160;recovery.c'],['../recovery_8h.html#a3f68936dbdd0130b5cd9fe26d4926257',1,'on_ack_frame_end(struct q_conn *const c, struct pn_space *const pn):&#160;recovery.c']]],
+  ['on_5fack_5fframe_5fstart',['on_ack_frame_start',['../recovery_8c.html#a83231e012bebe5487a57ecf7f89be7e4',1,'on_ack_frame_start(struct q_conn *const c, struct pn_space *const pn, const uint64_t ack, const uint64_t ack_del):&#160;recovery.c'],['../recovery_8h.html#a83231e012bebe5487a57ecf7f89be7e4',1,'on_ack_frame_start(struct q_conn *const c, struct pn_space *const pn, const uint64_t ack, const uint64_t ack_del):&#160;recovery.c']]],
+  ['on_5fch',['on_ch',['../tls_8c.html#a0ee55bc03b487f0c927e137a80878cbb',1,'tls.c']]],
+  ['on_5fld_5falarm',['on_ld_alarm',['../recovery_8c.html#a335f186f63ae2582ce2c96767906b413',1,'recovery.c']]],
+  ['on_5fpkt_5facked',['on_pkt_acked',['../recovery_8c.html#ae0c0a91e4bad1dbae40b51f774ae66aa',1,'on_pkt_acked(struct q_conn *const c, struct pn_space *const pn, const uint64_t ack):&#160;recovery.c'],['../recovery_8h.html#ae0c0a91e4bad1dbae40b51f774ae66aa',1,'on_pkt_acked(struct q_conn *const c, struct pn_space *const pn, const uint64_t ack):&#160;recovery.c']]],
+  ['on_5fpkt_5facked_5fcc',['on_pkt_acked_cc',['../recovery_8c.html#aa90aa74bc478a12aca0de398f73c456c',1,'recovery.c']]],
+  ['on_5fpkt_5fsent',['on_pkt_sent',['../recovery_8c.html#a9749ec5110f82cad7875d3ec8b94199d',1,'on_pkt_sent(struct q_stream *const s, struct w_iov *const v):&#160;recovery.c'],['../recovery_8h.html#a9749ec5110f82cad7875d3ec8b94199d',1,'on_pkt_sent(struct q_stream *const s, struct w_iov *const v):&#160;recovery.c']]],
+  ['ooo_5f0rtt',['ooo_0rtt',['../structooo__0rtt.html',1,'']]],
+  ['ooo_5f0rtt_5fby_5fcid',['ooo_0rtt_by_cid',['../conn_8c.html#a4c93c4b2b38e3f2679194c2efe4acb19',1,'conn.c']]],
+  ['ooo_5f0rtt_5fcmp',['ooo_0rtt_cmp',['../conn_8c.html#a2a9223c58954ca661d5a181bf6650155',1,'ooo_0rtt_cmp(const struct ooo_0rtt *const a, const struct ooo_0rtt *const b):&#160;conn.c'],['../conn_8h.html#a2a9223c58954ca661d5a181bf6650155',1,'ooo_0rtt_cmp(const struct ooo_0rtt *const a, const struct ooo_0rtt *const b):&#160;conn.c']]],
+  ['out',['out',['../structpn__hshk__space.html#a7b5d9b211f2a2b794dbbd36fef051d20',1,'pn_hshk_space::out()'],['../structq__stream.html#ad6bc293a8f8e054b500882d8ef57b1b6',1,'q_stream::out()']]],
+  ['out_5f0rtt',['out_0rtt',['../structpn__data__space.html#a27cff102e25dcc1a37a963309a6e5fe9',1,'pn_data_space']]],
+  ['out_5f1rtt',['out_1rtt',['../structpn__data__space.html#ab98ec33ea5a5a25350e0a8c4c49d30d8',1,'pn_data_space']]],
+  ['out_5fack_5fcnt',['out_ack_cnt',['../structq__stream.html#a0177e66aac90960875cd8922da3d7834',1,'q_stream']]],
+  ['out_5fdata',['out_data',['../structq__conn.html#a151698e387cb78448f7bf5d29e766586',1,'q_conn::out_data()'],['../structq__stream.html#a5efa5e6ca12481e1d166fa28c8793c09',1,'q_stream::out_data()']]],
+  ['out_5fdata_5fmax',['out_data_max',['../structq__stream.html#a744161b8f9bfbde5ac73be4a882e179f',1,'q_stream']]],
+  ['out_5ffully_5facked',['out_fully_acked',['../stream_8h.html#ad30add9149d4bde85b9e2cc3e9159559',1,'stream.h']]],
+  ['out_5fnxt',['out_nxt',['../structq__stream.html#af4fdada7b6f29b3ca4166cc83089a6ae',1,'q_stream']]],
+  ['out_5funa',['out_una',['../structq__stream.html#a0492f92ef3cdccbfc9c569049a7816d5',1,'q_stream']]],
+  ['overloaded_5fmacro',['OVERLOADED_MACRO',['../quic_8h.html#a6ad32a90c9e8d6deb3bce417ea1a7efd',1,'quic.h']]],
+  ['ovr',['OVR',['../quic_8h.html#abb8f7e61cd63ead81dcc89e845399a7f',1,'quic.h']]],
+  ['ovr_5fexpand',['OVR_EXPAND',['../quic_8h.html#a424c390e0c01cb005886eda31b27a60f',1,'quic.h']]]
 ];

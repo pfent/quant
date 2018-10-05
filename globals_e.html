@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">quant
-   &#160;<span id="projectnumber">0.0.5</span>
+   &#160;<span id="projectnumber">0.0.14</span>
    </div>
   </td>
  </tr>
@@ -71,6 +71,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals_func.html"><span>Functions</span></a></li>
       <li><a href="globals_vars.html"><span>Variables</span></a></li>
       <li><a href="globals_type.html"><span>Typedefs</span></a></li>
+      <li><a href="globals_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="globals_eval.html"><span>Enumerator</span></a></li>
       <li><a href="globals_defs.html"><span>Macros</span></a></li>
     </ul>
   </div>
@@ -95,7 +97,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals_r.html#index_r"><span>r</span></a></li>
       <li><a href="globals_s.html#index_s"><span>s</span></a></li>
       <li><a href="globals_t.html#index_t"><span>t</span></a></li>
+      <li><a href="globals_u.html#index_u"><span>u</span></a></li>
       <li><a href="globals_v.html#index_v"><span>v</span></a></li>
+      <li><a href="globals_w.html#index_w"><span>w</span></a></li>
+      <li><a href="globals_y.html#index_y"><span>y</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -104,7 +109,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -118,44 +123,160 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
 <li>enc
-: <a class="el" href="marshall_8h.html#a9b32ee797fd6fb63a9563ce8a5492606">marshall.h</a>
-</li>
-<li>enc_ack_block_len
-: <a class="el" href="frame_8c.html#a3f178997a1c13410eea145f4fac75846">frame.c</a>
+: <a class="el" href="marshall_8h.html#a0986acb39655709f2514114be789df34">marshall.h</a>
 </li>
 <li>enc_ack_frame()
-: <a class="el" href="frame_8h.html#a8d41621adfc301bec8370f974e91c9cc">frame.h</a>
-, <a class="el" href="frame_8c.html#a8d41621adfc301bec8370f974e91c9cc">frame.c</a>
+: <a class="el" href="frame_8c.html#ad33d4ffd79b410b355647b882fcecd94">frame.c</a>
+, <a class="el" href="frame_8h.html#ad33d4ffd79b410b355647b882fcecd94">frame.h</a>
 </li>
-<li>enc_lg_ack_len
-: <a class="el" href="frame_8c.html#a87d33a90d29ed9db8faa8897e3ef32c9">frame.c</a>
+<li>enc_aead()
+: <a class="el" href="tls_8c.html#a1b4e58371250876912c40fcb76f8eb4f">tls.c</a>
+, <a class="el" href="tls_8h.html#a1b4e58371250876912c40fcb76f8eb4f">tls.h</a>
 </li>
-<li>enc_off_len
-: <a class="el" href="frame_8c.html#a08c4f3e8ced583853f376297c70f792c">frame.c</a>
+<li>enc_blocked_frame()
+: <a class="el" href="frame_8c.html#a2037bb3c54a511d30919c36c65e79bb7">frame.c</a>
+, <a class="el" href="frame_8h.html#a2037bb3c54a511d30919c36c65e79bb7">frame.h</a>
+</li>
+<li>enc_buf
+: <a class="el" href="marshall_8h.html#a97a073f5a85086073df37adf48327b3c">marshall.h</a>
+</li>
+<li>enc_close_frame()
+: <a class="el" href="frame_8c.html#a69e685c0bc62a86a703d3f0c83363f96">frame.c</a>
+, <a class="el" href="frame_8h.html#a69e685c0bc62a86a703d3f0c83363f96">frame.h</a>
+</li>
+<li>enc_lh_cids()
+: <a class="el" href="pkt_8c.html#a71b15bbb7677c2dca369290a1f4b86c0">pkt.c</a>
+</li>
+<li>enc_max_data_frame()
+: <a class="el" href="frame_8c.html#afce90a1bb73bc652f0ccbd5402b0eb61">frame.c</a>
+, <a class="el" href="frame_8h.html#afce90a1bb73bc652f0ccbd5402b0eb61">frame.h</a>
+</li>
+<li>enc_max_stream_data_frame()
+: <a class="el" href="frame_8c.html#afac1f0948949980e386e72ae7f2b3132">frame.c</a>
+, <a class="el" href="frame_8h.html#afac1f0948949980e386e72ae7f2b3132">frame.h</a>
+</li>
+<li>enc_max_stream_id_frame()
+: <a class="el" href="frame_8c.html#ad254391e26decf235568cd8d6f20689f">frame.c</a>
+, <a class="el" href="frame_8h.html#ad254391e26decf235568cd8d6f20689f">frame.h</a>
+</li>
+<li>enc_new_cid_frame()
+: <a class="el" href="frame_8c.html#acf128f54c264f522e96019baef7af3c1">frame.c</a>
+, <a class="el" href="frame_8h.html#acf128f54c264f522e96019baef7af3c1">frame.h</a>
+</li>
+<li>enc_new_token_frame()
+: <a class="el" href="frame_8c.html#a722b21098f9985a27188e9fae848aced">frame.c</a>
+, <a class="el" href="frame_8h.html#a722b21098f9985a27188e9fae848aced">frame.h</a>
 </li>
 <li>enc_padding_frame()
-: <a class="el" href="frame_8h.html#a89e5fa4a1820e4bb58711d4133fcf4e8">frame.h</a>
-, <a class="el" href="frame_8c.html#a89e5fa4a1820e4bb58711d4133fcf4e8">frame.c</a>
+: <a class="el" href="frame_8c.html#a0d8bea0a0a229b796505008855eb17f0">frame.c</a>
+, <a class="el" href="frame_8h.html#a0d8bea0a0a229b796505008855eb17f0">frame.h</a>
+</li>
+<li>enc_path_challenge_frame()
+: <a class="el" href="frame_8c.html#ad4218d08a618cd6088192777ee96f95f">frame.c</a>
+, <a class="el" href="frame_8h.html#ad4218d08a618cd6088192777ee96f95f">frame.h</a>
+</li>
+<li>enc_path_response_frame()
+: <a class="el" href="frame_8c.html#a68280ad079aa677bf9eeb72dfe8f65d2">frame.c</a>
+, <a class="el" href="frame_8h.html#a68280ad079aa677bf9eeb72dfe8f65d2">frame.h</a>
 </li>
 <li>enc_pkt()
-: <a class="el" href="pkt_8c.html#af392b36c58463646c250f5b01ea07238">pkt.c</a>
-, <a class="el" href="pkt_8h.html#af392b36c58463646c250f5b01ea07238">pkt.h</a>
+: <a class="el" href="pkt_8c.html#a13f259191e295bb7cf7d34bb79d76bc5">pkt.c</a>
+, <a class="el" href="pkt_8h.html#a13f259191e295bb7cf7d34bb79d76bc5">pkt.h</a>
 </li>
-<li>enc_pkt_nr_len
-: <a class="el" href="pkt_8c.html#ad4727e7536772a44b43b1261457a7a62">pkt.c</a>
+<li>enc_pnr
+: <a class="el" href="marshall_8h.html#ac9a6e9d79474937d7203f1b1f79c7d52">marshall.h</a>
 </li>
-<li>enc_sid_len
-: <a class="el" href="frame_8c.html#a6612bdaf8320b772f0303ff8d52122a2">frame.c</a>
+<li>enc_stream_blocked_frame()
+: <a class="el" href="frame_8h.html#a916d0dd562621c7d36e786193418b07f">frame.h</a>
+, <a class="el" href="frame_8c.html#a916d0dd562621c7d36e786193418b07f">frame.c</a>
 </li>
-<li>enc_stream_frame()
-: <a class="el" href="frame_8h.html#a305c92dea1718d0433357f179dacadbc">frame.h</a>
-, <a class="el" href="frame_8c.html#a305c92dea1718d0433357f179dacadbc">frame.c</a>
+<li>enc_stream_id_blocked_frame()
+: <a class="el" href="frame_8c.html#a615393093bcbcddfdecf8f193beedc45">frame.c</a>
+, <a class="el" href="frame_8h.html#a615393093bcbcddfdecf8f193beedc45">frame.h</a>
+</li>
+<li>enc_stream_or_crypto_frame()
+: <a class="el" href="frame_8c.html#a6134c4faa49bbd6fbc29589f12350400">frame.c</a>
+, <a class="el" href="frame_8h.html#a6134c4faa49bbd6fbc29589f12350400">frame.h</a>
+</li>
+<li>enc_tckt
+: <a class="el" href="tls_8c.html#ae52de31f9ac17d5ebb79d284d90cc1aa">tls.c</a>
+</li>
+<li>enc_tp
+: <a class="el" href="tls_8c.html#a8e90a196b653422e5df430104bf62ee3">tls.c</a>
+</li>
+<li>encrypt_ticket
+: <a class="el" href="tls_8c.html#a4f25450b3aa01cc353142a2b8d76cfd9">tls.c</a>
+</li>
+<li>encrypt_ticket_cb()
+: <a class="el" href="tls_8c.html#a2ffbd9f27c72720873b4eaa808aa494b">tls.c</a>
+</li>
+<li>enter_closed()
+: <a class="el" href="conn_8c.html#aea7c8de8c9a43a64163e900a70678ae2">conn.c</a>
+</li>
+<li>enter_closing()
+: <a class="el" href="conn_8c.html#afd38904c68cab87424e6aa8db723fd38">conn.c</a>
+, <a class="el" href="conn_8h.html#afd38904c68cab87424e6aa8db723fd38">conn.h</a>
+</li>
+<li>ep_0rtt
+: <a class="el" href="tls_8h.html#aaca089f79f64e61453953e09fd226e46a1a4cdb07d7b5dadfadc6244a5ee78d75">tls.h</a>
+</li>
+<li>ep_data
+: <a class="el" href="tls_8h.html#aaca089f79f64e61453953e09fd226e46a030d34ca4ffa3a300c995276c165043f">tls.h</a>
+</li>
+<li>ep_hshk
+: <a class="el" href="tls_8h.html#aaca089f79f64e61453953e09fd226e46a69c3dbe76abca12db48170aec4973a18">tls.h</a>
+</li>
+<li>ep_init
+: <a class="el" href="tls_8h.html#aaca089f79f64e61453953e09fd226e46a6c1fd68888a7d434a18abddfe2fe5f2a">tls.h</a>
+</li>
+<li>epoch_for_pkt_type()
+: <a class="el" href="pkt_8h.html#a2e3325ad951d933d49dcd1cd1e0c04f1">pkt.h</a>
+</li>
+<li>epoch_for_pn()
+: <a class="el" href="pn_8c.html#a805597624cb1f11414c53599dd3743e2">pn.c</a>
+</li>
+<li>epoch_in()
+: <a class="el" href="conn_8h.html#a90b995546c499b521dcb4bf6cc7e39f1">conn.h</a>
+</li>
+<li>epoch_t
+: <a class="el" href="tls_8h.html#aaca089f79f64e61453953e09fd226e46">tls.h</a>
+</li>
+<li>err_close()
+: <a class="el" href="conn_8h.html#a02d7b0c5a072e1b673358b52ac71f160">conn.h</a>
+, <a class="el" href="conn_8c.html#a02d7b0c5a072e1b673358b52ac71f160">conn.c</a>
+</li>
+<li>err_close_return
+: <a class="el" href="frame_8c.html#ad80698afd541ebfd846d4299d7b10790">frame.c</a>
+</li>
+<li>ERR_FLOW_CONTROL
+: <a class="el" href="pkt_8h.html#a37fd3c71845762a224ec6f52056c5cf2">pkt.h</a>
+</li>
+<li>ERR_FRAME_ENC
+: <a class="el" href="pkt_8h.html#a911827d4428b3918c7c00c7f9be6bce0">pkt.h</a>
+</li>
+<li>ERR_INTERNAL
+: <a class="el" href="pkt_8h.html#a6084679069ce82f37778a3ed56860557">pkt.h</a>
+</li>
+<li>ERR_NONE
+: <a class="el" href="pkt_8h.html#aff0d3fb76f11f6e8ea4002d826bbd23c">pkt.h</a>
+</li>
+<li>ERR_PROTOCOL_VIOLATION
+: <a class="el" href="pkt_8h.html#a27994773959ccba6411fae219fe38577">pkt.h</a>
+</li>
+<li>ERR_TLS
+: <a class="el" href="pkt_8h.html#ae6b18bb77d7a31d51b26f237f55bd3aa">pkt.h</a>
+</li>
+<li>ERR_TRANSPORT_PARAMETER
+: <a class="el" href="pkt_8h.html#a73915150f68e9c3ae13506a9f08e0492">pkt.h</a>
+</li>
+<li>EV_VERIFY
+: <a class="el" href="quic_8h.html#a733907018d667311b3e174666c6d2f0f">quic.h</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 13 2017 14:28:46 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 5 2018 15:07:24 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
