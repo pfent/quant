@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">quant
-   &#160;<span id="projectnumber">0.0.14</span>
+   &#160;<span id="projectnumber">0.0.15</span>
    </div>
   </td>
  </tr>
@@ -90,6 +90,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="conn_8h_source.html">conn.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for transport_params:</div>
+<div class="dyncontent">
+<div class="center"><img src="structtransport__params__coll__graph.png" border="0" usemap="#transport__params_coll__map" alt="Collaboration graph"/></div>
+<map name="transport__params_coll__map" id="transport__params_coll__map">
+<area shape="rect" id="node2" href="structcid.html" title="cid" alt="" coords="47,5,85,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -115,18 +122,22 @@ Data Fields</h2></td></tr>
 <tr class="separator:a8f2594d069fe1679c4693433faaf05f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae332eb1c8176a3916959caa35f810278"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtransport__params.html#ae332eb1c8176a3916959caa35f810278">ack_del_exp</a></td></tr>
 <tr class="separator:ae332eb1c8176a3916959caa35f810278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abea5399e01832e7ea1d7e40c249e9a90"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtransport__params.html#abea5399e01832e7ea1d7e40c249e9a90">max_ack_del</a></td></tr>
+<tr class="separator:abea5399e01832e7ea1d7e40c249e9a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40bee6f6291254f7704bf8c6f0680561"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtransport__params.html#a40bee6f6291254f7704bf8c6f0680561">disable_migration</a></td></tr>
 <tr class="separator:a40bee6f6291254f7704bf8c6f0680561"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b5d2251cd5b65035bd06d5b1bd68fd6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtransport__params.html#a2b5d2251cd5b65035bd06d5b1bd68fd6">_unused</a> [2]</td></tr>
-<tr class="separator:a2b5d2251cd5b65035bd06d5b1bd68fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01c6a4b24a2af304e493dc9e39091a6c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtransport__params.html#a01c6a4b24a2af304e493dc9e39091a6c">_unused</a></td></tr>
+<tr class="separator:a01c6a4b24a2af304e493dc9e39091a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada77b0a712c3a04c901ef49001f358a5"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcid.html">cid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtransport__params.html#ada77b0a712c3a04c901ef49001f358a5">orig_cid</a></td></tr>
+<tr class="separator:ada77b0a712c3a04c901ef49001f358a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="a2b5d2251cd5b65035bd06d5b1bd68fd6"></a>
+<a class="anchor" id="a01c6a4b24a2af304e493dc9e39091a6c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t transport_params::_unused[2]</td>
+          <td class="memname">uint8_t transport_params::_unused</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -163,6 +174,18 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">uint16_t transport_params::idle_to</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abea5399e01832e7ea1d7e40c249e9a90"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t transport_params::max_ack_del</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -277,13 +300,25 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ada77b0a712c3a04c901ef49001f358a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structcid.html">cid</a> transport_params::orig_cid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/<a class="el" href="conn_8h_source.html">conn.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 10 2018 14:38:16 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 11 2018 13:46:59 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

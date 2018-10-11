@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">quant
-   &#160;<span id="projectnumber">0.0.14</span>
+   &#160;<span id="projectnumber">0.0.15</span>
    </div>
   </td>
  </tr>
@@ -114,7 +114,7 @@ Macros</h2></td></tr>
 <tr class="separator:a371bfb01d2f478355c384804d1db42bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae635e264e431dd8807e0851433baaf5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8c.html#ae635e264e431dd8807e0851433baaf5a">log_dec</a>(type, dec_type)</td></tr>
 <tr class="separator:ae635e264e431dd8807e0851433baaf5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3174b10b1e6faa4ee79aebf5a49f60ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8c.html#a3174b10b1e6faa4ee79aebf5a49f60ce">warn_overrun</a></td></tr>
+<tr class="memitem:a3174b10b1e6faa4ee79aebf5a49f60ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8c.html#a3174b10b1e6faa4ee79aebf5a49f60ce">warn_overrun</a>&#160;&#160;&#160;warn(WRN, &quot;cannot decode from pos %u &gt; buf len %u&quot;, pos + 1, buf_len)</td></tr>
 <tr class="separator:a3174b10b1e6faa4ee79aebf5a49f60ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7565114bf35a68d94836f0ab2f771115"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marshall_8c.html#a7565114bf35a68d94836f0ab2f771115">do_dec</a>(var)</td></tr>
 <tr class="separator:a7565114bf35a68d94836f0ab2f771115"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,7 +159,7 @@ Functions</h2></td></tr>
 <div class="line">        memcpy(&amp;(var), &amp;buf[i], <span class="keyword">sizeof</span>(var));                                  \</div>
 <div class="line">        i += <span class="keyword">sizeof</span>(var);                                                      \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="marshall_8c_html_a3174b10b1e6faa4ee79aebf5a49f60ce"><div class="ttname"><a href="marshall_8c.html#a3174b10b1e6faa4ee79aebf5a49f60ce">warn_overrun</a></div><div class="ttdeci">#define warn_overrun</div><div class="ttdef"><b>Definition:</b> marshall.c:272</div></div>
+<div class="ttc" id="marshall_8c_html_a3174b10b1e6faa4ee79aebf5a49f60ce"><div class="ttname"><a href="marshall_8c.html#a3174b10b1e6faa4ee79aebf5a49f60ce">warn_overrun</a></div><div class="ttdeci">#define warn_overrun</div><div class="ttdef"><b>Definition:</b> marshall.c:268</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -277,13 +277,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define warn_overrun</td>
+          <td class="memname">#define warn_overrun&#160;&#160;&#160;warn(WRN, &quot;cannot decode from pos %u &gt; buf len %u&quot;, pos + 1, buf_len)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
-<div class="line">    } <span class="keywordflow">while</span> (0)</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
@@ -579,7 +577,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 10 2018 14:38:16 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 11 2018 13:46:59 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

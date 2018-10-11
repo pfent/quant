@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">quant
-   &#160;<span id="projectnumber">0.0.14</span>
+   &#160;<span id="projectnumber">0.0.15</span>
    </div>
   </td>
  </tr>
@@ -140,158 +140,159 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="frame_8h.html#ad7369d4deff2613da8fcd2015b8cdfda">   49</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FRAM_TYPE_SID_BLCK 0x0a</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="frame_8h.html#ac907f3840a7b994809e4fe9c77e8363b">   50</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FRAM_TYPE_NEW_CID 0x0b</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="frame_8h.html#a3e980855d247bc84d13adc6fcb9805a9">   51</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FRAM_TYPE_STOP_SEND 0x0c</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="frame_8h.html#a544c3c8eb7a4cfd014d0bca654bb7949">   52</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FRAM_TYPE_ACK 0x0d</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="frame_8h.html#adb68e7f3fac8eb5fd295405bf5aeb611">   52</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FRAM_TYPE_RTIR_CID 0x0d</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="frame_8h.html#ae64000828c40a70b77aec7e2aef9c1eb">   53</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FRAM_TYPE_PATH_CHLG 0x0e</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="frame_8h.html#ab3b79eb6b419a8a673df954adbfda9f6">   54</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FRAM_TYPE_PATH_RESP 0x0f</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="frame_8h.html#a4419aa8ef28a85cc47fda6f21b885697">   55</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FRAM_TYPE_STRM 0x10 // we only encode this type in the frames bitstr_t</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="frame_8h.html#a92d812b44fe4bb67bde483c4f682336c">   56</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FRAM_TYPE_STRM_MAX 0x17</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="frame_8h.html#aed58ae9ae1392a995c525fb146510d82">   57</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FRAM_TYPE_CRPT 0x18</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="frame_8h.html#a70e417816cf3bd802e06fcbc142fd950">   58</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FRAM_TYPE_NEW_TOKN 0x19</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="frame_8h.html#a82bcfa42c547fe82a094efbae2e0a9c4">   59</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FRAM_TYPE_ACK_ECN 0x1a</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="frame_8h.html#a9d41e13ff77cca0577fa33baf6e2963c">   60</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define NUM_FRAM_TYPES (FRAM_TYPE_ACK_ECN + 1)</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="frame_8h.html#af19725a5284688adb364856878892964">   62</a></span>&#160;<span class="preprocessor">#define F_STREAM_FIN 0x01</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="frame_8h.html#a5da6e805344874dda511fb99218f4e38">   63</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define F_STREAM_LEN 0x02</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="frame_8h.html#abf48b1ffc80869c7c74a9a3a8fe4b4f9">   64</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define F_STREAM_OFF 0x04</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#ifndef NDEBUG</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="frame_8h.html#aab39ee09e7f86573005e2b7e4e7bed2d">   67</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FRAM_IN BLD BLU</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="frame_8h.html#a673034b07ecf04ff57008f9c52d62f25">   68</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FRAM_OUT BLD GRN</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#ifdef NDEBUG</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define log_stream_or_crypto_frame(rtx, v, in, kind)                           \</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">    do {                                                                       \</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">    } while (0)</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="keywordtype">void</span> __attribute__((nonnull))</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<a class="code" href="frame_8h.html#ae94d6f87955af69345cb46c9d03ad90f">log_stream_or_crypto_frame</a>(const <span class="keywordtype">bool</span> rtx,</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                           const struct w_iov * const v,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                           const <span class="keywordtype">bool</span> in,</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                           const <span class="keywordtype">char</span> * const kind);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">extern</span> uint64_t __attribute__((<span class="keyword">const</span>))</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<a class="code" href="frame_8h.html#a31c36630801506eb48c0bf620c0fcca6">shorten_ack_nr</a>(const uint64_t ack, const uint64_t diff);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;extern uint16_t __attribute__((nonnull))</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<a class="code" href="frame_8h.html#a81c634475cc4f2598b7d4edd29e34d00">dec_frames</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c, struct w_iov * v);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;extern uint16_t __attribute__((nonnull))</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<a class="code" href="frame_8h.html#a0d8bea0a0a229b796505008855eb17f0">enc_padding_frame</a>(struct w_iov * const v,</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                  const uint16_t pos,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                  const uint16_t len);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;extern uint16_t __attribute__((nonnull))</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<a class="code" href="frame_8h.html#ad33d4ffd79b410b355647b882fcecd94">enc_ack_frame</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;              struct <a class="code" href="structpn__space.html">pn_space</a> * const pn,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;              struct w_iov * const v,</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;              const uint16_t pos);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;extern uint16_t __attribute__((nonnull))</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<a class="code" href="frame_8h.html#a6134c4faa49bbd6fbc29589f12350400">enc_stream_or_crypto_frame</a>(struct <a class="code" href="structq__stream.html">q_stream</a> * const s,</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                           struct w_iov * const v,</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                           const uint16_t pos,</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                           const <span class="keywordtype">bool</span> enc_strm);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;extern uint16_t __attribute__((nonnull(1)))</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<a class="code" href="frame_8h.html#a69e685c0bc62a86a703d3f0c83363f96">enc_close_frame</a>(struct w_iov * const v,</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                const uint16_t pos,</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                const uint8_t type,</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                const uint16_t err_code,</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                const uint8_t err_frm,</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                const <span class="keywordtype">char</span> * const reas);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;extern uint16_t __attribute__((nonnull))</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<a class="code" href="frame_8h.html#a68280ad079aa677bf9eeb72dfe8f65d2">enc_path_response_frame</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                        const struct w_iov * const v,</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                        const uint16_t pos);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;extern uint16_t __attribute__((nonnull(1, 2, 5)))</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<a class="code" href="frame_8h.html#a165e130ae0954ca6217d6ec84e9d57f7">dec_ack_frame</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;              const struct w_iov * const v,</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;              const uint16_t pos,</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;              <span class="keywordtype">void</span> (*before_acks)(struct <a class="code" href="structq__conn.html">q_conn</a> * const,</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                                  struct <a class="code" href="structpn__space.html">pn_space</a> * const pn,</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                                  const uint64_t,</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                  const uint64_t),</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;              <span class="keywordtype">void</span> (*on_each_ack)(struct <a class="code" href="structq__conn.html">q_conn</a> * const,</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                                  struct <a class="code" href="structpn__space.html">pn_space</a> * const pn,</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                                  const uint64_t),</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;              <span class="keywordtype">void</span> (*after_acks)(struct <a class="code" href="structq__conn.html">q_conn</a> * const,</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                                 struct <a class="code" href="structpn__space.html">pn_space</a> * const pn),</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;              const <span class="keywordtype">bool</span> parse_only);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;extern uint16_t __attribute__((nonnull))</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<a class="code" href="frame_8h.html#afac1f0948949980e386e72ae7f2b3132">enc_max_stream_data_frame</a>(struct <a class="code" href="structq__stream.html">q_stream</a> * const s,</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                          struct w_iov * const v,</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                          const uint16_t pos);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;extern uint16_t __attribute__((nonnull))</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<a class="code" href="frame_8h.html#afce90a1bb73bc652f0ccbd5402b0eb61">enc_max_data_frame</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                   struct w_iov * const v,</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                   const uint16_t pos);</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;extern uint16_t __attribute__((nonnull))</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<a class="code" href="frame_8h.html#ad254391e26decf235568cd8d6f20689f">enc_max_stream_id_frame</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                        struct w_iov * const v,</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                        const uint16_t pos);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;extern uint16_t __attribute__((nonnull))</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<a class="code" href="frame_8h.html#a916d0dd562621c7d36e786193418b07f">enc_stream_blocked_frame</a>(struct <a class="code" href="structq__stream.html">q_stream</a> * const s,</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                         const struct w_iov * const v,</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                         const uint16_t pos);</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;extern uint16_t __attribute__((nonnull))</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<a class="code" href="frame_8h.html#a2037bb3c54a511d30919c36c65e79bb7">enc_blocked_frame</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                  const struct w_iov * const v,</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                  const uint16_t pos);</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;extern uint16_t __attribute__((nonnull))</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<a class="code" href="frame_8h.html#a615393093bcbcddfdecf8f193beedc45">enc_stream_id_blocked_frame</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                            const struct w_iov * const v,</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                            const uint16_t pos);</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;extern uint16_t __attribute__((nonnull))</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<a class="code" href="frame_8h.html#ad4218d08a618cd6088192777ee96f95f">enc_path_challenge_frame</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                         const struct w_iov * const v,</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                         const uint16_t pos);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;extern uint16_t __attribute__((nonnull))</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<a class="code" href="frame_8h.html#acf128f54c264f522e96019baef7af3c1">enc_new_cid_frame</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                  const struct w_iov * const v,</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                  const uint16_t pos);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;extern uint16_t __attribute__((nonnull))</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<a class="code" href="frame_8h.html#a722b21098f9985a27188e9fae848aced">enc_new_token_frame</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                    const struct w_iov * const v,</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                    const uint16_t pos);</div>
-<div class="ttc" id="frame_8h_html_afce90a1bb73bc652f0ccbd5402b0eb61"><div class="ttname"><a href="frame_8h.html#afce90a1bb73bc652f0ccbd5402b0eb61">enc_max_data_frame</a></div><div class="ttdeci">uint16_t enc_max_data_frame(struct q_conn *const c, struct w_iov *const v, const uint16_t pos)</div><div class="ttdef"><b>Definition:</b> frame.c:1212</div></div>
-<div class="ttc" id="frame_8h_html_ad4218d08a618cd6088192777ee96f95f"><div class="ttname"><a href="frame_8h.html#ad4218d08a618cd6088192777ee96f95f">enc_path_challenge_frame</a></div><div class="ttdeci">uint16_t enc_path_challenge_frame(struct q_conn *const c, const struct w_iov *const v, const uint16_t pos)</div><div class="ttdef"><b>Definition:</b> frame.c:1326</div></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="frame_8h.html#a544c3c8eb7a4cfd014d0bca654bb7949">   59</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FRAM_TYPE_ACK 0x1a // we only encode this type in the frames bitstr_t</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="frame_8h.html#a82bcfa42c547fe82a094efbae2e0a9c4">   60</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FRAM_TYPE_ACK_ECN 0x1b</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="frame_8h.html#a9d41e13ff77cca0577fa33baf6e2963c">   61</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define NUM_FRAM_TYPES (FRAM_TYPE_ACK_ECN + 1)</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="frame_8h.html#af19725a5284688adb364856878892964">   63</a></span>&#160;<span class="preprocessor">#define F_STREAM_FIN 0x01</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="frame_8h.html#a5da6e805344874dda511fb99218f4e38">   64</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define F_STREAM_LEN 0x02</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="frame_8h.html#abf48b1ffc80869c7c74a9a3a8fe4b4f9">   65</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define F_STREAM_OFF 0x04</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#ifndef NDEBUG</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="frame_8h.html#aab39ee09e7f86573005e2b7e4e7bed2d">   68</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FRAM_IN BLD BLU</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="frame_8h.html#a673034b07ecf04ff57008f9c52d62f25">   69</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FRAM_OUT BLD GRN</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#ifdef NDEBUG</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define log_stream_or_crypto_frame(rtx, v, in, kind)                           \</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">    do {                                                                       \</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">    } while (0)</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="keywordtype">void</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<a class="code" href="frame_8h.html#ae94d6f87955af69345cb46c9d03ad90f">log_stream_or_crypto_frame</a>(const <span class="keywordtype">bool</span> rtx,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                           const struct w_iov * const v,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                           const <span class="keywordtype">bool</span> in,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                           const <span class="keywordtype">char</span> * const kind);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">extern</span> uint64_t __attribute__((<span class="keyword">const</span>))</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<a class="code" href="frame_8h.html#a31c36630801506eb48c0bf620c0fcca6">shorten_ack_nr</a>(const uint64_t ack, const uint64_t diff);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;extern uint16_t __attribute__((nonnull))</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<a class="code" href="frame_8h.html#a81c634475cc4f2598b7d4edd29e34d00">dec_frames</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c, struct w_iov * v);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;extern uint16_t __attribute__((nonnull))</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<a class="code" href="frame_8h.html#a0d8bea0a0a229b796505008855eb17f0">enc_padding_frame</a>(struct w_iov * const v,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                  const uint16_t pos,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                  const uint16_t len);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;extern uint16_t __attribute__((nonnull))</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<a class="code" href="frame_8h.html#ad33d4ffd79b410b355647b882fcecd94">enc_ack_frame</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;              struct <a class="code" href="structpn__space.html">pn_space</a> * const pn,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;              struct w_iov * const v,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;              const uint16_t pos);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;extern uint16_t __attribute__((nonnull))</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<a class="code" href="frame_8h.html#a6134c4faa49bbd6fbc29589f12350400">enc_stream_or_crypto_frame</a>(struct <a class="code" href="structq__stream.html">q_stream</a> * const s,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                           struct w_iov * const v,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                           const uint16_t pos,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                           const <span class="keywordtype">bool</span> enc_strm);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;extern uint16_t __attribute__((nonnull(1)))</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<a class="code" href="frame_8h.html#a69e685c0bc62a86a703d3f0c83363f96">enc_close_frame</a>(struct w_iov * const v,</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                const uint16_t pos,</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                const uint8_t type,</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                const uint16_t err_code,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                const uint8_t err_frm,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                const <span class="keywordtype">char</span> * const reas);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;extern uint16_t __attribute__((nonnull))</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<a class="code" href="frame_8h.html#a68280ad079aa677bf9eeb72dfe8f65d2">enc_path_response_frame</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                        const struct w_iov * const v,</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                        const uint16_t pos);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;extern uint16_t __attribute__((nonnull(1, 2, 5)))</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<a class="code" href="frame_8h.html#a165e130ae0954ca6217d6ec84e9d57f7">dec_ack_frame</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;              const struct w_iov * const v,</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;              const uint16_t pos,</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;              <span class="keywordtype">void</span> (*before_acks)(struct <a class="code" href="structq__conn.html">q_conn</a> * const,</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                                  struct <a class="code" href="structpn__space.html">pn_space</a> * const pn,</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                  const uint64_t,</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                                  const uint64_t),</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;              <span class="keywordtype">void</span> (*on_each_ack)(struct <a class="code" href="structq__conn.html">q_conn</a> * const,</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                                  struct <a class="code" href="structpn__space.html">pn_space</a> * const pn,</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                                  const uint64_t),</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;              <span class="keywordtype">void</span> (*after_acks)(struct <a class="code" href="structq__conn.html">q_conn</a> * const,</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                                 struct <a class="code" href="structpn__space.html">pn_space</a> * const pn),</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;              const <span class="keywordtype">bool</span> parse_only);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;extern uint16_t __attribute__((nonnull))</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<a class="code" href="frame_8h.html#afac1f0948949980e386e72ae7f2b3132">enc_max_stream_data_frame</a>(struct <a class="code" href="structq__stream.html">q_stream</a> * const s,</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                          struct w_iov * const v,</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                          const uint16_t pos);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;extern uint16_t __attribute__((nonnull))</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<a class="code" href="frame_8h.html#afce90a1bb73bc652f0ccbd5402b0eb61">enc_max_data_frame</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                   struct w_iov * const v,</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                   const uint16_t pos);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;extern uint16_t __attribute__((nonnull))</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<a class="code" href="frame_8h.html#ad254391e26decf235568cd8d6f20689f">enc_max_stream_id_frame</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                        struct w_iov * const v,</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                        const uint16_t pos);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;extern uint16_t __attribute__((nonnull))</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<a class="code" href="frame_8h.html#a916d0dd562621c7d36e786193418b07f">enc_stream_blocked_frame</a>(struct <a class="code" href="structq__stream.html">q_stream</a> * const s,</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                         const struct w_iov * const v,</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                         const uint16_t pos);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;extern uint16_t __attribute__((nonnull))</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<a class="code" href="frame_8h.html#a2037bb3c54a511d30919c36c65e79bb7">enc_blocked_frame</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                  const struct w_iov * const v,</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                  const uint16_t pos);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;extern uint16_t __attribute__((nonnull))</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<a class="code" href="frame_8h.html#a615393093bcbcddfdecf8f193beedc45">enc_stream_id_blocked_frame</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                            const struct w_iov * const v,</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                            const uint16_t pos);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;extern uint16_t __attribute__((nonnull))</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<a class="code" href="frame_8h.html#ad4218d08a618cd6088192777ee96f95f">enc_path_challenge_frame</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                         const struct w_iov * const v,</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                         const uint16_t pos);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;extern uint16_t __attribute__((nonnull))</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<a class="code" href="frame_8h.html#acf128f54c264f522e96019baef7af3c1">enc_new_cid_frame</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                  const struct w_iov * const v,</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                  const uint16_t pos);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;extern uint16_t __attribute__((nonnull))</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<a class="code" href="frame_8h.html#a722b21098f9985a27188e9fae848aced">enc_new_token_frame</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                    const struct w_iov * const v,</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                    const uint16_t pos);</div>
+<div class="ttc" id="frame_8h_html_afce90a1bb73bc652f0ccbd5402b0eb61"><div class="ttname"><a href="frame_8h.html#afce90a1bb73bc652f0ccbd5402b0eb61">enc_max_data_frame</a></div><div class="ttdeci">uint16_t enc_max_data_frame(struct q_conn *const c, struct w_iov *const v, const uint16_t pos)</div><div class="ttdef"><b>Definition:</b> frame.c:1213</div></div>
+<div class="ttc" id="frame_8h_html_ad4218d08a618cd6088192777ee96f95f"><div class="ttname"><a href="frame_8h.html#ad4218d08a618cd6088192777ee96f95f">enc_path_challenge_frame</a></div><div class="ttdeci">uint16_t enc_path_challenge_frame(struct q_conn *const c, const struct w_iov *const v, const uint16_t pos)</div><div class="ttdef"><b>Definition:</b> frame.c:1327</div></div>
 <div class="ttc" id="frame_8h_html_ae94d6f87955af69345cb46c9d03ad90f"><div class="ttname"><a href="frame_8h.html#ae94d6f87955af69345cb46c9d03ad90f">log_stream_or_crypto_frame</a></div><div class="ttdeci">void log_stream_or_crypto_frame(const bool rtx, const struct w_iov *const v, const bool in, const char *const kind)</div><div class="ttdef"><b>Definition:</b> frame.c:90</div></div>
 <div class="ttc" id="frame_8h_html_a165e130ae0954ca6217d6ec84e9d57f7"><div class="ttname"><a href="frame_8h.html#a165e130ae0954ca6217d6ec84e9d57f7">dec_ack_frame</a></div><div class="ttdeci">uint16_t dec_ack_frame(struct q_conn *const c, const struct w_iov *const v, const uint16_t pos, void(*before_acks)(struct q_conn *const, struct pn_space *const pn, const uint64_t, const uint64_t), void(*on_each_ack)(struct q_conn *const, struct pn_space *const pn, const uint64_t), void(*after_acks)(struct q_conn *const, struct pn_space *const pn), const bool parse_only)</div><div class="ttdef"><b>Definition:</b> frame.c:278</div></div>
-<div class="ttc" id="frame_8h_html_a68280ad079aa677bf9eeb72dfe8f65d2"><div class="ttname"><a href="frame_8h.html#a68280ad079aa677bf9eeb72dfe8f65d2">enc_path_response_frame</a></div><div class="ttdeci">uint16_t enc_path_response_frame(struct q_conn *const c, const struct w_iov *const v, const uint16_t pos)</div><div class="ttdef"><b>Definition:</b> frame.c:1309</div></div>
-<div class="ttc" id="structq__conn_html"><div class="ttname"><a href="structq__conn.html">q_conn</a></div><div class="ttdoc">A QUIC connection. </div><div class="ttdef"><b>Definition:</b> conn.h:93</div></div>
-<div class="ttc" id="frame_8h_html_a81c634475cc4f2598b7d4edd29e34d00"><div class="ttname"><a href="frame_8h.html#a81c634475cc4f2598b7d4edd29e34d00">dec_frames</a></div><div class="ttdeci">uint16_t dec_frames(struct q_conn *const c, struct w_iov *v)</div><div class="ttdef"><b>Definition:</b> frame.c:825</div></div>
-<div class="ttc" id="frame_8h_html_a69e685c0bc62a86a703d3f0c83363f96"><div class="ttname"><a href="frame_8h.html#a69e685c0bc62a86a703d3f0c83363f96">enc_close_frame</a></div><div class="ttdeci">uint16_t enc_close_frame(struct w_iov *const v, const uint16_t pos, const uint8_t type, const uint16_t err_code, const uint8_t err_frm, const char *const reas)</div><div class="ttdef"><b>Definition:</b> frame.c:1151</div></div>
-<div class="ttc" id="frame_8h_html_afac1f0948949980e386e72ae7f2b3132"><div class="ttname"><a href="frame_8h.html#afac1f0948949980e386e72ae7f2b3132">enc_max_stream_data_frame</a></div><div class="ttdeci">uint16_t enc_max_stream_data_frame(struct q_stream *const s, struct w_iov *const v, const uint16_t pos)</div><div class="ttdef"><b>Definition:</b> frame.c:1188</div></div>
+<div class="ttc" id="frame_8h_html_a68280ad079aa677bf9eeb72dfe8f65d2"><div class="ttname"><a href="frame_8h.html#a68280ad079aa677bf9eeb72dfe8f65d2">enc_path_response_frame</a></div><div class="ttdeci">uint16_t enc_path_response_frame(struct q_conn *const c, const struct w_iov *const v, const uint16_t pos)</div><div class="ttdef"><b>Definition:</b> frame.c:1310</div></div>
+<div class="ttc" id="structq__conn_html"><div class="ttname"><a href="structq__conn.html">q_conn</a></div><div class="ttdoc">A QUIC connection. </div><div class="ttdef"><b>Definition:</b> conn.h:95</div></div>
+<div class="ttc" id="frame_8h_html_a81c634475cc4f2598b7d4edd29e34d00"><div class="ttname"><a href="frame_8h.html#a81c634475cc4f2598b7d4edd29e34d00">dec_frames</a></div><div class="ttdeci">uint16_t dec_frames(struct q_conn *const c, struct w_iov *v)</div><div class="ttdef"><b>Definition:</b> frame.c:824</div></div>
+<div class="ttc" id="frame_8h_html_a69e685c0bc62a86a703d3f0c83363f96"><div class="ttname"><a href="frame_8h.html#a69e685c0bc62a86a703d3f0c83363f96">enc_close_frame</a></div><div class="ttdeci">uint16_t enc_close_frame(struct w_iov *const v, const uint16_t pos, const uint8_t type, const uint16_t err_code, const uint8_t err_frm, const char *const reas)</div><div class="ttdef"><b>Definition:</b> frame.c:1152</div></div>
+<div class="ttc" id="frame_8h_html_afac1f0948949980e386e72ae7f2b3132"><div class="ttname"><a href="frame_8h.html#afac1f0948949980e386e72ae7f2b3132">enc_max_stream_data_frame</a></div><div class="ttdeci">uint16_t enc_max_stream_data_frame(struct q_stream *const s, struct w_iov *const v, const uint16_t pos)</div><div class="ttdef"><b>Definition:</b> frame.c:1189</div></div>
 <div class="ttc" id="structpn__space_html"><div class="ttname"><a href="structpn__space.html">pn_space</a></div><div class="ttdef"><b>Definition:</b> pn.h:48</div></div>
-<div class="ttc" id="frame_8h_html_a722b21098f9985a27188e9fae848aced"><div class="ttname"><a href="frame_8h.html#a722b21098f9985a27188e9fae848aced">enc_new_token_frame</a></div><div class="ttdeci">uint16_t enc_new_token_frame(struct q_conn *const c, const struct w_iov *const v, const uint16_t pos)</div><div class="ttdef"><b>Definition:</b> frame.c:1377</div></div>
-<div class="ttc" id="frame_8h_html_acf128f54c264f522e96019baef7af3c1"><div class="ttname"><a href="frame_8h.html#acf128f54c264f522e96019baef7af3c1">enc_new_cid_frame</a></div><div class="ttdeci">uint16_t enc_new_cid_frame(struct q_conn *const c, const struct w_iov *const v, const uint16_t pos)</div><div class="ttdef"><b>Definition:</b> frame.c:1343</div></div>
+<div class="ttc" id="frame_8h_html_a722b21098f9985a27188e9fae848aced"><div class="ttname"><a href="frame_8h.html#a722b21098f9985a27188e9fae848aced">enc_new_token_frame</a></div><div class="ttdeci">uint16_t enc_new_token_frame(struct q_conn *const c, const struct w_iov *const v, const uint16_t pos)</div><div class="ttdef"><b>Definition:</b> frame.c:1379</div></div>
+<div class="ttc" id="frame_8h_html_acf128f54c264f522e96019baef7af3c1"><div class="ttname"><a href="frame_8h.html#acf128f54c264f522e96019baef7af3c1">enc_new_cid_frame</a></div><div class="ttdeci">uint16_t enc_new_cid_frame(struct q_conn *const c, const struct w_iov *const v, const uint16_t pos)</div><div class="ttdef"><b>Definition:</b> frame.c:1344</div></div>
 <div class="ttc" id="structq__stream_html"><div class="ttname"><a href="structq__stream.html">q_stream</a></div><div class="ttdef"><b>Definition:</b> stream.h:57</div></div>
-<div class="ttc" id="frame_8h_html_a916d0dd562621c7d36e786193418b07f"><div class="ttname"><a href="frame_8h.html#a916d0dd562621c7d36e786193418b07f">enc_stream_blocked_frame</a></div><div class="ttdeci">uint16_t enc_stream_blocked_frame(struct q_stream *const s, const struct w_iov *const v, const uint16_t pos)</div><div class="ttdef"><b>Definition:</b> frame.c:1254</div></div>
-<div class="ttc" id="frame_8h_html_ad254391e26decf235568cd8d6f20689f"><div class="ttname"><a href="frame_8h.html#ad254391e26decf235568cd8d6f20689f">enc_max_stream_id_frame</a></div><div class="ttdeci">uint16_t enc_max_stream_id_frame(struct q_conn *const c, struct w_iov *const v, const uint16_t pos)</div><div class="ttdef"><b>Definition:</b> frame.c:1232</div></div>
+<div class="ttc" id="frame_8h_html_a916d0dd562621c7d36e786193418b07f"><div class="ttname"><a href="frame_8h.html#a916d0dd562621c7d36e786193418b07f">enc_stream_blocked_frame</a></div><div class="ttdeci">uint16_t enc_stream_blocked_frame(struct q_stream *const s, const struct w_iov *const v, const uint16_t pos)</div><div class="ttdef"><b>Definition:</b> frame.c:1255</div></div>
+<div class="ttc" id="frame_8h_html_ad254391e26decf235568cd8d6f20689f"><div class="ttname"><a href="frame_8h.html#ad254391e26decf235568cd8d6f20689f">enc_max_stream_id_frame</a></div><div class="ttdeci">uint16_t enc_max_stream_id_frame(struct q_conn *const c, struct w_iov *const v, const uint16_t pos)</div><div class="ttdef"><b>Definition:</b> frame.c:1233</div></div>
 <div class="ttc" id="frame_8h_html_a31c36630801506eb48c0bf620c0fcca6"><div class="ttname"><a href="frame_8h.html#a31c36630801506eb48c0bf620c0fcca6">shorten_ack_nr</a></div><div class="ttdeci">uint64_t shorten_ack_nr(const uint64_t ack, const uint64_t diff)</div><div class="ttdef"><b>Definition:</b> frame.c:265</div></div>
-<div class="ttc" id="frame_8h_html_ad33d4ffd79b410b355647b882fcecd94"><div class="ttname"><a href="frame_8h.html#ad33d4ffd79b410b355647b882fcecd94">enc_ack_frame</a></div><div class="ttdeci">uint16_t enc_ack_frame(struct q_conn *const c, struct pn_space *const pn, struct w_iov *const v, const uint16_t pos)</div><div class="ttdef"><b>Definition:</b> frame.c:985</div></div>
-<div class="ttc" id="frame_8h_html_a0d8bea0a0a229b796505008855eb17f0"><div class="ttname"><a href="frame_8h.html#a0d8bea0a0a229b796505008855eb17f0">enc_padding_frame</a></div><div class="ttdeci">uint16_t enc_padding_frame(struct w_iov *const v, const uint16_t pos, const uint16_t len)</div><div class="ttdef"><b>Definition:</b> frame.c:972</div></div>
-<div class="ttc" id="frame_8h_html_a6134c4faa49bbd6fbc29589f12350400"><div class="ttname"><a href="frame_8h.html#a6134c4faa49bbd6fbc29589f12350400">enc_stream_or_crypto_frame</a></div><div class="ttdeci">uint16_t enc_stream_or_crypto_frame(struct q_stream *const s, struct w_iov *const v, const uint16_t pos, const bool enc_strm)</div><div class="ttdef"><b>Definition:</b> frame.c:1093</div></div>
-<div class="ttc" id="frame_8h_html_a615393093bcbcddfdecf8f193beedc45"><div class="ttname"><a href="frame_8h.html#a615393093bcbcddfdecf8f193beedc45">enc_stream_id_blocked_frame</a></div><div class="ttdeci">uint16_t enc_stream_id_blocked_frame(struct q_conn *const c, const struct w_iov *const v, const uint16_t pos)</div><div class="ttdef"><b>Definition:</b> frame.c:1289</div></div>
-<div class="ttc" id="frame_8h_html_a2037bb3c54a511d30919c36c65e79bb7"><div class="ttname"><a href="frame_8h.html#a2037bb3c54a511d30919c36c65e79bb7">enc_blocked_frame</a></div><div class="ttdeci">uint16_t enc_blocked_frame(struct q_conn *const c, const struct w_iov *const v, const uint16_t pos)</div><div class="ttdef"><b>Definition:</b> frame.c:1272</div></div>
+<div class="ttc" id="frame_8h_html_ad33d4ffd79b410b355647b882fcecd94"><div class="ttname"><a href="frame_8h.html#ad33d4ffd79b410b355647b882fcecd94">enc_ack_frame</a></div><div class="ttdeci">uint16_t enc_ack_frame(struct q_conn *const c, struct pn_space *const pn, struct w_iov *const v, const uint16_t pos)</div><div class="ttdef"><b>Definition:</b> frame.c:986</div></div>
+<div class="ttc" id="frame_8h_html_a0d8bea0a0a229b796505008855eb17f0"><div class="ttname"><a href="frame_8h.html#a0d8bea0a0a229b796505008855eb17f0">enc_padding_frame</a></div><div class="ttdeci">uint16_t enc_padding_frame(struct w_iov *const v, const uint16_t pos, const uint16_t len)</div><div class="ttdef"><b>Definition:</b> frame.c:973</div></div>
+<div class="ttc" id="frame_8h_html_a6134c4faa49bbd6fbc29589f12350400"><div class="ttname"><a href="frame_8h.html#a6134c4faa49bbd6fbc29589f12350400">enc_stream_or_crypto_frame</a></div><div class="ttdeci">uint16_t enc_stream_or_crypto_frame(struct q_stream *const s, struct w_iov *const v, const uint16_t pos, const bool enc_strm)</div><div class="ttdef"><b>Definition:</b> frame.c:1094</div></div>
+<div class="ttc" id="frame_8h_html_a615393093bcbcddfdecf8f193beedc45"><div class="ttname"><a href="frame_8h.html#a615393093bcbcddfdecf8f193beedc45">enc_stream_id_blocked_frame</a></div><div class="ttdeci">uint16_t enc_stream_id_blocked_frame(struct q_conn *const c, const struct w_iov *const v, const uint16_t pos)</div><div class="ttdef"><b>Definition:</b> frame.c:1290</div></div>
+<div class="ttc" id="frame_8h_html_a2037bb3c54a511d30919c36c65e79bb7"><div class="ttname"><a href="frame_8h.html#a2037bb3c54a511d30919c36c65e79bb7">enc_blocked_frame</a></div><div class="ttdeci">uint16_t enc_blocked_frame(struct q_conn *const c, const struct w_iov *const v, const uint16_t pos)</div><div class="ttdef"><b>Definition:</b> frame.c:1273</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 10 2018 14:38:16 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 11 2018 13:46:58 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -5,7 +5,7 @@ var searchData=
   ['chk_5ftp',['chk_tp',['../tls_8c.html#a878d1b8325596d2943bb662375ad2e72',1,'tls.c']]],
   ['chk_5ftp_5fclnt',['chk_tp_clnt',['../tls_8c.html#a26fedc5b8fbd7cef27417a25b152777f',1,'tls.c']]],
   ['chk_5ftp_5fserv',['chk_tp_serv',['../tls_8c.html#a2d88e7aa28c44c9c2a335f8bac53bc11',1,'tls.c']]],
-  ['cid_5fcmp',['cid_cmp',['../conn_8c.html#ad2372a4b6e27ada905f0604c1725abf1',1,'conn.c']]],
+  ['cid_5fcmp',['cid_cmp',['../conn_8c.html#a76a8cb5ca5557838351e51dbb5286a29',1,'cid_cmp(const struct cid *const a, const struct cid *const b):&#160;conn.c'],['../conn_8h.html#a76a8cb5ca5557838351e51dbb5286a29',1,'cid_cmp(const struct cid *const a, const struct cid *const b):&#160;conn.c']]],
   ['cid_5fcpy',['cid_cpy',['../quic_8h.html#ab2b6d16118c27c0f7c91dfac30c5d446',1,'quic.h']]],
   ['cid_5fsplay_5fcmp',['cid_splay_cmp',['../conn_8c.html#abb1cca10ee153f6f5fa645a5364f98aa',1,'cid_splay_cmp(const struct q_cid_map *const a, const struct q_cid_map *const b):&#160;conn.c'],['../conn_8h.html#abb1cca10ee153f6f5fa645a5364f98aa',1,'cid_splay_cmp(const struct q_cid_map *const a, const struct q_cid_map *const b):&#160;conn.c']]],
   ['coalesce',['coalesce',['../pkt_8c.html#a1f839697f5c2cb2a8b086249c85399bc',1,'coalesce(struct w_iov_sq *const q):&#160;pkt.c'],['../pkt_8h.html#a1f839697f5c2cb2a8b086249c85399bc',1,'coalesce(struct w_iov_sq *const q):&#160;pkt.c']]],

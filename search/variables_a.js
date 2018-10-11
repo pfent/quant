@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['max_5fack_5fdel',['max_ack_del',['../structrecovery.html#a316fa34cc678ee0a19641308d08dbea2',1,'recovery']]],
+  ['max_5fack_5fdel',['max_ack_del',['../structtransport__params.html#abea5399e01832e7ea1d7e40c249e9a90',1,'transport_params::max_ack_del()'],['../structrecovery.html#a316fa34cc678ee0a19641308d08dbea2',1,'recovery::max_ack_del()']]],
   ['max_5fbidi_5fstreams',['max_bidi_streams',['../structtransport__params.html#a892ce98d32a94dd42f771d9bf8cd4ebc',1,'transport_params::max_bidi_streams()'],['../structpkt__meta.html#a1c10af584209f3a48a8d18b2d0064682',1,'pkt_meta::max_bidi_streams()']]],
   ['max_5fcid_5fseq_5fin',['max_cid_seq_in',['../structq__conn.html#a30fd5a6686723d42d1e0b2c7ec849ad3',1,'q_conn']]],
   ['max_5fcid_5fseq_5fout',['max_cid_seq_out',['../structq__conn.html#a9e483983b67d3b6dc0e5fb1e19dea752',1,'q_conn']]],

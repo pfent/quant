@@ -1,10 +1,11 @@
 <map id="pn_hshk_space" name="pn_hshk_space">
-<area shape="rect" id="node4" href="$structq__conn.html" title="A QUIC connection. " alt="" coords="241,223,305,249"/>
-<area shape="rect" id="node2" href="$structpn__space.html" title="pn_space" alt="" coords="121,323,199,349"/>
-<area shape="rect" id="node6" href="$structpn__data__space.html" title="pn_data_space" alt="" coords="218,413,328,440"/>
-<area shape="rect" id="node3" href="$structdiet.html" title="diet" alt="" coords="143,109,185,136"/>
-<area shape="rect" id="node5" href="$structtransport__params.html" title="transport_params" alt="" coords="209,109,332,136"/>
-<area shape="rect" id="node7" href="$structcipher__ctx.html" title="cipher_ctx" alt="" coords="361,5,443,32"/>
-<area shape="rect" id="node8" href="$structtls.html" title="tls" alt="" coords="357,109,395,136"/>
-<area shape="rect" id="node9" href="$structrecovery.html" title="recovery" alt="" coords="420,109,492,136"/>
+<area shape="rect" id="node4" href="$structq__conn.html" title="A QUIC connection. " alt="" coords="203,223,267,249"/>
+<area shape="rect" id="node2" href="$structpn__space.html" title="pn_space" alt="" coords="195,323,273,349"/>
+<area shape="rect" id="node7" href="$structpn__data__space.html" title="pn_data_space" alt="" coords="179,413,289,440"/>
+<area shape="rect" id="node3" href="$structdiet.html" title="diet" alt="" coords="5,109,48,136"/>
+<area shape="rect" id="node5" href="$structtransport__params.html" title="transport_params" alt="" coords="333,109,456,136"/>
+<area shape="rect" id="node6" href="$structcid.html" title="cid" alt="" coords="295,5,333,32"/>
+<area shape="rect" id="node8" href="$structcipher__ctx.html" title="cipher_ctx" alt="" coords="557,5,639,32"/>
+<area shape="rect" id="node9" href="$structtls.html" title="tls" alt="" coords="186,109,224,136"/>
+<area shape="rect" id="node10" href="$structrecovery.html" title="recovery" alt="" coords="89,109,161,136"/>
 </map>

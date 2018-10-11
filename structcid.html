@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">quant
-   &#160;<span id="projectnumber">0.0.14</span>
+   &#160;<span id="projectnumber">0.0.15</span>
    </div>
   </td>
  </tr>
@@ -102,12 +102,12 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a61ab34460c7fcffba43d1b4042b00b93"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcid.html#a61ab34460c7fcffba43d1b4042b00b93">len</a></td></tr>
 <tr class="memdesc:a61ab34460c7fcffba43d1b4042b00b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection ID length.  <a href="#a61ab34460c7fcffba43d1b4042b00b93">More...</a><br/></td></tr>
 <tr class="separator:a61ab34460c7fcffba43d1b4042b00b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2e8539d1cb2a7a985fd03f7b22a445b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcid.html#ab2e8539d1cb2a7a985fd03f7b22a445b">id</a> [18]</td></tr>
-<tr class="memdesc:ab2e8539d1cb2a7a985fd03f7b22a445b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection ID.  <a href="#ab2e8539d1cb2a7a985fd03f7b22a445b">More...</a><br/></td></tr>
-<tr class="separator:ab2e8539d1cb2a7a985fd03f7b22a445b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a898284c0555215e9c8cfa7e49c093c5f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcid.html#a898284c0555215e9c8cfa7e49c093c5f">srt</a> [16]</td></tr>
-<tr class="memdesc:a898284c0555215e9c8cfa7e49c093c5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stateless Reset Token.  <a href="#a898284c0555215e9c8cfa7e49c093c5f">More...</a><br/></td></tr>
-<tr class="separator:a898284c0555215e9c8cfa7e49c093c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a048d6b0aaaabd5060c525fc1603da8f9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcid.html#a048d6b0aaaabd5060c525fc1603da8f9">id</a> [<a class="el" href="quic_8h.html#a9182b20a4ab9449d0efbd6d873c2aecf">MAX_CID_LEN</a>]</td></tr>
+<tr class="memdesc:a048d6b0aaaabd5060c525fc1603da8f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection ID.  <a href="#a048d6b0aaaabd5060c525fc1603da8f9">More...</a><br/></td></tr>
+<tr class="separator:a048d6b0aaaabd5060c525fc1603da8f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4445bbe90ef6a799450c1606badf557c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcid.html#a4445bbe90ef6a799450c1606badf557c">srt</a> [<a class="el" href="quic_8h.html#aaa19e76a63eec1141d442d58c20042ed">SRT_LEN</a>]</td></tr>
+<tr class="memdesc:a4445bbe90ef6a799450c1606badf557c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stateless Reset Token.  <a href="#a4445bbe90ef6a799450c1606badf557c">More...</a><br/></td></tr>
+<tr class="separator:a4445bbe90ef6a799450c1606badf557c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4096a3ab564b2d422ba9571d66cb4a88"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcid.html#a4096a3ab564b2d422ba9571d66cb4a88">_unused</a> [5]</td></tr>
 <tr class="separator:a4096a3ab564b2d422ba9571d66cb4a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -141,12 +141,12 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab2e8539d1cb2a7a985fd03f7b22a445b"></a>
+<a class="anchor" id="a048d6b0aaaabd5060c525fc1603da8f9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t cid::id[18]</td>
+          <td class="memname">uint8_t cid::id[<a class="el" href="quic_8h.html#a9182b20a4ab9449d0efbd6d873c2aecf">MAX_CID_LEN</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -169,12 +169,12 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a898284c0555215e9c8cfa7e49c093c5f"></a>
+<a class="anchor" id="a4445bbe90ef6a799450c1606badf557c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t cid::srt[16]</td>
+          <td class="memname">uint8_t cid::srt[<a class="el" href="quic_8h.html#aaa19e76a63eec1141d442d58c20042ed">SRT_LEN</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -189,7 +189,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 10 2018 14:38:16 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 11 2018 13:46:59 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

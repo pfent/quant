@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">quant
-   &#160;<span id="projectnumber">0.0.14</span>
+   &#160;<span id="projectnumber">0.0.15</span>
    </div>
   </td>
  </tr>
@@ -99,7 +99,7 @@ Collaboration diagram for q_conn:</div>
 <div class="dyncontent">
 <div class="center"><img src="structq__conn__coll__graph.png" border="0" usemap="#q__conn_coll__map" alt="Collaboration graph"/></div>
 <map name="q__conn_coll__map" id="q__conn_coll__map">
-<area shape="rect" id="node4" href="structpn__space.html" title="pn_space" alt="" coords="187,219,265,245"/><area shape="rect" id="node2" href="structtransport__params.html" title="transport_params" alt="" coords="416,5,538,32"/><area shape="rect" id="node3" href="structpn__data__space.html" title="pn_data_space" alt="" coords="195,339,305,365"/><area shape="rect" id="node8" href="structpn__hshk__space.html" title="pn_hshk_space" alt="" coords="15,339,128,365"/><area shape="rect" id="node5" href="structdiet.html" title="diet" alt="" coords="120,5,162,32"/><area shape="rect" id="node6" href="structcipher__ctx.html" title="cipher_ctx" alt="" coords="80,219,161,245"/><area shape="rect" id="node7" href="structtls.html" title="tls" alt="" coords="256,5,294,32"/><area shape="rect" id="node9" href="structrecovery.html" title="recovery" alt="" coords="320,5,392,32"/></map>
+<area shape="rect" id="node5" href="structpn__space.html" title="pn_space" alt="" coords="221,309,299,336"/><area shape="rect" id="node2" href="structtransport__params.html" title="transport_params" alt="" coords="319,96,441,123"/><area shape="rect" id="node3" href="structcid.html" title="cid" alt="" coords="425,5,463,32"/><area shape="rect" id="node4" href="structpn__data__space.html" title="pn_data_space" alt="" coords="241,429,351,456"/><area shape="rect" id="node9" href="structpn__hshk__space.html" title="pn_hshk_space" alt="" coords="61,429,173,456"/><area shape="rect" id="node6" href="structdiet.html" title="diet" alt="" coords="5,96,48,123"/><area shape="rect" id="node7" href="structcipher__ctx.html" title="cipher_ctx" alt="" coords="113,309,195,336"/><area shape="rect" id="node8" href="structtls.html" title="tls" alt="" coords="159,96,197,123"/><area shape="rect" id="node10" href="structrecovery.html" title="recovery" alt="" coords="223,96,295,123"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -175,6 +175,7 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:aacd70807b8436bf3f3fae648164a1443"><td class="mdescLeft">&#160;</td><td class="mdescRight">New stream data was enqueued.  <a href="#aacd70807b8436bf3f3fae648164a1443">More...</a><br/></td></tr>
 <tr class="separator:aacd70807b8436bf3f3fae648164a1443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56b1980bef65a0384e03187801553f04"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a56b1980bef65a0384e03187801553f04">in_c_ready</a>: 1</td></tr>
+<tr class="memdesc:a56b1980bef65a0384e03187801553f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection is listed in c_ready.  <a href="#a56b1980bef65a0384e03187801553f04">More...</a><br/></td></tr>
 <tr class="separator:a56b1980bef65a0384e03187801553f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acde364f022c2b0a227e7c54f6e4e80cd"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#acde364f022c2b0a227e7c54f6e4e80cd">__pad0__</a>: 15</td></tr>
 <tr class="separator:acde364f022c2b0a227e7c54f6e4e80cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,10 +259,13 @@ Data Fields</h2></td></tr>
 <tr class="separator:a9e483983b67d3b6dc0e5fb1e19dea752"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30fd5a6686723d42d1e0b2c7ec849ad3"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a30fd5a6686723d42d1e0b2c7ec849ad3">max_cid_seq_in</a></td></tr>
 <tr class="separator:a30fd5a6686723d42d1e0b2c7ec849ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a2128a23437ab1af0ed7dcf142f9175"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a0a2128a23437ab1af0ed7dcf142f9175">tok</a></td></tr>
-<tr class="separator:a0a2128a23437ab1af0ed7dcf142f9175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c46a8b6d3b5393f8812868774bf1ec3"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcid.html">cid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a5c46a8b6d3b5393f8812868774bf1ec3">odcid</a></td></tr>
+<tr class="memdesc:a5c46a8b6d3b5393f8812868774bf1ec3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Original destination CID of first Initial.  <a href="#a5c46a8b6d3b5393f8812868774bf1ec3">More...</a><br/></td></tr>
+<tr class="separator:a5c46a8b6d3b5393f8812868774bf1ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a759c55d2a104321b9c2a1d848aa41bf9"><td class="memItemLeft" align="right" valign="top">struct w_iov_sq&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a759c55d2a104321b9c2a1d848aa41bf9">txq</a></td></tr>
 <tr class="separator:a759c55d2a104321b9c2a1d848aa41bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01491eb8911e5ac2945c60374f4b859b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a01491eb8911e5ac2945c60374f4b859b">tok</a> [<a class="el" href="quic_8h.html#a9182b20a4ab9449d0efbd6d873c2aecf">MAX_CID_LEN</a>+<a class="el" href="tls_8h.html#a7eb040d42850ef7fdc3bfd09469a683e">MAX_HASH_LEN</a>+6]</td></tr>
+<tr class="separator:a01491eb8911e5ac2945c60374f4b859b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A QUIC connection. </p>
@@ -597,6 +601,8 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Connection is listed in c_ready. </p>
+
 </div>
 </div>
 <a class="anchor" id="af2bf7d44ce67c0b313defa235d4999cb"></a>
@@ -674,6 +680,20 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Next stream ID to use on <a class="el" href="quant_8h.html#a7a955ba1fd2a2cd424379af437d07d05">q_rsv_stream()</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5c46a8b6d3b5393f8812868774bf1ec3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structcid.html">cid</a> q_conn::odcid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Original destination CID of first Initial. </p>
 
 </div>
 </div>
@@ -885,12 +905,12 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0a2128a23437ab1af0ed7dcf142f9175"></a>
+<a class="anchor" id="a01491eb8911e5ac2945c60374f4b859b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t* q_conn::tok</td>
+          <td class="memname">uint8_t q_conn::tok[<a class="el" href="quic_8h.html#a9182b20a4ab9449d0efbd6d873c2aecf">MAX_CID_LEN</a>+<a class="el" href="tls_8h.html#a7eb040d42850ef7fdc3bfd09469a683e">MAX_HASH_LEN</a>+6]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1124,7 +1144,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 10 2018 14:38:16 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 11 2018 13:46:59 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

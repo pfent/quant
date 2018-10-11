@@ -11,6 +11,8 @@ var searchData=
   ['tp_5finitial_5fmax_5fstream_5fdata_5funi',['TP_INITIAL_MAX_STREAM_DATA_UNI',['../tls_8c.html#a9f23e815d1e6b788070979e4fe4a014d',1,'tls.c']]],
   ['tp_5finitial_5fmax_5funi_5fstreams',['TP_INITIAL_MAX_UNI_STREAMS',['../tls_8c.html#a6891665fc98fc5376e25ef80945da486',1,'tls.c']]],
   ['tp_5fmax',['TP_MAX',['../tls_8c.html#aea2ae950efdd5b55322d582604aa9e3d',1,'tls.c']]],
+  ['tp_5fmax_5fack_5fdelay',['TP_MAX_ACK_DELAY',['../tls_8c.html#a74cc4cc7f41493267f3b2ef484d5ebb6',1,'tls.c']]],
   ['tp_5fmax_5fpacket_5fsize',['TP_MAX_PACKET_SIZE',['../tls_8c.html#a24a5013c9420b7c5054cb049b745e19c',1,'tls.c']]],
+  ['tp_5foriginal_5fconnection_5fid',['TP_ORIGINAL_CONNECTION_ID',['../tls_8c.html#a3be307480a32159bdbc1b1cdc79798df',1,'tls.c']]],
   ['tp_5fstateless_5freset_5ftoken',['TP_STATELESS_RESET_TOKEN',['../tls_8c.html#a0893dd89c8c8365ae3c3b053135d15fb',1,'tls.c']]]
 ];

@@ -10,7 +10,7 @@ var searchData=
   ['chk_5ftp_5fserv',['chk_tp_serv',['../tls_8c.html#a2d88e7aa28c44c9c2a335f8bac53bc11',1,'tls.c']]],
   ['cid',['cid',['../structcid.html',1,'cid'],['../structq__cid__map.html#a79c4a6d1faeb0bf5440cf484a6e544fd',1,'q_cid_map::cid()'],['../structooo__0rtt.html#a9a8841c9488245645e26408553d567b4',1,'ooo_0rtt::cid()']]],
   ['cid2str',['cid2str',['../conn_8h.html#ade2abf64e3b30fc0b5e1b95735ab6677',1,'conn.h']]],
-  ['cid_5fcmp',['cid_cmp',['../conn_8c.html#ad2372a4b6e27ada905f0604c1725abf1',1,'conn.c']]],
+  ['cid_5fcmp',['cid_cmp',['../conn_8c.html#a76a8cb5ca5557838351e51dbb5286a29',1,'cid_cmp(const struct cid *const a, const struct cid *const b):&#160;conn.c'],['../conn_8h.html#a76a8cb5ca5557838351e51dbb5286a29',1,'cid_cmp(const struct cid *const a, const struct cid *const b):&#160;conn.c']]],
   ['cid_5fcpy',['cid_cpy',['../quic_8h.html#ab2b6d16118c27c0f7c91dfac30c5d446',1,'quic.h']]],
   ['cid_5fsplay_5fcmp',['cid_splay_cmp',['../conn_8c.html#abb1cca10ee153f6f5fa645a5364f98aa',1,'cid_splay_cmp(const struct q_cid_map *const a, const struct q_cid_map *const b):&#160;conn.c'],['../conn_8h.html#abb1cca10ee153f6f5fa645a5364f98aa',1,'cid_splay_cmp(const struct q_cid_map *const a, const struct q_cid_map *const b):&#160;conn.c']]],
   ['cipher_5fctx',['cipher_ctx',['../structcipher__ctx.html',1,'']]],

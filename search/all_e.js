@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['odcid',['odcid',['../structq__conn.html#a5c46a8b6d3b5393f8812868774bf1ec3',1,'q_conn']]],
   ['ok_5fvers',['ok_vers',['../quic_8c.html#a855179145371edc9111433f621044ab4',1,'ok_vers():&#160;quic.c'],['../quic_8h.html#a855179145371edc9111433f621044ab4',1,'ok_vers():&#160;quic.c']]],
   ['ok_5fvers_5flen',['ok_vers_len',['../quic_8c.html#ae9a33cf3a5f649662f26bb9eae92bf7b',1,'ok_vers_len():&#160;quic.c'],['../quic_8h.html#ae9a33cf3a5f649662f26bb9eae92bf7b',1,'ok_vers_len():&#160;quic.c']]],
   ['on_5fack_5fframe_5fend',['on_ack_frame_end',['../recovery_8c.html#a3f68936dbdd0130b5cd9fe26d4926257',1,'on_ack_frame_end(struct q_conn *const c, struct pn_space *const pn):&#160;recovery.c'],['../recovery_8h.html#a3f68936dbdd0130b5cd9fe26d4926257',1,'on_ack_frame_end(struct q_conn *const c, struct pn_space *const pn):&#160;recovery.c']]],
@@ -12,6 +13,7 @@ var searchData=
   ['ooo_5f0rtt',['ooo_0rtt',['../structooo__0rtt.html',1,'']]],
   ['ooo_5f0rtt_5fby_5fcid',['ooo_0rtt_by_cid',['../conn_8c.html#a4c93c4b2b38e3f2679194c2efe4acb19',1,'conn.c']]],
   ['ooo_5f0rtt_5fcmp',['ooo_0rtt_cmp',['../conn_8c.html#a2a9223c58954ca661d5a181bf6650155',1,'ooo_0rtt_cmp(const struct ooo_0rtt *const a, const struct ooo_0rtt *const b):&#160;conn.c'],['../conn_8h.html#a2a9223c58954ca661d5a181bf6650155',1,'ooo_0rtt_cmp(const struct ooo_0rtt *const a, const struct ooo_0rtt *const b):&#160;conn.c']]],
+  ['orig_5fcid',['orig_cid',['../structtransport__params.html#ada77b0a712c3a04c901ef49001f358a5',1,'transport_params']]],
   ['out',['out',['../structpn__hshk__space.html#a7b5d9b211f2a2b794dbbd36fef051d20',1,'pn_hshk_space::out()'],['../structq__stream.html#ad6bc293a8f8e054b500882d8ef57b1b6',1,'q_stream::out()']]],
   ['out_5f0rtt',['out_0rtt',['../structpn__data__space.html#a27cff102e25dcc1a37a963309a6e5fe9',1,'pn_data_space']]],
   ['out_5f1rtt',['out_1rtt',['../structpn__data__space.html#ab98ec33ea5a5a25350e0a8c4c49d30d8',1,'pn_data_space']]],

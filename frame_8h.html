@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">quant
-   &#160;<span id="projectnumber">0.0.14</span>
+   &#160;<span id="projectnumber">0.0.15</span>
    </div>
   </td>
  </tr>
@@ -139,8 +139,8 @@ Macros</h2></td></tr>
 <tr class="separator:ac907f3840a7b994809e4fe9c77e8363b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e980855d247bc84d13adc6fcb9805a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame_8h.html#a3e980855d247bc84d13adc6fcb9805a9">FRAM_TYPE_STOP_SEND</a>&#160;&#160;&#160;0x0c</td></tr>
 <tr class="separator:a3e980855d247bc84d13adc6fcb9805a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a544c3c8eb7a4cfd014d0bca654bb7949"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame_8h.html#a544c3c8eb7a4cfd014d0bca654bb7949">FRAM_TYPE_ACK</a>&#160;&#160;&#160;0x0d</td></tr>
-<tr class="separator:a544c3c8eb7a4cfd014d0bca654bb7949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb68e7f3fac8eb5fd295405bf5aeb611"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame_8h.html#adb68e7f3fac8eb5fd295405bf5aeb611">FRAM_TYPE_RTIR_CID</a>&#160;&#160;&#160;0x0d</td></tr>
+<tr class="separator:adb68e7f3fac8eb5fd295405bf5aeb611"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae64000828c40a70b77aec7e2aef9c1eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame_8h.html#ae64000828c40a70b77aec7e2aef9c1eb">FRAM_TYPE_PATH_CHLG</a>&#160;&#160;&#160;0x0e</td></tr>
 <tr class="separator:ae64000828c40a70b77aec7e2aef9c1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3b79eb6b419a8a673df954adbfda9f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame_8h.html#ab3b79eb6b419a8a673df954adbfda9f6">FRAM_TYPE_PATH_RESP</a>&#160;&#160;&#160;0x0f</td></tr>
@@ -153,7 +153,9 @@ Macros</h2></td></tr>
 <tr class="separator:aed58ae9ae1392a995c525fb146510d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70e417816cf3bd802e06fcbc142fd950"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame_8h.html#a70e417816cf3bd802e06fcbc142fd950">FRAM_TYPE_NEW_TOKN</a>&#160;&#160;&#160;0x19</td></tr>
 <tr class="separator:a70e417816cf3bd802e06fcbc142fd950"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82bcfa42c547fe82a094efbae2e0a9c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame_8h.html#a82bcfa42c547fe82a094efbae2e0a9c4">FRAM_TYPE_ACK_ECN</a>&#160;&#160;&#160;0x1a</td></tr>
+<tr class="memitem:a544c3c8eb7a4cfd014d0bca654bb7949"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame_8h.html#a544c3c8eb7a4cfd014d0bca654bb7949">FRAM_TYPE_ACK</a>&#160;&#160;&#160;0x1a</td></tr>
+<tr class="separator:a544c3c8eb7a4cfd014d0bca654bb7949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82bcfa42c547fe82a094efbae2e0a9c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame_8h.html#a82bcfa42c547fe82a094efbae2e0a9c4">FRAM_TYPE_ACK_ECN</a>&#160;&#160;&#160;0x1b</td></tr>
 <tr class="separator:a82bcfa42c547fe82a094efbae2e0a9c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d41e13ff77cca0577fa33baf6e2963c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame_8h.html#a9d41e13ff77cca0577fa33baf6e2963c">NUM_FRAM_TYPES</a>&#160;&#160;&#160;(<a class="el" href="frame_8h.html#a82bcfa42c547fe82a094efbae2e0a9c4">FRAM_TYPE_ACK_ECN</a> + 1)</td></tr>
 <tr class="separator:a9d41e13ff77cca0577fa33baf6e2963c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -273,7 +275,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FRAM_TYPE_ACK&#160;&#160;&#160;0x0d</td>
+          <td class="memname">#define FRAM_TYPE_ACK&#160;&#160;&#160;0x1a</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -285,7 +287,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FRAM_TYPE_ACK_ECN&#160;&#160;&#160;0x1a</td>
+          <td class="memname">#define FRAM_TYPE_ACK_ECN&#160;&#160;&#160;0x1b</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -454,6 +456,18 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define FRAM_TYPE_RST_STRM&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adb68e7f3fac8eb5fd295405bf5aeb611"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FRAM_TYPE_RTIR_CID&#160;&#160;&#160;0x0d</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1205,7 +1219,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 10 2018 14:38:16 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 11 2018 13:46:59 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

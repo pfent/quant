@@ -1,11 +1,12 @@
 <map id="q_stream" name="q_stream">
-<area shape="rect" id="node2" href="$structq__conn.html" title="A QUIC connection. " alt="" coords="200,119,264,145"/>
-<area shape="rect" id="node5" href="$structpn__space.html" title="pn_space" alt="" coords="5,219,83,245"/>
-<area shape="rect" id="node3" href="$structtransport__params.html" title="transport_params" alt="" coords="340,5,463,32"/>
-<area shape="rect" id="node4" href="$structpn__data__space.html" title="pn_data_space" alt="" coords="297,339,407,365"/>
-<area shape="rect" id="node9" href="$structpn__hshk__space.html" title="pn_hshk_space" alt="" coords="75,339,188,365"/>
-<area shape="rect" id="node6" href="$structdiet.html" title="diet" alt="" coords="44,5,87,32"/>
-<area shape="rect" id="node7" href="$structcipher__ctx.html" title="cipher_ctx" alt="" coords="311,219,392,245"/>
-<area shape="rect" id="node8" href="$structtls.html" title="tls" alt="" coords="181,5,219,32"/>
-<area shape="rect" id="node10" href="$structrecovery.html" title="recovery" alt="" coords="244,5,316,32"/>
+<area shape="rect" id="node2" href="$structq__conn.html" title="A QUIC connection. " alt="" coords="200,209,264,236"/>
+<area shape="rect" id="node6" href="$structpn__space.html" title="pn_space" alt="" coords="5,309,83,336"/>
+<area shape="rect" id="node3" href="$structtransport__params.html" title="transport_params" alt="" coords="92,96,215,123"/>
+<area shape="rect" id="node4" href="$structcid.html" title="cid" alt="" coords="318,5,356,32"/>
+<area shape="rect" id="node5" href="$structpn__data__space.html" title="pn_data_space" alt="" coords="177,429,287,456"/>
+<area shape="rect" id="node10" href="$structpn__hshk__space.html" title="pn_hshk_space" alt="" coords="349,429,461,456"/>
+<area shape="rect" id="node7" href="$structdiet.html" title="diet" alt="" coords="12,96,55,123"/>
+<area shape="rect" id="node8" href="$structcipher__ctx.html" title="cipher_ctx" alt="" coords="311,309,392,336"/>
+<area shape="rect" id="node9" href="$structtls.html" title="tls" alt="" coords="239,96,277,123"/>
+<area shape="rect" id="node11" href="$structrecovery.html" title="recovery" alt="" coords="303,96,375,123"/>
 </map>

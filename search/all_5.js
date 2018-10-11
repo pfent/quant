@@ -24,6 +24,7 @@ var searchData=
   ['enc_5fstream_5for_5fcrypto_5fframe',['enc_stream_or_crypto_frame',['../frame_8c.html#a6134c4faa49bbd6fbc29589f12350400',1,'enc_stream_or_crypto_frame(struct q_stream *const s, struct w_iov *const v, const uint16_t pos, const bool enc_strm):&#160;frame.c'],['../frame_8h.html#a6134c4faa49bbd6fbc29589f12350400',1,'enc_stream_or_crypto_frame(struct q_stream *const s, struct w_iov *const v, const uint16_t pos, const bool enc_strm):&#160;frame.c']]],
   ['enc_5ftckt',['enc_tckt',['../tls_8c.html#ae52de31f9ac17d5ebb79d284d90cc1aa',1,'tls.c']]],
   ['enc_5ftp',['enc_tp',['../tls_8c.html#a8e90a196b653422e5df430104bf62ee3',1,'tls.c']]],
+  ['enc_5ftp_5fbuf',['enc_tp_buf',['../tls_8c.html#a6392965ddc985a2de56b6bebe453d0a6',1,'tls.c']]],
   ['encrypt_5fticket',['encrypt_ticket',['../tls_8c.html#a4f25450b3aa01cc353142a2b8d76cfd9',1,'tls.c']]],
   ['encrypt_5fticket_5fcb',['encrypt_ticket_cb',['../tls_8c.html#a2ffbd9f27c72720873b4eaa808aa494b',1,'tls.c']]],
   ['enter_5fclosed',['enter_closed',['../conn_8c.html#aea7c8de8c9a43a64163e900a70678ae2',1,'conn.c']]],
