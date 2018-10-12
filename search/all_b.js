@@ -9,6 +9,7 @@ var searchData=
   ['lg_5fsent',['lg_sent',['../structpn__space.html#a9cda5671fa87d3027ef73c40c8ff4e5f',1,'pn_space']]],
   ['lg_5fsent_5fbefore_5frto',['lg_sent_before_rto',['../structpn__space.html#ab8026a26cf8a868e9243423fb83862ef',1,'pn_space']]],
   ['lo',['lo',['../structival.html#a48282b6ea42f2a81ab1dee4ed182b0ab',1,'ival']]],
+  ['log_5fcc',['log_cc',['../recovery_8h.html#ad588231c121d1a85ab97024a4cf12823',1,'recovery.h']]],
   ['log_5fdec',['log_dec',['../marshall_8c.html#ae635e264e431dd8807e0851433baaf5a',1,'marshall.c']]],
   ['log_5fenc',['log_enc',['../marshall_8c.html#a4c9f737352d10453560686bc1d742e9a',1,'marshall.c']]],
   ['log_5fpkt',['log_pkt',['../pkt_8c.html#a38e598b310ff43723f449b71c7baa210',1,'log_pkt(const char *const dir, const struct w_iov *const v, const struct cid *const odcid, const uint8_t *const tok, const uint16_t tok_len):&#160;pkt.c'],['../pkt_8h.html#a38e598b310ff43723f449b71c7baa210',1,'log_pkt(const char *const dir, const struct w_iov *const v, const struct cid *const odcid, const uint8_t *const tok, const uint16_t tok_len):&#160;pkt.c']]],

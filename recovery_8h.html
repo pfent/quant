@@ -87,13 +87,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">recovery.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br/>
+<div class="textblock"><code>#include &lt;inttypes.h&gt;</code><br/>
+<code>#include &lt;stdint.h&gt;</code><br/>
 <code>#include &lt;ev.h&gt;</code><br/>
+<code>#include &lt;warpcore/warpcore.h&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for recovery.h:</div>
 <div class="dyncontent">
@@ -116,6 +119,11 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrecovery.html">recovery</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ad588231c121d1a85ab97024a4cf12823"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="recovery_8h.html#ad588231c121d1a85ab97024a4cf12823">log_cc</a>(c)</td></tr>
+<tr class="separator:ad588231c121d1a85ab97024a4cf12823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a60784c1a11f52e1b091994e1cfcc4609"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="recovery_8h.html#a60784c1a11f52e1b091994e1cfcc4609">init_rec</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c)</td></tr>
@@ -131,6 +139,25 @@ Functions</h2></td></tr>
 <tr class="memitem:a078d446c5244577b054aed3abda0d694"><td class="memItemLeft" align="right" valign="top">struct w_iov *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="recovery_8h.html#a078d446c5244577b054aed3abda0d694">find_sent_pkt</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, struct <a class="el" href="structpn__space.html">pn_space</a> *const pn, const uint64_t nr)</td></tr>
 <tr class="separator:a078d446c5244577b054aed3abda0d694"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ad588231c121d1a85ab97024a4cf12823"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define log_cc</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">c</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">warn(DBG, <span class="stringliteral">&quot;in_flight=%&quot;</span> PRIu64 <span class="stringliteral">&quot;, cwnd=%&quot;</span> PRIu64 <span class="stringliteral">&quot;, ssthresh=%&quot;</span> PRIu64,    \</div>
+<div class="line">         (c)-&gt;rec.in_flight, (c)-&gt;rec.cwnd, (c)-&gt;rec.ssthresh)</div>
+</div><!-- fragment -->
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a078d446c5244577b054aed3abda0d694"></a>
 <div class="memitem">
@@ -265,7 +292,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="recovery_8h_a83231e012bebe5487a57ecf7f89be7e4_cgraph.png" border="0" usemap="#recovery_8h_a83231e012bebe5487a57ecf7f89be7e4_cgraph" alt=""/></div>
 <map name="recovery_8h_a83231e012bebe5487a57ecf7f89be7e4_cgraph" id="recovery_8h_a83231e012bebe5487a57ecf7f89be7e4_cgraph">
-<area shape="rect" id="node2" href="recovery_8c.html#a078d446c5244577b054aed3abda0d694" title="find_sent_pkt" alt="" coords="193,5,293,32"/><area shape="rect" id="node3" href="diet_8c.html#a87c3c2cebc6ccf0911d3d05989352588" title="Pointer to the interval containing n in diet tree t. " alt="" coords="207,56,278,83"/><area shape="rect" id="node4" href="quic_8h.html#a38482b6755c2fd0dd90838bb0924224d" title="is_ack_only" alt="" coords="197,107,288,133"/><area shape="rect" id="node5" href="conn_8h.html#a68c6b30b8665ce894ab5bed3c73a2d9d" title="is_zero" alt="" coords="211,157,275,184"/><area shape="rect" id="node6" href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="201,208,284,235"/><area shape="rect" id="node7" href="stream_8c.html#a7308501df4d06bbfd14665ae88caae02" title="get_stream" alt="" coords="199,259,286,285"/></map>
+<area shape="rect" id="node2" href="recovery_8c.html#a078d446c5244577b054aed3abda0d694" title="find_sent_pkt" alt="" coords="193,5,293,32"/><area shape="rect" id="node3" href="diet_8c.html#a87c3c2cebc6ccf0911d3d05989352588" title="Pointer to the interval containing n in diet tree t. " alt="" coords="207,56,278,83"/><area shape="rect" id="node4" href="conn_8h.html#a68c6b30b8665ce894ab5bed3c73a2d9d" title="is_zero" alt="" coords="211,107,275,133"/><area shape="rect" id="node5" href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="201,157,284,184"/><area shape="rect" id="node6" href="stream_8c.html#a7308501df4d06bbfd14665ae88caae02" title="get_stream" alt="" coords="199,208,286,235"/></map>
 </div>
 </p>
 
@@ -350,7 +377,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 12 2018 09:46:54 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 12 2018 14:23:33 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

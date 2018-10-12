@@ -1,8 +1,7 @@
 <map id="on_ack_frame_start" name="on_ack_frame_start">
 <area shape="rect" id="node2" href="$recovery_8c.html#a078d446c5244577b054aed3abda0d694" title="find_sent_pkt" alt="" coords="193,5,293,32"/>
 <area shape="rect" id="node3" href="$diet_8c.html#a87c3c2cebc6ccf0911d3d05989352588" title="Pointer to the interval containing n in diet tree t. " alt="" coords="207,56,278,83"/>
-<area shape="rect" id="node4" href="$quic_8h.html#a38482b6755c2fd0dd90838bb0924224d" title="is_ack_only" alt="" coords="197,107,288,133"/>
-<area shape="rect" id="node5" href="$conn_8h.html#a68c6b30b8665ce894ab5bed3c73a2d9d" title="is_zero" alt="" coords="211,157,275,184"/>
-<area shape="rect" id="node6" href="$conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="201,208,284,235"/>
-<area shape="rect" id="node7" href="$stream_8c.html#a7308501df4d06bbfd14665ae88caae02" title="get_stream" alt="" coords="199,259,286,285"/>
+<area shape="rect" id="node4" href="$conn_8h.html#a68c6b30b8665ce894ab5bed3c73a2d9d" title="is_zero" alt="" coords="211,107,275,133"/>
+<area shape="rect" id="node5" href="$conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="201,157,284,184"/>
+<area shape="rect" id="node6" href="$stream_8c.html#a7308501df4d06bbfd14665ae88caae02" title="get_stream" alt="" coords="199,208,286,235"/>
 </map>
