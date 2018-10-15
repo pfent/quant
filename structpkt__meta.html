@@ -134,9 +134,15 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a707d3bacba40b165d39ff18889248cc5"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpkt__meta.html#a707d3bacba40b165d39ff18889248cc5">stream_data_end</a></td></tr>
 <tr class="memdesc:a707d3bacba40b165d39ff18889248cc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset of last byte of stream frame data.  <a href="#a707d3bacba40b165d39ff18889248cc5">More...</a><br/></td></tr>
 <tr class="separator:a707d3bacba40b165d39ff18889248cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5df9d4b4e991280ca5c3a114c771d59"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpkt__meta.html#af5df9d4b4e991280ca5c3a114c771d59">ack_header_pos</a></td></tr>
-<tr class="memdesc:af5df9d4b4e991280ca5c3a114c771d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset of ACK frame header.  <a href="#af5df9d4b4e991280ca5c3a114c771d59">More...</a><br/></td></tr>
-<tr class="separator:af5df9d4b4e991280ca5c3a114c771d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeffe2a16e53c9eb4d1a6080436c7de4c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpkt__meta.html#aeffe2a16e53c9eb4d1a6080436c7de4c">ack_block_pos</a></td></tr>
+<tr class="memdesc:aeffe2a16e53c9eb4d1a6080436c7de4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset of first ACK block (for TX'ed pkt).  <a href="#aeffe2a16e53c9eb4d1a6080436c7de4c">More...</a><br/></td></tr>
+<tr class="separator:aeffe2a16e53c9eb4d1a6080436c7de4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21de9af69068ecadb222f0d9685d50d7"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpkt__meta.html#a21de9af69068ecadb222f0d9685d50d7">lg_acked</a></td></tr>
+<tr class="memdesc:a21de9af69068ecadb222f0d9685d50d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Largest Acknowledged" in ACK block (for TX'ed pkt).  <a href="#a21de9af69068ecadb222f0d9685d50d7">More...</a><br/></td></tr>
+<tr class="separator:a21de9af69068ecadb222f0d9685d50d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1832e1307ec64c29a877455b5f78000"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpkt__meta.html#ad1832e1307ec64c29a877455b5f78000">ack_block_cnt</a></td></tr>
+<tr class="memdesc:ad1832e1307ec64c29a877455b5f78000"><td class="mdescLeft">&#160;</td><td class="mdescRight">"ACK Block Count" in ACK block (for TX'ed pkt).  <a href="#ad1832e1307ec64c29a877455b5f78000">More...</a><br/></td></tr>
+<tr class="separator:ad1832e1307ec64c29a877455b5f78000"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbe4b90347e8a5b17126b4d90673040e"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpkt__meta.html#abbe4b90347e8a5b17126b4d90673040e">max_stream_data_sid</a></td></tr>
 <tr class="memdesc:abbe4b90347e8a5b17126b4d90673040e"><td class="mdescLeft">&#160;</td><td class="mdescRight">MAX_STREAM_DATA sid, if sent.  <a href="#abbe4b90347e8a5b17126b4d90673040e">More...</a><br/></td></tr>
 <tr class="separator:abbe4b90347e8a5b17126b4d90673040e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -278,17 +284,31 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af5df9d4b4e991280ca5c3a114c771d59"></a>
+<a class="anchor" id="ad1832e1307ec64c29a877455b5f78000"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t pkt_meta::ack_header_pos</td>
+          <td class="memname">uint64_t pkt_meta::ack_block_cnt</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Offset of ACK frame header. </p>
+<p>"ACK Block Count" in ACK block (for TX'ed pkt). </p>
+
+</div>
+</div>
+<a class="anchor" id="aeffe2a16e53c9eb4d1a6080436c7de4c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pkt_meta::ack_block_pos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Offset of first ACK block (for TX'ed pkt). </p>
 
 </div>
 </div>
@@ -343,6 +363,20 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Does the w_iov hold truncated data? </p>
+
+</div>
+</div>
+<a class="anchor" id="a21de9af69068ecadb222f0d9685d50d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t pkt_meta::lg_acked</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>"Largest Acknowledged" in ACK block (for TX'ed pkt). </p>
 
 </div>
 </div>
@@ -534,7 +568,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 12 2018 14:23:33 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 15 2018 07:54:30 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

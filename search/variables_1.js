@@ -1,8 +1,9 @@
 var searchData=
 [
   ['ack_5falarm',['ack_alarm',['../structpn__space.html#aeb316f3b0ea75c1e0da6547a7b7334c9',1,'pn_space']]],
+  ['ack_5fblock_5fcnt',['ack_block_cnt',['../structpkt__meta.html#ad1832e1307ec64c29a877455b5f78000',1,'pkt_meta']]],
+  ['ack_5fblock_5fpos',['ack_block_pos',['../structpkt__meta.html#aeffe2a16e53c9eb4d1a6080436c7de4c',1,'pkt_meta']]],
   ['ack_5fdel_5fexp',['ack_del_exp',['../structtransport__params.html#ae332eb1c8176a3916959caa35f810278',1,'transport_params']]],
-  ['ack_5fheader_5fpos',['ack_header_pos',['../structpkt__meta.html#af5df9d4b4e991280ca5c3a114c771d59',1,'pkt_meta']]],
   ['acked',['acked',['../structpn__space.html#a258b213b1fbb488b1d1dda308dcade45',1,'pn_space']]],
   ['aead',['aead',['../structcipher__ctx.html#ab88a3d2c5fd30344a597662ceaa074d6',1,'cipher_ctx']]],
   ['alpn',['alpn',['../structtls__ticket.html#a8901c0d191756d018d1390f23cc55460',1,'tls_ticket::alpn()'],['../tls_8c.html#ab9a4bdca4790560e892b981c84de1152',1,'alpn():&#160;tls.c']]],

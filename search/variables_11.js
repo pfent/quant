@@ -9,7 +9,7 @@ var searchData=
   ['tls_5fctx',['tls_ctx',['../tls_8c.html#af6bbbfab377148ff702ada5a44a7ae73',1,'tls_ctx():&#160;tls.c'],['../tls_8h.html#af6bbbfab377148ff702ada5a44a7ae73',1,'tls_ctx():&#160;tls.c']]],
   ['tls_5fhshake_5fprop',['tls_hshake_prop',['../structtls.html#a20c8db13b679074947c758b7e29684c5',1,'tls']]],
   ['tls_5flog_5ffile',['tls_log_file',['../tls_8c.html#a0334391e62e54695e81b99742ea9a9f2',1,'tls.c']]],
-  ['tok',['tok',['../structq__conn.html#a01491eb8911e5ac2945c60374f4b859b',1,'q_conn']]],
+  ['tok',['tok',['../structq__conn.html#a0d8e1a2fb58995b25ec5287e39f4de82',1,'q_conn']]],
   ['tok_5flen',['tok_len',['../structq__conn.html#ae2a098b26d543a1df44be487603b48cc',1,'q_conn']]],
   ['tp',['tp',['../structtls__ticket.html#aa22a685941e1be9135cfae4fbbad5529',1,'tls_ticket']]],
   ['tp_5fbuf',['tp_buf',['../structtls.html#abb765cf816efb3d6b75f9ec2db520571',1,'tls']]],

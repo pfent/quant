@@ -1,4 +1,0 @@
-<map id="dec_ack_frame" name="dec_ack_frame">
-<area shape="rect" id="node2" href="$pkt_8h.html#a13f2d88ad76ff338e531972ca1c0449e" title="pn_for_pkt_type" alt="" coords="165,5,280,32"/>
-<area shape="rect" id="node3" href="$frame_8c.html#a31c36630801506eb48c0bf620c0fcca6" title="shorten_ack_nr" alt="" coords="167,56,278,83"/>
-</map>

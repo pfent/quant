@@ -3,5 +3,6 @@
 <area shape="rect" id="node3" href="$frame_8c.html" title="src/frame.c" alt="" coords="112,80,200,107"/>
 <area shape="rect" id="node4" href="$marshall_8c.html" title="src/marshall.c" alt="" coords="224,80,328,107"/>
 <area shape="rect" id="node5" href="$pkt_8c.html" title="src/pkt.c" alt="" coords="353,80,425,107"/>
-<area shape="rect" id="node6" href="$tls_8c.html" title="src/tls.c" alt="" coords="451,80,520,107"/>
+<area shape="rect" id="node6" href="$recovery_8c.html" title="src/recovery.c" alt="" coords="450,80,555,107"/>
+<area shape="rect" id="node7" href="$tls_8c.html" title="src/tls.c" alt="" coords="580,80,649,107"/>
 </map>
