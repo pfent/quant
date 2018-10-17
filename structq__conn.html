@@ -99,7 +99,7 @@ Collaboration diagram for q_conn:</div>
 <div class="dyncontent">
 <div class="center"><img src="structq__conn__coll__graph.png" border="0" usemap="#q__conn_coll__map" alt="Collaboration graph"/></div>
 <map name="q__conn_coll__map" id="q__conn_coll__map">
-<area shape="rect" id="node5" href="structpn__space.html" title="pn_space" alt="" coords="177,291,255,317"/><area shape="rect" id="node2" href="structtransport__params.html" title="transport_params" alt="" coords="5,96,128,123"/><area shape="rect" id="node3" href="structcid.html" title="cid" alt="" coords="111,5,149,32"/><area shape="rect" id="node4" href="structpn__data__space.html" title="pn_data_space" alt="" coords="125,411,235,437"/><area shape="rect" id="node8" href="structpn__hshk__space.html" title="pn_hshk_space" alt="" coords="302,411,415,437"/><area shape="rect" id="node6" href="structcipher__ctx.html" title="cipher_ctx" alt="" coords="280,291,361,317"/><area shape="rect" id="node7" href="structtls.html" title="tls" alt="" coords="237,96,275,123"/><area shape="rect" id="node9" href="structrecovery.html" title="recovery" alt="" coords="300,96,372,123"/></map>
+<area shape="rect" id="node5" href="structpn__space.html" title="pn_space" alt="" coords="177,309,255,336"/><area shape="rect" id="node2" href="structtransport__params.html" title="transport_params" alt="" coords="5,105,128,132"/><area shape="rect" id="node3" href="structcid.html" title="cid" alt="" coords="111,5,149,32"/><area shape="rect" id="node4" href="structpn__data__space.html" title="pn_data_space" alt="" coords="125,429,235,456"/><area shape="rect" id="node8" href="structpn__hshk__space.html" title="pn_hshk_space" alt="" coords="302,429,415,456"/><area shape="rect" id="node6" href="structcipher__ctx.html" title="cipher_ctx" alt="" coords="280,309,361,336"/><area shape="rect" id="node7" href="structtls.html" title="tls" alt="" coords="237,105,275,132"/><area shape="rect" id="node9" href="structrecovery.html" title="recovery" alt="" coords="300,105,372,132"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -121,11 +121,20 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a8a456782615d1106a8bc83a3dd51c7f3"><td class="memItemLeft" align="right" valign="top">struct cids_by_seq&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a8a456782615d1106a8bc83a3dd51c7f3">dcids_by_seq</a></td></tr>
-<tr class="memdesc:a8a456782615d1106a8bc83a3dd51c7f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destination connection IDs.  <a href="#a8a456782615d1106a8bc83a3dd51c7f3">More...</a><br/></td></tr>
+<tr class="memdesc:a8a456782615d1106a8bc83a3dd51c7f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destination CID hash by sequence.  <a href="#a8a456782615d1106a8bc83a3dd51c7f3">More...</a><br/></td></tr>
 <tr class="separator:a8a456782615d1106a8bc83a3dd51c7f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c3ae7248e02d35a8495035fba27a113"><td class="memItemLeft" align="right" valign="top">struct cids_by_seq&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a7c3ae7248e02d35a8495035fba27a113">scids_by_seq</a></td></tr>
-<tr class="memdesc:a7c3ae7248e02d35a8495035fba27a113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Source connection IDs.  <a href="#a7c3ae7248e02d35a8495035fba27a113">More...</a><br/></td></tr>
+<tr class="memdesc:a7c3ae7248e02d35a8495035fba27a113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Source CID hash by sequence.  <a href="#a7c3ae7248e02d35a8495035fba27a113">More...</a><br/></td></tr>
 <tr class="separator:a7c3ae7248e02d35a8495035fba27a113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0416f7e91696e7ae75058c98f6df87ce"><td class="memItemLeft" align="right" valign="top">struct cids_by_id&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a0416f7e91696e7ae75058c98f6df87ce">scids_by_id</a></td></tr>
+<tr class="memdesc:a0416f7e91696e7ae75058c98f6df87ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Source CID hash by ID.  <a href="#a0416f7e91696e7ae75058c98f6df87ce">More...</a><br/></td></tr>
+<tr class="separator:a0416f7e91696e7ae75058c98f6df87ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d6072809215f42a4eebd3d448e4911c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcid.html">cid</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a9d6072809215f42a4eebd3d448e4911c">dcid</a></td></tr>
+<tr class="memdesc:a9d6072809215f42a4eebd3d448e4911c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Active destination CID.  <a href="#a9d6072809215f42a4eebd3d448e4911c">More...</a><br/></td></tr>
+<tr class="separator:a9d6072809215f42a4eebd3d448e4911c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86804051986ad4567cfe813b91cd4f8e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcid.html">cid</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a86804051986ad4567cfe813b91cd4f8e">scid</a></td></tr>
+<tr class="memdesc:a86804051986ad4567cfe813b91cd4f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Active source CID.  <a href="#a86804051986ad4567cfe813b91cd4f8e">More...</a><br/></td></tr>
+<tr class="separator:a86804051986ad4567cfe813b91cd4f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac16c3a79e2834414bf5619618456d663"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#ac16c3a79e2834414bf5619618456d663">holds_sock</a>: 1</td></tr>
 <tr class="memdesc:ac16c3a79e2834414bf5619618456d663"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection manages a warpcore socket.  <a href="#ac16c3a79e2834414bf5619618456d663">More...</a><br/></td></tr>
 <tr class="separator:ac16c3a79e2834414bf5619618456d663"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -431,6 +440,20 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a9d6072809215f42a4eebd3d448e4911c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structcid.html">cid</a>* q_conn::dcid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Active destination CID. </p>
+
+</div>
+</div>
 <a class="anchor" id="a8a456782615d1106a8bc83a3dd51c7f3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -441,7 +464,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Destination connection IDs. </p>
+<p>Destination CID hash by sequence. </p>
 
 </div>
 </div>
@@ -793,6 +816,34 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a86804051986ad4567cfe813b91cd4f8e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structcid.html">cid</a>* q_conn::scid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Active source CID. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0416f7e91696e7ae75058c98f6df87ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct cids_by_id q_conn::scids_by_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Source CID hash by ID. </p>
+
+</div>
+</div>
 <a class="anchor" id="a7c3ae7248e02d35a8495035fba27a113"></a>
 <div class="memitem">
 <div class="memproto">
@@ -803,7 +854,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Source connection IDs. </p>
+<p>Source CID hash by sequence. </p>
 
 </div>
 </div>
@@ -1116,7 +1167,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 17 2018 11:25:33 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 17 2018 15:52:19 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

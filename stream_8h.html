@@ -133,8 +133,8 @@ Macros</h2></td></tr>
 <tr class="separator:aa8676dc8e5bf2002815718fb5d017e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29d0d69805b312f9f5a7728dcd5f0e3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a29d0d69805b312f9f5a7728dcd5f0e3d">STRM_STATES</a></td></tr>
 <tr class="separator:a29d0d69805b312f9f5a7728dcd5f0e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d0e0e889da12d7778ad19b477fad290"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a1d0e0e889da12d7778ad19b477fad290">strm_to_state</a>(strm, s)</td></tr>
-<tr class="separator:a1d0e0e889da12d7778ad19b477fad290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecb5a067c7adc620178c9897b47bda8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#aecb5a067c7adc620178c9897b47bda8d">strm_to_state</a>(s, new_state)</td></tr>
+<tr class="separator:aecb5a067c7adc620178c9897b47bda8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -247,7 +247,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a1d0e0e889da12d7778ad19b477fad290"></a>
+<a class="anchor" id="aecb5a067c7adc620178c9897b47bda8d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -255,13 +255,13 @@ Variables</h2></td></tr>
           <td class="memname">#define strm_to_state</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">strm, </td>
+          <td class="paramname">s, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">s&#160;</td>
+          <td class="paramname">new_state&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -271,18 +271,17 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
-<div class="line">        if ((strm)-&gt;<span class="keywordtype">id</span> &gt;= 0) {                                                 \</div>
+<div class="line">        if ((s)-&gt;<span class="keywordtype">id</span> &gt;= 0)                                                      \</div>
 <div class="line">            warn(DBG, <span class="stringliteral">&quot;conn %s strm &quot;</span> <a class="code" href="quic_8h.html#ab5f8d1e8c05400492619366d20559bfd">FMT_SID</a> <span class="stringliteral">&quot; state %s -&gt; &quot;</span> <a class="code" href="quic_8h.html#a96fac03c4ab3363f06a0328e0e53a40c">YEL</a> <span class="stringliteral">&quot;%s&quot;</span> <a class="code" href="quic_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a>,    \</div>
-<div class="line">                 <a class="code" href="conn_8h.html#a8c0f38926bf49f25a195d29f9359b048">scid2str</a>((strm)-&gt;c), (strm)-&gt;<span class="keywordtype">id</span>,                              \</div>
-<div class="line">                 <a class="code" href="stream_8h.html#aa6dd5679b354a793efc82cd45b5d3962">strm_state_str</a>[(strm)-&gt;state], <a class="code" href="stream_8h.html#aa6dd5679b354a793efc82cd45b5d3962">strm_state_str</a>[(s)]);          \</div>
-<div class="line">        }                                                                      \</div>
-<div class="line">        (strm)-&gt;state = (s);                                                   \</div>
+<div class="line">                 <a class="code" href="conn_8h.html#ade2abf64e3b30fc0b5e1b95735ab6677">cid2str</a>((s)-&gt;c-&gt;scid), (s)-&gt;id, <a class="code" href="stream_8h.html#aa6dd5679b354a793efc82cd45b5d3962">strm_state_str</a>[(s)-&gt;state],   \</div>
+<div class="line">                 <a class="code" href="stream_8h.html#aa6dd5679b354a793efc82cd45b5d3962">strm_state_str</a>[(new_state)]);                                 \</div>
+<div class="line">        (s)-&gt;state = (new_state);                                              \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="conn_8h_html_a8c0f38926bf49f25a195d29f9359b048"><div class="ttname"><a href="conn_8h.html#a8c0f38926bf49f25a195d29f9359b048">scid2str</a></div><div class="ttdeci">#define scid2str(c)</div><div class="ttdef"><b>Definition:</b> conn.h:344</div></div>
-<div class="ttc" id="quic_8h_html_a96fac03c4ab3363f06a0328e0e53a40c"><div class="ttname"><a href="quic_8h.html#a96fac03c4ab3363f06a0328e0e53a40c">YEL</a></div><div class="ttdeci">#define YEL</div><div class="ttdoc">ANSI escape sequence: yellow. </div><div class="ttdef"><b>Definition:</b> quic.h:435</div></div>
+<div class="ttc" id="quic_8h_html_a96fac03c4ab3363f06a0328e0e53a40c"><div class="ttname"><a href="quic_8h.html#a96fac03c4ab3363f06a0328e0e53a40c">YEL</a></div><div class="ttdeci">#define YEL</div><div class="ttdoc">ANSI escape sequence: yellow. </div><div class="ttdef"><b>Definition:</b> quic.h:436</div></div>
 <div class="ttc" id="stream_8h_html_aa6dd5679b354a793efc82cd45b5d3962"><div class="ttname"><a href="stream_8h.html#aa6dd5679b354a793efc82cd45b5d3962">strm_state_str</a></div><div class="ttdeci">const char *const strm_state_str[]</div><div class="ttdef"><b>Definition:</b> stream.c:45</div></div>
-<div class="ttc" id="quic_8h_html_ade01bc98e1632cd645e0f33757d70d2e"><div class="ttname"><a href="quic_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a></div><div class="ttdeci">#define NRM</div><div class="ttdoc">ANSI escape sequence: reset all to normal. </div><div class="ttdef"><b>Definition:</b> quic.h:425</div></div>
-<div class="ttc" id="quic_8h_html_ab5f8d1e8c05400492619366d20559bfd"><div class="ttname"><a href="quic_8h.html#ab5f8d1e8c05400492619366d20559bfd">FMT_SID</a></div><div class="ttdeci">#define FMT_SID</div><div class="ttdef"><b>Definition:</b> quic.h:444</div></div>
+<div class="ttc" id="conn_8h_html_ade2abf64e3b30fc0b5e1b95735ab6677"><div class="ttname"><a href="conn_8h.html#ade2abf64e3b30fc0b5e1b95735ab6677">cid2str</a></div><div class="ttdeci">#define cid2str(i)</div><div class="ttdef"><b>Definition:</b> conn.h:324</div></div>
+<div class="ttc" id="quic_8h_html_ade01bc98e1632cd645e0f33757d70d2e"><div class="ttname"><a href="quic_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a></div><div class="ttdeci">#define NRM</div><div class="ttdoc">ANSI escape sequence: reset all to normal. </div><div class="ttdef"><b>Definition:</b> quic.h:426</div></div>
+<div class="ttc" id="quic_8h_html_ab5f8d1e8c05400492619366d20559bfd"><div class="ttname"><a href="quic_8h.html#ab5f8d1e8c05400492619366d20559bfd">FMT_SID</a></div><div class="ttdeci">#define FMT_SID</div><div class="ttdef"><b>Definition:</b> quic.h:445</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -697,7 +696,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 17 2018 11:25:33 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 17 2018 15:52:19 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

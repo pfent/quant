@@ -2,7 +2,7 @@
 <area shape="rect" id="node2" href="$quic_8h.html#ab2b6d16118c27c0f7c91dfac30c5d446" title="cid_cpy" alt="" coords="732,1613,799,1640"/>
 <area shape="rect" id="node3" href="$conn_8c.html#ae5beee50c7414b14d1efb1e3e8ebe1ee" title="add_dcid" alt="" coords="564,1613,639,1640"/>
 <area shape="rect" id="node4" href="$pn_8c.html#a08111eb107b4ea7f913acc44b761bda0" title="init_pn" alt="" coords="571,397,631,424"/>
-<area shape="rect" id="node7" href="$conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="1593,1132,1676,1159"/>
+<area shape="rect" id="node7" href="$conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="1577,1132,1660,1159"/>
 <area shape="rect" id="node11" href="$stream_8h.html#a012bc210254cd3269ef892fcbd91e146" title="crpt_strm_id" alt="" coords="1269,600,1363,627"/>
 <area shape="rect" id="node14" href="$conn_8c.html#ac22c90477f7d4e5f8e96e3d536b58afb" title="idle_alarm" alt="" coords="725,1056,806,1083"/>
 <area shape="rect" id="node17" href="$conn_8c.html#aea7c8de8c9a43a64163e900a70678ae2" title="enter_closed" alt="" coords="1268,1512,1364,1539"/>
@@ -20,9 +20,9 @@
 <area shape="rect" id="node13" href="$conn_8c.html#a061f6268bdb3054227eedf2ca20cb8a1" title="do_tx" alt="" coords="1289,1056,1343,1083"/>
 <area shape="rect" id="node15" href="$conn_8c.html#afd38904c68cab87424e6aa8db723fd38" title="enter_closing" alt="" coords="1080,752,1179,779"/>
 <area shape="rect" id="node16" href="$conn_8h.html#a68c6b30b8665ce894ab5bed3c73a2d9d" title="is_zero" alt="" coords="1284,271,1348,297"/>
-<area shape="rect" id="node18" href="$quant_8h.html#a3da1ca1e589303333e8bba9cfbb1f4da" title="q_accept" alt="" coords="1440,1512,1515,1539"/>
-<area shape="rect" id="node20" href="$quant_8h.html#a84a768c49cd352e1c8a109bda56ef3a6" title="q_rx_ready" alt="" coords="1434,1563,1521,1589"/>
-<area shape="rect" id="node19" href="$quic_8c.html#afd98d880d46aa717596439adb85fcafc" title="cancel_api_call" alt="" coords="1579,1537,1690,1564"/>
+<area shape="rect" id="node18" href="$quant_8h.html#a3da1ca1e589303333e8bba9cfbb1f4da" title="q_accept" alt="" coords="1432,1512,1507,1539"/>
+<area shape="rect" id="node20" href="$quant_8h.html#a84a768c49cd352e1c8a109bda56ef3a6" title="q_rx_ready" alt="" coords="1426,1563,1513,1589"/>
+<area shape="rect" id="node19" href="$quic_8c.html#afd98d880d46aa717596439adb85fcafc" title="cancel_api_call" alt="" coords="1563,1537,1674,1564"/>
 <area shape="rect" id="node22" href="$recovery_8c.html#a335f186f63ae2582ce2c96767906b413" title="on_ld_alarm" alt="" coords="719,423,811,449"/>
 <area shape="rect" id="node23" href="$recovery_8c.html#a0ab224b867c365ffdb3150b57d836ee8" title="hshk_pkts_outstanding" alt="" coords="1051,651,1207,677"/>
 <area shape="rect" id="node25" href="$conn_8c.html#abc878d206fec5787bb6754f6b53d0e8a" title="tx" alt="" coords="923,904,962,931"/>
@@ -46,6 +46,6 @@
 <area shape="rect" id="node43" href="$conn_8c.html#ab6768a591006ee6e326e91425eb105fb" title="new_conn" alt="" coords="389,1056,470,1083"/>
 <area shape="rect" id="node47" href="$tls_8c.html#aa4907143b04da6627e6cef421b920480" title="init_tls" alt="" coords="399,1208,459,1235"/>
 <area shape="rect" id="node48" href="$conn_8h.html#ad2372a4b6e27ada905f0604c1725abf1" title="cid_cmp" alt="" coords="394,1259,465,1285"/>
-<area shape="rect" id="node49" href="$conn_8c.html#a899b62b37418afb64d2f4ade6ee61e7a" title="use_next_scid" alt="" coords="1424,1411,1531,1437"/>
+<area shape="rect" id="node49" href="$conn_8c.html#a00bfd113d31c70a12604ffa9e32cf92d" title="switch_scid" alt="" coords="1424,1411,1515,1437"/>
 <area shape="rect" id="node46" href="$stream_8c.html#a2853c95f04e70a8c7e836f881eedff8d" title="apply_stream_limits" alt="" coords="696,1005,835,1032"/>
 </map>

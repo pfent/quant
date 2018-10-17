@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['act_5fdcid',['act_dcid',['../conn_8h.html#ac1f90992dac7a265565c3c1030465e81',1,'conn.h']]],
-  ['act_5fscid',['act_scid',['../conn_8h.html#aafe0352524fcaf303ff49ad82db8c0b2',1,'conn.h']]],
   ['adj_5fiov_5fto_5fdata',['adj_iov_to_data',['../quic_8h.html#a1aa83c4276fdde72d879fe39db958f53',1,'quic.h']]],
   ['adj_5fiov_5fto_5fstart',['adj_iov_to_start',['../quic_8h.html#a1daef6fec141f3c29f2ef7f04d7f21ad',1,'quic.h']]],
   ['aead_5flen',['AEAD_LEN',['../tls_8h.html#ad40306a6371f317e82283cbc83ff93a3',1,'tls.h']]],

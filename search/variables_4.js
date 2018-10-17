@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['dcid',['dcid',['../structpkt__hdr.html#afb4dcbc319b38d10450078a780519c66',1,'pkt_hdr']]],
+  ['dcid',['dcid',['../structq__conn.html#a9d6072809215f42a4eebd3d448e4911c',1,'q_conn::dcid()'],['../structpkt__hdr.html#afb4dcbc319b38d10450078a780519c66',1,'pkt_hdr::dcid()']]],
   ['dcids_5fby_5fseq',['dcids_by_seq',['../structq__conn.html#a8a456782615d1106a8bc83a3dd51c7f3',1,'q_conn']]],
   ['dec_5ftckt',['dec_tckt',['../tls_8c.html#a6fb294995cf9a4d8895404d4b6c3b6f4',1,'tls.c']]],
   ['did_5f0rtt',['did_0rtt',['../structq__conn.html#abfa2e8f9b939f149ccfa60cb75d863ff',1,'q_conn']]],

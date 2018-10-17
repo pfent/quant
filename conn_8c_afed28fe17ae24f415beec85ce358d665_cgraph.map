@@ -12,7 +12,7 @@
 <area shape="rect" id="node21" href="$tls_8c.html#a7af72f607847e5a6a71e9910b489fedc" title="make_rtry_tok" alt="" coords="137,1661,242,1688"/>
 <area shape="rect" id="node22" href="$frame_8c.html#a81c634475cc4f2598b7d4edd29e34d00" title="dec_frames" alt="" coords="144,853,235,880"/>
 <area shape="rect" id="node42" href="$tls_8c.html#a873296f812267d1c3475457cacc3c815" title="init_tp" alt="" coords="161,1712,218,1739"/>
-<area shape="rect" id="node43" href="$conn_8c.html#a1c9db996af2db57d04b8661d04dd0d68" title="add_scid" alt="" coords="152,1763,227,1789"/>
+<area shape="rect" id="node43" href="$conn_8c.html#aef0e70b44b598a909e6127fc859b80af" title="update_act_scid" alt="" coords="131,1763,248,1789"/>
 <area shape="rect" id="node45" href="$conn_8c.html#a9512dc2ed1b8796966112d60b0abb037" title="pick_from_server_vers" alt="" coords="112,1560,267,1587"/>
 <area shape="rect" id="node46" href="$conn_8c.html#a61fab7f448fb816e2b147319ef693202" title="vneg_or_rtry_resp" alt="" coords="126,1813,253,1840"/>
 <area shape="rect" id="node50" href="$quic_8h.html#a38482b6755c2fd0dd90838bb0924224d" title="is_ack_only" alt="" coords="144,1864,235,1891"/>

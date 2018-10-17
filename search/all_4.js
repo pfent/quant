@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['dcid',['dcid',['../structpkt__hdr.html#afb4dcbc319b38d10450078a780519c66',1,'pkt_hdr']]],
-  ['dcid2str',['dcid2str',['../conn_8h.html#acb3b73ec79d83b80c8657b0f905dc657',1,'conn.h']]],
+  ['dcid',['dcid',['../structq__conn.html#a9d6072809215f42a4eebd3d448e4911c',1,'q_conn::dcid()'],['../structpkt__hdr.html#afb4dcbc319b38d10450078a780519c66',1,'pkt_hdr::dcid()']]],
   ['dcids_5fby_5fseq',['dcids_by_seq',['../structq__conn.html#a8a456782615d1106a8bc83a3dd51c7f3',1,'q_conn']]],
   ['dec',['dec',['../marshall_8h.html#a17979630a63703570a316e70d4e9cb30',1,'marshall.h']]],
   ['dec_5fack_5fframe',['dec_ack_frame',['../frame_8c.html#a44dc32970bbe3088cc0ccc79abe03d74',1,'dec_ack_frame(struct q_conn *const c, const struct w_iov *const v, const uint16_t pos):&#160;frame.c'],['../frame_8h.html#a44dc32970bbe3088cc0ccc79abe03d74',1,'dec_ack_frame(struct q_conn *const c, const struct w_iov *const v, const uint16_t pos):&#160;frame.c']]],

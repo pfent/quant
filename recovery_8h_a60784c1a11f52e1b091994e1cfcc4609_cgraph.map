@@ -32,7 +32,7 @@
 <area shape="rect" id="node23" href="$quic_8h.html#ab2b6d16118c27c0f7c91dfac30c5d446" title="cid_cpy" alt="" coords="1155,376,1221,403"/>
 <area shape="rect" id="node24" href="$conn_8h.html#ad42b6442b32fa307a6b5293b9b9df058" title="is_force_neg_vers" alt="" coords="955,477,1083,504"/>
 <area shape="rect" id="node25" href="$pkt_8c.html#a38e598b310ff43723f449b71c7baa210" title="log_pkt" alt="" coords="987,528,1051,555"/>
-<area shape="rect" id="node26" href="$conn_8c.html#a1c9db996af2db57d04b8661d04dd0d68" title="add_scid" alt="" coords="981,427,1056,453"/>
+<area shape="rect" id="node26" href="$conn_8c.html#aef0e70b44b598a909e6127fc859b80af" title="update_act_scid" alt="" coords="960,427,1077,453"/>
 <area shape="rect" id="node27" href="$pkt_8c.html#a49535313dfd1afad8743aef5abe2d30c" title="needed_pkt_nr_len" alt="" coords="953,579,1084,605"/>
 <area shape="rect" id="node28" href="$diet_8h.html#aad21e3b897b17d0c86fce4a174e80ab0" title="diet_empty" alt="" coords="975,680,1062,707"/>
 <area shape="rect" id="node29" href="$frame_8c.html#ad33d4ffd79b410b355647b882fcecd94" title="enc_ack_frame" alt="" coords="963,629,1074,656"/>

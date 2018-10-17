@@ -1,7 +1,8 @@
 var searchData=
 [
   ['save_5fticket',['save_ticket',['../tls_8c.html#a3a920c80db919ca11a75003ebcceacb8',1,'tls.c']]],
-  ['scid',['scid',['../structpkt__hdr.html#a29cdaea213d15beb68119e47e6d16bf1',1,'pkt_hdr']]],
+  ['scid',['scid',['../structq__conn.html#a86804051986ad4567cfe813b91cd4f8e',1,'q_conn::scid()'],['../structpkt__hdr.html#a29cdaea213d15beb68119e47e6d16bf1',1,'pkt_hdr::scid()']]],
+  ['scids_5fby_5fid',['scids_by_id',['../structq__conn.html#a0416f7e91696e7ae75058c98f6df87ce',1,'q_conn']]],
   ['scids_5fby_5fseq',['scids_by_seq',['../structq__conn.html#a7c3ae7248e02d35a8495035fba27a113',1,'q_conn']]],
   ['sent_5fpkts',['sent_pkts',['../structpn__space.html#a7ac99b6feec118ea3941813d8ee9a55a',1,'pn_space']]],
   ['seq',['seq',['../structcid.html#a937edeb01e868ef76539126dd41b322f',1,'cid']]],

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['dcid2str',['dcid2str',['../conn_8h.html#acb3b73ec79d83b80c8657b0f905dc657',1,'conn.h']]],
   ['dec',['dec',['../marshall_8h.html#a17979630a63703570a316e70d4e9cb30',1,'marshall.h']]],
   ['dec_5fbuf',['dec_buf',['../marshall_8h.html#a30296cce5b6c5d9acf70a6d8b9ef809b',1,'marshall.h']]],
   ['dec_5fchk',['dec_chk',['../frame_8c.html#aeaf13265aed6d3d8eade29a6b8706d7f',1,'dec_chk():&#160;frame.c'],['../pkt_8c.html#aeba19471d801e51206daf3eab7761a85',1,'dec_chk():&#160;pkt.c']]],
