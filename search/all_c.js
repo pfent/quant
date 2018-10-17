@@ -26,6 +26,7 @@ var searchData=
   ['max_5fstrm_5fdata_5fbidi_5flocal',['max_strm_data_bidi_local',['../structtransport__params.html#a718d891ebb11747196b551db259b7e7f',1,'transport_params']]],
   ['max_5fstrm_5fdata_5fbidi_5fremote',['max_strm_data_bidi_remote',['../structtransport__params.html#a1ef8341121e76946446e36f1f7a8c818',1,'transport_params']]],
   ['max_5fstrm_5fdata_5funi',['max_strm_data_uni',['../structtransport__params.html#ae386de9dcd0300644d51ee3f657ecb32',1,'transport_params']]],
+  ['max_5ftok_5flen',['MAX_TOK_LEN',['../conn_8h.html#a4c4dda142699d1cf6e5434ab2ca6c406',1,'conn.h']]],
   ['max_5funi_5fstreams',['max_uni_streams',['../structtransport__params.html#accb4142e49334e5405b431eb1d6a95b3',1,'transport_params']]],
   ['maybe_5fapi_5freturn',['maybe_api_return',['../quic_8h.html#a643d59e26aea7ac662beb6a840765426',1,'quic.h']]],
   ['maybe_5fapi_5freturn2',['maybe_api_return2',['../quic_8h.html#a9037399ab78625d206ddecd10c85a9ed',1,'quic.h']]],

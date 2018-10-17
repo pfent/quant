@@ -10,7 +10,7 @@ var searchData=
   ['in_5fdata',['in_data',['../structq__conn.html#af2bf7d44ce67c0b313defa235d4999cb',1,'q_conn::in_data()'],['../structq__stream.html#af571e4a21acbd83695fdd6843ec414a5',1,'q_stream::in_data()']]],
   ['in_5fdata_5fmax',['in_data_max',['../structq__stream.html#a3efa630f78833bdfa5a5f16a18991d88',1,'q_stream']]],
   ['in_5fflight',['in_flight',['../structrecovery.html#a206af8b5f9afa712883a19d6c67a5b11',1,'recovery']]],
-  ['in_5fooo',['in_ooo',['../structq__stream.html#aa27d60491b286e8b2e36f9293516704f',1,'q_stream']]],
+  ['in_5fooo',['in_ooo',['../structq__stream.html#a372b1593a42dbd1934ed03d605b5349d',1,'q_stream']]],
   ['in_5frecovery',['in_recovery',['../recovery_8c.html#a1cddc0f895e4feafcaf6f0ad86ad2631',1,'recovery.c']]],
   ['init_5fpn',['init_pn',['../pn_8c.html#a08111eb107b4ea7f913acc44b761bda0',1,'init_pn(struct pn_space *const pn, struct q_conn *const c):&#160;pn.c'],['../pn_8h.html#a08111eb107b4ea7f913acc44b761bda0',1,'init_pn(struct pn_space *const pn, struct q_conn *const c):&#160;pn.c']]],
   ['init_5fprot',['init_prot',['../tls_8c.html#a705b76a676f449cbc37b9d955a2e0d5c',1,'init_prot(struct q_conn *const c):&#160;tls.c'],['../tls_8h.html#a705b76a676f449cbc37b9d955a2e0d5c',1,'init_prot(struct q_conn *const c):&#160;tls.c']]],
@@ -19,7 +19,6 @@ var searchData=
   ['init_5ftls',['init_tls',['../tls_8c.html#aa4907143b04da6627e6cef421b920480',1,'init_tls(struct q_conn *const c):&#160;tls.c'],['../tls_8h.html#aa4907143b04da6627e6cef421b920480',1,'init_tls(struct q_conn *const c):&#160;tls.c']]],
   ['init_5ftls_5fctx',['init_tls_ctx',['../tls_8c.html#aee5df508a2d4d3caff9543fbd098531d',1,'init_tls_ctx(const char *const cert, const char *const key, const char *const ticket_store, const char *const tls_log, const bool verify_certs):&#160;tls.c'],['../tls_8h.html#aee5df508a2d4d3caff9543fbd098531d',1,'init_tls_ctx(const char *const cert, const char *const key, const char *const ticket_store, const char *const tls_log, const bool verify_certs):&#160;tls.c']]],
   ['init_5ftp',['init_tp',['../tls_8c.html#a873296f812267d1c3475457cacc3c815',1,'init_tp(struct q_conn *const c):&#160;tls.c'],['../tls_8h.html#a873296f812267d1c3475457cacc3c815',1,'init_tp(struct q_conn *const c):&#160;tls.c']]],
-  ['ipnp_5fsplay_5fcmp',['ipnp_splay_cmp',['../conn_8c.html#a0fb62916135158b6f5ee74df20ad52f8',1,'ipnp_splay_cmp(const struct q_conn *const a, const struct q_conn *const b):&#160;conn.c'],['../conn_8h.html#a0fb62916135158b6f5ee74df20ad52f8',1,'ipnp_splay_cmp(const struct q_conn *const a, const struct q_conn *const b):&#160;conn.c']]],
   ['is_5fack_5fonly',['is_ack_only',['../quic_8h.html#a38482b6755c2fd0dd90838bb0924224d',1,'quic.h']]],
   ['is_5facked',['is_acked',['../structpkt__meta.html#a3a15ff29d90b1fb954de8384f0de59b7',1,'pkt_meta']]],
   ['is_5fclnt',['is_clnt',['../structq__conn.html#af9ef67c77d27417b598225c700a110ee',1,'q_conn']]],
@@ -33,5 +32,5 @@ var searchData=
   ['is_5fset',['is_set',['../quic_8h.html#a2e19342e141828d7fe9b2870e5d7d70a',1,'quic.h']]],
   ['is_5fzero',['is_zero',['../conn_8h.html#a68c6b30b8665ce894ab5bed3c73a2d9d',1,'conn.h']]],
   ['ival',['ival',['../structival.html',1,'']]],
-  ['ival_5fcmp',['ival_cmp',['../diet_8c.html#a6a0eca48572008a49e75968a6a5bed5a',1,'ival_cmp(const struct ival *const a, const struct ival *const b):&#160;diet.c'],['../diet_8h.html#a6a0eca48572008a49e75968a6a5bed5a',1,'ival_cmp(const struct ival *const a, const struct ival *const b):&#160;diet.c']]]
+  ['ival_5fcmp',['ival_cmp',['../diet_8h.html#a011df4b95aedbfabdc4069b96f4638af',1,'diet.h']]]
 ];

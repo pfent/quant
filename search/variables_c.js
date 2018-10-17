@@ -3,7 +3,7 @@ var searchData=
   ['odcid',['odcid',['../structq__conn.html#a5c46a8b6d3b5393f8812868774bf1ec3',1,'q_conn']]],
   ['ok_5fvers',['ok_vers',['../quic_8c.html#a855179145371edc9111433f621044ab4',1,'ok_vers():&#160;quic.c'],['../quic_8h.html#a855179145371edc9111433f621044ab4',1,'ok_vers():&#160;quic.c']]],
   ['ok_5fvers_5flen',['ok_vers_len',['../quic_8c.html#ae9a33cf3a5f649662f26bb9eae92bf7b',1,'ok_vers_len():&#160;quic.c'],['../quic_8h.html#ae9a33cf3a5f649662f26bb9eae92bf7b',1,'ok_vers_len():&#160;quic.c']]],
-  ['ooo_5f0rtt_5fby_5fcid',['ooo_0rtt_by_cid',['../conn_8c.html#a4c93c4b2b38e3f2679194c2efe4acb19',1,'conn.c']]],
+  ['ooo_5f0rtt_5fby_5fcid',['ooo_0rtt_by_cid',['../conn_8c.html#a001da71d92caff5772399a0d5512d8c3',1,'conn.c']]],
   ['orig_5fcid',['orig_cid',['../structtransport__params.html#ada77b0a712c3a04c901ef49001f358a5',1,'transport_params']]],
   ['out',['out',['../structpn__hshk__space.html#a7b5d9b211f2a2b794dbbd36fef051d20',1,'pn_hshk_space::out()'],['../structq__stream.html#ad6bc293a8f8e054b500882d8ef57b1b6',1,'q_stream::out()']]],
   ['out_5f0rtt',['out_0rtt',['../structpn__data__space.html#a27cff102e25dcc1a37a963309a6e5fe9',1,'pn_data_space']]],

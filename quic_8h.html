@@ -269,14 +269,16 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a55f8a6b9dc42515f0088dc692c2a1dfb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a55f8a6b9dc42515f0088dc692c2a1dfb">cids_by_seq_cmp</a> (const struct <a class="el" href="structcid.html">cid</a> *const a, const struct <a class="el" href="structcid.html">cid</a> *const b)</td></tr>
+<tr class="separator:a55f8a6b9dc42515f0088dc692c2a1dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2b6d16118c27c0f7c91dfac30c5d446"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#ab2b6d16118c27c0f7c91dfac30c5d446">cid_cpy</a> (struct <a class="el" href="structcid.html">cid</a> *const dst, const struct <a class="el" href="structcid.html">cid</a> *const src)</td></tr>
 <tr class="separator:ab2b6d16118c27c0f7c91dfac30c5d446"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add58218ae6e5f0b1884990048cbe8e4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#add58218ae6e5f0b1884990048cbe8e4b">sl_head</a> (pm_sl, <a class="el" href="structpkt__meta.html">pkt_meta</a>)</td></tr>
 <tr class="separator:add58218ae6e5f0b1884990048cbe8e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac80404c136c1edfa8e0eaa3bc59da0de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#ac80404c136c1edfa8e0eaa3bc59da0de">pm_off_cmp</a> (const struct <a class="el" href="structpkt__meta.html">pkt_meta</a> *const a, const struct <a class="el" href="structpkt__meta.html">pkt_meta</a> *const b)</td></tr>
-<tr class="separator:ac80404c136c1edfa8e0eaa3bc59da0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad352d199c25ab21e52bf67e230e8c6ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#ad352d199c25ab21e52bf67e230e8c6ee">splay_head</a> (pm_off_splay, <a class="el" href="structpkt__meta.html">pkt_meta</a>)</td></tr>
-<tr class="separator:ad352d199c25ab21e52bf67e230e8c6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca71d46cdbaf72a0eaa6cd9677e8ab32"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#aca71d46cdbaf72a0eaa6cd9677e8ab32">ooo_by_off_cmp</a> (const struct <a class="el" href="structpkt__meta.html">pkt_meta</a> *const a, const struct <a class="el" href="structpkt__meta.html">pkt_meta</a> *const b)</td></tr>
+<tr class="separator:aca71d46cdbaf72a0eaa6cd9677e8ab32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b34314984e48879b2f767d6f3e6ae92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a9b34314984e48879b2f767d6f3e6ae92">splay_head</a> (ooo_by_off, <a class="el" href="structpkt__meta.html">pkt_meta</a>)</td></tr>
+<tr class="separator:a9b34314984e48879b2f767d6f3e6ae92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab139ac46901fa03632f8075e6f800930"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#ab139ac46901fa03632f8075e6f800930">pm_cpy</a> (struct <a class="el" href="structpkt__meta.html">pkt_meta</a> *const dst, const struct <a class="el" href="structpkt__meta.html">pkt_meta</a> *const src, const bool also_frame_info)</td></tr>
 <tr class="separator:ab139ac46901fa03632f8075e6f800930"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38482b6755c2fd0dd90838bb0924224d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a38482b6755c2fd0dd90838bb0924224d">is_ack_only</a> (const struct <a class="el" href="structpkt__meta.html">pkt_meta</a> *const p)</td></tr>
@@ -333,7 +335,7 @@ Variables</h2></td></tr>
 <div class="line">        (v)-&gt;buf += <a class="code" href="quic_8h.html#aec6d16d07ed84a385791bc8a6e330ab9">Q_OFFSET</a>;                                                  \</div>
 <div class="line">        (v)-&gt;len -= <a class="code" href="quic_8h.html#aec6d16d07ed84a385791bc8a6e330ab9">Q_OFFSET</a>;                                                  \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="quic_8h_html_aec6d16d07ed84a385791bc8a6e330ab9"><div class="ttname"><a href="quic_8h.html#aec6d16d07ed84a385791bc8a6e330ab9">Q_OFFSET</a></div><div class="ttdeci">#define Q_OFFSET</div><div class="ttdoc">Offset of stream frame payload data in w_iov buffers. </div><div class="ttdef"><b>Definition:</b> quic.h:189</div></div>
+<div class="ttc" id="quic_8h_html_aec6d16d07ed84a385791bc8a6e330ab9"><div class="ttname"><a href="quic_8h.html#aec6d16d07ed84a385791bc8a6e330ab9">Q_OFFSET</a></div><div class="ttdeci">#define Q_OFFSET</div><div class="ttdoc">Offset of stream frame payload data in w_iov buffers. </div><div class="ttdef"><b>Definition:</b> quic.h:201</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -354,7 +356,7 @@ Variables</h2></td></tr>
 <div class="line">        (v)-&gt;buf -= <a class="code" href="quic_8h.html#aec6d16d07ed84a385791bc8a6e330ab9">Q_OFFSET</a>;                                                  \</div>
 <div class="line">        (v)-&gt;len += <a class="code" href="quic_8h.html#aec6d16d07ed84a385791bc8a6e330ab9">Q_OFFSET</a>;                                                  \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="quic_8h_html_aec6d16d07ed84a385791bc8a6e330ab9"><div class="ttname"><a href="quic_8h.html#aec6d16d07ed84a385791bc8a6e330ab9">Q_OFFSET</a></div><div class="ttdeci">#define Q_OFFSET</div><div class="ttdoc">Offset of stream frame payload data in w_iov buffers. </div><div class="ttdef"><b>Definition:</b> quic.h:189</div></div>
+<div class="ttc" id="quic_8h_html_aec6d16d07ed84a385791bc8a6e330ab9"><div class="ttname"><a href="quic_8h.html#aec6d16d07ed84a385791bc8a6e330ab9">Q_OFFSET</a></div><div class="ttdeci">#define Q_OFFSET</div><div class="ttdoc">Offset of stream frame payload data in w_iov buffers. </div><div class="ttdef"><b>Definition:</b> quic.h:201</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -950,7 +952,7 @@ Variables</h2></td></tr>
 <div class="line"><a class="code" href="quic_8h.html#a593420bbec69beea4076ea6603019ea0">        api_func</a> == 0;                                                         \</div>
 <div class="line">    })</div>
 <div class="ttc" id="quic_8h_html_a593420bbec69beea4076ea6603019ea0"><div class="ttname"><a href="quic_8h.html#a593420bbec69beea4076ea6603019ea0">api_func</a></div><div class="ttdeci">func_ptr api_func</div><div class="ttdef"><b>Definition:</b> quic.c:85</div></div>
-<div class="ttc" id="quic_8h_html_a733907018d667311b3e174666c6d2f0f"><div class="ttname"><a href="quic_8h.html#a733907018d667311b3e174666c6d2f0f">EV_VERIFY</a></div><div class="ttdeci">#define EV_VERIFY(l)</div><div class="ttdef"><b>Definition:</b> quic.h:312</div></div>
+<div class="ttc" id="quic_8h_html_a733907018d667311b3e174666c6d2f0f"><div class="ttname"><a href="quic_8h.html#a733907018d667311b3e174666c6d2f0f">EV_VERIFY</a></div><div class="ttdeci">#define EV_VERIFY(l)</div><div class="ttdef"><b>Definition:</b> quic.h:324</div></div>
 <div class="ttc" id="quic_8h_html_a855923b555731173d3509ecb645de0e0"><div class="ttname"><a href="quic_8h.html#a855923b555731173d3509ecb645de0e0">loop</a></div><div class="ttdeci">struct ev_loop * loop</div><div class="ttdef"><b>Definition:</b> quic.c:83</div></div>
 <div class="ttc" id="quic_8h_html_a91b81b7384533b284fa05acbc6b6787d"><div class="ttname"><a href="quic_8h.html#a91b81b7384533b284fa05acbc6b6787d">api_conn</a></div><div class="ttdeci">void * api_conn</div><div class="ttdef"><b>Definition:</b> quic.c:86</div></div>
 <div class="ttc" id="quic_8h_html_a51e2b7dfe290cfc0a139b3768427de79"><div class="ttname"><a href="quic_8h.html#a51e2b7dfe290cfc0a139b3768427de79">api_strm</a></div><div class="ttdeci">void * api_strm</div><div class="ttdef"><b>Definition:</b> quic.c:86</div></div>
@@ -1008,9 +1010,9 @@ Variables</h2></td></tr>
 <div class="line"><a class="code" href="quic_8h.html#a593420bbec69beea4076ea6603019ea0">        api_func</a> == 0;                                                         \</div>
 <div class="line">    })</div>
 <div class="ttc" id="quic_8h_html_a593420bbec69beea4076ea6603019ea0"><div class="ttname"><a href="quic_8h.html#a593420bbec69beea4076ea6603019ea0">api_func</a></div><div class="ttdeci">func_ptr api_func</div><div class="ttdef"><b>Definition:</b> quic.c:85</div></div>
-<div class="ttc" id="quic_8h_html_a733907018d667311b3e174666c6d2f0f"><div class="ttname"><a href="quic_8h.html#a733907018d667311b3e174666c6d2f0f">EV_VERIFY</a></div><div class="ttdeci">#define EV_VERIFY(l)</div><div class="ttdef"><b>Definition:</b> quic.h:312</div></div>
+<div class="ttc" id="quic_8h_html_a733907018d667311b3e174666c6d2f0f"><div class="ttname"><a href="quic_8h.html#a733907018d667311b3e174666c6d2f0f">EV_VERIFY</a></div><div class="ttdeci">#define EV_VERIFY(l)</div><div class="ttdef"><b>Definition:</b> quic.h:324</div></div>
 <div class="ttc" id="quic_8h_html_a855923b555731173d3509ecb645de0e0"><div class="ttname"><a href="quic_8h.html#a855923b555731173d3509ecb645de0e0">loop</a></div><div class="ttdeci">struct ev_loop * loop</div><div class="ttdef"><b>Definition:</b> quic.c:83</div></div>
-<div class="ttc" id="quic_8h_html_aaf4e8117a58ef7278393d801e5d78c46"><div class="ttname"><a href="quic_8h.html#aaf4e8117a58ef7278393d801e5d78c46">func_ptr</a></div><div class="ttdeci">void(* func_ptr)(void)</div><div class="ttdef"><b>Definition:</b> quic.h:306</div></div>
+<div class="ttc" id="quic_8h_html_aaf4e8117a58ef7278393d801e5d78c46"><div class="ttname"><a href="quic_8h.html#aaf4e8117a58ef7278393d801e5d78c46">func_ptr</a></div><div class="ttdeci">void(* func_ptr)(void)</div><div class="ttdef"><b>Definition:</b> quic.h:318</div></div>
 <div class="ttc" id="quic_8h_html_a91b81b7384533b284fa05acbc6b6787d"><div class="ttname"><a href="quic_8h.html#a91b81b7384533b284fa05acbc6b6787d">api_conn</a></div><div class="ttdeci">void * api_conn</div><div class="ttdef"><b>Definition:</b> quic.c:86</div></div>
 <div class="ttc" id="quic_8h_html_a51e2b7dfe290cfc0a139b3768427de79"><div class="ttname"><a href="quic_8h.html#a51e2b7dfe290cfc0a139b3768427de79">api_strm</a></div><div class="ttdeci">void * api_strm</div><div class="ttdef"><b>Definition:</b> quic.c:86</div></div>
 </div><!-- fragment -->
@@ -1218,7 +1220,7 @@ Variables</h2></td></tr>
 <div class="line">        _v;                                                                    \</div>
 <div class="line">    })</div>
 <div class="ttc" id="quic_8h_html_a22a934c8c4d79c27dffbe21e3fb733a4"><div class="ttname"><a href="quic_8h.html#a22a934c8c4d79c27dffbe21e3fb733a4">ASAN_UNPOISON_MEMORY_REGION</a></div><div class="ttdeci">#define ASAN_UNPOISON_MEMORY_REGION(x, y)</div><div class="ttdef"><b>Definition:</b> quic.h:45</div></div>
-<div class="ttc" id="quic_8h_html_a01ed57991bea53afa1ece4452d16b568"><div class="ttname"><a href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a></div><div class="ttdeci">#define meta(v)</div><div class="ttdoc">Return the pkt_meta entry for a given w_iov. </div><div class="ttdef"><b>Definition:</b> quic.h:155</div></div>
+<div class="ttc" id="quic_8h_html_a01ed57991bea53afa1ece4452d16b568"><div class="ttname"><a href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a></div><div class="ttdeci">#define meta(v)</div><div class="ttdoc">Return the pkt_meta entry for a given w_iov. </div><div class="ttdef"><b>Definition:</b> quic.h:167</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1243,9 +1245,9 @@ Variables</h2></td></tr>
 <div class="line"><a class="code" href="quic_8h.html#a1a737158b6f126742d911591ded5ad78">        ASAN_POISON_MEMORY_REGION</a>(&amp;<a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(v), <span class="keyword">sizeof</span>(<a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(v)));                  \</div>
 <div class="line">        w_free_iov(v);                                                         \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="quic_8h_html_a01ed57991bea53afa1ece4452d16b568"><div class="ttname"><a href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a></div><div class="ttdeci">#define meta(v)</div><div class="ttdoc">Return the pkt_meta entry for a given w_iov. </div><div class="ttdef"><b>Definition:</b> quic.h:155</div></div>
+<div class="ttc" id="quic_8h_html_a01ed57991bea53afa1ece4452d16b568"><div class="ttname"><a href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a></div><div class="ttdeci">#define meta(v)</div><div class="ttdoc">Return the pkt_meta entry for a given w_iov. </div><div class="ttdef"><b>Definition:</b> quic.h:167</div></div>
 <div class="ttc" id="quic_8h_html_a1a737158b6f126742d911591ded5ad78"><div class="ttname"><a href="quic_8h.html#a1a737158b6f126742d911591ded5ad78">ASAN_POISON_MEMORY_REGION</a></div><div class="ttdeci">#define ASAN_POISON_MEMORY_REGION(x, y)</div><div class="ttdef"><b>Definition:</b> quic.h:44</div></div>
-<div class="ttc" id="quic_8h_html_aed433a65a751df6b54c091d8facbfb57"><div class="ttname"><a href="quic_8h.html#aed433a65a751df6b54c091d8facbfb57">pm_free</a></div><div class="ttdeci">void pm_free(struct pkt_meta *const m)</div><div class="ttdef"><b>Definition:</b> quic.c:128</div></div>
+<div class="ttc" id="quic_8h_html_aed433a65a751df6b54c091d8facbfb57"><div class="ttname"><a href="quic_8h.html#aed433a65a751df6b54c091d8facbfb57">pm_free</a></div><div class="ttdeci">void pm_free(struct pkt_meta *const m)</div><div class="ttdef"><b>Definition:</b> quic.c:122</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1402,6 +1404,40 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a55f8a6b9dc42515f0088dc692c2a1dfb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int cids_by_seq_cmp </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structcid.html">cid</a> *const&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structcid.html">cid</a> *const&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a38482b6755c2fd0dd90838bb0924224d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1439,6 +1475,40 @@ Variables</h2></td></tr>
           <td class="paramtype">const struct w_iov *const&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aca71d46cdbaf72a0eaa6cd9677e8ab32"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ooo_by_off_cmp </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structpkt__meta.html">pkt_meta</a> *const&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structpkt__meta.html">pkt_meta</a> *const&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -1515,32 +1585,6 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ac80404c136c1edfa8e0eaa3bc59da0de"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int pm_off_cmp </td>
-          <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structpkt__meta.html">pkt_meta</a> *const&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const struct <a class="el" href="structpkt__meta.html">pkt_meta</a> *const&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="add58218ae6e5f0b1884990048cbe8e4b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1567,14 +1611,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ad352d199c25ab21e52bf67e230e8c6ee"></a>
+<a class="anchor" id="a9b34314984e48879b2f767d6f3e6ae92"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">splay_head </td>
           <td>(</td>
-          <td class="paramtype">pm_off_splay&#160;</td>
+          <td class="paramtype">ooo_by_off&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -1778,7 +1822,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 15 2018 07:54:30 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 17 2018 10:38:28 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

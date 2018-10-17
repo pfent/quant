@@ -12,7 +12,7 @@ var searchData=
   ['f_5fstream_5ffin',['F_STREAM_FIN',['../frame_8h.html#af19725a5284688adb364856878892964',1,'frame.h']]],
   ['f_5fstream_5flen',['F_STREAM_LEN',['../frame_8h.html#a5da6e805344874dda511fb99218f4e38',1,'frame.h']]],
   ['f_5fstream_5foff',['F_STREAM_OFF',['../frame_8h.html#abf48b1ffc80869c7c74a9a3a8fe4b4f9',1,'frame.h']]],
-  ['file_5fname',['file_name',['../structticket__splay.html#a9e7dd87625307109eeb75c8e30bb979a',1,'ticket_splay']]],
+  ['file_5fname',['file_name',['../structtickets__by__peer.html#abdace4879decc893681627cde2dd792b',1,'tickets_by_peer']]],
   ['filter_5ftp',['filter_tp',['../tls_8c.html#a5092fa492120deb7469e65bc9f5df3f8',1,'tls.c']]],
   ['find_5fmax',['find_max',['../diet_8c.html#a85e4e10a029283a5798638bfaf387abd',1,'diet.c']]],
   ['find_5fmin',['find_min',['../diet_8c.html#a8f0e77727941f94b10b1ea1241df8eaa',1,'diet.c']]],

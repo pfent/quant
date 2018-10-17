@@ -96,7 +96,7 @@ Collaboration diagram for q_stream:</div>
 <div class="dyncontent">
 <div class="center"><img src="structq__stream__coll__graph.png" border="0" usemap="#q__stream_coll__map" alt="Collaboration graph"/></div>
 <map name="q__stream_coll__map" id="q__stream_coll__map">
-<area shape="rect" id="node2" href="structq__conn.html" title="A QUIC connection. " alt="" coords="200,209,264,236"/><area shape="rect" id="node6" href="structpn__space.html" title="pn_space" alt="" coords="5,309,83,336"/><area shape="rect" id="node3" href="structtransport__params.html" title="transport_params" alt="" coords="92,96,215,123"/><area shape="rect" id="node4" href="structcid.html" title="cid" alt="" coords="318,5,356,32"/><area shape="rect" id="node5" href="structpn__data__space.html" title="pn_data_space" alt="" coords="177,429,287,456"/><area shape="rect" id="node10" href="structpn__hshk__space.html" title="pn_hshk_space" alt="" coords="349,429,461,456"/><area shape="rect" id="node7" href="structdiet.html" title="diet" alt="" coords="12,96,55,123"/><area shape="rect" id="node8" href="structcipher__ctx.html" title="cipher_ctx" alt="" coords="311,309,392,336"/><area shape="rect" id="node9" href="structtls.html" title="tls" alt="" coords="239,96,277,123"/><area shape="rect" id="node11" href="structrecovery.html" title="recovery" alt="" coords="303,96,375,123"/></map>
+<area shape="rect" id="node2" href="structq__conn.html" title="A QUIC connection. " alt="" coords="184,200,248,227"/><area shape="rect" id="node6" href="structpn__space.html" title="pn_space" alt="" coords="251,291,329,317"/><area shape="rect" id="node3" href="structtransport__params.html" title="transport_params" alt="" coords="5,96,128,123"/><area shape="rect" id="node4" href="structcid.html" title="cid" alt="" coords="111,5,149,32"/><area shape="rect" id="node5" href="structpn__data__space.html" title="pn_data_space" alt="" coords="199,411,309,437"/><area shape="rect" id="node9" href="structpn__hshk__space.html" title="pn_hshk_space" alt="" coords="377,411,489,437"/><area shape="rect" id="node7" href="structcipher__ctx.html" title="cipher_ctx" alt="" coords="355,291,436,317"/><area shape="rect" id="node8" href="structtls.html" title="tls" alt="" coords="237,96,275,123"/><area shape="rect" id="node10" href="structrecovery.html" title="recovery" alt="" coords="300,96,372,123"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -129,9 +129,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a36bf4a7325ef5d402ef98eaf3e9468d7"><td class="memItemLeft" align="right" valign="top">struct w_iov_sq&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__stream.html#a36bf4a7325ef5d402ef98eaf3e9468d7">in</a></td></tr>
 <tr class="memdesc:a36bf4a7325ef5d402ef98eaf3e9468d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tail queue containing inbound data.  <a href="#a36bf4a7325ef5d402ef98eaf3e9468d7">More...</a><br/></td></tr>
 <tr class="separator:a36bf4a7325ef5d402ef98eaf3e9468d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa27d60491b286e8b2e36f9293516704f"><td class="memItemLeft" align="right" valign="top">struct pm_off_splay&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__stream.html#aa27d60491b286e8b2e36f9293516704f">in_ooo</a></td></tr>
-<tr class="memdesc:aa27d60491b286e8b2e36f9293516704f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Out-of-order inbound data.  <a href="#aa27d60491b286e8b2e36f9293516704f">More...</a><br/></td></tr>
-<tr class="separator:aa27d60491b286e8b2e36f9293516704f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372b1593a42dbd1934ed03d605b5349d"><td class="memItemLeft" align="right" valign="top">struct ooo_by_off&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__stream.html#a372b1593a42dbd1934ed03d605b5349d">in_ooo</a></td></tr>
+<tr class="memdesc:a372b1593a42dbd1934ed03d605b5349d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Out-of-order inbound data.  <a href="#a372b1593a42dbd1934ed03d605b5349d">More...</a><br/></td></tr>
+<tr class="separator:a372b1593a42dbd1934ed03d605b5349d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3efa630f78833bdfa5a5f16a18991d88"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__stream.html#a3efa630f78833bdfa5a5f16a18991d88">in_data_max</a></td></tr>
 <tr class="memdesc:a3efa630f78833bdfa5a5f16a18991d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inbound max_stream_data.  <a href="#a3efa630f78833bdfa5a5f16a18991d88">More...</a><br/></td></tr>
 <tr class="separator:a3efa630f78833bdfa5a5f16a18991d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -283,12 +283,12 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa27d60491b286e8b2e36f9293516704f"></a>
+<a class="anchor" id="a372b1593a42dbd1934ed03d605b5349d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct pm_off_splay q_stream::in_ooo</td>
+          <td class="memname">struct ooo_by_off q_stream::in_ooo</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -441,7 +441,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 15 2018 07:54:30 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 17 2018 10:38:28 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

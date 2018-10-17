@@ -1,10 +1,10 @@
 <map id="free_conn" name="free_conn">
-<area shape="rect" id="node2" href="$stream_8c.html#acf612f3ac0b49aa8c7d6630c00e6b0ce" title="free_stream" alt="" coords="141,119,232,145"/>
-<area shape="rect" id="node10" href="$tls_8c.html#a2393aad5c0cf1cd399746ba5314e8c66" title="free_tls" alt="" coords="154,195,219,221"/>
-<area shape="rect" id="node13" href="$pn_8c.html#a3b132beb2506faada16af74535e27fec" title="free_pn" alt="" coords="154,245,219,272"/>
+<area shape="rect" id="node2" href="$stream_8c.html#acf612f3ac0b49aa8c7d6630c00e6b0ce" title="free_stream" alt="" coords="141,132,232,159"/>
+<area shape="rect" id="node10" href="$tls_8c.html#a2393aad5c0cf1cd399746ba5314e8c66" title="free_tls" alt="" coords="154,183,219,209"/>
+<area shape="rect" id="node13" href="$pn_8c.html#a3b132beb2506faada16af74535e27fec" title="free_pn" alt="" coords="154,233,219,260"/>
 <area shape="rect" id="node14" href="$diet_8c.html#aca2c7f843feefa74e9e6dca31bc41fd7" title="diet_free" alt="" coords="293,259,365,285"/>
-<area shape="rect" id="node15" href="$conn_8c.html#a899b62b37418afb64d2f4ade6ee61e7a" title="use_next_scid" alt="" coords="133,347,240,373"/>
-<area shape="rect" id="node16" href="$conn_8c.html#ad1e5e232a8372127e2130e85e7cdbb8d" title="use_next_dcid" alt="" coords="133,397,240,424"/>
+<area shape="rect" id="node15" href="$conn_8c.html#a899b62b37418afb64d2f4ade6ee61e7a" title="use_next_scid" alt="" coords="133,31,240,57"/>
+<area shape="rect" id="node16" href="$conn_8c.html#ad1e5e232a8372127e2130e85e7cdbb8d" title="use_next_dcid" alt="" coords="133,81,240,108"/>
 <area shape="rect" id="node3" href="$conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="288,56,371,83"/>
 <area shape="rect" id="node4" href="$diet_8c.html#a9064e32f6b50901d8f5685e53d2e4041" title="Inserts integer n of type t into the diet tree t. " alt="" coords="288,107,371,133"/>
 <area shape="rect" id="node9" href="$quant_8h.html#a4a7935a14e509d989eda300f16daf086" title="q_free" alt="" coords="300,157,359,184"/>

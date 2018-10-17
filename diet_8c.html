@@ -107,30 +107,27 @@ Include dependency graph for diet.c:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6a0eca48572008a49e75968a6a5bed5a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8c.html#a6a0eca48572008a49e75968a6a5bed5a">ival_cmp</a> (const struct <a class="el" href="structival.html">ival</a> *const a, const struct <a class="el" href="structival.html">ival</a> *const b)</td></tr>
-<tr class="memdesc:a6a0eca48572008a49e75968a6a5bed5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two ival intervals.  <a href="#a6a0eca48572008a49e75968a6a5bed5a">More...</a><br/></td></tr>
-<tr class="separator:a6a0eca48572008a49e75968a6a5bed5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85e4e10a029283a5798638bfaf387abd"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structival.html">ival</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8c.html#a85e4e10a029283a5798638bfaf387abd">find_max</a> (struct <a class="el" href="structival.html">ival</a> *const i)</td></tr>
 <tr class="memdesc:a85e4e10a029283a5798638bfaf387abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return maximum interval underneath <code>i</code>.  <a href="#a85e4e10a029283a5798638bfaf387abd">More...</a><br/></td></tr>
 <tr class="separator:a85e4e10a029283a5798638bfaf387abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f0e77727941f94b10b1ea1241df8eaa"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structival.html">ival</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8c.html#a8f0e77727941f94b10b1ea1241df8eaa">find_min</a> (struct <a class="el" href="structival.html">ival</a> *const i)</td></tr>
 <tr class="memdesc:a8f0e77727941f94b10b1ea1241df8eaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return minimum interval underneath <code>i</code>.  <a href="#a8f0e77727941f94b10b1ea1241df8eaa">More...</a><br/></td></tr>
 <tr class="separator:a8f0e77727941f94b10b1ea1241df8eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87c3c2cebc6ccf0911d3d05989352588"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structival.html">ival</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8c.html#a87c3c2cebc6ccf0911d3d05989352588">diet_find</a> (struct <a class="el" href="structdiet.html">diet</a> *const d, const uint64_t n)</td></tr>
+<tr class="memitem:a87c3c2cebc6ccf0911d3d05989352588"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structival.html">ival</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8c.html#a87c3c2cebc6ccf0911d3d05989352588">diet_find</a> (struct diet *const d, const uint64_t n)</td></tr>
 <tr class="memdesc:a87c3c2cebc6ccf0911d3d05989352588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the interval containing <code>n</code> in diet tree <code>t</code>.  <a href="#a87c3c2cebc6ccf0911d3d05989352588">More...</a><br/></td></tr>
 <tr class="separator:a87c3c2cebc6ccf0911d3d05989352588"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21164f67106bc7c1712e8b6596aa0253"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structival.html">ival</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8c.html#a21164f67106bc7c1712e8b6596aa0253">make_ival</a> (const uint64_t n, const ev_tstamp t)</td></tr>
 <tr class="memdesc:a21164f67106bc7c1712e8b6596aa0253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to create a zero-width interval containing (only) <code>n</code>.  <a href="#a21164f67106bc7c1712e8b6596aa0253">More...</a><br/></td></tr>
 <tr class="separator:a21164f67106bc7c1712e8b6596aa0253"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9064e32f6b50901d8f5685e53d2e4041"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structival.html">ival</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8c.html#a9064e32f6b50901d8f5685e53d2e4041">diet_insert</a> (struct <a class="el" href="structdiet.html">diet</a> *const d, const uint64_t n, const ev_tstamp t)</td></tr>
+<tr class="memitem:a9064e32f6b50901d8f5685e53d2e4041"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structival.html">ival</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8c.html#a9064e32f6b50901d8f5685e53d2e4041">diet_insert</a> (struct diet *const d, const uint64_t n, const ev_tstamp t)</td></tr>
 <tr class="memdesc:a9064e32f6b50901d8f5685e53d2e4041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts integer <code>n</code> of type <code>t</code> into the diet tree <code>t</code>.  <a href="#a9064e32f6b50901d8f5685e53d2e4041">More...</a><br/></td></tr>
 <tr class="separator:a9064e32f6b50901d8f5685e53d2e4041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ff8134cd224b1f148462bb051c75f1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8c.html#a1ff8134cd224b1f148462bb051c75f1d">diet_remove</a> (struct <a class="el" href="structdiet.html">diet</a> *const d, const uint64_t n)</td></tr>
+<tr class="memitem:a1ff8134cd224b1f148462bb051c75f1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8c.html#a1ff8134cd224b1f148462bb051c75f1d">diet_remove</a> (struct diet *const d, const uint64_t n)</td></tr>
 <tr class="memdesc:a1ff8134cd224b1f148462bb051c75f1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove integer <code>n</code> from the intervals stored in diet tree <code>t</code>.  <a href="#a1ff8134cd224b1f148462bb051c75f1d">More...</a><br/></td></tr>
 <tr class="separator:a1ff8134cd224b1f148462bb051c75f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca2c7f843feefa74e9e6dca31bc41fd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8c.html#aca2c7f843feefa74e9e6dca31bc41fd7">diet_free</a> (struct <a class="el" href="structdiet.html">diet</a> *const d)</td></tr>
+<tr class="memitem:aca2c7f843feefa74e9e6dca31bc41fd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8c.html#aca2c7f843feefa74e9e6dca31bc41fd7">diet_free</a> (struct diet *const d)</td></tr>
 <tr class="separator:aca2c7f843feefa74e9e6dca31bc41fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aece76d9290a6c7d12958a2fa703fee87"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8c.html#aece76d9290a6c7d12958a2fa703fee87">diet_to_str</a> (char *const str, const size_t len, struct <a class="el" href="structdiet.html">diet</a> *const d)</td></tr>
+<tr class="memitem:aece76d9290a6c7d12958a2fa703fee87"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="diet_8c.html#aece76d9290a6c7d12958a2fa703fee87">diet_to_str</a> (char *const str, const size_t len, struct diet *const d)</td></tr>
 <tr class="separator:aece76d9290a6c7d12958a2fa703fee87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -141,7 +138,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">struct <a class="el" href="structival.html">ival</a>* diet_find </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structdiet.html">diet</a> *const&#160;</td>
+          <td class="paramtype">struct diet *const&#160;</td>
           <td class="paramname"><em>d</em>, </td>
         </tr>
         <tr>
@@ -178,7 +175,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void diet_free </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structdiet.html">diet</a> *const&#160;</td>
+          <td class="paramtype">struct diet *const&#160;</td>
           <td class="paramname"><em>d</em></td><td>)</td>
           <td></td>
         </tr>
@@ -194,7 +191,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">struct <a class="el" href="structival.html">ival</a>* diet_insert </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structdiet.html">diet</a> *const&#160;</td>
+          <td class="paramtype">struct diet *const&#160;</td>
           <td class="paramname"><em>d</em>, </td>
         </tr>
         <tr>
@@ -246,7 +243,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void diet_remove </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structdiet.html">diet</a> *const&#160;</td>
+          <td class="paramtype">struct diet *const&#160;</td>
           <td class="paramname"><em>d</em>, </td>
         </tr>
         <tr>
@@ -302,7 +299,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structdiet.html">diet</a> *const&#160;</td>
+          <td class="paramtype">struct diet *const&#160;</td>
           <td class="paramname"><em>d</em>&#160;</td>
         </tr>
         <tr>
@@ -381,42 +378,6 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a6a0eca48572008a49e75968a6a5bed5a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ival_cmp </td>
-          <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structival.html">ival</a> *const&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const struct <a class="el" href="structival.html">ival</a> *const&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Compare two ival intervals. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td>Interval one. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td>Interval two.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Zero if a is in b or b is in a. Negative if a's lower bound is less than b's lower bound, positive otherwise. </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a21164f67106bc7c1712e8b6596aa0253"></a>
 <div class="memitem">
 <div class="memproto">
@@ -464,7 +425,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 15 2018 07:54:30 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 17 2018 10:38:28 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

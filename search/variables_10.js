@@ -2,7 +2,9 @@ var searchData=
 [
   ['save_5fticket',['save_ticket',['../tls_8c.html#a3a920c80db919ca11a75003ebcceacb8',1,'tls.c']]],
   ['scid',['scid',['../structpkt__hdr.html#a29cdaea213d15beb68119e47e6d16bf1',1,'pkt_hdr']]],
-  ['sent_5fpkts',['sent_pkts',['../structpn__space.html#a1180749bbd8d1e6789b8c5f89b9ce0e9',1,'pn_space']]],
+  ['scids_5fby_5fseq',['scids_by_seq',['../structq__conn.html#a7c3ae7248e02d35a8495035fba27a113',1,'q_conn']]],
+  ['sent_5fpkts',['sent_pkts',['../structpn__space.html#a7ac99b6feec118ea3941813d8ee9a55a',1,'pn_space']]],
+  ['seq',['seq',['../structcid.html#a937edeb01e868ef76539126dd41b322f',1,'cid']]],
   ['sni',['sni',['../structtls__ticket.html#a9581a894f08fb8b93e139a9fe38a298d',1,'tls_ticket']]],
   ['sock',['sock',['../structq__conn.html#a36327baf8c4d695023b07a2270587e78',1,'q_conn']]],
   ['sport',['sport',['../structq__conn.html#ace8a73a49c79c13a5d91c213906c95e9',1,'q_conn']]],
