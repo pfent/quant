@@ -25,6 +25,7 @@ var searchData=
   ['tx_5fncid',['tx_ncid',['../structq__conn.html#a262c25bf7dedce02c97388c6ea7533e1',1,'q_conn']]],
   ['tx_5fpath_5fchlg',['tx_path_chlg',['../structq__conn.html#a2193d6df85a0eccea14044dd006cb6d0',1,'q_conn']]],
   ['tx_5fpath_5fresp',['tx_path_resp',['../structq__conn.html#a60846837f7a71ac683754be3a95141d2',1,'q_conn']]],
+  ['tx_5fretire_5fcid',['tx_retire_cid',['../structq__conn.html#a424dfc6ca3378978e06cea115795cc79',1,'q_conn']]],
   ['tx_5frtry',['tx_rtry',['../structq__conn.html#af204bd9db2f7193e8f1940865da162f6',1,'q_conn']]],
   ['tx_5ft',['tx_t',['../structpkt__meta.html#a3a2f5352a57c1f84e8adea474e478b30',1,'pkt_meta']]],
   ['tx_5fvneg',['tx_vneg',['../structq__conn.html#aef911f64e1e09ae7c4f3825b1e134510',1,'q_conn']]],

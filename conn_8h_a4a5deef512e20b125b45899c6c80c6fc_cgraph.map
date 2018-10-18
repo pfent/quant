@@ -2,7 +2,9 @@
 <area shape="rect" id="node2" href="$stream_8c.html#acf612f3ac0b49aa8c7d6630c00e6b0ce" title="free_stream" alt="" coords="133,119,224,145"/>
 <area shape="rect" id="node10" href="$tls_8c.html#a2393aad5c0cf1cd399746ba5314e8c66" title="free_tls" alt="" coords="146,195,211,221"/>
 <area shape="rect" id="node13" href="$pn_8c.html#a3b132beb2506faada16af74535e27fec" title="free_pn" alt="" coords="146,245,211,272"/>
-<area shape="rect" id="node14" href="$diet_8c.html#aca2c7f843feefa74e9e6dca31bc41fd7" title="diet_free" alt="" coords="277,277,349,304"/>
+<area shape="rect" id="node14" href="$diet_8c.html#aca2c7f843feefa74e9e6dca31bc41fd7" title="diet_free" alt="" coords="277,259,349,285"/>
+<area shape="rect" id="node15" href="$conn_8c.html#ab983b3d57ee0c84f0e70018a299033a8" title="free_scid" alt="" coords="141,347,216,373"/>
+<area shape="rect" id="node16" href="$conn_8c.html#a1c73802c8005ac4f60cf1c0003972d56" title="free_dcid" alt="" coords="141,397,216,424"/>
 <area shape="rect" id="node3" href="$conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="272,56,355,83"/>
 <area shape="rect" id="node4" href="$diet_8c.html#a9064e32f6b50901d8f5685e53d2e4041" title="Inserts integer n of type t into the diet tree t. " alt="" coords="272,107,355,133"/>
 <area shape="rect" id="node9" href="$quant_8h.html#a4a7935a14e509d989eda300f16daf086" title="q_free" alt="" coords="284,157,343,184"/>

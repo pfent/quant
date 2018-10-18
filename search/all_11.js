@@ -13,6 +13,7 @@ var searchData=
   ['reset_5fpm',['reset_pm',['../stream_8c.html#ad084a65676d6e76fe72fa8e23bd1391d',1,'stream.c']]],
   ['reset_5fpn',['reset_pn',['../pn_8c.html#ad39de552086c127310c3250f2982dcb5',1,'reset_pn(struct pn_space *const pn):&#160;pn.c'],['../pn_8h.html#ad39de552086c127310c3250f2982dcb5',1,'reset_pn(struct pn_space *const pn):&#160;pn.c']]],
   ['reset_5fstream',['reset_stream',['../stream_8c.html#a23976e8cd7c5aecf8e137324fce993d0',1,'reset_stream(struct q_stream *const s, const bool forget):&#160;stream.c'],['../stream_8h.html#a23976e8cd7c5aecf8e137324fce993d0',1,'reset_stream(struct q_stream *const s, const bool forget):&#160;stream.c']]],
+  ['retired',['retired',['../structcid.html#ae13435266a8a51eea685c06616552356',1,'cid']]],
   ['rev',['REV',['../quic_8h.html#a33a42d6bfefe54ae2384f5c28dd87340',1,'quic.h']]],
   ['rto_5fcnt',['rto_cnt',['../structrecovery.html#ac7b5471d131ba1c6e5aa98d6a1a850db',1,'recovery']]],
   ['rttvar',['rttvar',['../structrecovery.html#a5cf84e57d9dd40c22412c44c72144917',1,'recovery']]],
