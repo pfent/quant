@@ -187,13 +187,13 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a9b8df2ef49f68f18f160054a91cc7d45"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#a9b8df2ef49f68f18f160054a91cc7d45">tls_ticket_cmp</a> (const struct <a class="el" href="structtls__ticket.html">tls_ticket</a> *const a, const struct <a class="el" href="structtls__ticket.html">tls_ticket</a> *const b)</td></tr>
 <tr class="separator:a9b8df2ef49f68f18f160054a91cc7d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4d8aedc1bfd0aed4756bd90903c1884"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#aa4d8aedc1bfd0aed4756bd90903c1884">dispose_cipher</a> (struct <a class="el" href="tls_8h.html#aa936412f8959248ee6373acb4bbacafc">st_quicly_cipher_context_t</a> *ctx)</td></tr>
+<tr class="memitem:aa4d8aedc1bfd0aed4756bd90903c1884"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#aa4d8aedc1bfd0aed4756bd90903c1884">dispose_cipher</a> (struct <a class="el" href="tls_8c.html#aa936412f8959248ee6373acb4bbacafc">st_quicly_cipher_context_t</a> *ctx)</td></tr>
 <tr class="separator:aa4d8aedc1bfd0aed4756bd90903c1884"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33475dbe3d21cf344acab6c9e3b23bee"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#a33475dbe3d21cf344acab6c9e3b23bee">setup_cipher</a> (struct <a class="el" href="tls_8h.html#aa936412f8959248ee6373acb4bbacafc">st_quicly_cipher_context_t</a> *ctx, ptls_aead_algorithm_t *aead, ptls_hash_algorithm_t *hash, int is_enc, const void *secret)</td></tr>
+<tr class="memitem:a33475dbe3d21cf344acab6c9e3b23bee"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#a33475dbe3d21cf344acab6c9e3b23bee">setup_cipher</a> (struct <a class="el" href="tls_8c.html#aa936412f8959248ee6373acb4bbacafc">st_quicly_cipher_context_t</a> *ctx, ptls_aead_algorithm_t *aead, ptls_hash_algorithm_t *hash, int is_enc, const void *secret)</td></tr>
 <tr class="separator:a33475dbe3d21cf344acab6c9e3b23bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6763a297342bbb54009ff9d025575e1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#ac6763a297342bbb54009ff9d025575e1">setup_initial_key</a> (struct <a class="el" href="tls_8h.html#aa936412f8959248ee6373acb4bbacafc">st_quicly_cipher_context_t</a> *ctx, ptls_cipher_suite_t *cs, const void *master_secret, const char *label, int is_enc)</td></tr>
-<tr class="separator:ac6763a297342bbb54009ff9d025575e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff7c4b2f9e78c2d678898dc58bc68e57"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#aff7c4b2f9e78c2d678898dc58bc68e57">setup_initial_encryption</a> (struct <a class="el" href="tls_8h.html#aa936412f8959248ee6373acb4bbacafc">st_quicly_cipher_context_t</a> *ingress, struct <a class="el" href="tls_8h.html#aa936412f8959248ee6373acb4bbacafc">st_quicly_cipher_context_t</a> *egress, ptls_cipher_suite_t **cipher_suites, ptls_iovec_t <a class="el" href="structcid.html">cid</a>, int is_client)</td></tr>
+<tr class="memitem:a0013659db693568a427d88141cbfcb20"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#a0013659db693568a427d88141cbfcb20">setup_initial_key</a> (struct <a class="el" href="tls_8c.html#aa936412f8959248ee6373acb4bbacafc">st_quicly_cipher_context_t</a> *ctx, ptls_cipher_suite_t *cs, const void *master_secret, const char *label, int is_enc)</td></tr>
+<tr class="separator:a0013659db693568a427d88141cbfcb20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff7c4b2f9e78c2d678898dc58bc68e57"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#aff7c4b2f9e78c2d678898dc58bc68e57">setup_initial_encryption</a> (struct <a class="el" href="tls_8c.html#aa936412f8959248ee6373acb4bbacafc">st_quicly_cipher_context_t</a> *ingress, struct <a class="el" href="tls_8c.html#aa936412f8959248ee6373acb4bbacafc">st_quicly_cipher_context_t</a> *egress, ptls_cipher_suite_t **cipher_suites, ptls_iovec_t <a class="el" href="structcid.html">cid</a>, int is_client)</td></tr>
 <tr class="separator:aff7c4b2f9e78c2d678898dc58bc68e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ee55bc03b487f0c927e137a80878cbb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#a0ee55bc03b487f0c927e137a80878cbb">on_ch</a> (ptls_on_client_hello_t *const self, ptls_t *const <a class="el" href="structtls.html">tls</a>, const ptls_iovec_t sni, const ptls_iovec_t *const prot, const size_t prot_cnt, const uint16_t *const sig_alg, const size_t sig_alg_cnt)</td></tr>
 <tr class="separator:a0ee55bc03b487f0c927e137a80878cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -899,7 +899,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">static void dispose_cipher </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="tls_8h.html#aa936412f8959248ee6373acb4bbacafc">st_quicly_cipher_context_t</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="tls_8c.html#aa936412f8959248ee6373acb4bbacafc">st_quicly_cipher_context_t</a> *&#160;</td>
           <td class="paramname"><em>ctx</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1084,7 +1084,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="tls_8c_a4faeebf5e3d33bfea46325d8fa7343d6_cgraph.png" border="0" usemap="#tls_8c_a4faeebf5e3d33bfea46325d8fa7343d6_cgraph" alt=""/></div>
 <map name="tls_8c_a4faeebf5e3d33bfea46325d8fa7343d6_cgraph" id="tls_8c_a4faeebf5e3d33bfea46325d8fa7343d6_cgraph">
-<area shape="rect" id="node2" href="tls_8c.html#aa4d8aedc1bfd0aed4756bd90903c1884" title="dispose_cipher" alt="" coords="133,5,243,32"/><area shape="rect" id="node3" href="tls_8c.html#ac6763a297342bbb54009ff9d025575e1" title="setup_initial_key" alt="" coords="129,56,247,83"/><area shape="rect" id="node4" href="tls_8c.html#a33475dbe3d21cf344acab6c9e3b23bee" title="setup_cipher" alt="" coords="296,56,392,83"/></map>
+<area shape="rect" id="node2" href="tls_8c.html#aa4d8aedc1bfd0aed4756bd90903c1884" title="dispose_cipher" alt="" coords="133,5,243,32"/><area shape="rect" id="node3" href="tls_8c.html#a0013659db693568a427d88141cbfcb20" title="setup_initial_key" alt="" coords="129,56,247,83"/><area shape="rect" id="node4" href="tls_8c.html#a33475dbe3d21cf344acab6c9e3b23bee" title="setup_cipher" alt="" coords="296,56,392,83"/></map>
 </div>
 </p>
 
@@ -1226,7 +1226,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="tls_8c_a705b76a676f449cbc37b9d955a2e0d5c_cgraph.png" border="0" usemap="#tls_8c_a705b76a676f449cbc37b9d955a2e0d5c_cgraph" alt=""/></div>
 <map name="tls_8c_a705b76a676f449cbc37b9d955a2e0d5c_cgraph" id="tls_8c_a705b76a676f449cbc37b9d955a2e0d5c_cgraph">
-<area shape="rect" id="node2" href="tls_8c.html#aff7c4b2f9e78c2d678898dc58bc68e57" title="setup_initial_encryption" alt="" coords="123,5,282,32"/><area shape="rect" id="node3" href="tls_8c.html#ac6763a297342bbb54009ff9d025575e1" title="setup_initial_key" alt="" coords="331,5,450,32"/><area shape="rect" id="node4" href="tls_8c.html#a33475dbe3d21cf344acab6c9e3b23bee" title="setup_cipher" alt="" coords="499,5,595,32"/></map>
+<area shape="rect" id="node2" href="tls_8c.html#aff7c4b2f9e78c2d678898dc58bc68e57" title="setup_initial_encryption" alt="" coords="123,5,282,32"/><area shape="rect" id="node3" href="tls_8c.html#a0013659db693568a427d88141cbfcb20" title="setup_initial_key" alt="" coords="331,5,450,32"/><area shape="rect" id="node4" href="tls_8c.html#a33475dbe3d21cf344acab6c9e3b23bee" title="setup_cipher" alt="" coords="499,5,595,32"/></map>
 </div>
 </p>
 
@@ -1284,7 +1284,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="tls_8c_aa4907143b04da6627e6cef421b920480_cgraph.png" border="0" usemap="#tls_8c_aa4907143b04da6627e6cef421b920480_cgraph" alt=""/></div>
 <map name="tls_8c_aa4907143b04da6627e6cef421b920480_cgraph" id="tls_8c_aa4907143b04da6627e6cef421b920480_cgraph">
-<area shape="rect" id="node2" href="tls_8c.html#a2393aad5c0cf1cd399746ba5314e8c66" title="free_tls" alt="" coords="117,31,182,57"/><area shape="rect" id="node5" href="tls_8c.html#a5092fa492120deb7469e65bc9f5df3f8" title="filter_tp" alt="" coords="117,107,182,133"/><area shape="rect" id="node6" href="tls_8c.html#a878d1b8325596d2943bb662375ad2e72" title="chk_tp" alt="" coords="119,157,180,184"/><area shape="rect" id="node25" href="tls_8c.html#a705b76a676f449cbc37b9d955a2e0d5c" title="init_prot" alt="" coords="115,259,183,285"/><area shape="rect" id="node3" href="tls_8c.html#a28ce95450a6345dc4f1c85766e2edf8a" title="free_prot" alt="" coords="275,5,349,32"/><area shape="rect" id="node4" href="tls_8c.html#aa4d8aedc1bfd0aed4756bd90903c1884" title="dispose_cipher" alt="" coords="445,5,555,32"/><area shape="rect" id="node7" href="tls_8c.html#a26fedc5b8fbd7cef27417a25b152777f" title="chk_tp_clnt" alt="" coords="267,56,357,83"/><area shape="rect" id="node8" href="tls_8c.html#a2d88e7aa28c44c9c2a335f8bac53bc11" title="chk_tp_serv" alt="" coords="265,107,359,133"/><area shape="rect" id="node12" href="conn_8c.html#a02d7b0c5a072e1b673358b52ac71f160" title="err_close" alt="" coords="275,157,349,184"/><area shape="rect" id="node23" href="conn_8h.html#ad2372a4b6e27ada905f0604c1725abf1" title="cid_cmp" alt="" coords="277,208,347,235"/><area shape="rect" id="node24" href="stream_8c.html#a2853c95f04e70a8c7e836f881eedff8d" title="apply_stream_limits" alt="" coords="243,259,381,285"/><area shape="rect" id="node9" href="conn_8c.html#a1ae0706a577e85efbcfacf517a329dbe" title="vers_supported" alt="" coords="445,56,555,83"/><area shape="rect" id="node10" href="conn_8h.html#ad42b6442b32fa307a6b5293b9b9df058" title="is_force_neg_vers" alt="" coords="608,5,736,32"/><area shape="rect" id="node11" href="conn_8h.html#a76639ec987a700f45570a287b25025ea" title="is_rsvd_vers" alt="" coords="624,56,720,83"/><area shape="rect" id="node13" href="conn_8c.html#afd38904c68cab87424e6aa8db723fd38" title="enter_closing" alt="" coords="451,157,549,184"/><area shape="rect" id="node14" href="conn_8h.html#a526357c19864e7579573160573a55c33" title="pn_for_epoch" alt="" coords="622,107,722,133"/><area shape="rect" id="node15" href="conn_8h.html#a68c6b30b8665ce894ab5bed3c73a2d9d" title="is_zero" alt="" coords="640,157,704,184"/><area shape="rect" id="node16" href="conn_8c.html#aea7c8de8c9a43a64163e900a70678ae2" title="enter_closed" alt="" coords="624,208,720,235"/><area shape="rect" id="node18" href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="1216,157,1299,184"/><area shape="rect" id="node17" href="quant_8h.html#a3da1ca1e589303333e8bba9cfbb1f4da" title="q_accept" alt="" coords="791,157,865,184"/><area shape="rect" id="node22" href="quant_8h.html#a84a768c49cd352e1c8a109bda56ef3a6" title="q_rx_ready" alt="" coords="785,208,871,235"/><area shape="rect" id="node19" href="quic_8c.html#afd98d880d46aa717596439adb85fcafc" title="cancel_api_call" alt="" coords="921,157,1031,184"/><area shape="rect" id="node20" href="quic_8c.html#a3da1ca1e589303333e8bba9cfbb1f4da" title="q_accept" alt="" coords="1087,107,1161,133"/><area shape="rect" id="node21" href="quic_8c.html#a84a768c49cd352e1c8a109bda56ef3a6" title="q_rx_ready" alt="" coords="1081,157,1167,184"/><area shape="rect" id="node26" href="tls_8c.html#aff7c4b2f9e78c2d678898dc58bc68e57" title="setup_initial_encryption" alt="" coords="233,309,391,336"/><area shape="rect" id="node27" href="tls_8c.html#ac6763a297342bbb54009ff9d025575e1" title="setup_initial_key" alt="" coords="441,309,559,336"/><area shape="rect" id="node28" href="tls_8c.html#a33475dbe3d21cf344acab6c9e3b23bee" title="setup_cipher" alt="" coords="624,309,720,336"/></map>
+<area shape="rect" id="node2" href="tls_8c.html#a2393aad5c0cf1cd399746ba5314e8c66" title="free_tls" alt="" coords="117,31,182,57"/><area shape="rect" id="node5" href="tls_8c.html#a5092fa492120deb7469e65bc9f5df3f8" title="filter_tp" alt="" coords="117,107,182,133"/><area shape="rect" id="node6" href="tls_8c.html#a878d1b8325596d2943bb662375ad2e72" title="chk_tp" alt="" coords="119,157,180,184"/><area shape="rect" id="node25" href="tls_8c.html#a705b76a676f449cbc37b9d955a2e0d5c" title="init_prot" alt="" coords="115,259,183,285"/><area shape="rect" id="node3" href="tls_8c.html#a28ce95450a6345dc4f1c85766e2edf8a" title="free_prot" alt="" coords="275,5,349,32"/><area shape="rect" id="node4" href="tls_8c.html#aa4d8aedc1bfd0aed4756bd90903c1884" title="dispose_cipher" alt="" coords="445,5,555,32"/><area shape="rect" id="node7" href="tls_8c.html#a26fedc5b8fbd7cef27417a25b152777f" title="chk_tp_clnt" alt="" coords="267,56,357,83"/><area shape="rect" id="node8" href="tls_8c.html#a2d88e7aa28c44c9c2a335f8bac53bc11" title="chk_tp_serv" alt="" coords="265,107,359,133"/><area shape="rect" id="node12" href="conn_8c.html#a02d7b0c5a072e1b673358b52ac71f160" title="err_close" alt="" coords="275,157,349,184"/><area shape="rect" id="node23" href="conn_8h.html#ad2372a4b6e27ada905f0604c1725abf1" title="cid_cmp" alt="" coords="277,208,347,235"/><area shape="rect" id="node24" href="stream_8c.html#a2853c95f04e70a8c7e836f881eedff8d" title="apply_stream_limits" alt="" coords="243,259,381,285"/><area shape="rect" id="node9" href="conn_8c.html#a1ae0706a577e85efbcfacf517a329dbe" title="vers_supported" alt="" coords="445,56,555,83"/><area shape="rect" id="node10" href="conn_8h.html#ad42b6442b32fa307a6b5293b9b9df058" title="is_force_neg_vers" alt="" coords="608,5,736,32"/><area shape="rect" id="node11" href="conn_8h.html#a76639ec987a700f45570a287b25025ea" title="is_rsvd_vers" alt="" coords="624,56,720,83"/><area shape="rect" id="node13" href="conn_8c.html#afd38904c68cab87424e6aa8db723fd38" title="enter_closing" alt="" coords="451,157,549,184"/><area shape="rect" id="node14" href="conn_8h.html#a526357c19864e7579573160573a55c33" title="pn_for_epoch" alt="" coords="622,107,722,133"/><area shape="rect" id="node15" href="conn_8h.html#a68c6b30b8665ce894ab5bed3c73a2d9d" title="is_zero" alt="" coords="640,157,704,184"/><area shape="rect" id="node16" href="conn_8c.html#aea7c8de8c9a43a64163e900a70678ae2" title="enter_closed" alt="" coords="624,208,720,235"/><area shape="rect" id="node18" href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="1216,157,1299,184"/><area shape="rect" id="node17" href="quant_8h.html#a3da1ca1e589303333e8bba9cfbb1f4da" title="q_accept" alt="" coords="791,157,865,184"/><area shape="rect" id="node22" href="quant_8h.html#a84a768c49cd352e1c8a109bda56ef3a6" title="q_rx_ready" alt="" coords="785,208,871,235"/><area shape="rect" id="node19" href="quic_8c.html#afd98d880d46aa717596439adb85fcafc" title="cancel_api_call" alt="" coords="921,157,1031,184"/><area shape="rect" id="node20" href="quic_8c.html#a3da1ca1e589303333e8bba9cfbb1f4da" title="q_accept" alt="" coords="1087,107,1161,133"/><area shape="rect" id="node21" href="quic_8c.html#a84a768c49cd352e1c8a109bda56ef3a6" title="q_rx_ready" alt="" coords="1081,157,1167,184"/><area shape="rect" id="node26" href="tls_8c.html#aff7c4b2f9e78c2d678898dc58bc68e57" title="setup_initial_encryption" alt="" coords="233,309,391,336"/><area shape="rect" id="node27" href="tls_8c.html#a0013659db693568a427d88141cbfcb20" title="setup_initial_key" alt="" coords="441,309,559,336"/><area shape="rect" id="node28" href="tls_8c.html#a33475dbe3d21cf344acab6c9e3b23bee" title="setup_cipher" alt="" coords="624,309,720,336"/></map>
 </div>
 </p>
 
@@ -1474,7 +1474,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="tls_8c_a8984aa5b25b32bb8e40aef64f3164fc0_cgraph.png" border="0" usemap="#tls_8c_a8984aa5b25b32bb8e40aef64f3164fc0_cgraph" alt=""/></div>
 <map name="tls_8c_a8984aa5b25b32bb8e40aef64f3164fc0_cgraph" id="tls_8c_a8984aa5b25b32bb8e40aef64f3164fc0_cgraph">
-<area shape="rect" id="node2" href="tls_8c.html#a4faeebf5e3d33bfea46325d8fa7343d6" title="flip_keys" alt="" coords="173,31,248,57"/><area shape="rect" id="node3" href="tls_8c.html#aa4d8aedc1bfd0aed4756bd90903c1884" title="dispose_cipher" alt="" coords="301,5,411,32"/><area shape="rect" id="node4" href="tls_8c.html#ac6763a297342bbb54009ff9d025575e1" title="setup_initial_key" alt="" coords="297,56,415,83"/><area shape="rect" id="node5" href="tls_8c.html#a33475dbe3d21cf344acab6c9e3b23bee" title="setup_cipher" alt="" coords="464,56,560,83"/></map>
+<area shape="rect" id="node2" href="tls_8c.html#a4faeebf5e3d33bfea46325d8fa7343d6" title="flip_keys" alt="" coords="173,31,248,57"/><area shape="rect" id="node3" href="tls_8c.html#aa4d8aedc1bfd0aed4756bd90903c1884" title="dispose_cipher" alt="" coords="301,5,411,32"/><area shape="rect" id="node4" href="tls_8c.html#a0013659db693568a427d88141cbfcb20" title="setup_initial_key" alt="" coords="297,56,415,83"/><area shape="rect" id="node5" href="tls_8c.html#a33475dbe3d21cf344acab6c9e3b23bee" title="setup_cipher" alt="" coords="464,56,560,83"/></map>
 </div>
 </p>
 
@@ -1660,7 +1660,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">static int setup_cipher </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="tls_8h.html#aa936412f8959248ee6373acb4bbacafc">st_quicly_cipher_context_t</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="tls_8c.html#aa936412f8959248ee6373acb4bbacafc">st_quicly_cipher_context_t</a> *&#160;</td>
           <td class="paramname"><em>ctx</em>, </td>
         </tr>
         <tr>
@@ -1712,13 +1712,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">static int setup_initial_encryption </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="tls_8h.html#aa936412f8959248ee6373acb4bbacafc">st_quicly_cipher_context_t</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="tls_8c.html#aa936412f8959248ee6373acb4bbacafc">st_quicly_cipher_context_t</a> *&#160;</td>
           <td class="paramname"><em>ingress</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="tls_8h.html#aa936412f8959248ee6373acb4bbacafc">st_quicly_cipher_context_t</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="tls_8c.html#aa936412f8959248ee6373acb4bbacafc">st_quicly_cipher_context_t</a> *&#160;</td>
           <td class="paramname"><em>egress</em>, </td>
         </tr>
         <tr>
@@ -1757,20 +1757,23 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="tls_8c_aff7c4b2f9e78c2d678898dc58bc68e57_cgraph.png" border="0" usemap="#tls_8c_aff7c4b2f9e78c2d678898dc58bc68e57_cgraph" alt=""/></div>
 <map name="tls_8c_aff7c4b2f9e78c2d678898dc58bc68e57_cgraph" id="tls_8c_aff7c4b2f9e78c2d678898dc58bc68e57_cgraph">
-<area shape="rect" id="node2" href="tls_8c.html#ac6763a297342bbb54009ff9d025575e1" title="setup_initial_key" alt="" coords="214,5,333,32"/><area shape="rect" id="node3" href="tls_8c.html#a33475dbe3d21cf344acab6c9e3b23bee" title="setup_cipher" alt="" coords="381,5,477,32"/></map>
+<area shape="rect" id="node2" href="tls_8c.html#a0013659db693568a427d88141cbfcb20" title="setup_initial_key" alt="" coords="214,5,333,32"/><area shape="rect" id="node3" href="tls_8c.html#a33475dbe3d21cf344acab6c9e3b23bee" title="setup_cipher" alt="" coords="381,5,477,32"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ac6763a297342bbb54009ff9d025575e1"></a>
+<a class="anchor" id="a0013659db693568a427d88141cbfcb20"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int setup_initial_key </td>
+          <td class="memname">static int setup_initial_key </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="tls_8h.html#aa936412f8959248ee6373acb4bbacafc">st_quicly_cipher_context_t</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="tls_8c.html#aa936412f8959248ee6373acb4bbacafc">st_quicly_cipher_context_t</a> *&#160;</td>
           <td class="paramname"><em>ctx</em>, </td>
         </tr>
         <tr>
@@ -1803,13 +1806,18 @@ Here is the call graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="tls_8c_ac6763a297342bbb54009ff9d025575e1_cgraph.png" border="0" usemap="#tls_8c_ac6763a297342bbb54009ff9d025575e1_cgraph" alt=""/></div>
-<map name="tls_8c_ac6763a297342bbb54009ff9d025575e1_cgraph" id="tls_8c_ac6763a297342bbb54009ff9d025575e1_cgraph">
+<div class="center"><img src="tls_8c_a0013659db693568a427d88141cbfcb20_cgraph.png" border="0" usemap="#tls_8c_a0013659db693568a427d88141cbfcb20_cgraph" alt=""/></div>
+<map name="tls_8c_a0013659db693568a427d88141cbfcb20_cgraph" id="tls_8c_a0013659db693568a427d88141cbfcb20_cgraph">
 <area shape="rect" id="node2" href="tls_8c.html#a33475dbe3d21cf344acab6c9e3b23bee" title="setup_cipher" alt="" coords="173,5,269,32"/></map>
 </div>
 </p>
@@ -2268,7 +2276,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 23 2018 16:35:48 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 23 2018 18:02:02 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
