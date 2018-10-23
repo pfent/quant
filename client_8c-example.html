@@ -175,7 +175,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">                                                     const <span class="keywordtype">char</span> * const ifname,</div>
 <div class="line">                                                     const <span class="keywordtype">char</span> * const cache,</div>
 <div class="line">                                                     const <span class="keywordtype">char</span> * const tls_log,</div>
-<div class="line">                                                     const <span class="keywordtype">bool</span> verify_certs)</div>
+<div class="line">                                                     const <span class="keywordtype">bool</span> verify_certs,</div>
+<div class="line">                                                     const uint64_t upd_amnt)</div>
 <div class="line">{</div>
 <div class="line">    printf(<span class="stringliteral">&quot;%s [options] URL\n&quot;</span>, name);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\t[-i interface]\tinterface to run over; default %s\n&quot;</span>, ifname);</div>
@@ -185,6 +186,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">           timeout);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\t[-c]\t\tverify TLS certificates; default %s\n&quot;</span>,</div>
 <div class="line">           verify_certs ? <span class="stringliteral">&quot;true&quot;</span> : <span class="stringliteral">&quot;false&quot;</span>);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;\t[-u bytes]\tupdate TLS keys after this traffic volume; default &quot;</span></div>
+<div class="line">           <span class="stringliteral">&quot;%&quot;</span> PRIu64 <span class="stringliteral">&quot;\n&quot;</span>,</div>
+<div class="line">           upd_amnt);</div>
 <div class="line"><span class="preprocessor">#ifndef NDEBUG</span></div>
 <div class="line"><span class="preprocessor"></span>    printf(<span class="stringliteral">&quot;\t[-v verbosity]\tverbosity level (0-%d, default %d)\n&quot;</span>, DLEVEL,</div>
 <div class="line">           util_dlevel);</div>
@@ -311,9 +315,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="keywordtype">char</span> cache[MAXPATHLEN] = <span class="stringliteral">&quot;/tmp/&quot;</span> <a name="a11"></a><a class="code" href="config_8h.html#a12c9d614554664180937dfc530273668">QUANT</a> <span class="stringliteral">&quot;-session&quot;</span>;</div>
 <div class="line">    <span class="keywordtype">char</span> tls_log[MAXPATHLEN] = <span class="stringliteral">&quot;/tmp/&quot;</span> <a class="code" href="config_8h.html#a12c9d614554664180937dfc530273668">QUANT</a> <span class="stringliteral">&quot;-tlslog&quot;</span>;</div>
 <div class="line">    <span class="keywordtype">bool</span> verify_certs = <span class="keyword">false</span>;</div>
+<div class="line">    uint64_t upd_amnt = 0;</div>
 <div class="line">    <span class="keywordtype">int</span> ret = 0;</div>
 <div class="line"></div>
-<div class="line">    <span class="keywordflow">while</span> ((ch = getopt(argc, argv, <span class="stringliteral">&quot;hi:v:s:t:c&quot;</span>)) != -1) {</div>
+<div class="line">    <span class="keywordflow">while</span> ((ch = getopt(argc, argv, <span class="stringliteral">&quot;hi:v:s:t:cu:&quot;</span>)) != -1) {</div>
 <div class="line">        <span class="keywordflow">switch</span> (ch) {</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;i&#39;</span>:</div>
 <div class="line">            strncpy(ifname, optarg, <span class="keyword">sizeof</span>(ifname) - 1);</div>
@@ -330,6 +335,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;c&#39;</span>:</div>
 <div class="line">            verify_certs = <span class="keyword">true</span>;</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;u&#39;</span>:</div>
+<div class="line">            upd_amnt = MIN(UINT32_MAX, strtoul(optarg, 0, 10));</div>
+<div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;v&#39;</span>:</div>
 <div class="line"><span class="preprocessor">#ifndef NDEBUG</span></div>
 <div class="line"><span class="preprocessor"></span>            util_dlevel = (short)MIN(DLEVEL, strtoul(optarg, 0, 10));</div>
@@ -338,12 +346,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;h&#39;</span>:</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;?&#39;</span>:</div>
 <div class="line">        <span class="keywordflow">default</span>:</div>
-<div class="line">            usage(basename(argv[0]), ifname, cache, tls_log, verify_certs);</div>
+<div class="line">            usage(basename(argv[0]), ifname, cache, tls_log, verify_certs,</div>
+<div class="line">                  upd_amnt);</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    <span class="keyword">struct </span>w_engine * <span class="keyword">const</span> w =</div>
-<div class="line">        <a name="a13"></a><a class="code" href="quant_8h.html#aaaa9e2055f52f273429f28d1979893b2">q_init</a>(ifname, 0, 0, cache, tls_log, verify_certs);</div>
+<div class="line">        <a name="a13"></a><a class="code" href="quant_8h.html#a1b6e7bb1b1a84ea93291544464c5f3c5">q_init</a>(ifname, 0, 0, cache, tls_log, verify_certs, upd_amnt);</div>
 <div class="line">    <span class="keyword">struct </span>conn_cache cc = splay_initializer(cc);</div>
 <div class="line">    <span class="keyword">struct </span>http_parser_url u = {0};</div>
 <div class="line"></div>
@@ -424,7 +433,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 18 2018 08:48:19 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 23 2018 16:35:48 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

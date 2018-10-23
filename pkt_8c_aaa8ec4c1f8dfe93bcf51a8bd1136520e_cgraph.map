@@ -1,0 +1,30 @@
+<map id="dec_pkt_hdr_remainder" name="dec_pkt_hdr_remainder">
+<area shape="rect" id="node2" href="$pkt_8c.html#afc2efb9b9e8c6496bf59679fea582bdc" title="which_cipher_ctx_in" alt="" coords="211,5,351,32"/>
+<area shape="rect" id="node4" href="$tls_8c.html#a4faeebf5e3d33bfea46325d8fa7343d6" title="flip_keys" alt="" coords="244,107,319,133"/>
+<area shape="rect" id="node8" href="$conn_8c.html#a02d7b0c5a072e1b673358b52ac71f160" title="err_close" alt="" coords="244,157,319,184"/>
+<area shape="rect" id="node19" href="$pkt_8c.html#a1f84b7c58bf06714a5b8bbb61cbcbb79" title="dec_pne" alt="" coords="246,259,317,285"/>
+<area shape="rect" id="node20" href="$pkt_8h.html#a13f2d88ad76ff338e531972ca1c0449e" title="pn_for_pkt_type" alt="" coords="403,247,517,273"/>
+<area shape="rect" id="node21" href="$diet_8h.html#aacb91382dbbe6f6f29721c4c620c9dbf" title="diet_max" alt="" coords="423,309,497,336"/>
+<area shape="rect" id="node22" href="$tls_8c.html#a1b7fc05af119c12354b8de8346ccecf4" title="dec_aead" alt="" coords="242,360,321,387"/>
+<area shape="rect" id="node23" href="$quic_8h.html#a97af5931f5c6730cd32f1d733b6101d0" title="w_iov_dup" alt="" coords="239,411,323,437"/>
+<area shape="rect" id="node24" href="$pkt_8c.html#aea9b46441b54eac107df718d62806876" title="pkt_type_str" alt="" coords="234,56,329,83"/>
+<area shape="rect" id="node25" href="$diet_8c.html#a87c3c2cebc6ccf0911d3d05989352588" title="Pointer to the interval containing n in diet tree t. " alt="" coords="425,461,495,488"/>
+<area shape="rect" id="node26" href="$diet_8c.html#a9064e32f6b50901d8f5685e53d2e4041" title="Inserts integer n of type t into the diet tree t. " alt="" coords="240,512,323,539"/>
+<area shape="rect" id="node3" href="$pkt_8h.html#a265e9c52eb203bb4701727adc3908850" title="pkt_type" alt="" coords="424,5,496,32"/>
+<area shape="rect" id="node5" href="$tls_8c.html#aa4d8aedc1bfd0aed4756bd90903c1884" title="dispose_cipher" alt="" coords="405,56,515,83"/>
+<area shape="rect" id="node6" href="$tls_8c.html#ac6763a297342bbb54009ff9d025575e1" title="setup_initial_key" alt="" coords="401,107,519,133"/>
+<area shape="rect" id="node7" href="$tls_8c.html#a33475dbe3d21cf344acab6c9e3b23bee" title="setup_cipher" alt="" coords="571,69,667,96"/>
+<area shape="rect" id="node9" href="$conn_8c.html#afd38904c68cab87424e6aa8db723fd38" title="enter_closing" alt="" coords="411,171,509,197"/>
+<area shape="rect" id="node10" href="$conn_8h.html#a526357c19864e7579573160573a55c33" title="pn_for_epoch" alt="" coords="569,120,669,147"/>
+<area shape="rect" id="node11" href="$conn_8h.html#a68c6b30b8665ce894ab5bed3c73a2d9d" title="is_zero" alt="" coords="587,171,651,197"/>
+<area shape="rect" id="node12" href="$conn_8c.html#aea7c8de8c9a43a64163e900a70678ae2" title="enter_closed" alt="" coords="571,272,667,299"/>
+<area shape="rect" id="node14" href="$conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="1149,323,1232,349"/>
+<area shape="rect" id="node13" href="$quant_8h.html#a3da1ca1e589303333e8bba9cfbb1f4da" title="q_accept" alt="" coords="724,272,799,299"/>
+<area shape="rect" id="node18" href="$quant_8h.html#a84a768c49cd352e1c8a109bda56ef3a6" title="q_rx_ready" alt="" coords="718,323,805,349"/>
+<area shape="rect" id="node15" href="$quic_8c.html#afd98d880d46aa717596439adb85fcafc" title="cancel_api_call" alt="" coords="854,323,965,349"/>
+<area shape="rect" id="node16" href="$quic_8c.html#a3da1ca1e589303333e8bba9cfbb1f4da" title="q_accept" alt="" coords="1020,323,1095,349"/>
+<area shape="rect" id="node17" href="$quic_8c.html#a84a768c49cd352e1c8a109bda56ef3a6" title="q_rx_ready" alt="" coords="1014,373,1101,400"/>
+<area shape="rect" id="node27" href="$diet_8c.html#a85e4e10a029283a5798638bfaf387abd" title="Return maximum interval underneath i. " alt="" coords="423,512,497,539"/>
+<area shape="rect" id="node28" href="$diet_8c.html#a8f0e77727941f94b10b1ea1241df8eaa" title="Return minimum interval underneath i. " alt="" coords="425,563,495,589"/>
+<area shape="rect" id="node29" href="$diet_8c.html#a21164f67106bc7c1712e8b6596aa0253" title="Helper function to create a zero&#45;width interval containing (only) n. " alt="" coords="419,613,501,640"/>
+</map>

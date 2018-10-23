@@ -1,10 +1,10 @@
 <map id="pn_space" name="pn_space">
-<area shape="rect" id="node5" href="$structpn__data__space.html" title="pn_data_space" alt="" coords="374,135,484,161"/>
-<area shape="rect" id="node8" href="$structpn__hshk__space.html" title="pn_hshk_space" alt="" coords="237,135,349,161"/>
-<area shape="rect" id="node2" href="$structq__conn.html" title="A QUIC connection. " alt="" coords="397,248,461,275"/>
-<area shape="rect" id="node3" href="$structtransport__params.html" title="transport_params" alt="" coords="5,135,128,161"/>
+<area shape="rect" id="node5" href="$structpn__data__space.html" title="pn_data_space" alt="" coords="374,148,484,175"/>
+<area shape="rect" id="node8" href="$structpn__hshk__space.html" title="pn_hshk_space" alt="" coords="237,148,349,175"/>
+<area shape="rect" id="node2" href="$structq__conn.html" title="A QUIC connection. " alt="" coords="397,261,461,288"/>
+<area shape="rect" id="node3" href="$structtransport__params.html" title="transport_params" alt="" coords="5,148,128,175"/>
 <area shape="rect" id="node4" href="$structcid.html" title="cid" alt="" coords="113,5,151,32"/>
 <area shape="rect" id="node6" href="$structcipher__ctx.html" title="cipher_ctx" alt="" coords="276,5,357,32"/>
-<area shape="rect" id="node7" href="$structtls.html" title="tls" alt="" coords="509,135,547,161"/>
-<area shape="rect" id="node9" href="$structrecovery.html" title="recovery" alt="" coords="632,135,704,161"/>
+<area shape="rect" id="node7" href="$structtls.html" title="tls" alt="" coords="509,148,547,175"/>
+<area shape="rect" id="node9" href="$structrecovery.html" title="recovery" alt="" coords="632,148,704,175"/>
 </map>

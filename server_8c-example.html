@@ -313,7 +313,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="keyword">const</span> <span class="keywordtype">int</span> dir_fd = open(dir, O_RDONLY | O_CLOEXEC);</div>
 <div class="line">    ensure(dir_fd != -1, <span class="stringliteral">&quot;%s does not exist&quot;</span>, dir);</div>
 <div class="line"></div>
-<div class="line">    <span class="keyword">struct </span>w_engine * <span class="keyword">const</span> w = <a name="a10"></a><a class="code" href="quant_8h.html#aaaa9e2055f52f273429f28d1979893b2">q_init</a>(ifname, cert, key, 0, 0, <span class="keyword">false</span>);</div>
+<div class="line">    <span class="keyword">struct </span>w_engine * <span class="keyword">const</span> w = <a name="a10"></a><a class="code" href="quant_8h.html#a1b6e7bb1b1a84ea93291544464c5f3c5">q_init</a>(ifname, cert, key, 0, 0, <span class="keyword">false</span>, 0);</div>
 <div class="line">    <span class="keyword">struct </span><a class="code" href="structq__conn.html">q_conn</a> * conn[MAXPORTS];</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; num_ports; i++) {</div>
 <div class="line">        conn[i] = <a name="a11"></a><a class="code" href="quant_8h.html#ac6e72671693d868a07bf17e6dd097632">q_bind</a>(w, port[i]);</div>
@@ -379,7 +379,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 18 2018 08:48:19 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 23 2018 16:35:48 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

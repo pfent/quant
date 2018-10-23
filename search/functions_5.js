@@ -4,6 +4,7 @@ var searchData=
   ['find_5fmax',['find_max',['../diet_8c.html#a85e4e10a029283a5798638bfaf387abd',1,'diet.c']]],
   ['find_5fmin',['find_min',['../diet_8c.html#a8f0e77727941f94b10b1ea1241df8eaa',1,'diet.c']]],
   ['find_5fsent_5fpkt',['find_sent_pkt',['../recovery_8c.html#a078d446c5244577b054aed3abda0d694',1,'find_sent_pkt(struct q_conn *const c, struct pn_space *const pn, const uint64_t nr):&#160;recovery.c'],['../recovery_8h.html#a078d446c5244577b054aed3abda0d694',1,'find_sent_pkt(struct q_conn *const c, struct pn_space *const pn, const uint64_t nr):&#160;recovery.c']]],
+  ['flip_5fkeys',['flip_keys',['../tls_8c.html#a4faeebf5e3d33bfea46325d8fa7343d6',1,'flip_keys(struct q_conn *const c, const bool out):&#160;tls.c'],['../tls_8h.html#a4faeebf5e3d33bfea46325d8fa7343d6',1,'flip_keys(struct q_conn *const c, const bool out):&#160;tls.c']]],
   ['fprinthex',['fprinthex',['../tls_8c.html#a596d4ddc108fc81c7eee5579e353beef',1,'tls.c']]],
   ['free_5fconn',['free_conn',['../conn_8c.html#a4a5deef512e20b125b45899c6c80c6fc',1,'free_conn(struct q_conn *const c):&#160;conn.c'],['../conn_8h.html#a4a5deef512e20b125b45899c6c80c6fc',1,'free_conn(struct q_conn *const c):&#160;conn.c']]],
   ['free_5fdcid',['free_dcid',['../conn_8c.html#a1c73802c8005ac4f60cf1c0003972d56',1,'free_dcid(struct q_conn *const c, struct cid *const id):&#160;conn.c'],['../conn_8h.html#a1c73802c8005ac4f60cf1c0003972d56',1,'free_dcid(struct q_conn *const c, struct cid *const id):&#160;conn.c']]],

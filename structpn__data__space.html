@@ -95,30 +95,92 @@ Collaboration diagram for pn_data_space:</div>
 <div class="dyncontent">
 <div class="center"><img src="structpn__data__space__coll__graph.png" border="0" usemap="#pn__data__space_coll__map" alt="Collaboration graph"/></div>
 <map name="pn__data__space_coll__map" id="pn__data__space_coll__map">
-<area shape="rect" id="node3" href="structq__conn.html" title="A QUIC connection. " alt="" coords="300,249,364,276"/><area shape="rect" id="node2" href="structpn__space.html" title="pn_space" alt="" coords="414,341,492,368"/><area shape="rect" id="node7" href="structpn__hshk__space.html" title="pn_hshk_space" alt="" coords="397,432,509,459"/><area shape="rect" id="node4" href="structtransport__params.html" title="transport_params" alt="" coords="5,135,128,161"/><area shape="rect" id="node5" href="structcid.html" title="cid" alt="" coords="161,5,199,32"/><area shape="rect" id="node6" href="structtls.html" title="tls" alt="" coords="153,135,191,161"/><area shape="rect" id="node8" href="structcipher__ctx.html" title="cipher_ctx" alt="" coords="463,5,544,32"/><area shape="rect" id="node9" href="structrecovery.html" title="recovery" alt="" coords="300,135,372,161"/></map>
+<area shape="rect" id="node3" href="structq__conn.html" title="A QUIC connection. " alt="" coords="300,263,364,289"/><area shape="rect" id="node2" href="structpn__space.html" title="pn_space" alt="" coords="414,355,492,381"/><area shape="rect" id="node7" href="structpn__hshk__space.html" title="pn_hshk_space" alt="" coords="397,445,509,472"/><area shape="rect" id="node4" href="structtransport__params.html" title="transport_params" alt="" coords="5,148,128,175"/><area shape="rect" id="node5" href="structcid.html" title="cid" alt="" coords="161,5,199,32"/><area shape="rect" id="node6" href="structtls.html" title="tls" alt="" coords="153,148,191,175"/><area shape="rect" id="node8" href="structcipher__ctx.html" title="cipher_ctx" alt="" coords="463,5,544,32"/><area shape="rect" id="node9" href="structrecovery.html" title="recovery" alt="" coords="300,148,372,175"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a7015c67c7ba0975861238ddb98f6c4ca"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structpn__space.html">pn_space</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpn__data__space.html#a7015c67c7ba0975861238ddb98f6c4ca">pn</a></td></tr>
 <tr class="separator:a7015c67c7ba0975861238ddb98f6c4ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac268105197c903bce9e2a15cd6768660"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcipher__ctx.html">cipher_ctx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpn__data__space.html#ac268105197c903bce9e2a15cd6768660">in</a> [2]</td></tr>
-<tr class="separator:ac268105197c903bce9e2a15cd6768660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af620382a9fe067f78b23f0dc26be5c49"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcipher__ctx.html">cipher_ctx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpn__data__space.html#af620382a9fe067f78b23f0dc26be5c49">in_0rtt</a></td></tr>
+<tr class="separator:af620382a9fe067f78b23f0dc26be5c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27cff102e25dcc1a37a963309a6e5fe9"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcipher__ctx.html">cipher_ctx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpn__data__space.html#a27cff102e25dcc1a37a963309a6e5fe9">out_0rtt</a></td></tr>
 <tr class="separator:a27cff102e25dcc1a37a963309a6e5fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab98ec33ea5a5a25350e0a8c4c49d30d8"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcipher__ctx.html">cipher_ctx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpn__data__space.html#ab98ec33ea5a5a25350e0a8c4c49d30d8">out_1rtt</a></td></tr>
-<tr class="separator:ab98ec33ea5a5a25350e0a8c4c49d30d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7b2ff099c01a50adf39234e54992c05"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcipher__ctx.html">cipher_ctx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpn__data__space.html#ad7b2ff099c01a50adf39234e54992c05">in_1rtt</a> [2]</td></tr>
+<tr class="separator:ad7b2ff099c01a50adf39234e54992c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd891912284bd033b7c54354be55559a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcipher__ctx.html">cipher_ctx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpn__data__space.html#acd891912284bd033b7c54354be55559a">out_1rtt</a> [2]</td></tr>
+<tr class="separator:acd891912284bd033b7c54354be55559a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01c29bebcfddbf6ffad425efa5ffd4d6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpn__data__space.html#a01c29bebcfddbf6ffad425efa5ffd4d6">in_kyph</a>: 1</td></tr>
+<tr class="memdesc:a01c29bebcfddbf6ffad425efa5ffd4d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last seen inbound key phase bit.  <a href="#a01c29bebcfddbf6ffad425efa5ffd4d6">More...</a><br/></td></tr>
+<tr class="separator:a01c29bebcfddbf6ffad425efa5ffd4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a352acf91ec8a6fb99cb2c4ae9d604936"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpn__data__space.html#a352acf91ec8a6fb99cb2c4ae9d604936">out_kyph</a>: 1</td></tr>
+<tr class="memdesc:a352acf91ec8a6fb99cb2c4ae9d604936"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current outbound key phase bit.  <a href="#a352acf91ec8a6fb99cb2c4ae9d604936">More...</a><br/></td></tr>
+<tr class="separator:a352acf91ec8a6fb99cb2c4ae9d604936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11613f309b14866ffbb51fb2e00f9987"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpn__data__space.html#a11613f309b14866ffbb51fb2e00f9987">__pad0__</a>: 6</td></tr>
+<tr class="separator:a11613f309b14866ffbb51fb2e00f9987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f2789d759df5b4c658a87235f1bb2ce"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpn__data__space.html#a6f2789d759df5b4c658a87235f1bb2ce">_unused</a> [7]</td></tr>
+<tr class="separator:a6f2789d759df5b4c658a87235f1bb2ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="ac268105197c903bce9e2a15cd6768660"></a>
+<a class="anchor" id="a11613f309b14866ffbb51fb2e00f9987"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structcipher__ctx.html">cipher_ctx</a> pn_data_space::in[2]</td>
+          <td class="memname">uint8_t pn_data_space::__pad0__</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6f2789d759df5b4c658a87235f1bb2ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pn_data_space::_unused[7]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af620382a9fe067f78b23f0dc26be5c49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structcipher__ctx.html">cipher_ctx</a> pn_data_space::in_0rtt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad7b2ff099c01a50adf39234e54992c05"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structcipher__ctx.html">cipher_ctx</a> pn_data_space::in_1rtt[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a01c29bebcfddbf6ffad425efa5ffd4d6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pn_data_space::in_kyph</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Last seen inbound key phase bit. </p>
 
 </div>
 </div>
@@ -134,15 +196,29 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab98ec33ea5a5a25350e0a8c4c49d30d8"></a>
+<a class="anchor" id="acd891912284bd033b7c54354be55559a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structcipher__ctx.html">cipher_ctx</a> pn_data_space::out_1rtt</td>
+          <td class="memname">struct <a class="el" href="structcipher__ctx.html">cipher_ctx</a> pn_data_space::out_1rtt[2]</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a352acf91ec8a6fb99cb2c4ae9d604936"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pn_data_space::out_kyph</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Current outbound key phase bit. </p>
 
 </div>
 </div>
@@ -164,7 +240,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 18 2018 08:48:19 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 23 2018 16:35:48 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
