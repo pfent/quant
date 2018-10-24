@@ -271,10 +271,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
-<div class="line">        if ((s)-&gt;<span class="keywordtype">id</span> &gt;= 0)                                                      \</div>
+<div class="line">        if ((s)-&gt;<span class="keywordtype">id</span> &gt;= 0) {                                                    \</div>
 <div class="line">            warn(DBG, <span class="stringliteral">&quot;conn %s strm &quot;</span> <a class="code" href="quic_8h.html#ab5f8d1e8c05400492619366d20559bfd">FMT_SID</a> <span class="stringliteral">&quot; state %s -&gt; &quot;</span> <a class="code" href="quic_8h.html#a96fac03c4ab3363f06a0328e0e53a40c">YEL</a> <span class="stringliteral">&quot;%s&quot;</span> <a class="code" href="quic_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a>,    \</div>
-<div class="line">                 <a class="code" href="conn_8h.html#ade2abf64e3b30fc0b5e1b95735ab6677">cid2str</a>((s)-&gt;c-&gt;scid), (s)-&gt;id, <a class="code" href="stream_8h.html#aa6dd5679b354a793efc82cd45b5d3962">strm_state_str</a>[(s)-&gt;state],   \</div>
-<div class="line">                 <a class="code" href="stream_8h.html#aa6dd5679b354a793efc82cd45b5d3962">strm_state_str</a>[(new_state)]);                                 \</div>
+<div class="line">                 (s)-&gt;c-&gt;scid ? <a class="code" href="conn_8h.html#ade2abf64e3b30fc0b5e1b95735ab6677">cid2str</a>((s)-&gt;c-&gt;scid) : <span class="stringliteral">&quot;?&quot;</span>, (s)-&gt;id,          \</div>
+<div class="line">                 <a class="code" href="stream_8h.html#aa6dd5679b354a793efc82cd45b5d3962">strm_state_str</a>[(s)-&gt;state], <a class="code" href="stream_8h.html#aa6dd5679b354a793efc82cd45b5d3962">strm_state_str</a>[(new_state)]);     \</div>
+<div class="line">        }                                                                      \</div>
 <div class="line">        (s)-&gt;state = (new_state);                                              \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 <div class="ttc" id="quic_8h_html_a96fac03c4ab3363f06a0328e0e53a40c"><div class="ttname"><a href="quic_8h.html#a96fac03c4ab3363f06a0328e0e53a40c">YEL</a></div><div class="ttdeci">#define YEL</div><div class="ttdoc">ANSI escape sequence: yellow. </div><div class="ttdef"><b>Definition:</b> quic.h:446</div></div>
@@ -696,7 +697,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 23 2018 18:02:02 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 24 2018 15:28:00 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -4,7 +4,7 @@ var searchData=
   ['dec_5faead',['dec_aead',['../tls_8c.html#a1b7fc05af119c12354b8de8346ccecf4',1,'dec_aead(struct q_conn *const c, const struct w_iov *const xv, const struct w_iov *const v, const uint16_t len, const struct cipher_ctx *const ctx):&#160;tls.c'],['../tls_8h.html#a1b7fc05af119c12354b8de8346ccecf4',1,'dec_aead(struct q_conn *const c, const struct w_iov *const xv, const struct w_iov *const v, const uint16_t len, const struct cipher_ctx *const ctx):&#160;tls.c']]],
   ['dec_5fblocked_5fframe',['dec_blocked_frame',['../frame_8c.html#ab428ba3dd2568b0ec1554d93aea995f7',1,'frame.c']]],
   ['dec_5fclose_5fframe',['dec_close_frame',['../frame_8c.html#ab78c0e4f9002909181540dfffd445f45',1,'frame.c']]],
-  ['dec_5fframes',['dec_frames',['../frame_8c.html#a81c634475cc4f2598b7d4edd29e34d00',1,'dec_frames(struct q_conn *const c, struct w_iov *v):&#160;frame.c'],['../frame_8h.html#a81c634475cc4f2598b7d4edd29e34d00',1,'dec_frames(struct q_conn *const c, struct w_iov *v):&#160;frame.c']]],
+  ['dec_5fframes',['dec_frames',['../frame_8c.html#a61028f6e9e750c1d45bde1dd2303aa26',1,'dec_frames(struct q_conn *const c, struct w_iov **vv):&#160;frame.c'],['../frame_8h.html#a61028f6e9e750c1d45bde1dd2303aa26',1,'dec_frames(struct q_conn *const c, struct w_iov **vv):&#160;frame.c']]],
   ['dec_5fmax_5fdata_5fframe',['dec_max_data_frame',['../frame_8c.html#a153e4e8ebbad53cd142cd48d2455f3dd',1,'frame.c']]],
   ['dec_5fmax_5fstream_5fdata_5fframe',['dec_max_stream_data_frame',['../frame_8c.html#a03b268dbab7b999eb38b09805803f138',1,'frame.c']]],
   ['dec_5fmax_5fstream_5fid_5fframe',['dec_max_stream_id_frame',['../frame_8c.html#ab062d5820675972796c9c28623899240',1,'frame.c']]],
