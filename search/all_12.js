@@ -12,7 +12,7 @@ var searchData=
   ['set_5fld_5falarm',['set_ld_alarm',['../recovery_8c.html#a34c871e59b25f984223ab9573ebf3332',1,'recovery.c']]],
   ['setup_5fcipher',['setup_cipher',['../tls_8c.html#a33475dbe3d21cf344acab6c9e3b23bee',1,'tls.c']]],
   ['setup_5finitial_5fencryption',['setup_initial_encryption',['../tls_8c.html#aff7c4b2f9e78c2d678898dc58bc68e57',1,'tls.c']]],
-  ['setup_5finitial_5fkey',['setup_initial_key',['../tls_8c.html#a0013659db693568a427d88141cbfcb20',1,'tls.c']]],
+  ['setup_5finitial_5fkey',['setup_initial_key',['../tls_8c.html#ab26c763c76c9b874d651bdba836fc13f',1,'tls.c']]],
   ['shorten_5fack_5fnr',['shorten_ack_nr',['../frame_8c.html#a31c36630801506eb48c0bf620c0fcca6',1,'shorten_ack_nr(const uint64_t ack, const uint64_t diff):&#160;frame.c'],['../frame_8h.html#a31c36630801506eb48c0bf620c0fcca6',1,'shorten_ack_nr(const uint64_t ack, const uint64_t diff):&#160;frame.c']]],
   ['signal_5fcb',['signal_cb',['../quic_8c.html#a78a8ed1e6afbc58387426e924cae4a82',1,'quic.c']]],
   ['sl_5fentry',['sl_entry',['../structq__conn.html#ad29885a595f4d9e45d5d4630d41beccf',1,'q_conn::sl_entry(q_conn) node_rx_int'],['../structq__conn.html#a03994cdac0b721d185ea0c0399fa216b',1,'q_conn::sl_entry(q_conn) node_rx_ext'],['../structq__conn.html#adc944a39f569afb0a57c0e3aab437ef5',1,'q_conn::sl_entry(q_conn) node_aq'],['../structpkt__meta.html#a7e459e2fc33bd3e88fe4c32ea57962a4',1,'pkt_meta::sl_entry()']]],
