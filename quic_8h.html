@@ -150,9 +150,6 @@ Macros</h2></td></tr>
 <tr class="memitem:a01ed57991bea53afa1ece4452d16b568"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(v)&#160;&#160;&#160;<a class="el" href="quic_8h.html#a0ea1870a8b2233033ea3d196c8206ac0">pm</a>[w_iov_idx(v)]</td></tr>
 <tr class="memdesc:a01ed57991bea53afa1ece4452d16b568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the <a class="el" href="structpkt__meta.html" title="Packet meta-data information associated with w_iov buffers. ">pkt_meta</a> entry for a given w_iov.  <a href="#a01ed57991bea53afa1ece4452d16b568">More...</a><br/></td></tr>
 <tr class="separator:a01ed57991bea53afa1ece4452d16b568"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a569c2a3e25a7f610ecaf23dee76131c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a569c2a3e25a7f610ecaf23dee76131c5">stream_data_len</a>(v)&#160;&#160;&#160;(<a class="el" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(v).stream_data_end - <a class="el" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(v).stream_data_start)</td></tr>
-<tr class="memdesc:a569c2a3e25a7f610ecaf23dee76131c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the length of the stream data in a given w_iov.  <a href="#a569c2a3e25a7f610ecaf23dee76131c5">More...</a><br/></td></tr>
-<tr class="separator:a569c2a3e25a7f610ecaf23dee76131c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f8792ee4a5316407d254ad349fd362d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a1f8792ee4a5316407d254ad349fd362d">pm_idx</a>(m)&#160;&#160;&#160;(uint32_t)((m)-<a class="el" href="quic_8h.html#a0ea1870a8b2233033ea3d196c8206ac0">pm</a>)</td></tr>
 <tr class="memdesc:a1f8792ee4a5316407d254ad349fd362d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the w_iov index of a given <a class="el" href="structpkt__meta.html" title="Packet meta-data information associated with w_iov buffers. ">pkt_meta</a>.  <a href="#a1f8792ee4a5316407d254ad349fd362d">More...</a><br/></td></tr>
 <tr class="separator:a1f8792ee4a5316407d254ad349fd362d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -334,10 +331,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
-<div class="line">        (v)-&gt;buf += <a class="code" href="quic_8h.html#aec6d16d07ed84a385791bc8a6e330ab9">Q_OFFSET</a>;                                                  \</div>
-<div class="line">        (v)-&gt;len -= <a class="code" href="quic_8h.html#aec6d16d07ed84a385791bc8a6e330ab9">Q_OFFSET</a>;                                                  \</div>
+<div class="line">        (v)-&gt;buf += <a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(v).stream_data_start;                                 \</div>
+<div class="line">        (v)-&gt;len -= <a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(v).stream_data_start;                                 \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="quic_8h_html_aec6d16d07ed84a385791bc8a6e330ab9"><div class="ttname"><a href="quic_8h.html#aec6d16d07ed84a385791bc8a6e330ab9">Q_OFFSET</a></div><div class="ttdeci">#define Q_OFFSET</div><div class="ttdoc">Offset of stream frame payload data in w_iov buffers. </div><div class="ttdef"><b>Definition:</b> quic.h:212</div></div>
+<div class="ttc" id="quic_8h_html_a01ed57991bea53afa1ece4452d16b568"><div class="ttname"><a href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a></div><div class="ttdeci">#define meta(v)</div><div class="ttdoc">Return the pkt_meta entry for a given w_iov. </div><div class="ttdef"><b>Definition:</b> quic.h:180</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -355,10 +352,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
-<div class="line">        (v)-&gt;buf -= <a class="code" href="quic_8h.html#aec6d16d07ed84a385791bc8a6e330ab9">Q_OFFSET</a>;                                                  \</div>
-<div class="line">        (v)-&gt;len += <a class="code" href="quic_8h.html#aec6d16d07ed84a385791bc8a6e330ab9">Q_OFFSET</a>;                                                  \</div>
+<div class="line">        (v)-&gt;buf -= <a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(v).stream_data_start;                                 \</div>
+<div class="line">        (v)-&gt;len += <a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(v).stream_data_start;                                 \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="quic_8h_html_aec6d16d07ed84a385791bc8a6e330ab9"><div class="ttname"><a href="quic_8h.html#aec6d16d07ed84a385791bc8a6e330ab9">Q_OFFSET</a></div><div class="ttdeci">#define Q_OFFSET</div><div class="ttdoc">Offset of stream frame payload data in w_iov buffers. </div><div class="ttdef"><b>Definition:</b> quic.h:212</div></div>
+<div class="ttc" id="quic_8h_html_a01ed57991bea53afa1ece4452d16b568"><div class="ttname"><a href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a></div><div class="ttdeci">#define meta(v)</div><div class="ttdoc">Return the pkt_meta entry for a given w_iov. </div><div class="ttdef"><b>Definition:</b> quic.h:180</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -966,7 +963,7 @@ Variables</h2></td></tr>
 <div class="line"><a class="code" href="quic_8h.html#a593420bbec69beea4076ea6603019ea0">        api_func</a> == 0;                                                         \</div>
 <div class="line">    })</div>
 <div class="ttc" id="quic_8h_html_a593420bbec69beea4076ea6603019ea0"><div class="ttname"><a href="quic_8h.html#a593420bbec69beea4076ea6603019ea0">api_func</a></div><div class="ttdeci">func_ptr api_func</div><div class="ttdef"><b>Definition:</b> quic.c:86</div></div>
-<div class="ttc" id="quic_8h_html_a733907018d667311b3e174666c6d2f0f"><div class="ttname"><a href="quic_8h.html#a733907018d667311b3e174666c6d2f0f">EV_VERIFY</a></div><div class="ttdeci">#define EV_VERIFY(l)</div><div class="ttdef"><b>Definition:</b> quic.h:335</div></div>
+<div class="ttc" id="quic_8h_html_a733907018d667311b3e174666c6d2f0f"><div class="ttname"><a href="quic_8h.html#a733907018d667311b3e174666c6d2f0f">EV_VERIFY</a></div><div class="ttdeci">#define EV_VERIFY(l)</div><div class="ttdef"><b>Definition:</b> quic.h:328</div></div>
 <div class="ttc" id="quic_8h_html_a855923b555731173d3509ecb645de0e0"><div class="ttname"><a href="quic_8h.html#a855923b555731173d3509ecb645de0e0">loop</a></div><div class="ttdeci">struct ev_loop * loop</div><div class="ttdef"><b>Definition:</b> quic.c:84</div></div>
 <div class="ttc" id="quic_8h_html_a91b81b7384533b284fa05acbc6b6787d"><div class="ttname"><a href="quic_8h.html#a91b81b7384533b284fa05acbc6b6787d">api_conn</a></div><div class="ttdeci">void * api_conn</div><div class="ttdef"><b>Definition:</b> quic.c:87</div></div>
 <div class="ttc" id="quic_8h_html_a51e2b7dfe290cfc0a139b3768427de79"><div class="ttname"><a href="quic_8h.html#a51e2b7dfe290cfc0a139b3768427de79">api_strm</a></div><div class="ttdeci">void * api_strm</div><div class="ttdef"><b>Definition:</b> quic.c:87</div></div>
@@ -1024,9 +1021,9 @@ Variables</h2></td></tr>
 <div class="line"><a class="code" href="quic_8h.html#a593420bbec69beea4076ea6603019ea0">        api_func</a> == 0;                                                         \</div>
 <div class="line">    })</div>
 <div class="ttc" id="quic_8h_html_a593420bbec69beea4076ea6603019ea0"><div class="ttname"><a href="quic_8h.html#a593420bbec69beea4076ea6603019ea0">api_func</a></div><div class="ttdeci">func_ptr api_func</div><div class="ttdef"><b>Definition:</b> quic.c:86</div></div>
-<div class="ttc" id="quic_8h_html_a733907018d667311b3e174666c6d2f0f"><div class="ttname"><a href="quic_8h.html#a733907018d667311b3e174666c6d2f0f">EV_VERIFY</a></div><div class="ttdeci">#define EV_VERIFY(l)</div><div class="ttdef"><b>Definition:</b> quic.h:335</div></div>
+<div class="ttc" id="quic_8h_html_a733907018d667311b3e174666c6d2f0f"><div class="ttname"><a href="quic_8h.html#a733907018d667311b3e174666c6d2f0f">EV_VERIFY</a></div><div class="ttdeci">#define EV_VERIFY(l)</div><div class="ttdef"><b>Definition:</b> quic.h:328</div></div>
 <div class="ttc" id="quic_8h_html_a855923b555731173d3509ecb645de0e0"><div class="ttname"><a href="quic_8h.html#a855923b555731173d3509ecb645de0e0">loop</a></div><div class="ttdeci">struct ev_loop * loop</div><div class="ttdef"><b>Definition:</b> quic.c:84</div></div>
-<div class="ttc" id="quic_8h_html_aaf4e8117a58ef7278393d801e5d78c46"><div class="ttname"><a href="quic_8h.html#aaf4e8117a58ef7278393d801e5d78c46">func_ptr</a></div><div class="ttdeci">void(* func_ptr)(void)</div><div class="ttdef"><b>Definition:</b> quic.h:329</div></div>
+<div class="ttc" id="quic_8h_html_aaf4e8117a58ef7278393d801e5d78c46"><div class="ttname"><a href="quic_8h.html#aaf4e8117a58ef7278393d801e5d78c46">func_ptr</a></div><div class="ttdeci">void(* func_ptr)(void)</div><div class="ttdef"><b>Definition:</b> quic.h:322</div></div>
 <div class="ttc" id="quic_8h_html_a91b81b7384533b284fa05acbc6b6787d"><div class="ttname"><a href="quic_8h.html#a91b81b7384533b284fa05acbc6b6787d">api_conn</a></div><div class="ttdeci">void * api_conn</div><div class="ttdef"><b>Definition:</b> quic.c:87</div></div>
 <div class="ttc" id="quic_8h_html_a51e2b7dfe290cfc0a139b3768427de79"><div class="ttname"><a href="quic_8h.html#a51e2b7dfe290cfc0a139b3768427de79">api_strm</a></div><div class="ttdeci">void * api_strm</div><div class="ttdef"><b>Definition:</b> quic.c:87</div></div>
 </div><!-- fragment -->
@@ -1228,13 +1225,14 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">__extension__({                                                            \</div>
 <div class="line">        struct w_iov * _v = w_alloc_iov((w), (l), (off));                      <a class="code" href="quic_8h.html#a22a934c8c4d79c27dffbe21e3fb733a4">\</a></div>
-<div class="line"><a class="code" href="quic_8h.html#a22a934c8c4d79c27dffbe21e3fb733a4">        ASAN_UNPOISON_MEMORY_REGION</a>(&amp;<a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(_v), <span class="keyword">sizeof</span>(<a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(_v)));              \</div>
+<div class="line"><a class="code" href="quic_8h.html#a22a934c8c4d79c27dffbe21e3fb733a4">        ASAN_UNPOISON_MEMORY_REGION</a>(&amp;<a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(_v), <span class="keyword">sizeof</span>(<a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(_v)));              <a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">\</a></div>
+<div class="line"><a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">        meta</a>(_v).stream_data_start = (off);                                    \</div>
 <div class="line">        <span class="comment">/* warn(CRT, &quot;q_alloc_iov idx %u len %u off %u&quot;, w_iov_idx(_v),        \</span></div>
 <div class="line"><span class="comment">           _v-&gt;len, (off)); */</span>                                                 \</div>
 <div class="line">        _v;                                                                    \</div>
 <div class="line">    })</div>
 <div class="ttc" id="quic_8h_html_a22a934c8c4d79c27dffbe21e3fb733a4"><div class="ttname"><a href="quic_8h.html#a22a934c8c4d79c27dffbe21e3fb733a4">ASAN_UNPOISON_MEMORY_REGION</a></div><div class="ttdeci">#define ASAN_UNPOISON_MEMORY_REGION(x, y)</div><div class="ttdef"><b>Definition:</b> quic.h:45</div></div>
-<div class="ttc" id="quic_8h_html_a01ed57991bea53afa1ece4452d16b568"><div class="ttname"><a href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a></div><div class="ttdeci">#define meta(v)</div><div class="ttdoc">Return the pkt_meta entry for a given w_iov. </div><div class="ttdef"><b>Definition:</b> quic.h:178</div></div>
+<div class="ttc" id="quic_8h_html_a01ed57991bea53afa1ece4452d16b568"><div class="ttname"><a href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a></div><div class="ttdeci">#define meta(v)</div><div class="ttdoc">Return the pkt_meta entry for a given w_iov. </div><div class="ttdef"><b>Definition:</b> quic.h:180</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1259,7 +1257,7 @@ Variables</h2></td></tr>
 <div class="line"><a class="code" href="quic_8h.html#a1a737158b6f126742d911591ded5ad78">        ASAN_POISON_MEMORY_REGION</a>(&amp;<a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(v), <span class="keyword">sizeof</span>(<a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(v)));                  \</div>
 <div class="line">        w_free_iov(v);                                                         \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="quic_8h_html_a01ed57991bea53afa1ece4452d16b568"><div class="ttname"><a href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a></div><div class="ttdeci">#define meta(v)</div><div class="ttdoc">Return the pkt_meta entry for a given w_iov. </div><div class="ttdef"><b>Definition:</b> quic.h:178</div></div>
+<div class="ttc" id="quic_8h_html_a01ed57991bea53afa1ece4452d16b568"><div class="ttname"><a href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a></div><div class="ttdeci">#define meta(v)</div><div class="ttdoc">Return the pkt_meta entry for a given w_iov. </div><div class="ttdef"><b>Definition:</b> quic.h:180</div></div>
 <div class="ttc" id="quic_8h_html_a1a737158b6f126742d911591ded5ad78"><div class="ttname"><a href="quic_8h.html#a1a737158b6f126742d911591ded5ad78">ASAN_POISON_MEMORY_REGION</a></div><div class="ttdeci">#define ASAN_POISON_MEMORY_REGION(x, y)</div><div class="ttdef"><b>Definition:</b> quic.h:44</div></div>
 <div class="ttc" id="quic_8h_html_aed433a65a751df6b54c091d8facbfb57"><div class="ttname"><a href="quic_8h.html#aed433a65a751df6b54c091d8facbfb57">pm_free</a></div><div class="ttdeci">void pm_free(struct pkt_meta *const m)</div><div class="ttdef"><b>Definition:</b> quic.c:123</div></div>
 </div><!-- fragment -->
@@ -1328,31 +1326,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a569c2a3e25a7f610ecaf23dee76131c5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define stream_data_len</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">v</td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(v).stream_data_end - <a class="el" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(v).stream_data_start)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Return the length of the stream data in a given w_iov. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">v</td><td>Pointer to a w_iov.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Length of stream data. </dd></dl>
 
 </div>
 </div>
@@ -1836,7 +1809,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 25 2018 07:10:55 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 15:18:05 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
