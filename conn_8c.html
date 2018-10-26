@@ -209,7 +209,7 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a5618a89ddad38bdb55093279d8d3fbc5"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8c.html#a5618a89ddad38bdb55093279d8d3fbc5">conn_state_str</a> [] = {<a class="el" href="conn_8h.html#ac613aa6cd184e9b2bab8496502275125a5ee5fd642a3c3e4282eab05f06c191fa">CONN_STATES</a>}</td></tr>
 <tr class="separator:a5618a89ddad38bdb55093279d8d3fbc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad69eef6944d04f3ab345f5a5edb8fb6c"><td class="memItemLeft" align="right" valign="top">struct q_conn_sl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8c.html#ad69eef6944d04f3ab345f5a5edb8fb6c">c_ready</a></td></tr>
+<tr class="memitem:ad69eef6944d04f3ab345f5a5edb8fb6c"><td class="memItemLeft" align="right" valign="top">struct q_conn_sl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8c.html#ad69eef6944d04f3ab345f5a5edb8fb6c">c_ready</a> = sl_head_initializer(c_ready)</td></tr>
 <tr class="separator:ad69eef6944d04f3ab345f5a5edb8fb6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5823545a2155e104ee70df35bf7c782e"><td class="memItemLeft" align="right" valign="top">struct conns_by_ipnp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8c.html#a5823545a2155e104ee70df35bf7c782e">conns_by_ipnp</a> = splay_initializer(&amp;conns_by_ipnp)</td></tr>
 <tr class="separator:a5823545a2155e104ee70df35bf7c782e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1626,7 +1626,7 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct q_conn_sl c_ready</td>
+          <td class="memname">struct q_conn_sl c_ready = sl_head_initializer(c_ready)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1684,7 +1684,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 26 2018 12:47:48 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 26 2018 13:48:50 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
