@@ -18,6 +18,7 @@ var searchData=
   ['max_5fcid_5fseq_5fout',['max_cid_seq_out',['../structq__conn.html#a9e483983b67d3b6dc0e5fb1e19dea752',1,'q_conn']]],
   ['max_5fdata',['max_data',['../structtransport__params.html#a5719da04011349b3cdde407995caff03',1,'transport_params::max_data()'],['../structpkt__meta.html#a058300b8f5c60cdde8000077df854e7e',1,'pkt_meta::max_data()']]],
   ['max_5fearly_5fdata',['max_early_data',['../structtls.html#a89a93e1e56c851332bdecddbb6a72a4b',1,'tls']]],
+  ['max_5fframe_5flen',['max_frame_len',['../frame_8c.html#af12f0dbd9c7d385b94e1041b53c31b2d',1,'max_frame_len(const uint8_t type):&#160;frame.c'],['../frame_8h.html#af12f0dbd9c7d385b94e1041b53c31b2d',1,'max_frame_len(const uint8_t type):&#160;frame.c']]],
   ['max_5fhash_5flen',['MAX_HASH_LEN',['../tls_8h.html#a7eb040d42850ef7fdc3bfd09469a683e',1,'tls.h']]],
   ['max_5fpkt',['max_pkt',['../structtransport__params.html#adad0e6013875e9367892590c8b1c5d78',1,'transport_params']]],
   ['max_5fpkt_5flen',['MAX_PKT_LEN',['../pkt_8h.html#aa2cbdec5743bbebc99afa6729c5b98f1',1,'pkt.h']]],

@@ -45,7 +45,7 @@
 <area shape="rect" id="node38" href="$tls_8c.html#aff7c4b2f9e78c2d678898dc58bc68e57" title="setup_initial_encryption" alt="" coords="873,384,1031,411"/>
 <area shape="rect" id="node42" href="$stream_8c.html#a878cdd4d69b352f501841456e8a43972" title="do_stream_id_fc" alt="" coords="425,1284,543,1311"/>
 <area shape="rect" id="node45" href="$stream_8h.html#af3bef0cb9d669dca78f301f6ae50a19e" title="strm_epoch" alt="" coords="728,1549,819,1576"/>
-<area shape="rect" id="node46" href="$quant_8h.html#a76cce060063f44b767d7dc9b2265353c" title="q_alloc" alt="" coords="742,1600,805,1627"/>
+<area shape="rect" id="node46" href="$quic_8c.html#ac41c7049b04a2b1153d9f591282162c5" title="q_alloc_off" alt="" coords="731,1600,816,1627"/>
 <area shape="rect" id="node49" href="$quant_8h.html#a4a7935a14e509d989eda300f16daf086" title="q_free" alt="" coords="300,1727,359,1753"/>
 <area shape="rect" id="node50" href="$stream_8c.html#ad084a65676d6e76fe72fa8e23bd1391d" title="reset_pm" alt="" coords="291,1676,367,1703"/>
 </map>

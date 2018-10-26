@@ -153,9 +153,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a1f8792ee4a5316407d254ad349fd362d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a1f8792ee4a5316407d254ad349fd362d">pm_idx</a>(m)&#160;&#160;&#160;(uint32_t)((m)-<a class="el" href="quic_8h.html#a0ea1870a8b2233033ea3d196c8206ac0">pm</a>)</td></tr>
 <tr class="memdesc:a1f8792ee4a5316407d254ad349fd362d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the w_iov index of a given <a class="el" href="structpkt__meta.html" title="Packet meta-data information associated with w_iov buffers. ">pkt_meta</a>.  <a href="#a1f8792ee4a5316407d254ad349fd362d">More...</a><br/></td></tr>
 <tr class="separator:a1f8792ee4a5316407d254ad349fd362d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec6d16d07ed84a385791bc8a6e330ab9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#aec6d16d07ed84a385791bc8a6e330ab9">Q_OFFSET</a>&#160;&#160;&#160;128</td></tr>
-<tr class="memdesc:aec6d16d07ed84a385791bc8a6e330ab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset of stream frame payload data in w_iov buffers.  <a href="#aec6d16d07ed84a385791bc8a6e330ab9">More...</a><br/></td></tr>
-<tr class="separator:aec6d16d07ed84a385791bc8a6e330ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27fe3e56552d7dd760e57be30de0d493"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a27fe3e56552d7dd760e57be30de0d493">Q_OFFSET_ESTB</a>&#160;&#160;&#160;31</td></tr>
+<tr class="memdesc:a27fe3e56552d7dd760e57be30de0d493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offsets of stream frame payload data we TX.  <a href="#a27fe3e56552d7dd760e57be30de0d493">More...</a><br/></td></tr>
+<tr class="separator:a27fe3e56552d7dd760e57be30de0d493"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa876ff5e6506d8046bcd6340f4e97de1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#aa876ff5e6506d8046bcd6340f4e97de1">PATH_CHLG_LIMIT</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:aa876ff5e6506d8046bcd6340f4e97de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49e4c470b958fb2a5b79187292698c94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a49e4c470b958fb2a5b79187292698c94">CLNT_SCID_LEN</a>&#160;&#160;&#160;4</td></tr>
@@ -286,6 +286,8 @@ Functions</h2></td></tr>
 <tr class="separator:a6bb0d7cd1774df0297a9540111f46308"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed433a65a751df6b54c091d8facbfb57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#aed433a65a751df6b54c091d8facbfb57">pm_free</a> (struct <a class="el" href="structpkt__meta.html">pkt_meta</a> *const m)</td></tr>
 <tr class="separator:aed433a65a751df6b54c091d8facbfb57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41c7049b04a2b1153d9f591282162c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#ac41c7049b04a2b1153d9f591282162c5">q_alloc_off</a> (struct w_engine *const w, struct w_iov_sq *const q, const uint32_t len, const uint16_t off)</td></tr>
+<tr class="separator:ac41c7049b04a2b1153d9f591282162c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97af5931f5c6730cd32f1d733b6101d0"><td class="memItemLeft" align="right" valign="top">static struct w_iov *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a97af5931f5c6730cd32f1d733b6101d0">w_iov_dup</a> (const struct w_iov *const v)</td></tr>
 <tr class="separator:a97af5931f5c6730cd32f1d733b6101d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e51fb8c9ebc5178b5131826ca26fb90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8h.html#a4e51fb8c9ebc5178b5131826ca26fb90">write_to_corpus</a> (const int dir, const void *const data, const size_t len)</td></tr>
@@ -963,7 +965,7 @@ Variables</h2></td></tr>
 <div class="line"><a class="code" href="quic_8h.html#a593420bbec69beea4076ea6603019ea0">        api_func</a> == 0;                                                         \</div>
 <div class="line">    })</div>
 <div class="ttc" id="quic_8h_html_a593420bbec69beea4076ea6603019ea0"><div class="ttname"><a href="quic_8h.html#a593420bbec69beea4076ea6603019ea0">api_func</a></div><div class="ttdeci">func_ptr api_func</div><div class="ttdef"><b>Definition:</b> quic.c:86</div></div>
-<div class="ttc" id="quic_8h_html_a733907018d667311b3e174666c6d2f0f"><div class="ttname"><a href="quic_8h.html#a733907018d667311b3e174666c6d2f0f">EV_VERIFY</a></div><div class="ttdeci">#define EV_VERIFY(l)</div><div class="ttdef"><b>Definition:</b> quic.h:328</div></div>
+<div class="ttc" id="quic_8h_html_a733907018d667311b3e174666c6d2f0f"><div class="ttname"><a href="quic_8h.html#a733907018d667311b3e174666c6d2f0f">EV_VERIFY</a></div><div class="ttdeci">#define EV_VERIFY(l)</div><div class="ttdef"><b>Definition:</b> quic.h:329</div></div>
 <div class="ttc" id="quic_8h_html_a855923b555731173d3509ecb645de0e0"><div class="ttname"><a href="quic_8h.html#a855923b555731173d3509ecb645de0e0">loop</a></div><div class="ttdeci">struct ev_loop * loop</div><div class="ttdef"><b>Definition:</b> quic.c:84</div></div>
 <div class="ttc" id="quic_8h_html_a91b81b7384533b284fa05acbc6b6787d"><div class="ttname"><a href="quic_8h.html#a91b81b7384533b284fa05acbc6b6787d">api_conn</a></div><div class="ttdeci">void * api_conn</div><div class="ttdef"><b>Definition:</b> quic.c:87</div></div>
 <div class="ttc" id="quic_8h_html_a51e2b7dfe290cfc0a139b3768427de79"><div class="ttname"><a href="quic_8h.html#a51e2b7dfe290cfc0a139b3768427de79">api_strm</a></div><div class="ttdeci">void * api_strm</div><div class="ttdef"><b>Definition:</b> quic.c:87</div></div>
@@ -1021,9 +1023,9 @@ Variables</h2></td></tr>
 <div class="line"><a class="code" href="quic_8h.html#a593420bbec69beea4076ea6603019ea0">        api_func</a> == 0;                                                         \</div>
 <div class="line">    })</div>
 <div class="ttc" id="quic_8h_html_a593420bbec69beea4076ea6603019ea0"><div class="ttname"><a href="quic_8h.html#a593420bbec69beea4076ea6603019ea0">api_func</a></div><div class="ttdeci">func_ptr api_func</div><div class="ttdef"><b>Definition:</b> quic.c:86</div></div>
-<div class="ttc" id="quic_8h_html_a733907018d667311b3e174666c6d2f0f"><div class="ttname"><a href="quic_8h.html#a733907018d667311b3e174666c6d2f0f">EV_VERIFY</a></div><div class="ttdeci">#define EV_VERIFY(l)</div><div class="ttdef"><b>Definition:</b> quic.h:328</div></div>
+<div class="ttc" id="quic_8h_html_a733907018d667311b3e174666c6d2f0f"><div class="ttname"><a href="quic_8h.html#a733907018d667311b3e174666c6d2f0f">EV_VERIFY</a></div><div class="ttdeci">#define EV_VERIFY(l)</div><div class="ttdef"><b>Definition:</b> quic.h:329</div></div>
 <div class="ttc" id="quic_8h_html_a855923b555731173d3509ecb645de0e0"><div class="ttname"><a href="quic_8h.html#a855923b555731173d3509ecb645de0e0">loop</a></div><div class="ttdeci">struct ev_loop * loop</div><div class="ttdef"><b>Definition:</b> quic.c:84</div></div>
-<div class="ttc" id="quic_8h_html_aaf4e8117a58ef7278393d801e5d78c46"><div class="ttname"><a href="quic_8h.html#aaf4e8117a58ef7278393d801e5d78c46">func_ptr</a></div><div class="ttdeci">void(* func_ptr)(void)</div><div class="ttdef"><b>Definition:</b> quic.h:322</div></div>
+<div class="ttc" id="quic_8h_html_aaf4e8117a58ef7278393d801e5d78c46"><div class="ttname"><a href="quic_8h.html#aaf4e8117a58ef7278393d801e5d78c46">func_ptr</a></div><div class="ttdeci">void(* func_ptr)(void)</div><div class="ttdef"><b>Definition:</b> quic.h:323</div></div>
 <div class="ttc" id="quic_8h_html_a91b81b7384533b284fa05acbc6b6787d"><div class="ttname"><a href="quic_8h.html#a91b81b7384533b284fa05acbc6b6787d">api_conn</a></div><div class="ttdeci">void * api_conn</div><div class="ttdef"><b>Definition:</b> quic.c:87</div></div>
 <div class="ttc" id="quic_8h_html_a51e2b7dfe290cfc0a139b3768427de79"><div class="ttname"><a href="quic_8h.html#a51e2b7dfe290cfc0a139b3768427de79">api_strm</a></div><div class="ttdeci">void * api_strm</div><div class="ttdef"><b>Definition:</b> quic.c:87</div></div>
 </div><!-- fragment -->
@@ -1263,17 +1265,17 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="aec6d16d07ed84a385791bc8a6e330ab9"></a>
+<a class="anchor" id="a27fe3e56552d7dd760e57be30de0d493"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define Q_OFFSET&#160;&#160;&#160;128</td>
+          <td class="memname">#define Q_OFFSET_ESTB&#160;&#160;&#160;31</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Offset of stream frame payload data in w_iov buffers. </p>
+<p>Offsets of stream frame payload data we TX. </p>
 
 </div>
 </div>
@@ -1572,6 +1574,44 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="ac41c7049b04a2b1153d9f591282162c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void q_alloc_off </td>
+          <td>(</td>
+          <td class="paramtype">struct w_engine *const&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct w_iov_sq *const&#160;</td>
+          <td class="paramname"><em>q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramname"><em>off</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="add58218ae6e5f0b1884990048cbe8e4b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1809,7 +1849,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 25 2018 18:19:09 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 26 2018 11:44:38 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

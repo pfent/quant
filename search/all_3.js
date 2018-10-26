@@ -26,6 +26,7 @@ var searchData=
   ['config_2eh',['config.h',['../config_8h.html',1,'']]],
   ['conn_2ec',['conn.c',['../conn_8c.html',1,'']]],
   ['conn_2eh',['conn.h',['../conn_8h.html',1,'']]],
+  ['conn_5fneeds_5fctrl',['conn_needs_ctrl',['../conn_8h.html#ab12c601471f4fcfae92c53fbca85b32e',1,'conn.h']]],
   ['conn_5fstate',['CONN_STATE',['../conn_8c.html#a36daba4f4585170e66aeb964bedfd0ab',1,'CONN_STATE():&#160;conn.c'],['../conn_8h.html#a36daba4f4585170e66aeb964bedfd0ab',1,'CONN_STATE():&#160;conn.h']]],
   ['conn_5fstate_5fstr',['conn_state_str',['../conn_8c.html#a5618a89ddad38bdb55093279d8d3fbc5',1,'conn_state_str():&#160;conn.c'],['../conn_8h.html#a5618a89ddad38bdb55093279d8d3fbc5',1,'conn_state_str():&#160;conn.c']]],
   ['conn_5fstate_5ft',['conn_state_t',['../conn_8h.html#ac613aa6cd184e9b2bab8496502275125',1,'conn.h']]],

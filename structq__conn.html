@@ -200,13 +200,13 @@ Data Fields</h2></td></tr>
 <tr class="separator:a797b92f861a2e732270e6cb328385d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e70a9eeab6de649daf5816e71d319ee"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a5e70a9eeab6de649daf5816e71d319ee">err_frm</a></td></tr>
 <tr class="separator:a5e70a9eeab6de649daf5816e71d319ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fa6b0b8f076c46d8a93582bdcd0541c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a5fa6b0b8f076c46d8a93582bdcd0541c">_unused</a></td></tr>
-<tr class="separator:a5fa6b0b8f076c46d8a93582bdcd0541c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b55e61765d87d7568a0127283c96471"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a4b55e61765d87d7568a0127283c96471">err_reason_len</a></td></tr>
+<tr class="separator:a4b55e61765d87d7568a0127283c96471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8be5c5cf029005be12f0fcd56d514e3"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#af8be5c5cf029005be12f0fcd56d514e3">err_reason</a></td></tr>
+<tr class="separator:af8be5c5cf029005be12f0fcd56d514e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f244414e35b3f452821cc6ceb2af485"><td class="memItemLeft" align="right" valign="top">struct w_engine *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a3f244414e35b3f452821cc6ceb2af485">w</a></td></tr>
 <tr class="memdesc:a3f244414e35b3f452821cc6ceb2af485"><td class="mdescLeft">&#160;</td><td class="mdescRight">Underlying warpcore engine.  <a href="#a3f244414e35b3f452821cc6ceb2af485">More...</a><br/></td></tr>
 <tr class="separator:a3f244414e35b3f452821cc6ceb2af485"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8be5c5cf029005be12f0fcd56d514e3"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#af8be5c5cf029005be12f0fcd56d514e3">err_reason</a></td></tr>
-<tr class="separator:af8be5c5cf029005be12f0fcd56d514e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93c429035bedd3be2999d74551175f5d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a93c429035bedd3be2999d74551175f5d">vers</a></td></tr>
 <tr class="memdesc:a93c429035bedd3be2999d74551175f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">QUIC version in use for this connection.  <a href="#a93c429035bedd3be2999d74551175f5d">More...</a><br/></td></tr>
 <tr class="separator:a93c429035bedd3be2999d74551175f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -390,18 +390,6 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5fa6b0b8f076c46d8a93582bdcd0541c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t q_conn::_unused</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="abe8d2160c0cb6b750a5cc904acd01caa"></a>
 <div class="memitem">
 <div class="memproto">
@@ -512,6 +500,18 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">char* q_conn::err_reason</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4b55e61765d87d7568a0127283c96471"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t q_conn::err_reason_len</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1167,7 +1167,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 25 2018 18:19:09 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 26 2018 11:44:38 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

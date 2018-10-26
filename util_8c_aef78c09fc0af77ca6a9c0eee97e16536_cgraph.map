@@ -1,9 +1,10 @@
 <map id="q_write_str" name="q_write_str">
-<area shape="rect" id="node2" href="$quant_8h.html#a76cce060063f44b767d7dc9b2265353c" title="q_alloc" alt="" coords="142,5,205,32"/>
-<area shape="rect" id="node3" href="$quant_8h.html#a5c710c2093cc759f8bb581e25b52ceda" title="q_write" alt="" coords="141,56,205,83"/>
-<area shape="rect" id="node8" href="$quant_8h.html#a4a7935a14e509d989eda300f16daf086" title="q_free" alt="" coords="144,107,203,133"/>
-<area shape="rect" id="node4" href="$conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="488,31,571,57"/>
-<area shape="rect" id="node5" href="$stream_8c.html#a379b35c4c21ee31284e14338963fdd8f" title="concat_out" alt="" coords="486,81,573,108"/>
-<area shape="rect" id="node6" href="$quic_8c.html#a90bd1e5780c2e0459a65c6c502490d80" title="do_write" alt="" coords="254,56,325,83"/>
-<area shape="rect" id="node7" href="$quic_8c.html#a5c710c2093cc759f8bb581e25b52ceda" title="q_write" alt="" coords="373,56,437,83"/>
+<area shape="rect" id="node2" href="$quant_8h.html#a76cce060063f44b767d7dc9b2265353c" title="q_alloc" alt="" coords="142,19,205,45"/>
+<area shape="rect" id="node4" href="$quant_8h.html#a5c710c2093cc759f8bb581e25b52ceda" title="q_write" alt="" coords="141,81,205,108"/>
+<area shape="rect" id="node9" href="$quant_8h.html#a4a7935a14e509d989eda300f16daf086" title="q_free" alt="" coords="144,132,203,159"/>
+<area shape="rect" id="node3" href="$quic_8c.html#ac41c7049b04a2b1153d9f591282162c5" title="q_alloc_off" alt="" coords="253,5,339,32"/>
+<area shape="rect" id="node5" href="$conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="501,81,584,108"/>
+<area shape="rect" id="node6" href="$stream_8c.html#a379b35c4c21ee31284e14338963fdd8f" title="concat_out" alt="" coords="499,132,586,159"/>
+<area shape="rect" id="node7" href="$quic_8c.html#a90bd1e5780c2e0459a65c6c502490d80" title="do_write" alt="" coords="261,107,331,133"/>
+<area shape="rect" id="node8" href="$quic_8c.html#a5c710c2093cc759f8bb581e25b52ceda" title="q_write" alt="" coords="387,107,451,133"/>
 </map>

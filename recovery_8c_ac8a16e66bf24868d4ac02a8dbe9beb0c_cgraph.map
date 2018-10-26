@@ -44,7 +44,7 @@
 <area shape="rect" id="node37" href="$conn_8c.html#a02d7b0c5a072e1b673358b52ac71f160" title="err_close" alt="" coords="653,917,728,944"/>
 <area shape="rect" id="node41" href="$conn_8h.html#a90b995546c499b521dcb4bf6cc7e39f1" title="epoch_in" alt="" coords="488,563,563,589"/>
 <area shape="rect" id="node42" href="$stream_8h.html#af3bef0cb9d669dca78f301f6ae50a19e" title="strm_epoch" alt="" coords="480,613,571,640"/>
-<area shape="rect" id="node43" href="$quant_8h.html#a76cce060063f44b767d7dc9b2265353c" title="q_alloc" alt="" coords="494,664,557,691"/>
+<area shape="rect" id="node43" href="$quic_8c.html#ac41c7049b04a2b1153d9f591282162c5" title="q_alloc_off" alt="" coords="483,664,568,691"/>
 <area shape="rect" id="node45" href="$quant_8h.html#a4a7935a14e509d989eda300f16daf086" title="q_free" alt="" coords="496,411,555,437"/>
 <area shape="rect" id="node46" href="$stream_8c.html#ad084a65676d6e76fe72fa8e23bd1391d" title="reset_pm" alt="" coords="487,461,563,488"/>
 <area shape="rect" id="node50" href="$diet_8c.html#a1ff8134cd224b1f148462bb051c75f1d" title="Remove integer n from the intervals stored in diet tree t. " alt="" coords="333,56,427,83"/>
