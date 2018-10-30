@@ -1,3 +1,5 @@
 <map id="needs_ack" name="needs_ack">
-<area shape="rect" id="node2" href="$diet_8h.html#aad21e3b897b17d0c86fce4a174e80ab0" title="diet_empty" alt="" coords="139,5,226,32"/>
+<area shape="rect" id="node2" href="$diet_8h.html#aad21e3b897b17d0c86fce4a174e80ab0" title="diet_empty" alt="" coords="177,5,263,32"/>
+<area shape="rect" id="node3" href="$quic_8h.html#ae64eb493276abdc60cd97ea2f6d96f78" title="is_ack_or_padding_only" alt="" coords="139,56,301,83"/>
+<area shape="rect" id="node4" href="$quic_8h.html#a05b0a63c2fe234f56513430fc2114eba" title="is_ack_only" alt="" coords="349,56,440,83"/>
 </map>
