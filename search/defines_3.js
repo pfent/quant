@@ -1,14 +1,13 @@
 var searchData=
 [
-  ['dec',['dec',['../marshall_8h.html#a17979630a63703570a316e70d4e9cb30',1,'marshall.h']]],
-  ['dec_5fbuf',['dec_buf',['../marshall_8h.html#a30296cce5b6c5d9acf70a6d8b9ef809b',1,'marshall.h']]],
-  ['dec_5fchk',['dec_chk',['../frame_8c.html#aeaf13265aed6d3d8eade29a6b8706d7f',1,'dec_chk():&#160;frame.c'],['../pkt_8c.html#aeba19471d801e51206daf3eab7761a85',1,'dec_chk():&#160;pkt.c']]],
-  ['dec_5fchk_5fbuf',['dec_chk_buf',['../frame_8c.html#aa1ea18bfd9454db759bd542d9745e01b',1,'dec_chk_buf():&#160;frame.c'],['../pkt_8c.html#a48a7562199dd42cba824e4dd4adf49d5',1,'dec_chk_buf():&#160;pkt.c']]],
-  ['dec_5fpnr',['dec_pnr',['../marshall_8h.html#ab8f040c726187c3dec00ac58409b60d9',1,'marshall.h']]],
-  ['dec_5ftp',['dec_tp',['../tls_8c.html#a2c6f91ee763502bebb961129c1d12c00',1,'tls.c']]],
-  ['diet_5fcnt',['diet_cnt',['../diet_8h.html#a088e1a7d256d392c025e192aec45a672',1,'diet.h']]],
-  ['diet_5finit',['diet_init',['../diet_8h.html#a4e46b54c509960f5a1f933eecf367dc3',1,'diet.h']]],
-  ['diet_5finitializer',['diet_initializer',['../diet_8h.html#ae999c3b3b505acf8a14facf9d480066f',1,'diet.h']]],
-  ['do_5fdec',['do_dec',['../marshall_8c.html#a7565114bf35a68d94836f0ab2f771115',1,'marshall.c']]],
-  ['do_5fenc',['do_enc',['../marshall_8c.html#a371bfb01d2f478355c384804d1db42bb',1,'marshall.c']]]
+  ['c2s',['c2s',['../pkt_8c.html#a7607f623b4a5d2b165dd1105636242d9',1,'pkt.c']]],
+  ['cid2str',['cid2str',['../conn_8h.html#ade2abf64e3b30fc0b5e1b95735ab6677',1,'conn.h']]],
+  ['cipher_5fsuite',['CIPHER_SUITE',['../tls_8c.html#a67bb64934a4420a93ed8859153c5c186',1,'tls.c']]],
+  ['clnt_5fscid_5flen',['CLNT_SCID_LEN',['../quic_8h.html#a49e4c470b958fb2a5b79187292698c94',1,'quic.h']]],
+  ['cnt_5fargs',['CNT_ARGS',['../quic_8h.html#a37dd5b73b6d28da2b1e4e6289cc2a128',1,'quic.h']]],
+  ['conn_5fstate',['CONN_STATE',['../conn_8c.html#a36daba4f4585170e66aeb964bedfd0ab',1,'CONN_STATE():&#160;conn.c'],['../conn_8h.html#a36daba4f4585170e66aeb964bedfd0ab',1,'CONN_STATE():&#160;conn.h']]],
+  ['conn_5fstates',['CONN_STATES',['../conn_8h.html#a3f567945c3f8d5d518f5463ec30776d0',1,'conn.h']]],
+  ['conn_5fto_5fstate',['conn_to_state',['../conn_8h.html#a50c1772c30f4ee9e48843b07d662835d',1,'conn.h']]],
+  ['cookie_5flen',['COOKIE_LEN',['../tls_8c.html#a61ef017ccbfcbd775738c77bb86b5453',1,'tls.c']]],
+  ['cyn',['CYN',['../quic_8h.html#adc708fa688f5d78db361f66c36f0f807',1,'quic.h']]]
 ];

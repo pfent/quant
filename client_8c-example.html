@@ -399,8 +399,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">        <span class="keywordflow">if</span> (slash &amp;&amp; *(slash + 1) == 0)</div>
 <div class="line">            <span class="comment">// this URL ends in a slash, so strip that to name the file</span></div>
 <div class="line">            *slash = 0;</div>
-<div class="line">        <span class="keyword">const</span> <span class="keywordtype">int</span> fd = open(basename(se-&gt;url), O_CREAT | O_WRONLY | O_CLOEXEC,</div>
-<div class="line">                            S_IRUSR | S_IWUSR | S_IRGRP);</div>
+<div class="line">        <span class="keyword">const</span> <span class="keywordtype">int</span> fd =</div>
+<div class="line">            open(*basename(se-&gt;url) == 0 ? <span class="stringliteral">&quot;index.html&quot;</span> : basename(se-&gt;url),</div>
+<div class="line">                 O_CREAT | O_WRONLY | O_CLOEXEC, S_IRUSR | S_IWUSR | S_IRGRP);</div>
 <div class="line">        ensure(fd != -1, <span class="stringliteral">&quot;cannot open %s&quot;</span>, basename(se-&gt;url));</div>
 <div class="line"></div>
 <div class="line">        <span class="comment">// save the object, and print its first three packets to stdout</span></div>
@@ -433,7 +434,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 26 2018 13:48:50 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 30 2018 13:15:39 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

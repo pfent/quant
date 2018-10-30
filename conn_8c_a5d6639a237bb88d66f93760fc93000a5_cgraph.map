@@ -10,7 +10,7 @@
 <area shape="rect" id="node47" href="$conn_8c.html#a87cb12b0afa8cdb9f2a41ce602d8ff96" title="tx_ack" alt="" coords="308,209,369,236"/>
 <area shape="rect" id="node6" href="$stream_8h.html#af3bef0cb9d669dca78f301f6ae50a19e" title="strm_epoch" alt="" coords="799,488,889,514"/>
 <area shape="rect" id="node7" href="$conn_8c.html#a02d7b0c5a072e1b673358b52ac71f160" title="err_close" alt="" coords="637,1400,712,1426"/>
-<area shape="rect" id="node15" href="$quic_8c.html#ac41c7049b04a2b1153d9f591282162c5" title="q_alloc_off" alt="" coords="456,488,541,514"/>
+<area shape="rect" id="node15" href="$quic_8c.html#a2ee75c38a1c756036392a6e5b6d1e93a" title="alloc_off" alt="" coords="463,488,534,514"/>
 <area shape="rect" id="node16" href="$stream_8c.html#a379b35c4c21ee31284e14338963fdd8f" title="concat_out" alt="" coords="455,842,542,869"/>
 <area shape="rect" id="node8" href="$conn_8c.html#afd38904c68cab87424e6aa8db723fd38" title="enter_closing" alt="" coords="795,1400,893,1426"/>
 <area shape="rect" id="node9" href="$conn_8h.html#a526357c19864e7579573160573a55c33" title="pn_for_epoch" alt="" coords="945,716,1045,742"/>

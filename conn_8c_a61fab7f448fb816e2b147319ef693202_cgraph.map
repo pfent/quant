@@ -27,7 +27,7 @@
 <area shape="rect" id="node21" href="$conn_8h.html#a90b995546c499b521dcb4bf6cc7e39f1" title="epoch_in" alt="" coords="1048,1171,1123,1197"/>
 <area shape="rect" id="node22" href="$conn_8c.html#a87cb12b0afa8cdb9f2a41ce602d8ff96" title="tx_ack" alt="" coords="725,867,787,893"/>
 <area shape="rect" id="node14" href="$quant_8h.html#a4a7935a14e509d989eda300f16daf086" title="q_free" alt="" coords="912,1120,971,1147"/>
-<area shape="rect" id="node24" href="$quic_8h.html#a38482b6755c2fd0dd90838bb0924224d" title="is_ack_only" alt="" coords="711,107,801,133"/>
+<area shape="rect" id="node24" href="$quic_8h.html#a05b0a63c2fe234f56513430fc2114eba" title="is_ack_only" alt="" coords="711,107,801,133"/>
 <area shape="rect" id="node25" href="$conn_8h.html#a07cb3f3bb2c38f820f0a7fd74de25d6d" title="is_inf" alt="" coords="729,157,783,184"/>
 <area shape="rect" id="node26" href="$recovery_8c.html#a1cddc0f895e4feafcaf6f0ad86ad2631" title="in_recovery" alt="" coords="711,5,801,32"/>
 <area shape="rect" id="node29" href="$stream_8c.html#ad084a65676d6e76fe72fa8e23bd1391d" title="reset_pm" alt="" coords="337,1475,413,1501"/>
@@ -46,6 +46,6 @@
 <area shape="rect" id="node41" href="$conn_8c.html#a1ae0706a577e85efbcfacf517a329dbe" title="vers_supported" alt="" coords="701,1652,811,1679"/>
 <area shape="rect" id="node46" href="$tls_8c.html#aff7c4b2f9e78c2d678898dc58bc68e57" title="setup_initial_encryption" alt="" coords="470,1753,629,1780"/>
 <area shape="rect" id="node47" href="$tls_8c.html#ab26c763c76c9b874d651bdba836fc13f" title="setup_initial_key" alt="" coords="697,1753,815,1780"/>
-<area shape="rect" id="node49" href="$quic_8c.html#ac41c7049b04a2b1153d9f591282162c5" title="q_alloc_off" alt="" coords="507,1171,592,1197"/>
+<area shape="rect" id="node49" href="$quic_8c.html#a2ee75c38a1c756036392a6e5b6d1e93a" title="alloc_off" alt="" coords="514,1171,585,1197"/>
 <area shape="rect" id="node50" href="$stream_8c.html#a379b35c4c21ee31284e14338963fdd8f" title="concat_out" alt="" coords="506,1069,593,1096"/>
 </map>

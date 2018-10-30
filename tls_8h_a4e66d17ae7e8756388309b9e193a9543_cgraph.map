@@ -5,7 +5,7 @@
 <area shape="rect" id="node5" href="$conn_8c.html#a02d7b0c5a072e1b673358b52ac71f160" title="err_close" alt="" coords="219,163,293,189"/>
 <area shape="rect" id="node16" href="$stream_8c.html#a7308501df4d06bbfd14665ae88caae02" title="get_stream" alt="" coords="213,223,299,249"/>
 <area shape="rect" id="node17" href="$stream_8h.html#a012bc210254cd3269ef892fcbd91e146" title="crpt_strm_id" alt="" coords="209,277,303,304"/>
-<area shape="rect" id="node18" href="$quic_8c.html#ac41c7049b04a2b1153d9f591282162c5" title="q_alloc_off" alt="" coords="213,331,299,357"/>
+<area shape="rect" id="node18" href="$quic_8c.html#a2ee75c38a1c756036392a6e5b6d1e93a" title="alloc_off" alt="" coords="221,331,291,357"/>
 <area shape="rect" id="node19" href="$stream_8c.html#a379b35c4c21ee31284e14338963fdd8f" title="concat_out" alt="" coords="213,381,299,408"/>
 <area shape="rect" id="node6" href="$conn_8c.html#afd38904c68cab87424e6aa8db723fd38" title="enter_closing" alt="" coords="352,163,451,189"/>
 <area shape="rect" id="node7" href="$conn_8h.html#a526357c19864e7579573160573a55c33" title="pn_for_epoch" alt="" coords="499,87,599,113"/>

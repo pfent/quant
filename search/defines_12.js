@@ -1,18 +1,11 @@
 var searchData=
 [
-  ['tls_5fext_5ftype_5ftransport_5fparameters',['TLS_EXT_TYPE_TRANSPORT_PARAMETERS',['../tls_8c.html#aec764d0bb291799a81d2c410cebfbcb2',1,'tls.c']]],
-  ['tp_5fack_5fdelay_5fexponent',['TP_ACK_DELAY_EXPONENT',['../tls_8c.html#a94fa0822fdb2bd0eaf182f09fd110628',1,'tls.c']]],
-  ['tp_5fdisable_5fmigration',['TP_DISABLE_MIGRATION',['../tls_8c.html#aa142b63e4e39660b6a91f7af8037f86f',1,'tls.c']]],
-  ['tp_5fidle_5ftimeout',['TP_IDLE_TIMEOUT',['../tls_8c.html#a460efdb80a976567deff5fb2b164c28f',1,'tls.c']]],
-  ['tp_5finitial_5fmax_5fbidi_5fstreams',['TP_INITIAL_MAX_BIDI_STREAMS',['../tls_8c.html#a9209c6374b3ce3f514ed0d25f6b43f46',1,'tls.c']]],
-  ['tp_5finitial_5fmax_5fdata',['TP_INITIAL_MAX_DATA',['../tls_8c.html#a4ad4acdf18a719f36a2d929c549814d0',1,'tls.c']]],
-  ['tp_5finitial_5fmax_5fstream_5fdata_5fbidi_5flocal',['TP_INITIAL_MAX_STREAM_DATA_BIDI_LOCAL',['../tls_8c.html#a3bb56999c75be0bc6ac2dfcec2a67241',1,'tls.c']]],
-  ['tp_5finitial_5fmax_5fstream_5fdata_5fbidi_5fremote',['TP_INITIAL_MAX_STREAM_DATA_BIDI_REMOTE',['../tls_8c.html#a61ac99bdc7aa7de88aab814f79a47d24',1,'tls.c']]],
-  ['tp_5finitial_5fmax_5fstream_5fdata_5funi',['TP_INITIAL_MAX_STREAM_DATA_UNI',['../tls_8c.html#a9f23e815d1e6b788070979e4fe4a014d',1,'tls.c']]],
-  ['tp_5finitial_5fmax_5funi_5fstreams',['TP_INITIAL_MAX_UNI_STREAMS',['../tls_8c.html#a6891665fc98fc5376e25ef80945da486',1,'tls.c']]],
-  ['tp_5fmax',['TP_MAX',['../tls_8c.html#aea2ae950efdd5b55322d582604aa9e3d',1,'tls.c']]],
-  ['tp_5fmax_5fack_5fdelay',['TP_MAX_ACK_DELAY',['../tls_8c.html#a74cc4cc7f41493267f3b2ef484d5ebb6',1,'tls.c']]],
-  ['tp_5fmax_5fpacket_5fsize',['TP_MAX_PACKET_SIZE',['../tls_8c.html#a24a5013c9420b7c5054cb049b745e19c',1,'tls.c']]],
-  ['tp_5foriginal_5fconnection_5fid',['TP_ORIGINAL_CONNECTION_ID',['../tls_8c.html#a3be307480a32159bdbc1b1cdc79798df',1,'tls.c']]],
-  ['tp_5fstateless_5freset_5ftoken',['TP_STATELESS_RESET_TOKEN',['../tls_8c.html#a0893dd89c8c8365ae3c3b053135d15fb',1,'tls.c']]]
+  ['serv_5fscid_5flen',['SERV_SCID_LEN',['../quic_8h.html#af41ac5b263cca13ee08b287a015840bb',1,'quic.h']]],
+  ['srt_5flen',['SRT_LEN',['../quic_8h.html#aaa19e76a63eec1141d442d58c20042ed',1,'quic.h']]],
+  ['st_5fquicly_5fcipher_5fcontext_5ft',['st_quicly_cipher_context_t',['../tls_8c.html#aa936412f8959248ee6373acb4bbacafc',1,'tls.c']]],
+  ['strm_5ffl_5fdir_5funi',['STRM_FL_DIR_UNI',['../stream_8h.html#a849acf9c1a6ba35f9ef98ae84dd7c900',1,'stream.h']]],
+  ['strm_5ffl_5fini_5fsrv',['STRM_FL_INI_SRV',['../stream_8h.html#afbac3df9b63be97036ade595dab020f2',1,'stream.h']]],
+  ['strm_5fstate',['STRM_STATE',['../stream_8c.html#aa8676dc8e5bf2002815718fb5d017e47',1,'STRM_STATE():&#160;stream.c'],['../stream_8h.html#aa8676dc8e5bf2002815718fb5d017e47',1,'STRM_STATE():&#160;stream.h']]],
+  ['strm_5fstates',['STRM_STATES',['../stream_8h.html#a29d0d69805b312f9f5a7728dcd5f0e3d',1,'stream.h']]],
+  ['strm_5fto_5fstate',['strm_to_state',['../stream_8h.html#aecb5a067c7adc620178c9897b47bda8d',1,'stream.h']]]
 ];

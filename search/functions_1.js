@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bit_5fdecl',['bit_decl',['../structpkt__meta.html#ae2f74ecc3ab19bb58694d85fc7f3bcb7',1,'pkt_meta']]]
+  ['bitset_5fdefine',['bitset_define',['../bitset_8h.html#ac75860f7890edeb0acfcf77c63f486ab',1,'bitset_define(bitset, 1):&#160;bitset.h'],['../quic_8h.html#a63c28a0fb9cad78a8fab32b969076156',1,'bitset_define(frames, NUM_FRAM_TYPES):&#160;quic.h']]]
 ];

@@ -1,6 +1,8 @@
 var searchData=
 [
   ['odcid',['odcid',['../structq__conn.html#a5c46a8b6d3b5393f8812868774bf1ec3',1,'q_conn']]],
+  ['offset_5festb',['OFFSET_ESTB',['../quic_8h.html#afc6ffc33fe2d9609c18a0433d8ad8d78',1,'quic.h']]],
+  ['offset_5fhshk',['OFFSET_HSHK',['../tls_8c.html#a348766fc1e11de7c8ae8c3230e801429',1,'tls.c']]],
   ['ok_5fvers',['ok_vers',['../quic_8c.html#a855179145371edc9111433f621044ab4',1,'ok_vers():&#160;quic.c'],['../quic_8h.html#a855179145371edc9111433f621044ab4',1,'ok_vers():&#160;quic.c']]],
   ['ok_5fvers_5flen',['ok_vers_len',['../quic_8c.html#ae9a33cf3a5f649662f26bb9eae92bf7b',1,'ok_vers_len():&#160;quic.c'],['../quic_8h.html#ae9a33cf3a5f649662f26bb9eae92bf7b',1,'ok_vers_len():&#160;quic.c']]],
   ['on_5fack_5freceived_5f1',['on_ack_received_1',['../recovery_8c.html#a968810548afcf006e9e6e5515511db31',1,'on_ack_received_1(struct q_conn *const c, struct pn_space *const pn, struct w_iov *const lg_ack, const uint64_t ack_del):&#160;recovery.c'],['../recovery_8h.html#a968810548afcf006e9e6e5515511db31',1,'on_ack_received_1(struct q_conn *const c, struct pn_space *const pn, struct w_iov *const lg_ack, const uint64_t ack_del):&#160;recovery.c']]],
