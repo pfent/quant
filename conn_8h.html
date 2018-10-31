@@ -147,6 +147,8 @@ Macros</h2></td></tr>
 <tr class="separator:a3f567945c3f8d5d518f5463ec30776d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c4dda142699d1cf6e5434ab2ca6c406"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a4c4dda142699d1cf6e5434ab2ca6c406">MAX_TOK_LEN</a>&#160;&#160;&#160;512</td></tr>
 <tr class="separator:a4c4dda142699d1cf6e5434ab2ca6c406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31898c1d24d16b8da39d1f5c0500345e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a31898c1d24d16b8da39d1f5c0500345e">MAX_ERR_REASON_LEN</a>&#160;&#160;&#160;128</td></tr>
+<tr class="separator:a31898c1d24d16b8da39d1f5c0500345e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade2abf64e3b30fc0b5e1b95735ab6677"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#ade2abf64e3b30fc0b5e1b95735ab6677">cid2str</a>(i)</td></tr>
 <tr class="separator:ade2abf64e3b30fc0b5e1b95735ab6677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50c1772c30f4ee9e48843b07d662835d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a50c1772c30f4ee9e48843b07d662835d">conn_to_state</a>(c, s)</td></tr>
@@ -339,11 +341,23 @@ Variables</h2></td></tr>
 <div class="line">        else                                                                   \</div>
 <div class="line">            warn(ERR, <span class="stringliteral">&quot;useless transition %u %u!&quot;</span>, (c)-&gt;state, (s));           \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="conn_8h_html_a5618a89ddad38bdb55093279d8d3fbc5"><div class="ttname"><a href="conn_8h.html#a5618a89ddad38bdb55093279d8d3fbc5">conn_state_str</a></div><div class="ttdeci">const char *const conn_state_str[]</div><div class="ttdef"><b>Definition:</b> conn.c:57</div></div>
-<div class="ttc" id="conn_8h_html_ade2abf64e3b30fc0b5e1b95735ab6677"><div class="ttname"><a href="conn_8h.html#ade2abf64e3b30fc0b5e1b95735ab6677">cid2str</a></div><div class="ttdeci">#define cid2str(i)</div><div class="ttdef"><b>Definition:</b> conn.h:330</div></div>
+<div class="ttc" id="conn_8h_html_a5618a89ddad38bdb55093279d8d3fbc5"><div class="ttname"><a href="conn_8h.html#a5618a89ddad38bdb55093279d8d3fbc5">conn_state_str</a></div><div class="ttdeci">const char *const conn_state_str[]</div><div class="ttdef"><b>Definition:</b> conn.c:58</div></div>
+<div class="ttc" id="conn_8h_html_ade2abf64e3b30fc0b5e1b95735ab6677"><div class="ttname"><a href="conn_8h.html#ade2abf64e3b30fc0b5e1b95735ab6677">cid2str</a></div><div class="ttdeci">#define cid2str(i)</div><div class="ttdef"><b>Definition:</b> conn.h:331</div></div>
 <div class="ttc" id="quic_8h_html_ade01bc98e1632cd645e0f33757d70d2e"><div class="ttname"><a href="quic_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a></div><div class="ttdeci">#define NRM</div><div class="ttdoc">ANSI escape sequence: reset all to normal. </div><div class="ttdef"><b>Definition:</b> quic.h:436</div></div>
 <div class="ttc" id="quic_8h_html_a8d23feea868a983c8c2b661e1e16972f"><div class="ttname"><a href="quic_8h.html#a8d23feea868a983c8c2b661e1e16972f">RED</a></div><div class="ttdeci">#define RED</div><div class="ttdoc">ANSI escape sequence: red. </div><div class="ttdef"><b>Definition:</b> quic.h:444</div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a31898c1d24d16b8da39d1f5c0500345e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_ERR_REASON_LEN&#160;&#160;&#160;128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a class="anchor" id="a4c4dda142699d1cf6e5434ab2ca6c406"></a>
@@ -1515,7 +1529,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 31 2018 11:18:02 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 31 2018 12:29:27 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

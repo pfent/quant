@@ -2,6 +2,7 @@ var searchData=
 [
   ['mag',['MAG',['../quic_8h.html#af54a5a977c0c499323d656315f008ee0',1,'quic.h']]],
   ['max_5fcid_5flen',['MAX_CID_LEN',['../quic_8h.html#a9182b20a4ab9449d0efbd6d873c2aecf',1,'quic.h']]],
+  ['max_5ferr_5freason_5flen',['MAX_ERR_REASON_LEN',['../conn_8h.html#a31898c1d24d16b8da39d1f5c0500345e',1,'conn.h']]],
   ['max_5fhash_5flen',['MAX_HASH_LEN',['../tls_8h.html#a7eb040d42850ef7fdc3bfd09469a683e',1,'tls.h']]],
   ['max_5fpkt_5flen',['MAX_PKT_LEN',['../pkt_8h.html#aa2cbdec5743bbebc99afa6729c5b98f1',1,'pkt.h']]],
   ['max_5fpkt_5fnr_5flen',['MAX_PKT_NR_LEN',['../quic_8h.html#abc436e6d4a71f8a4982f5664f5e1a93d',1,'quic.h']]],

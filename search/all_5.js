@@ -50,8 +50,9 @@ var searchData=
   ['err_5finternal',['ERR_INTERNAL',['../pkt_8h.html#a6084679069ce82f37778a3ed56860557',1,'pkt.h']]],
   ['err_5fnone',['ERR_NONE',['../pkt_8h.html#aff0d3fb76f11f6e8ea4002d826bbd23c',1,'pkt.h']]],
   ['err_5fprotocol_5fviolation',['ERR_PROTOCOL_VIOLATION',['../pkt_8h.html#a27994773959ccba6411fae219fe38577',1,'pkt.h']]],
-  ['err_5freason',['err_reason',['../structq__conn.html#af8be5c5cf029005be12f0fcd56d514e3',1,'q_conn']]],
+  ['err_5freason',['err_reason',['../structq__conn.html#aaae873a0a60e89051284118b13142611',1,'q_conn']]],
   ['err_5freason_5flen',['err_reason_len',['../structq__conn.html#a4b55e61765d87d7568a0127283c96471',1,'q_conn']]],
+  ['err_5fstream_5fid',['ERR_STREAM_ID',['../pkt_8h.html#aec95413875d567727f2a7796e5a65ff5',1,'pkt.h']]],
   ['err_5ftls',['ERR_TLS',['../pkt_8h.html#ae6b18bb77d7a31d51b26f237f55bd3aa',1,'pkt.h']]],
   ['err_5ftransport_5fparameter',['ERR_TRANSPORT_PARAMETER',['../pkt_8h.html#a73915150f68e9c3ae13506a9f08e0492',1,'pkt.h']]],
   ['ev_5fverify',['EV_VERIFY',['../quic_8h.html#a733907018d667311b3e174666c6d2f0f',1,'quic.h']]]

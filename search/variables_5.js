@@ -8,6 +8,6 @@ var searchData=
   ['epoch_5fout',['epoch_out',['../structtls.html#af7b9aba5f8995cef9a777a0a902e59b3',1,'tls']]],
   ['err_5fcode',['err_code',['../structq__conn.html#a797b92f861a2e732270e6cb328385d9c',1,'q_conn']]],
   ['err_5ffrm',['err_frm',['../structq__conn.html#a5e70a9eeab6de649daf5816e71d319ee',1,'q_conn']]],
-  ['err_5freason',['err_reason',['../structq__conn.html#af8be5c5cf029005be12f0fcd56d514e3',1,'q_conn']]],
+  ['err_5freason',['err_reason',['../structq__conn.html#aaae873a0a60e89051284118b13142611',1,'q_conn']]],
   ['err_5freason_5flen',['err_reason_len',['../structq__conn.html#a4b55e61765d87d7568a0127283c96471',1,'q_conn']]]
 ];
