@@ -41,7 +41,7 @@
 <area shape="rect" id="node32" href="$frame_8c.html#a0d8bea0a0a229b796505008855eb17f0" title="enc_padding_frame" alt="" coords="833,512,967,539"/>
 <area shape="rect" id="node33" href="$frame_8c.html#ae94d6f87955af69345cb46c9d03ad90f" title="log_stream_or_crypto\l_frame" alt="" coords="827,563,973,605"/>
 <area shape="rect" id="node28" href="$quic_8h.html#a05b0a63c2fe234f56513430fc2114eba" title="is_ack_only" alt="" coords="1029,832,1120,859"/>
-<area shape="rect" id="node36" href="$stream_8c.html#a878cdd4d69b352f501841456e8a43972" title="do_stream_id_fc" alt="" coords="497,832,615,859"/>
+<area shape="rect" id="node36" href="$stream_8c.html#abd56ea788d8872433901695928a944ab" title="do_stream_id_fc" alt="" coords="497,832,615,859"/>
 <area shape="rect" id="node37" href="$conn_8c.html#ad1e5e232a8372127e2130e85e7cdbb8d" title="use_next_dcid" alt="" coords="664,1035,771,1061"/>
 <area shape="rect" id="node41" href="$pkt_8h.html#a265e9c52eb203bb4701727adc3908850" title="pkt_type" alt="" coords="864,5,936,32"/>
 <area shape="rect" id="node42" href="$pkt_8c.html#a1f839697f5c2cb2a8b086249c85399bc" title="coalesce" alt="" coords="680,107,755,133"/>

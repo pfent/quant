@@ -36,7 +36,7 @@
 <area shape="rect" id="node30" href="$conn_8c.html#a0b0c1eff62e65d38a175b6df4ea4ce80" title="do_conn_mgmt" alt="" coords="615,1279,726,1306"/>
 <area shape="rect" id="node32" href="$stream_8h.html#ae11750e72c5f654dd57041a830ee19a7" title="stream_needs_ctrl" alt="" coords="606,1127,735,1154"/>
 <area shape="rect" id="node33" href="$conn_8c.html#a7bc1cf055ddc94c793f81fdfc52ecdbb" title="tx_stream_ctrl" alt="" coords="618,874,723,900"/>
-<area shape="rect" id="node31" href="$stream_8c.html#a878cdd4d69b352f501841456e8a43972" title="do_stream_id_fc" alt="" coords="807,1279,926,1306"/>
+<area shape="rect" id="node31" href="$stream_8c.html#abd56ea788d8872433901695928a944ab" title="do_stream_id_fc" alt="" coords="807,1279,926,1306"/>
 <area shape="rect" id="node38" href="$conn_8c.html#a743c431b40b906bbe9baad4456a0e7c5" title="rx_pkts" alt="" coords="262,1355,327,1382"/>
 <area shape="rect" id="node47" href="$conn_8c.html#a4a5deef512e20b125b45899c6c80c6fc" title="free_conn" alt="" coords="255,1178,334,1204"/>
 <area shape="rect" id="node39" href="$quic_8c.html#a4e51fb8c9ebc5178b5131826ca26fb90" title="write_to_corpus" alt="" coords="409,1228,524,1255"/>

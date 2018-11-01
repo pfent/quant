@@ -125,16 +125,20 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:afbac3df9b63be97036ade595dab020f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#afbac3df9b63be97036ade595dab020f2">STRM_FL_INI_SRV</a>&#160;&#160;&#160;0x01</td></tr>
-<tr class="separator:afbac3df9b63be97036ade595dab020f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a849acf9c1a6ba35f9ef98ae84dd7c900"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a849acf9c1a6ba35f9ef98ae84dd7c900">STRM_FL_DIR_UNI</a>&#160;&#160;&#160;0x02</td></tr>
-<tr class="separator:a849acf9c1a6ba35f9ef98ae84dd7c900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae48fb935fc219f705de121aaedff6962"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#ae48fb935fc219f705de121aaedff6962">STRM_FL_SRV</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:ae48fb935fc219f705de121aaedff6962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04f7ebb0a2129e2759b5466cdcd780c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a04f7ebb0a2129e2759b5466cdcd780c6">STRM_FL_UNI</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:a04f7ebb0a2129e2759b5466cdcd780c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8676dc8e5bf2002815718fb5d017e47"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#aa8676dc8e5bf2002815718fb5d017e47">STRM_STATE</a>(k, v)&#160;&#160;&#160;k = v</td></tr>
 <tr class="separator:aa8676dc8e5bf2002815718fb5d017e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29d0d69805b312f9f5a7728dcd5f0e3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a29d0d69805b312f9f5a7728dcd5f0e3d">STRM_STATES</a></td></tr>
 <tr class="separator:a29d0d69805b312f9f5a7728dcd5f0e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecb5a067c7adc620178c9897b47bda8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#aecb5a067c7adc620178c9897b47bda8d">strm_to_state</a>(s, new_state)</td></tr>
 <tr class="separator:aecb5a067c7adc620178c9897b47bda8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a43855d911c01eab5a29f74f0b8e4d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a1a43855d911c01eab5a29f74f0b8e4d3">is_uni</a>(id)&#160;&#160;&#160;<a class="el" href="quic_8h.html#a2e19342e141828d7fe9b2870e5d7d70a">is_set</a>(<a class="el" href="stream_8h.html#a04f7ebb0a2129e2759b5466cdcd780c6">STRM_FL_UNI</a>, (id))</td></tr>
+<tr class="separator:a1a43855d911c01eab5a29f74f0b8e4d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a252b945d4c3e2382b66bc40894f9c440"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a252b945d4c3e2382b66bc40894f9c440">is_srv_ini</a>(id)&#160;&#160;&#160;<a class="el" href="quic_8h.html#a2e19342e141828d7fe9b2870e5d7d70a">is_set</a>(<a class="el" href="stream_8h.html#ae48fb935fc219f705de121aaedff6962">STRM_FL_SRV</a>, (id))</td></tr>
+<tr class="separator:a252b945d4c3e2382b66bc40894f9c440"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -170,10 +174,12 @@ Functions</h2></td></tr>
 <tr class="separator:a2853c95f04e70a8c7e836f881eedff8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4a57a5b73d68625c63574f6c4109bad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#ae4a57a5b73d68625c63574f6c4109bad">do_stream_fc</a> (struct <a class="el" href="structq__stream.html">q_stream</a> *const s)</td></tr>
 <tr class="separator:ae4a57a5b73d68625c63574f6c4109bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a878cdd4d69b352f501841456e8a43972"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a878cdd4d69b352f501841456e8a43972">do_stream_id_fc</a> (struct <a class="el" href="structq__stream.html">q_stream</a> *const s)</td></tr>
-<tr class="separator:a878cdd4d69b352f501841456e8a43972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd56ea788d8872433901695928a944ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#abd56ea788d8872433901695928a944ab">do_stream_id_fc</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, const int64_t sid)</td></tr>
+<tr class="separator:abd56ea788d8872433901695928a944ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a379b35c4c21ee31284e14338963fdd8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a379b35c4c21ee31284e14338963fdd8f">concat_out</a> (struct <a class="el" href="structq__stream.html">q_stream</a> *const s, struct w_iov_sq *const q)</td></tr>
 <tr class="separator:a379b35c4c21ee31284e14338963fdd8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38e0dc3cbebe5699ec573ab242b6f505"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a38e0dc3cbebe5699ec573ab242b6f505">max_sid</a> (const int64_t sid, const struct <a class="el" href="structq__conn.html">q_conn</a> *const c)</td></tr>
+<tr class="separator:a38e0dc3cbebe5699ec573ab242b6f505"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -181,24 +187,56 @@ Variables</h2></td></tr>
 <tr class="separator:aa6dd5679b354a793efc82cd45b5d3962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a849acf9c1a6ba35f9ef98ae84dd7c900"></a>
+<a class="anchor" id="a252b945d4c3e2382b66bc40894f9c440"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define STRM_FL_DIR_UNI&#160;&#160;&#160;0x02</td>
+          <td class="memname">#define is_srv_ini</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">id</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="quic_8h.html#a2e19342e141828d7fe9b2870e5d7d70a">is_set</a>(<a class="el" href="stream_8h.html#ae48fb935fc219f705de121aaedff6962">STRM_FL_SRV</a>, (id))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="afbac3df9b63be97036ade595dab020f2"></a>
+<a class="anchor" id="a1a43855d911c01eab5a29f74f0b8e4d3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define STRM_FL_INI_SRV&#160;&#160;&#160;0x01</td>
+          <td class="memname">#define is_uni</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">id</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="quic_8h.html#a2e19342e141828d7fe9b2870e5d7d70a">is_set</a>(<a class="el" href="stream_8h.html#a04f7ebb0a2129e2759b5466cdcd780c6">STRM_FL_UNI</a>, (id))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae48fb935fc219f705de121aaedff6962"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STRM_FL_SRV&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a04f7ebb0a2129e2759b5466cdcd780c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STRM_FL_UNI&#160;&#160;&#160;0x02</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -278,11 +316,11 @@ Variables</h2></td></tr>
 <div class="line">        }                                                                      \</div>
 <div class="line">        (s)-&gt;state = (new_state);                                              \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="quic_8h_html_a96fac03c4ab3363f06a0328e0e53a40c"><div class="ttname"><a href="quic_8h.html#a96fac03c4ab3363f06a0328e0e53a40c">YEL</a></div><div class="ttdeci">#define YEL</div><div class="ttdoc">ANSI escape sequence: yellow. </div><div class="ttdef"><b>Definition:</b> quic.h:446</div></div>
-<div class="ttc" id="stream_8h_html_aa6dd5679b354a793efc82cd45b5d3962"><div class="ttname"><a href="stream_8h.html#aa6dd5679b354a793efc82cd45b5d3962">strm_state_str</a></div><div class="ttdeci">const char *const strm_state_str[]</div><div class="ttdef"><b>Definition:</b> stream.c:46</div></div>
-<div class="ttc" id="conn_8h_html_ade2abf64e3b30fc0b5e1b95735ab6677"><div class="ttname"><a href="conn_8h.html#ade2abf64e3b30fc0b5e1b95735ab6677">cid2str</a></div><div class="ttdeci">#define cid2str(i)</div><div class="ttdef"><b>Definition:</b> conn.h:331</div></div>
-<div class="ttc" id="quic_8h_html_ade01bc98e1632cd645e0f33757d70d2e"><div class="ttname"><a href="quic_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a></div><div class="ttdeci">#define NRM</div><div class="ttdoc">ANSI escape sequence: reset all to normal. </div><div class="ttdef"><b>Definition:</b> quic.h:436</div></div>
-<div class="ttc" id="quic_8h_html_ab5f8d1e8c05400492619366d20559bfd"><div class="ttname"><a href="quic_8h.html#ab5f8d1e8c05400492619366d20559bfd">FMT_SID</a></div><div class="ttdeci">#define FMT_SID</div><div class="ttdef"><b>Definition:</b> quic.h:455</div></div>
+<div class="ttc" id="quic_8h_html_a96fac03c4ab3363f06a0328e0e53a40c"><div class="ttname"><a href="quic_8h.html#a96fac03c4ab3363f06a0328e0e53a40c">YEL</a></div><div class="ttdeci">#define YEL</div><div class="ttdoc">ANSI escape sequence: yellow. </div><div class="ttdef"><b>Definition:</b> quic.h:447</div></div>
+<div class="ttc" id="stream_8h_html_aa6dd5679b354a793efc82cd45b5d3962"><div class="ttname"><a href="stream_8h.html#aa6dd5679b354a793efc82cd45b5d3962">strm_state_str</a></div><div class="ttdeci">const char *const strm_state_str[]</div><div class="ttdef"><b>Definition:</b> stream.c:47</div></div>
+<div class="ttc" id="conn_8h_html_ade2abf64e3b30fc0b5e1b95735ab6677"><div class="ttname"><a href="conn_8h.html#ade2abf64e3b30fc0b5e1b95735ab6677">cid2str</a></div><div class="ttdeci">#define cid2str(i)</div><div class="ttdef"><b>Definition:</b> conn.h:338</div></div>
+<div class="ttc" id="quic_8h_html_ade01bc98e1632cd645e0f33757d70d2e"><div class="ttname"><a href="quic_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a></div><div class="ttdeci">#define NRM</div><div class="ttdoc">ANSI escape sequence: reset all to normal. </div><div class="ttdef"><b>Definition:</b> quic.h:437</div></div>
+<div class="ttc" id="quic_8h_html_ab5f8d1e8c05400492619366d20559bfd"><div class="ttname"><a href="quic_8h.html#ab5f8d1e8c05400492619366d20559bfd">FMT_SID</a></div><div class="ttdeci">#define FMT_SID</div><div class="ttdef"><b>Definition:</b> quic.h:456</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -386,16 +424,26 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a878cdd4d69b352f501841456e8a43972"></a>
+<a class="anchor" id="abd56ea788d8872433901695928a944ab"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void do_stream_id_fc </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structq__stream.html">q_stream</a> *const&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
+          <td class="paramtype">struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const int64_t&#160;</td>
+          <td class="paramname"><em>sid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -453,6 +501,32 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a38e0dc3cbebe5699ec573ab242b6f505"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t max_sid </td>
+          <td>(</td>
+          <td class="paramtype">const int64_t&#160;</td>
+          <td class="paramname"><em>sid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a300bcafbad60488eb0b6b0560eb1b645"></a>
 <div class="memitem">
 <div class="memproto">
@@ -482,7 +556,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="stream_8h_a300bcafbad60488eb0b6b0560eb1b645_cgraph.png" border="0" usemap="#stream_8h_a300bcafbad60488eb0b6b0560eb1b645_cgraph" alt=""/></div>
 <map name="stream_8h_a300bcafbad60488eb0b6b0560eb1b645_cgraph" id="stream_8h_a300bcafbad60488eb0b6b0560eb1b645_cgraph">
-<area shape="rect" id="node2" href="stream_8c.html#a7308501df4d06bbfd14665ae88caae02" title="get_stream" alt="" coords="173,5,259,32"/><area shape="rect" id="node3" href="stream_8c.html#a2853c95f04e70a8c7e836f881eedff8d" title="apply_stream_limits" alt="" coords="147,56,285,83"/><area shape="rect" id="node4" href="stream_8c.html#a878cdd4d69b352f501841456e8a43972" title="do_stream_id_fc" alt="" coords="157,107,275,133"/></map>
+<area shape="rect" id="node2" href="stream_8c.html#a7308501df4d06bbfd14665ae88caae02" title="get_stream" alt="" coords="173,5,259,32"/><area shape="rect" id="node3" href="stream_8c.html#a2853c95f04e70a8c7e836f881eedff8d" title="apply_stream_limits" alt="" coords="147,56,285,83"/><area shape="rect" id="node4" href="stream_8c.html#abd56ea788d8872433901695928a944ab" title="do_stream_id_fc" alt="" coords="157,107,275,133"/></map>
 </div>
 </p>
 
@@ -697,7 +771,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 31 2018 13:34:37 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 1 2018 18:26:50 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

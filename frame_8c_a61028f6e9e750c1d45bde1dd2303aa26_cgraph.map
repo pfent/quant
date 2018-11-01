@@ -21,7 +21,7 @@
 <area shape="rect" id="node49" href="$frame_8c.html#a1b90c77dc3ff16acae7978f95804afdc" title="dec_retire_cid_frame" alt="" coords="162,1657,305,1684"/>
 <area shape="rect" id="node6" href="$stream_8h.html#a012bc210254cd3269ef892fcbd91e146" title="crpt_strm_id" alt="" coords="401,547,495,573"/>
 <area shape="rect" id="node7" href="$pkt_8h.html#a2e3325ad951d933d49dcd1cd1e0c04f1" title="epoch_for_pkt_type" alt="" coords="380,597,516,624"/>
-<area shape="rect" id="node8" href="$frame_8c.html#a8137db14dd62365055d2c267c32606bc" title="max_sid" alt="" coords="622,829,693,856"/>
+<area shape="rect" id="node8" href="$stream_8c.html#a38e0dc3cbebe5699ec573ab242b6f505" title="max_sid" alt="" coords="622,829,693,856"/>
 <area shape="rect" id="node9" href="$stream_8c.html#a7308501df4d06bbfd14665ae88caae02" title="get_stream" alt="" coords="815,917,902,944"/>
 <area shape="rect" id="node10" href="$diet_8c.html#a87c3c2cebc6ccf0911d3d05989352588" title="Pointer to the interval containing n in diet tree t. " alt="" coords="823,1323,894,1349"/>
 <area shape="rect" id="node11" href="$conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="616,471,699,497"/>
@@ -34,7 +34,7 @@
 <area shape="rect" id="node20" href="$quant_8h.html#a3eca43a72005c71781fd6139f1f8d798" title="q_read" alt="" coords="417,699,479,725"/>
 <area shape="rect" id="node21" href="$frame_8c.html#ae94d6f87955af69345cb46c9d03ad90f" title="log_stream_or_crypto\l_frame" alt="" coords="375,851,521,893"/>
 <area shape="rect" id="node13" href="$stream_8c.html#a2853c95f04e70a8c7e836f881eedff8d" title="apply_stream_limits" alt="" coords="789,243,928,269"/>
-<area shape="rect" id="node14" href="$stream_8c.html#a878cdd4d69b352f501841456e8a43972" title="do_stream_id_fc" alt="" coords="799,293,918,320"/>
+<area shape="rect" id="node14" href="$stream_8c.html#abd56ea788d8872433901695928a944ab" title="do_stream_id_fc" alt="" coords="799,293,918,320"/>
 <area shape="rect" id="node24" href="$frame_8c.html#a31c36630801506eb48c0bf620c0fcca6" title="shorten_ack_nr" alt="" coords="393,1525,503,1552"/>
 <area shape="rect" id="node25" href="$recovery_8c.html#a078d446c5244577b054aed3abda0d694" title="find_sent_pkt" alt="" coords="398,1323,498,1349"/>
 <area shape="rect" id="node26" href="$recovery_8c.html#a968810548afcf006e9e6e5515511db31" title="on_ack_received_1" alt="" coords="381,1475,515,1501"/>
@@ -45,7 +45,7 @@
 <area shape="rect" id="node30" href="$recovery_8c.html#aae4a8516cb8d3d3578cf456e735c74f0" title="on_pkt_acked_cc" alt="" coords="595,1272,719,1299"/>
 <area shape="rect" id="node31" href="$diet_8c.html#a9064e32f6b50901d8f5685e53d2e4041" title="Inserts integer n of type t into the diet tree t. " alt="" coords="616,1323,699,1349"/>
 <area shape="rect" id="node35" href="$conn_8c.html#afd38904c68cab87424e6aa8db723fd38" title="enter_closing" alt="" coords="399,445,497,472"/>
-<area shape="rect" id="node38" href="$quant_8h.html#a7a955ba1fd2a2cd424379af437d07d05" title="q_rsv_stream" alt="" coords="397,243,499,269"/>
+<area shape="rect" id="node38" href="$quant_8h.html#a7882234166a0aaac582c25c4c8a581b8" title="q_rsv_stream" alt="" coords="397,243,499,269"/>
 <area shape="rect" id="node47" href="$conn_8c.html#ae5beee50c7414b14d1efb1e3e8ebe1ee" title="add_dcid" alt="" coords="411,395,485,421"/>
 <area shape="rect" id="node50" href="$conn_8c.html#ab983b3d57ee0c84f0e70018a299033a8" title="free_scid" alt="" coords="411,1657,485,1684"/>
 </map>

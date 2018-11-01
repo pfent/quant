@@ -34,6 +34,8 @@ var searchData=
   ['is_5frtx',['is_rtx',['../structpkt__meta.html#af3340b6c044ae49975fdb3cac44667d9',1,'pkt_meta']]],
   ['is_5frtxable',['is_rtxable',['../quic_8h.html#a650f79c60d6d19b0edeeb1735bbd5000',1,'quic.h']]],
   ['is_5fset',['is_set',['../quic_8h.html#a2e19342e141828d7fe9b2870e5d7d70a',1,'quic.h']]],
+  ['is_5fsrv_5fini',['is_srv_ini',['../stream_8h.html#a252b945d4c3e2382b66bc40894f9c440',1,'stream.h']]],
+  ['is_5funi',['is_uni',['../stream_8h.html#a1a43855d911c01eab5a29f74f0b8e4d3',1,'stream.h']]],
   ['is_5fzero',['is_zero',['../conn_8h.html#a68c6b30b8665ce894ab5bed3c73a2d9d',1,'conn.h']]],
   ['ival',['ival',['../structival.html',1,'']]],
   ['ival_5fcmp',['ival_cmp',['../diet_8h.html#a011df4b95aedbfabdc4069b96f4638af',1,'diet.h']]]

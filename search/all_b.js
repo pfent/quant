@@ -8,6 +8,8 @@ var searchData=
   ['lg_5facked',['lg_acked',['../structpn__space.html#a825467fc133c8e0c9c8a15152d089c02',1,'pn_space::lg_acked()'],['../structpkt__meta.html#a21de9af69068ecadb222f0d9685d50d7',1,'pkt_meta::lg_acked()']]],
   ['lg_5fsent',['lg_sent',['../structpn__space.html#a9cda5671fa87d3027ef73c40c8ff4e5f',1,'pn_space']]],
   ['lg_5fsent_5fbefore_5frto',['lg_sent_before_rto',['../structpn__space.html#ab8026a26cf8a868e9243423fb83862ef',1,'pn_space']]],
+  ['lg_5fsid_5fbidi',['lg_sid_bidi',['../structq__conn.html#aa51e819813ce8a0889191b059decb7db',1,'q_conn']]],
+  ['lg_5fsid_5funi',['lg_sid_uni',['../structq__conn.html#ac884bab9945f401a2328e143043e88d8',1,'q_conn']]],
   ['lo',['lo',['../structival.html#a48282b6ea42f2a81ab1dee4ed182b0ab',1,'ival']]],
   ['log_5fcc',['log_cc',['../recovery_8h.html#ad588231c121d1a85ab97024a4cf12823',1,'recovery.h']]],
   ['log_5fdec',['log_dec',['../marshall_8c.html#ae635e264e431dd8807e0851433baaf5a',1,'marshall.c']]],

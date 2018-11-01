@@ -153,12 +153,18 @@ Data Fields</h2></td></tr>
 <tr class="memitem:abe8d2160c0cb6b750a5cc904acd01caa"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#abe8d2160c0cb6b750a5cc904acd01caa">blocked</a>: 1</td></tr>
 <tr class="memdesc:abe8d2160c0cb6b750a5cc904acd01caa"><td class="mdescLeft">&#160;</td><td class="mdescRight">We are receive-window-blocked.  <a href="#abe8d2160c0cb6b750a5cc904acd01caa">More...</a><br/></td></tr>
 <tr class="separator:abe8d2160c0cb6b750a5cc904acd01caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe2ad479af8af8ef58b44fdbdbf5eadd"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#abe2ad479af8af8ef58b44fdbdbf5eadd">stream_id_blocked</a>: 1</td></tr>
-<tr class="memdesc:abe2ad479af8af8ef58b44fdbdbf5eadd"><td class="mdescLeft">&#160;</td><td class="mdescRight">We are out of stream IDs.  <a href="#abe2ad479af8af8ef58b44fdbdbf5eadd">More...</a><br/></td></tr>
-<tr class="separator:abe2ad479af8af8ef58b44fdbdbf5eadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a581d050adf437fe90b0bb8c9b5b01b5c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a581d050adf437fe90b0bb8c9b5b01b5c">tx_max_stream_id</a>: 1</td></tr>
-<tr class="memdesc:a581d050adf437fe90b0bb8c9b5b01b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send MAX_STREAM_ID frame.  <a href="#a581d050adf437fe90b0bb8c9b5b01b5c">More...</a><br/></td></tr>
-<tr class="separator:a581d050adf437fe90b0bb8c9b5b01b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d9166cd89d61554c44e10814d2d785"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#ad2d9166cd89d61554c44e10814d2d785">sid_blocked_bidi</a>: 1</td></tr>
+<tr class="memdesc:ad2d9166cd89d61554c44e10814d2d785"><td class="mdescLeft">&#160;</td><td class="mdescRight">We are out of bidi stream IDs.  <a href="#ad2d9166cd89d61554c44e10814d2d785">More...</a><br/></td></tr>
+<tr class="separator:ad2d9166cd89d61554c44e10814d2d785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1da87e5344fe3311f19c93b9406fc6bd"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a1da87e5344fe3311f19c93b9406fc6bd">sid_blocked_uni</a>: 1</td></tr>
+<tr class="memdesc:a1da87e5344fe3311f19c93b9406fc6bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">We are out of unidir stream IDs.  <a href="#a1da87e5344fe3311f19c93b9406fc6bd">More...</a><br/></td></tr>
+<tr class="separator:a1da87e5344fe3311f19c93b9406fc6bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ed2795485a81d8795d615da525d75db"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a6ed2795485a81d8795d615da525d75db">tx_max_sid_bidi</a>: 1</td></tr>
+<tr class="memdesc:a6ed2795485a81d8795d615da525d75db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send MAX_STREAM_ID frame for bidi.  <a href="#a6ed2795485a81d8795d615da525d75db">More...</a><br/></td></tr>
+<tr class="separator:a6ed2795485a81d8795d615da525d75db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbed05a8e2e77dc78a8e5ea3b5f66e49"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#afbed05a8e2e77dc78a8e5ea3b5f66e49">tx_max_sid_uni</a>: 1</td></tr>
+<tr class="memdesc:afbed05a8e2e77dc78a8e5ea3b5f66e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send MAX_STREAM_ID frame for unidir.  <a href="#afbed05a8e2e77dc78a8e5ea3b5f66e49">More...</a><br/></td></tr>
+<tr class="separator:afbed05a8e2e77dc78a8e5ea3b5f66e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a560bbc195a5c8b9642f059bbddddb442"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a560bbc195a5c8b9642f059bbddddb442">try_0rtt</a>: 1</td></tr>
 <tr class="memdesc:a560bbc195a5c8b9642f059bbddddb442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try 0-RTT handshake.  <a href="#a560bbc195a5c8b9642f059bbddddb442">More...</a><br/></td></tr>
 <tr class="separator:a560bbc195a5c8b9642f059bbddddb442"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,7 +192,7 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a424dfc6ca3378978e06cea115795cc79"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a424dfc6ca3378978e06cea115795cc79">tx_retire_cid</a>: 1</td></tr>
 <tr class="memdesc:a424dfc6ca3378978e06cea115795cc79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send RETIRE_CONNECTION_ID.  <a href="#a424dfc6ca3378978e06cea115795cc79">More...</a><br/></td></tr>
 <tr class="separator:a424dfc6ca3378978e06cea115795cc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acde364f022c2b0a227e7c54f6e4e80cd"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#acde364f022c2b0a227e7c54f6e4e80cd">__pad0__</a>: 15</td></tr>
+<tr class="memitem:acde364f022c2b0a227e7c54f6e4e80cd"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#acde364f022c2b0a227e7c54f6e4e80cd">__pad0__</a>: 13</td></tr>
 <tr class="separator:acde364f022c2b0a227e7c54f6e4e80cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace8a73a49c79c13a5d91c213906c95e9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#ace8a73a49c79c13a5d91c213906c95e9">sport</a></td></tr>
 <tr class="memdesc:ace8a73a49c79c13a5d91c213906c95e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local port (in network byte-order).  <a href="#ace8a73a49c79c13a5d91c213906c95e9">More...</a><br/></td></tr>
@@ -217,9 +223,18 @@ Data Fields</h2></td></tr>
 <tr class="separator:af57c0f662f9f694701adde8a15043230"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3482df5718d6faefdd3e373fed58060f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structpn__data__space.html">pn_data_space</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a3482df5718d6faefdd3e373fed58060f">pn_data</a></td></tr>
 <tr class="separator:a3482df5718d6faefdd3e373fed58060f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab87bc9f0d203bf0d80f18143c906584e"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#ab87bc9f0d203bf0d80f18143c906584e">next_sid</a></td></tr>
-<tr class="memdesc:ab87bc9f0d203bf0d80f18143c906584e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next stream ID to use on <a class="el" href="quant_8h.html#a7a955ba1fd2a2cd424379af437d07d05">q_rsv_stream()</a>.  <a href="#ab87bc9f0d203bf0d80f18143c906584e">More...</a><br/></td></tr>
-<tr class="separator:ab87bc9f0d203bf0d80f18143c906584e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9be6183d08c8887a3125f767c6b8ea3"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#ac9be6183d08c8887a3125f767c6b8ea3">next_sid_bidi</a></td></tr>
+<tr class="memdesc:ac9be6183d08c8887a3125f767c6b8ea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next unidir stream ID to use on <a class="el" href="quant_8h.html#a7882234166a0aaac582c25c4c8a581b8">q_rsv_stream()</a>.  <a href="#ac9be6183d08c8887a3125f767c6b8ea3">More...</a><br/></td></tr>
+<tr class="separator:ac9be6183d08c8887a3125f767c6b8ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c56a9ef063064daae3c501b73a56a75"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a4c56a9ef063064daae3c501b73a56a75">next_sid_uni</a></td></tr>
+<tr class="memdesc:a4c56a9ef063064daae3c501b73a56a75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next bidi stream ID to use on <a class="el" href="quant_8h.html#a7882234166a0aaac582c25c4c8a581b8">q_rsv_stream()</a>.  <a href="#a4c56a9ef063064daae3c501b73a56a75">More...</a><br/></td></tr>
+<tr class="separator:a4c56a9ef063064daae3c501b73a56a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa51e819813ce8a0889191b059decb7db"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#aa51e819813ce8a0889191b059decb7db">lg_sid_bidi</a></td></tr>
+<tr class="memdesc:aa51e819813ce8a0889191b059decb7db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Largest unidir stream ID in use.  <a href="#aa51e819813ce8a0889191b059decb7db">More...</a><br/></td></tr>
+<tr class="separator:aa51e819813ce8a0889191b059decb7db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac884bab9945f401a2328e143043e88d8"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#ac884bab9945f401a2328e143043e88d8">lg_sid_uni</a></td></tr>
+<tr class="memdesc:ac884bab9945f401a2328e143043e88d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Largest bidi stream ID in use.  <a href="#ac884bab9945f401a2328e143043e88d8">More...</a><br/></td></tr>
+<tr class="separator:ac884bab9945f401a2328e143043e88d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c348c0394cde3db651c703483abd620"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structtransport__params.html">transport_params</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a1c348c0394cde3db651c703483abd620">tp_in</a></td></tr>
 <tr class="memdesc:a1c348c0394cde3db651c703483abd620"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transport parameters for RX.  <a href="#a1c348c0394cde3db651c703483abd620">More...</a><br/></td></tr>
 <tr class="separator:a1c348c0394cde3db651c703483abd620"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -612,6 +627,34 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa51e819813ce8a0889191b059decb7db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t q_conn::lg_sid_bidi</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Largest unidir stream ID in use. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac884bab9945f401a2328e143043e88d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t q_conn::lg_sid_uni</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Largest bidi stream ID in use. </p>
+
+</div>
+</div>
 <a class="anchor" id="a30fd5a6686723d42d1e0b2c7ec849ad3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -650,17 +693,31 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab87bc9f0d203bf0d80f18143c906584e"></a>
+<a class="anchor" id="ac9be6183d08c8887a3125f767c6b8ea3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int64_t q_conn::next_sid</td>
+          <td class="memname">int64_t q_conn::next_sid_bidi</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Next stream ID to use on <a class="el" href="quant_8h.html#a7a955ba1fd2a2cd424379af437d07d05">q_rsv_stream()</a>. </p>
+<p>Next unidir stream ID to use on <a class="el" href="quant_8h.html#a7882234166a0aaac582c25c4c8a581b8">q_rsv_stream()</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4c56a9ef063064daae3c501b73a56a75"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t q_conn::next_sid_uni</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Next bidi stream ID to use on <a class="el" href="quant_8h.html#a7882234166a0aaac582c25c4c8a581b8">q_rsv_stream()</a>. </p>
 
 </div>
 </div>
@@ -858,6 +915,34 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ad2d9166cd89d61554c44e10814d2d785"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t q_conn::sid_blocked_bidi</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>We are out of bidi stream IDs. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1da87e5344fe3311f19c93b9406fc6bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t q_conn::sid_blocked_uni</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>We are out of unidir stream IDs. </p>
+
+</div>
+</div>
 <a class="anchor" id="a36327baf8c4d695023b07a2270587e78"></a>
 <div class="memitem">
 <div class="memproto">
@@ -897,20 +982,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>State of the connection. </p>
-
-</div>
-</div>
-<a class="anchor" id="abe2ad479af8af8ef58b44fdbdbf5eadd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t q_conn::stream_id_blocked</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>We are out of stream IDs. </p>
 
 </div>
 </div>
@@ -1008,17 +1079,31 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a581d050adf437fe90b0bb8c9b5b01b5c"></a>
+<a class="anchor" id="a6ed2795485a81d8795d615da525d75db"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t q_conn::tx_max_stream_id</td>
+          <td class="memname">uint32_t q_conn::tx_max_sid_bidi</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Send MAX_STREAM_ID frame. </p>
+<p>Send MAX_STREAM_ID frame for bidi. </p>
+
+</div>
+</div>
+<a class="anchor" id="afbed05a8e2e77dc78a8e5ea3b5f66e49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t q_conn::tx_max_sid_uni</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send MAX_STREAM_ID frame for unidir. </p>
 
 </div>
 </div>
@@ -1167,7 +1252,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 31 2018 13:34:37 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 1 2018 18:26:50 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

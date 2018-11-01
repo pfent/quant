@@ -44,8 +44,8 @@
 <area shape="rect" id="node38" href="$frame_8c.html#acf128f54c264f522e96019baef7af3c1" title="enc_new_cid_frame" alt="" coords="353,1590,492,1616"/>
 <area shape="rect" id="node39" href="$frame_8c.html#a2037bb3c54a511d30919c36c65e79bb7" title="enc_blocked_frame" alt="" coords="355,1640,490,1667"/>
 <area shape="rect" id="node40" href="$frame_8c.html#afce90a1bb73bc652f0ccbd5402b0eb61" title="enc_max_data_frame" alt="" coords="349,1691,496,1718"/>
-<area shape="rect" id="node41" href="$frame_8c.html#a615393093bcbcddfdecf8f193beedc45" title="enc_stream_id_blocked\l_frame" alt="" coords="343,1742,502,1784"/>
-<area shape="rect" id="node42" href="$frame_8c.html#ad254391e26decf235568cd8d6f20689f" title="enc_max_stream_id_frame" alt="" coords="333,1808,512,1835"/>
+<area shape="rect" id="node41" href="$frame_8c.html#a150ea103a632fcd9b245874c54392832" title="enc_stream_id_blocked\l_frame" alt="" coords="343,1742,502,1784"/>
+<area shape="rect" id="node42" href="$frame_8c.html#a0ab31c2dc7624b828245c04eb90a6749" title="enc_max_stream_id_frame" alt="" coords="333,1808,512,1835"/>
 <area shape="rect" id="node43" href="$frame_8c.html#a916d0dd562621c7d36e786193418b07f" title="enc_stream_blocked\l_frame" alt="" coords="351,1860,494,1901"/>
 <area shape="rect" id="node44" href="$frame_8c.html#afac1f0948949980e386e72ae7f2b3132" title="enc_max_stream_data\l_frame" alt="" coords="345,1204,500,1245"/>
 </map>

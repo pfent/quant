@@ -1,7 +1,7 @@
 <map id="dec_stream_or_crypto_frame" name="dec_stream_or_crypto_frame">
 <area shape="rect" id="node2" href="$stream_8h.html#a012bc210254cd3269ef892fcbd91e146" title="crpt_strm_id" alt="" coords="231,5,326,32"/>
 <area shape="rect" id="node3" href="$pkt_8h.html#a2e3325ad951d933d49dcd1cd1e0c04f1" title="epoch_for_pkt_type" alt="" coords="211,56,347,83"/>
-<area shape="rect" id="node4" href="$frame_8c.html#a8137db14dd62365055d2c267c32606bc" title="max_sid" alt="" coords="434,296,505,323"/>
+<area shape="rect" id="node4" href="$stream_8c.html#a38e0dc3cbebe5699ec573ab242b6f505" title="max_sid" alt="" coords="434,296,505,323"/>
 <area shape="rect" id="node5" href="$stream_8c.html#a7308501df4d06bbfd14665ae88caae02" title="get_stream" alt="" coords="426,107,513,133"/>
 <area shape="rect" id="node6" href="$diet_8c.html#a87c3c2cebc6ccf0911d3d05989352588" title="Pointer to the interval containing n in diet tree t. " alt="" coords="243,208,314,235"/>
 <area shape="rect" id="node7" href="$conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="428,629,511,656"/>
@@ -14,5 +14,5 @@
 <area shape="rect" id="node16" href="$quant_8h.html#a3eca43a72005c71781fd6139f1f8d798" title="q_read" alt="" coords="248,477,309,504"/>
 <area shape="rect" id="node17" href="$frame_8c.html#ae94d6f87955af69345cb46c9d03ad90f" title="log_stream_or_crypto\l_frame" alt="" coords="205,259,352,301"/>
 <area shape="rect" id="node9" href="$stream_8c.html#a2853c95f04e70a8c7e836f881eedff8d" title="apply_stream_limits" alt="" coords="400,208,539,235"/>
-<area shape="rect" id="node10" href="$stream_8c.html#a878cdd4d69b352f501841456e8a43972" title="do_stream_id_fc" alt="" coords="410,157,529,184"/>
+<area shape="rect" id="node10" href="$stream_8c.html#abd56ea788d8872433901695928a944ab" title="do_stream_id_fc" alt="" coords="410,157,529,184"/>
 </map>

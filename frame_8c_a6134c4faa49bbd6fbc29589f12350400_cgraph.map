@@ -2,5 +2,5 @@
 <area shape="rect" id="node2" href="$marshall_8c.html#a5ef78b886a8420375943612d4329807a" title="Computes number of bytes need to enccode v in QUIC varint encoding. " alt="" coords="211,5,346,32"/>
 <area shape="rect" id="node3" href="$frame_8c.html#ae94d6f87955af69345cb46c9d03ad90f" title="log_stream_or_crypto\l_frame" alt="" coords="205,57,352,98"/>
 <area shape="rect" id="node5" href="$stream_8c.html#a0c28462a470893c1046d7a167037d926" title="track_bytes_out" alt="" coords="221,123,336,149"/>
-<area shape="rect" id="node4" href="$frame_8c.html#a8137db14dd62365055d2c267c32606bc" title="max_sid" alt="" coords="401,64,471,91"/>
+<area shape="rect" id="node4" href="$stream_8c.html#a38e0dc3cbebe5699ec573ab242b6f505" title="max_sid" alt="" coords="401,64,471,91"/>
 </map>

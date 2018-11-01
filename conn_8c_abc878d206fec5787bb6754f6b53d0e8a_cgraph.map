@@ -42,7 +42,7 @@
 <area shape="rect" id="node36" href="$tls_8c.html#a8984aa5b25b32bb8e40aef64f3164fc0" title="maybe_flip_keys" alt="" coords="619,360,739,387"/>
 <area shape="rect" id="node26" href="$quic_8h.html#a05b0a63c2fe234f56513430fc2114eba" title="is_ack_only" alt="" coords="839,107,929,133"/>
 <area shape="rect" id="node28" href="$frame_8c.html#a31c36630801506eb48c0bf620c0fcca6" title="shorten_ack_nr" alt="" coords="829,56,939,83"/>
-<area shape="rect" id="node39" href="$stream_8c.html#a878cdd4d69b352f501841456e8a43972" title="do_stream_id_fc" alt="" coords="273,1332,391,1359"/>
+<area shape="rect" id="node39" href="$stream_8c.html#abd56ea788d8872433901695928a944ab" title="do_stream_id_fc" alt="" coords="273,1332,391,1359"/>
 <area shape="rect" id="node40" href="$conn_8c.html#ad1e5e232a8372127e2130e85e7cdbb8d" title="use_next_dcid" alt="" coords="440,1465,547,1492"/>
 <area shape="rect" id="node44" href="$pkt_8h.html#a265e9c52eb203bb4701727adc3908850" title="pkt_type" alt="" coords="643,1187,715,1213"/>
 <area shape="rect" id="node45" href="$pkt_8c.html#a1f839697f5c2cb2a8b086249c85399bc" title="coalesce" alt="" coords="456,765,531,792"/>

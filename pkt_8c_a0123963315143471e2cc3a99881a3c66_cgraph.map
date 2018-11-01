@@ -8,11 +8,12 @@
 <area shape="rect" id="node9" href="$frame_8c.html#acf128f54c264f522e96019baef7af3c1" title="enc_new_cid_frame" alt="" coords="201,325,340,352"/>
 <area shape="rect" id="node12" href="$frame_8c.html#a2037bb3c54a511d30919c36c65e79bb7" title="enc_blocked_frame" alt="" coords="203,376,338,403"/>
 <area shape="rect" id="node13" href="$frame_8c.html#afce90a1bb73bc652f0ccbd5402b0eb61" title="enc_max_data_frame" alt="" coords="197,427,344,453"/>
-<area shape="rect" id="node14" href="$frame_8c.html#a615393093bcbcddfdecf8f193beedc45" title="enc_stream_id_blocked\l_frame" alt="" coords="191,478,350,519"/>
-<area shape="rect" id="node15" href="$frame_8c.html#ad254391e26decf235568cd8d6f20689f" title="enc_max_stream_id_frame" alt="" coords="181,544,360,571"/>
-<area shape="rect" id="node16" href="$frame_8c.html#a916d0dd562621c7d36e786193418b07f" title="enc_stream_blocked\l_frame" alt="" coords="199,595,342,637"/>
-<area shape="rect" id="node17" href="$frame_8c.html#afac1f0948949980e386e72ae7f2b3132" title="enc_max_stream_data\l_frame" alt="" coords="193,661,348,702"/>
+<area shape="rect" id="node14" href="$frame_8c.html#a150ea103a632fcd9b245874c54392832" title="enc_stream_id_blocked\l_frame" alt="" coords="191,478,350,519"/>
+<area shape="rect" id="node16" href="$frame_8c.html#a0ab31c2dc7624b828245c04eb90a6749" title="enc_max_stream_id_frame" alt="" coords="181,544,360,571"/>
+<area shape="rect" id="node17" href="$frame_8c.html#a916d0dd562621c7d36e786193418b07f" title="enc_stream_blocked\l_frame" alt="" coords="199,595,342,637"/>
+<area shape="rect" id="node18" href="$frame_8c.html#afac1f0948949980e386e72ae7f2b3132" title="enc_max_stream_data\l_frame" alt="" coords="193,661,348,702"/>
 <area shape="rect" id="node3" href="$frame_8c.html#af12f0dbd9c7d385b94e1041b53c31b2d" title="max_frame_len" alt="" coords="409,5,519,32"/>
 <area shape="rect" id="node10" href="$conn_8c.html#a1c9db996af2db57d04b8661d04dd0d68" title="add_scid" alt="" coords="427,325,501,352"/>
 <area shape="rect" id="node11" href="$quic_8h.html#ab2b6d16118c27c0f7c91dfac30c5d446" title="cid_cpy" alt="" coords="568,325,635,352"/>
+<area shape="rect" id="node15" href="$stream_8c.html#a38e0dc3cbebe5699ec573ab242b6f505" title="max_sid" alt="" coords="429,485,499,512"/>
 </map>
