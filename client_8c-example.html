@@ -259,13 +259,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="keyword">struct </span>w_iov_sq req = w_iov_sq_initializer(req);</div>
 <div class="line">    <span class="keywordflow">if</span> (do_h3) {</div>
 <div class="line">        <span class="comment">// use a canned H/3 request</span></div>
-<div class="line">        <a name="a6"></a><a class="code" href="quant_8h.html#ab9976a023607670fa84a096b21313075">q_chunk_str</a>(w, (<span class="keyword">const</span> <span class="keywordtype">char</span> *)get_slash, <span class="keyword">sizeof</span>(get_slash), &amp;req);</div>
+<div class="line">        <a name="a6"></a><a class="code" href="quant_8h.html#a259552347b2ef970bf6955dd5995449a">q_chunk_str</a>(w, (<span class="keyword">const</span> <span class="keywordtype">char</span> *)get_slash, <span class="keyword">sizeof</span>(get_slash), &amp;req);</div>
 <div class="line">    } <span class="keywordflow">else</span> {</div>
 <div class="line">        <span class="comment">// assemble an HTTP/0.9 request</span></div>
 <div class="line">        <span class="keywordtype">char</span> req_str[MAXPATHLEN + 6];</div>
 <div class="line">        <span class="keyword">const</span> <span class="keywordtype">int</span> req_str_len =</div>
 <div class="line">            snprintf(req_str, <span class="keyword">sizeof</span>(req_str), <span class="stringliteral">&quot;GET %s\r\n&quot;</span>, path);</div>
-<div class="line">        <a class="code" href="quant_8h.html#ab9976a023607670fa84a096b21313075">q_chunk_str</a>(w, req_str, (uint32_t)req_str_len, &amp;req);</div>
+<div class="line">        <a class="code" href="quant_8h.html#a259552347b2ef970bf6955dd5995449a">q_chunk_str</a>(w, req_str, (uint32_t)req_str_len, &amp;req);</div>
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// do we have a connection open to this peer?</span></div>
@@ -461,7 +461,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 1 2018 18:26:50 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 1 2018 19:30:48 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

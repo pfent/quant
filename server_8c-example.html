@@ -179,7 +179,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    }</div>
 <div class="line">    warn(ERR, msg);</div>
 <div class="line"></div>
-<div class="line">    <a name="a2"></a><a class="code" href="quant_8h.html#aef78c09fc0af77ca6a9c0eee97e16536">q_write_str</a>(d-&gt;w, d-&gt;s, msg, <span class="keyword">true</span>);</div>
+<div class="line">    <a name="a2"></a><a class="code" href="quant_8h.html#a3fe837399476c6ae443a5f17b5eb644f">q_write_str</a>(d-&gt;w, d-&gt;s, msg, strlen(msg), <span class="keyword">true</span>);</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="line"></div>
@@ -202,7 +202,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    uint32_t n = (uint32_t)MIN(UINT32_MAX, strtoul(&amp;path[2], 0, 10));</div>
 <div class="line">    <span class="keywordflow">if</span> (n) {</div>
 <div class="line">        <span class="keyword">struct </span>w_iov_sq out = w_iov_sq_initializer(out);</div>
-<div class="line">        <a name="a5"></a><a class="code" href="quant_8h.html#a76cce060063f44b767d7dc9b2265353c">q_alloc</a>(d-&gt;w, &amp;out, n);</div>
+<div class="line">        <a name="a5"></a><a class="code" href="quant_8h.html#a47bc44fba1cbaf917110bc2c6c805c81">q_alloc</a>(d-&gt;w, &amp;out, n);</div>
 <div class="line">        <span class="comment">// check whether we managed to allow enough buffers</span></div>
 <div class="line">        <span class="keywordflow">if</span> (w_iov_sq_len(&amp;out) != n) {</div>
 <div class="line">            warn(ERR, <span class="stringliteral">&quot;could only allocate %u/%u bytes of buffer&quot;</span>,</div>
@@ -243,7 +243,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="keyword">const</span> <span class="keywordtype">int</span> f = openat(d-&gt;dir, path, O_RDONLY | O_CLOEXEC);</div>
 <div class="line">    ensure(f != -1, <span class="stringliteral">&quot;could not open %s&quot;</span>, path);</div>
 <div class="line"></div>
-<div class="line">    <a name="a8"></a><a class="code" href="quant_8h.html#af658bfb2526517ccbbd2840a5dbee97e">q_write_file</a>(d-&gt;w, d-&gt;s, f, (uint32_t)info.st_size, <span class="keyword">true</span>);</div>
+<div class="line">    <a name="a8"></a><a class="code" href="quant_8h.html#add9fe9a3fc3b036c9a81e0d980744f81">q_write_file</a>(d-&gt;w, d-&gt;s, f, (uint32_t)info.st_size, <span class="keyword">true</span>);</div>
 <div class="line"></div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
@@ -379,7 +379,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 1 2018 18:26:50 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 1 2018 19:30:48 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

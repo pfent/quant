@@ -141,20 +141,20 @@ Functions</h2></td></tr>
 <tr class="separator:a7882234166a0aaac582c25c4c8a581b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01444581bd34af25498d1cb8fc3a0a92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#a01444581bd34af25498d1cb8fc3a0a92">q_close_stream</a> (struct <a class="el" href="structq__stream.html">q_stream</a> *const s)</td></tr>
 <tr class="separator:a01444581bd34af25498d1cb8fc3a0a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76cce060063f44b767d7dc9b2265353c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#a76cce060063f44b767d7dc9b2265353c">q_alloc</a> (struct w_engine *const w, struct w_iov_sq *const q, const uint32_t len)</td></tr>
-<tr class="separator:a76cce060063f44b767d7dc9b2265353c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47bc44fba1cbaf917110bc2c6c805c81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#a47bc44fba1cbaf917110bc2c6c805c81">q_alloc</a> (struct w_engine *const w, struct w_iov_sq *const q, const size_t len)</td></tr>
+<tr class="separator:a47bc44fba1cbaf917110bc2c6c805c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a7935a14e509d989eda300f16daf086"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#a4a7935a14e509d989eda300f16daf086">q_free</a> (struct w_iov_sq *const q)</td></tr>
 <tr class="separator:a4a7935a14e509d989eda300f16daf086"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbe95c980e94c1ba72d110e86e0bb060"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#abbe95c980e94c1ba72d110e86e0bb060">q_cid</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c)</td></tr>
 <tr class="separator:abbe95c980e94c1ba72d110e86e0bb060"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d5a178a6f02a949c935a8aa35805862"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#a0d5a178a6f02a949c935a8aa35805862">q_sid</a> (const struct <a class="el" href="structq__stream.html">q_stream</a> *const s)</td></tr>
 <tr class="separator:a0d5a178a6f02a949c935a8aa35805862"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9976a023607670fa84a096b21313075"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#ab9976a023607670fa84a096b21313075">q_chunk_str</a> (struct w_engine *const w, const char *const str, const uint32_t len, struct w_iov_sq *o)</td></tr>
-<tr class="separator:ab9976a023607670fa84a096b21313075"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef78c09fc0af77ca6a9c0eee97e16536"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#aef78c09fc0af77ca6a9c0eee97e16536">q_write_str</a> (struct w_engine *const w, struct <a class="el" href="structq__stream.html">q_stream</a> *const s, const char *const str, const bool fin)</td></tr>
-<tr class="separator:aef78c09fc0af77ca6a9c0eee97e16536"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af658bfb2526517ccbbd2840a5dbee97e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#af658bfb2526517ccbbd2840a5dbee97e">q_write_file</a> (struct w_engine *const w, struct <a class="el" href="structq__stream.html">q_stream</a> *const s, const int f, const uint32_t len, const bool fin)</td></tr>
-<tr class="separator:af658bfb2526517ccbbd2840a5dbee97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a259552347b2ef970bf6955dd5995449a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#a259552347b2ef970bf6955dd5995449a">q_chunk_str</a> (struct w_engine *const w, const char *const str, const size_t len, struct w_iov_sq *o)</td></tr>
+<tr class="separator:a259552347b2ef970bf6955dd5995449a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fe837399476c6ae443a5f17b5eb644f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#a3fe837399476c6ae443a5f17b5eb644f">q_write_str</a> (struct w_engine *const w, struct <a class="el" href="structq__stream.html">q_stream</a> *const s, const char *const str, const size_t len, const bool fin)</td></tr>
+<tr class="separator:a3fe837399476c6ae443a5f17b5eb644f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add9fe9a3fc3b036c9a81e0d980744f81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#add9fe9a3fc3b036c9a81e0d980744f81">q_write_file</a> (struct w_engine *const w, struct <a class="el" href="structq__stream.html">q_stream</a> *const s, const int f, const size_t len, const bool fin)</td></tr>
+<tr class="separator:add9fe9a3fc3b036c9a81e0d980744f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42c2660f4fddae758cab91e6f5365880"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#a42c2660f4fddae758cab91e6f5365880">q_is_str_closed</a> (struct <a class="el" href="structq__stream.html">q_stream</a> *const s)</td></tr>
 <tr class="separator:a42c2660f4fddae758cab91e6f5365880"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa40a9929151cdca1205f08b838e53f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quant_8h.html#afa40a9929151cdca1205f08b838e53f5">q_readall_str</a> (struct <a class="el" href="structq__stream.html">q_stream</a> *const s, struct w_iov_sq *const q)</td></tr>
@@ -203,7 +203,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a76cce060063f44b767d7dc9b2265353c"></a>
+<a class="anchor" id="a47bc44fba1cbaf917110bc2c6c805c81"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -222,7 +222,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramtype">const size_t&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
@@ -237,8 +237,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="quant_8h_a76cce060063f44b767d7dc9b2265353c_cgraph.png" border="0" usemap="#quant_8h_a76cce060063f44b767d7dc9b2265353c_cgraph" alt=""/></div>
-<map name="quant_8h_a76cce060063f44b767d7dc9b2265353c_cgraph" id="quant_8h_a76cce060063f44b767d7dc9b2265353c_cgraph">
+<div class="center"><img src="quant_8h_a47bc44fba1cbaf917110bc2c6c805c81_cgraph.png" border="0" usemap="#quant_8h_a47bc44fba1cbaf917110bc2c6c805c81_cgraph" alt=""/></div>
+<map name="quant_8h_a47bc44fba1cbaf917110bc2c6c805c81_cgraph" id="quant_8h_a47bc44fba1cbaf917110bc2c6c805c81_cgraph">
 <area shape="rect" id="node2" href="quic_8c.html#a2ee75c38a1c756036392a6e5b6d1e93a" title="alloc_off" alt="" coords="118,5,189,32"/></map>
 </div>
 </p>
@@ -281,7 +281,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ab9976a023607670fa84a096b21313075"></a>
+<a class="anchor" id="a259552347b2ef970bf6955dd5995449a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -300,7 +300,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramtype">const size_t&#160;</td>
           <td class="paramname"><em>len</em>, </td>
         </tr>
         <tr>
@@ -321,9 +321,9 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="quant_8h_ab9976a023607670fa84a096b21313075_cgraph.png" border="0" usemap="#quant_8h_ab9976a023607670fa84a096b21313075_cgraph" alt=""/></div>
-<map name="quant_8h_ab9976a023607670fa84a096b21313075_cgraph" id="quant_8h_ab9976a023607670fa84a096b21313075_cgraph">
-<area shape="rect" id="node2" href="quant_8h.html#a76cce060063f44b767d7dc9b2265353c" title="q_alloc" alt="" coords="147,5,210,32"/><area shape="rect" id="node3" href="quic_8c.html#a2ee75c38a1c756036392a6e5b6d1e93a" title="alloc_off" alt="" coords="259,5,330,32"/></map>
+<div class="center"><img src="quant_8h_a259552347b2ef970bf6955dd5995449a_cgraph.png" border="0" usemap="#quant_8h_a259552347b2ef970bf6955dd5995449a_cgraph" alt=""/></div>
+<map name="quant_8h_a259552347b2ef970bf6955dd5995449a_cgraph" id="quant_8h_a259552347b2ef970bf6955dd5995449a_cgraph">
+<area shape="rect" id="node2" href="quant_8h.html#a47bc44fba1cbaf917110bc2c6c805c81" title="q_alloc" alt="" coords="147,5,210,32"/><area shape="rect" id="node3" href="quic_8c.html#a2ee75c38a1c756036392a6e5b6d1e93a" title="alloc_off" alt="" coords="259,5,330,32"/></map>
 </div>
 </p>
 
@@ -790,7 +790,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="af658bfb2526517ccbbd2840a5dbee97e"></a>
+<a class="anchor" id="add9fe9a3fc3b036c9a81e0d980744f81"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -815,7 +815,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramtype">const size_t&#160;</td>
           <td class="paramname"><em>len</em>, </td>
         </tr>
         <tr>
@@ -836,15 +836,15 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="quant_8h_af658bfb2526517ccbbd2840a5dbee97e_cgraph.png" border="0" usemap="#quant_8h_af658bfb2526517ccbbd2840a5dbee97e_cgraph" alt=""/></div>
-<map name="quant_8h_af658bfb2526517ccbbd2840a5dbee97e_cgraph" id="quant_8h_af658bfb2526517ccbbd2840a5dbee97e_cgraph">
-<area shape="rect" id="node2" href="quant_8h.html#a76cce060063f44b767d7dc9b2265353c" title="q_alloc" alt="" coords="142,19,205,45"/><area shape="rect" id="node4" href="quant_8h.html#a5c710c2093cc759f8bb581e25b52ceda" title="q_write" alt="" coords="141,81,205,108"/><area shape="rect" id="node9" href="quant_8h.html#a4a7935a14e509d989eda300f16daf086" title="q_free" alt="" coords="144,132,203,159"/><area shape="rect" id="node3" href="quic_8c.html#a2ee75c38a1c756036392a6e5b6d1e93a" title="alloc_off" alt="" coords="254,5,325,32"/><area shape="rect" id="node5" href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="488,81,571,108"/><area shape="rect" id="node6" href="stream_8c.html#a379b35c4c21ee31284e14338963fdd8f" title="concat_out" alt="" coords="486,132,573,159"/><area shape="rect" id="node7" href="quic_8c.html#a90bd1e5780c2e0459a65c6c502490d80" title="do_write" alt="" coords="254,107,325,133"/><area shape="rect" id="node8" href="quic_8c.html#a5c710c2093cc759f8bb581e25b52ceda" title="q_write" alt="" coords="373,107,437,133"/></map>
+<div class="center"><img src="quant_8h_add9fe9a3fc3b036c9a81e0d980744f81_cgraph.png" border="0" usemap="#quant_8h_add9fe9a3fc3b036c9a81e0d980744f81_cgraph" alt=""/></div>
+<map name="quant_8h_add9fe9a3fc3b036c9a81e0d980744f81_cgraph" id="quant_8h_add9fe9a3fc3b036c9a81e0d980744f81_cgraph">
+<area shape="rect" id="node2" href="quant_8h.html#a47bc44fba1cbaf917110bc2c6c805c81" title="q_alloc" alt="" coords="142,19,205,45"/><area shape="rect" id="node4" href="quant_8h.html#a5c710c2093cc759f8bb581e25b52ceda" title="q_write" alt="" coords="141,81,205,108"/><area shape="rect" id="node9" href="quant_8h.html#a4a7935a14e509d989eda300f16daf086" title="q_free" alt="" coords="144,132,203,159"/><area shape="rect" id="node3" href="quic_8c.html#a2ee75c38a1c756036392a6e5b6d1e93a" title="alloc_off" alt="" coords="254,5,325,32"/><area shape="rect" id="node5" href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="488,81,571,108"/><area shape="rect" id="node6" href="stream_8c.html#a379b35c4c21ee31284e14338963fdd8f" title="concat_out" alt="" coords="486,132,573,159"/><area shape="rect" id="node7" href="quic_8c.html#a90bd1e5780c2e0459a65c6c502490d80" title="do_write" alt="" coords="254,107,325,133"/><area shape="rect" id="node8" href="quic_8c.html#a5c710c2093cc759f8bb581e25b52ceda" title="q_write" alt="" coords="373,107,437,133"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aef78c09fc0af77ca6a9c0eee97e16536"></a>
+<a class="anchor" id="a3fe837399476c6ae443a5f17b5eb644f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -869,6 +869,12 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const bool&#160;</td>
           <td class="paramname"><em>fin</em>&#160;</td>
         </tr>
@@ -884,9 +890,9 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="quant_8h_aef78c09fc0af77ca6a9c0eee97e16536_cgraph.png" border="0" usemap="#quant_8h_aef78c09fc0af77ca6a9c0eee97e16536_cgraph" alt=""/></div>
-<map name="quant_8h_aef78c09fc0af77ca6a9c0eee97e16536_cgraph" id="quant_8h_aef78c09fc0af77ca6a9c0eee97e16536_cgraph">
-<area shape="rect" id="node2" href="quant_8h.html#a76cce060063f44b767d7dc9b2265353c" title="q_alloc" alt="" coords="142,19,205,45"/><area shape="rect" id="node4" href="quant_8h.html#a5c710c2093cc759f8bb581e25b52ceda" title="q_write" alt="" coords="141,81,205,108"/><area shape="rect" id="node9" href="quant_8h.html#a4a7935a14e509d989eda300f16daf086" title="q_free" alt="" coords="144,132,203,159"/><area shape="rect" id="node3" href="quic_8c.html#a2ee75c38a1c756036392a6e5b6d1e93a" title="alloc_off" alt="" coords="254,5,325,32"/><area shape="rect" id="node5" href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="488,81,571,108"/><area shape="rect" id="node6" href="stream_8c.html#a379b35c4c21ee31284e14338963fdd8f" title="concat_out" alt="" coords="486,132,573,159"/><area shape="rect" id="node7" href="quic_8c.html#a90bd1e5780c2e0459a65c6c502490d80" title="do_write" alt="" coords="254,107,325,133"/><area shape="rect" id="node8" href="quic_8c.html#a5c710c2093cc759f8bb581e25b52ceda" title="q_write" alt="" coords="373,107,437,133"/></map>
+<div class="center"><img src="quant_8h_a3fe837399476c6ae443a5f17b5eb644f_cgraph.png" border="0" usemap="#quant_8h_a3fe837399476c6ae443a5f17b5eb644f_cgraph" alt=""/></div>
+<map name="quant_8h_a3fe837399476c6ae443a5f17b5eb644f_cgraph" id="quant_8h_a3fe837399476c6ae443a5f17b5eb644f_cgraph">
+<area shape="rect" id="node2" href="quant_8h.html#a47bc44fba1cbaf917110bc2c6c805c81" title="q_alloc" alt="" coords="142,19,205,45"/><area shape="rect" id="node4" href="quant_8h.html#a5c710c2093cc759f8bb581e25b52ceda" title="q_write" alt="" coords="141,81,205,108"/><area shape="rect" id="node9" href="quant_8h.html#a4a7935a14e509d989eda300f16daf086" title="q_free" alt="" coords="144,132,203,159"/><area shape="rect" id="node3" href="quic_8c.html#a2ee75c38a1c756036392a6e5b6d1e93a" title="alloc_off" alt="" coords="254,5,325,32"/><area shape="rect" id="node5" href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="488,81,571,108"/><area shape="rect" id="node6" href="stream_8c.html#a379b35c4c21ee31284e14338963fdd8f" title="concat_out" alt="" coords="486,132,573,159"/><area shape="rect" id="node7" href="quic_8c.html#a90bd1e5780c2e0459a65c6c502490d80" title="do_write" alt="" coords="254,107,325,133"/><area shape="rect" id="node8" href="quic_8c.html#a5c710c2093cc759f8bb581e25b52ceda" title="q_write" alt="" coords="373,107,437,133"/></map>
 </div>
 </p>
 
@@ -895,7 +901,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 1 2018 18:26:50 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 1 2018 19:30:48 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
