@@ -310,8 +310,12 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
 <div class="line">        if ((s)-&gt;<span class="keywordtype">id</span> &gt;= 0) {                                                    \</div>
-<div class="line">            warn(DBG, <span class="stringliteral">&quot;conn %s strm &quot;</span> <a class="code" href="quic_8h.html#ab5f8d1e8c05400492619366d20559bfd">FMT_SID</a> <span class="stringliteral">&quot; state %s -&gt; &quot;</span> <a class="code" href="quic_8h.html#a96fac03c4ab3363f06a0328e0e53a40c">YEL</a> <span class="stringliteral">&quot;%s&quot;</span> <a class="code" href="quic_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a>,    \</div>
+<div class="line">            warn(DBG,                                                          \</div>
+<div class="line">                 <span class="stringliteral">&quot;conn %s strm &quot;</span> <a class="code" href="quic_8h.html#ab5f8d1e8c05400492619366d20559bfd">FMT_SID</a> <span class="stringliteral">&quot; (%sdir, %s) state %s -&gt; &quot;</span> <a class="code" href="quic_8h.html#a96fac03c4ab3363f06a0328e0e53a40c">YEL</a>       \</div>
+<div class="line">                 <span class="stringliteral">&quot;%s&quot;</span> <a class="code" href="quic_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a>,                                                     \</div>
 <div class="line">                 (s)-&gt;c-&gt;scid ? <a class="code" href="conn_8h.html#ade2abf64e3b30fc0b5e1b95735ab6677">cid2str</a>((s)-&gt;c-&gt;scid) : <span class="stringliteral">&quot;?&quot;</span>, (s)-&gt;id,          \</div>
+<div class="line">                 <a class="code" href="stream_8h.html#a1a43855d911c01eab5a29f74f0b8e4d3">is_uni</a>((s)-&gt;<span class="keywordtype">id</span>) ? <span class="stringliteral">&quot;uni&quot;</span> : <span class="stringliteral">&quot;bi&quot;</span>,                               \</div>
+<div class="line">                 <a class="code" href="stream_8h.html#a252b945d4c3e2382b66bc40894f9c440">is_srv_ini</a>((s)-&gt;<span class="keywordtype">id</span>) ? <span class="stringliteral">&quot;serv&quot;</span> : <span class="stringliteral">&quot;clnt&quot;</span>,                        \</div>
 <div class="line">                 <a class="code" href="stream_8h.html#aa6dd5679b354a793efc82cd45b5d3962">strm_state_str</a>[(s)-&gt;state], <a class="code" href="stream_8h.html#aa6dd5679b354a793efc82cd45b5d3962">strm_state_str</a>[(new_state)]);     \</div>
 <div class="line">        }                                                                      \</div>
 <div class="line">        (s)-&gt;state = (new_state);                                              \</div>
@@ -321,6 +325,8 @@ Variables</h2></td></tr>
 <div class="ttc" id="conn_8h_html_ade2abf64e3b30fc0b5e1b95735ab6677"><div class="ttname"><a href="conn_8h.html#ade2abf64e3b30fc0b5e1b95735ab6677">cid2str</a></div><div class="ttdeci">#define cid2str(i)</div><div class="ttdef"><b>Definition:</b> conn.h:338</div></div>
 <div class="ttc" id="quic_8h_html_ade01bc98e1632cd645e0f33757d70d2e"><div class="ttname"><a href="quic_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a></div><div class="ttdeci">#define NRM</div><div class="ttdoc">ANSI escape sequence: reset all to normal. </div><div class="ttdef"><b>Definition:</b> quic.h:437</div></div>
 <div class="ttc" id="quic_8h_html_ab5f8d1e8c05400492619366d20559bfd"><div class="ttname"><a href="quic_8h.html#ab5f8d1e8c05400492619366d20559bfd">FMT_SID</a></div><div class="ttdeci">#define FMT_SID</div><div class="ttdef"><b>Definition:</b> quic.h:456</div></div>
+<div class="ttc" id="stream_8h_html_a1a43855d911c01eab5a29f74f0b8e4d3"><div class="ttname"><a href="stream_8h.html#a1a43855d911c01eab5a29f74f0b8e4d3">is_uni</a></div><div class="ttdeci">#define is_uni(id)</div><div class="ttdef"><b>Definition:</b> stream.h:103</div></div>
+<div class="ttc" id="stream_8h_html_a252b945d4c3e2382b66bc40894f9c440"><div class="ttname"><a href="stream_8h.html#a252b945d4c3e2382b66bc40894f9c440">is_srv_ini</a></div><div class="ttdeci">#define is_srv_ini(id)</div><div class="ttdef"><b>Definition:</b> stream.h:104</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -771,7 +777,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 1 2018 19:30:48 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 2 2018 09:11:16 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
