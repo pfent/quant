@@ -37,6 +37,7 @@ var searchData=
   ['maybe_5fapi_5freturn3',['maybe_api_return3',['../quic_8h.html#a1328432694749169c49589e1a743ba34',1,'quic.h']]],
   ['maybe_5fflip_5fkeys',['maybe_flip_keys',['../tls_8c.html#a8984aa5b25b32bb8e40aef64f3164fc0',1,'maybe_flip_keys(struct q_conn *const c, const bool out):&#160;tls.c'],['../tls_8h.html#a8984aa5b25b32bb8e40aef64f3164fc0',1,'maybe_flip_keys(struct q_conn *const c, const bool out):&#160;tls.c']]],
   ['meta',['meta',['../quic_8h.html#a01ed57991bea53afa1ece4452d16b568',1,'quic.h']]],
+  ['migration_5falarm',['migration_alarm',['../structq__conn.html#ab55c3687a5585bbb144b84f25d44eef7',1,'q_conn']]],
   ['min_5fini_5flen',['MIN_INI_LEN',['../pkt_8h.html#ae05e8e856810ed8b7911d43457b16e05',1,'pkt.h']]],
   ['min_5frtt',['min_rtt',['../structrecovery.html#ad29432ca40c3f915331349f86dc4dd48',1,'recovery']]],
   ['mk_5for_5fopen_5fdir',['mk_or_open_dir',['../quic_8c.html#aa1e3203057c43651b001c5aed00e50ee',1,'quic.c']]]

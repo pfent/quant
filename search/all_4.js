@@ -54,6 +54,7 @@ var searchData=
   ['do_5fconn_5fmgmt',['do_conn_mgmt',['../conn_8c.html#a0b0c1eff62e65d38a175b6df4ea4ce80',1,'conn.c']]],
   ['do_5fdec',['do_dec',['../marshall_8c.html#a7565114bf35a68d94836f0ab2f771115',1,'marshall.c']]],
   ['do_5fenc',['do_enc',['../marshall_8c.html#a371bfb01d2f478355c384804d1db42bb',1,'marshall.c']]],
+  ['do_5fmigration',['do_migration',['../structq__conn.html#a11134ef29f0209e1196e2dd38719d233',1,'q_conn']]],
   ['do_5fstream_5ffc',['do_stream_fc',['../stream_8c.html#ae4a57a5b73d68625c63574f6c4109bad',1,'do_stream_fc(struct q_stream *const s):&#160;stream.c'],['../stream_8h.html#ae4a57a5b73d68625c63574f6c4109bad',1,'do_stream_fc(struct q_stream *const s):&#160;stream.c']]],
   ['do_5fstream_5fid_5ffc',['do_stream_id_fc',['../stream_8c.html#abd56ea788d8872433901695928a944ab',1,'do_stream_id_fc(struct q_conn *const c, const int64_t sid):&#160;stream.c'],['../stream_8h.html#abd56ea788d8872433901695928a944ab',1,'do_stream_id_fc(struct q_conn *const c, const int64_t sid):&#160;stream.c']]],
   ['do_5ftx',['do_tx',['../conn_8c.html#a061f6268bdb3054227eedf2ca20cb8a1',1,'conn.c']]],

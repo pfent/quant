@@ -192,7 +192,10 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a424dfc6ca3378978e06cea115795cc79"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a424dfc6ca3378978e06cea115795cc79">tx_retire_cid</a>: 1</td></tr>
 <tr class="memdesc:a424dfc6ca3378978e06cea115795cc79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send RETIRE_CONNECTION_ID.  <a href="#a424dfc6ca3378978e06cea115795cc79">More...</a><br/></td></tr>
 <tr class="separator:a424dfc6ca3378978e06cea115795cc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acde364f022c2b0a227e7c54f6e4e80cd"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#acde364f022c2b0a227e7c54f6e4e80cd">__pad0__</a>: 13</td></tr>
+<tr class="memitem:a11134ef29f0209e1196e2dd38719d233"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a11134ef29f0209e1196e2dd38719d233">do_migration</a>: 1</td></tr>
+<tr class="memdesc:a11134ef29f0209e1196e2dd38719d233"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a CID migration when possible.  <a href="#a11134ef29f0209e1196e2dd38719d233">More...</a><br/></td></tr>
+<tr class="separator:a11134ef29f0209e1196e2dd38719d233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acde364f022c2b0a227e7c54f6e4e80cd"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#acde364f022c2b0a227e7c54f6e4e80cd">__pad0__</a>: 12</td></tr>
 <tr class="separator:acde364f022c2b0a227e7c54f6e4e80cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace8a73a49c79c13a5d91c213906c95e9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#ace8a73a49c79c13a5d91c213906c95e9">sport</a></td></tr>
 <tr class="memdesc:ace8a73a49c79c13a5d91c213906c95e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local port (in network byte-order).  <a href="#ace8a73a49c79c13a5d91c213906c95e9">More...</a><br/></td></tr>
@@ -249,6 +252,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:ab3860daebd7ca189549a5e6af6c9e8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddb82b2f2c8ea4f8ced1712b2b93c2d"><td class="memItemLeft" align="right" valign="top">ev_timer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a0ddb82b2f2c8ea4f8ced1712b2b93c2d">closing_alarm</a></td></tr>
 <tr class="separator:a0ddb82b2f2c8ea4f8ced1712b2b93c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab55c3687a5585bbb144b84f25d44eef7"><td class="memItemLeft" align="right" valign="top">ev_timer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#ab55c3687a5585bbb144b84f25d44eef7">migration_alarm</a></td></tr>
+<tr class="separator:ab55c3687a5585bbb144b84f25d44eef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4faa09a3937eeeb9ce1b749289b65ca"><td class="memItemLeft" align="right" valign="top">struct sockaddr_in&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#ac4faa09a3937eeeb9ce1b749289b65ca">peer</a></td></tr>
 <tr class="memdesc:ac4faa09a3937eeeb9ce1b749289b65ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address of our peer.  <a href="#ac4faa09a3937eeeb9ce1b749289b65ca">More...</a><br/></td></tr>
 <tr class="separator:ac4faa09a3937eeeb9ce1b749289b65ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -485,6 +490,20 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a11134ef29f0209e1196e2dd38719d233"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t q_conn::do_migration</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Perform a CID migration when possible. </p>
+
+</div>
+</div>
 <a class="anchor" id="a797b92f861a2e732270e6cb328385d9c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -673,6 +692,18 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">uint64_t q_conn::max_cid_seq_out</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab55c3687a5585bbb144b84f25d44eef7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ev_timer q_conn::migration_alarm</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1252,7 +1283,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 2 2018 09:11:16 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 2 2018 10:16:42 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

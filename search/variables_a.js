@@ -13,5 +13,6 @@ var searchData=
   ['max_5fstrm_5fdata_5fbidi_5fremote',['max_strm_data_bidi_remote',['../structtransport__params.html#a1ef8341121e76946446e36f1f7a8c818',1,'transport_params']]],
   ['max_5fstrm_5fdata_5funi',['max_strm_data_uni',['../structtransport__params.html#ae386de9dcd0300644d51ee3f657ecb32',1,'transport_params']]],
   ['max_5funi_5fstreams',['max_uni_streams',['../structtransport__params.html#accb4142e49334e5405b431eb1d6a95b3',1,'transport_params::max_uni_streams()'],['../structpkt__meta.html#a8b5cf9951df4e041099cfd6288f70f95',1,'pkt_meta::max_uni_streams()']]],
+  ['migration_5falarm',['migration_alarm',['../structq__conn.html#ab55c3687a5585bbb144b84f25d44eef7',1,'q_conn']]],
   ['min_5frtt',['min_rtt',['../structrecovery.html#ad29432ca40c3f915331349f86dc4dd48',1,'recovery']]]
 ];

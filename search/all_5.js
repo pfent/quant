@@ -2,6 +2,7 @@ var searchData=
 [
   ['ect0_5fcnt',['ect0_cnt',['../structrecovery.html#a7233060c263cc2aef8a4016531957ff6',1,'recovery']]],
   ['ect1_5fcnt',['ect1_cnt',['../structrecovery.html#aa613e4b7cc22521a16a18d7ac1f51bab',1,'recovery']]],
+  ['enable_5fmigration',['enable_migration',['../conn_8c.html#a644fdfb03d0306f1309d47ce6da84138',1,'conn.c']]],
   ['enc',['enc',['../marshall_8h.html#a0986acb39655709f2514114be789df34',1,'marshall.h']]],
   ['enc_5fack_5fframe',['enc_ack_frame',['../frame_8c.html#ad33d4ffd79b410b355647b882fcecd94',1,'enc_ack_frame(struct q_conn *const c, struct pn_space *const pn, struct w_iov *const v, const uint16_t pos):&#160;frame.c'],['../frame_8h.html#ad33d4ffd79b410b355647b882fcecd94',1,'enc_ack_frame(struct q_conn *const c, struct pn_space *const pn, struct w_iov *const v, const uint16_t pos):&#160;frame.c']]],
   ['enc_5faead',['enc_aead',['../tls_8c.html#a874c6921869d564b647792ec6f71ba7f',1,'enc_aead(struct q_conn *const c, const struct w_iov *const v, const struct w_iov *const x):&#160;tls.c'],['../tls_8h.html#a874c6921869d564b647792ec6f71ba7f',1,'enc_aead(struct q_conn *const c, const struct w_iov *const v, const struct w_iov *const x):&#160;tls.c']]],
