@@ -247,7 +247,7 @@ Variables</h2></td></tr>
 <div class="line"><a class="code" href="quic_8c.html#a593420bbec69beea4076ea6603019ea0">        api_func</a> = (<a class="code" href="quic_8h.html#aaf4e8117a58ef7278393d801e5d78c46">func_ptr</a>)(&amp;(func));                                        <a class="code" href="quic_8c.html#a91b81b7384533b284fa05acbc6b6787d">\</a></div>
 <div class="line"><a class="code" href="quic_8c.html#a91b81b7384533b284fa05acbc6b6787d">        api_conn</a> = (conn);                                                     <a class="code" href="quic_8c.html#a51e2b7dfe290cfc0a139b3768427de79">\</a></div>
 <div class="line"><a class="code" href="quic_8c.html#a51e2b7dfe290cfc0a139b3768427de79">        api_strm</a> = (strm);                                                     \</div>
-<div class="line">        warn(DBG, #func <span class="stringliteral">&quot;(&quot;</span> #conn <span class="stringliteral">&quot;, &quot;</span> #strm <span class="stringliteral">&quot;) entering event loop&quot;</span>);         \</div>
+<div class="line">        <span class="comment">/* warn(DBG, #func &quot;(&quot; #conn &quot;, &quot; #strm &quot;) entering event loop&quot;); */</span>   \</div>
 <div class="line">        ev_run(<a class="code" href="quic_8c.html#a855923b555731173d3509ecb645de0e0">loop</a>, 0);                                                       <a class="code" href="quic_8c.html#a593420bbec69beea4076ea6603019ea0">\</a></div>
 <div class="line"><a class="code" href="quic_8c.html#a593420bbec69beea4076ea6603019ea0">        api_func</a> = 0;                                                          <a class="code" href="quic_8c.html#a91b81b7384533b284fa05acbc6b6787d">\</a></div>
 <div class="line"><a class="code" href="quic_8c.html#a91b81b7384533b284fa05acbc6b6787d">        api_conn</a> = <a class="code" href="quic_8c.html#a51e2b7dfe290cfc0a139b3768427de79">api_strm</a> = 0;                                               \</div>
@@ -1266,7 +1266,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 2 2018 10:16:42 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 2 2018 20:52:37 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
