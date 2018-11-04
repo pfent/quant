@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['ect0_5fcnt',['ect0_cnt',['../structrecovery.html#a7233060c263cc2aef8a4016531957ff6',1,'recovery']]],
-  ['ect1_5fcnt',['ect1_cnt',['../structrecovery.html#aa613e4b7cc22521a16a18d7ac1f51bab',1,'recovery']]],
+  ['ect0_5fcnt',['ect0_cnt',['../structpn__space.html#aaa448850caee459806a942aa85269668',1,'pn_space']]],
+  ['ect1_5fcnt',['ect1_cnt',['../structpn__space.html#accaead83577916353b0cd7808a4731f5',1,'pn_space']]],
   ['enc_5ftckt',['enc_tckt',['../tls_8c.html#ae52de31f9ac17d5ebb79d284d90cc1aa',1,'tls.c']]],
   ['encrypt_5fticket',['encrypt_ticket',['../tls_8c.html#a4f25450b3aa01cc353142a2b8d76cfd9',1,'tls.c']]],
   ['eor',['eor',['../structrecovery.html#ab998dff653da4ec3cec8866209153a96',1,'recovery']]],

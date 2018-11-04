@@ -153,47 +153,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="structrecovery.html#a26dea9e16702f8af9f244cd5e2398f87">   62</a></span>&#160;    uint64_t <a class="code" href="structrecovery.html#a26dea9e16702f8af9f244cd5e2398f87">cwnd</a>;      <span class="comment">// congestion_window</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structrecovery.html#ab998dff653da4ec3cec8866209153a96">   63</a></span>&#160;    uint64_t <a class="code" href="structrecovery.html#ab998dff653da4ec3cec8866209153a96">eor</a>;       <span class="comment">// end_of_recovery</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="structrecovery.html#a2eb67fcd1408e01f084046d483f33008">   64</a></span>&#160;    uint64_t <a class="code" href="structrecovery.html#a2eb67fcd1408e01f084046d483f33008">ssthresh</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="structrecovery.html#a7233060c263cc2aef8a4016531957ff6">   66</a></span>&#160;    uint64_t <a class="code" href="structrecovery.html#a7233060c263cc2aef8a4016531957ff6">ect0_cnt</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="structrecovery.html#aa613e4b7cc22521a16a18d7ac1f51bab">   67</a></span>&#160;    uint64_t <a class="code" href="structrecovery.html#aa613e4b7cc22521a16a18d7ac1f51bab">ect1_cnt</a>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="structrecovery.html#a6d05147b8997b09920401f62530db8d9">   68</a></span>&#160;    uint64_t <a class="code" href="structrecovery.html#a6d05147b8997b09920401f62530db8d9">ce_cnt</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="recovery_8h.html#ad588231c121d1a85ab97024a4cf12823">   72</a></span>&#160;<span class="preprocessor">#define log_cc(c)                                                              \</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">    warn(NTE,                                                                  \</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">         &quot;in_flight=%&quot; PRIu64 &quot;, cwnd=%&quot; PRIu64 &quot;, ssthresh=%&quot; PRIu64          \</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">         &quot;, srtt=%f, rttvar=%f&quot;,                                               \</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">         (c)-&gt;rec.in_flight, (c)-&gt;rec.cwnd,                                    \</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">         (c)-&gt;rec.ssthresh == UINT64_MAX ? 0 : (c)-&gt;rec.ssthresh,              \</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">         (c)-&gt;rec.srtt, (c)-&gt;rec.rttvar)</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="recovery_8h.html#a60784c1a11f52e1b091994e1cfcc4609">init_rec</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<a class="code" href="recovery_8h.html#a9749ec5110f82cad7875d3ec8b94199d">on_pkt_sent</a>(struct <a class="code" href="structq__stream.html">q_stream</a> * const s, struct w_iov * const v);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<a class="code" href="recovery_8h.html#a968810548afcf006e9e6e5515511db31">on_ack_received_1</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                  struct <a class="code" href="structpn__space.html">pn_space</a> * const pn,</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                  struct w_iov * const lg_ack,</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                  const uint64_t ack_del);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull(1, 2)))</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<a class="code" href="recovery_8h.html#a52f8a8de4126e6ff094cf74a3880ed3d">on_ack_received_2</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                  struct <a class="code" href="structpn__space.html">pn_space</a> * const pn,</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                  const uint64_t sm_new_acked);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<a class="code" href="recovery_8h.html#ac8a16e66bf24868d4ac02a8dbe9beb0c">on_pkt_acked</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;             struct <a class="code" href="structpn__space.html">pn_space</a> * const pn,</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;             struct w_iov * const acked_pkt);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;extern struct w_iov * __attribute__((nonnull))</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<a class="code" href="recovery_8h.html#a078d446c5244577b054aed3abda0d694">find_sent_pkt</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;              struct <a class="code" href="structpn__space.html">pn_space</a> * const pn,</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;              const uint64_t nr);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="recovery_8h.html#ad588231c121d1a85ab97024a4cf12823">   68</a></span>&#160;<span class="preprocessor">#define log_cc(c)                                                              \</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">    warn(NTE,                                                                  \</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">         &quot;in_flight=%&quot; PRIu64 &quot;, cwnd=%&quot; PRIu64 &quot;, ssthresh=%&quot; PRIu64          \</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">         &quot;, srtt=%f, rttvar=%f&quot;,                                               \</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">         (c)-&gt;rec.in_flight, (c)-&gt;rec.cwnd,                                    \</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">         (c)-&gt;rec.ssthresh == UINT64_MAX ? 0 : (c)-&gt;rec.ssthresh,              \</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">         (c)-&gt;rec.srtt, (c)-&gt;rec.rttvar)</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="recovery_8h.html#a60784c1a11f52e1b091994e1cfcc4609">init_rec</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<a class="code" href="recovery_8h.html#a9749ec5110f82cad7875d3ec8b94199d">on_pkt_sent</a>(struct <a class="code" href="structq__stream.html">q_stream</a> * const s, struct w_iov * const v);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<a class="code" href="recovery_8h.html#a968810548afcf006e9e6e5515511db31">on_ack_received_1</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                  struct <a class="code" href="structpn__space.html">pn_space</a> * const pn,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                  struct w_iov * const lg_ack,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                  const uint64_t ack_del);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull(1, 2)))</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<a class="code" href="recovery_8h.html#a52f8a8de4126e6ff094cf74a3880ed3d">on_ack_received_2</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                  struct <a class="code" href="structpn__space.html">pn_space</a> * const pn,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                  const uint64_t sm_new_acked);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<a class="code" href="recovery_8h.html#ac8a16e66bf24868d4ac02a8dbe9beb0c">on_pkt_acked</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;             struct <a class="code" href="structpn__space.html">pn_space</a> * const pn,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;             struct w_iov * const acked_pkt);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;extern struct w_iov * __attribute__((nonnull))</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<a class="code" href="recovery_8h.html#a078d446c5244577b054aed3abda0d694">find_sent_pkt</a>(struct <a class="code" href="structq__conn.html">q_conn</a> * const c,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;              struct <a class="code" href="structpn__space.html">pn_space</a> * const pn,</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;              const uint64_t nr);</div>
 <div class="ttc" id="structrecovery_html_a0e9c80d907456fd2642d33201921ce34"><div class="ttname"><a href="structrecovery.html#a0e9c80d907456fd2642d33201921ce34">recovery::hshake_cnt</a></div><div class="ttdeci">uint16_t hshake_cnt</div><div class="ttdef"><b>Definition:</b> recovery.h:45</div></div>
 <div class="ttc" id="recovery_8h_html_a968810548afcf006e9e6e5515511db31"><div class="ttname"><a href="recovery_8h.html#a968810548afcf006e9e6e5515511db31">on_ack_received_1</a></div><div class="ttdeci">void on_ack_received_1(struct q_conn *const c, struct pn_space *const pn, struct w_iov *const lg_ack, const uint64_t ack_del)</div><div class="ttdef"><b>Definition:</b> recovery.c:333</div></div>
 <div class="ttc" id="structrecovery_html"><div class="ttname"><a href="structrecovery.html">recovery</a></div><div class="ttdef"><b>Definition:</b> recovery.h:42</div></div>
@@ -202,7 +198,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="structq__conn_html"><div class="ttname"><a href="structq__conn.html">q_conn</a></div><div class="ttdoc">A QUIC connection. </div><div class="ttdef"><b>Definition:</b> conn.h:105</div></div>
 <div class="ttc" id="structrecovery_html_a8233971136274c530051b40c04a974e9"><div class="ttname"><a href="structrecovery.html#a8233971136274c530051b40c04a974e9">recovery::ld_alarm</a></div><div class="ttdeci">ev_timer ld_alarm</div><div class="ttdef"><b>Definition:</b> recovery.h:44</div></div>
 <div class="ttc" id="structrecovery_html_afde8ec90b8d6b16a0af1f344ae6b498f"><div class="ttname"><a href="structrecovery.html#afde8ec90b8d6b16a0af1f344ae6b498f">recovery::_unused2</a></div><div class="ttdeci">uint8_t _unused2[2]</div><div class="ttdef"><b>Definition:</b> recovery.h:49</div></div>
-<div class="ttc" id="structrecovery_html_a6d05147b8997b09920401f62530db8d9"><div class="ttname"><a href="structrecovery.html#a6d05147b8997b09920401f62530db8d9">recovery::ce_cnt</a></div><div class="ttdeci">uint64_t ce_cnt</div><div class="ttdef"><b>Definition:</b> recovery.h:68</div></div>
 <div class="ttc" id="structrecovery_html_abc466711a95fd985bdde9a59e7ebec6e"><div class="ttname"><a href="structrecovery.html#abc466711a95fd985bdde9a59e7ebec6e">recovery::srtt</a></div><div class="ttdeci">ev_tstamp srtt</div><div class="ttdef"><b>Definition:</b> recovery.h:55</div></div>
 <div class="ttc" id="structrecovery_html_aac7447a2fe4bec39b937f846da66fcfe"><div class="ttname"><a href="structrecovery.html#aac7447a2fe4bec39b937f846da66fcfe">recovery::tlp_cnt</a></div><div class="ttdeci">uint16_t tlp_cnt</div><div class="ttdef"><b>Definition:</b> recovery.h:46</div></div>
 <div class="ttc" id="structrecovery_html_a26dea9e16702f8af9f244cd5e2398f87"><div class="ttname"><a href="structrecovery.html#a26dea9e16702f8af9f244cd5e2398f87">recovery::cwnd</a></div><div class="ttdeci">uint64_t cwnd</div><div class="ttdef"><b>Definition:</b> recovery.h:62</div></div>
@@ -213,13 +208,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="structrecovery_html_a34571d44f4791519797d7915419cb48d"><div class="ttname"><a href="structrecovery.html#a34571d44f4791519797d7915419cb48d">recovery::latest_rtt</a></div><div class="ttdeci">ev_tstamp latest_rtt</div><div class="ttdef"><b>Definition:</b> recovery.h:54</div></div>
 <div class="ttc" id="recovery_8h_html_ac8a16e66bf24868d4ac02a8dbe9beb0c"><div class="ttname"><a href="recovery_8h.html#ac8a16e66bf24868d4ac02a8dbe9beb0c">on_pkt_acked</a></div><div class="ttdeci">void on_pkt_acked(struct q_conn *const c, struct pn_space *const pn, struct w_iov *const acked_pkt)</div><div class="ttdef"><b>Definition:</b> recovery.c:420</div></div>
 <div class="ttc" id="recovery_8h_html_a078d446c5244577b054aed3abda0d694"><div class="ttname"><a href="recovery_8h.html#a078d446c5244577b054aed3abda0d694">find_sent_pkt</a></div><div class="ttdeci">struct w_iov * find_sent_pkt(struct q_conn *const c, struct pn_space *const pn, const uint64_t nr)</div><div class="ttdef"><b>Definition:</b> recovery.c:519</div></div>
-<div class="ttc" id="structrecovery_html_aa613e4b7cc22521a16a18d7ac1f51bab"><div class="ttname"><a href="structrecovery.html#aa613e4b7cc22521a16a18d7ac1f51bab">recovery::ect1_cnt</a></div><div class="ttdeci">uint64_t ect1_cnt</div><div class="ttdef"><b>Definition:</b> recovery.h:67</div></div>
 <div class="ttc" id="recovery_8h_html_a52f8a8de4126e6ff094cf74a3880ed3d"><div class="ttname"><a href="recovery_8h.html#a52f8a8de4126e6ff094cf74a3880ed3d">on_ack_received_2</a></div><div class="ttdeci">void on_ack_received_2(struct q_conn *const c, struct pn_space *const pn, const uint64_t sm_new_acked)</div><div class="ttdef"><b>Definition:</b> recovery.c:351</div></div>
 <div class="ttc" id="structrecovery_html_ad29432ca40c3f915331349f86dc4dd48"><div class="ttname"><a href="structrecovery.html#ad29432ca40c3f915331349f86dc4dd48">recovery::min_rtt</a></div><div class="ttdeci">ev_tstamp min_rtt</div><div class="ttdef"><b>Definition:</b> recovery.h:53</div></div>
 <div class="ttc" id="structq__stream_html"><div class="ttname"><a href="structq__stream.html">q_stream</a></div><div class="ttdef"><b>Definition:</b> stream.h:57</div></div>
 <div class="ttc" id="structrecovery_html_a2394e577c3fc53d34bb35b44b7113fe7"><div class="ttname"><a href="structrecovery.html#a2394e577c3fc53d34bb35b44b7113fe7">recovery::loss_t</a></div><div class="ttdeci">ev_tstamp loss_t</div><div class="ttdef"><b>Definition:</b> recovery.h:58</div></div>
 <div class="ttc" id="structrecovery_html_ab998dff653da4ec3cec8866209153a96"><div class="ttname"><a href="structrecovery.html#ab998dff653da4ec3cec8866209153a96">recovery::eor</a></div><div class="ttdeci">uint64_t eor</div><div class="ttdef"><b>Definition:</b> recovery.h:63</div></div>
-<div class="ttc" id="structrecovery_html_a7233060c263cc2aef8a4016531957ff6"><div class="ttname"><a href="structrecovery.html#a7233060c263cc2aef8a4016531957ff6">recovery::ect0_cnt</a></div><div class="ttdeci">uint64_t ect0_cnt</div><div class="ttdef"><b>Definition:</b> recovery.h:66</div></div>
 <div class="ttc" id="recovery_8h_html_a60784c1a11f52e1b091994e1cfcc4609"><div class="ttname"><a href="recovery_8h.html#a60784c1a11f52e1b091994e1cfcc4609">init_rec</a></div><div class="ttdeci">void init_rec(struct q_conn *const c)</div><div class="ttdef"><b>Definition:</b> recovery.c:530</div></div>
 <div class="ttc" id="structrecovery_html_a3d40495a7d9c9e05038100522e558fc2"><div class="ttname"><a href="structrecovery.html#a3d40495a7d9c9e05038100522e558fc2">recovery::last_sent_hshk_t</a></div><div class="ttdeci">ev_tstamp last_sent_hshk_t</div><div class="ttdef"><b>Definition:</b> recovery.h:51</div></div>
 <div class="ttc" id="structrecovery_html_a2eb67fcd1408e01f084046d483f33008"><div class="ttname"><a href="structrecovery.html#a2eb67fcd1408e01f084046d483f33008">recovery::ssthresh</a></div><div class="ttdeci">uint64_t ssthresh</div><div class="ttdef"><b>Definition:</b> recovery.h:64</div></div>
@@ -227,7 +220,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 4 2018 06:53:56 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 4 2018 07:40:32 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
