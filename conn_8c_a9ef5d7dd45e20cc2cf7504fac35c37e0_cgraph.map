@@ -9,7 +9,7 @@
 <area shape="rect" id="node35" href="$tls_8c.html#a873296f812267d1c3475457cacc3c815" title="init_tp" alt="" coords="161,909,218,936"/>
 <area shape="rect" id="node36" href="$conn_8c.html#aef0e70b44b598a909e6127fc859b80af" title="update_act_scid" alt="" coords="131,1443,248,1469"/>
 <area shape="rect" id="node38" href="$conn_8c.html#a9512dc2ed1b8796966112d60b0abb037" title="pick_from_server_vers" alt="" coords="112,1519,267,1545"/>
-<area shape="rect" id="node40" href="$conn_8c.html#a61fab7f448fb816e2b147319ef693202" title="vneg_or_rtry_resp" alt="" coords="126,1747,253,1773"/>
+<area shape="rect" id="node40" href="$conn_8c.html#aac9b3a9d6fb5a377419eb98e1e5e785e" title="vneg_or_rtry_resp" alt="" coords="126,1747,253,1773"/>
 <area shape="rect" id="node47" href="$conn_8c.html#a02d7b0c5a072e1b673358b52ac71f160" title="err_close" alt="" coords="563,1973,637,2000"/>
 <area shape="rect" id="node48" href="$quic_8h.html#a05b0a63c2fe234f56513430fc2114eba" title="is_ack_only" alt="" coords="144,2075,235,2101"/>
 <area shape="rect" id="node49" href="$tls_8c.html#a8984aa5b25b32bb8e40aef64f3164fc0" title="maybe_flip_keys" alt="" coords="129,2125,249,2152"/>
