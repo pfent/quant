@@ -446,7 +446,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            <span class="keywordflow">if</span> (n &lt; 4 || v == sq_last(&amp;i, w_iov, next)) {</div>
 <div class="line">                <span class="comment">// don&#39;t print newlines to console log</span></div>
 <div class="line">                <span class="keywordflow">for</span> (uint16_t p = 0; p &lt; v-&gt;len; p++)</div>
-<div class="line">                    <span class="keywordflow">if</span> (v-&gt;buf[p] == <span class="charliteral">&#39;\n&#39;</span>)</div>
+<div class="line">                    <span class="keywordflow">if</span> (v-&gt;buf[p] == <span class="charliteral">&#39;\n&#39;</span> || v-&gt;buf[p] == <span class="charliteral">&#39;\r&#39;</span>)</div>
 <div class="line">                        v-&gt;buf[p] = <span class="charliteral">&#39; &#39;</span>;</div>
 <div class="line">                <span class="keywordflow">if</span> (do_h3)</div>
 <div class="line">                    hexdump(v-&gt;buf, v-&gt;len);</div>
@@ -471,7 +471,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 5 2018 07:59:07 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 5 2018 09:01:14 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
