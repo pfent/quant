@@ -45,7 +45,7 @@
 <area shape="rect" id="node39" href="$pkt_8c.html#a2971ac1a1c667293ba2407d9a0050e99" title="have_space_for" alt="" coords="660,603,775,630"/>
 <area shape="rect" id="node40" href="$frame_8c.html#a722b21098f9985a27188e9fae848aced" title="enc_new_token_frame" alt="" coords="641,654,794,680"/>
 <area shape="rect" id="node41" href="$frame_8c.html#a68280ad079aa677bf9eeb72dfe8f65d2" title="enc_path_response_frame" alt="" coords="630,704,805,731"/>
-<area shape="rect" id="node42" href="$frame_8c.html#a1ebd1ec650ccb709388834bbcb5bc9fa" title="enc_retire_cid_frame" alt="" coords="646,755,789,782"/>
+<area shape="rect" id="node42" href="$frame_8c.html#afa20d45dcbae3ae1846c19c85a167f4e" title="enc_retire_cid_frame" alt="" coords="646,755,789,782"/>
 <area shape="rect" id="node43" href="$conn_8c.html#a1c73802c8005ac4f60cf1c0003972d56" title="free_dcid" alt="" coords="680,806,755,832"/>
 <area shape="rect" id="node44" href="$frame_8c.html#ad4218d08a618cd6088192777ee96f95f" title="enc_path_challenge\l_frame" alt="" coords="649,857,786,898"/>
 </map>

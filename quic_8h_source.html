@@ -168,7 +168,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    memcpy((uint8_t *)dst + offsetof(<span class="keyword">struct</span> <a class="code" href="structcid.html">cid</a>, seq),</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;           (<span class="keyword">const</span> uint8_t *)src + offsetof(<span class="keyword">struct</span> <a class="code" href="structcid.html">cid</a>, seq),</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;           <span class="keyword">sizeof</span>(<span class="keyword">struct</span> <a class="code" href="structcid.html">cid</a>) - offsetof(<span class="keyword">struct</span> <a class="code" href="structcid.html">cid</a>, seq) -</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;               (<span class="keyword">sizeof</span>(<span class="keyword">struct</span> <a class="code" href="structcid.html">cid</a>) - offsetof(<span class="keyword">struct</span> <a class="code" href="structcid.html">cid</a>, _unused)));</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;               <span class="keyword">sizeof</span>(src-&gt;_unused));</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
@@ -587,7 +587,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 6 2018 10:08:08 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 6 2018 11:17:30 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

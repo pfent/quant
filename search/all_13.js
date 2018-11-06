@@ -43,6 +43,7 @@ var searchData=
   ['track_5fbytes_5fin',['track_bytes_in',['../stream_8c.html#a551a7c19bf90417d819623804da6949f',1,'track_bytes_in(struct q_stream *const s, const uint64_t n):&#160;stream.c'],['../stream_8h.html#a551a7c19bf90417d819623804da6949f',1,'track_bytes_in(struct q_stream *const s, const uint64_t n):&#160;stream.c']]],
   ['track_5fbytes_5fout',['track_bytes_out',['../stream_8c.html#a0c28462a470893c1046d7a167037d926',1,'track_bytes_out(struct q_stream *const s, const uint64_t n):&#160;stream.c'],['../stream_8h.html#a0c28462a470893c1046d7a167037d926',1,'track_bytes_out(struct q_stream *const s, const uint64_t n):&#160;stream.c']]],
   ['transport_5fparams',['transport_params',['../structtransport__params.html',1,'']]],
+  ['trim_5fframe',['trim_frame',['../frame_8c.html#ae6b33881d5310ee374d246e582265d43',1,'frame.c']]],
   ['try_5f0rtt',['try_0rtt',['../structq__conn.html#a560bbc195a5c8b9642f059bbddddb442',1,'q_conn']]],
   ['tx',['tx',['../conn_8c.html#abc878d206fec5787bb6754f6b53d0e8a',1,'tx(struct q_conn *const c, const bool rtx, const uint32_t limit):&#160;conn.c'],['../conn_8h.html#abc878d206fec5787bb6754f6b53d0e8a',1,'tx(struct q_conn *const c, const bool rtx, const uint32_t limit):&#160;conn.c']]],
   ['tx_5fack',['tx_ack',['../conn_8c.html#a87cb12b0afa8cdb9f2a41ce602d8ff96',1,'tx_ack(struct q_conn *const c, const epoch_t e):&#160;conn.c'],['../conn_8h.html#a87cb12b0afa8cdb9f2a41ce602d8ff96',1,'tx_ack(struct q_conn *const c, const epoch_t e):&#160;conn.c']]],

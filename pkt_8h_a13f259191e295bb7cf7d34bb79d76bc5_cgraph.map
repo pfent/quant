@@ -38,7 +38,7 @@
 <area shape="rect" id="node32" href="$pkt_8c.html#a2971ac1a1c667293ba2407d9a0050e99" title="have_space_for" alt="" coords="365,1270,480,1296"/>
 <area shape="rect" id="node33" href="$frame_8c.html#a722b21098f9985a27188e9fae848aced" title="enc_new_token_frame" alt="" coords="346,1320,499,1347"/>
 <area shape="rect" id="node34" href="$frame_8c.html#a68280ad079aa677bf9eeb72dfe8f65d2" title="enc_path_response_frame" alt="" coords="335,1371,510,1398"/>
-<area shape="rect" id="node35" href="$frame_8c.html#a1ebd1ec650ccb709388834bbcb5bc9fa" title="enc_retire_cid_frame" alt="" coords="351,1422,494,1448"/>
+<area shape="rect" id="node35" href="$frame_8c.html#afa20d45dcbae3ae1846c19c85a167f4e" title="enc_retire_cid_frame" alt="" coords="351,1422,494,1448"/>
 <area shape="rect" id="node36" href="$conn_8c.html#a1c73802c8005ac4f60cf1c0003972d56" title="free_dcid" alt="" coords="385,1472,460,1499"/>
 <area shape="rect" id="node37" href="$frame_8c.html#ad4218d08a618cd6088192777ee96f95f" title="enc_path_challenge\l_frame" alt="" coords="354,1524,491,1565"/>
 <area shape="rect" id="node38" href="$frame_8c.html#acf128f54c264f522e96019baef7af3c1" title="enc_new_cid_frame" alt="" coords="353,1590,492,1616"/>

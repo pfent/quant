@@ -139,8 +139,11 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:a2d0522f128527120ab29e423c90a461f"><td class="mdescLeft">&#160;</td><td class="mdescRight">New inbound max_stream_data (for update).  <a href="#a2d0522f128527120ab29e423c90a461f">More...</a><br/></td></tr>
 <tr class="separator:a2d0522f128527120ab29e423c90a461f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af571e4a21acbd83695fdd6843ec414a5"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__stream.html#af571e4a21acbd83695fdd6843ec414a5">in_data</a></td></tr>
-<tr class="memdesc:af571e4a21acbd83695fdd6843ec414a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">In-order stream data received.  <a href="#af571e4a21acbd83695fdd6843ec414a5">More...</a><br/></td></tr>
+<tr class="memdesc:af571e4a21acbd83695fdd6843ec414a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">In-order stream data received (total).  <a href="#af571e4a21acbd83695fdd6843ec414a5">More...</a><br/></td></tr>
 <tr class="separator:af571e4a21acbd83695fdd6843ec414a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c1f40df9187a55af36ab90cbde31d5b"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__stream.html#a2c1f40df9187a55af36ab90cbde31d5b">in_data_off</a></td></tr>
+<tr class="memdesc:a2c1f40df9187a55af36ab90cbde31d5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next in-order stream data offset expected.  <a href="#a2c1f40df9187a55af36ab90cbde31d5b">More...</a><br/></td></tr>
+<tr class="separator:a2c1f40df9187a55af36ab90cbde31d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b0fce2373b57dc3ca4ff7b05cf1cd2c"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__stream.html#a5b0fce2373b57dc3ca4ff7b05cf1cd2c">id</a></td></tr>
 <tr class="separator:a5b0fce2373b57dc3ca4ff7b05cf1cd2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c163e13ed03a60a2c53ccfddc5929d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stream_8h.html#a711294f19cdaef709860ae8ff270d81e">strm_state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__stream.html#a3c163e13ed03a60a2c53ccfddc5929d7">state</a></td></tr>
@@ -265,7 +268,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>In-order stream data received. </p>
+<p>In-order stream data received (total). </p>
 
 </div>
 </div>
@@ -280,6 +283,20 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Inbound max_stream_data. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2c1f40df9187a55af36ab90cbde31d5b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t q_stream::in_data_off</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Next in-order stream data offset expected. </p>
 
 </div>
 </div>
@@ -441,7 +458,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 6 2018 10:08:08 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 6 2018 11:17:32 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
