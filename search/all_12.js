@@ -48,5 +48,5 @@ var searchData=
   ['strm_5fstate_5ft',['strm_state_t',['../stream_8h.html#a711294f19cdaef709860ae8ff270d81e',1,'stream.h']]],
   ['strm_5fstates',['STRM_STATES',['../stream_8h.html#a29d0d69805b312f9f5a7728dcd5f0e3d',1,'STRM_STATES():&#160;stream.h'],['../stream_8h.html#a711294f19cdaef709860ae8ff270d81ea5f8c8fa7f2f240ed5de28097238e3f7c',1,'STRM_STATES():&#160;stream.h']]],
   ['strm_5fto_5fstate',['strm_to_state',['../stream_8h.html#aecb5a067c7adc620178c9897b47bda8d',1,'stream.h']]],
-  ['switch_5fscid',['switch_scid',['../conn_8c.html#a00bfd113d31c70a12604ffa9e32cf92d',1,'conn.c']]]
+  ['switch_5fscid',['switch_scid',['../conn_8c.html#a9f69811923962fc8fa439917bf0f0908',1,'conn.c']]]
 ];

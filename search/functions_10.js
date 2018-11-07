@@ -15,5 +15,5 @@ var searchData=
   ['stream_5fneeds_5fctrl',['stream_needs_ctrl',['../stream_8h.html#ae11750e72c5f654dd57041a830ee19a7',1,'stream.h']]],
   ['streams_5fby_5fid_5fcmp',['streams_by_id_cmp',['../stream_8h.html#a8ff76d7de8537c95267a1cb8555b35bd',1,'stream.h']]],
   ['strm_5fepoch',['strm_epoch',['../stream_8h.html#af3bef0cb9d669dca78f301f6ae50a19e',1,'stream.h']]],
-  ['switch_5fscid',['switch_scid',['../conn_8c.html#a00bfd113d31c70a12604ffa9e32cf92d',1,'conn.c']]]
+  ['switch_5fscid',['switch_scid',['../conn_8c.html#a9f69811923962fc8fa439917bf0f0908',1,'conn.c']]]
 ];
