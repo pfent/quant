@@ -435,8 +435,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00347"></a><span class="lineno"><a class="line" href="conn_8h.html#ad2372a4b6e27ada905f0604c1725abf1">  347</a></span>&#160;<a class="code" href="conn_8h.html#ad2372a4b6e27ada905f0604c1725abf1">cid_cmp</a>(const struct <a class="code" href="structcid.html">cid</a> * const a, const struct <a class="code" href="structcid.html">cid</a> * const b)</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;{</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> r = memcmp(&amp;a-&gt;len, &amp;b-&gt;len, MIN(a-&gt;len, b-&gt;len) + <span class="keyword">sizeof</span>(a-&gt;len));</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    warn(ERR, <span class="stringliteral">&quot;%d = cmp %s len %u and %s len %u&quot;</span>, r, <a class="code" href="conn_8h.html#ade2abf64e3b30fc0b5e1b95735ab6677">cid2str</a>(a), a-&gt;len, <a class="code" href="conn_8h.html#ade2abf64e3b30fc0b5e1b95735ab6677">cid2str</a>(b),</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;         b-&gt;len);</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="comment">// warn(ERR, &quot;%d = cmp %s len %u and %s len %u&quot;, r, cid2str(a), a-&gt;len, cid2str(b),</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="comment">//      b-&gt;len);</span></div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    ensure(a-&gt;len &amp;&amp; b-&gt;len, <span class="stringliteral">&quot;len 0&quot;</span>);</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="comment">// compare len and id</span></div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="keywordflow">return</span> r;</div>
@@ -596,7 +596,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="structq__conn_html_a11888af06190d30dab6fd4d243d3c1d6"><div class="ttname"><a href="structq__conn.html#a11888af06190d30dab6fd4d243d3c1d6">q_conn::tx_w</a></div><div class="ttdeci">ev_async tx_w</div><div class="ttdoc">TX watcher. </div><div class="ttdef"><b>Definition:</b> conn.h:189</div></div>
 <div class="ttc" id="structtransport__params_html_a8f2594d069fe1679c4693433faaf05f0"><div class="ttname"><a href="structtransport__params.html#a8f2594d069fe1679c4693433faaf05f0">transport_params::idle_to</a></div><div class="ttdeci">uint16_t idle_to</div><div class="ttdef"><b>Definition:</b> conn.h:65</div></div>
 <div class="ttc" id="structq__conn_html_af204bd9db2f7193e8f1940865da162f6"><div class="ttname"><a href="structq__conn.html#af204bd9db2f7193e8f1940865da162f6">q_conn::tx_rtry</a></div><div class="ttdeci">uint32_t tx_rtry</div><div class="ttdoc">We need to send a RETRY. </div><div class="ttdef"><b>Definition:</b> conn.h:133</div></div>
-<div class="ttc" id="conn_8h_html_ade2abf64e3b30fc0b5e1b95735ab6677"><div class="ttname"><a href="conn_8h.html#ade2abf64e3b30fc0b5e1b95735ab6677">cid2str</a></div><div class="ttdeci">#define cid2str(i)</div><div class="ttdef"><b>Definition:</b> conn.h:215</div></div>
 <div class="ttc" id="conn_8h_html_ab12c601471f4fcfae92c53fbca85b32e"><div class="ttname"><a href="conn_8h.html#ab12c601471f4fcfae92c53fbca85b32e">conn_needs_ctrl</a></div><div class="ttdeci">static bool conn_needs_ctrl(const struct q_conn *const c)</div><div class="ttdef"><b>Definition:</b> conn.h:338</div></div>
 <div class="ttc" id="structpn__hshk__space_html"><div class="ttname"><a href="structpn__hshk__space.html">pn_hshk_space</a></div><div class="ttdef"><b>Definition:</b> pn.h:73</div></div>
 <div class="ttc" id="structq__conn_html_aa237d71bb04b7a3b77410003329a438f"><div class="ttname"><a href="structq__conn.html#aa237d71bb04b7a3b77410003329a438f">q_conn::rx_w</a></div><div class="ttdeci">ev_io rx_w</div><div class="ttdoc">RX watcher. </div><div class="ttdef"><b>Definition:</b> conn.h:188</div></div>
@@ -668,7 +667,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 8 2018 08:12:12 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 8 2018 09:10:24 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
