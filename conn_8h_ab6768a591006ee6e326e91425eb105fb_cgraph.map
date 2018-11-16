@@ -27,12 +27,12 @@
 <area shape="rect" id="node20" href="$quic_8c.html#afd98d880d46aa717596439adb85fcafc" title="cancel_api_call" alt="" coords="1203,1487,1314,1513"/>
 <area shape="rect" id="node24" href="$recovery_8c.html#a335f186f63ae2582ce2c96767906b413" title="on_ld_alarm" alt="" coords="327,423,419,449"/>
 <area shape="rect" id="node25" href="$recovery_8c.html#a0ab224b867c365ffdb3150b57d836ee8" title="hshk_pkts_outstanding" alt="" coords="694,549,850,576"/>
-<area shape="rect" id="node27" href="$conn_8c.html#abc878d206fec5787bb6754f6b53d0e8a" title="tx" alt="" coords="549,904,587,931"/>
+<area shape="rect" id="node27" href="$conn_8c.html#a1a9a96efc3be558373804c33a60df6b9" title="tx" alt="" coords="549,904,587,931"/>
 <area shape="rect" id="node34" href="$recovery_8c.html#ae842cad0e5d3c7dae0bfb5abd97725b7" title="detect_lost_pkts" alt="" coords="713,296,831,323"/>
 <area shape="rect" id="node35" href="$recovery_8c.html#a34c871e59b25f984223ab9573ebf3332" title="set_ld_alarm" alt="" coords="520,397,616,424"/>
 <area shape="rect" id="node26" href="$stream_8h.html#ad30add9149d4bde85b9e2cc3e9159559" title="out_fully_acked" alt="" coords="902,955,1015,981"/>
 <area shape="rect" id="node28" href="$conn_8c.html#ac0d0edf08b6c3f2b3a75ab87498def1f" title="tx_crypto" alt="" coords="734,1005,810,1032"/>
-<area shape="rect" id="node29" href="$conn_8c.html#a1a39c653f20bef724b56574fac9c449f" title="tx_stream_data" alt="" coords="903,1031,1015,1057"/>
+<area shape="rect" id="node29" href="$conn_8c.html#aa07824d29034256950ac9380e9934ca3" title="tx_stream_data" alt="" coords="903,1031,1015,1057"/>
 <area shape="rect" id="node30" href="$conn_8c.html#a0b0c1eff62e65d38a175b6df4ea4ce80" title="do_conn_mgmt" alt="" coords="717,1208,827,1235"/>
 <area shape="rect" id="node32" href="$stream_8h.html#ae11750e72c5f654dd57041a830ee19a7" title="stream_needs_ctrl" alt="" coords="707,803,837,829"/>
 <area shape="rect" id="node33" href="$conn_8c.html#a7bc1cf055ddc94c793f81fdfc52ecdbb" title="tx_stream_ctrl" alt="" coords="719,1157,825,1184"/>

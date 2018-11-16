@@ -9,7 +9,7 @@
 <area shape="rect" id="node8" href="$pkt_8c.html#a6419e978eb233947f0bf7805663171fc" title="enc_lh_cids" alt="" coords="313,959,404,985"/>
 <area shape="rect" id="node9" href="$pkt_8c.html#a49535313dfd1afad8743aef5abe2d30c" title="needed_pkt_nr_len" alt="" coords="293,1060,424,1087"/>
 <area shape="rect" id="node10" href="$pkt_8c.html#a38e598b310ff43723f449b71c7baa210" title="log_pkt" alt="" coords="741,1363,805,1389"/>
-<area shape="rect" id="node13" href="$conn_8c.html#abc878d206fec5787bb6754f6b53d0e8a" title="tx" alt="" coords="339,300,378,327"/>
+<area shape="rect" id="node13" href="$conn_8c.html#a1a9a96efc3be558373804c33a60df6b9" title="tx" alt="" coords="339,300,378,327"/>
 <area shape="rect" id="node25" href="$diet_8h.html#aad21e3b897b17d0c86fce4a174e80ab0" title="diet_empty" alt="" coords="315,1111,402,1137"/>
 <area shape="rect" id="node26" href="$quic_8h.html#ae64eb493276abdc60cd97ea2f6d96f78" title="is_ack_or_padding_only" alt="" coords="278,807,439,833"/>
 <area shape="rect" id="node28" href="$frame_8c.html#ad33d4ffd79b410b355647b882fcecd94" title="enc_ack_frame" alt="" coords="303,1212,414,1239"/>
@@ -26,7 +26,7 @@
 <area shape="rect" id="node14" href="$conn_8c.html#afd38904c68cab87424e6aa8db723fd38" title="enter_closing" alt="" coords="528,604,627,631"/>
 <area shape="rect" id="node15" href="$conn_8c.html#ac0d0edf08b6c3f2b3a75ab87498def1f" title="tx_crypto" alt="" coords="539,199,615,225"/>
 <area shape="rect" id="node16" href="$stream_8h.html#ad30add9149d4bde85b9e2cc3e9159559" title="out_fully_acked" alt="" coords="717,173,830,200"/>
-<area shape="rect" id="node17" href="$conn_8c.html#a1a39c653f20bef724b56574fac9c449f" title="tx_stream_data" alt="" coords="717,249,829,276"/>
+<area shape="rect" id="node17" href="$conn_8c.html#aa07824d29034256950ac9380e9934ca3" title="tx_stream_data" alt="" coords="717,249,829,276"/>
 <area shape="rect" id="node18" href="$conn_8c.html#a0b0c1eff62e65d38a175b6df4ea4ce80" title="do_conn_mgmt" alt="" coords="522,47,633,73"/>
 <area shape="rect" id="node19" href="$stream_8h.html#ae11750e72c5f654dd57041a830ee19a7" title="stream_needs_ctrl" alt="" coords="513,97,642,124"/>
 <area shape="rect" id="node20" href="$conn_8h.html#ab12c601471f4fcfae92c53fbca85b32e" title="conn_needs_ctrl" alt="" coords="715,300,832,327"/>

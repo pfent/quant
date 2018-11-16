@@ -30,7 +30,7 @@
 <area shape="rect" id="node19" href="$quic_8c.html#afd98d880d46aa717596439adb85fcafc" title="cancel_api_call" alt="" coords="1579,980,1690,1007"/>
 <area shape="rect" id="node23" href="$recovery_8c.html#a335f186f63ae2582ce2c96767906b413" title="on_ld_alarm" alt="" coords="449,701,541,728"/>
 <area shape="rect" id="node24" href="$recovery_8c.html#a0ab224b867c365ffdb3150b57d836ee8" title="hshk_pkts_outstanding" alt="" coords="734,701,890,728"/>
-<area shape="rect" id="node25" href="$conn_8c.html#abc878d206fec5787bb6754f6b53d0e8a" title="tx" alt="" coords="625,853,663,880"/>
+<area shape="rect" id="node25" href="$conn_8c.html#a1a9a96efc3be558373804c33a60df6b9" title="tx" alt="" coords="625,853,663,880"/>
 <area shape="rect" id="node26" href="$conn_8h.html#a90b995546c499b521dcb4bf6cc7e39f1" title="epoch_in" alt="" coords="775,955,849,981"/>
 <area shape="rect" id="node29" href="$conn_8c.html#a743c431b40b906bbe9baad4456a0e7c5" title="rx_pkts" alt="" coords="462,955,527,981"/>
 <area shape="rect" id="node42" href="$conn_8c.html#a4a5deef512e20b125b45899c6c80c6fc" title="free_conn" alt="" coords="455,904,534,931"/>
