@@ -47,7 +47,6 @@ var searchData=
   ['try_5f0rtt',['try_0rtt',['../structq__conn.html#a560bbc195a5c8b9642f059bbddddb442',1,'q_conn']]],
   ['tx',['tx',['../conn_8c.html#a1a9a96efc3be558373804c33a60df6b9',1,'tx(struct q_conn *const c, const uint32_t limit):&#160;conn.c'],['../conn_8h.html#a1a9a96efc3be558373804c33a60df6b9',1,'tx(struct q_conn *const c, const uint32_t limit):&#160;conn.c']]],
   ['tx_5fack',['tx_ack',['../conn_8c.html#a87cb12b0afa8cdb9f2a41ce602d8ff96',1,'tx_ack(struct q_conn *const c, const epoch_t e):&#160;conn.c'],['../conn_8h.html#a87cb12b0afa8cdb9f2a41ce602d8ff96',1,'tx_ack(struct q_conn *const c, const epoch_t e):&#160;conn.c']]],
-  ['tx_5fcrypto',['tx_crypto',['../conn_8c.html#ac0d0edf08b6c3f2b3a75ab87498def1f',1,'conn.c']]],
   ['tx_5ffin',['tx_fin',['../structq__stream.html#aeb05fed803ecbed26b49a4deaf4503ea',1,'q_stream']]],
   ['tx_5flen',['tx_len',['../structpkt__meta.html#acbc853b72279a660bf684741ccf3cd3e',1,'pkt_meta']]],
   ['tx_5fmax_5fdata',['tx_max_data',['../structq__conn.html#ae7d9e1ddf34ca4d0fde9e614f472afc7',1,'q_conn']]],
