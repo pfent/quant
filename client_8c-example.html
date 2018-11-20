@@ -293,17 +293,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            <span class="keyword">struct </span><a class="code" href="structq__stream.html">q_stream</a> * <span class="keyword">const</span> ss = <a name="a8"></a><a class="code" href="quant_8h.html#a7882234166a0aaac582c25c4c8a581b8">q_rsv_stream</a>(cce-&gt;c, <span class="keyword">false</span>);</div>
 <div class="line">            <span class="keyword">static</span> <span class="keyword">const</span> uint8_t h3_empty_settings[] = {0x43, 0x00, 0x04};</div>
 <div class="line">            <a name="a9"></a><a class="code" href="quant_8h.html#a3fe837399476c6ae443a5f17b5eb644f">q_write_str</a>(w, ss, (<span class="keyword">const</span> <span class="keywordtype">char</span> *)h3_empty_settings,</div>
-<div class="line">                        <span class="keyword">sizeof</span>(h3_empty_settings), <span class="keyword">false</span>);</div>
+<div class="line">                        <span class="keyword">sizeof</span>(h3_empty_settings), <span class="keyword">true</span>);</div>
+<div class="line">            <a name="a10"></a><a class="code" href="quant_8h.html#a01444581bd34af25498d1cb8fc3a0a92">q_close_stream</a>(ss);</div>
 <div class="line">        }</div>
 <div class="line"></div>
 <div class="line">    } <span class="keywordflow">else</span> {</div>
 <div class="line">        se-&gt;s = <a class="code" href="quant_8h.html#a7882234166a0aaac582c25c4c8a581b8">q_rsv_stream</a>(cce-&gt;c, <span class="keyword">true</span>);</div>
-<div class="line">        <a name="a10"></a><a class="code" href="quant_8h.html#a5c710c2093cc759f8bb581e25b52ceda">q_write</a>(se-&gt;s, &amp;req, <span class="keyword">true</span>);</div>
+<div class="line">        <a name="a11"></a><a class="code" href="quant_8h.html#a5c710c2093cc759f8bb581e25b52ceda">q_write</a>(se-&gt;s, &amp;req, <span class="keyword">true</span>);</div>
 <div class="line">    }</div>
 <div class="line">    se-&gt;c = cce-&gt;c;</div>
 <div class="line">    se-&gt;url = strdup(path);</div>
 <div class="line"></div>
-<div class="line">    <a name="a11"></a><a class="code" href="quant_8h.html#a01444581bd34af25498d1cb8fc3a0a92">q_close_stream</a>(se-&gt;s);</div>
+<div class="line">    <a class="code" href="quant_8h.html#a01444581bd34af25498d1cb8fc3a0a92">q_close_stream</a>(se-&gt;s);</div>
 <div class="line">    freeaddrinfo(peer);</div>
 <div class="line"></div>
 <div class="line">    <span class="keywordflow">return</span> cce-&gt;c; <span class="comment">// NOLINT</span></div>
@@ -423,6 +424,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            <span class="keywordflow">continue</span>;</div>
 <div class="line"></div>
 <div class="line">        <a name="a15"></a><a class="code" href="quant_8h.html#afa40a9929151cdca1205f08b838e53f5">q_readall_str</a>(se-&gt;s, &amp;i);</div>
+<div class="line">        <a class="code" href="quant_8h.html#a01444581bd34af25498d1cb8fc3a0a92">q_close_stream</a>(se-&gt;s);</div>
 <div class="line">        <span class="keywordflow">if</span> (w_iov_sq_cnt(&amp;i) == 0) {</div>
 <div class="line">            <span class="comment">// no data read</span></div>
 <div class="line">            ret = 1;</div>
@@ -471,7 +473,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 20 2018 10:03:48 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 20 2018 12:46:00 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
