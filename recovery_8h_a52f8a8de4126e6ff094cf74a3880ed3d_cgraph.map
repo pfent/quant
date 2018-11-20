@@ -1,7 +1,8 @@
 <map id="on_ack_received_2" name="on_ack_received_2">
 <area shape="rect" id="node2" href="$quic_8h.html#a05b0a63c2fe234f56513430fc2114eba" title="is_ack_only" alt="" coords="391,5,481,32"/>
-<area shape="rect" id="node3" href="$recovery_8c.html#ae842cad0e5d3c7dae0bfb5abd97725b7" title="detect_lost_pkts" alt="" coords="190,95,309,121"/>
+<area shape="rect" id="node3" href="$recovery_8c.html#ae842cad0e5d3c7dae0bfb5abd97725b7" title="detect_lost_pkts" alt="" coords="190,107,309,133"/>
 <area shape="rect" id="node7" href="$recovery_8c.html#a34c871e59b25f984223ab9573ebf3332" title="set_ld_alarm" alt="" coords="201,157,297,184"/>
+<area shape="rect" id="node12" href="$conn_8h.html#af4bcebc8568f27694df841f3045749fb" title="has_wnd" alt="" coords="212,208,287,235"/>
 <area shape="rect" id="node4" href="$conn_8h.html#a68c6b30b8665ce894ab5bed3c73a2d9d" title="is_zero" alt="" coords="404,157,468,184"/>
 <area shape="rect" id="node5" href="$conn_8h.html#a07cb3f3bb2c38f820f0a7fd74de25d6d" title="is_inf" alt="" coords="409,56,463,83"/>
 <area shape="rect" id="node6" href="$recovery_8c.html#a1cddc0f895e4feafcaf6f0ad86ad2631" title="in_recovery" alt="" coords="391,107,481,133"/>
