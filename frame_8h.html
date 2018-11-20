@@ -94,12 +94,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br/>
 <code>#include &lt;stdint.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="bitset_8h_source.html">bitset.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for frame.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="frame_8h__incl.png" border="0" usemap="#src_2frame_8h" alt=""/></div>
 <map name="src_2frame_8h" id="src_2frame_8h">
-</map>
+<area shape="rect" id="node4" href="bitset_8h.html" title="bitset.h" alt="" coords="194,80,259,107"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -165,10 +166,14 @@ Macros</h2></td></tr>
 <tr class="separator:a5da6e805344874dda511fb99218f4e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf48b1ffc80869c7c74a9a3a8fe4b4f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame_8h.html#abf48b1ffc80869c7c74a9a3a8fe4b4f9">F_STREAM_OFF</a>&#160;&#160;&#160;0x04</td></tr>
 <tr class="separator:abf48b1ffc80869c7c74a9a3a8fe4b4f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e6356d5807b645651ca1612dc548446"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame_8h.html#a6e6356d5807b645651ca1612dc548446">DEF_ACK_DEL_EXP</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a6e6356d5807b645651ca1612dc548446"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab39ee09e7f86573005e2b7e4e7bed2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame_8h.html#aab39ee09e7f86573005e2b7e4e7bed2d">FRAM_IN</a>&#160;&#160;&#160;<a class="el" href="quic_8h.html#a6773bd84b2bf2a4f2118fc787f3a53fb">BLD</a> <a class="el" href="quic_8h.html#add9307de87f38e77d336751e305886f6">BLU</a></td></tr>
 <tr class="separator:aab39ee09e7f86573005e2b7e4e7bed2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a673034b07ecf04ff57008f9c52d62f25"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame_8h.html#a673034b07ecf04ff57008f9c52d62f25">FRAM_OUT</a>&#160;&#160;&#160;<a class="el" href="quic_8h.html#a6773bd84b2bf2a4f2118fc787f3a53fb">BLD</a> <a class="el" href="quic_8h.html#aea69ffbacdcdf16c21b8c9961df84448">GRN</a></td></tr>
 <tr class="separator:a673034b07ecf04ff57008f9c52d62f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed8d9d476ac59dfb0097cbffd793ae5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame_8h.html#aed8d9d476ac59dfb0097cbffd793ae5d">has_frame</a>(v, ft)&#160;&#160;&#160;<a class="el" href="bitset_8h.html#afee36ce783a5cbbe0f1191675a2f18cf">bit_isset</a>(<a class="el" href="frame_8h.html#a9d41e13ff77cca0577fa33baf6e2963c">NUM_FRAM_TYPES</a>, (ft), &amp;<a class="el" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(v).frames)</td></tr>
+<tr class="separator:aed8d9d476ac59dfb0097cbffd793ae5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -214,6 +219,18 @@ Functions</h2></td></tr>
 <tr class="separator:afa20d45dcbae3ae1846c19c85a167f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a6e6356d5807b645651ca1612dc548446"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEF_ACK_DEL_EXP&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="af19725a5284688adb364856878892964"></a>
 <div class="memitem">
 <div class="memproto">
@@ -532,6 +549,32 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define FRAM_TYPE_STRM_MAX&#160;&#160;&#160;0x17</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aed8d9d476ac59dfb0097cbffd793ae5d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define has_frame</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">v, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ft&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="bitset_8h.html#afee36ce783a5cbbe0f1191675a2f18cf">bit_isset</a>(<a class="el" href="frame_8h.html#a9d41e13ff77cca0577fa33baf6e2963c">NUM_FRAM_TYPES</a>, (ft), &amp;<a class="el" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(v).frames)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1265,7 +1308,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 20 2018 08:09:50 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 20 2018 09:08:40 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

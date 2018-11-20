@@ -106,7 +106,7 @@ Include dependency graph for stream.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="stream_8h__incl.png" border="0" usemap="#src_2stream_8h" alt=""/></div>
 <map name="src_2stream_8h" id="src_2stream_8h">
-<area shape="rect" id="node5" href="conn_8h.html" title="conn.h" alt="" coords="685,80,747,107"/><area shape="rect" id="node17" href="quic_8h.html" title="quic.h" alt="" coords="735,229,792,256"/><area shape="rect" id="node20" href="tls_8h.html" title="tls.h" alt="" coords="1317,229,1363,256"/><area shape="rect" id="node14" href="diet_8h.html" title="diet.h" alt="" coords="513,229,567,256"/><area shape="rect" id="node16" href="pn_8h.html" title="pn.h" alt="" coords="581,155,627,181"/><area shape="rect" id="node21" href="recovery_8h.html" title="recovery.h" alt="" coords="253,229,335,256"/><area shape="rect" id="node18" href="bitset_8h.html" title="bitset.h" alt="" coords="965,304,1029,331"/><area shape="rect" id="node19" href="frame_8h.html" title="frame.h" alt="" coords="873,304,940,331"/></map>
+<area shape="rect" id="node5" href="conn_8h.html" title="conn.h" alt="" coords="783,80,844,107"/><area shape="rect" id="node17" href="quic_8h.html" title="quic.h" alt="" coords="730,229,787,256"/><area shape="rect" id="node20" href="tls_8h.html" title="tls.h" alt="" coords="1309,229,1355,256"/><area shape="rect" id="node14" href="diet_8h.html" title="diet.h" alt="" coords="811,229,865,256"/><area shape="rect" id="node16" href="pn_8h.html" title="pn.h" alt="" coords="851,155,897,181"/><area shape="rect" id="node21" href="recovery_8h.html" title="recovery.h" alt="" coords="471,229,552,256"/><area shape="rect" id="node18" href="bitset_8h.html" title="bitset.h" alt="" coords="761,379,825,405"/><area shape="rect" id="node19" href="frame_8h.html" title="frame.h" alt="" coords="725,304,792,331"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -129,6 +129,14 @@ Macros</h2></td></tr>
 <tr class="separator:ae48fb935fc219f705de121aaedff6962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04f7ebb0a2129e2759b5466cdcd780c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a04f7ebb0a2129e2759b5466cdcd780c6">STRM_FL_UNI</a>&#160;&#160;&#160;0x02</td></tr>
 <tr class="separator:a04f7ebb0a2129e2759b5466cdcd780c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa66b391c7ac634050be09e992c1bad26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#aa66b391c7ac634050be09e992c1bad26">INIT_STRM_DATA_BIDI</a>&#160;&#160;&#160;65535</td></tr>
+<tr class="separator:aa66b391c7ac634050be09e992c1bad26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a635373d880260cf546702604993f40dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a635373d880260cf546702604993f40dd">INIT_STRM_DATA_UNI</a>&#160;&#160;&#160;65535</td></tr>
+<tr class="separator:a635373d880260cf546702604993f40dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab665b389a2102080543b5640bd65fdb6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#ab665b389a2102080543b5640bd65fdb6">INIT_MAX_UNI_STREAMS</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ab665b389a2102080543b5640bd65fdb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab770f892ec0b3677d05a0164593f7747"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#ab770f892ec0b3677d05a0164593f7747">INIT_MAX_BIDI_STREAMS</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:ab770f892ec0b3677d05a0164593f7747"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8676dc8e5bf2002815718fb5d017e47"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#aa8676dc8e5bf2002815718fb5d017e47">STRM_STATE</a>(k, v)&#160;&#160;&#160;k = v</td></tr>
 <tr class="separator:aa8676dc8e5bf2002815718fb5d017e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29d0d69805b312f9f5a7728dcd5f0e3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a29d0d69805b312f9f5a7728dcd5f0e3d">STRM_STATES</a></td></tr>
@@ -187,6 +195,54 @@ Variables</h2></td></tr>
 <tr class="separator:aa6dd5679b354a793efc82cd45b5d3962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ab770f892ec0b3677d05a0164593f7747"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INIT_MAX_BIDI_STREAMS&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab665b389a2102080543b5640bd65fdb6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INIT_MAX_UNI_STREAMS&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa66b391c7ac634050be09e992c1bad26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INIT_STRM_DATA_BIDI&#160;&#160;&#160;65535</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a635373d880260cf546702604993f40dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INIT_STRM_DATA_UNI&#160;&#160;&#160;65535</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a252b945d4c3e2382b66bc40894f9c440"></a>
 <div class="memitem">
 <div class="memproto">
@@ -281,7 +337,7 @@ Variables</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="stream_8h.html#aa8676dc8e5bf2002815718fb5d017e47">STRM_STATE</a>(strm_idle, 0), <a class="code" href="stream_8h.html#aa8676dc8e5bf2002815718fb5d017e47">STRM_STATE</a>(strm_open, 1),                        <a class="code" href="stream_8h.html#aa8676dc8e5bf2002815718fb5d017e47">\</a></div>
 <div class="line"><a class="code" href="stream_8h.html#aa8676dc8e5bf2002815718fb5d017e47">        STRM_STATE</a>(strm_hcrm, 2), <a class="code" href="stream_8h.html#aa8676dc8e5bf2002815718fb5d017e47">STRM_STATE</a>(strm_hclo, 3),                    <a class="code" href="stream_8h.html#aa8676dc8e5bf2002815718fb5d017e47">\</a></div>
 <div class="line"><a class="code" href="stream_8h.html#aa8676dc8e5bf2002815718fb5d017e47">        STRM_STATE</a>(strm_clsd, 4)</div>
-<div class="ttc" id="stream_8h_html_aa8676dc8e5bf2002815718fb5d017e47"><div class="ttname"><a href="stream_8h.html#aa8676dc8e5bf2002815718fb5d017e47">STRM_STATE</a></div><div class="ttdeci">#define STRM_STATE(k, v)</div><div class="ttdef"><b>Definition:</b> stream.h:44</div></div>
+<div class="ttc" id="stream_8h_html_aa8676dc8e5bf2002815718fb5d017e47"><div class="ttname"><a href="stream_8h.html#aa8676dc8e5bf2002815718fb5d017e47">STRM_STATE</a></div><div class="ttdeci">#define STRM_STATE(k, v)</div><div class="ttdef"><b>Definition:</b> stream.h:48</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -325,8 +381,8 @@ Variables</h2></td></tr>
 <div class="ttc" id="conn_8h_html_ade2abf64e3b30fc0b5e1b95735ab6677"><div class="ttname"><a href="conn_8h.html#ade2abf64e3b30fc0b5e1b95735ab6677">cid2str</a></div><div class="ttdeci">#define cid2str(i)</div><div class="ttdef"><b>Definition:</b> conn.h:214</div></div>
 <div class="ttc" id="quic_8h_html_ade01bc98e1632cd645e0f33757d70d2e"><div class="ttname"><a href="quic_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a></div><div class="ttdeci">#define NRM</div><div class="ttdoc">ANSI escape sequence: reset all to normal. </div><div class="ttdef"><b>Definition:</b> quic.h:437</div></div>
 <div class="ttc" id="quic_8h_html_ab5f8d1e8c05400492619366d20559bfd"><div class="ttname"><a href="quic_8h.html#ab5f8d1e8c05400492619366d20559bfd">FMT_SID</a></div><div class="ttdeci">#define FMT_SID</div><div class="ttdef"><b>Definition:</b> quic.h:456</div></div>
-<div class="ttc" id="stream_8h_html_a1a43855d911c01eab5a29f74f0b8e4d3"><div class="ttname"><a href="stream_8h.html#a1a43855d911c01eab5a29f74f0b8e4d3">is_uni</a></div><div class="ttdeci">#define is_uni(id)</div><div class="ttdef"><b>Definition:</b> stream.h:103</div></div>
-<div class="ttc" id="stream_8h_html_a252b945d4c3e2382b66bc40894f9c440"><div class="ttname"><a href="stream_8h.html#a252b945d4c3e2382b66bc40894f9c440">is_srv_ini</a></div><div class="ttdeci">#define is_srv_ini(id)</div><div class="ttdef"><b>Definition:</b> stream.h:104</div></div>
+<div class="ttc" id="stream_8h_html_a1a43855d911c01eab5a29f74f0b8e4d3"><div class="ttname"><a href="stream_8h.html#a1a43855d911c01eab5a29f74f0b8e4d3">is_uni</a></div><div class="ttdeci">#define is_uni(id)</div><div class="ttdef"><b>Definition:</b> stream.h:107</div></div>
+<div class="ttc" id="stream_8h_html_a252b945d4c3e2382b66bc40894f9c440"><div class="ttname"><a href="stream_8h.html#a252b945d4c3e2382b66bc40894f9c440">is_srv_ini</a></div><div class="ttdeci">#define is_srv_ini(id)</div><div class="ttdef"><b>Definition:</b> stream.h:108</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -777,7 +833,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 20 2018 08:09:50 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 20 2018 09:08:40 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

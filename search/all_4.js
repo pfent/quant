@@ -30,6 +30,7 @@ var searchData=
   ['dec_5fstream_5for_5fcrypto_5fframe',['dec_stream_or_crypto_frame',['../frame_8c.html#af1f52111fba24a270fbf2057849cf8ca',1,'frame.c']]],
   ['dec_5ftckt',['dec_tckt',['../tls_8c.html#a6fb294995cf9a4d8895404d4b6c3b6f4',1,'tls.c']]],
   ['dec_5ftp',['dec_tp',['../tls_8c.html#a2c6f91ee763502bebb961129c1d12c00',1,'tls.c']]],
+  ['def_5fack_5fdel_5fexp',['DEF_ACK_DEL_EXP',['../frame_8h.html#a6e6356d5807b645651ca1612dc548446',1,'frame.h']]],
   ['detect_5flost_5fpkts',['detect_lost_pkts',['../recovery_8c.html#ae842cad0e5d3c7dae0bfb5abd97725b7',1,'recovery.c']]],
   ['did_5f0rtt',['did_0rtt',['../structq__conn.html#abfa2e8f9b939f149ccfa60cb75d863ff',1,'q_conn']]],
   ['diet_2ec',['diet.c',['../diet_8c.html',1,'']]],

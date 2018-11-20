@@ -42,6 +42,7 @@ var searchData=
   ['track_5facked_5fpkts',['track_acked_pkts',['../recovery_8c.html#ab1bb06f21c6f0014f6e838453564ac36',1,'recovery.c']]],
   ['track_5fbytes_5fin',['track_bytes_in',['../stream_8c.html#a551a7c19bf90417d819623804da6949f',1,'track_bytes_in(struct q_stream *const s, const uint64_t n):&#160;stream.c'],['../stream_8h.html#a551a7c19bf90417d819623804da6949f',1,'track_bytes_in(struct q_stream *const s, const uint64_t n):&#160;stream.c']]],
   ['track_5fbytes_5fout',['track_bytes_out',['../stream_8c.html#a0c28462a470893c1046d7a167037d926',1,'track_bytes_out(struct q_stream *const s, const uint64_t n):&#160;stream.c'],['../stream_8h.html#a0c28462a470893c1046d7a167037d926',1,'track_bytes_out(struct q_stream *const s, const uint64_t n):&#160;stream.c']]],
+  ['track_5fframe',['track_frame',['../frame_8c.html#ae76224c6a0d2a18c20145c46619f0d28',1,'frame.c']]],
   ['transport_5fparams',['transport_params',['../structtransport__params.html',1,'']]],
   ['trim_5fframe',['trim_frame',['../frame_8c.html#ae6b33881d5310ee374d246e582265d43',1,'frame.c']]],
   ['try_5f0rtt',['try_0rtt',['../structq__conn.html#a560bbc195a5c8b9642f059bbddddb442',1,'q_conn']]],

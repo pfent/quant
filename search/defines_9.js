@@ -1,6 +1,10 @@
 var searchData=
 [
   ['idle_5ftimeout_5fmax',['IDLE_TIMEOUT_MAX',['../quant_8h.html#a05a1fe5d96137d7166715a45aebf6dc8',1,'quant.h']]],
+  ['init_5fmax_5fbidi_5fstreams',['INIT_MAX_BIDI_STREAMS',['../stream_8h.html#ab770f892ec0b3677d05a0164593f7747',1,'stream.h']]],
+  ['init_5fmax_5funi_5fstreams',['INIT_MAX_UNI_STREAMS',['../stream_8h.html#ab665b389a2102080543b5640bd65fdb6',1,'stream.h']]],
+  ['init_5fstrm_5fdata_5fbidi',['INIT_STRM_DATA_BIDI',['../stream_8h.html#aa66b391c7ac634050be09e992c1bad26',1,'stream.h']]],
+  ['init_5fstrm_5fdata_5funi',['INIT_STRM_DATA_UNI',['../stream_8h.html#a635373d880260cf546702604993f40dd',1,'stream.h']]],
   ['is_5frtxable',['is_rtxable',['../quic_8h.html#a650f79c60d6d19b0edeeb1735bbd5000',1,'quic.h']]],
   ['is_5fset',['is_set',['../quic_8h.html#a2e19342e141828d7fe9b2870e5d7d70a',1,'quic.h']]],
   ['is_5fsrv_5fini',['is_srv_ini',['../stream_8h.html#a252b945d4c3e2382b66bc40894f9c440',1,'stream.h']]],
