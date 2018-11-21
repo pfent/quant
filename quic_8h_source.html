@@ -431,8 +431,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
 <div class="line"><a name="l00396"></a><span class="lineno"><a class="line" href="quic_8h.html#a98dd92860af790cc62791a991d5d8fbe">  396</a></span>&#160;<span class="preprocessor">#define free_iov(v)                                                            \</span></div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="preprocessor">    do {                                                                       \</span></div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="preprocessor">        </span><span class="comment">/* warn(CRT, &quot;free_iov idx %u nr %&quot; PRIu64, w_iov_idx(v),              \</span></div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="comment">             meta(v).hdr.nr); */</span><span class="preprocessor">                                               \</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="preprocessor">        </span><span class="comment">/* warn(CRT, &quot;free_iov idx %u (avail %&quot; PRIu64 &quot;) nr %&quot; PRIu64,        \</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="comment">             w_iov_idx(v), sq_len(&amp;(v)-&gt;w-&gt;iov) + 1, meta(v).hdr.nr); */</span><span class="preprocessor">       \</span></div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="preprocessor">        pm_free(&amp;meta(v));                                                     \</span></div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="preprocessor">        memset(&amp;meta(v), 0, sizeof(meta(v)));                                  \</span></div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="preprocessor">        ASAN_POISON_MEMORY_REGION(&amp;meta(v), sizeof(meta(v)));                  \</span></div>
@@ -443,62 +443,66 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00407"></a><span class="lineno"><a class="line" href="quic_8h.html#ad5e953c130616350f008ea21b66140b5">  407</a></span>&#160;<span class="preprocessor">#define alloc_iov(w, l, off)                                                   \</span></div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="preprocessor">    __extension__({                                                            \</span></div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="preprocessor">        struct w_iov * _v = w_alloc_iov((w), (l), (off));                      \</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="preprocessor">        ASAN_UNPOISON_MEMORY_REGION(&amp;meta(_v), sizeof(meta(_v)));              \</span></div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="preprocessor">        meta(_v).stream_data_start = (off);                                    \</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="preprocessor">        </span><span class="comment">/* warn(CRT, &quot;alloc_iov idx %u len %u off %u&quot;, w_iov_idx(_v),          \</span></div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="comment">           _v-&gt;len, (off)); */</span><span class="preprocessor">                                                 \</span></div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="preprocessor">        _v;                                                                    \</span></div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="preprocessor">    })</span></div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="quic_8h.html#a2ee75c38a1c756036392a6e5b6d1e93a">alloc_off</a>(struct w_engine * const w,</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                                               struct w_iov_sq * const q,</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;                                               const uint32_t len,</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;                                               const uint16_t off);</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="preprocessor">        ensure(_v, &quot;w_alloc_iov failed&quot;);                                      \</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="preprocessor">        ASAN_UNPOISON_MEMORY_REGION(&amp;meta(_v), sizeof(meta(_v)));              \</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="preprocessor">        meta(_v).stream_data_start = (off);                                    \</span></div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="preprocessor">        </span><span class="comment">/* warn(CRT, &quot;alloc_iov idx %u (avail %&quot; PRIu64 &quot;) len %u off %u&quot;,     \</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="comment">             w_iov_idx(_v), sq_len(&amp;(w)-&gt;iov), _v-&gt;len, (off)); */</span><span class="preprocessor">             \</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="preprocessor">        _v;                                                                    \</span></div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="preprocessor">    })</span></div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="quic_8h.html#a2ee75c38a1c756036392a6e5b6d1e93a">alloc_off</a>(struct w_engine * const w,</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;                                               struct w_iov_sq * const q,</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;                                               const uint32_t len,</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                                               const uint16_t off);</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;static inline struct w_iov * __attribute__((nonnull))</div>
-<div class="line"><a name="l00425"></a><span class="lineno"><a class="line" href="quic_8h.html#a97af5931f5c6730cd32f1d733b6101d0">  425</a></span>&#160;<a class="code" href="quic_8h.html#a97af5931f5c6730cd32f1d733b6101d0">w_iov_dup</a>(const struct w_iov * const v)</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;{</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <span class="keyword">struct </span>w_iov * <span class="keyword">const</span> vdup = w_alloc_iov(v-&gt;w, v-&gt;len, 0);</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <a class="code" href="quic_8h.html#a22a934c8c4d79c27dffbe21e3fb733a4">ASAN_UNPOISON_MEMORY_REGION</a>(&amp;<a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(vdup), <span class="keyword">sizeof</span>(<a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(vdup)));</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    memcpy(vdup-&gt;buf, v-&gt;buf, v-&gt;len);</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    vdup-&gt;ip = v-&gt;ip;</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    vdup-&gt;port = v-&gt;port;</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    vdup-&gt;flags = v-&gt;flags;</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keywordflow">return</span> vdup;</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;}</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;</div>
-<div class="line"><a name="l00437"></a><span class="lineno"><a class="line" href="quic_8h.html#ade01bc98e1632cd645e0f33757d70d2e">  437</a></span>&#160;<span class="preprocessor">#define NRM &quot;\x1B[0m&quot; </span></div>
-<div class="line"><a name="l00438"></a><span class="lineno"><a class="line" href="quic_8h.html#a6773bd84b2bf2a4f2118fc787f3a53fb">  438</a></span>&#160;<span class="preprocessor">#define BLD &quot;\x1B[1m&quot; </span></div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="preprocessor">// #define DIM &quot;\x1B[2m&quot;   </span></div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="preprocessor">// #define ULN &quot;\x1B[3m&quot;   </span></div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="preprocessor">// #define BLN &quot;\x1B[5m&quot;   </span></div>
-<div class="line"><a name="l00442"></a><span class="lineno"><a class="line" href="quic_8h.html#a33a42d6bfefe54ae2384f5c28dd87340">  442</a></span>&#160;<span class="preprocessor">#define REV &quot;\x1B[7m&quot; </span></div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="preprocessor">// #define HID &quot;\x1B[8m&quot;   </span></div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;<span class="preprocessor">// #define BLK &quot;\x1B[30m&quot;  </span></div>
-<div class="line"><a name="l00445"></a><span class="lineno"><a class="line" href="quic_8h.html#a8d23feea868a983c8c2b661e1e16972f">  445</a></span>&#160;<span class="preprocessor">#define RED &quot;\x1B[31m&quot; </span></div>
-<div class="line"><a name="l00446"></a><span class="lineno"><a class="line" href="quic_8h.html#aea69ffbacdcdf16c21b8c9961df84448">  446</a></span>&#160;<span class="preprocessor">#define GRN &quot;\x1B[32m&quot; </span></div>
-<div class="line"><a name="l00447"></a><span class="lineno"><a class="line" href="quic_8h.html#a96fac03c4ab3363f06a0328e0e53a40c">  447</a></span>&#160;<span class="preprocessor">#define YEL &quot;\x1B[33m&quot; </span></div>
-<div class="line"><a name="l00448"></a><span class="lineno"><a class="line" href="quic_8h.html#add9307de87f38e77d336751e305886f6">  448</a></span>&#160;<span class="preprocessor">#define BLU &quot;\x1B[34m&quot; </span></div>
-<div class="line"><a name="l00449"></a><span class="lineno"><a class="line" href="quic_8h.html#af54a5a977c0c499323d656315f008ee0">  449</a></span>&#160;<span class="preprocessor">#define MAG &quot;\x1B[35m&quot; </span></div>
-<div class="line"><a name="l00450"></a><span class="lineno"><a class="line" href="quic_8h.html#adc708fa688f5d78db361f66c36f0f807">  450</a></span>&#160;<span class="preprocessor">#define CYN &quot;\x1B[36m&quot; </span></div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;<span class="preprocessor">// #define WHT &quot;\x1B[37m&quot;  </span></div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00453"></a><span class="lineno"><a class="line" href="quic_8h.html#a404c866e647db5caa442327847557c8b">  453</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FMT_PNR_IN BLU &quot;%&quot; PRIu64 NRM</span></div>
-<div class="line"><a name="l00454"></a><span class="lineno"><a class="line" href="quic_8h.html#aca165d87cbf86915f61bd125d7b50d7f">  454</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FMT_PNR_OUT GRN &quot;%&quot; PRIu64 NRM</span></div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00456"></a><span class="lineno"><a class="line" href="quic_8h.html#ab5f8d1e8c05400492619366d20559bfd">  456</a></span>&#160;<span class="preprocessor">#define FMT_SID BLD YEL &quot;%&quot; PRId64 NRM</span></div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="preprocessor">#if !defined(NDEBUG) &amp;&amp; !defined(FUZZING) &amp;&amp;                                   \</span></div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="preprocessor">    !defined(NO_FUZZER_CORPUS_COLLECTION)</span></div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="quic_8h.html#a0feed348acaef16b0f25af1ef6d93adc">corpus_pkt_dir</a>, <a class="code" href="quic_8h.html#a0333d38e11cede9bb804accf985e5208">corpus_frm_dir</a>;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;static inline struct w_iov * __attribute__((nonnull))</div>
+<div class="line"><a name="l00426"></a><span class="lineno"><a class="line" href="quic_8h.html#a97af5931f5c6730cd32f1d733b6101d0">  426</a></span>&#160;<a class="code" href="quic_8h.html#a97af5931f5c6730cd32f1d733b6101d0">w_iov_dup</a>(const struct w_iov * const v)</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;{</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="keyword">struct </span>w_iov * <span class="keyword">const</span> vdup = w_alloc_iov(v-&gt;w, v-&gt;len, 0);</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    ensure(vdup, <span class="stringliteral">&quot;w_alloc_iov failed&quot;</span>);</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    <span class="comment">// warn(CRT, &quot;w_alloc_iov idx %u (avail %&quot; PRIu64 &quot;) len %u&quot;,</span></div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <span class="comment">// w_iov_idx(vdup), sq_len(&amp;v-&gt;w-&gt;iov), vdup-&gt;len);</span></div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <a class="code" href="quic_8h.html#a22a934c8c4d79c27dffbe21e3fb733a4">ASAN_UNPOISON_MEMORY_REGION</a>(&amp;<a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(vdup), <span class="keyword">sizeof</span>(<a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(vdup)));</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    memcpy(vdup-&gt;buf, v-&gt;buf, v-&gt;len);</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    vdup-&gt;ip = v-&gt;ip;</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    vdup-&gt;port = v-&gt;port;</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    vdup-&gt;flags = v-&gt;flags;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <span class="keywordflow">return</span> vdup;</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;}</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;</div>
+<div class="line"><a name="l00441"></a><span class="lineno"><a class="line" href="quic_8h.html#ade01bc98e1632cd645e0f33757d70d2e">  441</a></span>&#160;<span class="preprocessor">#define NRM &quot;\x1B[0m&quot; </span></div>
+<div class="line"><a name="l00442"></a><span class="lineno"><a class="line" href="quic_8h.html#a6773bd84b2bf2a4f2118fc787f3a53fb">  442</a></span>&#160;<span class="preprocessor">#define BLD &quot;\x1B[1m&quot; </span></div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="preprocessor">// #define DIM &quot;\x1B[2m&quot;   </span></div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;<span class="preprocessor">// #define ULN &quot;\x1B[3m&quot;   </span></div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="preprocessor">// #define BLN &quot;\x1B[5m&quot;   </span></div>
+<div class="line"><a name="l00446"></a><span class="lineno"><a class="line" href="quic_8h.html#a33a42d6bfefe54ae2384f5c28dd87340">  446</a></span>&#160;<span class="preprocessor">#define REV &quot;\x1B[7m&quot; </span></div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="preprocessor">// #define HID &quot;\x1B[8m&quot;   </span></div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;<span class="preprocessor">// #define BLK &quot;\x1B[30m&quot;  </span></div>
+<div class="line"><a name="l00449"></a><span class="lineno"><a class="line" href="quic_8h.html#a8d23feea868a983c8c2b661e1e16972f">  449</a></span>&#160;<span class="preprocessor">#define RED &quot;\x1B[31m&quot; </span></div>
+<div class="line"><a name="l00450"></a><span class="lineno"><a class="line" href="quic_8h.html#aea69ffbacdcdf16c21b8c9961df84448">  450</a></span>&#160;<span class="preprocessor">#define GRN &quot;\x1B[32m&quot; </span></div>
+<div class="line"><a name="l00451"></a><span class="lineno"><a class="line" href="quic_8h.html#a96fac03c4ab3363f06a0328e0e53a40c">  451</a></span>&#160;<span class="preprocessor">#define YEL &quot;\x1B[33m&quot; </span></div>
+<div class="line"><a name="l00452"></a><span class="lineno"><a class="line" href="quic_8h.html#add9307de87f38e77d336751e305886f6">  452</a></span>&#160;<span class="preprocessor">#define BLU &quot;\x1B[34m&quot; </span></div>
+<div class="line"><a name="l00453"></a><span class="lineno"><a class="line" href="quic_8h.html#af54a5a977c0c499323d656315f008ee0">  453</a></span>&#160;<span class="preprocessor">#define MAG &quot;\x1B[35m&quot; </span></div>
+<div class="line"><a name="l00454"></a><span class="lineno"><a class="line" href="quic_8h.html#adc708fa688f5d78db361f66c36f0f807">  454</a></span>&#160;<span class="preprocessor">#define CYN &quot;\x1B[36m&quot; </span></div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="preprocessor">// #define WHT &quot;\x1B[37m&quot;  </span></div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00457"></a><span class="lineno"><a class="line" href="quic_8h.html#a404c866e647db5caa442327847557c8b">  457</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FMT_PNR_IN BLU &quot;%&quot; PRIu64 NRM</span></div>
+<div class="line"><a name="l00458"></a><span class="lineno"><a class="line" href="quic_8h.html#aca165d87cbf86915f61bd125d7b50d7f">  458</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FMT_PNR_OUT GRN &quot;%&quot; PRIu64 NRM</span></div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00460"></a><span class="lineno"><a class="line" href="quic_8h.html#ab5f8d1e8c05400492619366d20559bfd">  460</a></span>&#160;<span class="preprocessor">#define FMT_SID BLD YEL &quot;%&quot; PRId64 NRM</span></div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> __attribute__((nonnull))</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;<a class="code" href="quic_8h.html#a4e51fb8c9ebc5178b5131826ca26fb90">write_to_corpus</a>(const <span class="keywordtype">int</span> dir, const <span class="keywordtype">void</span> * const data, const <span class="keywordtype">size_t</span> len);</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;<span class="preprocessor">#if !defined(NDEBUG) &amp;&amp; !defined(FUZZING) &amp;&amp;                                   \</span></div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;<span class="preprocessor">    !defined(NO_FUZZER_CORPUS_COLLECTION)</span></div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="quic_8h.html#a0feed348acaef16b0f25af1ef6d93adc">corpus_pkt_dir</a>, <a class="code" href="quic_8h.html#a0333d38e11cede9bb804accf985e5208">corpus_frm_dir</a>;</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;<a class="code" href="quic_8h.html#a4e51fb8c9ebc5178b5131826ca26fb90">write_to_corpus</a>(const <span class="keywordtype">int</span> dir, const <span class="keywordtype">void</span> * const data, const <span class="keywordtype">size_t</span> len);</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="structcid_html_a937edeb01e868ef76539126dd41b322f"><div class="ttname"><a href="structcid.html#a937edeb01e868ef76539126dd41b322f">cid::seq</a></div><div class="ttdeci">uint64_t seq</div><div class="ttdoc">Connection ID sequence number. </div><div class="ttdef"><b>Definition:</b> quic.h:57</div></div>
 <div class="ttc" id="structpkt__meta_html_a1c10af584209f3a48a8d18b2d0064682"><div class="ttname"><a href="structpkt__meta.html#a1c10af584209f3a48a8d18b2d0064682">pkt_meta::max_bidi_streams</a></div><div class="ttdeci">int64_t max_bidi_streams</div><div class="ttdoc">MAX_STREAM_ID bidir limit, if sent. </div><div class="ttdef"><b>Definition:</b> quic.h:131</div></div>
 <div class="ttc" id="structpkt__meta_html_ad9cde51e14c2886f5a9e5d7f2aec6695"><div class="ttname"><a href="structpkt__meta.html#ad9cde51e14c2886f5a9e5d7f2aec6695">pkt_meta::rtx</a></div><div class="ttdeci">struct pm_sl rtx</div><div class="ttdoc">List of pkt_meta structs of previous TXs. </div><div class="ttdef"><b>Definition:</b> quic.h:113</div></div>
@@ -528,7 +532,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="quic_8h_html_a22a934c8c4d79c27dffbe21e3fb733a4"><div class="ttname"><a href="quic_8h.html#a22a934c8c4d79c27dffbe21e3fb733a4">ASAN_UNPOISON_MEMORY_REGION</a></div><div class="ttdeci">#define ASAN_UNPOISON_MEMORY_REGION(x, y)</div><div class="ttdef"><b>Definition:</b> quic.h:44</div></div>
 <div class="ttc" id="structpkt__meta_html_a7e459e2fc33bd3e88fe4c32ea57962a4"><div class="ttname"><a href="structpkt__meta.html#a7e459e2fc33bd3e88fe4c32ea57962a4">pkt_meta::sl_entry</a></div><div class="ttdeci">sl_entry(pkt_meta) rtx_next</div></div>
 <div class="ttc" id="quic_8h_html_ae64eb493276abdc60cd97ea2f6d96f78"><div class="ttname"><a href="quic_8h.html#ae64eb493276abdc60cd97ea2f6d96f78">is_ack_or_padding_only</a></div><div class="ttdeci">static bool is_ack_or_padding_only(const struct frames *const f)</div><div class="ttdef"><b>Definition:</b> quic.h:262</div></div>
-<div class="ttc" id="quic_8h_html_a97af5931f5c6730cd32f1d733b6101d0"><div class="ttname"><a href="quic_8h.html#a97af5931f5c6730cd32f1d733b6101d0">w_iov_dup</a></div><div class="ttdeci">static struct w_iov * w_iov_dup(const struct w_iov *const v)</div><div class="ttdef"><b>Definition:</b> quic.h:425</div></div>
+<div class="ttc" id="quic_8h_html_a97af5931f5c6730cd32f1d733b6101d0"><div class="ttname"><a href="quic_8h.html#a97af5931f5c6730cd32f1d733b6101d0">w_iov_dup</a></div><div class="ttdeci">static struct w_iov * w_iov_dup(const struct w_iov *const v)</div><div class="ttdef"><b>Definition:</b> quic.h:426</div></div>
 <div class="ttc" id="frame_8h_html_a9d41e13ff77cca0577fa33baf6e2963c"><div class="ttname"><a href="frame_8h.html#a9d41e13ff77cca0577fa33baf6e2963c">NUM_FRAM_TYPES</a></div><div class="ttdeci">#define NUM_FRAM_TYPES</div><div class="ttdef"><b>Definition:</b> frame.h:64</div></div>
 <div class="ttc" id="quic_8h_html_a593420bbec69beea4076ea6603019ea0"><div class="ttname"><a href="quic_8h.html#a593420bbec69beea4076ea6603019ea0">api_func</a></div><div class="ttdeci">func_ptr api_func</div><div class="ttdef"><b>Definition:</b> quic.c:86</div></div>
 <div class="ttc" id="frame_8h_html_af19725a5284688adb364856878892964"><div class="ttname"><a href="frame_8h.html#af19725a5284688adb364856878892964">F_STREAM_FIN</a></div><div class="ttdeci">#define F_STREAM_FIN</div><div class="ttdef"><b>Definition:</b> frame.h:66</div></div>
@@ -576,7 +580,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="structcid_html_a61ab34460c7fcffba43d1b4042b00b93"><div class="ttname"><a href="structcid.html#a61ab34460c7fcffba43d1b4042b00b93">cid::len</a></div><div class="ttdeci">uint8_t len</div><div class="ttdoc">Connection ID length. </div><div class="ttdef"><b>Definition:</b> quic.h:58</div></div>
 <div class="ttc" id="structpkt__hdr_html_a8d278001c1d049f5d4b78db832670cca"><div class="ttname"><a href="structpkt__hdr.html#a8d278001c1d049f5d4b78db832670cca">pkt_hdr::hdr_len</a></div><div class="ttdeci">uint16_t hdr_len</div><div class="ttdoc">Content of length field in long header. </div><div class="ttdef"><b>Definition:</b> quic.h:90</div></div>
 <div class="ttc" id="bitset_8h_html"><div class="ttname"><a href="bitset_8h.html">bitset.h</a></div></div>
-<div class="ttc" id="quic_8h_html_a4e51fb8c9ebc5178b5131826ca26fb90"><div class="ttname"><a href="quic_8h.html#a4e51fb8c9ebc5178b5131826ca26fb90">write_to_corpus</a></div><div class="ttdeci">void write_to_corpus(const int dir, const void *const data, const size_t len)</div><div class="ttdef"><b>Definition:</b> quic.c:637</div></div>
+<div class="ttc" id="quic_8h_html_a4e51fb8c9ebc5178b5131826ca26fb90"><div class="ttname"><a href="quic_8h.html#a4e51fb8c9ebc5178b5131826ca26fb90">write_to_corpus</a></div><div class="ttdeci">void write_to_corpus(const int dir, const void *const data, const size_t len)</div><div class="ttdef"><b>Definition:</b> quic.c:639</div></div>
 <div class="ttc" id="quic_8h_html_a91b81b7384533b284fa05acbc6b6787d"><div class="ttname"><a href="quic_8h.html#a91b81b7384533b284fa05acbc6b6787d">api_conn</a></div><div class="ttdeci">void * api_conn</div><div class="ttdef"><b>Definition:</b> quic.c:87</div></div>
 <div class="ttc" id="structcid_html"><div class="ttname"><a href="structcid.html">cid</a></div><div class="ttdef"><b>Definition:</b> quic.h:54</div></div>
 <div class="ttc" id="quic_8h_html_a0feed348acaef16b0f25af1ef6d93adc"><div class="ttname"><a href="quic_8h.html#a0feed348acaef16b0f25af1ef6d93adc">corpus_pkt_dir</a></div><div class="ttdeci">int corpus_pkt_dir</div><div class="ttdef"><b>Definition:</b> quic.c:98</div></div>
@@ -587,7 +591,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 21 2018 11:23:45 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 21 2018 12:18:13 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

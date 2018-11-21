@@ -395,11 +395,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">__extension__({                                                            \</div>
-<div class="line">        struct w_iov * _v = w_alloc_iov((w), (l), (off));                      <a class="code" href="quic_8h.html#a22a934c8c4d79c27dffbe21e3fb733a4">\</a></div>
+<div class="line">        struct w_iov * _v = w_alloc_iov((w), (l), (off));                      \</div>
+<div class="line">        ensure(_v, <span class="stringliteral">&quot;w_alloc_iov failed&quot;</span>);                                      <a class="code" href="quic_8h.html#a22a934c8c4d79c27dffbe21e3fb733a4">\</a></div>
 <div class="line"><a class="code" href="quic_8h.html#a22a934c8c4d79c27dffbe21e3fb733a4">        ASAN_UNPOISON_MEMORY_REGION</a>(&amp;<a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(_v), <span class="keyword">sizeof</span>(<a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(_v)));              <a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">\</a></div>
 <div class="line"><a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">        meta</a>(_v).stream_data_start = (off);                                    \</div>
-<div class="line">        <span class="comment">/* warn(CRT, &quot;alloc_iov idx %u len %u off %u&quot;, w_iov_idx(_v),          \</span></div>
-<div class="line"><span class="comment">           _v-&gt;len, (off)); */</span>                                                 \</div>
+<div class="line">        <span class="comment">/* warn(CRT, &quot;alloc_iov idx %u (avail %&quot; PRIu64 &quot;) len %u off %u&quot;,     \</span></div>
+<div class="line"><span class="comment">             w_iov_idx(_v), sq_len(&amp;(w)-&gt;iov), _v-&gt;len, (off)); */</span>             \</div>
 <div class="line">        _v;                                                                    \</div>
 <div class="line">    })</div>
 <div class="ttc" id="quic_8h_html_a22a934c8c4d79c27dffbe21e3fb733a4"><div class="ttname"><a href="quic_8h.html#a22a934c8c4d79c27dffbe21e3fb733a4">ASAN_UNPOISON_MEMORY_REGION</a></div><div class="ttdeci">#define ASAN_UNPOISON_MEMORY_REGION(x, y)</div><div class="ttdef"><b>Definition:</b> quic.h:44</div></div>
@@ -675,8 +676,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
-<div class="line">        <span class="comment">/* warn(CRT, &quot;free_iov idx %u nr %&quot; PRIu64, w_iov_idx(v),              \</span></div>
-<div class="line"><span class="comment">             meta(v).hdr.nr); */</span>                                               <a class="code" href="quic_8h.html#aed433a65a751df6b54c091d8facbfb57">\</a></div>
+<div class="line">        <span class="comment">/* warn(CRT, &quot;free_iov idx %u (avail %&quot; PRIu64 &quot;) nr %&quot; PRIu64,        \</span></div>
+<div class="line"><span class="comment">             w_iov_idx(v), sq_len(&amp;(v)-&gt;w-&gt;iov) + 1, meta(v).hdr.nr); */</span>       <a class="code" href="quic_8h.html#aed433a65a751df6b54c091d8facbfb57">\</a></div>
 <div class="line"><a class="code" href="quic_8h.html#aed433a65a751df6b54c091d8facbfb57">        pm_free</a>(&amp;<a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(v));                                                     \</div>
 <div class="line">        memset(&amp;<a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(v), 0, <span class="keyword">sizeof</span>(<a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(v)));                                  <a class="code" href="quic_8h.html#a1a737158b6f126742d911591ded5ad78">\</a></div>
 <div class="line"><a class="code" href="quic_8h.html#a1a737158b6f126742d911591ded5ad78">        ASAN_POISON_MEMORY_REGION</a>(&amp;<a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(v), <span class="keyword">sizeof</span>(<a class="code" href="quic_8h.html#a01ed57991bea53afa1ece4452d16b568">meta</a>(v)));                  \</div>
@@ -1912,7 +1913,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 21 2018 11:23:46 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 21 2018 12:18:13 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
