@@ -37,7 +37,7 @@
 <area shape="rect" id="node44" href="$frame_8c.html#a0d8bea0a0a229b796505008855eb17f0" title="enc_padding_frame" alt="" coords="379,768,514,795"/>
 <area shape="rect" id="node45" href="$frame_8c.html#ae94d6f87955af69345cb46c9d03ad90f" title="log_stream_or_crypto\l_frame" alt="" coords="571,94,717,135"/>
 <area shape="rect" id="node46" href="$frame_8c.html#a6134c4faa49bbd6fbc29589f12350400" title="enc_stream_or_crypto\l_frame" alt="" coords="371,195,522,237"/>
-<area shape="rect" id="node47" href="$tls_8c.html#a874c6921869d564b647792ec6f71ba7f" title="enc_aead" alt="" coords="407,819,486,845"/>
+<area shape="rect" id="node47" href="$tls_8c.html#a1f5410c74221c95bb41ccdf3bfd39e09" title="enc_aead" alt="" coords="407,819,486,845"/>
 <area shape="rect" id="node48" href="$recovery_8c.html#a9749ec5110f82cad7875d3ec8b94199d" title="on_pkt_sent" alt="" coords="400,565,493,592"/>
 <area shape="rect" id="node49" href="$tls_8c.html#a8984aa5b25b32bb8e40aef64f3164fc0" title="maybe_flip_keys" alt="" coords="387,971,507,997"/>
 <area shape="rect" id="node28" href="$pkt_8h.html#a265e9c52eb203bb4701727adc3908850" title="pkt_type" alt="" coords="1192,1439,1264,1465"/>

@@ -195,7 +195,10 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a11134ef29f0209e1196e2dd38719d233"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a11134ef29f0209e1196e2dd38719d233">do_migration</a>: 1</td></tr>
 <tr class="memdesc:a11134ef29f0209e1196e2dd38719d233"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a CID migration when possible.  <a href="#a11134ef29f0209e1196e2dd38719d233">More...</a><br/></td></tr>
 <tr class="separator:a11134ef29f0209e1196e2dd38719d233"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acde364f022c2b0a227e7c54f6e4e80cd"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#acde364f022c2b0a227e7c54f6e4e80cd">__pad0__</a>: 12</td></tr>
+<tr class="memitem:a3001f5409e4d5c5dd1be2675e7e46d5a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a3001f5409e4d5c5dd1be2675e7e46d5a">do_key_flip</a>: 1</td></tr>
+<tr class="memdesc:a3001f5409e4d5c5dd1be2675e7e46d5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a TLS key update.  <a href="#a3001f5409e4d5c5dd1be2675e7e46d5a">More...</a><br/></td></tr>
+<tr class="separator:a3001f5409e4d5c5dd1be2675e7e46d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acde364f022c2b0a227e7c54f6e4e80cd"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#acde364f022c2b0a227e7c54f6e4e80cd">__pad0__</a>: 11</td></tr>
 <tr class="separator:acde364f022c2b0a227e7c54f6e4e80cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace8a73a49c79c13a5d91c213906c95e9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#ace8a73a49c79c13a5d91c213906c95e9">sport</a></td></tr>
 <tr class="memdesc:ace8a73a49c79c13a5d91c213906c95e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local port (in network byte-order).  <a href="#ace8a73a49c79c13a5d91c213906c95e9">More...</a><br/></td></tr>
@@ -487,6 +490,20 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>0-RTT handshake succeeded; </p>
+
+</div>
+</div>
+<a class="anchor" id="a3001f5409e4d5c5dd1be2675e7e46d5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t q_conn::do_key_flip</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Perform a TLS key update. </p>
 
 </div>
 </div>
@@ -1273,7 +1290,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Underlying warpcore engine. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#a5">client.c</a>, and <a class="el" href="server_8c-example.html#a14">server.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#a6">client.c</a>, and <a class="el" href="server_8c-example.html#a14">server.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1283,7 +1300,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 20 2018 12:46:01 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 21 2018 09:30:00 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

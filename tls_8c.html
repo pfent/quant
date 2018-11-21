@@ -95,7 +95,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;assert.h&gt;</code><br/>
-<code>#include &lt;inttypes.h&gt;</code><br/>
 <code>#include &lt;netinet/in.h&gt;</code><br/>
 <code>#include &lt;stdbool.h&gt;</code><br/>
 <code>#include &lt;stddef.h&gt;</code><br/>
@@ -122,7 +121,7 @@ Include dependency graph for tls.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="tls_8c__incl.png" border="0" usemap="#src_2tls_8c" alt=""/></div>
 <map name="src_2tls_8c" id="src_2tls_8c">
-<area shape="rect" id="node13" href="quant_8h.html" title="quant/quant.h" alt="" coords="323,155,424,181"/><area shape="rect" id="node19" href="bitset_8h.html" title="bitset.h" alt="" coords="623,453,688,480"/><area shape="rect" id="node20" href="conn_8h.html" title="conn.h" alt="" coords="1345,155,1407,181"/><area shape="rect" id="node25" href="pn_8h.html" title="pn.h" alt="" coords="1673,229,1719,256"/><area shape="rect" id="node26" href="quic_8h.html" title="quic.h" alt="" coords="1051,304,1108,331"/><area shape="rect" id="node27" href="frame_8h.html" title="frame.h" alt="" coords="623,379,689,405"/><area shape="rect" id="node28" href="tls_8h.html" title="tls.h" alt="" coords="1927,304,1973,331"/><area shape="rect" id="node30" href="marshall_8h.html" title="marshall.h" alt="" coords="183,155,264,181"/><area shape="rect" id="node31" href="pkt_8h.html" title="pkt.h" alt="" coords="1351,80,1401,107"/><area shape="rect" id="node32" href="stream_8h.html" title="stream.h" alt="" coords="1771,80,1844,107"/><area shape="rect" id="node16" href="config_8h.html" title="quant/config.h" alt="" coords="357,304,461,331"/><area shape="rect" id="node24" href="diet_8h.html" title="diet.h" alt="" coords="1483,304,1537,331"/><area shape="rect" id="node29" href="recovery_8h.html" title="recovery.h" alt="" coords="1275,304,1356,331"/></map>
+<area shape="rect" id="node12" href="quant_8h.html" title="quant/quant.h" alt="" coords="360,155,461,181"/><area shape="rect" id="node18" href="bitset_8h.html" title="bitset.h" alt="" coords="1845,453,1909,480"/><area shape="rect" id="node19" href="conn_8h.html" title="conn.h" alt="" coords="1275,155,1336,181"/><area shape="rect" id="node25" href="pn_8h.html" title="pn.h" alt="" coords="1043,229,1089,256"/><area shape="rect" id="node26" href="quic_8h.html" title="quic.h" alt="" coords="1678,304,1735,331"/><area shape="rect" id="node27" href="frame_8h.html" title="frame.h" alt="" coords="1773,379,1840,405"/><area shape="rect" id="node28" href="tls_8h.html" title="tls.h" alt="" coords="807,304,853,331"/><area shape="rect" id="node30" href="marshall_8h.html" title="marshall.h" alt="" coords="609,155,691,181"/><area shape="rect" id="node31" href="pkt_8h.html" title="pkt.h" alt="" coords="1161,80,1212,107"/><area shape="rect" id="node32" href="stream_8h.html" title="stream.h" alt="" coords="1269,80,1341,107"/><area shape="rect" id="node15" href="config_8h.html" title="quant/config.h" alt="" coords="565,304,669,331"/><area shape="rect" id="node24" href="diet_8h.html" title="diet.h" alt="" coords="1035,304,1089,331"/><area shape="rect" id="node29" href="recovery_8h.html" title="recovery.h" alt="" coords="1520,304,1601,331"/></map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -234,16 +233,16 @@ Functions</h2></td></tr>
 <tr class="separator:ae451cab7e92775fe7246239443447424"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbc1dc9c2da3aab2c683a1d9b5ee9321"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#acbc1dc9c2da3aab2c683a1d9b5ee9321">update_traffic_key_cb</a> (ptls_update_traffic_key_t *const self, ptls_t *const <a class="el" href="structtls.html">tls</a>, const int is_enc, const size_t epoch, const void *const secret)</td></tr>
 <tr class="separator:acbc1dc9c2da3aab2c683a1d9b5ee9321"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a471639182e21e3fd801ae073e84445f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#a471639182e21e3fd801ae073e84445f6">init_tls_ctx</a> (const char *const cert, const char *const key, const char *const ticket_store, const char *const tls_log, const bool verify_certs, const uint64_t tls_upd_amnt)</td></tr>
-<tr class="separator:a471639182e21e3fd801ae073e84445f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8801d86c54eb5f41eefcf429630db484"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#a8801d86c54eb5f41eefcf429630db484">init_tls_ctx</a> (const char *const cert, const char *const key, const char *const ticket_store, const char *const tls_log, const bool verify_certs, const bool <a class="el" href="tls_8h.html#a4faeebf5e3d33bfea46325d8fa7343d6">flip_keys</a>)</td></tr>
+<tr class="separator:a8801d86c54eb5f41eefcf429630db484"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad409e0ca7a5132aa66115caa612f69e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#ad409e0ca7a5132aa66115caa612f69e1">free_tls_ctx</a> (void)</td></tr>
 <tr class="separator:ad409e0ca7a5132aa66115caa612f69e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a335e59beef17e01808af4433b4bedd9a"><td class="memItemLeft" align="right" valign="top">static const struct <a class="el" href="structcipher__ctx.html">cipher_ctx</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#a335e59beef17e01808af4433b4bedd9a">which_cipher_ctx_out</a> (const struct <a class="el" href="structq__conn.html">q_conn</a> *const c, const uint8_t flags)</td></tr>
 <tr class="separator:a335e59beef17e01808af4433b4bedd9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b7fc05af119c12354b8de8346ccecf4"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#a1b7fc05af119c12354b8de8346ccecf4">dec_aead</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, const struct w_iov *const xv, const struct w_iov *const v, const uint16_t len, const struct <a class="el" href="structcipher__ctx.html">cipher_ctx</a> *const ctx)</td></tr>
 <tr class="separator:a1b7fc05af119c12354b8de8346ccecf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a874c6921869d564b647792ec6f71ba7f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#a874c6921869d564b647792ec6f71ba7f">enc_aead</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, const struct w_iov *const v, const struct w_iov *const x)</td></tr>
-<tr class="separator:a874c6921869d564b647792ec6f71ba7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f5410c74221c95bb41ccdf3bfd39e09"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#a1f5410c74221c95bb41ccdf3bfd39e09">enc_aead</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, const struct w_iov *const v, const struct w_iov *const xv)</td></tr>
+<tr class="separator:a1f5410c74221c95bb41ccdf3bfd39e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a964f3cc6e0351969e0db618a8c2b722b"><td class="memItemLeft" align="right" valign="top">static ptls_hash_context_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#a964f3cc6e0351969e0db618a8c2b722b">prep_hash_ctx</a> (const struct <a class="el" href="structq__conn.html">q_conn</a> *const c, const ptls_cipher_suite_t *const cs)</td></tr>
 <tr class="separator:a964f3cc6e0351969e0db618a8c2b722b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7af72f607847e5a6a71e9910b489fedc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#a7af72f607847e5a6a71e9910b489fedc">make_rtry_tok</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c)</td></tr>
@@ -274,10 +273,8 @@ Variables</h2></td></tr>
 <tr class="separator:a70bb51bda122391ffd7381e918ac7cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0334391e62e54695e81b99742ea9a9f2"><td class="memItemLeft" align="right" valign="top">static FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#a0334391e62e54695e81b99742ea9a9f2">tls_log_file</a></td></tr>
 <tr class="separator:a0334391e62e54695e81b99742ea9a9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61c4d5e1a451e2eb69cc72838dcdb63b"><td class="memItemLeft" align="right" valign="top">static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#a61c4d5e1a451e2eb69cc72838dcdb63b">tls_key_update_amnt</a> = 0</td></tr>
-<tr class="separator:a61c4d5e1a451e2eb69cc72838dcdb63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89201fff86c83b203819b2dee872d6d8"><td class="memItemLeft" align="right" valign="top">static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#a89201fff86c83b203819b2dee872d6d8">tls_key_update_last</a> = 0</td></tr>
-<tr class="separator:a89201fff86c83b203819b2dee872d6d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a401535823e7f23a099ce60140840a573"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#a401535823e7f23a099ce60140840a573">do_tls_key_flips</a> = false</td></tr>
+<tr class="separator:a401535823e7f23a099ce60140840a573"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a920c80db919ca11a75003ebcceacb8"><td class="memItemLeft" align="right" valign="top">static ptls_save_ticket_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#a3a920c80db919ca11a75003ebcceacb8">save_ticket</a> = {.cb = <a class="el" href="tls_8c.html#aa70adb60bf2e4ca0720c769269514f5b">save_ticket_cb</a>}</td></tr>
 <tr class="separator:a3a920c80db919ca11a75003ebcceacb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f25450b3aa01cc353142a2b8d76cfd9"><td class="memItemLeft" align="right" valign="top">static ptls_encrypt_ticket_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tls_8c.html#a4f25450b3aa01cc353142a2b8d76cfd9">encrypt_ticket</a> = {.cb = <a class="el" href="tls_8c.html#a2ffbd9f27c72720873b4eaa808aa494b">encrypt_ticket_cb</a>}</td></tr>
@@ -930,7 +927,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a874c6921869d564b647792ec6f71ba7f"></a>
+<a class="anchor" id="a1f5410c74221c95bb41ccdf3bfd39e09"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -950,7 +947,7 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const struct w_iov *const&#160;</td>
-          <td class="paramname"><em>x</em>&#160;</td>
+          <td class="paramname"><em>xv</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -963,8 +960,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="tls_8c_a874c6921869d564b647792ec6f71ba7f_cgraph.png" border="0" usemap="#tls_8c_a874c6921869d564b647792ec6f71ba7f_cgraph" alt=""/></div>
-<map name="tls_8c_a874c6921869d564b647792ec6f71ba7f_cgraph" id="tls_8c_a874c6921869d564b647792ec6f71ba7f_cgraph">
+<div class="center"><img src="tls_8c_a1f5410c74221c95bb41ccdf3bfd39e09_cgraph.png" border="0" usemap="#tls_8c_a1f5410c74221c95bb41ccdf3bfd39e09_cgraph" alt=""/></div>
+<map name="tls_8c_a1f5410c74221c95bb41ccdf3bfd39e09_cgraph" id="tls_8c_a1f5410c74221c95bb41ccdf3bfd39e09_cgraph">
 <area shape="rect" id="node2" href="tls_8c.html#a335e59beef17e01808af4433b4bedd9a" title="which_cipher_ctx_out" alt="" coords="134,5,282,32"/><area shape="rect" id="node3" href="pkt_8h.html#a265e9c52eb203bb4701727adc3908850" title="pkt_type" alt="" coords="331,5,403,32"/></map>
 </div>
 </p>
@@ -1095,7 +1092,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#a5">client.c</a>.</dd>
+</dl>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1307,7 +1305,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a471639182e21e3fd801ae073e84445f6"></a>
+<a class="anchor" id="a8801d86c54eb5f41eefcf429630db484"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1344,8 +1342,8 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint64_t&#160;</td>
-          <td class="paramname"><em>tls_upd_amnt</em>&#160;</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>flip_keys</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1358,9 +1356,9 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="tls_8c_a471639182e21e3fd801ae073e84445f6_cgraph.png" border="0" usemap="#tls_8c_a471639182e21e3fd801ae073e84445f6_cgraph" alt=""/></div>
-<map name="tls_8c_a471639182e21e3fd801ae073e84445f6_cgraph" id="tls_8c_a471639182e21e3fd801ae073e84445f6_cgraph">
-<area shape="rect" id="node2" href="tls_8c.html#a65f1490238853f0e913186fd5c3311c7" title="read_tickets" alt="" coords="168,5,261,32"/><area shape="rect" id="node3" href="tls_8c.html#a0ee55bc03b487f0c927e137a80878cbb" title="on_ch" alt="" coords="186,56,243,83"/><area shape="rect" id="node4" href="tls_8c.html#ae451cab7e92775fe7246239443447424" title="log_secret_cb" alt="" coords="163,107,266,133"/><area shape="rect" id="node6" href="tls_8c.html#acbc1dc9c2da3aab2c683a1d9b5ee9321" title="update_traffic_key_cb" alt="" coords="139,157,290,184"/><area shape="rect" id="node8" href="tls_8c.html#a071d6ebbfd90822e31fdb8119ad971ca" title="init_ticket_prot" alt="" coords="161,208,268,235"/><area shape="rect" id="node5" href="tls_8c.html#a596d4ddc108fc81c7eee5579e353beef" title="fprinthex" alt="" coords="351,107,423,133"/><area shape="rect" id="node7" href="tls_8c.html#a33475dbe3d21cf344acab6c9e3b23bee" title="setup_cipher" alt="" coords="339,183,435,209"/></map>
+<div class="center"><img src="tls_8c_a8801d86c54eb5f41eefcf429630db484_cgraph.png" border="0" usemap="#tls_8c_a8801d86c54eb5f41eefcf429630db484_cgraph" alt=""/></div>
+<map name="tls_8c_a8801d86c54eb5f41eefcf429630db484_cgraph" id="tls_8c_a8801d86c54eb5f41eefcf429630db484_cgraph">
+<area shape="rect" id="node2" href="tls_8c.html#a4faeebf5e3d33bfea46325d8fa7343d6" title="flip_keys" alt="" coords="153,5,228,32"/><area shape="rect" id="node6" href="tls_8c.html#a65f1490238853f0e913186fd5c3311c7" title="read_tickets" alt="" coords="144,56,237,83"/><area shape="rect" id="node7" href="tls_8c.html#a0ee55bc03b487f0c927e137a80878cbb" title="on_ch" alt="" coords="162,107,219,133"/><area shape="rect" id="node8" href="tls_8c.html#ae451cab7e92775fe7246239443447424" title="log_secret_cb" alt="" coords="139,157,242,184"/><area shape="rect" id="node10" href="tls_8c.html#acbc1dc9c2da3aab2c683a1d9b5ee9321" title="update_traffic_key_cb" alt="" coords="291,208,442,235"/><area shape="rect" id="node11" href="tls_8c.html#a071d6ebbfd90822e31fdb8119ad971ca" title="init_ticket_prot" alt="" coords="313,259,420,285"/><area shape="rect" id="node3" href="tls_8c.html#aa4d8aedc1bfd0aed4756bd90903c1884" title="dispose_cipher" alt="" coords="312,5,421,32"/><area shape="rect" id="node4" href="tls_8c.html#ab26c763c76c9b874d651bdba836fc13f" title="setup_initial_key" alt="" coords="307,81,426,108"/><area shape="rect" id="node5" href="tls_8c.html#a33475dbe3d21cf344acab6c9e3b23bee" title="setup_cipher" alt="" coords="491,208,587,235"/><area shape="rect" id="node9" href="tls_8c.html#a596d4ddc108fc81c7eee5579e353beef" title="fprinthex" alt="" coords="331,157,403,184"/></map>
 </div>
 </p>
 
@@ -2144,6 +2142,26 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a401535823e7f23a099ce60140840a573"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool do_tls_key_flips = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ae52de31f9ac17d5ebb79d284d90cc1aa"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2238,46 +2256,6 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a61c4d5e1a451e2eb69cc72838dcdb63b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t tls_key_update_amnt = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a89201fff86c83b203819b2dee872d6d8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t tls_key_update_last = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a0334391e62e54695e81b99742ea9a9f2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2301,7 +2279,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 20 2018 12:46:01 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 21 2018 09:30:00 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

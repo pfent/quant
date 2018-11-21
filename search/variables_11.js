@@ -8,8 +8,6 @@ var searchData=
   ['tls',['tls',['../structq__conn.html#ac61afa12ee06fbb21404f81e681577f1',1,'q_conn']]],
   ['tls_5fctx',['tls_ctx',['../tls_8c.html#af6bbbfab377148ff702ada5a44a7ae73',1,'tls_ctx():&#160;tls.c'],['../tls_8h.html#af6bbbfab377148ff702ada5a44a7ae73',1,'tls_ctx():&#160;tls.c']]],
   ['tls_5fhshake_5fprop',['tls_hshake_prop',['../structtls.html#a20c8db13b679074947c758b7e29684c5',1,'tls']]],
-  ['tls_5fkey_5fupdate_5famnt',['tls_key_update_amnt',['../tls_8c.html#a61c4d5e1a451e2eb69cc72838dcdb63b',1,'tls.c']]],
-  ['tls_5fkey_5fupdate_5flast',['tls_key_update_last',['../tls_8c.html#a89201fff86c83b203819b2dee872d6d8',1,'tls.c']]],
   ['tls_5flog_5ffile',['tls_log_file',['../tls_8c.html#a0334391e62e54695e81b99742ea9a9f2',1,'tls.c']]],
   ['tok',['tok',['../structq__conn.html#a513348d360094c4c5b1f7cf49531a86e',1,'q_conn']]],
   ['tok_5flen',['tok_len',['../structq__conn.html#ae2a098b26d543a1df44be487603b48cc',1,'q_conn']]],

@@ -13,8 +13,6 @@ var searchData=
   ['tls_5fext_5ftype_5ftransport_5fparameters',['TLS_EXT_TYPE_TRANSPORT_PARAMETERS',['../tls_8c.html#aec764d0bb291799a81d2c410cebfbcb2',1,'tls.c']]],
   ['tls_5fhshake_5fprop',['tls_hshake_prop',['../structtls.html#a20c8db13b679074947c758b7e29684c5',1,'tls']]],
   ['tls_5fio',['tls_io',['../tls_8c.html#a4e66d17ae7e8756388309b9e193a9543',1,'tls_io(struct q_stream *const s, struct w_iov *const iv):&#160;tls.c'],['../tls_8h.html#a4e66d17ae7e8756388309b9e193a9543',1,'tls_io(struct q_stream *const s, struct w_iov *const iv):&#160;tls.c']]],
-  ['tls_5fkey_5fupdate_5famnt',['tls_key_update_amnt',['../tls_8c.html#a61c4d5e1a451e2eb69cc72838dcdb63b',1,'tls.c']]],
-  ['tls_5fkey_5fupdate_5flast',['tls_key_update_last',['../tls_8c.html#a89201fff86c83b203819b2dee872d6d8',1,'tls.c']]],
   ['tls_5flog_5ffile',['tls_log_file',['../tls_8c.html#a0334391e62e54695e81b99742ea9a9f2',1,'tls.c']]],
   ['tls_5fticket',['tls_ticket',['../structtls__ticket.html',1,'']]],
   ['tls_5fticket_5fcmp',['tls_ticket_cmp',['../tls_8c.html#a9b8df2ef49f68f18f160054a91cc7d45',1,'tls.c']]],
