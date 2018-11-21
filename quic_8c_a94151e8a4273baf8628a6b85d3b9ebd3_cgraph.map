@@ -4,7 +4,7 @@
 <area shape="rect" id="node14" href="$quic_8c.html#aa1e3203057c43651b001c5aed00e50ee" title="mk_or_open_dir" alt="" coords="107,233,221,260"/>
 <area shape="rect" id="node3" href="$tls_8c.html#a4faeebf5e3d33bfea46325d8fa7343d6" title="flip_keys" alt="" coords="284,5,359,32"/>
 <area shape="rect" id="node7" href="$tls_8c.html#a65f1490238853f0e913186fd5c3311c7" title="read_tickets" alt="" coords="275,56,368,83"/>
-<area shape="rect" id="node8" href="$tls_8c.html#a0ee55bc03b487f0c927e137a80878cbb" title="on_ch" alt="" coords="293,107,350,133"/>
+<area shape="rect" id="node8" href="$tls_8c.html#a0c58491ff4fb3ef4eaaa05226aea773e" title="on_ch" alt="" coords="293,107,350,133"/>
 <area shape="rect" id="node9" href="$tls_8c.html#ae451cab7e92775fe7246239443447424" title="log_secret_cb" alt="" coords="270,157,373,184"/>
 <area shape="rect" id="node11" href="$tls_8c.html#acbc1dc9c2da3aab2c683a1d9b5ee9321" title="update_traffic_key_cb" alt="" coords="422,208,573,235"/>
 <area shape="rect" id="node12" href="$tls_8c.html#a071d6ebbfd90822e31fdb8119ad971ca" title="init_ticket_prot" alt="" coords="444,259,551,285"/>
