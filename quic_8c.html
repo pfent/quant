@@ -121,7 +121,7 @@ Include dependency graph for quic.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="quic_8c__incl.png" border="0" usemap="#src_2quic_8c" alt=""/></div>
 <map name="src_2quic_8c" id="src_2quic_8c">
-<area shape="rect" id="node10" href="quant_8h.html" title="quant/quant.h" alt="" coords="248,155,349,181"/><area shape="rect" id="node21" href="conn_8h.html" title="conn.h" alt="" coords="1332,155,1393,181"/><area shape="rect" id="node26" href="diet_8h.html" title="diet.h" alt="" coords="1217,304,1271,331"/><area shape="rect" id="node27" href="pn_8h.html" title="pn.h" alt="" coords="1174,229,1220,256"/><area shape="rect" id="node28" href="quic_8h.html" title="quic.h" alt="" coords="937,304,993,331"/><area shape="rect" id="node31" href="tls_8h.html" title="tls.h" alt="" coords="1783,304,1829,331"/><area shape="rect" id="node33" href="pkt_8h.html" title="pkt.h" alt="" coords="1337,80,1388,107"/><area shape="rect" id="node34" href="stream_8h.html" title="stream.h" alt="" coords="1463,80,1536,107"/><area shape="rect" id="node12" href="config_8h.html" title="quant/config.h" alt="" coords="336,304,440,331"/><area shape="rect" id="node32" href="recovery_8h.html" title="recovery.h" alt="" coords="1397,304,1479,331"/><area shape="rect" id="node29" href="bitset_8h.html" title="bitset.h" alt="" coords="854,453,919,480"/><area shape="rect" id="node30" href="frame_8h.html" title="frame.h" alt="" coords="793,379,860,405"/></map>
+<area shape="rect" id="node10" href="quant_8h.html" title="quant/quant.h" alt="" coords="299,155,400,181"/><area shape="rect" id="node21" href="conn_8h.html" title="conn.h" alt="" coords="1504,155,1565,181"/><area shape="rect" id="node26" href="diet_8h.html" title="diet.h" alt="" coords="921,304,975,331"/><area shape="rect" id="node27" href="pn_8h.html" title="pn.h" alt="" coords="1006,229,1052,256"/><area shape="rect" id="node28" href="quic_8h.html" title="quic.h" alt="" coords="1406,304,1463,331"/><area shape="rect" id="node31" href="tls_8h.html" title="tls.h" alt="" coords="783,304,829,331"/><area shape="rect" id="node33" href="pkt_8h.html" title="pkt.h" alt="" coords="1509,80,1560,107"/><area shape="rect" id="node34" href="stream_8h.html" title="stream.h" alt="" coords="699,80,772,107"/><area shape="rect" id="node12" href="config_8h.html" title="quant/config.h" alt="" coords="539,304,643,331"/><area shape="rect" id="node32" href="recovery_8h.html" title="recovery.h" alt="" coords="1533,229,1615,256"/><area shape="rect" id="node29" href="bitset_8h.html" title="bitset.h" alt="" coords="1465,453,1529,480"/><area shape="rect" id="node30" href="frame_8h.html" title="frame.h" alt="" coords="1404,379,1471,405"/></map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -140,12 +140,10 @@ Functions</h2></td></tr>
 <tr class="separator:a47bc44fba1cbaf917110bc2c6c805c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a7935a14e509d989eda300f16daf086"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8c.html#a4a7935a14e509d989eda300f16daf086">q_free</a> (struct w_iov_sq *const q)</td></tr>
 <tr class="separator:a4a7935a14e509d989eda300f16daf086"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90bd1e5780c2e0459a65c6c502490d80"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8c.html#a90bd1e5780c2e0459a65c6c502490d80">do_write</a> (struct <a class="el" href="structq__stream.html">q_stream</a> *const s, struct w_iov_sq *const q, const bool fin)</td></tr>
-<tr class="separator:a90bd1e5780c2e0459a65c6c502490d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ada47f75ab8833467377ab6de61c320"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structq__conn.html">q_conn</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8c.html#a8ada47f75ab8833467377ab6de61c320">q_connect</a> (struct w_engine *const w, const struct sockaddr_in *const peer, const char *const peer_name, struct w_iov_sq *const early_data, struct <a class="el" href="structq__stream.html">q_stream</a> **const early_data_stream, const bool fin, const uint64_t idle_timeout)</td></tr>
 <tr class="separator:a8ada47f75ab8833467377ab6de61c320"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c710c2093cc759f8bb581e25b52ceda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8c.html#a5c710c2093cc759f8bb581e25b52ceda">q_write</a> (struct <a class="el" href="structq__stream.html">q_stream</a> *const s, struct w_iov_sq *const q, const bool fin)</td></tr>
-<tr class="separator:a5c710c2093cc759f8bb581e25b52ceda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84a599e3fc846bd85dae279762ca9851"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8c.html#a84a599e3fc846bd85dae279762ca9851">q_write</a> (struct <a class="el" href="structq__stream.html">q_stream</a> *const s, struct w_iov_sq *const q, const bool fin)</td></tr>
+<tr class="separator:a84a599e3fc846bd85dae279762ca9851"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eca43a72005c71781fd6139f1f8d798"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structq__stream.html">q_stream</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8c.html#a3eca43a72005c71781fd6139f1f8d798">q_read</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, struct w_iov_sq *const q, const bool block)</td></tr>
 <tr class="separator:a3eca43a72005c71781fd6139f1f8d798"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa40a9929151cdca1205f08b838e53f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8c.html#afa40a9929151cdca1205f08b838e53f5">q_readall_str</a> (struct <a class="el" href="structq__stream.html">q_stream</a> *const s, struct w_iov_sq *const q)</td></tr>
@@ -354,55 +352,6 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="quic_8c_afd98d880d46aa717596439adb85fcafc_cgraph.png" border="0" usemap="#quic_8c_afd98d880d46aa717596439adb85fcafc_cgraph" alt=""/></div>
 <map name="quic_8c_afd98d880d46aa717596439adb85fcafc_cgraph" id="quic_8c_afd98d880d46aa717596439adb85fcafc_cgraph">
 <area shape="rect" id="node2" href="quic_8c.html#a3da1ca1e589303333e8bba9cfbb1f4da" title="q_accept" alt="" coords="172,5,247,32"/><area shape="rect" id="node4" href="quic_8c.html#a84a768c49cd352e1c8a109bda56ef3a6" title="q_rx_ready" alt="" coords="166,56,253,83"/><area shape="rect" id="node3" href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="301,31,384,57"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a90bd1e5780c2e0459a65c6c502490d80"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void do_write </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structq__stream.html">q_stream</a> *const&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct w_iov_sq *const&#160;</td>
-          <td class="paramname"><em>q</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const bool&#160;</td>
-          <td class="paramname"><em>fin</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="quic_8c_a90bd1e5780c2e0459a65c6c502490d80_cgraph.png" border="0" usemap="#quic_8c_a90bd1e5780c2e0459a65c6c502490d80_cgraph" alt=""/></div>
-<map name="quic_8c_a90bd1e5780c2e0459a65c6c502490d80_cgraph" id="quic_8c_a90bd1e5780c2e0459a65c6c502490d80_cgraph">
-<area shape="rect" id="node2" href="quic_8c.html#a5c710c2093cc759f8bb581e25b52ceda" title="q_write" alt="" coords="125,31,189,57"/><area shape="rect" id="node3" href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="240,5,323,32"/><area shape="rect" id="node4" href="stream_8c.html#a379b35c4c21ee31284e14338963fdd8f" title="concat_out" alt="" coords="238,56,325,83"/></map>
 </div>
 </p>
 
@@ -974,12 +923,12 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a5c710c2093cc759f8bb581e25b52ceda"></a>
+<a class="anchor" id="a84a599e3fc846bd85dae279762ca9851"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void q_write </td>
+          <td class="memname">bool q_write </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structq__stream.html">q_stream</a> *const&#160;</td>
           <td class="paramname"><em>s</em>, </td>
@@ -1007,9 +956,9 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="quic_8c_a5c710c2093cc759f8bb581e25b52ceda_cgraph.png" border="0" usemap="#quic_8c_a5c710c2093cc759f8bb581e25b52ceda_cgraph" alt=""/></div>
-<map name="quic_8c_a5c710c2093cc759f8bb581e25b52ceda_cgraph" id="quic_8c_a5c710c2093cc759f8bb581e25b52ceda_cgraph">
-<area shape="rect" id="node2" href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="120,5,203,32"/><area shape="rect" id="node3" href="stream_8c.html#a379b35c4c21ee31284e14338963fdd8f" title="concat_out" alt="" coords="118,56,205,83"/><area shape="rect" id="node4" href="quic_8c.html#a90bd1e5780c2e0459a65c6c502490d80" title="do_write" alt="" coords="126,107,197,133"/></map>
+<div class="center"><img src="quic_8c_a84a599e3fc846bd85dae279762ca9851_cgraph.png" border="0" usemap="#quic_8c_a84a599e3fc846bd85dae279762ca9851_cgraph" alt=""/></div>
+<map name="quic_8c_a84a599e3fc846bd85dae279762ca9851_cgraph" id="quic_8c_a84a599e3fc846bd85dae279762ca9851_cgraph">
+<area shape="rect" id="node2" href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="120,5,203,32"/><area shape="rect" id="node3" href="stream_8c.html#a379b35c4c21ee31284e14338963fdd8f" title="concat_out" alt="" coords="118,56,205,83"/></map>
 </div>
 </p>
 
@@ -1266,7 +1215,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 21 2018 19:12:09 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 26 2018 08:46:55 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
