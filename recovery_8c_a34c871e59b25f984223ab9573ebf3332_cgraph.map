@@ -1,7 +1,0 @@
-<map id="set_ld_alarm" name="set_ld_alarm">
-<area shape="rect" id="node2" href="$recovery_8c.html#a0ab224b867c365ffdb3150b57d836ee8" title="hshk_pkts_outstanding" alt="" coords="150,56,306,83"/>
-<area shape="rect" id="node6" href="$conn_8h.html#a68c6b30b8665ce894ab5bed3c73a2d9d" title="is_zero" alt="" coords="196,107,260,133"/>
-<area shape="rect" id="node3" href="$stream_8c.html#a7308501df4d06bbfd14665ae88caae02" title="get_stream" alt="" coords="369,5,455,32"/>
-<area shape="rect" id="node4" href="$stream_8h.html#a012bc210254cd3269ef892fcbd91e146" title="crpt_strm_id" alt="" coords="365,56,459,83"/>
-<area shape="rect" id="node5" href="$stream_8h.html#ad30add9149d4bde85b9e2cc3e9159559" title="out_fully_acked" alt="" coords="355,107,469,133"/>
-</map>

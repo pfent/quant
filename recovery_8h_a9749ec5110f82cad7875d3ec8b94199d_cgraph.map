@@ -2,10 +2,11 @@
 <area shape="rect" id="node2" href="$conn_8h.html#a526357c19864e7579573160573a55c33" title="pn_for_epoch" alt="" coords="147,5,247,32"/>
 <area shape="rect" id="node3" href="$stream_8h.html#af3bef0cb9d669dca78f301f6ae50a19e" title="strm_epoch" alt="" coords="152,56,243,83"/>
 <area shape="rect" id="node4" href="$quic_8h.html#a05b0a63c2fe234f56513430fc2114eba" title="is_ack_only" alt="" coords="152,107,243,133"/>
-<area shape="rect" id="node5" href="$recovery_8c.html#a34c871e59b25f984223ab9573ebf3332" title="set_ld_alarm" alt="" coords="149,157,245,184"/>
-<area shape="rect" id="node6" href="$recovery_8c.html#a0ab224b867c365ffdb3150b57d836ee8" title="hshk_pkts_outstanding" alt="" coords="297,132,453,159"/>
-<area shape="rect" id="node10" href="$conn_8h.html#a68c6b30b8665ce894ab5bed3c73a2d9d" title="is_zero" alt="" coords="343,183,407,209"/>
-<area shape="rect" id="node7" href="$stream_8c.html#a7308501df4d06bbfd14665ae88caae02" title="get_stream" alt="" coords="515,81,602,108"/>
-<area shape="rect" id="node8" href="$stream_8h.html#a012bc210254cd3269ef892fcbd91e146" title="crpt_strm_id" alt="" coords="511,132,606,159"/>
-<area shape="rect" id="node9" href="$stream_8h.html#ad30add9149d4bde85b9e2cc3e9159559" title="out_fully_acked" alt="" coords="502,183,615,209"/>
+<area shape="rect" id="node5" href="$recovery_8c.html#ae36a89ee82fe65d07b6707ac13e9071e" title="set_ld_timer" alt="" coords="151,157,244,184"/>
+<area shape="rect" id="node6" href="$recovery_8c.html#a6a4bf9229c6ca38ab08cbf72f4b93a50" title="crypto_pkts_outstanding" alt="" coords="297,107,461,133"/>
+<area shape="rect" id="node10" href="$conn_8h.html#a68c6b30b8665ce894ab5bed3c73a2d9d" title="is_zero" alt="" coords="347,157,411,184"/>
+<area shape="rect" id="node11" href="$conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="337,208,420,235"/>
+<area shape="rect" id="node7" href="$stream_8c.html#a7308501df4d06bbfd14665ae88caae02" title="get_stream" alt="" coords="523,56,610,83"/>
+<area shape="rect" id="node8" href="$stream_8h.html#a012bc210254cd3269ef892fcbd91e146" title="crpt_strm_id" alt="" coords="519,107,614,133"/>
+<area shape="rect" id="node9" href="$stream_8h.html#ad30add9149d4bde85b9e2cc3e9159559" title="out_fully_acked" alt="" coords="510,157,623,184"/>
 </map>

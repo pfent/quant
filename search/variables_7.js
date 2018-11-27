@@ -5,6 +5,5 @@ var searchData=
   ['hdr',['hdr',['../structpkt__meta.html#ade732240d1610adc75a376707de4fdd1',1,'pkt_meta']]],
   ['hdr_5flen',['hdr_len',['../structpkt__hdr.html#a8d278001c1d049f5d4b78db832670cca',1,'pkt_hdr']]],
   ['hi',['hi',['../structival.html#af9b795cb80774bbac8756a69f6106ea6',1,'ival']]],
-  ['holds_5fsock',['holds_sock',['../structq__conn.html#ac16c3a79e2834414bf5619618456d663',1,'q_conn']]],
-  ['hshake_5fcnt',['hshake_cnt',['../structrecovery.html#a0e9c80d907456fd2642d33201921ce34',1,'recovery']]]
+  ['holds_5fsock',['holds_sock',['../structq__conn.html#ac16c3a79e2834414bf5619618456d663',1,'q_conn']]]
 ];

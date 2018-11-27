@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['last_5fsent_5fhshk_5ft',['last_sent_hshk_t',['../structrecovery.html#a3d40495a7d9c9e05038100522e558fc2',1,'recovery']]],
+  ['last_5fsent_5fcrypto_5ft',['last_sent_crypto_t',['../structrecovery.html#a3cbb49a56de6829477e41bca89bf666a',1,'recovery']]],
   ['last_5fsent_5frtxable_5ft',['last_sent_rtxable_t',['../structrecovery.html#aa3d94d2430dc1b13cdda7e5857f8137a',1,'recovery']]],
   ['latest_5frtt',['latest_rtt',['../structrecovery.html#a34571d44f4791519797d7915419cb48d',1,'recovery']]],
   ['ld_5falarm',['ld_alarm',['../structrecovery.html#a8233971136274c530051b40c04a974e9',1,'recovery']]],

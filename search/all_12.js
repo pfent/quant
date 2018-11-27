@@ -9,7 +9,7 @@ var searchData=
   ['sent_5fpkts',['sent_pkts',['../structpn__space.html#a7ac99b6feec118ea3941813d8ee9a55a',1,'pn_space']]],
   ['seq',['seq',['../structcid.html#a937edeb01e868ef76539126dd41b322f',1,'cid']]],
   ['serv_5fscid_5flen',['SERV_SCID_LEN',['../quic_8h.html#af41ac5b263cca13ee08b287a015840bb',1,'quic.h']]],
-  ['set_5fld_5falarm',['set_ld_alarm',['../recovery_8c.html#a34c871e59b25f984223ab9573ebf3332',1,'recovery.c']]],
+  ['set_5fld_5ftimer',['set_ld_timer',['../recovery_8c.html#ae36a89ee82fe65d07b6707ac13e9071e',1,'recovery.c']]],
   ['setup_5fcipher',['setup_cipher',['../tls_8c.html#a33475dbe3d21cf344acab6c9e3b23bee',1,'tls.c']]],
   ['setup_5finitial_5fencryption',['setup_initial_encryption',['../tls_8c.html#aff7c4b2f9e78c2d678898dc58bc68e57',1,'tls.c']]],
   ['setup_5finitial_5fkey',['setup_initial_key',['../tls_8c.html#ab26c763c76c9b874d651bdba836fc13f',1,'tls.c']]],

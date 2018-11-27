@@ -14,5 +14,6 @@ var searchData=
   ['conn_5ftype',['conn_type',['../conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4',1,'conn.h']]],
   ['conns_5fby_5fid_5fcmp',['conns_by_id_cmp',['../conn_8h.html#a5725c568379c6cb413709c8d5f045902',1,'conn.h']]],
   ['conns_5fby_5fipnp_5fcmp',['conns_by_ipnp_cmp',['../conn_8c.html#a80d90113c6ae61c657e6546d30f0e844',1,'conns_by_ipnp_cmp(const struct q_conn *const a, const struct q_conn *const b):&#160;conn.c'],['../conn_8h.html#a80d90113c6ae61c657e6546d30f0e844',1,'conns_by_ipnp_cmp(const struct q_conn *const a, const struct q_conn *const b):&#160;conn.c']]],
-  ['crpt_5fstrm_5fid',['crpt_strm_id',['../stream_8h.html#a012bc210254cd3269ef892fcbd91e146',1,'stream.h']]]
+  ['crpt_5fstrm_5fid',['crpt_strm_id',['../stream_8h.html#a012bc210254cd3269ef892fcbd91e146',1,'stream.h']]],
+  ['crypto_5fpkts_5foutstanding',['crypto_pkts_outstanding',['../recovery_8c.html#a6a4bf9229c6ca38ab08cbf72f4b93a50',1,'recovery.c']]]
 ];

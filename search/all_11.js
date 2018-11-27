@@ -9,7 +9,6 @@ var searchData=
   ['recv',['recv',['../structpn__space.html#a7227a74b96300049e4716959528092df',1,'pn_space']]],
   ['recv_5fall',['recv_all',['../structpn__space.html#a9314ad0be04da03f6155d65885a7b1f8',1,'pn_space']]],
   ['red',['RED',['../quic_8h.html#a8d23feea868a983c8c2b661e1e16972f',1,'quic.h']]],
-  ['reorder_5fthresh',['reorder_thresh',['../structrecovery.html#a3e6c46d09273a71545743b46472ce87f',1,'recovery']]],
   ['reset_5fpm',['reset_pm',['../stream_8c.html#ad084a65676d6e76fe72fa8e23bd1391d',1,'stream.c']]],
   ['reset_5fpn',['reset_pn',['../pn_8c.html#ad39de552086c127310c3250f2982dcb5',1,'reset_pn(struct pn_space *const pn):&#160;pn.c'],['../pn_8h.html#ad39de552086c127310c3250f2982dcb5',1,'reset_pn(struct pn_space *const pn):&#160;pn.c']]],
   ['reset_5fstream',['reset_stream',['../stream_8c.html#a23976e8cd7c5aecf8e137324fce993d0',1,'reset_stream(struct q_stream *const s, const bool forget):&#160;stream.c'],['../stream_8h.html#a23976e8cd7c5aecf8e137324fce993d0',1,'reset_stream(struct q_stream *const s, const bool forget):&#160;stream.c']]],

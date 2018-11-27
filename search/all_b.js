@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['last_5fsent_5fhshk_5ft',['last_sent_hshk_t',['../structrecovery.html#a3d40495a7d9c9e05038100522e558fc2',1,'recovery']]],
+  ['last_5fsent_5fcrypto_5ft',['last_sent_crypto_t',['../structrecovery.html#a3cbb49a56de6829477e41bca89bf666a',1,'recovery']]],
   ['last_5fsent_5frtxable_5ft',['last_sent_rtxable_t',['../structrecovery.html#aa3d94d2430dc1b13cdda7e5857f8137a',1,'recovery']]],
   ['latest_5frtt',['latest_rtt',['../structrecovery.html#a34571d44f4791519797d7915419cb48d',1,'recovery']]],
   ['ld_5falarm',['ld_alarm',['../structrecovery.html#a8233971136274c530051b40c04a974e9',1,'recovery']]],
@@ -14,7 +14,7 @@ var searchData=
   ['log_5fcc',['log_cc',['../recovery_8h.html#ad588231c121d1a85ab97024a4cf12823',1,'recovery.h']]],
   ['log_5fdec',['log_dec',['../marshall_8c.html#ae635e264e431dd8807e0851433baaf5a',1,'marshall.c']]],
   ['log_5fenc',['log_enc',['../marshall_8c.html#a4c9f737352d10453560686bc1d742e9a',1,'marshall.c']]],
-  ['log_5fpkt',['log_pkt',['../pkt_8c.html#a38e598b310ff43723f449b71c7baa210',1,'log_pkt(const char *const dir, const struct w_iov *const v, const struct cid *const odcid, const uint8_t *const tok, const uint16_t tok_len):&#160;pkt.c'],['../pkt_8h.html#a38e598b310ff43723f449b71c7baa210',1,'log_pkt(const char *const dir, const struct w_iov *const v, const struct cid *const odcid, const uint8_t *const tok, const uint16_t tok_len):&#160;pkt.c']]],
+  ['log_5fpkt',['log_pkt',['../pkt_8c.html#aad4456e4786b31e02e1e4c81e265d442',1,'log_pkt(const char *const dir, const struct w_iov *const v, const uint32_t ip, const uint16_t port, const struct cid *const odcid, const uint8_t *const tok, const uint16_t tok_len):&#160;pkt.c'],['../pkt_8h.html#aad4456e4786b31e02e1e4c81e265d442',1,'log_pkt(const char *const dir, const struct w_iov *const v, const uint32_t ip, const uint16_t port, const struct cid *const odcid, const uint8_t *const tok, const uint16_t tok_len):&#160;pkt.c']]],
   ['log_5fsecret_5fcb',['log_secret_cb',['../tls_8c.html#ae451cab7e92775fe7246239443447424',1,'tls.c']]],
   ['log_5fsent_5fpkts',['log_sent_pkts',['../conn_8c.html#a5743552083731c2f028e261c680fcd38',1,'conn.c']]],
   ['log_5fstream_5for_5fcrypto_5fframe',['log_stream_or_crypto_frame',['../frame_8c.html#ae94d6f87955af69345cb46c9d03ad90f',1,'log_stream_or_crypto_frame(const bool rtx, const struct w_iov *const v, const bool in, const char *const kind):&#160;frame.c'],['../frame_8h.html#ae94d6f87955af69345cb46c9d03ad90f',1,'log_stream_or_crypto_frame(const bool rtx, const struct w_iov *const v, const bool in, const char *const kind):&#160;frame.c']]],

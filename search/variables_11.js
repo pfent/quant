@@ -7,7 +7,7 @@ var searchData=
   ['tlp_5fcnt',['tlp_cnt',['../structrecovery.html#aac7447a2fe4bec39b937f846da66fcfe',1,'recovery']]],
   ['tls',['tls',['../structq__conn.html#ac61afa12ee06fbb21404f81e681577f1',1,'q_conn']]],
   ['tls_5fctx',['tls_ctx',['../tls_8c.html#af6bbbfab377148ff702ada5a44a7ae73',1,'tls_ctx():&#160;tls.c'],['../tls_8h.html#af6bbbfab377148ff702ada5a44a7ae73',1,'tls_ctx():&#160;tls.c']]],
-  ['tls_5fhshake_5fprop',['tls_hshake_prop',['../structtls.html#a20c8db13b679074947c758b7e29684c5',1,'tls']]],
+  ['tls_5fhshk_5fprop',['tls_hshk_prop',['../structtls.html#af67df1608ab6e88dcbeceb56dcef2487',1,'tls']]],
   ['tls_5flog_5ffile',['tls_log_file',['../tls_8c.html#a0334391e62e54695e81b99742ea9a9f2',1,'tls.c']]],
   ['tok',['tok',['../structq__conn.html#a513348d360094c4c5b1f7cf49531a86e',1,'q_conn']]],
   ['tok_5flen',['tok_len',['../structq__conn.html#ae2a098b26d543a1df44be487603b48cc',1,'q_conn']]],

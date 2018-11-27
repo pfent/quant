@@ -12,7 +12,5 @@ var searchData=
   ['hex2str',['hex2str',['../quic_8h.html#a0721d3a6a0adbe5443a85d94ee4da000',1,'quic.h']]],
   ['hi',['hi',['../structival.html#af9b795cb80774bbac8756a69f6106ea6',1,'ival']]],
   ['hkdf_5fbase_5flabel',['HKDF_BASE_LABEL',['../tls_8c.html#a62a6e8160885163bbf0d7c412635752c',1,'tls.c']]],
-  ['holds_5fsock',['holds_sock',['../structq__conn.html#ac16c3a79e2834414bf5619618456d663',1,'q_conn']]],
-  ['hshake_5fcnt',['hshake_cnt',['../structrecovery.html#a0e9c80d907456fd2642d33201921ce34',1,'recovery']]],
-  ['hshk_5fpkts_5foutstanding',['hshk_pkts_outstanding',['../recovery_8c.html#a0ab224b867c365ffdb3150b57d836ee8',1,'recovery.c']]]
+  ['holds_5fsock',['holds_sock',['../structq__conn.html#ac16c3a79e2834414bf5619618456d663',1,'q_conn']]]
 ];
