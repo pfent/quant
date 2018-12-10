@@ -2,6 +2,7 @@
 <area shape="rect" id="node2" href="$conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="241,5,324,32"/>
 <area shape="rect" id="node3" href="$quant_8h.html#a7882234166a0aaac582c25c4c8a581b8" title="q_rsv_stream" alt="" coords="232,56,333,83"/>
 <area shape="rect" id="node4" href="$stream_8c.html#a300bcafbad60488eb0b6b0560eb1b645" title="new_stream" alt="" coords="381,56,475,83"/>
-<area shape="rect" id="node5" href="$stream_8c.html#a2853c95f04e70a8c7e836f881eedff8d" title="apply_stream_limits" alt="" coords="523,31,661,57"/>
-<area shape="rect" id="node6" href="$stream_8c.html#abd56ea788d8872433901695928a944ab" title="do_stream_id_fc" alt="" coords="533,81,651,108"/>
+<area shape="rect" id="node5" href="$stream_8h.html#af3bef0cb9d669dca78f301f6ae50a19e" title="strm_epoch" alt="" coords="547,5,637,32"/>
+<area shape="rect" id="node6" href="$stream_8c.html#a2853c95f04e70a8c7e836f881eedff8d" title="apply_stream_limits" alt="" coords="523,56,661,83"/>
+<area shape="rect" id="node7" href="$stream_8c.html#abd56ea788d8872433901695928a944ab" title="do_stream_id_fc" alt="" coords="533,107,651,133"/>
 </map>

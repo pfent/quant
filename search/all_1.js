@@ -7,7 +7,7 @@ var searchData=
   ['ack_5fdel_5fexp',['ack_del_exp',['../structtransport__params.html#ae332eb1c8176a3916959caa35f810278',1,'transport_params']]],
   ['acked',['acked',['../structpn__space.html#a258b213b1fbb488b1d1dda308dcade45',1,'pn_space']]],
   ['add_5fdcid',['add_dcid',['../conn_8c.html#ae5beee50c7414b14d1efb1e3e8ebe1ee',1,'add_dcid(struct q_conn *const c, const struct cid *const id):&#160;conn.c'],['../conn_8h.html#ae5beee50c7414b14d1efb1e3e8ebe1ee',1,'add_dcid(struct q_conn *const c, const struct cid *const id):&#160;conn.c']]],
-  ['add_5fscid',['add_scid',['../conn_8c.html#a1c9db996af2db57d04b8661d04dd0d68',1,'add_scid(struct q_conn *const c, const struct cid *const id):&#160;conn.c'],['../conn_8h.html#a1c9db996af2db57d04b8661d04dd0d68',1,'add_scid(struct q_conn *const c, const struct cid *const id):&#160;conn.c']]],
+  ['add_5fscid',['add_scid',['../conn_8c.html#aa16d30297b5b1ceed9c3fef11b6a5026',1,'add_scid(struct q_conn *const c, struct cid *const id):&#160;conn.c'],['../conn_8h.html#aa16d30297b5b1ceed9c3fef11b6a5026',1,'add_scid(struct q_conn *const c, struct cid *const id):&#160;conn.c']]],
   ['adj_5fiov_5fto_5fdata',['adj_iov_to_data',['../quic_8h.html#a1aa83c4276fdde72d879fe39db958f53',1,'quic.h']]],
   ['adj_5fiov_5fto_5fstart',['adj_iov_to_start',['../quic_8h.html#a1daef6fec141f3c29f2ef7f04d7f21ad',1,'quic.h']]],
   ['aead',['aead',['../structcipher__ctx.html#ab88a3d2c5fd30344a597662ceaa074d6',1,'cipher_ctx']]],

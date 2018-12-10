@@ -1,8 +1,10 @@
 var searchData=
 [
   ['had_5frx',['had_rx',['../structq__conn.html#a7def6a4e6363369eb3b35abcc4c23270',1,'q_conn']]],
+  ['handle_5funknown_5fstrm',['handle_unknown_strm',['../frame_8c.html#a0e34aafef3b23106c62c52801def6de1',1,'frame.c']]],
   ['has_5fframe',['has_frame',['../frame_8h.html#aed8d9d476ac59dfb0097cbffd793ae5d',1,'frame.h']]],
   ['has_5fwnd',['has_wnd',['../conn_8h.html#af4bcebc8568f27694df841f3045749fb',1,'conn.h']]],
+  ['hash_5fcid',['hash_cid',['../conn_8h.html#a757f786fa765f549ba00fa032e614e82',1,'conn.h']]],
   ['have_5fasan',['HAVE_ASAN',['../config_8h.html#a08ee9e2d328d1d579ee81843a3b01692',1,'config.h']]],
   ['have_5fendian_5fh',['HAVE_ENDIAN_H',['../config_8h.html#a9ef8e61ca569fc24c3e47aeab03498c6',1,'config.h']]],
   ['have_5fnew_5fdata',['have_new_data',['../structq__conn.html#aacd70807b8436bf3f3fae648164a1443',1,'q_conn']]],

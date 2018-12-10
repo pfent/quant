@@ -1,19 +1,28 @@
 <map id="dec_stream_or_crypto_frame" name="dec_stream_or_crypto_frame">
-<area shape="rect" id="node2" href="$stream_8h.html#a012bc210254cd3269ef892fcbd91e146" title="crpt_strm_id" alt="" coords="231,5,326,32"/>
-<area shape="rect" id="node3" href="$pkt_8h.html#a2e3325ad951d933d49dcd1cd1e0c04f1" title="epoch_for_pkt_type" alt="" coords="211,56,347,83"/>
-<area shape="rect" id="node4" href="$stream_8c.html#a38e0dc3cbebe5699ec573ab242b6f505" title="max_sid" alt="" coords="434,288,505,315"/>
-<area shape="rect" id="node5" href="$stream_8c.html#a7308501df4d06bbfd14665ae88caae02" title="get_stream" alt="" coords="235,157,322,184"/>
-<area shape="rect" id="node6" href="$diet_8c.html#a87c3c2cebc6ccf0911d3d05989352588" title="Pointer to the interval containing n in diet tree t. " alt="" coords="243,208,314,235"/>
-<area shape="rect" id="node7" href="$conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="428,680,511,707"/>
-<area shape="rect" id="node8" href="$stream_8c.html#a300bcafbad60488eb0b6b0560eb1b645" title="new_stream" alt="" coords="232,107,325,133"/>
-<area shape="rect" id="node11" href="$frame_8c.html#ae6b33881d5310ee374d246e582265d43" title="trim_frame" alt="" coords="237,376,321,403"/>
-<area shape="rect" id="node12" href="$stream_8c.html#a551a7c19bf90417d819623804da6949f" title="track_bytes_in" alt="" coords="225,427,332,453"/>
-<area shape="rect" id="node13" href="$quic_8h.html#a6bb0d7cd1774df0297a9540111f46308" title="is_fin" alt="" coords="252,477,305,504"/>
-<area shape="rect" id="node14" href="$quant_8h.html#afa40a9929151cdca1205f08b838e53f5" title="q_readall_str" alt="" coords="231,528,327,555"/>
-<area shape="rect" id="node15" href="$stream_8c.html#ae4a57a5b73d68625c63574f6c4109bad" title="do_stream_fc" alt="" coords="228,579,329,605"/>
-<area shape="rect" id="node16" href="$conn_8c.html#a4bcf08ef3dc5cc610474c8d0fa7947ee" title="do_conn_fc" alt="" coords="234,629,323,656"/>
-<area shape="rect" id="node17" href="$quant_8h.html#a3eca43a72005c71781fd6139f1f8d798" title="q_read" alt="" coords="248,680,309,707"/>
-<area shape="rect" id="node18" href="$frame_8c.html#ae94d6f87955af69345cb46c9d03ad90f" title="log_stream_or_crypto\l_frame" alt="" coords="205,310,352,351"/>
-<area shape="rect" id="node9" href="$stream_8c.html#a2853c95f04e70a8c7e836f881eedff8d" title="apply_stream_limits" alt="" coords="400,81,539,108"/>
-<area shape="rect" id="node10" href="$stream_8c.html#abd56ea788d8872433901695928a944ab" title="do_stream_id_fc" alt="" coords="410,132,529,159"/>
+<area shape="rect" id="node2" href="$pkt_8h.html#a2e3325ad951d933d49dcd1cd1e0c04f1" title="epoch_for_pkt_type" alt="" coords="211,5,347,32"/>
+<area shape="rect" id="node3" href="$stream_8h.html#a012bc210254cd3269ef892fcbd91e146" title="crpt_strm_id" alt="" coords="231,56,326,83"/>
+<area shape="rect" id="node4" href="$stream_8c.html#a38e0dc3cbebe5699ec573ab242b6f505" title="max_sid" alt="" coords="434,144,505,171"/>
+<area shape="rect" id="node5" href="$stream_8c.html#a7308501df4d06bbfd14665ae88caae02" title="get_stream" alt="" coords="235,224,322,251"/>
+<area shape="rect" id="node6" href="$diet_8c.html#a87c3c2cebc6ccf0911d3d05989352588" title="Pointer to the interval containing n in diet tree t. " alt="" coords="731,376,802,403"/>
+<area shape="rect" id="node7" href="$conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="591,427,673,453"/>
+<area shape="rect" id="node8" href="$stream_8c.html#a300bcafbad60488eb0b6b0560eb1b645" title="new_stream" alt="" coords="232,579,325,605"/>
+<area shape="rect" id="node12" href="$frame_8c.html#ae6b33881d5310ee374d246e582265d43" title="trim_frame" alt="" coords="237,629,321,656"/>
+<area shape="rect" id="node13" href="$stream_8c.html#a551a7c19bf90417d819623804da6949f" title="track_bytes_in" alt="" coords="225,680,332,707"/>
+<area shape="rect" id="node14" href="$quic_8h.html#a6bb0d7cd1774df0297a9540111f46308" title="is_fin" alt="" coords="443,477,496,504"/>
+<area shape="rect" id="node15" href="$quant_8h.html#afa40a9929151cdca1205f08b838e53f5" title="q_readall_str" alt="" coords="421,325,517,352"/>
+<area shape="rect" id="node16" href="$quant_8h.html#a01444581bd34af25498d1cb8fc3a0a92" title="q_close_stream" alt="" coords="221,528,336,555"/>
+<area shape="rect" id="node23" href="$pkt_8h.html#a13f2d88ad76ff338e531972ca1c0449e" title="pn_for_pkt_type" alt="" coords="221,731,336,757"/>
+<area shape="rect" id="node24" href="$stream_8c.html#ae4a57a5b73d68625c63574f6c4109bad" title="do_stream_fc" alt="" coords="228,781,329,808"/>
+<area shape="rect" id="node25" href="$conn_8c.html#a4bcf08ef3dc5cc610474c8d0fa7947ee" title="do_conn_fc" alt="" coords="234,832,323,859"/>
+<area shape="rect" id="node26" href="$quant_8h.html#a3eca43a72005c71781fd6139f1f8d798" title="q_read" alt="" coords="439,376,500,403"/>
+<area shape="rect" id="node27" href="$frame_8c.html#ae94d6f87955af69345cb46c9d03ad90f" title="log_stream_or_crypto\l_frame" alt="" coords="205,107,352,149"/>
+<area shape="rect" id="node9" href="$stream_8h.html#af3bef0cb9d669dca78f301f6ae50a19e" title="strm_epoch" alt="" coords="587,680,677,707"/>
+<area shape="rect" id="node10" href="$stream_8c.html#a2853c95f04e70a8c7e836f881eedff8d" title="apply_stream_limits" alt="" coords="400,629,539,656"/>
+<area shape="rect" id="node11" href="$stream_8c.html#abd56ea788d8872433901695928a944ab" title="do_stream_id_fc" alt="" coords="410,680,529,707"/>
+<area shape="rect" id="node17" href="$stream_8c.html#acf612f3ac0b49aa8c7d6630c00e6b0ce" title="free_stream" alt="" coords="424,579,515,605"/>
+<area shape="rect" id="node18" href="$diet_8c.html#a9064e32f6b50901d8f5685e53d2e4041" title="Inserts integer n of type t into the diet tree t. " alt="" coords="591,579,673,605"/>
+<area shape="rect" id="node22" href="$quant_8h.html#a4a7935a14e509d989eda300f16daf086" title="q_free" alt="" coords="603,528,661,555"/>
+<area shape="rect" id="node19" href="$diet_8c.html#a85e4e10a029283a5798638bfaf387abd" title="Return maximum interval underneath i. " alt="" coords="729,579,804,605"/>
+<area shape="rect" id="node20" href="$diet_8c.html#a8f0e77727941f94b10b1ea1241df8eaa" title="Return minimum interval underneath i. " alt="" coords="731,629,802,656"/>
+<area shape="rect" id="node21" href="$diet_8c.html#a21164f67106bc7c1712e8b6596aa0253" title="Helper function to create a zero&#45;width interval containing (only) n. " alt="" coords="726,528,807,555"/>
 </map>

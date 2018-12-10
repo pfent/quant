@@ -12,8 +12,13 @@ var searchData=
   ['concat_5fout',['concat_out',['../stream_8c.html#a379b35c4c21ee31284e14338963fdd8f',1,'concat_out(struct q_stream *const s, struct w_iov_sq *const q):&#160;stream.c'],['../stream_8h.html#a379b35c4c21ee31284e14338963fdd8f',1,'concat_out(struct q_stream *const s, struct w_iov_sq *const q):&#160;stream.c']]],
   ['conn_5fneeds_5fctrl',['conn_needs_ctrl',['../conn_8h.html#ab12c601471f4fcfae92c53fbca85b32e',1,'conn.h']]],
   ['conn_5ftype',['conn_type',['../conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4',1,'conn.h']]],
-  ['conns_5fby_5fid_5fcmp',['conns_by_id_cmp',['../conn_8h.html#a5725c568379c6cb413709c8d5f045902',1,'conn.h']]],
-  ['conns_5fby_5fipnp_5fcmp',['conns_by_ipnp_cmp',['../conn_8c.html#a80d90113c6ae61c657e6546d30f0e844',1,'conns_by_ipnp_cmp(const struct q_conn *const a, const struct q_conn *const b):&#160;conn.c'],['../conn_8h.html#a80d90113c6ae61c657e6546d30f0e844',1,'conns_by_ipnp_cmp(const struct q_conn *const a, const struct q_conn *const b):&#160;conn.c']]],
+  ['conns_5fby_5fid_5fdel',['conns_by_id_del',['../conn_8c.html#a157de1b1117fd595bca3a0d2a82184db',1,'conn.c']]],
+  ['conns_5fby_5fid_5fins',['conns_by_id_ins',['../conn_8c.html#a3970d1f884f75ab86ab622e00bf9fce7',1,'conn.c']]],
+  ['conns_5fby_5fipnp_5fcmp',['conns_by_ipnp_cmp',['../conn_8h.html#a80d90113c6ae61c657e6546d30f0e844',1,'conn.h']]],
+  ['conns_5fby_5fipnp_5fdel',['conns_by_ipnp_del',['../conn_8c.html#ac2eda2699440f1e6863dbcff2e7914bc',1,'conn.c']]],
+  ['conns_5fby_5fipnp_5fins',['conns_by_ipnp_ins',['../conn_8c.html#ae0f78c7a62de17ad9b4ac4c11dde7c85',1,'conn.c']]],
+  ['conns_5fby_5fipnp_5fkey',['conns_by_ipnp_key',['../conn_8c.html#aaf7f518c49a0ab7bd2a9604aae9cc065',1,'conn.c']]],
+  ['conns_5fby_5fipnp_5fupdate',['conns_by_ipnp_update',['../conn_8c.html#ad504407d4193d0551f761b2ca720b005',1,'conn.c']]],
   ['crpt_5fstrm_5fid',['crpt_strm_id',['../stream_8h.html#a012bc210254cd3269ef892fcbd91e146',1,'stream.h']]],
   ['crypto_5fpkts_5foutstanding',['crypto_pkts_outstanding',['../recovery_8c.html#a6a4bf9229c6ca38ab08cbf72f4b93a50',1,'recovery.c']]]
 ];

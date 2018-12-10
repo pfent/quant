@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['pick_5ffrom_5fserver_5fvers',['pick_from_server_vers',['../conn_8c.html#a9512dc2ed1b8796966112d60b0abb037',1,'conn.c']]],
-  ['pkt_5fok_5ffor_5fepoch',['pkt_ok_for_epoch',['../conn_8c.html#ade748bfd0c0c5eb3a94c22bb27c37987',1,'conn.c']]],
-  ['pkt_5ftype',['pkt_type',['../pkt_8h.html#a265e9c52eb203bb4701727adc3908850',1,'pkt.h']]],
-  ['pkt_5ftype_5fstr',['pkt_type_str',['../pkt_8c.html#aea9b46441b54eac107df718d62806876',1,'pkt.c']]],
-  ['pm_5fby_5fnr_5fcmp',['pm_by_nr_cmp',['../pn_8h.html#a6ade5a95f9757fcb4e9098b1d5cf6ee2',1,'pn.h']]],
-  ['pm_5fcpy',['pm_cpy',['../quic_8h.html#ab139ac46901fa03632f8075e6f800930',1,'quic.h']]],
-  ['pm_5ffree',['pm_free',['../quic_8c.html#aed433a65a751df6b54c091d8facbfb57',1,'pm_free(struct pkt_meta *const m):&#160;quic.c'],['../quic_8h.html#aed433a65a751df6b54c091d8facbfb57',1,'pm_free(struct pkt_meta *const m):&#160;quic.c']]],
-  ['pn_5ffor_5fepoch',['pn_for_epoch',['../conn_8h.html#a526357c19864e7579573160573a55c33',1,'conn.h']]],
-  ['pn_5ffor_5fpkt_5ftype',['pn_for_pkt_type',['../pkt_8h.html#a13f2d88ad76ff338e531972ca1c0449e',1,'pkt.h']]],
-  ['prep_5fhash_5fctx',['prep_hash_ctx',['../tls_8c.html#a964f3cc6e0351969e0db618a8c2b722b',1,'tls.c']]]
+  ['on_5fack_5freceived_5f1',['on_ack_received_1',['../recovery_8c.html#a968810548afcf006e9e6e5515511db31',1,'on_ack_received_1(struct q_conn *const c, struct pn_space *const pn, struct w_iov *const lg_ack, const uint64_t ack_del):&#160;recovery.c'],['../recovery_8h.html#a968810548afcf006e9e6e5515511db31',1,'on_ack_received_1(struct q_conn *const c, struct pn_space *const pn, struct w_iov *const lg_ack, const uint64_t ack_del):&#160;recovery.c']]],
+  ['on_5fack_5freceived_5f2',['on_ack_received_2',['../recovery_8c.html#a52f8a8de4126e6ff094cf74a3880ed3d',1,'on_ack_received_2(struct q_conn *const c, struct pn_space *const pn, const uint64_t sm_new_acked):&#160;recovery.c'],['../recovery_8h.html#a52f8a8de4126e6ff094cf74a3880ed3d',1,'on_ack_received_2(struct q_conn *const c, struct pn_space *const pn, const uint64_t sm_new_acked):&#160;recovery.c']]],
+  ['on_5fch',['on_ch',['../tls_8c.html#a0c58491ff4fb3ef4eaaa05226aea773e',1,'tls.c']]],
+  ['on_5fld_5falarm',['on_ld_alarm',['../recovery_8c.html#a335f186f63ae2582ce2c96767906b413',1,'recovery.c']]],
+  ['on_5fpkt_5facked',['on_pkt_acked',['../recovery_8c.html#ac8a16e66bf24868d4ac02a8dbe9beb0c',1,'on_pkt_acked(struct q_conn *const c, struct pn_space *const pn, struct w_iov *const acked_pkt):&#160;recovery.c'],['../recovery_8h.html#ac8a16e66bf24868d4ac02a8dbe9beb0c',1,'on_pkt_acked(struct q_conn *const c, struct pn_space *const pn, struct w_iov *const acked_pkt):&#160;recovery.c']]],
+  ['on_5fpkt_5facked_5fcc',['on_pkt_acked_cc',['../recovery_8c.html#aae4a8516cb8d3d3578cf456e735c74f0',1,'recovery.c']]],
+  ['on_5fpkt_5fsent',['on_pkt_sent',['../recovery_8c.html#a9749ec5110f82cad7875d3ec8b94199d',1,'on_pkt_sent(struct q_stream *const s, struct w_iov *const v):&#160;recovery.c'],['../recovery_8h.html#a9749ec5110f82cad7875d3ec8b94199d',1,'on_pkt_sent(struct q_stream *const s, struct w_iov *const v):&#160;recovery.c']]],
+  ['ooo_5f0rtt_5fby_5fcid_5fcmp',['ooo_0rtt_by_cid_cmp',['../conn_8h.html#a661935e5f13fe656b889698521a6450f',1,'conn.h']]],
+  ['ooo_5fby_5foff_5fcmp',['ooo_by_off_cmp',['../quic_8h.html#aca71d46cdbaf72a0eaa6cd9677e8ab32',1,'quic.h']]],
+  ['out_5ffully_5facked',['out_fully_acked',['../stream_8h.html#ad30add9149d4bde85b9e2cc3e9159559',1,'stream.h']]]
 ];

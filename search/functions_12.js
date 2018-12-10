@@ -1,8 +1,17 @@
 var searchData=
 [
-  ['update_5fact_5fscid',['update_act_scid',['../conn_8c.html#aef0e70b44b598a909e6127fc859b80af',1,'update_act_scid(struct q_conn *const c, const struct cid *const id):&#160;conn.c'],['../conn_8h.html#aef0e70b44b598a909e6127fc859b80af',1,'update_act_scid(struct q_conn *const c, const struct cid *const id):&#160;conn.c']]],
-  ['update_5fipnp',['update_ipnp',['../conn_8c.html#af9f14736767a742408afa97eafe078ab',1,'conn.c']]],
-  ['update_5frtt',['update_rtt',['../recovery_8c.html#a12dab1a1456c6b3039d1ab3c390106a0',1,'recovery.c']]],
-  ['update_5ftraffic_5fkey_5fcb',['update_traffic_key_cb',['../tls_8c.html#acbc1dc9c2da3aab2c683a1d9b5ee9321',1,'tls.c']]],
-  ['use_5fnext_5fdcid',['use_next_dcid',['../conn_8c.html#ad1e5e232a8372127e2130e85e7cdbb8d',1,'conn.c']]]
+  ['tls_5fio',['tls_io',['../tls_8c.html#a4e66d17ae7e8756388309b9e193a9543',1,'tls_io(struct q_stream *const s, struct w_iov *const iv):&#160;tls.c'],['../tls_8h.html#a4e66d17ae7e8756388309b9e193a9543',1,'tls_io(struct q_stream *const s, struct w_iov *const iv):&#160;tls.c']]],
+  ['tls_5fticket_5fcmp',['tls_ticket_cmp',['../tls_8c.html#a9b8df2ef49f68f18f160054a91cc7d45',1,'tls.c']]],
+  ['track_5facked_5fpkts',['track_acked_pkts',['../recovery_8c.html#ab1bb06f21c6f0014f6e838453564ac36',1,'recovery.c']]],
+  ['track_5fbytes_5fin',['track_bytes_in',['../stream_8c.html#a551a7c19bf90417d819623804da6949f',1,'track_bytes_in(struct q_stream *const s, const uint64_t n):&#160;stream.c'],['../stream_8h.html#a551a7c19bf90417d819623804da6949f',1,'track_bytes_in(struct q_stream *const s, const uint64_t n):&#160;stream.c']]],
+  ['track_5fbytes_5fout',['track_bytes_out',['../stream_8c.html#a0c28462a470893c1046d7a167037d926',1,'track_bytes_out(struct q_stream *const s, const uint64_t n):&#160;stream.c'],['../stream_8h.html#a0c28462a470893c1046d7a167037d926',1,'track_bytes_out(struct q_stream *const s, const uint64_t n):&#160;stream.c']]],
+  ['trim_5fframe',['trim_frame',['../frame_8c.html#ae6b33881d5310ee374d246e582265d43',1,'frame.c']]],
+  ['tx',['tx',['../conn_8c.html#a1a9a96efc3be558373804c33a60df6b9',1,'tx(struct q_conn *const c, const uint32_t limit):&#160;conn.c'],['../conn_8h.html#a1a9a96efc3be558373804c33a60df6b9',1,'tx(struct q_conn *const c, const uint32_t limit):&#160;conn.c']]],
+  ['tx_5fack',['tx_ack',['../conn_8c.html#a87cb12b0afa8cdb9f2a41ce602d8ff96',1,'tx_ack(struct q_conn *const c, const epoch_t e):&#160;conn.c'],['../conn_8h.html#a87cb12b0afa8cdb9f2a41ce602d8ff96',1,'tx_ack(struct q_conn *const c, const epoch_t e):&#160;conn.c']]],
+  ['tx_5fstream',['tx_stream',['../conn_8c.html#a47851fb4add529d44b85a329a433a3b7',1,'conn.c']]],
+  ['tx_5fstream_5fctrl',['tx_stream_ctrl',['../conn_8c.html#a7bc1cf055ddc94c793f81fdfc52ecdbb',1,'conn.c']]],
+  ['tx_5fstream_5fdata',['tx_stream_data',['../conn_8c.html#aa07824d29034256950ac9380e9934ca3',1,'conn.c']]],
+  ['tx_5ftlp',['tx_tlp',['../conn_8c.html#aca434917810f9c4892702c7e95c89733',1,'tx_tlp(struct q_conn *const c):&#160;conn.c'],['../conn_8h.html#aca434917810f9c4892702c7e95c89733',1,'tx_tlp(struct q_conn *const c):&#160;conn.c']]],
+  ['tx_5fvneg_5fresp',['tx_vneg_resp',['../pkt_8c.html#acda77940d975cd06aecc7f0aae9f2aa0',1,'tx_vneg_resp(const struct w_sock *const ws, const struct w_iov *const v):&#160;pkt.c'],['../pkt_8h.html#acda77940d975cd06aecc7f0aae9f2aa0',1,'tx_vneg_resp(const struct w_sock *const ws, const struct w_iov *const v):&#160;pkt.c']]],
+  ['tx_5fw',['tx_w',['../conn_8c.html#ae7ad1167799a2920119487df92e81b85',1,'tx_w(struct ev_loop *const l, ev_async *const w, int e):&#160;conn.c'],['../conn_8h.html#ae7ad1167799a2920119487df92e81b85',1,'tx_w(struct ev_loop *const l, ev_async *const w, int e):&#160;conn.c']]]
 ];

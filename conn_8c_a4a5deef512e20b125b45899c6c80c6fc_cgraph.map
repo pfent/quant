@@ -1,17 +1,21 @@
 <map id="free_conn" name="free_conn">
-<area shape="rect" id="node2" href="$stream_8c.html#acf612f3ac0b49aa8c7d6630c00e6b0ce" title="free_stream" alt="" coords="133,119,224,145"/>
-<area shape="rect" id="node10" href="$tls_8c.html#a2393aad5c0cf1cd399746ba5314e8c66" title="free_tls" alt="" coords="146,195,211,221"/>
-<area shape="rect" id="node13" href="$pn_8c.html#a3b132beb2506faada16af74535e27fec" title="free_pn" alt="" coords="146,245,211,272"/>
-<area shape="rect" id="node14" href="$diet_8c.html#aca2c7f843feefa74e9e6dca31bc41fd7" title="diet_free" alt="" coords="277,259,349,285"/>
-<area shape="rect" id="node15" href="$conn_8c.html#ab983b3d57ee0c84f0e70018a299033a8" title="free_scid" alt="" coords="141,347,216,373"/>
-<area shape="rect" id="node16" href="$conn_8c.html#a1c73802c8005ac4f60cf1c0003972d56" title="free_dcid" alt="" coords="141,397,216,424"/>
-<area shape="rect" id="node3" href="$conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="272,56,355,83"/>
-<area shape="rect" id="node4" href="$diet_8c.html#a9064e32f6b50901d8f5685e53d2e4041" title="Inserts integer n of type t into the diet tree t. " alt="" coords="272,107,355,133"/>
-<area shape="rect" id="node9" href="$quant_8h.html#a4a7935a14e509d989eda300f16daf086" title="q_free" alt="" coords="284,157,343,184"/>
-<area shape="rect" id="node5" href="$diet_8c.html#a87c3c2cebc6ccf0911d3d05989352588" title="Pointer to the interval containing n in diet tree t. " alt="" coords="422,5,493,32"/>
-<area shape="rect" id="node6" href="$diet_8c.html#a85e4e10a029283a5798638bfaf387abd" title="Return maximum interval underneath i. " alt="" coords="420,56,495,83"/>
-<area shape="rect" id="node7" href="$diet_8c.html#a8f0e77727941f94b10b1ea1241df8eaa" title="Return minimum interval underneath i. " alt="" coords="422,107,493,133"/>
-<area shape="rect" id="node8" href="$diet_8c.html#a21164f67106bc7c1712e8b6596aa0253" title="Helper function to create a zero&#45;width interval containing (only) n. " alt="" coords="417,157,498,184"/>
-<area shape="rect" id="node11" href="$tls_8c.html#a28ce95450a6345dc4f1c85766e2edf8a" title="free_prot" alt="" coords="277,208,350,235"/>
-<area shape="rect" id="node12" href="$tls_8c.html#aa4d8aedc1bfd0aed4756bd90903c1884" title="dispose_cipher" alt="" coords="403,208,512,235"/>
+<area shape="rect" id="node2" href="$stream_8c.html#acf612f3ac0b49aa8c7d6630c00e6b0ce" title="free_stream" alt="" coords="155,132,245,159"/>
+<area shape="rect" id="node11" href="$tls_8c.html#a2393aad5c0cf1cd399746ba5314e8c66" title="free_tls" alt="" coords="167,220,233,247"/>
+<area shape="rect" id="node14" href="$pn_8c.html#a3b132beb2506faada16af74535e27fec" title="free_pn" alt="" coords="167,271,233,297"/>
+<area shape="rect" id="node15" href="$diet_8c.html#aca2c7f843feefa74e9e6dca31bc41fd7" title="diet_free" alt="" coords="348,309,420,336"/>
+<area shape="rect" id="node16" href="$conn_8c.html#ac2eda2699440f1e6863dbcff2e7914bc" title="conns_by_ipnp_del" alt="" coords="133,372,267,399"/>
+<area shape="rect" id="node18" href="$conn_8c.html#ab983b3d57ee0c84f0e70018a299033a8" title="free_scid" alt="" coords="163,423,237,449"/>
+<area shape="rect" id="node20" href="$conn_8c.html#a1c73802c8005ac4f60cf1c0003972d56" title="free_dcid" alt="" coords="163,473,237,500"/>
+<area shape="rect" id="node3" href="$conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="343,31,425,57"/>
+<area shape="rect" id="node4" href="$diet_8c.html#a9064e32f6b50901d8f5685e53d2e4041" title="Inserts integer n of type t into the diet tree t. " alt="" coords="343,81,425,108"/>
+<area shape="rect" id="node9" href="$stream_8h.html#af3bef0cb9d669dca78f301f6ae50a19e" title="strm_epoch" alt="" coords="339,132,429,159"/>
+<area shape="rect" id="node10" href="$quant_8h.html#a4a7935a14e509d989eda300f16daf086" title="q_free" alt="" coords="355,183,413,209"/>
+<area shape="rect" id="node5" href="$diet_8c.html#a87c3c2cebc6ccf0911d3d05989352588" title="Pointer to the interval containing n in diet tree t. " alt="" coords="521,5,591,32"/>
+<area shape="rect" id="node6" href="$diet_8c.html#a85e4e10a029283a5798638bfaf387abd" title="Return maximum interval underneath i. " alt="" coords="519,56,593,83"/>
+<area shape="rect" id="node7" href="$diet_8c.html#a8f0e77727941f94b10b1ea1241df8eaa" title="Return minimum interval underneath i. " alt="" coords="521,107,591,133"/>
+<area shape="rect" id="node8" href="$diet_8c.html#a21164f67106bc7c1712e8b6596aa0253" title="Helper function to create a zero&#45;width interval containing (only) n. " alt="" coords="515,157,597,184"/>
+<area shape="rect" id="node12" href="$tls_8c.html#a28ce95450a6345dc4f1c85766e2edf8a" title="free_prot" alt="" coords="347,233,421,260"/>
+<area shape="rect" id="node13" href="$tls_8c.html#aa4d8aedc1bfd0aed4756bd90903c1884" title="dispose_cipher" alt="" coords="501,233,611,260"/>
+<area shape="rect" id="node17" href="$conn_8c.html#aaf7f518c49a0ab7bd2a9604aae9cc065" title="conns_by_ipnp_key" alt="" coords="315,372,453,399"/>
+<area shape="rect" id="node19" href="$conn_8c.html#a157de1b1117fd595bca3a0d2a82184db" title="conns_by_id_del" alt="" coords="325,423,443,449"/>
 </map>

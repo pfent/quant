@@ -1,4 +1,5 @@
 <map id="new_stream" name="new_stream">
-<area shape="rect" id="node2" href="$stream_8c.html#a2853c95f04e70a8c7e836f881eedff8d" title="apply_stream_limits" alt="" coords="147,5,285,32"/>
-<area shape="rect" id="node3" href="$stream_8c.html#abd56ea788d8872433901695928a944ab" title="do_stream_id_fc" alt="" coords="157,56,275,83"/>
+<area shape="rect" id="node2" href="$stream_8h.html#af3bef0cb9d669dca78f301f6ae50a19e" title="strm_epoch" alt="" coords="171,5,261,32"/>
+<area shape="rect" id="node3" href="$stream_8c.html#a2853c95f04e70a8c7e836f881eedff8d" title="apply_stream_limits" alt="" coords="147,56,285,83"/>
+<area shape="rect" id="node4" href="$stream_8c.html#abd56ea788d8872433901695928a944ab" title="do_stream_id_fc" alt="" coords="157,107,275,133"/>
 </map>

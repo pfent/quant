@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['w_5fiov_5fdup',['w_iov_dup',['../quic_8h.html#a97af5931f5c6730cd32f1d733b6101d0',1,'quic.h']]],
-  ['which_5fcipher_5fctx_5fin',['which_cipher_ctx_in',['../pkt_8c.html#afc2efb9b9e8c6496bf59679fea582bdc',1,'pkt.c']]],
-  ['which_5fcipher_5fctx_5fout',['which_cipher_ctx_out',['../tls_8c.html#a335e59beef17e01808af4433b4bedd9a',1,'tls.c']]],
-  ['write_5fto_5fcorpus',['write_to_corpus',['../quic_8c.html#a4e51fb8c9ebc5178b5131826ca26fb90',1,'write_to_corpus(const int dir, const void *const data, const size_t len):&#160;quic.c'],['../quic_8h.html#a4e51fb8c9ebc5178b5131826ca26fb90',1,'write_to_corpus(const int dir, const void *const data, const size_t len):&#160;quic.c']]]
+  ['varint_5fsize_5fneeded',['varint_size_needed',['../marshall_8c.html#a5ef78b886a8420375943612d4329807a',1,'varint_size_needed(const uint64_t v):&#160;marshall.c'],['../marshall_8h.html#a5ef78b886a8420375943612d4329807a',1,'varint_size_needed(const uint64_t v):&#160;marshall.c']]],
+  ['verify_5frtry_5ftok',['verify_rtry_tok',['../tls_8c.html#a779c1ebd1e6c43f05a373c84defb3fa8',1,'verify_rtry_tok(struct q_conn *const c, const uint8_t *const tok, const uint16_t tok_len):&#160;tls.c'],['../tls_8h.html#a779c1ebd1e6c43f05a373c84defb3fa8',1,'verify_rtry_tok(struct q_conn *const c, const uint8_t *const tok, const uint16_t tok_len):&#160;tls.c']]],
+  ['vers_5fsupported',['vers_supported',['../conn_8c.html#a1ae0706a577e85efbcfacf517a329dbe',1,'vers_supported(const uint32_t v):&#160;conn.c'],['../conn_8h.html#a1ae0706a577e85efbcfacf517a329dbe',1,'vers_supported(const uint32_t v):&#160;conn.c']]],
+  ['vneg_5for_5frtry_5fresp',['vneg_or_rtry_resp',['../conn_8c.html#aac9b3a9d6fb5a377419eb98e1e5e785e',1,'conn.c']]]
 ];

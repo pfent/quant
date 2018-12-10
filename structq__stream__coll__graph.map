@@ -1,11 +1,11 @@
 <map id="q_stream" name="q_stream">
-<area shape="rect" id="node2" href="$structq__conn.html" title="A QUIC connection. " alt="" coords="184,219,248,245"/>
-<area shape="rect" id="node6" href="$structpn__space.html" title="pn_space" alt="" coords="251,309,329,336"/>
-<area shape="rect" id="node3" href="$structtransport__params.html" title="transport_params" alt="" coords="5,105,128,132"/>
-<area shape="rect" id="node4" href="$structcid.html" title="cid" alt="" coords="111,5,149,32"/>
-<area shape="rect" id="node5" href="$structpn__data__space.html" title="pn_data_space" alt="" coords="199,443,309,469"/>
-<area shape="rect" id="node9" href="$structpn__hshk__space.html" title="pn_hshk_space" alt="" coords="377,443,489,469"/>
-<area shape="rect" id="node7" href="$structcipher__ctx.html" title="cipher_ctx" alt="" coords="355,309,436,336"/>
-<area shape="rect" id="node8" href="$structtls.html" title="tls" alt="" coords="237,105,275,132"/>
-<area shape="rect" id="node10" href="$structrecovery.html" title="recovery" alt="" coords="300,105,372,132"/>
+<area shape="rect" id="node2" href="$structq__conn.html" title="A QUIC connection. " alt="" coords="212,219,276,245"/>
+<area shape="rect" id="node6" href="$structpn__space.html" title="pn_space" alt="" coords="205,309,283,336"/>
+<area shape="rect" id="node3" href="$structtransport__params.html" title="transport_params" alt="" coords="105,105,228,132"/>
+<area shape="rect" id="node4" href="$structcid.html" title="cid" alt="" coords="211,5,249,32"/>
+<area shape="rect" id="node5" href="$structpn__data__space.html" title="pn_data_space" alt="" coords="153,443,263,469"/>
+<area shape="rect" id="node9" href="$structpn__hshk__space.html" title="pn_hshk_space" alt="" coords="330,443,443,469"/>
+<area shape="rect" id="node7" href="$structcipher__ctx.html" title="cipher_ctx" alt="" coords="308,309,389,336"/>
+<area shape="rect" id="node8" href="$structtls.html" title="tls" alt="" coords="337,105,375,132"/>
+<area shape="rect" id="node10" href="$structrecovery.html" title="recovery" alt="" coords="400,105,472,132"/>
 </map>

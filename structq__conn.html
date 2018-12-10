@@ -99,7 +99,7 @@ Collaboration diagram for q_conn:</div>
 <div class="dyncontent">
 <div class="center"><img src="structq__conn__coll__graph.png" border="0" usemap="#q__conn_coll__map" alt="Collaboration graph"/></div>
 <map name="q__conn_coll__map" id="q__conn_coll__map">
-<area shape="rect" id="node5" href="structpn__space.html" title="pn_space" alt="" coords="177,309,255,336"/><area shape="rect" id="node2" href="structtransport__params.html" title="transport_params" alt="" coords="5,105,128,132"/><area shape="rect" id="node3" href="structcid.html" title="cid" alt="" coords="111,5,149,32"/><area shape="rect" id="node4" href="structpn__data__space.html" title="pn_data_space" alt="" coords="125,443,235,469"/><area shape="rect" id="node8" href="structpn__hshk__space.html" title="pn_hshk_space" alt="" coords="302,443,415,469"/><area shape="rect" id="node6" href="structcipher__ctx.html" title="cipher_ctx" alt="" coords="280,309,361,336"/><area shape="rect" id="node7" href="structtls.html" title="tls" alt="" coords="237,105,275,132"/><area shape="rect" id="node9" href="structrecovery.html" title="recovery" alt="" coords="300,105,372,132"/></map>
+<area shape="rect" id="node5" href="structpn__space.html" title="pn_space" alt="" coords="79,309,157,336"/><area shape="rect" id="node8" href="structq__stream.html" title="q_stream" alt="" coords="391,309,466,336"/><area shape="rect" id="node2" href="structtransport__params.html" title="transport_params" alt="" coords="102,105,225,132"/><area shape="rect" id="node3" href="structcid.html" title="cid" alt="" coords="208,5,246,32"/><area shape="rect" id="node4" href="structpn__data__space.html" title="pn_data_space" alt="" coords="27,443,137,469"/><area shape="rect" id="node9" href="structpn__hshk__space.html" title="pn_hshk_space" alt="" coords="204,443,317,469"/><area shape="rect" id="node6" href="structcipher__ctx.html" title="cipher_ctx" alt="" coords="182,309,264,336"/><area shape="rect" id="node7" href="structtls.html" title="tls" alt="" coords="334,105,372,132"/><area shape="rect" id="node10" href="structrecovery.html" title="recovery" alt="" coords="397,105,469,132"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -115,8 +115,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adc944a39f569afb0a57c0e3aab437ef5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#adc944a39f569afb0a57c0e3aab437ef5">sl_entry</a> (<a class="el" href="structq__conn.html">q_conn</a>) node_aq</td></tr>
 <tr class="memdesc:adc944a39f569afb0a57c0e3aab437ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">For maintaining the accept queue.  <a href="#adc944a39f569afb0a57c0e3aab437ef5">More...</a><br/></td></tr>
 <tr class="separator:adc944a39f569afb0a57c0e3aab437ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9e4cc5cf0e74d448d15a9ed223f53e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#ab9e4cc5cf0e74d448d15a9ed223f53e1">splay_head</a> (streams_by_id, <a class="el" href="structq__stream.html">q_stream</a>) streams_by_id</td></tr>
-<tr class="separator:ab9e4cc5cf0e74d448d15a9ed223f53e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad868090c6ad7743231418d237869e16b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#ad868090c6ad7743231418d237869e16b">khash_t</a> (streams_by_id)*streams_by_id</td></tr>
+<tr class="memdesc:ad868090c6ad7743231418d237869e16b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regular streams.  <a href="#ad868090c6ad7743231418d237869e16b">More...</a><br/></td></tr>
+<tr class="separator:ad868090c6ad7743231418d237869e16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -198,7 +199,10 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a3001f5409e4d5c5dd1be2675e7e46d5a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a3001f5409e4d5c5dd1be2675e7e46d5a">do_key_flip</a>: 1</td></tr>
 <tr class="memdesc:a3001f5409e4d5c5dd1be2675e7e46d5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a TLS key update.  <a href="#a3001f5409e4d5c5dd1be2675e7e46d5a">More...</a><br/></td></tr>
 <tr class="separator:a3001f5409e4d5c5dd1be2675e7e46d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acde364f022c2b0a227e7c54f6e4e80cd"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#acde364f022c2b0a227e7c54f6e4e80cd">__pad0__</a>: 11</td></tr>
+<tr class="memitem:addb105f9e32504458f52e19c612eb69f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#addb105f9e32504458f52e19c612eb69f">skip_cwnd_ping</a>: 1</td></tr>
+<tr class="memdesc:addb105f9e32504458f52e19c612eb69f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skip sending PING to force ACK.  <a href="#addb105f9e32504458f52e19c612eb69f">More...</a><br/></td></tr>
+<tr class="separator:addb105f9e32504458f52e19c612eb69f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acde364f022c2b0a227e7c54f6e4e80cd"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#acde364f022c2b0a227e7c54f6e4e80cd">__pad0__</a>: 10</td></tr>
 <tr class="separator:acde364f022c2b0a227e7c54f6e4e80cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace8a73a49c79c13a5d91c213906c95e9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#ace8a73a49c79c13a5d91c213906c95e9">sport</a></td></tr>
 <tr class="memdesc:ace8a73a49c79c13a5d91c213906c95e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local port (in network byte-order).  <a href="#ace8a73a49c79c13a5d91c213906c95e9">More...</a><br/></td></tr>
@@ -262,6 +266,9 @@ Data Fields</h2></td></tr>
 <tr class="separator:ac4faa09a3937eeeb9ce1b749289b65ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb5041217565e950f34272348d1dbc92"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#aeb5041217565e950f34272348d1dbc92">peer_name</a></td></tr>
 <tr class="separator:aeb5041217565e950f34272348d1dbc92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d76e4d46e32ced7b0eff936f1df42cd"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structq__stream.html">q_stream</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a2d76e4d46e32ced7b0eff936f1df42cd">cstreams</a> [<a class="el" href="tls_8h.html#aaca089f79f64e61453953e09fd226e46a030d34ca4ffa3a300c995276c165043f">ep_data</a>+1]</td></tr>
+<tr class="memdesc:a2d76e4d46e32ced7b0eff936f1df42cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crypto "streams".  <a href="#a2d76e4d46e32ced7b0eff936f1df42cd">More...</a><br/></td></tr>
+<tr class="separator:a2d76e4d46e32ced7b0eff936f1df42cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9497cc2d8f046cdfd73d7a47355a4448"><td class="memItemLeft" align="right" valign="top">struct diet&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a9497cc2d8f046cdfd73d7a47355a4448">closed_streams</a></td></tr>
 <tr class="separator:a9497cc2d8f046cdfd73d7a47355a4448"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36327baf8c4d695023b07a2270587e78"><td class="memItemLeft" align="right" valign="top">struct w_sock *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq__conn.html#a36327baf8c4d695023b07a2270587e78">sock</a></td></tr>
@@ -303,6 +310,24 @@ Data Fields</h2></td></tr>
 <div class="textblock"><p>A QUIC connection. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="client_8c-example.html#_a0">client.c</a>, and <a class="el" href="server_8c-example.html#_a0">server.c</a>.</dd>
 </dl></div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad868090c6ad7743231418d237869e16b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">q_conn::khash_t </td>
+          <td>(</td>
+          <td class="paramtype">streams_by_id&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Regular streams. </p>
+
+</div>
+</div>
 <a class="anchor" id="ad29885a595f4d9e45d5d4630d41beccf"></a>
 <div class="memitem">
 <div class="memproto">
@@ -374,32 +399,6 @@ Data Fields</h2></td></tr>
 </dl>
 </div>
 </div>
-<a class="anchor" id="ab9e4cc5cf0e74d448d15a9ed223f53e1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">q_conn::splay_head </td>
-          <td>(</td>
-          <td class="paramtype">streams_by_id&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structq__stream.html">q_stream</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="acde364f022c2b0a227e7c54f6e4e80cd"></a>
 <div class="memitem">
@@ -448,6 +447,20 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2d76e4d46e32ced7b0eff936f1df42cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structq__stream.html">q_stream</a>* q_conn::cstreams[<a class="el" href="tls_8h.html#aaca089f79f64e61453953e09fd226e46a030d34ca4ffa3a300c995276c165043f">ep_data</a>+1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crypto "streams". </p>
 
 </div>
 </div>
@@ -991,6 +1004,20 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="addb105f9e32504458f52e19c612eb69f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t q_conn::skip_cwnd_ping</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Skip sending PING to force ACK. </p>
+
+</div>
+</div>
 <a class="anchor" id="a36327baf8c4d695023b07a2270587e78"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1300,7 +1327,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 29 2018 10:16:32 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 10 2018 13:43:57 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

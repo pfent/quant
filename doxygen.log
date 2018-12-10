@@ -77,6 +77,8 @@ Preprocessing /home/travis/build/NTAP/quant/lib/src/diet.c...
 Parsing file /home/travis/build/NTAP/quant/lib/src/diet.c...
 Preprocessing /home/travis/build/NTAP/quant/lib/src/diet.h...
 Parsing file /home/travis/build/NTAP/quant/lib/src/diet.h...
+Preprocessing /home/travis/build/NTAP/quant/lib/src/fnv1a.h...
+Parsing file /home/travis/build/NTAP/quant/lib/src/fnv1a.h...
 Preprocessing /home/travis/build/NTAP/quant/lib/src/frame.c...
 Parsing file /home/travis/build/NTAP/quant/lib/src/frame.c...
 Preprocessing /home/travis/build/NTAP/quant/lib/src/frame.h...
@@ -178,6 +180,7 @@ Parsing code for file src/conn.c...
 Generating code for file src/conn.h...
 Parsing code for file src/diet.c...
 Generating code for file src/diet.h...
+Generating code for file src/fnv1a.h...
 Parsing code for file src/frame.c...
 Generating code for file src/frame.h...
 Parsing code for file src/marshall.c...
@@ -220,13 +223,17 @@ Generating docs for file src/bitset.h...
 Generating docs for file src/conn.c...
 Generating call graph for function add_dcid
 Generating call graph for function add_scid
-Generating call graph for function conns_by_ipnp_cmp
+Generating call graph for function conns_by_ipnp_del
+Generating call graph for function conns_by_ipnp_ins
+Generating call graph for function conns_by_ipnp_update
 Generating call graph for function do_conn_mgmt
 Generating call graph for function do_tx
 Generating call graph for function enter_closed
 Generating call graph for function enter_closing
 Generating call graph for function err_close
 Generating call graph for function free_conn
+Generating call graph for function free_scid
+Generating call graph for function get_conn_by_ipnp
 Generating call graph for function idle_alarm
 Generating call graph for function log_sent_pkts
 Generating call graph for function new_conn
@@ -240,6 +247,7 @@ Generating call graph for function rx_pkts
 Generating call graph for function switch_scid
 Generating call graph for function tx
 Generating call graph for function tx_ack
+Generating call graph for function tx_stream
 Generating call graph for function tx_stream_ctrl
 Generating call graph for function tx_stream_data
 Generating call graph for function tx_tlp
@@ -252,11 +260,12 @@ Generating docs for file src/conn.h...
 Generating call graph for function add_dcid
 Generating call graph for function add_scid
 Generating call graph for function conn_needs_ctrl
-Generating call graph for function conns_by_id_cmp
-Generating call graph for function conns_by_ipnp_cmp
 Generating call graph for function enter_closing
 Generating call graph for function err_close
 Generating call graph for function free_conn
+Generating call graph for function free_scid
+Generating call graph for function hash_cid
+Generating call graph for function kh_cid_cmp
 Generating call graph for function new_conn
 Generating call graph for function ooo_0rtt_by_cid_cmp
 Generating call graph for function rx
@@ -272,6 +281,7 @@ Generating call graph for function diet_remove
 Generating docs for file src/diet.h...
 Generating call graph for function diet_insert
 Generating call graph for function diet_remove
+Generating docs for file src/fnv1a.h...
 Generating docs for file src/frame.c...
 Generating call graph for function dec_ack_frame
 Generating call graph for function dec_blocked_frame
@@ -287,7 +297,6 @@ Generating call graph for function dec_stream_blocked_frame
 Generating call graph for function dec_stream_or_crypto_frame
 Generating call graph for function enc_ack_frame
 Generating call graph for function enc_new_cid_frame
-Generating call graph for function enc_stream_id_blocked_frame
 Generating call graph for function enc_stream_or_crypto_frame
 Generating call graph for function log_stream_or_crypto_frame
 Generating docs for file src/frame.h...
@@ -295,7 +304,6 @@ Generating call graph for function dec_ack_frame
 Generating call graph for function dec_frames
 Generating call graph for function enc_ack_frame
 Generating call graph for function enc_new_cid_frame
-Generating call graph for function enc_stream_id_blocked_frame
 Generating call graph for function enc_stream_or_crypto_frame
 Generating call graph for function log_stream_or_crypto_frame
 Generating docs for file src/marshall.c...
@@ -421,7 +429,6 @@ Generating page documentation...
 Generating group documentation...
 Generating class documentation...
 Generating docs for compound cid...
-Generating docs for compound cid_map...
 Generating docs for compound cipher_ctx...
 Generating docs for compound ival...
 Generating docs for compound ooo_0rtt...
@@ -461,256 +468,261 @@ Generating file member index...
 Generating example index...
 finalizing index lists...
 Running dot...
-Generating dot graphs using 33 parallel threads...
-Running dot for graph 1/249
-Running dot for graph 2/249
-Running dot for graph 3/249
-Running dot for graph 4/249
-Running dot for graph 5/249
-Running dot for graph 6/249
-Running dot for graph 7/249
-Running dot for graph 8/249
-Running dot for graph 9/249
-Running dot for graph 10/249
-Running dot for graph 11/249
-Running dot for graph 12/249
-Running dot for graph 13/249
-Running dot for graph 14/249
-Running dot for graph 15/249
-Running dot for graph 16/249
-Running dot for graph 17/249
-Running dot for graph 18/249
-Running dot for graph 19/249
-Running dot for graph 20/249
-Running dot for graph 21/249
-Running dot for graph 22/249
-Running dot for graph 23/249
-Running dot for graph 24/249
-Running dot for graph 25/249
-Running dot for graph 26/249
-Running dot for graph 27/249
-Running dot for graph 28/249
-Running dot for graph 29/249
-Running dot for graph 30/249
-Running dot for graph 31/249
-Running dot for graph 32/249
-Running dot for graph 33/249
-Running dot for graph 34/249
-Running dot for graph 35/249
-Running dot for graph 36/249
-Running dot for graph 37/249
-Running dot for graph 38/249
-Running dot for graph 39/249
-Running dot for graph 40/249
-Running dot for graph 41/249
-Running dot for graph 42/249
-Running dot for graph 43/249
-Running dot for graph 44/249
-Running dot for graph 45/249
-Running dot for graph 46/249
-Running dot for graph 47/249
-Running dot for graph 48/249
-Running dot for graph 49/249
-Running dot for graph 50/249
-Running dot for graph 51/249
-Running dot for graph 52/249
-Running dot for graph 53/249
-Running dot for graph 54/249
-Running dot for graph 55/249
-Running dot for graph 56/249
-Running dot for graph 57/249
-Running dot for graph 58/249
-Running dot for graph 59/249
-Running dot for graph 60/249
-Running dot for graph 61/249
-Running dot for graph 62/249
-Running dot for graph 63/249
-Running dot for graph 64/249
-Running dot for graph 65/249
-Running dot for graph 66/249
-Running dot for graph 67/249
-Running dot for graph 68/249
-Running dot for graph 69/249
-Running dot for graph 70/249
-Running dot for graph 71/249
-Running dot for graph 72/249
-Running dot for graph 73/249
-Running dot for graph 74/249
-Running dot for graph 75/249
-Running dot for graph 76/249
-Running dot for graph 77/249
-Running dot for graph 78/249
-Running dot for graph 79/249
-Running dot for graph 80/249
-Running dot for graph 81/249
-Running dot for graph 82/249
-Running dot for graph 83/249
-Running dot for graph 84/249
-Running dot for graph 85/249
-Running dot for graph 86/249
-Running dot for graph 87/249
-Running dot for graph 88/249
-Running dot for graph 89/249
-Running dot for graph 90/249
-Running dot for graph 91/249
-Running dot for graph 92/249
-Running dot for graph 93/249
-Running dot for graph 94/249
-Running dot for graph 95/249
-Running dot for graph 96/249
-Running dot for graph 97/249
-Running dot for graph 98/249
-Running dot for graph 99/249
-Running dot for graph 100/249
-Running dot for graph 101/249
-Running dot for graph 102/249
-Running dot for graph 103/249
-Running dot for graph 104/249
-Running dot for graph 105/249
-Running dot for graph 106/249
-Running dot for graph 107/249
-Running dot for graph 108/249
-Running dot for graph 109/249
-Running dot for graph 110/249
-Running dot for graph 111/249
-Running dot for graph 112/249
-Running dot for graph 113/249
-Running dot for graph 114/249
-Running dot for graph 115/249
-Running dot for graph 116/249
-Running dot for graph 117/249
-Running dot for graph 118/249
-Running dot for graph 119/249
-Running dot for graph 120/249
-Running dot for graph 121/249
-Running dot for graph 122/249
-Running dot for graph 123/249
-Running dot for graph 124/249
-Running dot for graph 125/249
-Running dot for graph 126/249
-Running dot for graph 127/249
-Running dot for graph 128/249
-Running dot for graph 129/249
-Running dot for graph 130/249
-Running dot for graph 131/249
-Running dot for graph 132/249
-Running dot for graph 133/249
-Running dot for graph 134/249
-Running dot for graph 135/249
-Running dot for graph 136/249
-Running dot for graph 137/249
-Running dot for graph 138/249
-Running dot for graph 139/249
-Running dot for graph 140/249
-Running dot for graph 141/249
-Running dot for graph 142/249
-Running dot for graph 143/249
-Running dot for graph 144/249
-Running dot for graph 145/249
-Running dot for graph 146/249
-Running dot for graph 147/249
-Running dot for graph 148/249
-Running dot for graph 149/249
-Running dot for graph 150/249
-Running dot for graph 151/249
-Running dot for graph 152/249
-Running dot for graph 153/249
-Running dot for graph 154/249
-Running dot for graph 155/249
-Running dot for graph 156/249
-Running dot for graph 157/249
-Running dot for graph 158/249
-Running dot for graph 159/249
-Running dot for graph 160/249
-Running dot for graph 161/249
-Running dot for graph 162/249
-Running dot for graph 163/249
-Running dot for graph 164/249
-Running dot for graph 165/249
-Running dot for graph 166/249
-Running dot for graph 167/249
-Running dot for graph 168/249
-Running dot for graph 169/249
-Running dot for graph 170/249
-Running dot for graph 171/249
-Running dot for graph 172/249
-Running dot for graph 173/249
-Running dot for graph 174/249
-Running dot for graph 175/249
-Running dot for graph 176/249
-Running dot for graph 177/249
-Running dot for graph 178/249
-Running dot for graph 179/249
-Running dot for graph 180/249
-Running dot for graph 181/249
-Running dot for graph 182/249
-Running dot for graph 183/249
-Running dot for graph 184/249
-Running dot for graph 185/249
-Running dot for graph 186/249
-Running dot for graph 187/249
-Running dot for graph 188/249
-Running dot for graph 189/249
-Running dot for graph 190/249
-Running dot for graph 191/249
-Running dot for graph 192/249
-Running dot for graph 193/249
-Running dot for graph 194/249
-Running dot for graph 195/249
-Running dot for graph 196/249
-Running dot for graph 197/249
-Running dot for graph 198/249
-Running dot for graph 199/249
-Running dot for graph 200/249
-Running dot for graph 201/249
-Running dot for graph 202/249
-Running dot for graph 203/249
-Running dot for graph 204/249
-Running dot for graph 205/249
-Running dot for graph 206/249
-Running dot for graph 207/249
-Running dot for graph 208/249
-Running dot for graph 209/249
-Running dot for graph 210/249
-Running dot for graph 211/249
-Running dot for graph 212/249
-Running dot for graph 213/249
-Running dot for graph 214/249
-Running dot for graph 215/249
-Running dot for graph 216/249
-Running dot for graph 217/249
-Running dot for graph 218/249
-Running dot for graph 219/249
-Running dot for graph 220/249
-Running dot for graph 221/249
-Running dot for graph 222/249
-Running dot for graph 223/249
-Running dot for graph 224/249
-Running dot for graph 225/249
-Running dot for graph 226/249
-Running dot for graph 227/249
-Running dot for graph 228/249
-Running dot for graph 229/249
-Running dot for graph 230/249
-Running dot for graph 231/249
-Running dot for graph 232/249
-Running dot for graph 233/249
-Running dot for graph 234/249
-Running dot for graph 235/249
-Running dot for graph 236/249
-Running dot for graph 237/249
-Running dot for graph 238/249
-Running dot for graph 239/249
-Running dot for graph 240/249
-Running dot for graph 241/249
-Running dot for graph 242/249
-Running dot for graph 243/249
-Running dot for graph 244/249
-Running dot for graph 245/249
-Running dot for graph 246/249
-Running dot for graph 247/249
-Running dot for graph 248/249
-Running dot for graph 249/249
+Generating dot graphs using 3 parallel threads...
+Running dot for graph 1/254
+Running dot for graph 2/254
+Running dot for graph 3/254
+Running dot for graph 4/254
+Running dot for graph 5/254
+Running dot for graph 6/254
+Running dot for graph 7/254
+Running dot for graph 8/254
+Running dot for graph 9/254
+Running dot for graph 10/254
+Running dot for graph 11/254
+Running dot for graph 12/254
+Running dot for graph 13/254
+Running dot for graph 14/254
+Running dot for graph 15/254
+Running dot for graph 16/254
+Running dot for graph 17/254
+Running dot for graph 18/254
+Running dot for graph 19/254
+Running dot for graph 20/254
+Running dot for graph 21/254
+Running dot for graph 22/254
+Running dot for graph 23/254
+Running dot for graph 24/254
+Running dot for graph 25/254
+Running dot for graph 26/254
+Running dot for graph 27/254
+Running dot for graph 28/254
+Running dot for graph 29/254
+Running dot for graph 30/254
+Running dot for graph 31/254
+Running dot for graph 32/254
+Running dot for graph 33/254
+Running dot for graph 34/254
+Running dot for graph 35/254
+Running dot for graph 36/254
+Running dot for graph 37/254
+Running dot for graph 38/254
+Running dot for graph 39/254
+Running dot for graph 40/254
+Running dot for graph 41/254
+Running dot for graph 42/254
+Running dot for graph 43/254
+Running dot for graph 44/254
+Running dot for graph 45/254
+Running dot for graph 46/254
+Running dot for graph 47/254
+Running dot for graph 48/254
+Running dot for graph 49/254
+Running dot for graph 50/254
+Running dot for graph 51/254
+Running dot for graph 52/254
+Running dot for graph 53/254
+Running dot for graph 54/254
+Running dot for graph 55/254
+Running dot for graph 56/254
+Running dot for graph 57/254
+Running dot for graph 58/254
+Running dot for graph 59/254
+Running dot for graph 60/254
+Running dot for graph 61/254
+Running dot for graph 62/254
+Running dot for graph 63/254
+Running dot for graph 64/254
+Running dot for graph 65/254
+Running dot for graph 66/254
+Running dot for graph 67/254
+Running dot for graph 68/254
+Running dot for graph 69/254
+Running dot for graph 70/254
+Running dot for graph 71/254
+Running dot for graph 72/254
+Running dot for graph 73/254
+Running dot for graph 74/254
+Running dot for graph 75/254
+Running dot for graph 76/254
+Running dot for graph 77/254
+Running dot for graph 78/254
+Running dot for graph 79/254
+Running dot for graph 80/254
+Running dot for graph 81/254
+Running dot for graph 82/254
+Running dot for graph 83/254
+Running dot for graph 84/254
+Running dot for graph 85/254
+Running dot for graph 86/254
+Running dot for graph 87/254
+Running dot for graph 88/254
+Running dot for graph 89/254
+Running dot for graph 90/254
+Running dot for graph 91/254
+Running dot for graph 92/254
+Running dot for graph 93/254
+Running dot for graph 94/254
+Running dot for graph 95/254
+Running dot for graph 96/254
+Running dot for graph 97/254
+Running dot for graph 98/254
+Running dot for graph 99/254
+Running dot for graph 100/254
+Running dot for graph 101/254
+Running dot for graph 102/254
+Running dot for graph 103/254
+Running dot for graph 104/254
+Running dot for graph 105/254
+Running dot for graph 106/254
+Running dot for graph 107/254
+Running dot for graph 108/254
+Running dot for graph 109/254
+Running dot for graph 110/254
+Running dot for graph 111/254
+Running dot for graph 112/254
+Running dot for graph 113/254
+Running dot for graph 114/254
+Running dot for graph 115/254
+Running dot for graph 116/254
+Running dot for graph 117/254
+Running dot for graph 118/254
+Running dot for graph 119/254
+Running dot for graph 120/254
+Running dot for graph 121/254
+Running dot for graph 122/254
+Running dot for graph 123/254
+Running dot for graph 124/254
+Running dot for graph 125/254
+Running dot for graph 126/254
+Running dot for graph 127/254
+Running dot for graph 128/254
+Running dot for graph 129/254
+Running dot for graph 130/254
+Running dot for graph 131/254
+Running dot for graph 132/254
+Running dot for graph 133/254
+Running dot for graph 134/254
+Running dot for graph 135/254
+Running dot for graph 136/254
+Running dot for graph 137/254
+Running dot for graph 138/254
+Running dot for graph 139/254
+Running dot for graph 140/254
+Running dot for graph 141/254
+Running dot for graph 142/254
+Running dot for graph 143/254
+Running dot for graph 144/254
+Running dot for graph 145/254
+Running dot for graph 146/254
+Running dot for graph 147/254
+Running dot for graph 148/254
+Running dot for graph 149/254
+Running dot for graph 150/254
+Running dot for graph 151/254
+Running dot for graph 152/254
+Running dot for graph 153/254
+Running dot for graph 154/254
+Running dot for graph 155/254
+Running dot for graph 156/254
+Running dot for graph 157/254
+Running dot for graph 158/254
+Running dot for graph 159/254
+Running dot for graph 160/254
+Running dot for graph 161/254
+Running dot for graph 162/254
+Running dot for graph 163/254
+Running dot for graph 164/254
+Running dot for graph 165/254
+Running dot for graph 166/254
+Running dot for graph 167/254
+Running dot for graph 168/254
+Running dot for graph 169/254
+Running dot for graph 170/254
+Running dot for graph 171/254
+Running dot for graph 172/254
+Running dot for graph 173/254
+Running dot for graph 174/254
+Running dot for graph 175/254
+Running dot for graph 176/254
+Running dot for graph 177/254
+Running dot for graph 178/254
+Running dot for graph 179/254
+Running dot for graph 180/254
+Running dot for graph 181/254
+Running dot for graph 182/254
+Running dot for graph 183/254
+Running dot for graph 184/254
+Running dot for graph 185/254
+Running dot for graph 186/254
+Running dot for graph 187/254
+Running dot for graph 188/254
+Running dot for graph 189/254
+Running dot for graph 190/254
+Running dot for graph 191/254
+Running dot for graph 192/254
+Running dot for graph 193/254
+Running dot for graph 194/254
+Running dot for graph 195/254
+Running dot for graph 196/254
+Running dot for graph 197/254
+Running dot for graph 198/254
+Running dot for graph 199/254
+Running dot for graph 200/254
+Running dot for graph 201/254
+Running dot for graph 202/254
+Running dot for graph 203/254
+Running dot for graph 204/254
+Running dot for graph 205/254
+Running dot for graph 206/254
+Running dot for graph 207/254
+Running dot for graph 208/254
+Running dot for graph 209/254
+Running dot for graph 210/254
+Running dot for graph 211/254
+Running dot for graph 212/254
+Running dot for graph 213/254
+Running dot for graph 214/254
+Running dot for graph 215/254
+Running dot for graph 216/254
+Running dot for graph 217/254
+Running dot for graph 218/254
+Running dot for graph 219/254
+Running dot for graph 220/254
+Running dot for graph 221/254
+Running dot for graph 222/254
+Running dot for graph 223/254
+Running dot for graph 224/254
+Running dot for graph 225/254
+Running dot for graph 226/254
+Running dot for graph 227/254
+Running dot for graph 228/254
+Running dot for graph 229/254
+Running dot for graph 230/254
+Running dot for graph 231/254
+Running dot for graph 232/254
+Running dot for graph 233/254
+Running dot for graph 234/254
+Running dot for graph 235/254
+Running dot for graph 236/254
+Running dot for graph 237/254
+Running dot for graph 238/254
+Running dot for graph 239/254
+Running dot for graph 240/254
+Running dot for graph 241/254
+Running dot for graph 242/254
+Running dot for graph 243/254
+Running dot for graph 244/254
+Running dot for graph 245/254
+Running dot for graph 246/254
+Running dot for graph 247/254
+Running dot for graph 248/254
+Running dot for graph 249/254
+Running dot for graph 250/254
+Running dot for graph 251/254
+Running dot for graph 252/254
+Running dot for graph 253/254
+Running dot for graph 254/254
 Patching output file 1/42
 Patching output file 2/42
 Patching output file 3/42
@@ -753,5 +765,5 @@ Patching output file 39/42
 Patching output file 40/42
 Patching output file 41/42
 Patching output file 42/42
-lookup cache used 992/65536 hits=8226 misses=1012
+lookup cache used 989/65536 hits=8118 misses=1008
 finished...

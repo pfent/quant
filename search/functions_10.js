@@ -1,19 +1,12 @@
 var searchData=
 [
-  ['save_5fticket_5fcb',['save_ticket_cb',['../tls_8c.html#aa70adb60bf2e4ca0720c769269514f5b',1,'tls.c']]],
-  ['set_5fld_5ftimer',['set_ld_timer',['../recovery_8c.html#ae36a89ee82fe65d07b6707ac13e9071e',1,'recovery.c']]],
-  ['setup_5fcipher',['setup_cipher',['../tls_8c.html#a33475dbe3d21cf344acab6c9e3b23bee',1,'tls.c']]],
-  ['setup_5finitial_5fencryption',['setup_initial_encryption',['../tls_8c.html#aff7c4b2f9e78c2d678898dc58bc68e57',1,'tls.c']]],
-  ['setup_5finitial_5fkey',['setup_initial_key',['../tls_8c.html#ab26c763c76c9b874d651bdba836fc13f',1,'tls.c']]],
-  ['shorten_5fack_5fnr',['shorten_ack_nr',['../frame_8c.html#a31c36630801506eb48c0bf620c0fcca6',1,'shorten_ack_nr(const uint64_t ack, const uint64_t diff):&#160;frame.c'],['../frame_8h.html#a31c36630801506eb48c0bf620c0fcca6',1,'shorten_ack_nr(const uint64_t ack, const uint64_t diff):&#160;frame.c']]],
-  ['signal_5fcb',['signal_cb',['../quic_8c.html#a78a8ed1e6afbc58387426e924cae4a82',1,'quic.c']]],
-  ['sl_5fentry',['sl_entry',['../structq__conn.html#ad29885a595f4d9e45d5d4630d41beccf',1,'q_conn::sl_entry(q_conn) node_rx_int'],['../structq__conn.html#a03994cdac0b721d185ea0c0399fa216b',1,'q_conn::sl_entry(q_conn) node_rx_ext'],['../structq__conn.html#adc944a39f569afb0a57c0e3aab437ef5',1,'q_conn::sl_entry(q_conn) node_aq'],['../structpkt__meta.html#a7e459e2fc33bd3e88fe4c32ea57962a4',1,'pkt_meta::sl_entry()']]],
-  ['sl_5fhead',['sl_head',['../conn_8h.html#addd27b7fdfd0f22d4c24b474c8738213',1,'sl_head(q_conn_sl, q_conn):&#160;conn.h'],['../quic_8h.html#add58218ae6e5f0b1884990048cbe8e4b',1,'sl_head(pm_sl, pkt_meta):&#160;quic.h']]],
-  ['sockaddr_5fin_5fcmp',['sockaddr_in_cmp',['../conn_8c.html#afdb74c0ca180e047871005d0091a2932',1,'conn.c']]],
-  ['splay_5fentry',['splay_entry',['../structcid__map.html#ad34a79d1966558150266483eb9a74c09',1,'cid_map::splay_entry()'],['../structq__conn.html#af17440ad2ae4dd9965ebab0950de86af',1,'q_conn::splay_entry()'],['../structooo__0rtt.html#a555bf4fe878b22d2efef6f78c418cfb8',1,'ooo_0rtt::splay_entry()'],['../structival.html#a6a698a9c9019589e8c85e2899c7a7db5',1,'ival::splay_entry()'],['../structcid.html#ad38763357693152767ba6d4ca7e07d6a',1,'cid::splay_entry(cid) node_seq'],['../structcid.html#a299d5a09406ac197d2950736b2ef2a2e',1,'cid::splay_entry(cid) node_id'],['../structpkt__meta.html#a73da61404ad0b7ce442c1e371ecd2a75',1,'pkt_meta::splay_entry(pkt_meta) nr_node'],['../structpkt__meta.html#a99c46c2dc2554d055e866aa491e1ada2',1,'pkt_meta::splay_entry(pkt_meta) off_node'],['../structq__stream.html#a5158311e9a7391bcef4777907713b99a',1,'q_stream::splay_entry()']]],
-  ['splay_5fhead',['splay_head',['../structq__conn.html#ab9e4cc5cf0e74d448d15a9ed223f53e1',1,'q_conn::splay_head()'],['../structtickets__by__peer.html#afd9b6dfa9b26d79ecdc2a78a3c4bedad',1,'tickets_by_peer::splay_head()'],['../conn_8h.html#ae0ffc6a0951e8dd9d83508555b396b9d',1,'splay_head(conns_by_ipnp, q_conn) conns_by_ipnp:&#160;conn.h'],['../conn_8h.html#afa465b6252f71254c408a4995095530b',1,'splay_head(conns_by_id, cid_map) conns_by_id:&#160;conn.h'],['../conn_8h.html#a317b57b8733917d030b933b383c51270',1,'splay_head(cids_by_seq, cid):&#160;conn.h'],['../conn_8h.html#af96721654f2cf9dc4d6dd4e182ab6d03',1,'splay_head(cids_by_id, cid):&#160;conn.h'],['../conn_8h.html#a52c04ce19176020c6ac60f2e0baf7f49',1,'splay_head(ooo_0rtt_by_cid, ooo_0rtt) ooo_0rtt_by_cid:&#160;conn.h'],['../diet_8h.html#a8da0f8a9e4477e16ca5197e653be353b',1,'splay_head(diet, ival):&#160;diet.h'],['../pn_8h.html#ac05d4f940c89363b7bbce72644cdcb9a',1,'splay_head(pm_by_nr, pkt_meta):&#160;pn.h'],['../quic_8h.html#a9b34314984e48879b2f767d6f3e6ae92',1,'splay_head(ooo_by_off, pkt_meta):&#160;quic.h']]],
-  ['stream_5fneeds_5fctrl',['stream_needs_ctrl',['../stream_8h.html#ae11750e72c5f654dd57041a830ee19a7',1,'stream.h']]],
-  ['streams_5fby_5fid_5fcmp',['streams_by_id_cmp',['../stream_8h.html#a8ff76d7de8537c95267a1cb8555b35bd',1,'stream.h']]],
-  ['strm_5fepoch',['strm_epoch',['../stream_8h.html#af3bef0cb9d669dca78f301f6ae50a19e',1,'stream.h']]],
-  ['switch_5fscid',['switch_scid',['../conn_8c.html#a9f69811923962fc8fa439917bf0f0908',1,'conn.c']]]
+  ['read_5ftickets',['read_tickets',['../tls_8c.html#a65f1490238853f0e913186fd5c3311c7',1,'tls.c']]],
+  ['reset_5fpm',['reset_pm',['../stream_8c.html#ad084a65676d6e76fe72fa8e23bd1391d',1,'stream.c']]],
+  ['reset_5fpn',['reset_pn',['../pn_8c.html#ad39de552086c127310c3250f2982dcb5',1,'reset_pn(struct pn_space *const pn):&#160;pn.c'],['../pn_8h.html#ad39de552086c127310c3250f2982dcb5',1,'reset_pn(struct pn_space *const pn):&#160;pn.c']]],
+  ['reset_5fstream',['reset_stream',['../stream_8c.html#a23976e8cd7c5aecf8e137324fce993d0',1,'reset_stream(struct q_stream *const s, const bool forget):&#160;stream.c'],['../stream_8h.html#a23976e8cd7c5aecf8e137324fce993d0',1,'reset_stream(struct q_stream *const s, const bool forget):&#160;stream.c']]],
+  ['rtx_5fpkt',['rtx_pkt',['../conn_8c.html#a12a896285cd7039b1bcd66c5fa895ec0',1,'conn.c']]],
+  ['rx',['rx',['../conn_8c.html#a5749bce479cdde76574b7a1845be7fec',1,'rx(struct ev_loop *const l, ev_io *const rx_w, int e):&#160;conn.c'],['../conn_8h.html#a5749bce479cdde76574b7a1845be7fec',1,'rx(struct ev_loop *const l, ev_io *const rx_w, int e):&#160;conn.c']]],
+  ['rx_5fcrypto',['rx_crypto',['../conn_8c.html#a5d6639a237bb88d66f93760fc93000a5',1,'conn.c']]],
+  ['rx_5fpkt',['rx_pkt',['../conn_8c.html#a9ef5d7dd45e20cc2cf7504fac35c37e0',1,'conn.c']]],
+  ['rx_5fpkts',['rx_pkts',['../conn_8c.html#a743c431b40b906bbe9baad4456a0e7c5',1,'conn.c']]]
 ];

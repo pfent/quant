@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['varint_5fsize_5fneeded',['varint_size_needed',['../marshall_8c.html#a5ef78b886a8420375943612d4329807a',1,'varint_size_needed(const uint64_t v):&#160;marshall.c'],['../marshall_8h.html#a5ef78b886a8420375943612d4329807a',1,'varint_size_needed(const uint64_t v):&#160;marshall.c']]],
-  ['verify_5frtry_5ftok',['verify_rtry_tok',['../tls_8c.html#a779c1ebd1e6c43f05a373c84defb3fa8',1,'verify_rtry_tok(struct q_conn *const c, const uint8_t *const tok, const uint16_t tok_len):&#160;tls.c'],['../tls_8h.html#a779c1ebd1e6c43f05a373c84defb3fa8',1,'verify_rtry_tok(struct q_conn *const c, const uint8_t *const tok, const uint16_t tok_len):&#160;tls.c']]],
-  ['vers_5fsupported',['vers_supported',['../conn_8c.html#a1ae0706a577e85efbcfacf517a329dbe',1,'vers_supported(const uint32_t v):&#160;conn.c'],['../conn_8h.html#a1ae0706a577e85efbcfacf517a329dbe',1,'vers_supported(const uint32_t v):&#160;conn.c']]],
-  ['vneg_5for_5frtry_5fresp',['vneg_or_rtry_resp',['../conn_8c.html#aac9b3a9d6fb5a377419eb98e1e5e785e',1,'conn.c']]]
+  ['update_5fact_5fscid',['update_act_scid',['../conn_8c.html#ada89723c147c3959024e404cea1cd2f4',1,'update_act_scid(struct q_conn *const c, struct cid *const id):&#160;conn.c'],['../conn_8h.html#ada89723c147c3959024e404cea1cd2f4',1,'update_act_scid(struct q_conn *const c, struct cid *const id):&#160;conn.c']]],
+  ['update_5frtt',['update_rtt',['../recovery_8c.html#a12dab1a1456c6b3039d1ab3c390106a0',1,'recovery.c']]],
+  ['update_5ftraffic_5fkey_5fcb',['update_traffic_key_cb',['../tls_8c.html#acbc1dc9c2da3aab2c683a1d9b5ee9321',1,'tls.c']]],
+  ['use_5fnext_5fdcid',['use_next_dcid',['../conn_8c.html#ad1e5e232a8372127e2130e85e7cdbb8d',1,'conn.c']]]
 ];

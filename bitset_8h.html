@@ -110,6 +110,8 @@ Macros</h2></td></tr>
 <tr class="separator:a89df2ecbccdbbc24eb53d8cd75674b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c4874d6c570ae137ed6d07d1ae80941"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitset_8h.html#a1c4874d6c570ae137ed6d07d1ae80941">__bitset_words</a>(_s)&#160;&#160;&#160;(<a class="el" href="bitset_8h.html#a89df2ecbccdbbc24eb53d8cd75674b97">__howmany</a>(_s, <a class="el" href="bitset_8h.html#a9b087327819e53caa281fe2128305784">_bitset_bits</a>))</td></tr>
 <tr class="separator:a1c4874d6c570ae137ed6d07d1ae80941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8132c78e04bbc578b4cacca5c004572b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitset_8h.html#a8132c78e04bbc578b4cacca5c004572b">__bitcountl</a>(x)&#160;&#160;&#160;__builtin_popcountl((unsigned long)(x))</td></tr>
+<tr class="separator:a8132c78e04bbc578b4cacca5c004572b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae87b68a09fccc274684c9097d72b9c94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitset_8h.html#ae87b68a09fccc274684c9097d72b9c94">bitset_define</a>(t, _s)</td></tr>
 <tr class="separator:ae87b68a09fccc274684c9097d72b9c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ad7a2f4f1ea7037ffdd6a52ccaf9c6b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitset_8h.html#a6ad7a2f4f1ea7037ffdd6a52ccaf9c6b">bitset_define_var</a>(t)&#160;&#160;&#160;<a class="el" href="quic_8h.html#a63c28a0fb9cad78a8fab32b969076156">bitset_define</a>(t, 1)</td></tr>
@@ -189,6 +191,22 @@ Functions</h2></td></tr>
 <tr class="separator:ac75860f7890edeb0acfcf77c63f486ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a8132c78e04bbc578b4cacca5c004572b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __bitcountl</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;__builtin_popcountl((unsigned long)(x))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a621588f503acc9470c1c883cdac829f0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -478,8 +496,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">atomic_clear_long(&amp;(p)-&gt;__bits[<a class="code" href="bitset_8h.html#a5f9af6201622ccf9017f80039b08278a">__bitset_word</a>(_s, n)],                      \</div>
 <div class="line">                      <a class="code" href="bitset_8h.html#a621588f503acc9470c1c883cdac829f0">__bitset_mask</a>((_s), n))</div>
-<div class="ttc" id="bitset_8h_html_a5f9af6201622ccf9017f80039b08278a"><div class="ttname"><a href="bitset_8h.html#a5f9af6201622ccf9017f80039b08278a">__bitset_word</a></div><div class="ttdeci">#define __bitset_word(_s, n)</div><div class="ttdef"><b>Definition:</b> bitset.h:103</div></div>
-<div class="ttc" id="bitset_8h_html_a621588f503acc9470c1c883cdac829f0"><div class="ttname"><a href="bitset_8h.html#a621588f503acc9470c1c883cdac829f0">__bitset_mask</a></div><div class="ttdeci">#define __bitset_mask(_s, n)</div><div class="ttdef"><b>Definition:</b> bitset.h:100</div></div>
+<div class="ttc" id="bitset_8h_html_a5f9af6201622ccf9017f80039b08278a"><div class="ttname"><a href="bitset_8h.html#a5f9af6201622ccf9017f80039b08278a">__bitset_word</a></div><div class="ttdeci">#define __bitset_word(_s, n)</div><div class="ttdef"><b>Definition:</b> bitset.h:105</div></div>
+<div class="ttc" id="bitset_8h_html_a621588f503acc9470c1c883cdac829f0"><div class="ttname"><a href="bitset_8h.html#a621588f503acc9470c1c883cdac829f0">__bitset_mask</a></div><div class="ttdeci">#define __bitset_mask(_s, n)</div><div class="ttdef"><b>Definition:</b> bitset.h:102</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -622,10 +640,11 @@ Functions</h2></td></tr>
 <div class="line">                                                                               \</div>
 <div class="line">        __count = 0;                                                           \</div>
 <div class="line">        for (__i = 0; __i &lt; <a class="code" href="bitset_8h.html#a1c4874d6c570ae137ed6d07d1ae80941">__bitset_words</a>((_s)); __i++)                       \</div>
-<div class="line">            __count += __bitcountl((p)-&gt;__bits[__i]);                          \</div>
+<div class="line">            __count += <a class="code" href="bitset_8h.html#a8132c78e04bbc578b4cacca5c004572b">__bitcountl</a>((p)-&gt;__bits[__i]);                          \</div>
 <div class="line">        __count;                                                               \</div>
 <div class="line">    })</div>
 <div class="ttc" id="bitset_8h_html_a1c4874d6c570ae137ed6d07d1ae80941"><div class="ttname"><a href="bitset_8h.html#a1c4874d6c570ae137ed6d07d1ae80941">__bitset_words</a></div><div class="ttdeci">#define __bitset_words(_s)</div><div class="ttdef"><b>Definition:</b> bitset.h:74</div></div>
+<div class="ttc" id="bitset_8h_html_a8132c78e04bbc578b4cacca5c004572b"><div class="ttname"><a href="bitset_8h.html#a8132c78e04bbc578b4cacca5c004572b">__bitcountl</a></div><div class="ttdeci">#define __bitcountl(x)</div><div class="ttdef"><b>Definition:</b> bitset.h:76</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1183,8 +1202,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">atomic_set_acq_long(&amp;(p)-&gt;__bits[<a class="code" href="bitset_8h.html#a5f9af6201622ccf9017f80039b08278a">__bitset_word</a>(_s, n)],                    \</div>
 <div class="line">                        <a class="code" href="bitset_8h.html#a621588f503acc9470c1c883cdac829f0">__bitset_mask</a>((_s), n))</div>
-<div class="ttc" id="bitset_8h_html_a5f9af6201622ccf9017f80039b08278a"><div class="ttname"><a href="bitset_8h.html#a5f9af6201622ccf9017f80039b08278a">__bitset_word</a></div><div class="ttdeci">#define __bitset_word(_s, n)</div><div class="ttdef"><b>Definition:</b> bitset.h:103</div></div>
-<div class="ttc" id="bitset_8h_html_a621588f503acc9470c1c883cdac829f0"><div class="ttname"><a href="bitset_8h.html#a621588f503acc9470c1c883cdac829f0">__bitset_mask</a></div><div class="ttdeci">#define __bitset_mask(_s, n)</div><div class="ttdef"><b>Definition:</b> bitset.h:100</div></div>
+<div class="ttc" id="bitset_8h_html_a5f9af6201622ccf9017f80039b08278a"><div class="ttname"><a href="bitset_8h.html#a5f9af6201622ccf9017f80039b08278a">__bitset_word</a></div><div class="ttdeci">#define __bitset_word(_s, n)</div><div class="ttdef"><b>Definition:</b> bitset.h:105</div></div>
+<div class="ttc" id="bitset_8h_html_a621588f503acc9470c1c883cdac829f0"><div class="ttname"><a href="bitset_8h.html#a621588f503acc9470c1c883cdac829f0">__bitset_mask</a></div><div class="ttdeci">#define __bitset_mask(_s, n)</div><div class="ttdef"><b>Definition:</b> bitset.h:102</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1221,9 +1240,9 @@ Functions</h2></td></tr>
 <div class="line"><a class="code" href="bitset_8h.html#a8e45ad8fe2d9edc51fd3a133fa40fd00">        bit_zero</a>(_s, p);                                                       \</div>
 <div class="line">        (p)-&gt;__bits[<a class="code" href="bitset_8h.html#a5f9af6201622ccf9017f80039b08278a">__bitset_word</a>(_s, n)] = <a class="code" href="bitset_8h.html#a621588f503acc9470c1c883cdac829f0">__bitset_mask</a>((_s), (n));          \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="bitset_8h_html_a5f9af6201622ccf9017f80039b08278a"><div class="ttname"><a href="bitset_8h.html#a5f9af6201622ccf9017f80039b08278a">__bitset_word</a></div><div class="ttdeci">#define __bitset_word(_s, n)</div><div class="ttdef"><b>Definition:</b> bitset.h:103</div></div>
-<div class="ttc" id="bitset_8h_html_a8e45ad8fe2d9edc51fd3a133fa40fd00"><div class="ttname"><a href="bitset_8h.html#a8e45ad8fe2d9edc51fd3a133fa40fd00">bit_zero</a></div><div class="ttdeci">#define bit_zero(_s, p)</div><div class="ttdef"><b>Definition:</b> bitset.h:118</div></div>
-<div class="ttc" id="bitset_8h_html_a621588f503acc9470c1c883cdac829f0"><div class="ttname"><a href="bitset_8h.html#a621588f503acc9470c1c883cdac829f0">__bitset_mask</a></div><div class="ttdeci">#define __bitset_mask(_s, n)</div><div class="ttdef"><b>Definition:</b> bitset.h:100</div></div>
+<div class="ttc" id="bitset_8h_html_a5f9af6201622ccf9017f80039b08278a"><div class="ttname"><a href="bitset_8h.html#a5f9af6201622ccf9017f80039b08278a">__bitset_word</a></div><div class="ttdeci">#define __bitset_word(_s, n)</div><div class="ttdef"><b>Definition:</b> bitset.h:105</div></div>
+<div class="ttc" id="bitset_8h_html_a8e45ad8fe2d9edc51fd3a133fa40fd00"><div class="ttname"><a href="bitset_8h.html#a8e45ad8fe2d9edc51fd3a133fa40fd00">bit_zero</a></div><div class="ttdeci">#define bit_zero(_s, p)</div><div class="ttdef"><b>Definition:</b> bitset.h:120</div></div>
+<div class="ttc" id="bitset_8h_html_a621588f503acc9470c1c883cdac829f0"><div class="ttname"><a href="bitset_8h.html#a621588f503acc9470c1c883cdac829f0">__bitset_mask</a></div><div class="ttdeci">#define __bitset_mask(_s, n)</div><div class="ttdef"><b>Definition:</b> bitset.h:102</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1524,7 +1543,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 29 2018 10:16:29 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 10 2018 13:43:57 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
