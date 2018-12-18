@@ -196,8 +196,6 @@ Functions</h2></td></tr>
 <tr class="separator:aca434917810f9c4892702c7e95c89733"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5749bce479cdde76574b7a1845be7fec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a5749bce479cdde76574b7a1845be7fec">rx</a> (struct ev_loop *const l, ev_io *const rx_w, int e)</td></tr>
 <tr class="separator:a5749bce479cdde76574b7a1845be7fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ba45c97653b67d6f1825ddfc5c4c6b8"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a5ba45c97653b67d6f1825ddfc5c4c6b8">loop_run</a> (void *const arg)</td></tr>
-<tr class="separator:a5ba45c97653b67d6f1825ddfc5c4c6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23b98218d38ba7ad85c7d40ed1ca5546"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a23b98218d38ba7ad85c7d40ed1ca5546">loop_update</a> (struct ev_loop *const l, ev_async *const w, int e)</td></tr>
 <tr class="separator:a23b98218d38ba7ad85c7d40ed1ca5546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02d7b0c5a072e1b673358b52ac71f160"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conn_8h.html#a02d7b0c5a072e1b673358b52ac71f160">err_close</a> (struct <a class="el" href="structq__conn.html">q_conn</a> *const c, const uint16_t code, const uint8_t frm, const char *const fmt,...)</td></tr>
@@ -351,7 +349,7 @@ Variables</h2></td></tr>
 <div class="line">             <a class="code" href="conn_8h.html#a5618a89ddad38bdb55093279d8d3fbc5">conn_state_str</a>[(s)]);                                             \</div>
 <div class="line">        (c)-&gt;state = (s);                                                      \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="conn_8h_html_aa0fec7fdf46459b57e64dbe4e79a8dc4"><div class="ttname"><a href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4">conn_type</a></div><div class="ttdeci">static const char * conn_type(const struct q_conn *const c)</div><div class="ttdef"><b>Definition:</b> conn.h:418</div></div>
+<div class="ttc" id="conn_8h_html_aa0fec7fdf46459b57e64dbe4e79a8dc4"><div class="ttname"><a href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4">conn_type</a></div><div class="ttdeci">static const char * conn_type(const struct q_conn *const c)</div><div class="ttdef"><b>Definition:</b> conn.h:416</div></div>
 <div class="ttc" id="conn_8h_html_a5618a89ddad38bdb55093279d8d3fbc5"><div class="ttname"><a href="conn_8h.html#a5618a89ddad38bdb55093279d8d3fbc5">conn_state_str</a></div><div class="ttdeci">const char *const conn_state_str[]</div><div class="ttdef"><b>Definition:</b> conn.c:60</div></div>
 <div class="ttc" id="conn_8h_html_ade2abf64e3b30fc0b5e1b95735ab6677"><div class="ttname"><a href="conn_8h.html#ade2abf64e3b30fc0b5e1b95735ab6677">cid2str</a></div><div class="ttdeci">#define cid2str(i)</div><div class="ttdef"><b>Definition:</b> conn.h:52</div></div>
 <div class="ttc" id="quic_8h_html_ade01bc98e1632cd645e0f33757d70d2e"><div class="ttname"><a href="quic_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a></div><div class="ttdeci">#define NRM</div><div class="ttdoc">ANSI escape sequence: reset all to normal. </div><div class="ttdef"><b>Definition:</b> quic.h:443</div></div>
@@ -1118,22 +1116,6 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a5ba45c97653b67d6f1825ddfc5c4c6b8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* loop_run </td>
-          <td>(</td>
-          <td class="paramtype">void *const&#160;</td>
-          <td class="paramname"><em>arg</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a23b98218d38ba7ad85c7d40ed1ca5546"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1685,7 +1667,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 10 2018 13:43:57 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 18 2018 14:43:14 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

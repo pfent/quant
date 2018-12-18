@@ -36,6 +36,7 @@ var searchData=
   ['dispose_5fcipher',['dispose_cipher',['../tls_8c.html#aa4d8aedc1bfd0aed4756bd90903c1884',1,'tls.c']]],
   ['do_5fconn_5ffc',['do_conn_fc',['../conn_8c.html#a4bcf08ef3dc5cc610474c8d0fa7947ee',1,'do_conn_fc(struct q_conn *const c):&#160;conn.c'],['../conn_8h.html#a4bcf08ef3dc5cc610474c8d0fa7947ee',1,'do_conn_fc(struct q_conn *const c):&#160;conn.c']]],
   ['do_5fconn_5fmgmt',['do_conn_mgmt',['../conn_8c.html#a0b0c1eff62e65d38a175b6df4ea4ce80',1,'conn.c']]],
+  ['do_5floop_5frun',['do_loop_run',['../quic_8c.html#aac86407b2cf4d96e99b24523d4beb36c',1,'quic.c']]],
   ['do_5fstream_5ffc',['do_stream_fc',['../stream_8c.html#ae4a57a5b73d68625c63574f6c4109bad',1,'do_stream_fc(struct q_stream *const s):&#160;stream.c'],['../stream_8h.html#ae4a57a5b73d68625c63574f6c4109bad',1,'do_stream_fc(struct q_stream *const s):&#160;stream.c']]],
   ['do_5fstream_5fid_5ffc',['do_stream_id_fc',['../stream_8c.html#abd56ea788d8872433901695928a944ab',1,'do_stream_id_fc(struct q_conn *const c, const int64_t sid):&#160;stream.c'],['../stream_8h.html#abd56ea788d8872433901695928a944ab',1,'do_stream_id_fc(struct q_conn *const c, const int64_t sid):&#160;stream.c']]],
   ['do_5ftx',['do_tx',['../conn_8c.html#a061f6268bdb3054227eedf2ca20cb8a1',1,'conn.c']]]

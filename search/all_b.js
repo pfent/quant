@@ -19,7 +19,7 @@ var searchData=
   ['log_5fsent_5fpkts',['log_sent_pkts',['../conn_8c.html#a5743552083731c2f028e261c680fcd38',1,'conn.c']]],
   ['log_5fstream_5for_5fcrypto_5fframe',['log_stream_or_crypto_frame',['../frame_8c.html#ae94d6f87955af69345cb46c9d03ad90f',1,'log_stream_or_crypto_frame(const bool rtx, const struct w_iov *const v, const bool in, const char *const kind):&#160;frame.c'],['../frame_8h.html#ae94d6f87955af69345cb46c9d03ad90f',1,'log_stream_or_crypto_frame(const bool rtx, const struct w_iov *const v, const bool in, const char *const kind):&#160;frame.c']]],
   ['loop',['loop',['../quic_8c.html#a855923b555731173d3509ecb645de0e0',1,'loop():&#160;quic.c'],['../quic_8h.html#a855923b555731173d3509ecb645de0e0',1,'loop():&#160;quic.c']]],
-  ['loop_5frun',['loop_run',['../quic_8c.html#a7890c6fb9ffd79d2073edcdc00d600af',1,'loop_run():&#160;quic.c'],['../conn_8h.html#a5ba45c97653b67d6f1825ddfc5c4c6b8',1,'loop_run(void *const arg):&#160;conn.h']]],
+  ['loop_5frun',['loop_run',['../quic_8c.html#a7890c6fb9ffd79d2073edcdc00d600af',1,'quic.c']]],
   ['loop_5fupdate',['loop_update',['../conn_8h.html#a23b98218d38ba7ad85c7d40ed1ca5546',1,'conn.h']]],
   ['loss_5ft',['loss_t',['../structrecovery.html#a2394e577c3fc53d34bb35b44b7113fe7',1,'recovery']]]
 ];

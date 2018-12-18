@@ -129,12 +129,14 @@ Include dependency graph for quic.c:</div>
 Macros</h2></td></tr>
 <tr class="memitem:a006a6d732d649728796cfe027e3041d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8c.html#a006a6d732d649728796cfe027e3041d9">klib_unused</a></td></tr>
 <tr class="separator:a006a6d732d649728796cfe027e3041d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7890c6fb9ffd79d2073edcdc00d600af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8c.html#a7890c6fb9ffd79d2073edcdc00d600af">loop_run</a>(func, conn, strm)</td></tr>
-<tr class="memdesc:a7890c6fb9ffd79d2073edcdc00d600af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the event loop for the API function <code>func</code> with connection <code>conn</code> and (optionally, if non-zero) stream <code>strm</code>.  <a href="#a7890c6fb9ffd79d2073edcdc00d600af">More...</a><br/></td></tr>
+<tr class="memitem:a7890c6fb9ffd79d2073edcdc00d600af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8c.html#a7890c6fb9ffd79d2073edcdc00d600af">loop_run</a>(func, conn, strm)&#160;&#160;&#160;<a class="el" href="quic_8c.html#aac86407b2cf4d96e99b24523d4beb36c">do_loop_run</a>((<a class="el" href="quic_8h.html#aaf4e8117a58ef7278393d801e5d78c46">func_ptr</a>)(func), (conn), (strm))</td></tr>
 <tr class="separator:a7890c6fb9ffd79d2073edcdc00d600af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aac86407b2cf4d96e99b24523d4beb36c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8c.html#aac86407b2cf4d96e99b24523d4beb36c">do_loop_run</a> (const <a class="el" href="quic_8h.html#aaf4e8117a58ef7278393d801e5d78c46">func_ptr</a> func, struct <a class="el" href="structq__conn.html">q_conn</a> *const conn, struct <a class="el" href="structq__stream.html">q_stream</a> *const strm)</td></tr>
+<tr class="memdesc:aac86407b2cf4d96e99b24523d4beb36c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the event loop for the API function <code>func</code> with connection <code>conn</code> and (optionally, if non-zero) stream <code>strm</code>.  <a href="#aac86407b2cf4d96e99b24523d4beb36c">More...</a><br/></td></tr>
+<tr class="separator:aac86407b2cf4d96e99b24523d4beb36c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed433a65a751df6b54c091d8facbfb57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8c.html#aed433a65a751df6b54c091d8facbfb57">pm_free</a> (struct <a class="el" href="structpkt__meta.html">pkt_meta</a> *const m)</td></tr>
 <tr class="separator:aed433a65a751df6b54c091d8facbfb57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ee75c38a1c756036392a6e5b6d1e93a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quic_8c.html#a2ee75c38a1c756036392a6e5b6d1e93a">alloc_off</a> (struct w_engine *const w, struct w_iov_sq *const q, const uint32_t len, const uint16_t off)</td></tr>
@@ -250,37 +252,10 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="quic_8c.html#aac86407b2cf4d96e99b24523d4beb36c">do_loop_run</a>((<a class="el" href="quic_8h.html#aaf4e8117a58ef7278393d801e5d78c46">func_ptr</a>)(func), (conn), (strm))</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       <a class="code" href="quic_8h.html#a733907018d667311b3e174666c6d2f0f">\</a></div>
-<div class="line"><a class="code" href="quic_8h.html#a733907018d667311b3e174666c6d2f0f">        EV_VERIFY</a>(<a class="code" href="quic_8c.html#a855923b555731173d3509ecb645de0e0">loop</a>);                                                       \</div>
-<div class="line">        ensure(<a class="code" href="quic_8c.html#a593420bbec69beea4076ea6603019ea0">api_func</a> == 0, <span class="stringliteral">&quot;other API call active&quot;</span>);                        <a class="code" href="quic_8c.html#a593420bbec69beea4076ea6603019ea0">\</a></div>
-<div class="line"><a class="code" href="quic_8c.html#a593420bbec69beea4076ea6603019ea0">        api_func</a> = (<a class="code" href="quic_8h.html#aaf4e8117a58ef7278393d801e5d78c46">func_ptr</a>)(&amp;(func));                                        <a class="code" href="quic_8c.html#a91b81b7384533b284fa05acbc6b6787d">\</a></div>
-<div class="line"><a class="code" href="quic_8c.html#a91b81b7384533b284fa05acbc6b6787d">        api_conn</a> = (conn);                                                     <a class="code" href="quic_8c.html#a51e2b7dfe290cfc0a139b3768427de79">\</a></div>
-<div class="line"><a class="code" href="quic_8c.html#a51e2b7dfe290cfc0a139b3768427de79">        api_strm</a> = (strm);                                                     \</div>
-<div class="line">        <span class="comment">/* warn(DBG, #func &quot;(&quot; #conn &quot;, &quot; #strm &quot;) entering event loop&quot;); */</span>   \</div>
-<div class="line">        ev_run(<a class="code" href="quic_8c.html#a855923b555731173d3509ecb645de0e0">loop</a>, 0);                                                       <a class="code" href="quic_8c.html#a593420bbec69beea4076ea6603019ea0">\</a></div>
-<div class="line"><a class="code" href="quic_8c.html#a593420bbec69beea4076ea6603019ea0">        api_func</a> = 0;                                                          <a class="code" href="quic_8c.html#a91b81b7384533b284fa05acbc6b6787d">\</a></div>
-<div class="line"><a class="code" href="quic_8c.html#a91b81b7384533b284fa05acbc6b6787d">        api_conn</a> = <a class="code" href="quic_8c.html#a51e2b7dfe290cfc0a139b3768427de79">api_strm</a> = 0;                                               \</div>
-<div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="quic_8c_html_a593420bbec69beea4076ea6603019ea0"><div class="ttname"><a href="quic_8c.html#a593420bbec69beea4076ea6603019ea0">api_func</a></div><div class="ttdeci">func_ptr api_func</div><div class="ttdef"><b>Definition:</b> quic.c:90</div></div>
-<div class="ttc" id="quic_8h_html_a733907018d667311b3e174666c6d2f0f"><div class="ttname"><a href="quic_8h.html#a733907018d667311b3e174666c6d2f0f">EV_VERIFY</a></div><div class="ttdeci">#define EV_VERIFY(l)</div><div class="ttdef"><b>Definition:</b> quic.h:331</div></div>
-<div class="ttc" id="quic_8h_html_aaf4e8117a58ef7278393d801e5d78c46"><div class="ttname"><a href="quic_8h.html#aaf4e8117a58ef7278393d801e5d78c46">func_ptr</a></div><div class="ttdeci">void(* func_ptr)(void)</div><div class="ttdef"><b>Definition:</b> quic.h:325</div></div>
-<div class="ttc" id="quic_8c_html_a855923b555731173d3509ecb645de0e0"><div class="ttname"><a href="quic_8c.html#a855923b555731173d3509ecb645de0e0">loop</a></div><div class="ttdeci">struct ev_loop * loop</div><div class="ttdef"><b>Definition:</b> quic.c:88</div></div>
-<div class="ttc" id="quic_8c_html_a91b81b7384533b284fa05acbc6b6787d"><div class="ttname"><a href="quic_8c.html#a91b81b7384533b284fa05acbc6b6787d">api_conn</a></div><div class="ttdeci">void * api_conn</div><div class="ttdef"><b>Definition:</b> quic.c:91</div></div>
-<div class="ttc" id="quic_8c_html_a51e2b7dfe290cfc0a139b3768427de79"><div class="ttname"><a href="quic_8c.html#a51e2b7dfe290cfc0a139b3768427de79">api_strm</a></div><div class="ttdeci">void * api_strm</div><div class="ttdef"><b>Definition:</b> quic.c:91</div></div>
-</div><!-- fragment -->
-<p>Run the event loop for the API function <code>func</code> with connection <code>conn</code> and (optionally, if non-zero) stream <code>strm</code>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">func</td><td>The API function to run the event loop for. </td></tr>
-    <tr><td class="paramname">conn</td><td>The connection to run the event loop for. </td></tr>
-    <tr><td class="paramname">strm</td><td>The stream to run the event loop for. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -369,6 +344,56 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node2" href="quic_8c.html#a3da1ca1e589303333e8bba9cfbb1f4da" title="q_accept" alt="" coords="172,5,247,32"/><area shape="rect" id="node4" href="quic_8c.html#a84a768c49cd352e1c8a109bda56ef3a6" title="q_rx_ready" alt="" coords="166,56,253,83"/><area shape="rect" id="node3" href="conn_8h.html#aa0fec7fdf46459b57e64dbe4e79a8dc4" title="conn_type" alt="" coords="301,31,384,57"/></map>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="aac86407b2cf4d96e99b24523d4beb36c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void do_loop_run </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="quic_8h.html#aaf4e8117a58ef7278393d801e5d78c46">func_ptr</a>&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structq__conn.html">q_conn</a> *const&#160;</td>
+          <td class="paramname"><em>conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structq__stream.html">q_stream</a> *const&#160;</td>
+          <td class="paramname"><em>strm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Run the event loop for the API function <code>func</code> with connection <code>conn</code> and (optionally, if non-zero) stream <code>strm</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">func</td><td>The API function to run the event loop for. </td></tr>
+    <tr><td class="paramname">conn</td><td>The connection to run the event loop for. </td></tr>
+    <tr><td class="paramname">strm</td><td>The stream to run the event loop for. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1230,7 +1255,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 10 2018 13:43:57 for quant by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 18 2018 14:43:14 for quant by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
