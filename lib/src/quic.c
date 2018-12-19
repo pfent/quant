@@ -347,6 +347,22 @@ again:;
     return s;
 }
 
+void q_read_str(struct q_stream * const s, struct w_iov_sq * const q)
+{
+    struct q_conn * const c = s->c;
+    while (!sq_empty(&s->in)) {
+        if (s->state != strm_clsd)
+            break;
+        warn(WRN, "reading at least one message on %s conn %s strm " FMT_SID, conn_type(c),
+             cid2str(c->scid), s->id);
+        loop_run(q_read_str, c, s);
+    }
+
+    // return data (if any)
+    sq_concat(q, &s->in);
+    warn(WRN, "read %u byte%s on %s conn %s strm " FMT_SID, w_iov_sq_len(q),
+        plural(w_iov_sq_len(q)), conn_type(c), cid2str(c->scid), s->id);
+}
 
 void q_readall_str(struct q_stream * const s, struct w_iov_sq * const q)
 {
